@@ -1,0 +1,82 @@
+{
+  "currentTerm": [
+    {
+      "title": "SENIOR SOFTWARE ENGINEERING PROJECT"
+    },
+    {
+      "title": "DATABASES II"
+    },
+    {
+      "title": "GRAPH THEORY WITH APPLICATIONS TO COMPUTER SCIENCE"
+    },
+    {
+      "title": "INTRODUCTION TO USABILITY ENGINEERING"
+    },
+    {
+      "title": "SOCCER INDOOR"
+    }
+  ],
+  "nextTerm": [
+    {
+      "title": "SENIOR SOFTWARE ENGINEERING PROJECT"
+    },
+    {
+      "title": "PROGRAMMING LANGUAGE FUNDAMENTALS"
+    },
+    {
+      "title": "HIV/AIDS & STIS IN MODERN SOC"
+    },
+    {
+      "title": "PERSPECTIVES IN PHYSICS"
+    }
+  ],
+  "currentReadings":[
+    {
+      "title": " Deep Learning for Computer Vision with Python",
+      "cover": "https://www.pyimagesearch.com/static/templates/deep-learning-for-computer-vision/images/dl_for_cv_cover.png",
+      "buy": "https://www.pyimagesearch.com/deep-learning-computer-vision-python-book/"
+    },
+    {
+      "title": "Computer Vision: Models, Learning, and Inference",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/51Bw9kJmPmL._SX334_BO1,204,203,200_.jpg",
+      "buy": "https://www.amazon.com/gp/product/1107011795/ref=oh_aui_search_detailpage?ie=UTF8&psc=1"
+    },
+    {
+      "title": "Astrophysics for People in a Hurry",
+      "cover": "https://images-na.ssl-images-amazon.com/images/I/51qdmr7snXL.jpg",
+      "buy": "https://www.amazon.com/gp/product/B01MAWT2MO/ref=oh_aui_search_detailpage?ie=UTF8&psc=1"
+    }
+  ],
+  "friends":[
+    {
+      "name": "Connor Christensen",
+      "link": "http://people.oregonstate.edu/~chriconn/"
+    },
+    {
+      "name": "Lucas Frey",
+      "link": "https://lcsfrey.github.io/"
+    }
+  ],
+  "social":[
+    {
+      "title": "reddit-alien",
+      "link": "https://www.reddit.com/user/madebymaze/"
+    },
+    {
+      "title": "linkedin",
+      "link": "https://linkedin.com/in/madebymaze"
+    },
+    {
+      "title": "github",
+      "link": "https://github.com/madebymaze"
+    },
+    {
+      "title": "twitter",
+      "link": "https://twitter.com/madebymaze"
+    },
+    {
+      "title": "spotify",
+      "link": "https://open.spotify.com/user/themazenota?si=6T4Fx-i-QM6io7TBYEhsJw"
+    }
+  ]
+}

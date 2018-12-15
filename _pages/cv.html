@@ -1,0 +1,207 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+---
+<div id="site-body">
+        <main id="site-content">
+              <ul id="resume-display">
+                <li class="resume-item" id="ed">
+                  <h2 class="item-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
+                  <ul class="item-list">
+                    {% for member in site.data.cv.ed %}
+                    <li class="item-work">
+                      <h3 class="title">{{ member.school }}<button type="button" name="button" title="Show Completed Courses" id="courses-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ member.date }}</span></h3>
+                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ member.location }}</h4>
+                      <div class="details">
+                        <p>Major: {{ member.major }}</p>
+                        <p>Minor: {{ member.minor }}</p>
+                      </div>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  <div id="courses-list" class="hide">
+                    <ul>
+                      <li>
+                        <h5>COMPUTER SCIENCE</h5>
+                        <ul>
+                          <div class="skill-box">
+                            <li>DATA STRUCTURES (CS-261)</li>
+                            <li>COMPUTER ARCHITECTURE AND ASSEMBLY LANGUAGE (CS-271)</li>
+                            <li>DIGITAL LOGIC DESIGN WITH LAB(ECE-271 & ECE-272)</li>
+                            <li>WEB DEVELOPMENT (CS-290)</li>
+                            <li>INTRODUCTION TO THEORY OF COMPUTATION (CS-321)</li>
+                            <li>ANALYSIS OF ALGORITHMS (CS-325)</li>
+                            <!--<li>INTRODUCTION TO ARTIFICIAL INTELLIGENCE (CS-331)</li>
+                            <li>INTRODUCTION TO DATABASES (CS-340)</li>
+                            <li>OPERATING SYSTEMS I (CS-344)</li> -->
+                            <!-- <li>OPERATING SYSTEMS I & II (CS-344 & CS-444)</li> -->
+                          </div>
+                          <div class="skill-box">
+                          <li>INTRODUCTION TO ARTIFICIAL INTELLIGENCE (CS-331)</li>
+                          <li>INTRODUCTION TO DATABASES (CS-340)</li>
+                          <li>OPERATING SYSTEMS I & II (CS-344 & CS-444)</li>
+                            <!-- <li>INTRODUCTION TO USABILITY ENGINEERING (CS-352)</li> -->
+                            <li>SOFTWARE ENGINEERING I & II (CS-361 & CS-362)</li>
+                            <li>INTRODUCTION TO COMPUTER NETWORKS (CS-372)</li>
+                            <!-- <li>PROGRAMMING LANGUAGE FUNDAMENTALS (CS-381)</li> -->
+                            <!-- <li>GRAPH THEORY WITH APPLICATIONS TO COMPUTER SCIENCE (CS-420)</li> -->
+                            <li>INTRODUCTION TO MACHINE LEARNING AND DATA MINING (CS-434)</li>
+                            <li>Intelligent Robotics (ROB-456)</li>
+                            <!-- <li>SENIOR SOFTWARE ENGINEERING PROJECT I, II, & III (CS-461, CS-462, & CS-463)</li> -->
+                            <li>INTRODUCTION TO PARALLEL PROGRAMMING (CS-475)</li>
+                          </div>
+                        </ul>
+                      </li>
+                      <li>
+                        <h5>MATHEMATICS</h5>
+                        <ul>
+                          <li>ELEMENTS OF DISCRETE MATHEMATICS (MTH-231)</li>
+                          <li>DIFFERENTIAL CALCULUS (MTH-251)</li>
+                          <li>INTEGRAL CALCULUS (MTH-252)</li>
+                          <li>INFINITE SERIES AND SEQUENCES (MTH-253)</li>
+                          <li>VECTOR CALCULUS I (MTH-254)</li>
+                          <li>MATRIX AND POWER SERIES METHODS (MTH-306)</li>
+                          <li>LINEAR ALGEBRA I (MTH-341)</li>
+                          <li>INTRODUCTION TO NUMERICAL ANALYSIS (MTH-351)</li>
+                          <li>INTRODUCTION TO PROBABILITY (MTH-361)</li>
+                          <li>INTRODUCTION TO MATHEMATICAL STATISTICS (ST-421)</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <h5>OTHERS</h5>
+                        <ul>
+                          <li>FIRST-YEAR JAPANESE (JPN-111)</li>
+                          <li>INTRODUCTION TO MICROECONOMICS (ECON-201)</li>
+                          <li>TECHNICAL WRITING (WR-327)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="resume-item" id="ex">
+                  <h2 class="item-title"><i class="fa fa-cogs" aria-hidden="true"></i> Experience</h2>
+                  <ul class="item-list">
+                    {% for member in site.data.cv.ex %}
+                    <li class="item-work">
+                      <h3 class="title">{{ member.position }}<span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ member.date }}</span></h3>
+                      <p style="margin: 0; font-style: italic;">{{ member.title }}</p>
+                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ member.location }}</h4>
+                      <div class="details">
+                        <ul>
+                          {% for detail in member.details %}
+                          <li>{{ detail.statement }}</li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                <li class="resume-item" id="pro">
+                  <h2 class="item-title"><i class="fa fa-folder-open" aria-hidden="true"></i> Projects</h2>
+                  <ul class="item-list">
+                    {% for member in site.data.lab %}
+                    <li class="item-work">
+                      <h3 class="title"><a href="/lab/#{{ member.tag }}"  target="_blank">{{ member.title }}</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ member.date }}</span></h3>
+                      <div class="details">
+                        <ul>
+                          {% for acc in member.accomplishments %}
+                          <li>{{ acc.statement }}</li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                <li class="resume-item" id="act">
+                  <h2 class="item-title"><i class="fa fa-rocket" aria-hidden="true"></i> Extracurricular Activities</h2>
+                  <ul class="item-list">
+                    {% for member in site.data.cv.act %}
+                    <li class="item-work">
+                      <h3 class="title">{{ member.title }}<span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ member.date }}</span></h3>
+                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ member.location }}</h4>
+                      <div class="details">
+                        <p style="font-style: italic;">{{ member.position }}</p>
+                        <ul>
+                          {% for acc in member.details %}
+                          <li>{{ acc.statement }}</li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                <li class="resume-item">
+                  <h2 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Skills</h2>
+                  <div class="skill-box">
+                    <div class="skill-block">
+                      <ul class="skill-set">
+                          <li><h4 class="skill-title">I/O Languages:</h4></li>
+                          <li class="skill-list">C <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">C++ <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">Java</li>
+                      </ul>
+                      <ul class="skill-set">
+                          <li><h4 class="skill-title">Scripting Languages:</h4></li>
+                          <li class="skill-list">JavaScript <i class="fas fa-heart"></i></li>
+                          <li class="skill-list">Python <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">PhP <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">BASH <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">R </li>
+                          <li class="skill-list">MATLAB</li>
+                      </ul>
+                      <ul class="skill-set">
+                          <li><h4 class="skill-title">Libraries/Frameworks:</h4></li>
+                          <li class="skill-list">NumPy <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">OpenCV <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">PyTorch <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">Node.js <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">TensorFlow.js <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">TensorFlow</li>
+                          <li class="skill-list">Keras</li>
+                          <li class="skill-list">React.js</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="skill-box">
+                    <div class="skill-block">
+                      <ul class="skill-set">
+                          <li><h4 class="skill-title">Tools:</h4></li>
+                          <li class="skill-list">Git <i class="fas fa-heart" title="I LOVE IT"></i></i></li>
+                          <li class="skill-list">SQL <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">NoSQL <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">Markdown <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">LaTeX <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                      </ul>
+                      <ul class="skill-set">
+                          <li><h4 class="skill-title">Operating Systems:</h4></li>
+                          <li class="skill-list">GNU/Linux(Arch, CentOS, and Ubuntu) <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">MacOS <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">Windows</li>
+                      </ul>
+                      <ul class="skill-set">
+                          <li><h4 class="skill-title">Languages:</h4></li>
+                          <li class="skill-list">Arabic (Native)</li>
+                          <li class="skill-list">English (Professional Proficiency)</li>
+                          <li class="skill-list">Japanese (Elementary Proficiency)</li>
+                      </ul>
+                    </div>
+              </div>
+              </li>
+              <div id="download-area">
+                <a id="download-btn" href="/public/pdf/cv.pdf"  target="_blank"><i class="fas fa-cloud-download"></i> DOWNLOAD</a>
+                <p>
+                  <script language="Javascript">
+                    var xhReq = new XMLHttpRequest();
+                    xhReq.open("HEAD", "/public/pdf/cv.pdf", false);
+                    xhReq.send(null);
+                    var lastModified = xhReq.getResponseHeader("Last-Modified");
+                    document.write(lastModified);
+                  </script>
+                </p>
+              </div>
+            </main>
+            </div>

@@ -1,0 +1,135 @@
+[
+  {
+    "title": "Image Captioning",
+    "tag": "image-captioning",
+    "date": "7/2018 - 8/2018",
+    "img": "/img/no-image.jpg",
+    "code": "https://github.com/madebymaze/image-captioning",
+    "demo": "NONE",
+    "accomplishments": [
+      {
+        "statement": "Built a Convolutions Neural Network-Recurrence Neural Network (CNN-RNN) model to automat- ically generate captions from images using NumPy, OpenCV, and PyTorch."
+      },
+      {
+        "statement": "Trained the CNN-RNN model on MS COCO dateset that takes any image and automatically generate captions that describes the image with a probability score of likelihoods of accuracy."
+      },
+      {
+        "statement": "Trained the Encoder[CNN] for feature extracting and trained the Decoder[Long Short-Term Memory (LSTM) cells in RNN ] to generate captions."
+      }
+    ]
+  },
+  {
+    "title": "Facial Keypoint Detection",
+    "tag": "facial-keypoint-detection",
+    "date": "6/2018 - 7/2018",
+    "img": "/img/no-image.jpg",
+    "code": "https://github.com/madebymaze/facial-keypoint-detection",
+    "demo": "NONE",
+    "accomplishments": [
+      {
+        "statement": "Built a CNN model to predict Facial Keypoints using NumPy, OpenCV, and PyTorch."
+      },
+      {
+        "statement": "Trained the CNN model to detect faces and predicts 68 distinguishing keypoints on that face."
+      },
+      {
+        "statement": "Pre-processed input images to the CNN model from noises for training using Modern Computer Vision Techniques."
+      }
+    ]
+  },
+  {
+    "title": "Self-Driving RC Car (Club)",
+    "tag": "self-driving-RC-car",
+    "date": "5/2018 - Present",
+    "img": "/img/no-image.jpg",
+    "code": "https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen",
+    "demo": "NONE",
+    "accomplishments": [
+      {
+        "statement": "Wrote a web app that streams a live-feed and a controller to control an RC Car’s controller, Raspberry Pi, using Node.js, JavaScript, and Python."
+      },
+      {
+        "statement": "Researched and cleaned a set of datasets in a cloud-server to be used to train the machine learning model."
+      },
+      {
+        "statement": "Built the structure of the intelligent agent and machine learning model."
+      }
+    ]
+  },
+  {
+    "title": "Image Classification (Academic)",
+    "tag": "image-classification",
+    "date": "5/2018",
+    "img": "/img/no-image.jpg",
+    "code": "https://github.com/madebymaze/image-classification",
+    "demo": "NONE",
+    "accomplishments": [
+      {
+        "statement": "Wrote an Multiple Layer Neural Networks (MLP) that classifies images using NumPy and PyTorch."
+      },
+      {
+        "statement": "Trained the MLP model using CIFAR-10 dataset."
+      },
+      {
+        "statement": "Documented and reported the MLP’s accuracy and results using LATEX."
+      }
+    ]
+  },
+  {
+    "title": "Aces Up Game (Academic)",
+    "tag": "aces-up-game",
+    "date": "11/2017 - 12/2017",
+    "img": "/img/no-image.jpg",
+    "code": "https://github.com/madebymaze/aces-up-game",
+    "demo": "https://aceuposu.herokuapp.com/",
+    "accomplishments": [
+      {
+        "statement": "Wrote a web app with a team using Java Ninja framework for back-end, JavaScript for front-end, and Heroku and GitHub to host the web app."
+      },
+      {
+        "statement": "Built interactive animations and a tracking system using JavaScript."
+      },
+      {
+        "statement": "Won the Best Web Application for Software Engineering I (CS-361)."
+      }
+    ]
+  },
+  {
+    "title": "Personal Website",
+    "tag": "personal-website",
+    "date": "12/2016",
+    "img": "/img/no-image.jpg",
+    "code": "https://github.com/madebymaze/personal-website",
+    "demo": "https://madebymaze.xyz/",
+    "accomplishments": [
+      {
+        "statement": "Wrote a personal website using Node.ks for back-end and JavaScript for front-end."
+      },
+      {
+        "statement": "Hosted my website on virtual machine (DigitalOcean)."
+      },
+      {
+        "statement": "Wrote a NGINX script that directs HTTP requests to HTTPS and maps networks."
+      }
+    ]
+  },
+  {
+    "title": "A.I. for a 2D Grid Game (Academic)",
+    "tag": "ai-agent-2d",
+    "date": "4/2016",
+    "img": "/img/no-image.jpg",
+    "code": "https://github.com/madebymaze/ai-agent-2d",
+    "demo": "NONE",
+    "accomplishments": [
+      {
+        "statement": "Wrote a 2D grid game, Hunt the Wumpus, with a dynamic grid size using C++."
+      },
+      {
+        "statement": "Wrote an embedded intelligent agent, inspired by Minesweepers, to solve the game using Probability Distribution Methods."
+      },
+      {
+        "statement": "Acquired code organization skills by modularizing my programs and defining appropriate classes."
+      }
+    ]
+  }
+]

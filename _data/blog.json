@@ -1,0 +1,36 @@
+{
+  "ready": [
+    {
+      "title": "Done",
+      "date": "",
+      "type": "book",
+      "url": "https://iamalotaibi/underwork"
+    },
+    {
+      "title": "Done",
+      "date": "",
+      "type": "paper",
+      "url": "https://iamalotaibi/underwork"
+    },
+    {
+      "title": "Done",
+      "date": "",
+      "type": "study",
+      "url": "https://iamalotaibi/underwork"
+    },
+    {
+      "title": "Done",
+      "date": "",
+      "type": "NONE",
+      "url": "https://iamalotaibi/underwork"
+    }
+  ],
+  "wait":[
+    {
+      "title": "Theory of Algorithms",
+      "date": "",
+      "type": "paper",
+      "url": "https://iamalotaibi/underwork"
+    }
+  ]
+}

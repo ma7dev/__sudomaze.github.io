@@ -1,0 +1,20 @@
+<div id="secondary">
+        <ul>
+          <li><a href="mailto:mail@madebymaze.xyz" id="work-btn">I am currently <strong>accepting new projects</strong> for Winter Quarter 2019</a></li>
+          <hr class="breaker">
+          <li id="social-list">
+          {% for member in site.data.about.social %}
+          <a href="{{ member.link }}" id="{{ member.title }}" class="social-btn"  target="_blank"><i class="fab fa-{{ member.title }}" aria-hidden="true"></i></a>
+          {% endfor %}
+          <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>  </li>
+        <hr class="breaker">
+        <li id="frieinds-list">
+          <strong><i class="fas fa-users"></i> Friends:</strong>
+          <ul id="friends-list">
+            {% for member in site.data.about.friends %}
+            <li><a href="{{ member.link }}" class="friends-btn"  target="_blank">{{ member.name }}</a></li>
+            {% endfor %}
+          </ul>
+        </li>
+      </ul>
+      </div>

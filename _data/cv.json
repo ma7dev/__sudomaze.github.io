@@ -1,0 +1,113 @@
+{
+  "ed": [
+    {
+      "school": "Oregon State Univeristy",
+      "location": "Corvallis, OR (USA)",
+      "date": "9/2015 - 6/2019(expected date)",
+      "major": "Computer Science Applied in Artificial Intelligence, Bachelor of Science.",
+      "minor": "Actuarial Science, Bachelor of Science.",
+      "courses": "NONE"
+    }
+  ],
+  "ex": [
+    {
+      "title": "Center for Genome Research and Biocomputing",
+      "location": "Corvallis, OR (USA)",
+      "date": "11/2018 - Present",
+      "position": "GPU Computational Researcher",
+      "details": [
+        {
+          "statement": "Built a website that races multiplehigh-end GPUs, such as Power4 with V100, Power8 with P100, Intel x86with K80, and much more, against each other and running on them multiplecutting-edge deep learningmodels, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more."
+        },
+        {
+          "statement": "Built a fully dynamic website usingJavaScript,PHP, andBASH."
+        }
+      ]
+    },
+    {
+      "title": "Saudi Aramco Summer Program",
+      "location": "Dhahran, Eastern Province (Saudi Arabia)",
+      "date": "Summer 2012",
+      "position": "Lead Photographer",
+      "details": [
+        {
+          "statement": "Managed a team of 6 photographers to document summer program events."
+        },
+        {
+          "statement": "Hosted and organized multiple teaching photography sessions for more than 70 inspired photographers."
+        }
+      ]
+    }
+  ],
+  "act": [
+    {
+      "title": "OSU Machine Learning Club",
+      "location": "Corvallis, OR (USA)",
+      "date": "5/2017 - Present",
+      "position": "Active Member",
+      "details": [
+        {
+          "statement": "Worked with a team on Self-Driving RC Car."
+        },
+        {
+          "statement": "Applied my knowledge in web development and machine learning to build the first prototype."
+        }
+      ]
+    },
+    {
+      "title": "PyImageConf2018 (Conference)",
+      "location": "San Francisco, CA (USA)",
+      "date": "8/2018",
+      "position": "Attendee",
+      "details": [
+        {
+          "statement": "Attended a conference that focuses on advanced techniques in Computer Vision and Deep Learning research and their implementations to solve real world problems."
+        },
+        {
+          "statement": "Built a Faster Regional Neural Networks (Faster-RNN)’s logic from scratch to classify images with higher accuracy than well-known networks using NumPy and PyTorch."
+        }
+      ]
+    },
+    {
+      "title": "DesertHacks (Hackathon)",
+      "location": "Phoenix, AZ (USA)",
+      "date": "2/2017",
+      "position": "Participant",
+      "details": [
+        {
+          "statement": "Worked with a team to build a web application that analysis a user’s behavior from a list of previous behaviors based on Markov Chain Methods using Node.js and Flask for back-end, JavaScript for front-end, Python for data analysis, and SQL for data saving and pulling."
+        },
+        {
+          "statement": "Hosted the web application on Amazon Web-Services (AWS)."
+        }
+      ]
+    },
+    {
+      "title": "OSU App Club",
+      "location": "Corvallis, OR (USA)",
+      "date": "9/2016 - 11/2017",
+      "position": "Active Member",
+      "details": [
+        {
+          "statement": "Worked to build small projects using new tools with a club member."
+        },
+        {
+          "statement": "Helped new members in explaining web development technologies and common practices in development."
+        }
+      ]
+    }
+  ],
+  "skills":[
+    [
+      {
+        "title": "JavaScript",
+        "love": "T"
+      },
+      {
+        "title": "JavaScript",
+        "love": "T"
+      }
+    ]
+  ]
+
+}

@@ -1,0 +1,10 @@
+<footer id="site-footer">
+  <p><i class="fal fa-copyright" aria-hidden="true"></i> {{site.time | date: '%Y'}}, Mazen Alotaibi.</p>
+  {% for member in site.data.about.social %}
+  <a href="{{ member.link }}" id="{{ member.title }}" class="social-btn"  target="_blank"><i class="fab fa-{{ member.title }}" aria-hidden="true"></i></a>
+  {% endfor %}
+  <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+</footer>
+<script type="text/javascript" src="/public/js/index.js"></script>
+</div>
+</body>

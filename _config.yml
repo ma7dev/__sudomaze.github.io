@@ -1,0 +1,19 @@
+logo: # add logo name
+title: Mazen's Space
+description:
+  I like Deep Learning
+permalink: ':title/'
+baseurl: ""
+url: ""
+
+# Paginate
+paginate: 8
+paginate_path: /page:num/
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate, jekyll-sitemap]
+
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
