@@ -20,7 +20,14 @@
 <loc>http://localhost:4000/lab/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/public/pdf/cv.pdf</loc>
-<lastmod>2018-12-14T16:19:54-08:00</lastmod>
+<loc>http://localhost:4000/lab/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/public/pdf/CV.pdf</loc>
+<lastmod>2018-12-19T18:43:37-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/public/pdf/exploring-robot.pdf</loc>
+<lastmod>2018-12-20T01:33:52-08:00</lastmod>
 </url>
 </urlset>

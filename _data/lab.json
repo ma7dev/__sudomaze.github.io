@@ -1,11 +1,117 @@
 [
   {
+    "title": "Senior Design Project",
+    "tag": "senior-design-project",
+    "date": "10/2018 - Present",
+    "img": "/img/no-image.jpg",
+    "code": "https://github.com/PavementPrometheus/Street-Watch",
+    "demo": "NONE",
+    "report": "NONE",
+    "description": "",
+    "tools": [
+      {
+        "tool": "python"
+      },
+      {
+        "tool": "pytorch"
+      },
+      {
+        "tool": "opencv"
+      },
+      {
+        "tool": "nodejs"
+      }
+    ],
+    "accomplishments": [
+      {
+        "statement": "Built a website that races multiple high-end GPUs, such as POWER9 Newell(AC922) with V100 GPGPU,POWER8 Minsky with P100 GPGPU, Intel x86 with K80 GPU, and much more."
+      },
+      {
+        "statement": "Each race will be ran against each other and running on them multiple cutting-edge deep learning models, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more."
+      }
+    ]
+  },
+  {
+    "title": "AI Demo (Job)",
+    "tag": "ai-demo",
+    "date": "11/2018 - 12/2018",
+    "img": "/img/ai-demo.png",
+    "code": "NONE",
+    "demo": "http://techdata.cgrb.oregonstate.edu/access/",
+    "report": "NONE",
+    "description": "",
+    "tools": [
+      {
+        "tool": "js"
+      },
+      {
+        "tool": "php"
+      },
+      {
+        "tool": "bash"
+      }
+    ],
+    "accomplishments": [
+      {
+        "statement": "Built a website that races multiple high-end GPUs, such as POWER9 Newell(AC922) with V100 GPGPU,POWER8 Minsky with P100 GPGPU, Intel x86 with K80 GPU, and much more."
+      },
+      {
+        "statement": "Each race will be ran against each other and running on them multiple cutting-edge deep learning models, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more."
+      }
+    ]
+  },
+  {
+    "title": "Exploring Robot (Academic)",
+    "tag": "exploring-robot",
+    "date": "11/2018",
+    "img": "/img/exploring-robot.png",
+    "code": "https://github.com/madebymaze/exploring-robot",
+    "demo": "NONE",
+    "report": "/pdf/exploring-robot.pdf",
+    "description": "",
+    "tools": [
+      {
+        "tool": "python"
+      },
+      {
+        "tool": "cplusplus"
+      },
+      {
+        "tool": "ros"
+      }
+    ],
+    "accomplishments": [
+      {
+        "statement": "Designed an exploration package utilizing the gmapping and nav bundle packages to allow a simulated robot to explore an unknown environment."
+      },
+      {
+        "statement": "Designed an algorithm that generates waypoints to be followed and each waypoint is weighted based on a convolutional filter with some weighted conditions."
+      },
+      {
+        "statement": "Worked with a team to build the project and counter occuring bugs that is related to ROS nodes behavior and the selection of waypoints to follow."
+      }
+    ]
+  },
+  {
     "title": "Image Captioning",
     "tag": "image-captioning",
     "date": "7/2018 - 8/2018",
     "img": "/img/no-image.jpg",
     "code": "https://github.com/madebymaze/image-captioning",
     "demo": "NONE",
+    "report": "NONE",
+    "description": "",
+    "tools": [
+      {
+        "tool": "python"
+      },
+      {
+        "tool": "pytorch"
+      },
+      {
+        "tool": "opencv"
+      }
+    ],
     "accomplishments": [
       {
         "statement": "Built a Convolutions Neural Network-Recurrence Neural Network (CNN-RNN) model to automat- ically generate captions from images using NumPy, OpenCV, and PyTorch."
@@ -25,6 +131,19 @@
     "img": "/img/no-image.jpg",
     "code": "https://github.com/madebymaze/facial-keypoint-detection",
     "demo": "NONE",
+    "report": "NONE",
+    "description": "",
+    "tools": [
+      {
+        "tool": "python"
+      },
+      {
+        "tool": "pytorch"
+      },
+      {
+        "tool": "opencv"
+      }
+    ],
     "accomplishments": [
       {
         "statement": "Built a CNN model to predict Facial Keypoints using NumPy, OpenCV, and PyTorch."
@@ -40,10 +159,26 @@
   {
     "title": "Self-Driving RC Car (Club)",
     "tag": "self-driving-RC-car",
-    "date": "5/2018 - Present",
-    "img": "/img/no-image.jpg",
+    "date": "5/2018 - 8/2018",
+    "img": "/img/self-driving-RC-car.jpg",
     "code": "https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen",
     "demo": "NONE",
+    "report": "NONE",
+    "description": "",
+    "tools": [
+      {
+        "tool": "python"
+      },
+      {
+        "tool": "nodejs"
+      },
+      {
+        "tool": "js"
+      },
+      {
+        "tool": "c"
+      }
+    ],
     "accomplishments": [
       {
         "statement": "Wrote a web app that streams a live-feed and a controller to control an RC Car’s controller, Raspberry Pi, using Node.js, JavaScript, and Python."
@@ -57,12 +192,25 @@
     ]
   },
   {
-    "title": "Image Classification (Academic)",
+    "title": "Image Classification",
     "tag": "image-classification",
     "date": "5/2018",
     "img": "/img/no-image.jpg",
     "code": "https://github.com/madebymaze/image-classification",
     "demo": "NONE",
+    "report": "NONE",
+    "description": "",
+    "tools": [
+      {
+        "tool": "python"
+      },
+      {
+        "tool": "pytorch"
+      },
+      {
+        "tool": "numpy"
+      }
+    ],
     "accomplishments": [
       {
         "statement": "Wrote an Multiple Layer Neural Networks (MLP) that classifies images using NumPy and PyTorch."
@@ -79,9 +227,19 @@
     "title": "Aces Up Game (Academic)",
     "tag": "aces-up-game",
     "date": "11/2017 - 12/2017",
-    "img": "/img/no-image.jpg",
+    "img": "/img/aceuposu.png",
     "code": "https://github.com/madebymaze/aces-up-game",
     "demo": "https://aceuposu.herokuapp.com/",
+    "report": "NONE",
+    "description": "",
+    "tools": [
+      {
+        "tool": "jquery"
+      },
+      {
+        "tool": "java"
+      }
+    ],
     "accomplishments": [
       {
         "statement": "Wrote a web app with a team using Java Ninja framework for back-end, JavaScript for front-end, and Heroku and GitHub to host the web app."
@@ -95,15 +253,31 @@
     ]
   },
   {
-    "title": "Personal Website",
+    "title": "Personal Website V1",
     "tag": "personal-website",
     "date": "12/2016",
     "img": "/img/no-image.jpg",
     "code": "https://github.com/madebymaze/personal-website",
     "demo": "https://madebymaze.xyz/",
+    "report": "NONE",
+    "description": "",
+    "tools": [
+      {
+        "tool": "bootstrap"
+      },
+      {
+        "tool": "js"
+      },
+      {
+        "tool": "nodejs"
+      },
+      {
+        "tool": "nginx"
+      }
+    ],
     "accomplishments": [
       {
-        "statement": "Wrote a personal website using Node.ks for back-end and JavaScript for front-end."
+        "statement": "Wrote a personal website using Node.js for back-end and JavaScript for front-end."
       },
       {
         "statement": "Hosted my website on virtual machine (DigitalOcean)."
@@ -114,12 +288,19 @@
     ]
   },
   {
-    "title": "A.I. for a 2D Grid Game (Academic)",
+    "title": "A.I. for a 2D Grid Game",
     "tag": "ai-agent-2d",
     "date": "4/2016",
     "img": "/img/no-image.jpg",
     "code": "https://github.com/madebymaze/ai-agent-2d",
     "demo": "NONE",
+    "report": "NONE",
+    "description": "",
+    "tools": [
+      {
+        "tool": "cplusplus"
+      }
+    ],
     "accomplishments": [
       {
         "statement": "Wrote a 2D grid game, Hunt the Wumpus, with a dynamic grid size using C++."

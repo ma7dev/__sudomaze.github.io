@@ -17,10 +17,10 @@
       "position": "GPU Computational Researcher",
       "details": [
         {
-          "statement": "Built a website that races multiplehigh-end GPUs, such as Power4 with V100, Power8 with P100, Intel x86with K80, and much more, against each other and running on them multiplecutting-edge deep learningmodels, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more."
+          "statement": "Built a website that races multiple high-end GPUs, such as POWER9 Newell(AC922) with V100 GPGPU,POWER8 Minsky with P100 GPGPU, Intel x86 with K80 GPU, and much more, against each other and running on them multiple cutting-edge deep learning models, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more."
         },
         {
-          "statement": "Built a fully dynamic website usingJavaScript,PHP, andBASH."
+          "statement": "Built a fully dynamic website usingJavaScript,PHP, and BASH."
         }
       ]
     },
