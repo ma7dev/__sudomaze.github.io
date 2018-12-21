@@ -14,6 +14,7 @@ paginate_path: /page:num/
 markdown: kramdown
 highlighter: rouge
 plugins: [jekyll-paginate, jekyll-sitemap]
-
+gems:
+  - jekyll-last-modified-at
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

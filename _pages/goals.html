@@ -1,0 +1,47 @@
+---
+layout: default
+title: Goals
+permalink: /goals/
+---
+<div id="site-body">
+        <div id="site-img">
+          <div id="entry-thumbnail" style="border-bottom: dashed black">
+            <img src="/public/img/goals-wallpaper.png" alt="">
+        </div>
+        </div>
+              <main id="site-content">
+                <div id="primary">
+                  <ul id="blog-feed">
+                    <li>
+                      <h2>Goals</h2>
+                      <ul>
+                        {% for goal in site.data.goals.goals %}
+                        <li style="list-style-type: circle;">
+                            <p>{{ goal.goal }}</p>
+                            <div class="progress">
+                              <div class="loading-bar {{ goal.loading }}"></div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                      </ul>
+                    </li>
+                    <li>
+                      <h2>Wish-lists</h2>
+                      <ul>
+                        {% for wishlist in site.data.goals.wishlists %}
+                        <li style="list-style-type: circle;">
+                            <p {% if wishlist.done != "0" %} style="text-decoration-line:line-through" {% endif %}>{{ wishlist.goal }}</p>
+                        </li>
+                        {% endfor %}
+                      </ul>
+                    </li>
+                  </ul>
+                  <p style="text-align: center;">
+                      <script language="Javascript">
+                          document.write(new Date(document.lastModified));
+                      </script>
+                    </p>
+                </div>
+                {% include sidebar-main.html %}
+              </main>
+            </div>

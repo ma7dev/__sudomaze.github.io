@@ -28,6 +28,8 @@
 
     <!-- LIBRARY -->
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="/public/css/styles.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
@@ -43,13 +45,20 @@
         </div>
         <div id="site-navbar">
           <nav>
-            <!--<button class="menu-toggle" aria-controls="menu" aria-expanded="false">Menu</button>-->
+            <div id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div id="menu">
               <ul id="nav-menu">
                 <li><a href="/">About</a></li>
                 <li><a href="/blog">Blog</a></li>
+                <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/lab">Lab</a></li>
                 <li><a href="/cv">CV</a></li>
+                <li><a href="/goals">Goals</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
             </div>

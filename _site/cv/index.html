@@ -30,6 +30,8 @@
 
     <!-- LIBRARY -->
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="/public/css/styles.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
@@ -45,13 +47,20 @@
         </div>
         <div id="site-navbar">
           <nav>
-            <!--<button class="menu-toggle" aria-controls="menu" aria-expanded="false">Menu</button>-->
+            <div id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div id="menu">
               <ul id="nav-menu">
                 <li><a href="/">About</a></li>
                 <li><a href="/blog">Blog</a></li>
+                <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/lab">Lab</a></li>
                 <li><a href="/cv">CV</a></li>
+                <li><a href="/goals">Goals</a></li>
                 <li><a href="/contact">Contact</a></li>
               </ul>
             </div>
@@ -178,16 +187,16 @@
                       <div class="details">
                         <ul>
                           
-                          <li>Built a website that races multiple high-end GPUs, such as POWER9 Newell(AC922) with V100 GPGPU,POWER8 Minsky with P100 GPGPU, Intel x86 with K80 GPU, and much more.</li>
+                          <li>Designing the entire pipeline of the system, building the computer vision models, communicating with Dr. Li and our technical advisor from Georgia Tech, Chanho Kim, and assigning tasks and responsibilities to my teammates.</li>
                           
-                          <li>Each race will be ran against each other and running on them multiple cutting-edge deep learning models, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more.</li>
+                          <li>Worked on building a real-time object detection demo for our presentation to the City of Portland Representative and Dr. Li, setting up CARLA, a simulation tool, and collecting more than 2,000 images from Portland's surveillance cameras as our test dataset for our demo.</li>
                           
                         </ul>
                       </div>
                     </li>
                     
                     <li class="item-work">
-                      <h3 class="title"><a href="/lab/#ai-demo"  target="_blank">AI Demo (Job)</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 11/2018 - 12/2018</span></h3>
+                      <h3 class="title"><a href="/lab/#ai-demo"  target="_blank">AI Demo</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 11/2018 - 12/2018</span></h3>
                       <div class="details">
                         <ul>
                           
@@ -195,12 +204,14 @@
                           
                           <li>Each race will be ran against each other and running on them multiple cutting-edge deep learning models, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more.</li>
                           
+                          <li>Built a fully dynamic website using jQuery, PHP, and BASH.</li>
+                          
                         </ul>
                       </div>
                     </li>
                     
                     <li class="item-work">
-                      <h3 class="title"><a href="/lab/#exploring-robot"  target="_blank">Exploring Robot (Academic)</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 11/2018</span></h3>
+                      <h3 class="title"><a href="/lab/#exploring-robot"  target="_blank">Exploring Robot</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 11/2018</span></h3>
                       <div class="details">
                         <ul>
                           
@@ -245,7 +256,7 @@
                     </li>
                     
                     <li class="item-work">
-                      <h3 class="title"><a href="/lab/#self-driving-RC-car"  target="_blank">Self-Driving RC Car (Club)</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 5/2018 - 8/2018</span></h3>
+                      <h3 class="title"><a href="/lab/#self-driving-RC-car"  target="_blank">Self-Driving RC Car</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 5/2018 - 8/2018</span></h3>
                       <div class="details">
                         <ul>
                           
@@ -275,7 +286,7 @@
                     </li>
                     
                     <li class="item-work">
-                      <h3 class="title"><a href="/lab/#aces-up-game"  target="_blank">Aces Up Game (Academic)</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 11/2017 - 12/2017</span></h3>
+                      <h3 class="title"><a href="/lab/#aces-up-game"  target="_blank">Aces Up Game</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 11/2017 - 12/2017</span></h3>
                       <div class="details">
                         <ul>
                           
@@ -290,7 +301,7 @@
                     </li>
                     
                     <li class="item-work">
-                      <h3 class="title"><a href="/lab/#personal-website"  target="_blank">Personal Website V1</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 12/2016</span></h3>
+                      <h3 class="title"><a href="/lab/#personal-website"  target="_blank">Personal Website</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 12/2016</span></h3>
                       <div class="details">
                         <ul>
                           
@@ -395,27 +406,29 @@
                           <li><h4 class="skill-title">I/O Languages:</h4></li>
                           <li class="skill-list">C <i class="fas fa-heart" title="I LOVE IT"></i></li>
                           <li class="skill-list">C++ <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">Java</li>
+                          <li class="skill-list">Java </li>
                       </ul>
                       <ul class="skill-set">
                           <li><h4 class="skill-title">Scripting Languages:</h4></li>
                           <li class="skill-list">JavaScript <i class="fas fa-heart"></i></li>
                           <li class="skill-list">Python <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">PhP <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">PHP <i class="fas fa-heart" title="I LOVE IT"></i></li>
                           <li class="skill-list">BASH <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">R </li>
-                          <li class="skill-list">MATLAB</li>
+                          <li class="skill-list">R <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">NGINX </li>
+                          <li class="skill-list">MATLAB </li>
                       </ul>
                       <ul class="skill-set">
                           <li><h4 class="skill-title">Libraries/Frameworks:</h4></li>
                           <li class="skill-list">NumPy <i class="fas fa-heart" title="I LOVE IT"></i></li>
                           <li class="skill-list">OpenCV <i class="fas fa-heart" title="I LOVE IT"></i></li>
                           <li class="skill-list">PyTorch <i class="fas fa-heart" title="I LOVE IT"></i></li>
+                          <li class="skill-list">jQuery <i class="fas fa-heart" title="I LOVE IT"></i></li>
                           <li class="skill-list">Node.js <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">TensorFlow.js <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">TensorFlow</li>
-                          <li class="skill-list">Keras</li>
-                          <li class="skill-list">React.js</li>
+                          <li class="skill-list">Flask </li>
+                          <li class="skill-list">TensorFlow (limited)</li>
+                          <li class="skill-list">Keras (limited)</li>
+                          <li class="skill-list">React.js (limited)</li>
                       </ul>
                     </div>
                   </div>
@@ -446,13 +459,9 @@
               </li>
               <div id="download-area">
                 <a id="download-btn" href="/public/pdf/CV.pdf"  target="_blank"><i class="fas fa-cloud-download"></i> DOWNLOAD</a>
-                <p>
+                <p style="text-align: center;">
                   <script language="Javascript">
-                    var xhReq = new XMLHttpRequest();
-                    xhReq.open("HEAD", "/public/pdf/CV.pdf", false);
-                    xhReq.send(null);
-                    var lastModified = xhReq.getResponseHeader("Last-Modified");
-                    document.write(lastModified);
+                      document.write(new Date(document.lastModified));
                   </script>
                 </p>
               </div>
@@ -474,6 +483,113 @@
   
   <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 </footer>
+<style>
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.333%;
+            height: 0;
+            background: black;
+        }
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }    
+        </style>
+        
+        <script>
+        function get_youtube_id(url) {
+            var p = /^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+            return (url.match(p)) ? RegExp.$1 : false;
+        }
+        function vimeo_embed(url,el) {
+            var id = false;
+            $.ajax({
+              url: 'https://vimeo.com/api/oembed.json?url='+url,
+              async: true,
+              success: function(response) {
+                if(response.video_id) {
+                  id = response.video_id;
+                  if(url.indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
+                  if(url.indexOf('loop=1') !== -1) var loop=1; else var loop=0;
+                  var theInnerHTML = '<div class="videoWrapper"><iframe src="https://player.vimeo.com/video/'+id+'/?byline=0&title=0&portrait=0';
+                  if(autoplay==1) theInnerHTML += '&autoplay=1';
+                  if(loop==1) theInnerHTML += '&loop=1';
+                  theInnerHTML += '" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'; 
+                  el.innerHTML = theInnerHTML;
+                }
+              }
+            });
+        }
+        function video_embed() {
+            var p = document.getElementsByTagName('p');
+            for(var i = 0; i < p.length; i++) {
+                //check if this is an external url (that starts with https:// or http://
+                if (p[i].innerHTML.indexOf("http://") == 0 ||
+                    p[i].innerHTML.indexOf("https://") == 0) {
+                    var youtube_id = get_youtube_id(p[i].innerHTML);
+                    if(youtube_id) {
+                        if(p[i].innerHTML.indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
+                        if(p[i].innerHTML.indexOf('loop=1') !== -1) var loop=1; else var loop=0;
+                        var theInnerHTML = '<div class="videoWrapper"><iframe width="720" height="420" src="https://www.youtube.com/embed/' + youtube_id + '?rel=0&showinfo=0';
+                        if(autoplay==1) theInnerHTML += '&autoplay=1';
+                        if(loop==1) theInnerHTML += '&loop=1&playlist='+youtube_id+'&version=3';
+                        theInnerHTML += '" frameborder="0" allowfullscreen></iframe></div>';
+                        p[i].innerHTML = theInnerHTML;
+                    }
+                    if(p[i].innerHTML.indexOf('vimeo.com') !== -1) {
+                        //ask vimeo for the id and place the embed
+                        vimeo_embed(p[i].innerHTML,p[i]);
+                    }
+                }
+            }
+        }
+        video_embed();
+        
+        function mp3_embed() {
+            var p = document.getElementsByTagName('p');
+            for(var i = 0; i < p.length; i++) {
+                if(p[i].innerHTML.indexOf('.mp3') !== -1) {
+                    var str = p[i].innerHTML.split('?');
+                    if(str.length == 1) str[1] = '';
+                    var str1 = str[1];
+                    str1 = str1.replace('&','').replace('&','');
+                    str1 = str1.replace('autoplay=1','').replace('autoplay=0','');
+                    str1 = str1.replace('loop=1','').replace('loop=0','');
+                    str1 = str1.replace('controls=0','').replace('controls=1','');
+        
+                    if (str[0].lastIndexOf('.mp3', str[0].length - 4) === str[0].length - 4 && str1.length == 0) {
+                        if(str[1].indexOf('autoplay=1') !== -1) var autoplay=1; else var autoplay=0;
+                        if(str[1].indexOf('loop=1') !== -1) var loop=1; else var loop=0;
+                        if(str[1].indexOf('controls=0') !== -1) var controls=0; else var controls=1;
+                        var newInnerHTML = '<audio';
+                        if(autoplay==1) newInnerHTML += ' autoplay';
+                        if(loop==1) newInnerHTML += ' loop';
+                        if(controls==1) newInnerHTML += ' controls';
+                        newInnerHTML += '><source src="'+str[0]+'" type="audio/mpeg">Your browser does not support the audio element.</audio>';
+                        p[i].innerHTML = newInnerHTML;
+                    }
+                }
+            }
+        }
+        mp3_embed();
+        </script>
+<script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-131236199-1']);
+        _gaq.push(['_gat._forceSSL']);
+        _gaq.push(['_gat._anonymizeIp']);
+        _gaq.push(['_trackPageview']);
+      
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 <script type="text/javascript" src="/public/js/index.js"></script>
 </div>
 </body>

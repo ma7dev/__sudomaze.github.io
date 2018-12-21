@@ -1,0 +1,47 @@
+{
+    "goals": [
+        {
+          "goal": "GPA: 3.70/4.00 or more",
+          "loading": "90"
+        },
+        {
+          "goal": "Work more than 360 hours total until graduation",
+          "loading": "20"
+        },
+        {
+          "goal": "Push to GitHub for more than 120 days strike",
+          "loading": "0"
+        },
+        {
+          "goal": "Lose 20kg",
+          "loading": "0"
+        }
+    ],
+    "wishlists": [
+        {
+          "goal": "Publish 2 research papers related to my Senior Design Project",
+          "done": "0"
+        },
+        {
+          "goal": "Have a computer vision system ready for commercial use",
+          "done": "0"
+        },
+        {
+          "goal": "Complete all projects",
+          "done": "0"
+        },
+        {
+          "goal": "Add more online demos",
+          "done": "0"
+        },
+        {
+          "goal": "Write your first blog",
+          "done": "0"
+        },
+        {
+          "goal": "Get accepted for Graduate School",
+          "done": "0"
+        }
+    ]
+}
+  

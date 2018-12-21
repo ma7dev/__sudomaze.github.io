@@ -24,15 +24,15 @@
     ],
     "accomplishments": [
       {
-        "statement": "Built a website that races multiple high-end GPUs, such as POWER9 Newell(AC922) with V100 GPGPU,POWER8 Minsky with P100 GPGPU, Intel x86 with K80 GPU, and much more."
+        "statement": "Designing the entire pipeline of the system, building the computer vision models, communicating with Dr. Li and our technical advisor from Georgia Tech, Chanho Kim, and assigning tasks and responsibilities to my teammates."
       },
       {
-        "statement": "Each race will be ran against each other and running on them multiple cutting-edge deep learning models, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more."
+        "statement": "Worked on building a real-time object detection demo for our presentation to the City of Portland Representative and Dr. Li, setting up CARLA, a simulation tool, and collecting more than 2,000 images from Portland's surveillance cameras as our test dataset for our demo."
       }
     ]
   },
   {
-    "title": "AI Demo (Job)",
+    "title": "AI Demo",
     "tag": "ai-demo",
     "date": "11/2018 - 12/2018",
     "img": "/img/ai-demo.png",
@@ -42,7 +42,7 @@
     "description": "",
     "tools": [
       {
-        "tool": "js"
+        "tool": "jquery"
       },
       {
         "tool": "php"
@@ -57,11 +57,14 @@
       },
       {
         "statement": "Each race will be ran against each other and running on them multiple cutting-edge deep learning models, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more."
+      },
+      {
+        "statement": "Built a fully dynamic website using jQuery, PHP, and BASH."
       }
     ]
   },
   {
-    "title": "Exploring Robot (Academic)",
+    "title": "Exploring Robot",
     "tag": "exploring-robot",
     "date": "11/2018",
     "img": "/img/exploring-robot.png",
@@ -157,7 +160,7 @@
     ]
   },
   {
-    "title": "Self-Driving RC Car (Club)",
+    "title": "Self-Driving RC Car",
     "tag": "self-driving-RC-car",
     "date": "5/2018 - 8/2018",
     "img": "/img/self-driving-RC-car.jpg",
@@ -224,7 +227,7 @@
     ]
   },
   {
-    "title": "Aces Up Game (Academic)",
+    "title": "Aces Up Game",
     "tag": "aces-up-game",
     "date": "11/2017 - 12/2017",
     "img": "/img/aceuposu.png",
@@ -253,7 +256,7 @@
     ]
   },
   {
-    "title": "Personal Website V1",
+    "title": "Personal Website",
     "tag": "personal-website",
     "date": "12/2016",
     "img": "/img/no-image.jpg",
@@ -263,10 +266,10 @@
     "description": "",
     "tools": [
       {
-        "tool": "bootstrap"
+        "tool": "js"
       },
       {
-        "tool": "js"
+        "tool": "jquery"
       },
       {
         "tool": "nodejs"
