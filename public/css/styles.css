@@ -870,6 +870,13 @@ display: list-item;
       padding-left: 0;
       text-align: center;
 }
+  #download-area li{
+    display: table-cell;
+    width: 1%;
+    float: none;
+    margin:2px;
+    text-align:center;
+  }
 #download-btn{
   -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
     -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
