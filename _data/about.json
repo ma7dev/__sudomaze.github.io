@@ -1,33 +1,36 @@
 {
   "currentTerm": [
     {
-      "title": "SENIOR SOFTWARE ENGINEERING PROJECT"
+      "title": "Senior Software Engineering Project"
     },
     {
-      "title": "DESCRIPTIVE ASTRONOMY"
+      "title": "Descriptive Astronomy"
     },
     {
-      "title": "GRAPH THEORY WITH APPLICATIONS TO COMPUTER SCIENCE"
+      "title": "Graph Theory with Application to Computer Science"
     },
     {
-      "title": "INTRODUCTION TO USABILITY ENGINEERING"
+      "title": "Introduction to Usability Engineering"
     },
     {
-      "title": "SOCCER INDOOR"
+      "title": "Soccer Indoor"
     }
   ],
   "nextTerm": [
     {
-      "title": "SENIOR SOFTWARE ENGINEERING PROJECT"
+      "title": "Senior Software Engineering Project"
     },
     {
-      "title": "PROGRAMMING LANGUAGE FUNDAMENTALS"
+      "title": "Applied Stochastic Models"
     },
     {
-      "title": "HIV/AIDS & STIS IN MODERN SOC"
+      "title": "Programming Language Fundamentals"
     },
     {
-      "title": "SYSTEM ADMINISTRATION"
+      "title": "System Administration"
+    },
+    {
+      "title": "HIV/AIDS In Modern Societies"
     }
   ],
   "currentReadings":[
@@ -59,10 +62,6 @@
   ],
   "social":[
     {
-      "title": "reddit-alien",
-      "link": "https://www.reddit.com/user/madebymaze/"
-    },
-    {
       "title": "linkedin",
       "link": "https://linkedin.com/in/madebymaze"
     },
@@ -73,10 +72,6 @@
     {
       "title": "twitter",
       "link": "https://twitter.com/madebymaze"
-    },
-    {
-      "title": "spotify",
-      "link": "https://open.spotify.com/user/themazenota?si=6T4Fx-i-QM6io7TBYEhsJw"
     }
   ]
 }

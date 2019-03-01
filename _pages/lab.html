@@ -11,7 +11,7 @@ permalink: /lab/
                  <h2 class="lab-title">{{ member.title }}<span  class="lab-date">{{ member.date }}</span></h2>
                  <div class="lab-hover">
                    <div class="hover-img">
-                     <img src="/public/{{ member.img }}" alt="">
+                     <img src="/public{{ member.image }}" alt="">
                      <div class="hover-text">
                        <ul>
                          {% if member.code != "NONE" %}
@@ -30,7 +30,7 @@ permalink: /lab/
                      <ul class="lab-tools">
                         {% for tools in member.tools %}
                           {% for mapping in site.data.mapping %}
-                            {% if mapping.tool == tools.tool %}
+                            {% if mapping.tool == tools.tag %}
                             <li class="lab-tools-item" title="{{ mapping.tool }}" style="margin-right: 20px;">{{ mapping.icon }}</li>
                             {% endif %}
                           {% endfor %}

@@ -1,25 +1,57 @@
 [
   {
+      "title": "Plankton CNN",
+      "tag": "plankton-cnn",
+      "date": "2/2019 - Present",
+      "image": "/images/plankton.png",
+      "code": "https://github.com/PavementPrometheus/Street-Watch",
+      "demo": "NONE",
+      "report": "NONE",
+      "description": "Implementing an image processing pipeline to automate the classification of in situ images of plankton.",
+      "tools": [
+          {
+              "tool": "Keras",
+              "tag": "keras"
+          },
+          {
+              "tool": "OpenCV",
+              "tag": "opencv"
+          },
+          {
+              "tool": "TensorFlow",
+              "tag": "tensorflow"
+          }
+      ],
+      "accomplishments": [
+          {
+              "statement": "Designing the entire pipeline of the system, building the computer vision models, communicating with Dr. Li and our technical advisor from Georgia Tech, Chanho Kim, and assigning tasks and responsibilities to my teammates."
+          },
+          {
+              "statement": "Worked on building a real-time object detection demo for our presentation to the City of Portland Representative and Dr. Li, setting up CARLA, a simulation tool, and collecting more than 2,000 images from Portland's surveillance cameras as our test dataset for our demo."
+          }
+      ]
+  },
+  {
     "title": "Senior Design Project",
     "tag": "senior-design-project",
     "date": "10/2018 - Present",
-    "img": "/img/no-image.jpg",
+    "image": "/images/pedestrian-counting-and-privacy-preservation.jpg",
     "code": "https://github.com/PavementPrometheus/Street-Watch",
     "demo": "NONE",
     "report": "NONE",
     "description": "",
     "tools": [
       {
-        "tool": "python"
+        "tool": "PyTorch",
+        "tag": "pytorch"
       },
       {
-        "tool": "pytorch"
+        "tool": "OpenCV",
+        "tag": "opencv"
       },
       {
-        "tool": "opencv"
-      },
-      {
-        "tool": "nodejs"
+        "tool": "Node.js",
+        "tag": "nodejs"
       }
     ],
     "accomplishments": [
@@ -32,34 +64,41 @@
     ]
   },
   {
-    "title": "AI Demo",
+    "title": "Tech Data AI Demo",
     "tag": "ai-demo",
-    "date": "11/2018 - 12/2018",
-    "img": "/img/ai-demo.png",
+    "date": "11/2018 - Present",
+    "image": "/images/ai-demo.png",
     "code": "NONE",
     "demo": "http://techdata.cgrb.oregonstate.edu/access/",
     "report": "NONE",
     "description": "",
     "tools": [
       {
-        "tool": "jquery"
+        "tool": "Bootstrap",
+        "tag": "bootstrap"
       },
       {
-        "tool": "php"
+        "tool": "jQuery",
+        "tag": "jquery"
       },
       {
-        "tool": "bash"
+        "tool": "Node.js",
+        "tag": "nodejs"
+      },
+      {
+        "tool": "Bash",
+        "tag": "bash"
       }
     ],
     "accomplishments": [
       {
-        "statement": "Built a website that races multiple high-end GPUs, such as POWER9 Newell(AC922) with V100 GPGPU,POWER8 Minsky with P100 GPGPU, Intel x86 with K80 GPU, and much more."
+        "statement": "..."
       },
       {
-        "statement": "Each race will be ran against each other and running on them multiple cutting-edge deep learning models, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more."
+        "statement": "..."
       },
       {
-        "statement": "Built a fully dynamic website using jQuery, PHP, and BASH."
+        "statement": "..."
       }
     ]
   },
@@ -67,20 +106,23 @@
     "title": "Exploring Robot",
     "tag": "exploring-robot",
     "date": "11/2018",
-    "img": "/img/exploring-robot.png",
+    "image": "/images/exploring-robot.png",
     "code": "https://github.com/madebymaze/exploring-robot",
     "demo": "NONE",
     "report": "/pdf/exploring-robot.pdf",
     "description": "",
     "tools": [
       {
-        "tool": "python"
+        "tool": "Python",
+        "tag": "pytorch"
       },
       {
-        "tool": "cplusplus"
+        "tool": "C++",
+        "tag": "cplusplus"
       },
       {
-        "tool": "ros"
+        "tool": "ROS",
+        "tag": "ros"
       }
     ],
     "accomplishments": [
@@ -99,20 +141,19 @@
     "title": "Image Captioning",
     "tag": "image-captioning",
     "date": "7/2018 - 8/2018",
-    "img": "/img/no-image.jpg",
+    "image": "/images/no-image.jpg",
     "code": "https://github.com/madebymaze/image-captioning",
     "demo": "NONE",
     "report": "NONE",
     "description": "",
     "tools": [
       {
-        "tool": "python"
+        "tool": "PyTorch",
+        "tag": "pytorch"
       },
       {
-        "tool": "pytorch"
-      },
-      {
-        "tool": "opencv"
+        "tool": "OpenCV",
+        "tag": "opencv"
       }
     ],
     "accomplishments": [
@@ -131,20 +172,19 @@
     "title": "Facial Keypoint Detection",
     "tag": "facial-keypoint-detection",
     "date": "6/2018 - 7/2018",
-    "img": "/img/no-image.jpg",
+    "image": "/images/no-image.jpg",
     "code": "https://github.com/madebymaze/facial-keypoint-detection",
     "demo": "NONE",
     "report": "NONE",
     "description": "",
     "tools": [
       {
-        "tool": "python"
+        "tool": "PyTorch",
+        "tag": "pytorch"
       },
       {
-        "tool": "pytorch"
-      },
-      {
-        "tool": "opencv"
+        "tool": "OpenCV",
+        "tag": "opencv"
       }
     ],
     "accomplishments": [
@@ -163,23 +203,27 @@
     "title": "Self-Driving RC Car",
     "tag": "self-driving-RC-car",
     "date": "5/2018 - 8/2018",
-    "img": "/img/self-driving-RC-car.jpg",
+    "image": "/images/self-driving-RC-car.jpg",
     "code": "https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen",
     "demo": "NONE",
     "report": "NONE",
     "description": "",
     "tools": [
       {
-        "tool": "python"
+        "tool": "Python",
+        "tag": "python"
       },
       {
-        "tool": "nodejs"
+        "tool": "Node.js",
+        "tag": "nodejs"
       },
       {
-        "tool": "js"
+        "tool": "JavaScript",
+        "tag": "js"
       },
       {
-        "tool": "c"
+        "tool": "C",
+        "tag": "c"
       }
     ],
     "accomplishments": [
@@ -198,20 +242,19 @@
     "title": "Image Classification",
     "tag": "image-classification",
     "date": "5/2018",
-    "img": "/img/no-image.jpg",
+    "image": "/images/no-image.jpg",
     "code": "https://github.com/madebymaze/image-classification",
     "demo": "NONE",
     "report": "NONE",
     "description": "",
     "tools": [
       {
-        "tool": "python"
+        "tool": "PyTorch",
+        "tag": "pytorch"
       },
       {
-        "tool": "pytorch"
-      },
-      {
-        "tool": "numpy"
+        "tool": "NumPy",
+        "tag": "numpy"
       }
     ],
     "accomplishments": [
@@ -230,17 +273,19 @@
     "title": "Aces Up Game",
     "tag": "aces-up-game",
     "date": "11/2017 - 12/2017",
-    "img": "/img/aceuposu.png",
+    "image": "/images/aceuposu.png",
     "code": "https://github.com/madebymaze/aces-up-game",
     "demo": "https://aceuposu.herokuapp.com/",
     "report": "NONE",
     "description": "",
     "tools": [
       {
-        "tool": "jquery"
+        "tool": "jQuery",
+        "tag": "jquery"
       },
       {
-        "tool": "java"
+        "tool": "Java",
+        "tag": "java"
       }
     ],
     "accomplishments": [
@@ -259,23 +304,27 @@
     "title": "Personal Website",
     "tag": "personal-website",
     "date": "12/2016",
-    "img": "/img/no-image.jpg",
+    "image": "/images/personal-website.png",
     "code": "https://github.com/madebymaze/personal-website",
     "demo": "https://madebymaze.xyz/",
     "report": "NONE",
     "description": "",
     "tools": [
       {
-        "tool": "js"
+        "tool": "JavaScript",
+        "tag": "js"
       },
       {
-        "tool": "jquery"
+        "tool": "jQuery",
+        "tag": "jquery"
       },
       {
-        "tool": "nodejs"
+        "tool": "Node.js",
+        "tag": "nodejs"
       },
       {
-        "tool": "nginx"
+        "tool": "NGINX",
+        "tag": "nginx"
       }
     ],
     "accomplishments": [
@@ -294,14 +343,15 @@
     "title": "A.I. for a 2D Grid Game",
     "tag": "ai-agent-2d",
     "date": "4/2016",
-    "img": "/img/no-image.jpg",
+    "image": "/images/no-image.jpg",
     "code": "https://github.com/madebymaze/ai-agent-2d",
     "demo": "NONE",
     "report": "NONE",
     "description": "",
     "tools": [
       {
-        "tool": "cplusplus"
+        "tool": "C++",
+        "tag": "cplusplus"
       }
     ],
     "accomplishments": [

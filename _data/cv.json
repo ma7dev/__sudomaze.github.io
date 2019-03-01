@@ -1,113 +1,337 @@
 {
   "ed": [
-    {
-      "school": "Oregon State Univeristy",
-      "location": "Corvallis, OR (USA)",
-      "date": "9/2015 - 6/2019(expected date)",
-      "major": "Computer Science Applied in Artificial Intelligence, Bachelor of Science.",
-      "minor": "Actuarial Science, Bachelor of Science.",
-      "courses": "NONE"
-    }
+      {
+          "school": "Oregon State Univeristy",
+          "location": "Corvallis, OR (USA)",
+          "date": "9/2015 - 6/2019(expected date)",
+          "major": "Computer Science Applied in Artificial Intelligence, Bachelor of Science.",
+          "minor": "Actuarial Science, Bachelor of Science."
+      }
   ],
   "ex": [
-    {
-      "title": "Center for Genome Research and Biocomputing",
-      "location": "Corvallis, OR (USA)",
-      "date": "11/2018 - Present",
-      "position": "GPU Computational Researcher",
-      "details": [
-        {
-          "statement": "Built a website that races multiple high-end GPUs, such as POWER9 Newell(AC922) with V100 GPGPU,POWER8 Minsky with P100 GPGPU, Intel x86 with K80 GPU, and much more, against each other and running on them multiple cutting-edge deep learning models, such as AVIANn CNN, Plankton CNN, CASSA Sequence Alignment, and much more."
-        },
-        {
-          "statement": "Built a fully dynamic website usingJavaScript,PHP, and BASH."
-        }
-      ]
-    },
-    {
-      "title": "Saudi Aramco Summer Program",
-      "location": "Dhahran, Eastern Province (Saudi Arabia)",
-      "date": "Summer 2012",
-      "position": "Lead Photographer",
-      "details": [
-        {
-          "statement": "Managed a team of 6 photographers to document summer program events."
-        },
-        {
-          "statement": "Hosted and organized multiple teaching photography sessions for more than 70 inspired photographers."
-        }
-      ]
-    }
-  ],
-  "act": [
-    {
-      "title": "OSU Machine Learning Club",
-      "location": "Corvallis, OR (USA)",
-      "date": "5/2017 - Present",
-      "position": "Active Member",
-      "details": [
-        {
-          "statement": "Worked with a team on Self-Driving RC Car."
-        },
-        {
-          "statement": "Applied my knowledge in web development and machine learning to build the first prototype."
-        }
-      ]
-    },
-    {
-      "title": "PyImageConf2018 (Conference)",
-      "location": "San Francisco, CA (USA)",
-      "date": "8/2018",
-      "position": "Attendee",
-      "details": [
-        {
-          "statement": "Attended a conference that focuses on advanced techniques in Computer Vision and Deep Learning research and their implementations to solve real world problems."
-        },
-        {
-          "statement": "Built a Faster Regional Neural Networks (Faster-RNN)’s logic from scratch to classify images with higher accuracy than well-known networks using NumPy and PyTorch."
-        }
-      ]
-    },
-    {
-      "title": "DesertHacks (Hackathon)",
-      "location": "Phoenix, AZ (USA)",
-      "date": "2/2017",
-      "position": "Participant",
-      "details": [
-        {
-          "statement": "Worked with a team to build a web application that analysis a user’s behavior from a list of previous behaviors based on Markov Chain Methods using Node.js and Flask for back-end, JavaScript for front-end, Python for data analysis, and SQL for data saving and pulling."
-        },
-        {
-          "statement": "Hosted the web application on Amazon Web-Services (AWS)."
-        }
-      ]
-    },
-    {
-      "title": "OSU App Club",
-      "location": "Corvallis, OR (USA)",
-      "date": "9/2016 - 11/2017",
-      "position": "Active Member",
-      "details": [
-        {
-          "statement": "Worked to build small projects using new tools with a club member."
-        },
-        {
-          "statement": "Helped new members in explaining web development technologies and common practices in development."
-        }
-      ]
-    }
-  ],
-  "skills":[
-    [
       {
-        "title": "JavaScript",
-        "love": "T"
+          "title": "Center for Genome Research and Biocomputing",
+          "location": "Corvallis, OR (USA)",
+          "date": "11/2018 - Present",
+          "position": "GPU Computational Researcher",
+          "details": [
+              {
+                  "statement": "..."
+              },
+              {
+                  "statement": "..."
+              }
+          ]
       },
       {
-        "title": "JavaScript",
-        "love": "T"
+          "title": "Saudi Aramco Summer Program",
+          "location": "Dhahran, Eastern Province (Saudi Arabia)",
+          "date": "Summer 2012",
+          "position": "Lead Photographer",
+          "details": [
+              {
+                  "statement": "Managed a team of 6 photographers to document summer program events."
+              },
+              {
+                  "statement": "Hosted and organized multiple teaching photography sessions for more than 70 inspired photographers."
+              }
+          ]
       }
-    ]
+  ],
+  "act": [
+      {
+          "title": "IBMThink2019 (Conference)",
+          "location": "San Francisco, CA (USA)",
+          "date": "2/2019",
+          "position": "Presenter at Tech Data Booth",
+          "details": [
+              {
+                  "statement": "Invited..."
+              },
+              {
+                  "statement": "..."
+              }
+          ]
+      },
+      {
+          "title": "OSU Machine Learning Club",
+          "location": "Corvallis, OR (USA)",
+          "date": "5/2017 - Present",
+          "position": "Vice President",
+          "details": [
+              {
+                  "statement": "..."
+              },
+              {
+                  "statement": "..."
+              }
+          ]
+      },
+      {
+          "title": "PyImageConf2018 (Conference)",
+          "location": "San Francisco, CA (USA)",
+          "date": "8/2018",
+          "position": "Attendee",
+          "details": [
+              {
+                  "statement": "Attended a conference that focuses on advanced techniques in Computer Vision and Deep Learning research and their implementations to solve real world problems."
+              },
+              {
+                  "statement": "Built a Faster Regional Neural Networks (Faster-RNN)’s logic from scratch to classify images with higher accuracy than well-known networks using NumPy and PyTorch."
+              }
+          ]
+      },
+      {
+          "title": "DesertHacks (Hackathon)",
+          "location": "Phoenix, AZ (USA)",
+          "date": "2/2017",
+          "position": "Participant",
+          "details": [
+              {
+                  "statement": "Worked with a team to build a web application that analysis a user’s behavior from a list of previous behaviors based on Markov Chain Methods using Node.js and Flask for back-end, JavaScript for front-end, Python for data analysis, and SQL for data saving and pulling."
+              },
+              {
+                  "statement": "Hosted the web application on Amazon Web-Services (AWS)."
+              }
+          ]
+      },
+      {
+          "title": "OSU App Club",
+          "location": "Corvallis, OR (USA)",
+          "date": "9/2016 - 11/2017",
+          "position": "Active Member",
+          "details": [
+              {
+                  "statement": "Worked to build small projects using new tools with a club member."
+              },
+              {
+                  "statement": "Helped new members in explaining web development technologies and common practices in development."
+              }
+          ]
+      }
+  ],
+  "skills":[
+      {
+          "title": "Programming Languages",
+          "tools": [
+              {
+                  "tool": "C",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "Python",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "BASH",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "MATLAB",
+                  "love": "0",
+                  "rate": "5"
+              },
+              {
+                  "tool": "C++",
+                  "love": "0",
+                  "rate": "4"
+              },
+              {
+                  "tool": "Java",
+                  "love": "0",
+                  "rate": "3"
+              }
+          ]
+      },
+      {
+          "title": "Web Development",
+          "tools": [
+              {
+                  "tool": "JavaScript",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "jQuery",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "Node.js",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "PHP",
+                  "love": "0",
+                  "rate": "5"
+              },
+              {
+                  "tool": "React.js",
+                  "love": "1",
+                  "rate": "3"
+              },
+              {
+                  "tool": "TensorFlow.js",
+                  "love": "0",
+                  "rate": "3"
+              },
+              {
+                  "tool": "NGINX",
+                  "love": "0",
+                  "rate": "3"
+              },
+              {
+                  "tool": "Flask",
+                  "love": "0",
+                  "rate": "3"
+              }
+          ]
+      },
+      {
+          "title": "Data Analysis",
+          "tools": [
+              {
+                  "tool": "NumPy",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "matplotlib",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "seaborn",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "pandas",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "R",
+                  "love": "1",
+                  "rate": "3"
+              }
+          ]
+      },
+      {
+          "title": "Machine Learning",
+          "tools": [
+              {
+                  "tool": "PyTorch",
+                  "love": "1",
+                  "rate": "4"
+              },
+              {
+                  "tool": "Keras/TensorFlow",
+                  "love": "1",
+                  "rate": "4"
+              },
+              {
+                  "tool": "scikit-learn",
+                  "love": "1",
+                  "rate": "4"
+              },
+              {
+                  "tool": "CUDA",
+                  "love": "1",
+                  "rate": "3"
+              }
+          ]
+      },
+      {
+          "title": "Tools",
+          "tools": [
+              {
+                  "tool": "Git",
+                  "love": "1"
+              },
+              {
+                  "tool": "LaTeX",
+                  "love": "1"
+              },
+              {
+                  "tool": "SQL",
+                  "love": "1"
+              },
+              {
+                  "tool": "NoSQL",
+                  "love": "1"
+              },
+              {
+                  "tool": "Docker",
+                  "love": "1"
+              },
+              {
+                  "tool": "vim",
+                  "love": "1"
+              },
+              {
+                  "tool": "vscode",
+                  "love": "1"
+              },
+              {
+                  "tool": "ROS",
+                  "love": "0"
+              },
+              {
+                  "tool": "Markdown",
+                  "love": "0"
+              }
+          ]
+      },
+      {
+          "title": "Operating Systems",
+          "tools": [
+              {
+                  "tool": "Arch",
+                  "love": "1"
+              },
+              {
+                  "tool": "CentOS",
+                  "love": "1"
+              },
+              {
+                  "tool": "Ubuntu",
+                  "love": "1"
+              },
+              {
+                  "tool": "MacOS",
+                  "love": "1"
+              },
+              {
+                  "tool": "Windows",
+                  "love": "0"
+              }
+          ]
+      },
+      {
+          "title": "Human Languages",
+          "tools": [
+              {
+                  "tool": "Arabic (Native)",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "English (Professional Proficiency)",
+                  "love": "1",
+                  "rate": "5"
+              },
+              {
+                  "tool": "Japanese (少し)",
+                  "love": "1",
+                  "rate": "2"
+              }
+          ]
+      }
   ]
 
 }
