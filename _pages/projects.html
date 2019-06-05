@@ -1,0 +1,22 @@
+---
+layout: cards
+title: Projects
+permalink: /projects/
+---
+<div id="projects">
+    <div class="container-fluid">
+        <div class="row">
+            {% for member in site.data.projects %}
+            <div class="col-3 text-center">
+                <div class="card" id="{{ member.tag }}">
+                    <div class="card-header">{{ member.title }} - {{ member.date }}</div>
+                    <img class="card-img-top" src="/public{{ member.image }}" alt="">
+                    <div class="card-body">
+                        <a href="{{ member.code }}" class="btn btn-primary" target="_blank">Check it out!</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

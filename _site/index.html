@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#F73859">
     <meta name="author" content="Mazen Alotaibi">
     <meta name="description" content="Mazen's Personal Space">
-    <meta name="keywords" content="Mazen, Maze, Web, Developer, Javascript, Math">
+    <meta name="keywords" content="Mazen, Mazen Alotaibi, Web, Developer, Javascript, Math">
     <link rel="icon" type="image/x-icon" href="http://madebymaze.xyz/public/img/icon.png">
     <meta property="og:title" content="Mazen Alotaibi">
     <meta property="og:type" content="website">
@@ -25,7 +25,7 @@
     <meta name="twitter:creator" content="@madebymaze">
 
     <!-- ICONS/FONTS -->
-    <script defer src="https://pro.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-DtPgXIYsUR6lLmJK14ZNUi11aAoezQtw4ut26Zwy9/6QXHH8W3+gjrRDT+lHiiW4" crossorigin="anonymous"></script>
+    <script defer src="/public/libraries/fontawesome-pro-5.8.2-web/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Russo+One|Space+Mono|Palanquin+Dark" rel="stylesheet">
 
     <!-- LIBRARY -->
@@ -33,165 +33,84 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="/public/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/public/css/styles.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
   </head>
   <body>
-    <div id="page">
-      <header id="site-header">
-        <div id="site-brand">
-          <h1 id="site-title"><a href="/"><i class="fa fa-angle-left" aria-hidden="true"></i>/Mazen Alotaibi<i class="fa fa-angle-right" aria-hidden="true"></i></a></h1>
-          <h2 id="site-description">
-            Deep Learning / Computer Vision / Web Development
-          </h2>
-        </div>
-        <div id="site-navbar">
-          <nav>
-            <div id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div id="menu">
-              <ul id="nav-menu">
-                <li><a href="/">About</a></li>
-                <!--<li><a href="/blog">Blog</a></li>
-                <li><a href="/gallery">Gallery</a></li>-->
-                <li><a href="/lab">Lab</a></li>
-                <li><a href="/cv">CV</a></li>
-                <!--<li><a href="/goals">Goals</a></li>-->
-                <li><a href="/contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
-
-
-<div id="site-body">
-        <main id="site-content">
-          <div id="primary" style="margin-top: 100px;">
-            <div class="img-holder">
-              <img id="about-img" src="/public/images/face.jpg" alt="">
-            </div>
-            <div id="intro-summary">
-              <p>Hi there, I'm Mazen; I am a college student at Oregon State University, I am majoring in Computer Science Applied in Artificial Intelligence; with minor in Actuarial Science.
-                I am an active memeber in <a href="http://osumlai.club/"><strong>OSU Machine Learning Club</strong></a>.
-                I do some projects on <a href="https://github.com/madebymaze"  target="_blank"><strong>GitHub</strong></a> to distract me from school.
-                I am <a href="/cv"><strong>available for work</strong></a>. You could <a href="/contact"><strong>contact me</strong></a>.</p>
-            </div>
-            <div id="hire-area">
-              <a id="hire-btn" href="/cv"  target="_blank">Hire Me</a>
-            </div>
-            <div id="current-github">
-              <!-- Prepare a container for your calendar. -->
-              <div class="calendar">
-                  <!-- Loading stuff -->
-                  Loading the data just for you.
-              </div>
-              <script>
-                  GitHubCalendar(".calendar", "madebymaze");
-              </script>
-            </div>
-            <div id="where-i-am">
-              <h2>Current Courses:</h2>
-              <ul>
-                <div class="skill-box">
-                  <li>
-                    <h3>Winter Quater:</h3>
-                    <ul>
-                      
-                      <li>Senior Software Engineering Project</li>
-                      
-                      <li>Descriptive Astronomy</li>
-                      
-                      <li>Graph Theory with Application to Computer Science</li>
-                      
-                      <li>Introduction to Usability Engineering</li>
-                      
-                      <li>Soccer Indoor</li>
-                      
-                    </ul>
-                  </li>
-                </div>
-                <br>
-                <div class="skill-box">
-                  <li>
-                    <h3>Spring Quater:</h3>
-                    <ul>
-                        
-                        <li>Senior Software Engineering Project</li>
-                        
-                        <li>Applied Stochastic Models</li>
-                        
-                        <li>Programming Language Fundamentals</li>
-                        
-                        <li>System Administration</li>
-                        
-                        <li>HIV/AIDS In Modern Societies</li>
-                        
-                    </ul>
-                  </li>
-                </div>
-              </ul>
-            </div>
-            <br>
-            <div id="current-reading">
-              <h2>Current Readings:</h2>
-              <div id="book-cover">
-                
-                  <a href="https://www.pyimagesearch.com/deep-learning-computer-vision-python-book/"  target="_blank"><img src="https://www.pyimagesearch.com/static/templates/deep-learning-for-computer-vision/images/dl_for_cv_cover.png" alt=" Deep Learning for Computer Vision with Python" title="Read More"></a>
-                
-                  <a href="https://www.amazon.com/gp/product/1107011795/ref=oh_aui_search_detailpage?ie=UTF8&psc=1"  target="_blank"><img src="https://images-na.ssl-images-amazon.com/images/I/51Bw9kJmPmL._SX334_BO1,204,203,200_.jpg" alt="Computer Vision: Models, Learning, and Inference" title="Read More"></a>
-                
-                  <a href="https://www.amazon.com/gp/product/B01MAWT2MO/ref=oh_aui_search_detailpage?ie=UTF8&psc=1"  target="_blank"><img src="https://images-na.ssl-images-amazon.com/images/I/51qdmr7snXL.jpg" alt="Astrophysics for People in a Hurry" title="Read More"></a>
-                
-              </div>
-            </div>
-          </div>
-          <div id="secondary">
-        <ul>
-          <li><a href="mailto:mail@madebymaze.xyz" id="work-btn">I am currently <strong>accepting new projects</strong> for Winter Quarter 2019</a></li>
-          <hr class="breaker">
-          <li id="social-list">
-          
-          <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn"  target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-          
-          <a href="https://github.com/madebymaze" id="github" class="social-btn"  target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-          
-          <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn"  target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          
-          <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>  </li>
-        <hr class="breaker">
-        <li id="frieinds-list">
-          <strong><i class="fas fa-users"></i> Friends:</strong>
-          <ul id="friends-list">
-            
-            <li><a href="http://people.oregonstate.edu/~chriconn/" class="friends-btn"  target="_blank">Connor Christensen</a></li>
-            
-            <li><a href="https://lcsfrey.github.io/" class="friends-btn"  target="_blank">Lucas Frey</a></li>
-            
-          </ul>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+    <div class="container">
+      <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>-->
+          <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
       </div>
-
-        </main>
-      </div>
-
-
-<footer id="site-footer">
-  <p><i class="fal fa-copyright" aria-hidden="true"></i> 2019, Mazen Alotaibi.</p>
-  
-  <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn"  target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-  
-  <a href="https://github.com/madebymaze" id="github" class="social-btn"  target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-  
-  <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn"  target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  
-  <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-</footer>
+    </div>
+  </nav>
+<div class="container">
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5">
+            <div id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="/public/images/face.jpg" class="rounded-circle" alt="Mazen Alotaibi">
+            </div>
+            <div class="col-12">
+                <p id="summary">
+                        Hi there, I'm Mazen; I am a senior Computer Science student at Oregon State University, 
+                        I am majoring in Computer Science Applied in Artificial Intelligence; 
+                        with a minor in Actuarial Science. 
+                        I work at the Center for Genome Research & Bio-computing as a Lead GPU Computational Researcher. 
+                        I am the Vice President of <a href="http://osumlai.club/" target="_blank">OSU Machine Learning Club</a>. 
+                        I work on projects on <a href="https://github.com/madebymaze" target="_blank">GitHub</a> and participate in <a href="http://madebymaze.xyz" target="_blank">Kaggle</a> competitions to distract me from school. 
+                        <a href="https://madebymaze.xyz/cv/" target="_blank">I am available for work</a>. You could <a href="https://madebymaze.xyz/contact/" target="_blank">contact me</a>.  
+                </p>
+                <hr>
+            </div>
+            <div class="col-12 text-center">
+                <p id="calendar">
+                    Loading the data just for you.
+                </p>
+                <script>GitHubCalendar("#calendar", "madebymaze");</script>
+            </div>
+        </div>
+    </div>
+</div>
+            <hr>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p><a href="http://madebymaze.xyz" target="_blank"><i class="fal fa-copyright" aria-hidden="true"></i> 2019, Mazen Alotaibi.</a></p>
+                        </div>
+                        <div class="col-12 text-center" id="social-list">
+                            
+                                <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            
+                                <a href="https://github.com/madebymaze" id="github" class="social-btn" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            
+                                <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            
+                            <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-12 text-center" id="source-code">
+                            <p><a href="http://github.com/madebymaze/madebymaze.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
 <style>
         .videoWrapper {
             position: relative;
@@ -299,8 +218,9 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+<script type="text/javascript" src="/public/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/public/libraries/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="/public/js/index.js"></script>
-</div>
 </body>
 
 </html>

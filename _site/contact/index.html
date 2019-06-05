@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#F73859">
     <meta name="author" content="Mazen Alotaibi">
     <meta name="description" content="Mazen's Personal Space">
-    <meta name="keywords" content="Mazen, Maze, Web, Developer, Javascript, Math">
+    <meta name="keywords" content="Mazen, Mazen Alotaibi, Web, Developer, Javascript, Math">
     <link rel="icon" type="image/x-icon" href="http://madebymaze.xyz/public/img/icon.png">
     <meta property="og:title" content="Mazen Alotaibi">
     <meta property="og:type" content="website">
@@ -25,7 +25,7 @@
     <meta name="twitter:creator" content="@madebymaze">
 
     <!-- ICONS/FONTS -->
-    <script defer src="https://pro.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-DtPgXIYsUR6lLmJK14ZNUi11aAoezQtw4ut26Zwy9/6QXHH8W3+gjrRDT+lHiiW4" crossorigin="anonymous"></script>
+    <script defer src="/public/libraries/fontawesome-pro-5.8.2-web/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Russo+One|Space+Mono|Palanquin+Dark" rel="stylesheet">
 
     <!-- LIBRARY -->
@@ -33,104 +33,70 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="/public/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/public/css/styles.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
   </head>
   <body>
-    <div id="page">
-      <header id="site-header">
-        <div id="site-brand">
-          <h1 id="site-title"><a href="/"><i class="fa fa-angle-left" aria-hidden="true"></i>/Mazen Alotaibi<i class="fa fa-angle-right" aria-hidden="true"></i></a></h1>
-          <h2 id="site-description">
-            Deep Learning / Computer Vision / Web Development
-          </h2>
-        </div>
-        <div id="site-navbar">
-          <nav>
-            <div id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div id="menu">
-              <ul id="nav-menu">
-                <li><a href="/">About</a></li>
-                <!--<li><a href="/blog">Blog</a></li>
-                <li><a href="/gallery">Gallery</a></li>-->
-                <li><a href="/lab">Lab</a></li>
-                <li><a href="/cv">CV</a></li>
-                <!--<li><a href="/goals">Goals</a></li>-->
-                <li><a href="/contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
-
-
-<div id="site-body">
-        <main id="site-content">
-          <div id="primary">
-            <h3 id="contact-email">mail<i class="far fa-at"></i>madebymaze.xyz</h3>
-            <ul id="contact-info">
-              <li>For job offers, please <a href="mailto:mail@madebymaze.xyz">send me an email.</a></li>
-              <li>For general questions and advice, please see <a href="https://github.com/madebymaze.xyz/AMA"  target="_blank">my AMA repository.</a></li>
-              <li>For small questions, or just to say hi, please feel free to <a href="https://twitter.com/madebymaze"  target="_blank">fire me a Tweet.</a></li>
-              <li>For questions about software and tools, see <a href="https://github.com/madebymaze/setup">my setup.</a></li>
-              <!--<li>To keep in regular contact, <a href="#">join my newsletter.</a></li>-->
-            </ul>
-            <div id="contact-reminder">
-              <h4>Twitter: <a href="https://twitter.com/madebymaze"  target="_blank">@madebymaze</a></h4>
-              <p>For informal, quick contact and questions, feel free to fire me a Tweet!</p>
-              <h4>Email: <a href="mailto:mail@madebymaze.xyz">mail<i class="far fa-at"></i>madebymaze.xyz</a></h4>
-              <p>For longer enquiries and questions, please send me an email.</p>
-              <!--<h4><a href="#">Newsletter</a></h4>
-              <p>For infrequent updates about discounts, exclusive content, resources, etc.</p>-->
-            </div>
-          </div>
-          <div id="secondary">
-        <ul>
-          <li><a href="mailto:mail@madebymaze.xyz" id="work-btn">I am currently <strong>accepting new projects</strong> for Winter Quarter 2019</a></li>
-          <hr class="breaker">
-          <li id="social-list">
-          
-          <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn"  target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-          
-          <a href="https://github.com/madebymaze" id="github" class="social-btn"  target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-          
-          <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn"  target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          
-          <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>  </li>
-        <hr class="breaker">
-        <li id="frieinds-list">
-          <strong><i class="fas fa-users"></i> Friends:</strong>
-          <ul id="friends-list">
-            
-            <li><a href="http://people.oregonstate.edu/~chriconn/" class="friends-btn"  target="_blank">Connor Christensen</a></li>
-            
-            <li><a href="https://lcsfrey.github.io/" class="friends-btn"  target="_blank">Lucas Frey</a></li>
-            
-          </ul>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+    <div class="container">
+      <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>-->
+          <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
       </div>
-
-        </main>
-      </div>
-
-
-<footer id="site-footer">
-  <p><i class="fal fa-copyright" aria-hidden="true"></i> 2019, Mazen Alotaibi.</p>
-  
-  <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn"  target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-  
-  <a href="https://github.com/madebymaze" id="github" class="social-btn"  target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-  
-  <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn"  target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  
-  <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-</footer>
+    </div>
+  </nav>
+<div class="container">
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5">
+            <h1 class="font-weight-light text-center">mail<i class="fal fa-at"></i>madebymaze.xyz</h1>
+<ul id="contact-info">
+    <li>For job offers, please <a href="mailto:mail@madebymaze.xyz">send me an email.</a></li>
+    <li>For general questions and advice, please see <a href="https://github.com/madebymaze/AMA" target="_blank">my AMA repository.</a></li>
+    <li>For small questions, or just to say hi, please feel free to <a href="https://twitter.com/madebymaze" target="_blank">fire me a Tweet.</a></li>
+    <li>For questions about software and tools, see <a href="https://github.com/madebymaze/setup" target="_blank">my setup.</a></li>
+</ul>
+<div id="contact-reminder">
+    <h4 class="font-weight-light">Twitter: <a href="https://twitter.com/madebymaze" target="_blank"><i class="fal fa-at"></i>madebymaze</a></h4>
+    <p>For informal, quick contact and questions, feel free to fire me a Tweet!</p>
+    <h4 class="font-weight-light">Email: <a href="mailto:mail@madebymaze.xyz">mail<i class="fal fa-at"></i>madebymaze.xyz</a></h4>
+    <p>For longer enquiries and questions, please send me an email.</p>
+</div>
+            <hr>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p><a href="http://madebymaze.xyz" target="_blank"><i class="fal fa-copyright" aria-hidden="true"></i> 2019, Mazen Alotaibi.</a></p>
+                        </div>
+                        <div class="col-12 text-center" id="social-list">
+                            
+                                <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            
+                                <a href="https://github.com/madebymaze" id="github" class="social-btn" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            
+                                <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            
+                            <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-12 text-center" id="source-code">
+                            <p><a href="http://github.com/madebymaze/madebymaze.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
 <style>
         .videoWrapper {
             position: relative;
@@ -238,8 +204,9 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+<script type="text/javascript" src="/public/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/public/libraries/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="/public/js/index.js"></script>
-</div>
 </body>
 
 </html>

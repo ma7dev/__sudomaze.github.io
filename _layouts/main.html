@@ -1,67 +1,30 @@
 ---
 layout: default
 ---
-<div id="site-body">
-        <main id="site-content">
-          <div id="primary" style="margin-top: 100px;">
-            <div class="img-holder">
-              <img id="about-img" src="/public/images/face.jpg" alt="">
+<div id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <img src="/public/images/face.jpg" class="rounded-circle" alt="Mazen Alotaibi">
             </div>
-            <div id="intro-summary">
-              <p>Hi there, I'm Mazen; I am a college student at Oregon State University, I am majoring in Computer Science Applied in Artificial Intelligence; with minor in Actuarial Science.
-                I am an active memeber in <a href="http://osumlai.club/"><strong>OSU Machine Learning Club</strong></a>.
-                I do some projects on <a href="https://github.com/madebymaze"  target="_blank"><strong>GitHub</strong></a> to distract me from school.
-                I am <a href="/cv"><strong>available for work</strong></a>. You could <a href="/contact"><strong>contact me</strong></a>.</p>
+            <div class="col-12">
+                <p id="summary">
+                        Hi there, I'm Mazen; I am a senior Computer Science student at Oregon State University, 
+                        I am majoring in Computer Science Applied in Artificial Intelligence; 
+                        with a minor in Actuarial Science. 
+                        I work at the Center for Genome Research & Bio-computing as a Lead GPU Computational Researcher. 
+                        I am the Vice President of <a href="http://osumlai.club/" target="_blank">OSU Machine Learning Club</a>. 
+                        I work on projects on <a href="https://github.com/madebymaze" target="_blank">GitHub</a> and participate in <a href="http://madebymaze.xyz" target="_blank">Kaggle</a> competitions to distract me from school. 
+                        <a href="https://madebymaze.xyz/cv/" target="_blank">I am available for work</a>. You could <a href="https://madebymaze.xyz/contact/" target="_blank">contact me</a>.  
+                </p>
+                <hr>
             </div>
-            <div id="hire-area">
-              <a id="hire-btn" href="/cv"  target="_blank">Hire Me</a>
+            <div class="col-12 text-center">
+                <p id="calendar">
+                    Loading the data just for you.
+                </p>
+                <script>GitHubCalendar("#calendar", "madebymaze");</script>
             </div>
-            <div id="current-github">
-              <!-- Prepare a container for your calendar. -->
-              <div class="calendar">
-                  <!-- Loading stuff -->
-                  Loading the data just for you.
-              </div>
-              <script>
-                  GitHubCalendar(".calendar", "madebymaze");
-              </script>
-            </div>
-            <div id="where-i-am">
-              <h2>Current Courses:</h2>
-              <ul>
-                <div class="skill-box">
-                  <li>
-                    <h3>Winter Quater:</h3>
-                    <ul>
-                      {% for member in site.data.about.currentTerm %}
-                      <li>{{ member.title }}</li>
-                      {% endfor %}
-                    </ul>
-                  </li>
-                </div>
-                <br>
-                <div class="skill-box">
-                  <li>
-                    <h3>Spring Quater:</h3>
-                    <ul>
-                        {% for member in site.data.about.nextTerm %}
-                        <li>{{ member.title }}</li>
-                        {% endfor %}
-                    </ul>
-                  </li>
-                </div>
-              </ul>
-            </div>
-            <br>
-            <div id="current-reading">
-              <h2>Current Readings:</h2>
-              <div id="book-cover">
-                {% for member in site.data.about.currentReadings %}
-                  <a href="{{ member.buy }}"  target="_blank"><img src="{{ member.cover }}" alt="{{ member.title }}" title="Read More"></a>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-          {% include sidebar-main.html %}
-        </main>
-      </div>
+        </div>
+    </div>
+</div>

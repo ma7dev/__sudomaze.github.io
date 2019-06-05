@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#F73859">
     <meta name="author" content="Mazen Alotaibi">
     <meta name="description" content="Mazen's Personal Space">
-    <meta name="keywords" content="Mazen, Maze, Web, Developer, Javascript, Math">
+    <meta name="keywords" content="Mazen, Mazen Alotaibi, Web, Developer, Javascript, Math">
     <link rel="icon" type="image/x-icon" href="http://madebymaze.xyz/public/img/icon.png">
     <meta property="og:title" content="Mazen Alotaibi">
     <meta property="og:type" content="website">
@@ -25,7 +25,7 @@
     <meta name="twitter:creator" content="@madebymaze">
 
     <!-- ICONS/FONTS -->
-    <script defer src="https://pro.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-DtPgXIYsUR6lLmJK14ZNUi11aAoezQtw4ut26Zwy9/6QXHH8W3+gjrRDT+lHiiW4" crossorigin="anonymous"></script>
+    <script defer src="/public/libraries/fontawesome-pro-5.8.2-web/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Russo+One|Space+Mono|Palanquin+Dark" rel="stylesheet">
 
     <!-- LIBRARY -->
@@ -33,453 +33,854 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="/public/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/public/css/styles.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
   </head>
   <body>
-    <div id="page">
-      <header id="site-header">
-        <div id="site-brand">
-          <h1 id="site-title"><a href="/"><i class="fa fa-angle-left" aria-hidden="true"></i>/Mazen Alotaibi<i class="fa fa-angle-right" aria-hidden="true"></i></a></h1>
-          <h2 id="site-description">
-            Deep Learning / Computer Vision / Web Development
-          </h2>
-        </div>
-        <div id="site-navbar">
-          <nav>
-            <div id="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div id="menu">
-              <ul id="nav-menu">
-                <li><a href="/">About</a></li>
-                <!--<li><a href="/blog">Blog</a></li>
-                <li><a href="/gallery">Gallery</a></li>-->
-                <li><a href="/lab">Lab</a></li>
-                <li><a href="/cv">CV</a></li>
-                <!--<li><a href="/goals">Goals</a></li>-->
-                <li><a href="/contact">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
-
-
-<div id="site-body">
-        <main id="site-content">
-              <ul id="resume-display">
-                <li class="resume-item" id="ed">
-                  <h2 class="item-title"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h2>
-                  <ul class="item-list">
-                    
-                    <li class="item-work">
-                      <h3 class="title">Oregon State Univeristy<button type="button" name="button" title="Show Completed Courses" id="courses-btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 9/2015 - 6/2019(expected date)</span></h3>
-                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Corvallis, OR (USA)</h4>
-                      <div class="details">
-                        <p>Major: Computer Science Applied in Artificial Intelligence, Bachelor of Science.</p>
-                        <p>Minor: Actuarial Science, Bachelor of Science.</p>
-                      </div>
-                    </li>
-                    
-                  </ul>
-                  <div id="courses-list" class="hide">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+    <div class="container">
+      <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+          <!--<li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>-->
+          <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5">
+            <div id="cv">
+    <h2 class="font-weight-light"><i class="fal fa-university"></i> Education</h2>
+    <hr>
+    <p class="lead">
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong>Oregon State Univeristy</strong> <span id="list-courses" class="badge badge-primary" data-toggle="modal" data-target="#coursesModal">Show Courses <i class="fal fa-arrow-right"></i></span></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 9/2015 - 6/2019(expected date)</span></p>
+                </div>
+                <div class="col-12">
+                    <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Corvallis, OR (USA)</p>
+                </div>
+                <div class="col-12">
                     <ul>
-                      <li>
-                        <h5>COMPUTER SCIENCE</h5>
-                        <ul>
-                          <div class="skill-box">
-                            <li>DATA STRUCTURES (CS-261)</li>
-                            <li>COMPUTER ARCHITECTURE AND ASSEMBLY LANGUAGE (CS-271)</li>
-                            <li>DIGITAL LOGIC DESIGN WITH LAB(ECE-271 & ECE-272)</li>
-                            <li>WEB DEVELOPMENT (CS-290)</li>
-                            <li>INTRODUCTION TO THEORY OF COMPUTATION (CS-321)</li>
-                            <li>ANALYSIS OF ALGORITHMS (CS-325)</li>
-                            <li>INTRODUCTION TO PARALLEL PROGRAMMING (CS-475)</li>
-
-                          </div>
-                          <div class="skill-box">
-                          <li>INTRODUCTION TO ARTIFICIAL INTELLIGENCE (CS-331)</li>
-                          <li>INTRODUCTION TO DATABASES (CS-340)</li>
-                          <li>OPERATING SYSTEMS I & II (CS-344 & CS-444)</li>
-                          <!-- <li>INTRODUCTION TO USABILITY ENGINEERING (CS-352)</li> -->
-                          <li>SOFTWARE ENGINEERING I & II (CS-361 & CS-362)</li>
-                          <li>INTRODUCTION TO COMPUTER NETWORKS (CS-372)</li>
-                          <!-- <li>PROGRAMMING LANGUAGE FUNDAMENTALS (CS-381)</li> -->
-                          <!-- <li>GRAPH THEORY WITH APPLICATIONS TO COMPUTER SCIENCE (CS-420)</li> -->
-                          <li>INTRODUCTION TO MACHINE LEARNING AND DATA MINING (CS-434)</li>
-                          <li>INTELLIGENT ROBOTICS (ROB-456)</li>
-                          <!-- <li>SENIOR SOFTWARE ENGINEERING PROJECT I, II, & III (CS-461, CS-462, & CS-463)</li> -->
-                          </div>
-                        </ul>
-                      </li>
-                      <li>
-                        <h5>MATHEMATICS</h5>
-                        <ul>
-                          <li>ELEMENTS OF DISCRETE MATHEMATICS (MTH-231)</li>
-                          <li>DIFFERENTIAL CALCULUS (MTH-251)</li>
-                          <li>INTEGRAL CALCULUS (MTH-252)</li>
-                          <li>INFINITE SERIES AND SEQUENCES (MTH-253)</li>
-                          <li>VECTOR CALCULUS I (MTH-254)</li>
-                          <li>MATRIX AND POWER SERIES METHODS (MTH-306)</li>
-                          <li>LINEAR ALGEBRA I (MTH-341)</li>
-                          <li>INTRODUCTION TO NUMERICAL ANALYSIS (MTH-351)</li>
-                          <li>INTRODUCTION TO PROBABILITY (MTH-361)</li>
-                          <li>INTRODUCTION TO MATHEMATICAL STATISTICS (ST-421)</li>
-                        </ul>
-                      </li>
-                      <li>
-                        <h5>OTHERS</h5>
-                        <ul>
-                          <li>FIRST-YEAR JAPANESE (JPN-111)</li>
-                          <li>INTRODUCTION TO MICROECONOMICS (ECON-201)</li>
-                          <li>TECHNICAL WRITING (WR-327)</li>
-                        </ul>
-                      </li>
+                        <li>Major: <em>Computer Science Applied in Artificial Intelligence, Bachelor of Science.</em></li>
+                        <li>Minor: <em>Actuarial Science, Bachelor of Science.</em></li>
                     </ul>
-                  </div>
-                </li>
-                <li class="resume-item" id="ex">
-                  <h2 class="item-title"><i class="fa fa-cogs" aria-hidden="true"></i> Experience</h2>
-                  <ul class="item-list">
-                    
-                    <li class="item-work">
-                      <h3 class="title">Lead GPU Computational Researcher<span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 11/2018 - Present</span></h3>
-                      <p style="margin: 0; font-style: italic;">Center for Genome Research and Biocomputing</p>
-                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Corvallis, OR (USA)</h4>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Responsibilities are to develop new pathways around AI, Machine Learning, and Deep Learning, and help other undergraduate in the AI, Machine Learning, and Deep Learning area.</li>
-                          
-                          <li>Worked on Tech Data AI Demo, was featured in IBM Conference, and multiple Deep Learning related projects, Owl Sounds Classification and Plankton Classification.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title">Lead Photographer<span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> Summer 2012</span></h3>
-                      <p style="margin: 0; font-style: italic;">Saudi Aramco Summer Program</p>
-                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dhahran, Eastern Province (Saudi Arabia)</h4>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Managed a team of 6 photographers to document summer program events.</li>
-                          
-                          <li>Hosted and organized multiple teaching photography sessions for more than 70 inspired photographers.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                  </ul>
-                </li>
-                <li class="resume-item" id="pro">
-                  <h2 class="item-title"><i class="fa fa-folder-open" aria-hidden="true"></i> Projects</h2>
-                  <ul class="item-list">
-                    
-                    <li class="item-work">
-                      <h3 class="title"><a href="/lab/#ai-demo"  target="_blank">Tech Data AI Demo</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 11/2018 - Present</span></h3>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Developed a website that races multiple hardware by running Deep Learning models developed by the CGRB lab, the project is sponsored by Tech Data, IBM, NVIDIA, and OpenPower, and the project was featured in IBMThink2019.</li>
-                          
-                          <li>Developed the website using Bootstrap, JavaScript, Node.js, NGINX, and Bash.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title"><a href="/lab/#senior-design-project"  target="_blank">Senior Design Project</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 10/2018 - Present</span></h3>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Designing the entire pipeline of the system, building the computer vision models, communicating with Dr. Li and our technical advisor from Georgia Tech, Chanho Kim, and assigning tasks and responsibilities to my teammates.</li>
-                          
-                          <li>Worked on building a real-time object detection demo for our presentation to the City of Portland Representative and Dr. Li, setting up CARLA, a simulation tool, and collecting more than 2,000 images from Portland's surveillance cameras as our test dataset for our demo.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title"><a href="/lab/#exploring-robot"  target="_blank">Exploring Robot</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 11/2018</span></h3>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Designed an exploration package utilizing the gmapping and nav bundle packages to allow a simulated robot to explore an unknown environment.</li>
-                          
-                          <li>Designed an algorithm that generates waypoints to be followed and each waypoint is weighted based on a convolutional filter with some weighted conditions.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title"><a href="/lab/#image-captioning"  target="_blank">Image Captioning</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 7/2018 - 8/2018</span></h3>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Built a Convolutions Neural Network-Recurrence Neural Network (CNN-RNN) model to automat- ically generate captions from images using NumPy, OpenCV, and PyTorch.</li>
-                          
-                          <li>Trained the Encoder[CNN] for feature extracting and trained the Decoder[Long Short-Term Memory (LSTM) cells in RNN ] to generate captions.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title"><a href="/lab/#facial-keypoint-detection"  target="_blank">Facial Keypoint Detection</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 6/2018 - 7/2018</span></h3>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Built a CNN model to predict Facial Keypoints using NumPy, OpenCV, and PyTorch.</li>
-                          
-                          <li>Trained the CNN model to detect faces and predicts 68 distinguishing keypoints on that face.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title"><a href="/lab/#self-driving-RC-car"  target="_blank">Self-Driving RC Car</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 5/2018 - 8/2018</span></h3>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Wrote a web app that streams a live-feed and a controller to control an RC Car’s controller, Raspberry Pi, using Node.js, JavaScript, and Python.</li>
-                          
-                          <li>Built the structure of the intelligent agent and machine learning model.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title"><a href="/lab/#image-classification"  target="_blank">Image Classification</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 5/2018</span></h3>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Wrote an Multiple Layer Neural Networks (MLP) that classifies images using NumPy and PyTorch.</li>
-                          
-                          <li>Trained the MLP model using CIFAR-10 dataset.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title"><a href="/lab/#aces-up-game"  target="_blank">Aces Up Game</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 11/2017 - 12/2017</span></h3>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Wrote a web app with a team using Java Ninja framework for back-end, JavaScript for front-end, and Heroku and GitHub to host the web app.</li>
-                          
-                          <li>Won the Best Web Application for Software Engineering I (CS-361).</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title"><a href="/lab/#personal-website"  target="_blank">Personal Website</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 12/2016</span></h3>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Wrote a personal website using Node.js for back-end and JavaScript for front-end.</li>
-                          
-                          <li>Wrote a NGINX script that directs HTTP requests to HTTPS and maps networks.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title"><a href="/lab/#ai-agent-2d"  target="_blank">A.I. for a 2D Grid Game</a><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 4/2016</span></h3>
-                      <div class="details">
-                        <ul>
-                          
-                          <li>Wrote a 2D grid game, Hunt the Wumpus, with a dynamic grid size using C++.</li>
-                          
-                          <li>Wrote an embedded intelligent agent, inspired by Minesweepers, to solve the game using Probability Distribution Methods.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                  </ul>
-                </li>
-                <li class="resume-item" id="act">
-                  <h2 class="item-title"><i class="fa fa-rocket" aria-hidden="true"></i> Extracurricular Activities</h2>
-                  <ul class="item-list">
-                    
-                    <li class="item-work">
-                      <h3 class="title">IBMThink2019 (Conference)<span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 2/2019</span></h3>
-                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> San Francisco, CA (USA)</h4>
-                      <div class="details">
-                        <p style="font-style: italic;">Presenter at Tech Data Booth</p>
-                        <ul>
-                          
-                          <li>Intived to IBM Conference by Tech Data to present Tech Data AI Demo to increase sales.</li>
-                          
-                          <li>I have presented my work at the conference and I have connected with more than 100 potential clients who are intresented to use the demo for increase their sales in different regions, Paraguay, UK, and China.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title">OSU Machine Learning Club<span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 5/2017 - Present</span></h3>
-                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Corvallis, OR (USA)</h4>
-                      <div class="details">
-                        <p style="font-style: italic;">Vice President</p>
-                        <ul>
-                          
-                          <li>Responsibilities are to present latest literature in to AI, ML, DL, and CV areas biweekly, host learning sessions to solve simple Kaggle competitions for new learners.</li>
-                          
-                          <li>Worked on building a Self-Driving RC Car, Kaggle Competitions, and a Breast Cancer project with the group members.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title">PyImageConf2018 (Conference)<span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 8/2018</span></h3>
-                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> San Francisco, CA (USA)</h4>
-                      <div class="details">
-                        <p style="font-style: italic;">Attendee</p>
-                        <ul>
-                          
-                          <li>Attended a conference that focuses on advanced techniques in Computer Vision and Deep Learning research and their implementations to solve real world problems.</li>
-                          
-                          <li>Built a Faster Regional Neural Networks (Faster-RNN)’s logic from scratch to classify images with higher accuracy than well-known networks using NumPy and PyTorch.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title">DesertHacks (Hackathon)<span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 2/2017</span></h3>
-                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Phoenix, AZ (USA)</h4>
-                      <div class="details">
-                        <p style="font-style: italic;">Participant</p>
-                        <ul>
-                          
-                          <li>Worked with a team to build a web application that analysis a user’s behavior from a list of previous behaviors based on Markov Chain Methods using Node.js and Flask for back-end, JavaScript for front-end, Python for data analysis, and SQL for data saving and pulling.</li>
-                          
-                          <li>Hosted the web application on Amazon Web-Services (AWS).</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                    <li class="item-work">
-                      <h3 class="title">OSU App Club<span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> 9/2016 - 11/2017</span></h3>
-                      <h4 class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Corvallis, OR (USA)</h4>
-                      <div class="details">
-                        <p style="font-style: italic;">Active Member</p>
-                        <ul>
-                          
-                          <li>Worked to build small projects using new tools with a club member.</li>
-                          
-                          <li>Helped new members in explaining web development technologies and common practices in development.</li>
-                          
-                        </ul>
-                      </div>
-                    </li>
-                    
-                  </ul>
-                </li>
-                <li class="resume-item">
-                  <h2 class="item-title"><i class="fa fa-check" aria-hidden="true"></i> Skills</h2>
-                  <div class="skill-box">
-                    <div class="skill-block">
-                      <ul class="skill-set">
-                          <li><h4 class="skill-title">I/O Languages:</h4></li>
-                          <li class="skill-list">C <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">C++ <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">Java </li>
-                      </ul>
-                      <ul class="skill-set">
-                          <li><h4 class="skill-title">Scripting Languages:</h4></li>
-                          <li class="skill-list">JavaScript <i class="fas fa-heart"></i></li>
-                          <li class="skill-list">Python <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">PHP <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">BASH <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">R <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">NGINX </li>
-                          <li class="skill-list">MATLAB </li>
-                      </ul>
-                      <ul class="skill-set">
-                          <li><h4 class="skill-title">Libraries/Frameworks:</h4></li>
-                          <li class="skill-list">NumPy <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">OpenCV <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">PyTorch <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">jQuery <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">Node.js <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">Flask </li>
-                          <li class="skill-list">TensorFlow (limited)</li>
-                          <li class="skill-list">Keras (limited)</li>
-                          <li class="skill-list">React.js (limited)</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="skill-box">
-                    <div class="skill-block">
-                      <ul class="skill-set">
-                          <li><h4 class="skill-title">Tools:</h4></li>
-                          <li class="skill-list">Git <i class="fas fa-heart" title="I LOVE IT"></i></i></li>
-                          <li class="skill-list">SQL <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">NoSQL <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">Markdown <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">LaTeX <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                      </ul>
-                      <ul class="skill-set">
-                          <li><h4 class="skill-title">Operating Systems:</h4></li>
-                          <li class="skill-list">GNU/Linux(Arch, CentOS, and Ubuntu) <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">MacOS <i class="fas fa-heart" title="I LOVE IT"></i></li>
-                          <li class="skill-list">Windows</li>
-                      </ul>
-                      <ul class="skill-set">
-                          <li><h4 class="skill-title">Languages:</h4></li>
-                          <li class="skill-list">Arabic (Native)</li>
-                          <li class="skill-list">English (Professional Proficiency)</li>
-                          <li class="skill-list">Japanese (Elementary Proficiency)</li>
-                      </ul>
-                    </div>
-              </div>
-              </li>
-              <div id="download-area" >
-                <ul>
-                  <li><p><a id="download-btn" href="/public/pdf/CV.pdf"  target="_blank"><i class="fas fa-cloud-download"></i></a><br>CV<br>(Everything)</p></li>
-                  <li><p><a id="download-btn" href="/public/pdf/Resume_AI_Positions.pdf"  target="_blank"><i class="fas fa-cloud-download"></i></a><br>Resume <br> (AI/DS/CV Positions)</p></li>
-                  <li><p><a id="download-btn" href="/public/pdf/Resume_WD_Positions.pdf"  target="_blank"><i class="fas fa-cloud-download"></i></a><br>Resume <br> (WD/FE/BE/DevOps Positions)</p></li>
-                </ul>
-                <p style="text-align: center;">
-                  <script language="Javascript">
-                      document.write(new Date(document.lastModified));
-                  </script>
-                </p>
-              </div>
-            </main>
+                </div>
             </div>
+        </div>
+        
+    </p>
+    <hr>
+    <h2 class="font-weight-light"><i class="fal fa-cogs"></i> Experience</h2>
+    <p class="lead">
+        
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8">
+                        <p><strong>Lead GPU Computational Researcher</strong></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 11/2018 - Present</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p><em>Center for Genome Research and Biocomputing</em></p>
+                    </div>
+                    <div class="col-12">
+                        <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Corvallis, OR (USA)</p>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            <ul>
+                                
+                                <li>Responsibilities are to develop new pathways around AI, Machine Learning, and Deep Learning, and help other undergraduate in the AI, Machine Learning, and Deep Learning area.</li>
+                                
+                                <li>Worked on Tech Data AI Demo, was featured in IBM Conference, and multiple Deep Learning related projects, Owl Sounds Classification and Plankton Classification.</li>
+                                
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8">
+                        <p><strong>Lead Photographer</strong></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> Summer 2012</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p><em>Saudi Aramco Summer Program</em></p>
+                    </div>
+                    <div class="col-12">
+                        <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dhahran, Eastern Province (Saudi Arabia)</p>
+                    </div>
+                    <div class="col-12">
+                        <p>
+                            <ul>
+                                
+                                <li>Managed a team of 6 photographers to document summer program events.</li>
+                                
+                                <li>Hosted and organized multiple teaching photography sessions for more than 70 inspired photographers.</li>
+                                
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        
+    </p>
 
-<footer id="site-footer">
-  <p><i class="fal fa-copyright" aria-hidden="true"></i> 2019, Mazen Alotaibi.</p>
-  
-  <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn"  target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-  
-  <a href="https://github.com/madebymaze" id="github" class="social-btn"  target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-  
-  <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn"  target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-  
-  <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-</footer>
+    <hr>
+    <h2 class="font-weight-light"><i class="fal fa-folder-open"></i> Projects</h2>
+    <p class="lead">
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#ai-demo" target="_blank">Tech Data AI Demo</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 11/2018 - Present</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Developed a website that races multiple hardware by running Deep Learning models developed by the CGRB lab, the project is sponsored by Tech Data, IBM, NVIDIA, and OpenPower, and the project was featured in IBMThink2019.</li>
+                            
+                            <li>Developed the website using Bootstrap, JavaScript, Node.js, NGINX, and Bash.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#senior-design-project" target="_blank">Senior Design Project</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 10/2018 - Present</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Designing the entire pipeline of the system, building the computer vision models, communicating with Dr. Li and our technical advisor from Georgia Tech, Chanho Kim, and assigning tasks and responsibilities to my teammates.</li>
+                            
+                            <li>Worked on building a real-time object detection demo for our presentation to the City of Portland Representative and Dr. Li, setting up CARLA, a simulation tool, and collecting more than 2,000 images from Portland's surveillance cameras as our test dataset for our demo.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#exploring-robot" target="_blank">Exploring Robot</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 11/2018</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Designed an exploration package utilizing the gmapping and nav bundle packages to allow a simulated robot to explore an unknown environment.</li>
+                            
+                            <li>Designed an algorithm that generates waypoints to be followed and each waypoint is weighted based on a convolutional filter with some weighted conditions.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#image-captioning" target="_blank">Image Captioning</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 7/2018 - 8/2018</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Built a Convolutions Neural Network-Recurrence Neural Network (CNN-RNN) model to automat- ically generate captions from images using NumPy, OpenCV, and PyTorch.</li>
+                            
+                            <li>Trained the Encoder[CNN] for feature extracting and trained the Decoder[Long Short-Term Memory (LSTM) cells in RNN ] to generate captions.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#facial-keypoint-detection" target="_blank">Facial Keypoint Detection</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 6/2018 - 7/2018</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Built a CNN model to predict Facial Keypoints using NumPy, OpenCV, and PyTorch.</li>
+                            
+                            <li>Trained the CNN model to detect faces and predicts 68 distinguishing keypoints on that face.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#self-driving-RC-car" target="_blank">Self-Driving RC Car</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 5/2018 - 8/2018</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Wrote a web app that streams a live-feed and a controller to control an RC Car’s controller, Raspberry Pi, using Node.js, JavaScript, and Python.</li>
+                            
+                            <li>Built the structure of the intelligent agent and machine learning model.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#image-classification" target="_blank">Image Classification</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 5/2018</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Wrote an Multiple Layer Neural Networks (MLP) that classifies images using NumPy and PyTorch.</li>
+                            
+                            <li>Trained the MLP model using CIFAR-10 dataset.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#aces-up-game" target="_blank">Aces Up Game</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 11/2017 - 12/2017</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Wrote a web app with a team using Java Ninja framework for back-end, JavaScript for front-end, and Heroku and GitHub to host the web app.</li>
+                            
+                            <li>Won the Best Web Application for Software Engineering I (CS-361).</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#personal-website" target="_blank">Personal Website</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 12/2016</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Wrote a personal website using Node.js for back-end and JavaScript for front-end.</li>
+                            
+                            <li>Wrote a NGINX script that directs HTTP requests to HTTPS and maps networks.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#ai-agent-2d" target="_blank">A.I. for a 2D Grid Game</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 4/2016</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Wrote a 2D grid game, Hunt the Wumpus, with a dynamic grid size using C++.</li>
+                            
+                            <li>Wrote an embedded intelligent agent, inspired by Minesweepers, to solve the game using Probability Distribution Methods.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </p>
+    <hr>
+    <h2 class="font-weight-light"><i class="fal fa-rocket"></i> Extracurricular Activities</h2>
+    <p class="lead">
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong>IBMThink2019 (Conference)</strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 2/2019</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> San Francisco, CA (USA)</p>
+                </div>
+                <div class="col-12">
+                    <p><em>Presenter at Tech Data Booth</em></p>
+                </div>
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Intived to IBM Conference by Tech Data to present Tech Data AI Demo to increase sales.</li>
+                            
+                            <li>I have presented my work at the conference and I have connected with more than 100 potential clients who are intresented to use the demo to increase sales in different regions, such as Brazil, UK, and Japan.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong>OSU Machine Learning Club</strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 5/2017 - Present</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Corvallis, OR (USA)</p>
+                </div>
+                <div class="col-12">
+                    <p><em>Vice President</em></p>
+                </div>
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Responsibilities are to present latest literature in to AI, ML, DL, and CV areas biweekly, host learning sessions to solve simple Kaggle competitions for new learners.</li>
+                            
+                            <li>Worked on building a Self-Driving RC Car, Kaggle Competitions, and a Breast Cancer project with the group members.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong>PyImageConf2018 (Conference)</strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 8/2018</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> San Francisco, CA (USA)</p>
+                </div>
+                <div class="col-12">
+                    <p><em>Attendee</em></p>
+                </div>
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Attended a conference that focuses on advanced techniques in Computer Vision and Deep Learning research and their implementations to solve real world problems.</li>
+                            
+                            <li>Built a Faster Regional Neural Networks (Faster-RNN)’s logic from scratch to classify images with higher accuracy than well-known networks using NumPy and PyTorch.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong>DesertHacks (Hackathon)</strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 2/2017</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Phoenix, AZ (USA)</p>
+                </div>
+                <div class="col-12">
+                    <p><em>Participant</em></p>
+                </div>
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Worked with a team to build a web application that analysis a user’s behavior from a list of previous behaviors based on Markov Chain Methods using Node.js and Flask for back-end, JavaScript for front-end, Python for data analysis, and SQL for data saving and pulling.</li>
+                            
+                            <li>Hosted the web application on Amazon Web-Services (AWS).</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong>OSU App Club</strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> 9/2016 - 11/2017</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Corvallis, OR (USA)</p>
+                </div>
+                <div class="col-12">
+                    <p><em>Active Member</em></p>
+                </div>
+                <div class="col-12">
+                    <p>
+                        <ul>
+                            
+                            <li>Worked to build small projects using new tools with a club member.</li>
+                            
+                            <li>Helped new members in explaining web development technologies and common practices in development.</li>
+                            
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </p>
+    <hr>
+    <h2 class="font-weight-light"><i class="fal fa-tools"></i> Skills</h2>
+    <p class="lead">
+        <div class="container-fluid">
+            <div class="row">
+                
+                <div class="col-6">
+                    <span><strong>Programming Languages :</strong></h4></p>
+                    
+                        
+                            
+                            <span class="badge badge-primary">C <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">C++ <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">Python <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">BASH <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">CUDA <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">Java</span>
+                            
+                        
+                    
+                </div> 
+                
+                <div class="col-6">
+                    <span><strong>Web Development :</strong></h4></p>
+                    
+                        
+                            
+                            <span class="badge badge-primary">JavaScript <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">jQuery <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">React.js <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">Node.js <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">PHP</span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">Flask</span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">TensorFlow.js</span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">NGINX</span>
+                            
+                        
+                    
+                </div> 
+                
+                <div class="col-6">
+                    <span><strong>Data Analysis :</strong></h4></p>
+                    
+                        
+                            
+                            <span class="badge badge-primary">NumPy <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">OpenCV <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">PyTorch <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">Keras/TensorFlow <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">scikit-learn <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">pandas <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">R <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                    
+                </div> 
+                
+                <div class="col-6">
+                    <span><strong>Tools :</strong></h4></p>
+                    
+                        
+                            
+                            <span class="badge badge-primary">Git <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">LaTeX <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">SQL <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">NoSQL <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">Docker <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">vim <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">VScode <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">ROS</span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">Markdown</span>
+                            
+                        
+                    
+                </div> 
+                
+                <div class="col-6">
+                    <span><strong>Operating Systems :</strong></h4></p>
+                    
+                        
+                            
+                            <span class="badge badge-primary">Arch Linux <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">CentOS <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">Ubuntu <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">MacOS <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            
+                        
+                            
+                            <span class="badge badge-primary">Windows</span>
+                            
+                        
+                    
+                </div> 
+                
+                <div class="col-6">
+                    <span><strong>Human Languages :</strong></h4></p>
+                    
+                        
+                        <span class="badge badge-primary">Arabic <em>(Native)</em></span>
+                        
+                        <span class="badge badge-primary">English <em>(Professional Proficiency)</em></span>
+                        
+                        <span class="badge badge-primary">Japanese <em>(少し)</em></span>
+                        
+                    
+                </div> 
+                
+            </div>
+        </div>
+    </p>
+    <hr>
+    <h2 class="font-weight-light"><i class="fal fa-download"></i> Download</h2>
+    <p class="lead">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <a class="btn btn-primary btn-lg btn-block" href="/public/pdf/CV.pdf" role="button" target="_blank">CV</a>
+                </div>
+                <div class="col-4">
+                    <a class="btn btn-primary btn-lg btn-block" href="/public/pdf/Resume_AI_Positions.pdf" role="button" target="_blank">AI Position Resume</a>
+                </div>
+                <div class="col-4">
+                    <a class="btn btn-primary btn-lg btn-block" href="/public/pdf/Resume_WD_Positions.pdf" role="button" target="_blank">WD Position Resume</a>
+                </div>
+            </div>
+        </div>
+        <p id="show-date" class="text-center">
+        <script language="Javascript">
+            document.write(new Date(document.lastModified));
+        </script>
+        </p>
+    </p>
+    <div class="modal fade" id="coursesModal" tabindex="-1" role="dialog" aria-labelledby="coursesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="coursesModalLabel">Courses List</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p class="lead">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="text-center"><strong>Computer Science</strong></p>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Objected-Oriented Programming (CS 161/162)</li>
+                                <li>Data Structures (CS 261)</li>
+                                <li>Computer Architecture and Assembly Language (CS 271)</li>
+                                <li>Digital Logic Design (ECE 271/272)</li>
+                                <li>Analysis of Algorithms (CS 325)</li>
+                                <li>Databases (CS 340)</li>
+                                <li>Theory of Computation (CS 321)</li>
+                                <li>Computer Networks (CS 372)</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Operating Systems (CS 344/444)</li>
+                                <li>Software Engineering (CS 361/362)</li>
+                                <li>Usability Engineering (CS 351)</li>
+                                <li>Programming Language Fundamentals (CS 381)</li>
+                                <li>Parallel Programming (CS 475)</li>
+                                <li>Graph Theory (CS 420)</li>
+                                <li>Artificial Intelligence (CS 331)</li>
+                                <li>Machine Learning and Data Mining (CS 443)</li>
+                                <li>Intelligent Robots (ROB 456)</li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                            <p class="text-center"><strong>Mathematics and Statistics</strong></p>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Differential & Integral Calculus (MTH 251/252)</li>
+                                <li>Vector Calculus (MTH 254)</li>
+                                <li>Infinite Series and Sequences (MTH 253)</li>
+                                <li>Discrete Mathematics (MTH 231)</li>
+                                <li>Linear Algebra (MTH 341)</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Probability (MTH 361)</li>
+                                <li>Statistics (ST 314)</li>
+                                <li>Numerical Analysis (MTH 351)</li>
+                                <li>Mathematical Statistics (ST 421)</li>
+                                <li>Applied Stochastic Models (ST 443)</li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <hr>
+                            <p class="text-center"><strong>Others</strong></p>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>First-year Japanese (JPN 111)</li>
+                                <li>Microeconomics (ECON 201)</li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Technical Writing (WR 327)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+            <hr>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p><a href="http://madebymaze.xyz" target="_blank"><i class="fal fa-copyright" aria-hidden="true"></i> 2019, Mazen Alotaibi.</a></p>
+                        </div>
+                        <div class="col-12 text-center" id="social-list">
+                            
+                                <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            
+                                <a href="https://github.com/madebymaze" id="github" class="social-btn" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            
+                                <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            
+                            <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-12 text-center" id="source-code">
+                            <p><a href="http://github.com/madebymaze/madebymaze.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
 <style>
         .videoWrapper {
             position: relative;
@@ -587,8 +988,9 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+<script type="text/javascript" src="/public/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/public/libraries/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="/public/js/index.js"></script>
-</div>
 </body>
 
 </html>
