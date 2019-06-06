@@ -4,9 +4,8 @@
       "tag": "ai-demo",
       "date": "11/2018 - Present",
       "image": "/images/ai-demo.png",
-      "code": "NONE",
-      "demo": "http://techdata.cgrb.oregonstate.edu/access/",
-      "report": "NONE",
+      "code": "",
+      "demo": "http://aidemo.cgrb.oregonstate.edu/",
       "description": "",
       "tools": [
         {
@@ -41,8 +40,7 @@
       "date": "10/2018 - Present",
       "image": "/images/pedestrian-counting-and-privacy-preservation.jpg",
       "code": "https://github.com/PavementPrometheus/Street-Watch",
-      "demo": "NONE",
-      "report": "NONE",
+      "demo": "",
       "description": "",
       "tools": [
         {
@@ -73,8 +71,7 @@
       "date": "11/2018",
       "image": "/images/exploring-robot.png",
       "code": "https://github.com/madebymaze/exploring-robot",
-      "demo": "NONE",
-      "report": "/pdf/exploring-robot.pdf",
+      "demo": "",
       "description": "",
       "tools": [
         {
@@ -105,8 +102,7 @@
       "date": "7/2018 - 8/2018",
       "image": "/images/no-image.jpg",
       "code": "https://github.com/madebymaze/image-captioning",
-      "demo": "NONE",
-      "report": "NONE",
+      "demo": "",
       "description": "",
       "tools": [
         {
@@ -133,8 +129,7 @@
       "date": "6/2018 - 7/2018",
       "image": "/images/no-image.jpg",
       "code": "https://github.com/madebymaze/facial-keypoint-detection",
-      "demo": "NONE",
-      "report": "NONE",
+      "demo": "",
       "description": "",
       "tools": [
         {
@@ -161,8 +156,7 @@
       "date": "5/2018 - 8/2018",
       "image": "/images/self-driving-RC-car.jpg",
       "code": "https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen",
-      "demo": "NONE",
-      "report": "NONE",
+      "demo": "",
       "description": "",
       "tools": [
         {
@@ -197,8 +191,7 @@
       "date": "5/2018",
       "image": "/images/no-image.jpg",
       "code": "https://github.com/madebymaze/image-classification",
-      "demo": "NONE",
-      "report": "NONE",
+      "demo": "",
       "description": "",
       "tools": [
         {
@@ -226,7 +219,6 @@
       "image": "/images/aceuposu.png",
       "code": "https://github.com/madebymaze/aces-up-game",
       "demo": "https://aceuposu.herokuapp.com/",
-      "report": "NONE",
       "description": "",
       "tools": [
         {
@@ -252,9 +244,8 @@
       "tag": "personal-website",
       "date": "12/2016",
       "image": "/images/personal-website.png",
-      "code": "https://github.com/madebymaze/personal-website",
+      "code": "https://github.com/madebymaze/madebymaze.github.io",
       "demo": "https://madebymaze.xyz/",
-      "report": "NONE",
       "description": "",
       "tools": [
         {
@@ -289,8 +280,7 @@
       "date": "4/2016",
       "image": "/images/no-image.jpg",
       "code": "https://github.com/madebymaze/ai-agent-2d",
-      "demo": "NONE",
-      "report": "NONE",
+      "demo": "",
       "description": "",
       "tools": [
         {

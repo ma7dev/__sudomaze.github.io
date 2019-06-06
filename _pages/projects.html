@@ -7,12 +7,26 @@ permalink: /projects/
     <div class="container-fluid">
         <div class="row">
             {% for member in site.data.projects %}
-            <div class="col-3 text-center">
+            <div class="col-sm-4 text-center">
                 <div class="card" id="{{ member.tag }}">
-                    <div class="card-header">{{ member.title }} - {{ member.date }}</div>
+                    <div class="card-header">
+                        <div class="row">
+                            <div class="col-8">
+                                <p class="float-left"><strong>{{ member.title }}</strong></p>
+                            </div>
+                            <div class="col-4">
+                                <p class="float-right">{{ member.date }}</p>
+                            </div>
+                        </div>
+                    </div>
                     <img class="card-img-top" src="/public{{ member.image }}" alt="">
                     <div class="card-body">
-                        <a href="{{ member.code }}" class="btn btn-primary" target="_blank">Check it out!</a>
+                        {% if member.code != "" %}
+                        <a href="{{ member.code }}" class="btn btn-primary" target="_blank">Code</a>
+                        {% endif %}
+                        {% if member.demo != "" %}
+                        <a href="{{ member.demo }}" class="btn btn-primary" target="_blank">Demo</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>

@@ -1,5 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-05T13:58:57-07:00</updated><id>http://localhost:4000/</id><title type="html">Mazen’s Space</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">YOLOv3</title><link href="http://localhost:4000/yolov3/" rel="alternate" type="text/html" title="YOLOv3" /><published>2018-11-14T00:00:00-08:00</published><updated>2018-11-14T00:00:00-08:00</updated><id>http://localhost:4000/yolov3</id><content type="html" xml:base="http://localhost:4000/yolov3/">&lt;h1 id=&quot;welcome&quot;&gt;Welcome&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-06T11:37:08-07:00</updated><id>http://localhost:4000/</id><title type="html">Mazen’s Space</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">YOLOv3</title><link href="http://localhost:4000/yolov3/" rel="alternate" type="text/html" title="YOLOv3" /><published>2018-11-14T00:00:00-08:00</published><updated>2018-11-14T00:00:00-08:00</updated><id>http://localhost:4000/yolov3</id><content type="html" xml:base="http://localhost:4000/yolov3/">&lt;p&gt;This is a demo of all styled elements in Jekyll Now.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;HELLO&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://raw.githubusercontent.com/barryclark/www.jekyllnow.com/gh-pages/_posts/2014-6-19-Markdown-Style-Guide.md&quot;&gt;View the markdown used to create this post&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;blue&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome</summary></entry></feed>
+&lt;p&gt;This is a paragraph, it’s surrounded by whitespace. Next up are some headers, they’re heavily influenced by GitHub’s markdown style.&lt;/p&gt;
+
+&lt;h2 id=&quot;header-2-h1-is-reserved-for-post-titles&quot;&gt;Header 2 (H1 is reserved for post titles)&lt;/h2&gt;
+
+&lt;h3 id=&quot;header-3&quot;&gt;Header 3&lt;/h3&gt;
+
+&lt;h4 id=&quot;header-4&quot;&gt;Header 4&lt;/h4&gt;
+
+&lt;p&gt;A link to &lt;a href=&quot;http://github.com/barryclark/jekyll-now/&quot;&gt;Jekyll Now&lt;/a&gt;. A big ass literal link &lt;a href=&quot;http://github.com/barryclark/jekyll-now/&quot;&gt;http://github.com/barryclark/jekyll-now/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;An image, located within /images&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/public/images/icon.png&quot; alt=&quot;an image alt text&quot; title=&quot;an image title&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A bulletted list&lt;/li&gt;
+  &lt;li&gt;alternative syntax 1&lt;/li&gt;
+  &lt;li&gt;alternative syntax 2
+    &lt;ul&gt;
+      &lt;li&gt;an indented list item&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;An&lt;/li&gt;
+  &lt;li&gt;ordered&lt;/li&gt;
+  &lt;li&gt;list&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Inline markup styles:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;code()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Blockquote&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Nested Blockquote&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Syntax highlighting can be used with triple backticks, like so:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;/* Some pointless Javascript */
+var rawr = [&quot;r&quot;, &quot;a&quot;, &quot;w&quot;, &quot;r&quot;];
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Use two trailing spaces&lt;br /&gt;
+on the right&lt;br /&gt;
+to create linebreak tags&lt;/p&gt;
+
+&lt;p&gt;Finally, horizontal lines&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;hr /&gt;</content><author><name></name></author><category term="hot" /><category term="summer" /><summary type="html">This is a demo of all styled elements in Jekyll Now.</summary></entry></feed>

@@ -3,7 +3,7 @@
 <head>
     <!-- Website Details -->
     <meta charset="utf-8">
-    <title>Mazen Alotaibi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">    <title>Mazen Alotaibi</title>
     <meta name="theme-color" content="#F73859">
     <meta name="author" content="Mazen Alotaibi">
     <meta name="description" content="Mazen's Personal Space">
@@ -34,6 +34,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/public/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/styles_post.css">
     <link rel="stylesheet" href="/public/css/styles.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
   </head>
@@ -55,46 +56,99 @@
       </div>
     </div>
   </nav>
+<div class="container">
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5">
+            <p>This is a demo of all styled elements in Jekyll Now.</p>
 
-<main id="site-content">
-<main id="site-content">
-    <div id="primary">
-    <h1 id="welcome">Welcome</h1>
+<p><a href="https://raw.githubusercontent.com/barryclark/www.jekyllnow.com/gh-pages/_posts/2014-6-19-Markdown-Style-Guide.md">View the markdown used to create this post</a>.</p>
 
-<p><strong>HELLO</strong></p>
+<p>This is a paragraph, it’s surrounded by whitespace. Next up are some headers, they’re heavily influenced by GitHub’s markdown style.</p>
 
-<p>blue</p>
+<h2 id="header-2-h1-is-reserved-for-post-titles">Header 2 (H1 is reserved for post titles)</h2>
 
+<h3 id="header-3">Header 3</h3>
+
+<h4 id="header-4">Header 4</h4>
+
+<p>A link to <a href="http://github.com/barryclark/jekyll-now/">Jekyll Now</a>. A big ass literal link <a href="http://github.com/barryclark/jekyll-now/">http://github.com/barryclark/jekyll-now/</a></p>
+
+<p>An image, located within /images</p>
+
+<p><img src="/public/images/icon.png" alt="an image alt text" title="an image title" /></p>
+
+<ul>
+  <li>A bulletted list</li>
+  <li>alternative syntax 1</li>
+  <li>alternative syntax 2
+    <ul>
+      <li>an indented list item</li>
+    </ul>
+  </li>
+</ul>
+
+<ol>
+  <li>An</li>
+  <li>ordered</li>
+  <li>list</li>
+</ol>
+
+<p>Inline markup styles:</p>
+
+<ul>
+  <li><em>italics</em></li>
+  <li><strong>bold</strong></li>
+  <li><code class="highlighter-rouge">code()</code></li>
+</ul>
+
+<blockquote>
+  <p>Blockquote</p>
+  <blockquote>
+    <p>Nested Blockquote</p>
+  </blockquote>
+</blockquote>
+
+<p>Syntax highlighting can be used with triple backticks, like so:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* Some pointless Javascript */
+var rawr = ["r", "a", "w", "r"];
+</code></pre></div></div>
+
+<p>Use two trailing spaces<br />
+on the right<br />
+to create linebreak tags</p>
+
+<p>Finally, horizontal lines</p>
+
+<hr />
+<hr />
+
+            <hr>
+            <footer>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p><a href="http://madebymaze.xyz" target="_blank"><i class="fal fa-copyright" aria-hidden="true"></i> 2019, Mazen Alotaibi.</a></p>
+                        </div>
+                        <div class="col-12 text-center" id="social-list">
+                            
+                                <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            
+                                <a href="https://github.com/madebymaze" id="github" class="social-btn" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            
+                                <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            
+                            <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="col-12 text-center" id="source-code">
+                            <p><a href="http://github.com/madebymaze/madebymaze.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </div>
-<div id="secondary">
-        <ul>
-          <li><a href="mailto:mail@madebymaze.xyz" id="work-btn">I am currently <strong>accepting new projects</strong> for Winter Quarter 2019</a></li>
-          <hr class="breaker">
-          <li id="social-list">
-          
-          <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn"  target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-          
-          <a href="https://github.com/madebymaze" id="github" class="social-btn"  target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
-          
-          <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn"  target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          
-          <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn"  target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>  </li>
-        <hr class="breaker">
-        <li id="frieinds-list">
-          <strong><i class="fas fa-users"></i> Friends:</strong>
-          <ul id="friends-list">
-            
-            <li><a href="http://people.oregonstate.edu/~chriconn/" class="friends-btn"  target="_blank">Connor Christensen</a></li>
-            
-            <li><a href="https://lcsfrey.github.io/" class="friends-btn"  target="_blank">Lucas Frey</a></li>
-            
-          </ul>
-        </li>
-      </ul>
-      </div>
-
-</main>
-
+</div>
 <style>
         .videoWrapper {
             position: relative;
