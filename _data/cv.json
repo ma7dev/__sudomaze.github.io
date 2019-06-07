@@ -16,10 +16,13 @@
             "position": "Lead GPU Computational Researcher",
             "details": [
                 {
-                    "statement": "Responsibilities are to develop new pathways around AI, Machine Learning, and Deep Learning, and help other undergraduate in the AI, Machine Learning, and Deep Learning area."
+                    "statement": "Worked on <strong>Tech Data AI Demo</strong> which was featured in the <strong>IBMThink2019 Conference</strong>."
                 },
                 {
-                    "statement": "Worked on Tech Data AI Demo, was featured in IBM Conference, and multiple Deep Learning related projects, Owl Sounds Classification and Plankton Classification."
+                    "statement": "Contributed to the development of multiple Deep Learning related projects including <strong>Owl Sounds Classification</strong> and <strong>Plankton Classification</strong>."
+                },
+                {
+                    "statement": "Assisted fellow undergraduates in understanding the concepts and implementation of machine learning and deep learning systems."
                 }
             ]
         },
@@ -33,23 +36,23 @@
                     "statement": "Managed a team of 6 photographers to document summer program events."
                 },
                 {
-                    "statement": "Hosted and organized multiple teaching photography sessions for more than 70 inspired photographers."
+                    "statement": "Hosted and organized multiple teaching photography sessions for <strong>more than 70 inspired photographers</strong>."
                 }
             ]
         }
     ],
     "act": [
         {
-            "title": "IBMThink2019 (Conference)",
+            "title": "IBMThink2019 <em>(Conference)</em>",
             "location": "San Francisco, CA (USA)",
             "date": "2/2019",
             "position": "Presenter at Tech Data Booth",
             "details": [
                 {
-                    "statement": "Intived to IBM Conference by Tech Data to present Tech Data AI Demo to increase sales."
+                    "statement": "Invited to <strong>IBM Conference</strong> by <strong>Tech Data</strong> to present Tech Data AI Demo to increase sales."
                 },
                 {
-                    "statement": "I have presented my work at the conference and I have connected with more than 100 potential clients who are intresented to use the demo to increase sales in different regions, such as Brazil, UK, and Japan."
+                    "statement": "Presented my work at the conference and I have connected with <strong>more than 100 potential clients</strong> who are interested to use the demo to increase their sales in different regions, such as Brazil, United Kingdom, and Japan."
                 }
             ]
         },
@@ -60,7 +63,7 @@
             "position": "Vice President",
             "details": [
                 {
-                    "statement": "Responsibilities are to present latest literature in to AI, ML, DL, and CV areas biweekly, host learning sessions to solve simple Kaggle competitions for new learners."
+                    "statement": "Responsibilities are to present latest literature in to AI, ML, DL, and CV areas biweekly, host learning sessions to solve Kaggle competitions for new learners."
                 },
                 {
                     "statement": "Worked on building a Self-Driving RC Car, Kaggle Competitions, and a Breast Cancer project with the group members."
@@ -68,30 +71,30 @@
             ]
         },
         {
-            "title": "PyImageConf2018 (Conference)",
+            "title": "PyImageConf2018 <em>(Conference)</em>",
             "location": "San Francisco, CA (USA)",
             "date": "8/2018",
             "position": "Attendee",
             "details": [
                 {
-                    "statement": "Attended a conference that focuses on advanced techniques in Computer Vision and Deep Learning research and their implementations to solve real world problems."
+                    "statement": "Attended a conference that focuses on advanced techniques in <em>Computer Vision</em> and <em>Deep Learning</em> research and their implementations to solve real world problems."
                 },
                 {
-                    "statement": "Built a Faster Regional Neural Networks (Faster-RNN)’s logic from scratch to classify images with higher accuracy than well-known networks using NumPy and PyTorch."
+                    "statement": "Built a <strong>Faster Regional-Convolution Neural Networks</strong> (Faster R-CNN) from scratch to classify images with higher accuracy than well-known networks using <strong>NumPy</strong> and <strong>PyTorch</strong>."
                 }
             ]
         },
         {
-            "title": "DesertHacks (Hackathon)",
+            "title": "DesertHacks <em>(Hackathon)</em>",
             "location": "Phoenix, AZ (USA)",
             "date": "2/2017",
             "position": "Participant",
             "details": [
                 {
-                    "statement": "Worked with a team to build a web application that analysis a user’s behavior from a list of previous behaviors based on Markov Chain Methods using Node.js and Flask for back-end, JavaScript for front-end, Python for data analysis, and SQL for data saving and pulling."
+                    "statement": "Worked with a team to build a web application that analysis a user's behavior from a list of previous behaviors based on <em>Markov Chain Methods</em> using <strong>Node.js</strong> and <strong>Flask</strong> for back-end, <strong>JavaScript</strong> for front-end, <strong>Python</strong> for data analysis, and <strong>SQL</strong> for data saving and pulling."
                 },
                 {
-                    "statement": "Hosted the web application on Amazon Web-Services (AWS)."
+                    "statement": "Hosted the web application on <strong>Amazon Web-Services</strong> (AWS)."
                 }
             ]
         },
@@ -102,7 +105,7 @@
             "position": "Active Member",
             "details": [
                 {
-                    "statement": "Worked to build small projects using new tools with a club member."
+                    "statement": "Worked to build small projects using new tools with club members."
                 },
                 {
                     "statement": "Helped new members in explaining web development technologies and common practices in development."
@@ -128,6 +131,18 @@
                 },
                 {
                     "title": "BASH",
+                    "love": "1"
+                },
+                {
+                    "title": "MATLAB",
+                    "love": "1"
+                },
+                {
+                    "title": "OpenCL",
+                    "love": "1"
+                },
+                {
+                    "title": "OpenGL",
                     "love": "1"
                 },
                 {
@@ -168,10 +183,6 @@
                     "love": "0"
                 },
                 {
-                    "title": "TensorFlow.js",
-                    "love": "0"
-                },
-                {
                     "title": "NGINX",
                     "love": "0"
                 }
@@ -198,10 +209,6 @@
                 },
                 {
                     "title": "scikit-learn",
-                    "love": "1"
-                },
-                {
-                    "title": "pandas",
                     "love": "1"
                 },
                 {
@@ -243,10 +250,6 @@
                 },
                 {
                     "title": "ROS",
-                    "love": "0"
-                },
-                {
-                    "title": "Markdown",
                     "love": "0"
                 }
             ]

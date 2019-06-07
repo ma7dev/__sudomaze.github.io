@@ -12,6 +12,9 @@ p {
   margin: 0;
   padding: 0;
 }
+img {
+  border-radius: 5px;
+}
 #social-list {
   font-size:150%;
   width: 100%;
@@ -49,6 +52,9 @@ p {
 a:hover{
  font-weight: 500;
 }
+/* Header */
+/* Content */
+/* Footer */
 footer #source-code {
   margin-top: 20px;
   margin-bottom: -40px;
@@ -69,9 +75,16 @@ footer #source-code {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-#home #summary, #home #calendar {
+#home #summary {
   margin: auto;
   width: 80%;
+}
+#home #calendar {
+  display: block;
+  box-sizing: border-box;
+}
+#home #calendar .js-calendar-graph{
+  position: relative !important;
 }
 /* 
   Blog 
@@ -145,7 +158,7 @@ footer #source-code {
 }
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 601px) {
-  *, .btn-block, .font-weight-light {
+  *, .btn-block {
     font-size: 100%;
   }
 }
