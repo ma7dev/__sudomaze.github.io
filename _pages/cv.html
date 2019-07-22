@@ -19,12 +19,10 @@ permalink: /cv/
                 <div class="col-12">
                     <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ member.location }}</p>
                 </div>
-                <div class="col-12">
-                    <ul>
-                        <li>Major: <em>{{ member.major }}</em></li>
-                        <li>Minor: <em>{{ member.minor }}</em></li>
-                    </ul>
-                </div>
+                <ul class="col-12 ml-4">
+                    <li>Major: <em>{{ member.major }}</em></li>
+                    <li>Minor: <em>{{ member.minor }}</em></li>
+                </ul>
             </div>
         </div>
         {% endfor %}
@@ -50,15 +48,11 @@ permalink: /cv/
                     <div class="col-12">
                         <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ member.location }}</p>
                     </div>
-                    <div class="col-12">
-                        <p>
-                            <ul>
-                                {% for detail in member.details %}
-                                <li>{{ detail.statement }}</li>
-                                {% endfor %}
-                            </ul>
-                        </p>
-                    </div>
+                    <ul class="col-12 ml-4">
+                        {% for detail in member.details %}
+                        <li>{{ detail.statement }}</li>
+                        {% endfor %}
+                    </ul>
                 </div>
         </div>
         {% endfor %}
@@ -78,15 +72,11 @@ permalink: /cv/
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <p>
-                        <ul>
-                            {% for detail in member.accomplishments %}
-                            <li>{{ detail.statement }}</li>
-                            {% endfor %}
-                        </ul>
-                    </p>
-                </div>
+                <ul class="col-12 ml-4">
+                    {% for detail in member.accomplishments %}
+                    <li>{{ detail.statement }}</li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
         {% endfor %}
@@ -112,15 +102,11 @@ permalink: /cv/
                 <div class="col-12">
                     <p><em>{{ member.position }}</em></p>
                 </div>
-                <div class="col-12">
-                    <p>
-                        <ul>
-                            {% for detail in member.details %}
-                            <li>{{ detail.statement }}</li>
-                            {% endfor %}
-                        </ul>
-                    </p>
-                </div>
+                <ul class="col-12 ml-4">
+                    {% for detail in member.details %}
+                    <li>{{ detail.statement }}</li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
         {% endfor %}
@@ -156,7 +142,7 @@ permalink: /cv/
     <h2 class="font-weight-light"><i class="fal fa-download"></i> Download</h2>
     <hr>
     <p class="lead">
-        <div class="container-fluid">
+        <div class="container-fluid" id="download-section">
             <div class="row">
                 <div class="col-4">
                     <a class="btn btn-primary btn-lg btn-block" href="/public/pdf/CV.pdf" role="button" target="_blank">Curriculum Vitae</a>

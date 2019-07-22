@@ -1,6 +1,12 @@
 {
     "timeline":[
       {
+        "title": "OSU AI Club",
+        "position": "President",
+        "date": "6/2019",
+        "type": "job"
+      },
+      {
         "title": "Graduated from Oregon State Univesity",
         "date": "6/15/2019",
         "type": "event"
@@ -8,7 +14,6 @@
       {
         "title": "2019 Undergraduate Engineering Expo",
         "position": "Presenter",
-        "description": "",
         "date": "5/17/2019",
         "images": [
           {
@@ -25,7 +30,6 @@
       {
         "title": "IBMThink2019 <em>(Conference)</em>",
         "position": "Presenter at Tech Data Booth",
-        "description": "Invited to <strong>IBM Conference</strong> by <strong>Tech Data</strong> to present Tech Data AI Demo to increase sales. Presented my work at the conference and I have connected with <strong>more than 100 potential clients</strong> who are interested to use the demo to increase their sales in different regions, such as Brazil, United Kingdom, and Japan.",
         "date": "2/13/2019",
         "images": [
           {
@@ -44,20 +48,30 @@
         "type": "job"
       },
       {
+        "title": "Center for Genome Research and Biocomputing",
+        "position": "Lead GPU Computational Researcher",
+        "date": "2/2019",
+        "type": "job"
+      },
+      {
         "title": "2019",
         "type": "year"
       },
       {
         "title": "Center for Genome Research and Biocomputing",
-        "position": "Lead GPU Computational Researcher",
-        "description": "Worked on <strong>Tech Data AI Demo</strong> which was featured in the <strong>IBMThink2019 Conference</strong>. Contributed to the development of multiple Deep Learning related projects including <strong>Owl Sounds Classification</strong> and <strong>Plankton Classification</strong>. Assisted fellow undergraduates in understanding the concepts and implementation of machine learning and deep learning systems.",
+        "position": "GPU Computational Researcher",
         "date": "11/2018",
+        "type": "job"
+      },
+      {
+        "title": "OSU AI Club",
+        "position": "Vice President",
+        "date": "9/2018",
         "type": "job"
       },
       {
         "title": "PyImageConf2018 <em>(Conference)</em>",
         "position": "Attendee",
-        "description": "Attended a conference that focuses on advanced techniques in <em>Computer Vision</em> and <em>Deep Learning</em> research and their implementations to solve real world problems. Built a <strong>Faster Regional-Convolution Neural Networks</strong> (Faster R-CNN) from scratch to classify images with higher accuracy than well-known networks using <strong>NumPy</strong> and <strong>PyTorch</strong>.",
         "date": "8/2018",
         "type": "job"
       },
@@ -67,15 +81,13 @@
       },
       {
         "title": "OSU AI Club",
-        "position": "President",
-        "description": "Responsibilities are to present latest literature in to AI, ML, DL, and CV areas biweekly, host learning sessions to solve Kaggle competitions for new learners. Worked on building a Self-Driving RC Car, Kaggle Competitions, and a Breast Cancer project with the group members.",
+        "position": "Active Member",
         "date": "5/2017",
         "type": "job"
       },
       {
         "title": "DesertHacks <em>(Hackathon)</em>",
         "position": "Participant",
-        "description": "Worked with a team to build a web application that analysis a user's behavior from a list of previous behaviors based on <em>Markov Chain Methods</em> using <strong>Node.js</strong> and <strong>Flask</strong> for back-end, <strong>JavaScript</strong> for front-end, <strong>Python</strong> for data analysis, and <strong>SQL</strong> for data saving and pulling. Hosted the web application on <strong>Amazon Web-Services</strong> (AWS).",
         "date": "2/2017",
         "images": [
           {
@@ -96,7 +108,6 @@
       {
         "title": "OSU App Club",
         "position": "Active Member",
-        "description": "Worked to build small projects using new tools with club members. Helped new members in explaining web development technologies and common practices in development.",
         "date": "9/2016",
         "type": "job"
       },
@@ -129,7 +140,6 @@
       {
         "title": "Saudi Aramco Summer Program",
         "position": "Lead Photographer",
-        "description": "Managed a team of 6 photographers to document summer program events. Hosted and organized multiple teaching photography sessions for <strong>more than 70 inspired photographers</strong>.",
         "date": "Summer 2012",
         "type": "job"
       },

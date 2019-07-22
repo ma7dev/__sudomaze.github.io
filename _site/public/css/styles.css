@@ -72,8 +72,11 @@ img {
   Home 
 */
 #posts{
-  width: 800px;
+  width: 80%;
   margin:auto;
+}
+#posts h2{
+  font-size: 2em;
 }
 #posts .card-title .float-right{
   color: gray;
@@ -101,8 +104,15 @@ width: 100%;
   Projects 
 */
 #projects{
-  width: 600px;
+  width: 80%;
   margin:auto;
+  font-size: 1em;
+}
+#projects .card-title{
+  font-size: 1.5em;
+}
+#projects a{
+  font-size: .8em;
 }
 /* 
   CV 
@@ -119,9 +129,21 @@ width: 100%;
 #cv #show-date {
   margin-top: 20px;
 }
+#cv #download-section a{
+  font-size: 1em;
+}
 /*
   About
 */
+#about a{
+  font-size: 1em;
+}
+#about a{
+  font-size: 1em;
+}
+#about #contact p{
+  font-size: 1em;
+}
 /* -----------------------------------------------
  * Timeline
  * --------------------------------------------- */
