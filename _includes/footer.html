@@ -1,4 +1,36 @@
-{% include open-embed.html %}
+<footer>
+    <hr style="border-top: 1px solid rgba(0,0,0,.25);;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>
+                    {{site.time | date: '%Y'}}
+                    <i class="fal fa-copyright" aria-hidden="true"></i>
+                    <a href="https://madebymaze.xyz" target="_blank">Mazen Alotaibi</a>
+                </p>
+                <p>
+                    Hosted on 
+                    <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+                </p>
+                <p>
+                    Built with 
+                    <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>,
+                    <a href="https://github.com/jekyll/minima/" target="_blank">Minima</a>, and
+                    <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                </p>
+            </div>
+            <div class="col-12 text-center" id="social-list">
+                {% for member in site.data.about.social %}
+                    <a href="{{ member.link }}" id="{{ member.title }}" class="social-btn" target="_blank"><i class="fab fa-{{ member.title }}" aria-hidden="true"></i></a>
+                {% endfor %}
+                <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-12 text-center" id="source-code">
+                <p><a href="http://github.com/madebymaze/madebymaze.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
 {% include analytics.html %}
 <script type="text/javascript" src="/public/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="/public/libraries/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>

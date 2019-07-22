@@ -2,30 +2,7 @@
 <html lang="en">
 {% include header.html %}
 <div class="container">
-    <div class="card border-0 shadow my-5">
-        <div class="card-body p-5">
-            {{ content }}
-            <hr>
-            <footer>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 text-center">
-                            <p><a href="http://madebymaze.xyz" target="_blank">Mazen Alotaibi</a> <i class="fal fa-copyright" aria-hidden="true"></i> {{site.time | date: '%Y'}}.</p>
-                        </div>
-                        <div class="col-12 text-center" id="social-list">
-                            {% for member in site.data.about.social %}
-                                <a href="{{ member.link }}" id="{{ member.title }}" class="social-btn" target="_blank"><i class="fab fa-{{ member.title }}" aria-hidden="true"></i></a>
-                            {% endfor %}
-                            <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="col-12 text-center" id="source-code">
-                            <p><a href="http://github.com/madebymaze/madebymaze.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </div>
+    {{ content }}
 </div>
 {% include footer.html %}
 </html>

@@ -1,36 +1,35 @@
 ---
-layout: cards
+layout: default
 title: Projects
 permalink: /projects/
 ---
 <div id="projects">
     <div class="container-fluid">
-        <div class="row">
-            {% for member in site.data.projects %}
-            <div class="col-sm-4 text-center">
-                <div class="card" id="{{ member.tag }}">
-                    <div class="card-header">
-                        <div class="row">
-                            <div class="col-8">
-                                <p class="float-left"><strong>{{ member.title }}</strong></p>
-                            </div>
-                            <div class="col-4">
-                                <p class="float-right">{{ member.date }}</p>
-                            </div>
+        {% for member in site.data.projects %}
+        <div class="card mb-3" id="{{ member.tag }}">
+            <img class="card-img-top" src="/public{{ member.image }}">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="float-left"><strong>{{ member.title }}</strong></p>
+                        </div>
+                        <div class="col-6">
+                            <p class="float-right">{{ member.date }}</p>
                         </div>
                     </div>
-                    <img class="card-img-top" src="/public{{ member.image }}" alt="">
-                    <div class="card-body">
-                        {% if member.code != "" %}
-                        <a href="{{ member.code }}" class="btn btn-primary" target="_blank">Code</a>
-                        {% endif %}
-                        {% if member.demo != "" %}
-                        <a href="{{ member.demo }}" class="btn btn-primary" target="_blank">Demo</a>
-                        {% endif %}
-                    </div>
-                </div>
+                </h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">
+                    {% if member.demo != "" %}
+                    <a href="{{ member.demo }}" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Website</a>
+                    {% endif %}
+                    {% if member.code != "" %}
+                    <a href="{{ member.code }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                    {% endif %}
+                </p>
             </div>
-            {% endfor %}
         </div>
+        {% endfor %}
     </div>
 </div>

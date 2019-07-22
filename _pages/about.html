@@ -1,0 +1,134 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+<div id="about">
+    <div class="container-fluid  mx-auto">
+        <div class="row">
+            <div class="col-12">
+                <div class="clearfix">
+                    <img src="/public/images/face.jpg" class="float-left img-thumbnail mr-2" style="height: 200px;">
+                    <p id="summary mt-2">
+                        Hi there, I'm Mazen; I have graduated from Oregon State Univesity with a BS degree in Computer Science Applied in Artificial Intelligence; 
+                        with a minor in Actuarial Science. 
+                        I have worked at the Center for Genome Research & Bio-computing as a Lead GPU Computational Researcher. 
+                        I am the President of <a href="http://osuai.club/" target="_blank">OSU AI Club</a>. 
+                        I work on projects on <a href="https://github.com/madebymaze" target="_blank">GitHub</a> and participate in <a href="http://kaggle.com/madebymaze" target="_blank">Kaggle</a> competitions to distract me from school. 
+                        <a href="mailto:mail@madebymaze.xyz?subject=I%20would%20Like%20to%20Hire%20You!&body=Dear%20Mazen,%0D%0A%0D%0AI%20would%20like%20to%20hire%20you%20for%20a%20..." target="_blank">I am available for work</a>. You could <a href="#contact">contact me</a>.  
+                    </p>
+                </div>
+                <hr>
+            </div>
+            <div class="col-12 text-center">
+                <p id="calendar">
+                    Loading the data just for you.
+                </p>
+                <script>GitHubCalendar("#calendar", "madebymaze");</script>
+                <hr>
+            </div>
+            <div class="col-12">
+                <ul class="timeline">
+                    {% for member in site.data.about.timeline %}
+                    {% if member.type == "event" %}
+                        <li class="clearfix no-float"></li>
+                        </ul>
+                        <p class="text-center">
+                            <p class="text-center"><strong>{{ member.title }}</strong></p>
+                            <p class="text-center"><em>{{ member.date }}</em></p>
+                        </p>
+                        <ul class="timeline">
+                    {% endif %}
+                    {% if member.type == "year" %}
+                        <li class="clearfix no-float"></li>
+                        </ul>
+                        <p class="text-center">
+                            <strong>{{ member.title }}</strong>
+                        </p>
+                        <ul class="timeline">
+                    {% endif %}
+                    {% if member.type == "job" %}
+                        {% assign mod = forloop.index | modulo:2 %}
+                        {% if mod == 0 %}
+                        <li>
+                        {% endif %}
+                        {% if mod == 1 %}
+                        <li class="timeline-inverted">
+                        {% endif %}
+                            <div class="timeline-badge">
+                                <a><i class="fa fa-circle" id=""></i></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading  mt-2">
+                                    <h4><strong>{{ member.position }}</strong></h4> <h5>{{ member.title }}</h5>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>{{ member.description }}</p>
+                                    {% for image in member.images %}
+                                    <img src="/public/images/{{ image.title }}" title="{{ image.caption }}"  class="img-fluid ">
+                                    {% endfor %}
+                                </div>
+                                <div class="timeline-footer">
+                                    <p class="text-right">{{ member.date }}</p>
+                                </div>
+                            </div>
+                        </li>
+                    {% endif %}
+                    {% if member.type == "project" %}
+                        {% assign mod = forloop.index | modulo:2 %}
+                        {% if mod == 0 %}
+                        <li>
+                        {% endif %}
+                        {% if mod == 1 %}
+                        <li class="timeline-inverted">
+                        {% endif %}
+                            <div class="timeline-badge">
+                                <a><i class="fa fa-circle" id=""></i></a>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading  mt-2">
+                                    <h4><strong>{{ member.title }}</strong></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>{{ member.description }}</p>
+                                    <p>
+                                        {% for include in member.includes %}
+                                        {% if include.title == "link" %}
+                                        <a href="{{ include.link }}" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Website</a>
+                                        {% endif %}
+                                        {% if include.title == "code" %}
+                                        <a href="{{ include.link }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                        {% endif %}
+                                        {% endfor %}
+                                    </p>
+                                </div>
+                                <div class="timeline-footer">
+                                    <p class="text-right">{{ member.date }}</p>
+                                </div>
+                            </div>
+                        </li>
+                    {% endif %}
+                    {% endfor %}
+                    <li class="clearfix no-float"></li>
+                </ul>
+            </div>
+            <div class="col-12" id="contact">
+                    <hr>
+                    <h1 class="font-weight-light text-center">mail<i class="fal fa-at"></i>madebymaze.xyz</h1>
+                    <ul id="contact-info">
+                        <li>For job offers, please <a href="mailto:mail@madebymaze.xyz">send me an email.</a></li>
+                        <li>For general questions and advice, please see <a href="https://github.com/madebymaze/AMA" target="_blank">my AMA repository.</a></li>
+                        <li>For small questions, or just to say hi, please feel free to <a href="https://twitter.com/madebymaze" target="_blank">fire me a Tweet.</a></li>
+                        <li>For questions about software and tools, see <a href="https://github.com/madebymaze/setup" target="_blank">my setup.</a></li>
+                    </ul>
+                    <div id="contact-reminder">
+                        <h4 class="font-weight-light">Twitter: <a href="https://twitter.com/madebymaze" target="_blank"><i class="fal fa-at"></i>madebymaze</a></h4>
+                        <p class="ml-4">For informal, quick contact and questions, feel free to fire me a Tweet!</p>
+                        <h4 class="font-weight-light">Email: <a href="mailto:mail@madebymaze.xyz">mail<i class="fal fa-at"></i>madebymaze.xyz</a></h4>
+                        <p class="ml-4">For longer enquiries and questions, please send me an email.</p>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
