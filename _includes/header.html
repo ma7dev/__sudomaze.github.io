@@ -12,9 +12,6 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://madebymaze.xyz">
     <meta property="og:image" content="https://madebymaze.xyz/public/images/favicon.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="600">
-    <meta property="og:image:height" content="600">
     <meta property="og:description" content="Mazen's Personal Space">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -31,15 +28,21 @@
     <!-- LIBRARY -->
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="/public/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
-    <link rel="stylesheet" href="/public/css/styles_post.css">
+    <link rel="stylesheet" href="/public/libraries/tocify/jquery.tocify.css" />
+    <!-- add after bootstrap.min.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"
+    />
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
     <link rel="stylesheet" href="/public/css/styles.css">
   </head>
-  <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow sticky-top">
+  <body data-spy="scroll" data-target="#toc">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5 shadow static-top">
     <div class="container">
       <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">

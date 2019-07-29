@@ -14,9 +14,6 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://madebymaze.xyz">
     <meta property="og:image" content="https://madebymaze.xyz/public/images/favicon.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="600">
-    <meta property="og:image:height" content="600">
     <meta property="og:description" content="Mazen's Personal Space">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -33,15 +30,21 @@
     <!-- LIBRARY -->
     <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-
     <!-- CSS -->
     <link rel="stylesheet" href="/public/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
-    <link rel="stylesheet" href="/public/css/styles_post.css">
+    <link rel="stylesheet" href="/public/libraries/tocify/jquery.tocify.css" />
+    <!-- add after bootstrap.min.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css"
+    />
+    <!-- add after bootstrap.min.js -->
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
     <link rel="stylesheet" href="/public/css/styles.css">
   </head>
-  <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow sticky-top">
+  <body data-spy="scroll" data-target="#toc">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5 shadow static-top">
     <div class="container">
       <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,244 +66,326 @@
     <div id="projects">
     <div class="container-fluid">
         
-        <div class="card mb-3" id="ai-demo">
-            <img class="card-img-top" src="/public/images/ai-demo.png">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>Tech Data AI Demo</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">11/2018 - 6/2019</p>
+        <div id="ai-demo"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/images/ai-demo.png" target="_blank"><img src="/public/images/ai-demo.png" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>Tech Data AI Demo</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>11/2018 - 6/2019</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                
+                                <a href="http://aidemo.cgrb.oregonstate.edu/" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Project</a>
+                                
+                                
+                                
+                                <a disabled="disabled"><i class="fal fa-eye-slash"></i> Private Code</a>
+                                
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    
-                    <a href="http://aidemo.cgrb.oregonstate.edu/" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Website</a>
-                    
-                    
-                </p>
+                </div>
             </div>
         </div>
         
-        <div class="card mb-3" id="senior-design-project">
-            <img class="card-img-top" src="/public/images/pedestrian-counting-and-privacy-preservation.jpg">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>Senior Design Project</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">10/2018 - 6/2019</p>
+        <div id="senior-design-project"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/images/pedestrian-counting-and-privacy-preservation.jpg" target="_blank"><img src="/public/images/pedestrian-counting-and-privacy-preservation.jpg" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>Senior Design Project</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>10/2018 - 6/2019</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                
+                                
+                                <a href="https://github.com/PavementPrometheus/Street-Watch" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                
+                                
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    
-                    
-                    <a href="https://github.com/PavementPrometheus/Street-Watch" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    
-                </p>
+                </div>
             </div>
         </div>
         
-        <div class="card mb-3" id="exploring-robot">
-            <img class="card-img-top" src="/public/images/exploring-robot.png">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>Exploring Robot</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">11/2018</p>
+        <div id="exploring-robot"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/images/exploring-robot.png" target="_blank"><img src="/public/images/exploring-robot.png" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>Exploring Robot</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>11/2018</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                
+                                
+                                <a href="https://github.com/madebymaze/exploring-robot" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                
+                                
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    
-                    
-                    <a href="https://github.com/madebymaze/exploring-robot" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    
-                </p>
+                </div>
             </div>
         </div>
         
-        <div class="card mb-3" id="image-captioning">
-            <img class="card-img-top" src="/public/images/no-image.jpg">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>Image Captioning</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">7/2018 - 8/2018</p>
+        <div id="image-captioning"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/images/no-image.jpg" target="_blank"><img src="/public/images/no-image.jpg" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>Image Captioning</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>7/2018 - 8/2018</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                
+                                
+                                <a href="https://github.com/madebymaze/image-captioning" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                
+                                
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    
-                    
-                    <a href="https://github.com/madebymaze/image-captioning" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    
-                </p>
+                </div>
             </div>
         </div>
         
-        <div class="card mb-3" id="facial-keypoint-detection">
-            <img class="card-img-top" src="/public/images/no-image.jpg">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>Facial Keypoint Detection</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">6/2018 - 7/2018</p>
+        <div id="facial-keypoint-detection"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/images/no-image.jpg" target="_blank"><img src="/public/images/no-image.jpg" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>Facial Keypoint Detection</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>6/2018 - 7/2018</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                
+                                
+                                <a href="https://github.com/madebymaze/facial-keypoint-detection" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                
+                                
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    
-                    
-                    <a href="https://github.com/madebymaze/facial-keypoint-detection" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    
-                </p>
+                </div>
             </div>
         </div>
         
-        <div class="card mb-3" id="self-driving-RC-car">
-            <img class="card-img-top" src="/public/images/self-driving-RC-car.jpg">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>Self-Driving RC Car</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">5/2018 - 8/2018</p>
+        <div id="self-driving-RC-car"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/images/self-driving-RC-car.jpg" target="_blank"><img src="/public/images/self-driving-RC-car.jpg" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>Self-Driving RC Car</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>5/2018 - 8/2018</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                
+                                
+                                <a href="https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                
+                                
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    
-                    
-                    <a href="https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    
-                </p>
+                </div>
             </div>
         </div>
         
-        <div class="card mb-3" id="image-classification">
-            <img class="card-img-top" src="/public/images/no-image.jpg">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>Image Classification</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">5/2018</p>
+        <div id="image-classification"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/images/no-image.jpg" target="_blank"><img src="/public/images/no-image.jpg" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>Image Classification</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>5/2018</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                
+                                
+                                <a href="https://github.com/madebymaze/image-classification" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                
+                                
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    
-                    
-                    <a href="https://github.com/madebymaze/image-classification" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    
-                </p>
+                </div>
             </div>
         </div>
         
-        <div class="card mb-3" id="aces-up-game">
-            <img class="card-img-top" src="/public/images/aceuposu.png">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>Aces Up Game</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">11/2017 - 12/2017</p>
+        <div id="aces-up-game"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/images/aceuposu.png" target="_blank"><img src="/public/images/aceuposu.png" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>Aces Up Game</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>11/2017 - 12/2017</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                
+                                <a href="https://aceuposu.herokuapp.com/" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Project</a>
+                                
+                                
+                                <a href="https://github.com/madebymaze/aces-up-game" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                
+                                
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    
-                    <a href="https://aceuposu.herokuapp.com/" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Website</a>
-                    
-                    
-                    <a href="https://github.com/madebymaze/aces-up-game" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    
-                </p>
+                </div>
             </div>
         </div>
         
-        <div class="card mb-3" id="personal-website">
-            <img class="card-img-top" src="/public/images/personal-website.png">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>Personal Website</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">12/2016</p>
+        <div id="personal-website"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/images/personal-website-old.png" target="_blank"><img src="/public/images/personal-website-old.png" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>Personal Website</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>12/2016</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                
+                                <a href="https://madebymaze.xyz/" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Project</a>
+                                
+                                
+                                <a href="https://github.com/madebymaze/madebymaze.github.io" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                
+                                
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    
-                    <a href="https://madebymaze.xyz/" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Website</a>
-                    
-                    
-                    <a href="https://github.com/madebymaze/madebymaze.github.io" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    
-                </p>
+                </div>
             </div>
         </div>
         
-        <div class="card mb-3" id="ai-agent-2d">
-            <img class="card-img-top" src="/public/images/no-image.jpg">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>A.I. for a 2D Grid Game</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">4/2016</p>
+        <div id="ai-agent-2d"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/images/no-image.jpg" target="_blank"><img src="/public/images/no-image.jpg" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>A.I. for a 2D Grid Game</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>4/2016</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                
+                                
+                                <a href="https://github.com/madebymaze/ai-agent-2d" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                
+                                
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    
-                    
-                    <a href="https://github.com/madebymaze/ai-agent-2d" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    
-                </p>
+                </div>
             </div>
         </div>
         
     </div>
 </div>
 </div>
-<footer>
+<footer class="static-bottom">
     <hr style="border-top: 1px solid rgba(0,0,0,.25);;">
     <div class="container-fluid">
         <div class="row">
@@ -308,7 +393,7 @@
                 <p>
                     2019
                     <i class="fal fa-copyright" aria-hidden="true"></i>
-                    <a href="https://madebymaze.xyz" target="_blank">Mazen Alotaibi</a>
+                    <a href="https://madebymaze.xyz" target="_blank">Mazen Alotaibi.</a>
                 </p>
                 <p>
                     Hosted on 
@@ -318,7 +403,7 @@
                     Built with 
                     <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>,
                     <a href="https://github.com/jekyll/minima/" target="_blank">Minima</a>, and
-                    <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+                    <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.
                 </p>
             </div>
             <div class="col-12 text-center" id="social-list">
@@ -352,6 +437,8 @@
     </script>
 <script type="text/javascript" src="/public/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="/public/libraries/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/public/libraries/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/public/libraries/tocify/jquery.tocify.js"></script>
 <script type="text/javascript" src="/public/js/index.js"></script>
 </body>
 

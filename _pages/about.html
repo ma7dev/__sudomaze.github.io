@@ -9,7 +9,7 @@ permalink: /about/
             <div class="col-12">
                 <div class="row">
                     <div class="col-5">
-                        <img src="/public/images/face.jpg" class="img-thumbnail">
+                            <a href="/public/images/face.jpg" target="_blank"><img src="/public/images/face.jpg" class="img-thumbnail"></a>
                     </div>
                     <div class="col-7">
                         <p class="mt-2">
@@ -72,46 +72,16 @@ permalink: /about/
                                 <div class="timeline-body">
                                     <p>{{ member.description }}</p>
                                     {% for image in member.images %}
-                                    <img src="/public/images/{{ image.title }}" title="{{ image.caption }}"  class="img-fluid ">
+                                    <a href="/public/{{ image.title }}" target="_blank"><img src="/public/{{ image.title }}" title="{{ image.caption }}"  class="img-fluid" style="border-radius: 0%;"><a href="/public/{{ image.title }}" target="_blank"></a>
                                     {% endfor %}
                                 </div>
                                 <div class="timeline-footer">
+                                {% if mod == 0 %}
                                     <p class="text-right">{{ member.date }}</p>
-                                </div>
-                            </div>
-                        </li>
-                    {% endif %}
-                    {% if member.type == "project" %}
-                        {% assign mod = forloop.index | modulo:2 %}
-                        {% if mod == 0 %}
-                        <li>
-                        {% endif %}
-                        {% if mod == 1 %}
-                        <li class="timeline-inverted">
-                        {% endif %}
-                            <div class="timeline-badge">
-                                <a><i class="fa fa-circle" id=""></i></a>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading  mt-2">
-                                    <h4><strong>{{ member.title }}</strong></h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>{{ member.description }}</p>
-                                    <p>
-                                        {% for include in member.includes %}
-                                        {% if include.title == "link" %}
-                                        <a href="{{ include.link }}" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Website</a>
-                                        {% endif %}
-                                        {% if include.title == "code" %}
-                                        <a href="{{ include.link }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                                        {% endif %}
-                                        {% endfor %}
-                                    </p>
-                                </div>
-                                <div class="timeline-footer">
-                                    <p class="text-right">{{ member.date }}</p>
-                                </div>
+                                {% endif %}
+                                {% if mod == 1 %}
+                                    <p class="text-left">{{ member.date }}</p>
+                                {% endif %}
                             </div>
                         </li>
                     {% endif %}

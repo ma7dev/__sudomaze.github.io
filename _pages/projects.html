@@ -6,28 +6,38 @@ permalink: /projects/
 <div id="projects">
     <div class="container-fluid">
         {% for member in site.data.projects %}
-        <div class="card mb-3" id="{{ member.tag }}">
-            <img class="card-img-top" src="/public{{ member.image }}">
-            <div class="card-body">
-                <h5 class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="float-left"><strong>{{ member.title }}</strong></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right">{{ member.date }}</p>
+        <div id="{{ member.tag }}"></div>
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public/{{ member.image }}" target="_blank"><img src="/public/{{ member.image }}" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5 class="float-left"><strong>{{ member.title }}</strong></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>{{ member.date }}</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">...</p>
+                            </div>
+                            <div class="col-12 mt-2 bottom-column">
+                                {% if member.demo != null %}
+                                <a href="{{ member.demo }}" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Project</a>
+                                {% endif %}
+                                {% if member.code != null %}
+                                <a href="{{ member.code }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                {% endif %}
+                                {% if member.code == null %}
+                                <a disabled="disabled"><i class="fal fa-eye-slash"></i> Private Code</a>
+                                {% endif %}
+                            </div>
                         </div>
                     </div>
-                </h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text mt-2">
-                    {% if member.demo != "" %}
-                    <a href="{{ member.demo }}" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Website</a>
-                    {% endif %}
-                    {% if member.code != "" %}
-                    <a href="{{ member.code }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    {% endif %}
-                </p>
+                </div>
             </div>
         </div>
         {% endfor %}

@@ -1,17 +1,18 @@
 /* 
   Global 
 */
+@import "/assets/main.css";
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
+}
+ul, ol {
+  margin: 0;
 }
 h1, h2, h3, h4, h5, nav a, footer p, footer a, th{
   font-family: 'Roboto Slab', serif !important;
 }
 .navbar-dark{
   background-color: #25274d !important;
-}
-h3 {
-  color: #2e9cca;
 }
 .btn-primary {
   background-color: rgb(235, 235, 235) !important;
@@ -37,7 +38,6 @@ img {
   border-radius: 5px;
 }
 #social-list {
-  font-size:150%;
   width: 100%;
   text-align: center;
 }
@@ -69,14 +69,11 @@ img {
   height: 600px;
 }
 /* 
-  Home 
+  Posts 
 */
 #posts{
   width: 80%;
   margin:auto;
-}
-#posts h2{
-  font-size: 2em;
 }
 #posts .card-title .float-right{
   color: gray;
@@ -97,22 +94,49 @@ img {
 #no-posts img{
 width: 100%;
 }
+#posts img {
+  width:100%;
+  border-bottom-right-radius: 0%;
+  border-top-right-radius: 0%;
+}
 /* 
-  Blog 
+  Post 
 */
+#post img, #post figcaption{
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#post h1 {
+  font-style: bold;
+}
+#post h2 {
+  color: #29648a;
+}
+#post h3 {
+  color: #2e9cca;
+  font-style: italic;
+}
+/* #post h1, #post h2, #post h3 #post h4, #post h5 {
+  margin-top: .5em !important;
+} */
 /* 
   Projects 
 */
 #projects{
   width: 80%;
   margin:auto;
-  font-size: 1em;
 }
-#projects .card-title{
-  font-size: 1.5em;
+.bottom-column {
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
 }
-#projects a{
-  font-size: .8em;
+#projects img {
+  width:100%;
+  border-bottom-right-radius: 0%;
+  border-top-right-radius: 0%;
 }
 /* 
   CV 
@@ -129,21 +153,9 @@ width: 100%;
 #cv #show-date {
   margin-top: 20px;
 }
-#cv #download-section a{
-  font-size: 1em;
-}
 /*
   About
 */
-#about a{
-  font-size: 1em;
-}
-#about a{
-  font-size: 1em;
-}
-#about #contact p{
-  font-size: 1em;
-}
 /* -----------------------------------------------
  * Timeline
  * --------------------------------------------- */
@@ -243,9 +255,6 @@ width: 100%;
 }
 .timeline-badge > a {
   color: rgb(105, 105, 105) !important;
-}
-.timeline-badge a:hover {
-  color: rgb(43, 43, 43) !important;
 }
 .timeline-title {
   margin-top: 0;
@@ -373,20 +382,4 @@ width: 100%;
   .col-12 {width: 100%;}
 
   #message {width: 500px;}
-}
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  *, .btn-block {
-    font-size: 100%;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  * {
-    font-size: 88%;
-  }
-  .btn-block, .font-weight-light, .card-header {
-    font-size: 150%;
-  }
 }

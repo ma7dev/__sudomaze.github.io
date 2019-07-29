@@ -12,13 +12,19 @@ paginate_path: /page:num/
 
 # Build settings
 markdown: kramdown
+theme: minima
 highlighter: rouge
 kramdown:
   input: GFM #Github Flavored Markdown
   hard_wrap: false  
   syntax_highlighter: rouge
-plugins: [jekyll-paginate, jekyll-sitemap]
-gems:
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
   - jekyll-last-modified-at
+  - minima
+  - jekyll-feed
+  - jekyll-toc
+  - jekyll-numbered-headings
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

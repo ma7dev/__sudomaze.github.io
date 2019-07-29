@@ -3,40 +3,53 @@ layout: default
 ---
 <div id="posts">
     <div class="container-fluid">
-        {% assign post = site.posts %}
-        {% if post.first[0] == null %}
-        <div id="no-posts">
+        <div class="mb-2" id="no-posts">
             <h2 class="text-center"><strong><i class="fal fa-construction" aria-hidden="true"></i> Under Construction <i class="fal fa-construction" aria-hidden="true"></i></strong></h2>
             <hr>
             <img src="/public/gif/typing.gif">
         </div>
-        {% endif %}
         {% for post in site.posts %}
-        <div class="card mb-3">
-            <div class="card-body">
-                <div class="card-title">
-                    <div class="row">
-                        <div class="col-6">
-                            <h5><a href="{{ post.url }}" class="float-left" target="_blank"><strong>{{ post.title }}</strong></a></h5>
-                        </div>
-                        <div class="col-6">
-                            <p class="float-right"><em>{{ post.date | date: "%B %-d, %Y" }}</em></p>
+        <div class="card">
+            <div class="row">
+                <div class="col-4">
+                    <a href="/public{{ post.image }}" target="_blank"><img src="/public{{ post.image }}" alt=""></a>
+                </div>
+                <div class="col-8">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5><a href="{{ post.url }}" class="float-left" target="_blank"><strong>{{ post.title }}</strong></a></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>{{ post.date | date: "%B %-d, %Y" }}</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">{{ post.excerpt | truncatewords: 50 }}</p>
+                                <a href="{{ post.url }}" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> Read More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <h5 class="card-text"><strong>Introduction</strong></h5>
-                <p class="card-text">{{ post.introduction }}</p>
-                <div class="mt-2">
-                    {% for tag in post.tags %}
-                    <a href="/tags/{{ tag }}/" class="btn btn-tags project-button" target="_blank">{{ tag }}</a>
-                    {% endfor %}
-                </div>
             </div>
         </div>
-        <div class="mb-5">
-                <a href="{{ post.url }}" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> Read More</a>
-                <a href="https://twitter.com/intent/tweet?url={{ post.url }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.facebook.com/sharer.php?u={{ post.url }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <div class="col-12 mt-2">
+            <div class="row mb-4">
+                <div class="col-8 text-left">
+                    <h4>
+                        <strong>Tags:</strong>
+                        {% for tag in post.tags %}
+                        <a href="/tags/{{ tag }}/" target="_blank">#{{ tag }}</a>
+                        {% endfor %}
+                    </h4>
+                </div>
+                <div class="col-4 text-right">
+                    <h4>
+                        <strong>Share:</strong>
+                        <a href="https://twitter.com/intent/tweet?text={{ post.title }} https://madebymaze.xyz{{ post.url }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/sharer.php?text={{ post.title }}: https://madebymaze.xyz{{ post.url }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </h4>
+                </div>
+            </div>
         </div>
         {% endfor %}
     </div>

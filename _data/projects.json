@@ -3,8 +3,7 @@
       "title": "Tech Data AI Demo",
       "tag": "ai-demo",
       "date": "11/2018 - 6/2019",
-      "image": "/images/ai-demo.png",
-      "code": "",
+      "image": "images/ai-demo.png",
       "demo": "http://aidemo.cgrb.oregonstate.edu/",
       "description": "",
       "tools": [
@@ -38,9 +37,8 @@
       "title": "Senior Design Project",
       "tag": "senior-design-project",
       "date": "10/2018 - 6/2019",
-      "image": "/images/pedestrian-counting-and-privacy-preservation.jpg",
+      "image": "images/pedestrian-counting-and-privacy-preservation.jpg",
       "code": "https://github.com/PavementPrometheus/Street-Watch",
-      "demo": "",
       "description": "",
       "tools": [
         {
@@ -69,9 +67,8 @@
       "title": "Exploring Robot",
       "tag": "exploring-robot",
       "date": "11/2018",
-      "image": "/images/exploring-robot.png",
+      "image": "images/exploring-robot.png",
       "code": "https://github.com/madebymaze/exploring-robot",
-      "demo": "",
       "description": "",
       "tools": [
         {
@@ -100,9 +97,8 @@
       "title": "Image Captioning",
       "tag": "image-captioning",
       "date": "7/2018 - 8/2018",
-      "image": "/images/no-image.jpg",
+      "image": "images/no-image.jpg",
       "code": "https://github.com/madebymaze/image-captioning",
-      "demo": "",
       "description": "",
       "tools": [
         {
@@ -127,9 +123,8 @@
       "title": "Facial Keypoint Detection",
       "tag": "facial-keypoint-detection",
       "date": "6/2018 - 7/2018",
-      "image": "/images/no-image.jpg",
+      "image": "images/no-image.jpg",
       "code": "https://github.com/madebymaze/facial-keypoint-detection",
-      "demo": "",
       "description": "",
       "tools": [
         {
@@ -154,9 +149,8 @@
       "title": "Self-Driving RC Car",
       "tag": "self-driving-RC-car",
       "date": "5/2018 - 8/2018",
-      "image": "/images/self-driving-RC-car.jpg",
+      "image": "images/self-driving-RC-car.jpg",
       "code": "https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen",
-      "demo": "",
       "description": "",
       "tools": [
         {
@@ -189,9 +183,8 @@
       "title": "Image Classification",
       "tag": "image-classification",
       "date": "5/2018",
-      "image": "/images/no-image.jpg",
+      "image": "images/no-image.jpg",
       "code": "https://github.com/madebymaze/image-classification",
-      "demo": "",
       "description": "",
       "tools": [
         {
@@ -216,7 +209,7 @@
       "title": "Aces Up Game",
       "tag": "aces-up-game",
       "date": "11/2017 - 12/2017",
-      "image": "/images/aceuposu.png",
+      "image": "images/aceuposu.png",
       "code": "https://github.com/madebymaze/aces-up-game",
       "demo": "https://aceuposu.herokuapp.com/",
       "description": "",
@@ -243,7 +236,7 @@
       "title": "Personal Website",
       "tag": "personal-website",
       "date": "12/2016",
-      "image": "/images/personal-website.png",
+      "image": "images/personal-website-old.png",
       "code": "https://github.com/madebymaze/madebymaze.github.io",
       "demo": "https://madebymaze.xyz/",
       "description": "",
@@ -278,9 +271,8 @@
       "title": "A.I. for a 2D Grid Game",
       "tag": "ai-agent-2d",
       "date": "4/2016",
-      "image": "/images/no-image.jpg",
+      "image": "images/no-image.jpg",
       "code": "https://github.com/madebymaze/ai-agent-2d",
-      "demo": "",
       "description": "",
       "tools": [
         {
