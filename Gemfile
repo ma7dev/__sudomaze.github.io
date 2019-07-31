@@ -28,6 +28,11 @@ gem 'jekyll-toc'
 # numbering headers
 gem 'jekyll-numbered-headings'
 
+# trying to find math
+gem "jekyll-jupyter-notebook"
+
+gem 'jekyll-include-cache'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 

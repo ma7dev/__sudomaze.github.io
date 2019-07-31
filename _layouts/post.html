@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 {% include header.html %}
+<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
 <div class="container">
-        <div id="post">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-3">
-                        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-                    </div>
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col-12">
-                                <h1 data-toc-skip><strong>{{ page.title }}</strong></h1>
-                            </div>
-                            <div class="col-12">
-                                <p><em>{{ page.date | date: "%B %-d, %Y"  }}</em></p>
-                                <hr class="mt-2 mb-4">
-                            </div>
-                            <div class="col-12">
-                                {{ content }}
-                                <hr class="mt-4 mb-2">
-                            </div>
-                            <div class="col-12">
-                                <div class="row mb-4">
-                                    <div class="col-8 text-left">
-                                        <h4>
-                                            <strong>Tags:</strong>
-                                            {% for tag in page.tags %}
-                                            <a href="/tags/{{ tag }}/" target="_blank">#{{ tag }}</a>
-                                            {% endfor %}
-                                        </h4>
-                                    </div>
-                                    <div class="col-4 text-right">
-                                        <h4>
-                                            <strong>Share:</strong>
-                                            <a href="https://twitter.com/intent/tweet?text={{ page.title }} https://madebymaze.xyz{{ page.url }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-twitter"></i></a>
-                                            <a href="https://www.facebook.com/sharer.php?text={{ post.title }} https://madebymaze.xyz{{ post.url }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                        </h4>
-                                    </div>
+    {% if page.use_math %}
+        {% include mathjax_support %}
+    {% endif %}
+    <div id="post">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 data-toc-skip id="post-title"><strong>{{ page.title }}</strong></h1>
+                        </div>
+                        <div class="col-12">
+                            <p id="post-date">{{ page.date | date: "%B %-d, %Y"  }}</p>
+                            <hr class="mt-2 mb-4">
+                        </div>
+                        <div class="col-12" id="post-content">
+                            <h1>Abstract</h1>
+                            {{ content }}
+                            <hr class="mt-4 mb-2">
+                        </div>
+                        <div class="col-12">
+                            <div class="row mb-4">
+                                <div class="col-8 text-left">
+                                    <h4 id="post-tags">
+                                        <strong>Tags:</strong>
+                                        {% for tag in page.tags %}
+                                        <a href="/tags/{{ tag }}/" target="_blank">#{{ tag }}</a>
+                                        {% endfor %}
+                                    </h4>
+                                </div>
+                                <div class="col-4 text-right">
+                                    <h4 id="post-share">
+                                        <strong>Share:</strong>
+                                        <a href="https://twitter.com/intent/tweet?text={{ page.title }} https://madebymaze.xyz{{ page.url }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://www.facebook.com/sharer.php?text={{ post.title }} https://madebymaze.xyz{{ post.url }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    </h4>
                                 </div>
                             </div>
                         </div>
@@ -47,5 +48,6 @@
         </div>
     </div>
 </div>
+
 {% include footer.html %}
 </html>

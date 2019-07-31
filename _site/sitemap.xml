@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/posts/yolo</loc>
+<lastmod>2019-07-30T00:00:00-07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/404</loc>
 </url>
 <url>
@@ -19,8 +23,22 @@
 <loc>http://localhost:4000/projects/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/public/libraries/katex/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/public/libraries/pseudocode.js-1.1/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/public/images/Dual%20Grid%20Net:%20hand%20mesh%20vertex%20regression%20from%20single%20depth%20maps.pdf</loc>
+<lastmod>2019-07-30T06:34:09-07:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/public/libraries/jquery-ui-1.12.1.custom/</loc>
 <lastmod>2019-07-29T16:19:12-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/public/libraries/pseudocode.js-1.1/samples.html</loc>
+<lastmod>2018-01-18T01:25:52-08:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/public/pdf/CV.pdf</loc>

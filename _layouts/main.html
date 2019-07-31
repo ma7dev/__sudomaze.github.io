@@ -1,18 +1,18 @@
 ---
 layout: default
 ---
-<div id="posts">
+<div class="mt-5" id="posts">
     <div class="container-fluid">
         <div class="mb-2" id="no-posts">
             <h2 class="text-center"><strong><i class="fal fa-construction" aria-hidden="true"></i> Under Construction <i class="fal fa-construction" aria-hidden="true"></i></strong></h2>
             <hr>
             <img src="/public/gif/typing.gif">
         </div>
-        {% for post in site.posts %}
+        <!-- {% for post in site.posts %}
         <div class="card">
             <div class="row">
                 <div class="col-4">
-                    <a href="/public{{ post.image }}" target="_blank"><img src="/public{{ post.image }}" alt=""></a>
+                    <a href="/public{{ post.display }}" target="_blank"><img src="/public{{ post.display }}" alt=""></a>
                 </div>
                 <div class="col-8">
                     <div class="card-body">
@@ -38,7 +38,7 @@ layout: default
                     <h4>
                         <strong>Tags:</strong>
                         {% for tag in post.tags %}
-                        <a href="/tags/{{ tag }}/" target="_blank">#{{ tag }}</a>
+                        <a href="#">#{{ tag }}</a>
                         {% endfor %}
                     </h4>
                 </div>
@@ -51,6 +51,6 @@ layout: default
                 </div>
             </div>
         </div>
-        {% endfor %}
+        {% endfor %} -->
     </div>
 </div>

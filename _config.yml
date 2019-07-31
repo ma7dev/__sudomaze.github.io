@@ -1,7 +1,5 @@
-logo: # add logo name
-title: Mazen's Space
-description:
-  I like Deep Learning
+title: "madebymaze.xyz"
+description: "I like Deep Learning"
 permalink: ':title/'
 baseurl: ""
 url: ""
