@@ -4,7 +4,7 @@
     <!-- Website Details -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mazen Alotaibi</title>
+    <title>CV - Mazen Alotaibi</title>
     <meta name="theme-color" content="#343940">
     <meta name="author" content="Mazen Alotaibi">
     <meta name="description" content="Mazen's Personal Space">
@@ -43,6 +43,17 @@
     <link rel="stylesheet" href="/public/css/styles.css">
   </head>
   <body data-spy="scroll" data-target="#toc">
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true
+      }
+    });
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow static-top">
     <div class="container">
       <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
@@ -61,9 +72,9 @@
     </div>
   </nav>
 
-<div class="container">
+<div class="container" id="page-content">
     <div class="mt-5" id="cv">
-    <h2 class="font-weight-light"><i class="fal fa-university"></i> Education</h2>
+    <h2 class="font-weight-light ml-1"><i class="fal fa-university"></i> Education</h2>
     <hr>
     <p class="lead mt-2">
         
@@ -79,15 +90,15 @@
                     <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Corvallis, OR (USA)</p>
                 </div>
                 <ul class="col-12 ml-4">
-                    <li>Major: <em>Computer Science Applied in Artificial Intelligence, Bachelor of Science.</em></li>
-                    <li>Minor: <em>Actuarial Science, Bachelor of Science.</em></li>
+                    <li><p>Major: <em>Computer Science Applied in Artificial Intelligence, Bachelor of Science.</em></p></li>
+                    <li><p>Minor: <em>Actuarial Science, Bachelor of Science.</em></p></li>
                 </ul>
             </div>
         </div>
         
     </p>
     <br>
-    <h2 class="font-weight-light"><i class="fal fa-cogs"></i> Experience</h2>
+    <h2 class="font-weight-light ml-1"><i class="fal fa-cogs"></i> Experience</h2>
     <hr>
     <p class="lead mt-2">
         
@@ -109,11 +120,11 @@
                     </div>
                     <ul class="col-12 ml-4">
                         
-                        <li>Worked on <strong>Tech Data AI Demo</strong> which was featured in the <strong>IBMThink2019 Conference</strong>.</li>
+                        <li><p>Worked on <strong>Tech Data AI Demo</strong> which was featured in the <strong>IBMThink2019 Conference</strong>.</p></li>
                         
-                        <li>Contributed to the development of multiple Deep Learning related projects including <strong>Owl Sounds Classification</strong> and <strong>Plankton Classification</strong>.</li>
+                        <li><p>Contributed to the development of multiple Deep Learning related projects including <strong>Owl Sounds Classification</strong> and <strong>Plankton Classification</strong>.</p></li>
                         
-                        <li>Assisted fellow undergraduates in understanding the concepts and implementation of machine learning and deep learning systems.</li>
+                        <li><p>Assisted fellow undergraduates in understanding the concepts and implementation of machine learning and deep learning systems.</p></li>
                         
                     </ul>
                 </div>
@@ -137,9 +148,9 @@
                     </div>
                     <ul class="col-12 ml-4">
                         
-                        <li>Managed a team of 6 photographers to document summer program events.</li>
+                        <li><p>Managed a team of 6 photographers to document summer program events.</p></li>
                         
-                        <li>Hosted and organized multiple teaching photography sessions for <strong>more than 70 inspired photographers</strong>.</li>
+                        <li><p>Hosted and organized multiple teaching photography sessions for <strong>more than 70 inspired photographers</strong>.</p></li>
                         
                     </ul>
                 </div>
@@ -147,7 +158,7 @@
         
     </p>
     <br>
-    <h2 class="font-weight-light"><i class="fal fa-folder-open"></i> Projects</h2>
+    <h2 class="font-weight-light ml-1"><i class="fal fa-folder-open"></i> Projects</h2>
     <hr>
     <p class="lead mt-2">
         
@@ -163,9 +174,9 @@
             <div class="row">
                 <ul class="col-12 ml-4">
                     
-                    <li>Developed a website that races multiple hardware by running Deep Learning models developed by the CGRB lab, the project is sponsored by <strong>Tech Data</strong>, <strong>IBM</strong>, <strong>NVIDIA</strong>, and <strong>OpenPower</strong>, and the project was featured in <strong>IBMThink2019 Conference</strong>.</li>
+                    <li><p>Developed a website that races multiple hardware by running Deep Learning models developed by the CGRB lab, the project is sponsored by <strong>Tech Data</strong>, <strong>IBM</strong>, <strong>NVIDIA</strong>, and <strong>OpenPower</strong>, and the project was featured in <strong>IBMThink2019 Conference</strong>.</p></li>
                     
-                    <li>Developed the website using <strong>Bootstrap</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Node.js</strong>, <strong>NGINX</strong>, and <strong>Bash</strong>.</li>
+                    <li><p>Developed the website using <strong>Bootstrap</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Node.js</strong>, <strong>NGINX</strong>, and <strong>Bash</strong>.</p></li>
                     
                 </ul>
             </div>
@@ -183,9 +194,9 @@
             <div class="row">
                 <ul class="col-12 ml-4">
                     
-                    <li>Developed a computer vision system that detects pedestrians’ faces to obfuscate them in real-time, then applies a tracking system to understand pedestrian and traffic behavior to increase the safety of the traffic for <strong>the City of Portland</strong>.</li>
+                    <li><p>Developed a computer vision system that detects pedestrians’ faces to obfuscate them in real-time, then applies a tracking system to understand pedestrian and traffic behavior to increase the safety of the traffic for <strong>the City of Portland</strong>.</p></li>
                     
-                    <li>Developed the detection system using <strong>OpenCV</strong> and <strong>PyTorch</strong>, the traffic system using <strong>OpenCV</strong> and <strong>Keras/TensorFlow</strong>, and the web API and application using <strong>Flask</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>.</li>
+                    <li><p>Developed the detection system using <strong>OpenCV</strong> and <strong>PyTorch</strong>, the traffic system using <strong>OpenCV</strong> and <strong>Keras/TensorFlow</strong>, and the web API and application using <strong>Flask</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>.</p></li>
                     
                 </ul>
             </div>
@@ -203,9 +214,9 @@
             <div class="row">
                 <ul class="col-12 ml-4">
                     
-                    <li>Designed an exploration package utilizing the <strong>gmapping</strong> and <strong>nav bundle</strong> packages to allow a simulated robot to explore an unknown environment using <strong>Python</strong> and <strong>ROS</strong>.</li>
+                    <li><p>Designed an exploration package utilizing the <strong>gmapping</strong> and <strong>nav bundle</strong> packages to allow a simulated robot to explore an unknown environment using <strong>Python</strong> and <strong>ROS</strong>.</p></li>
                     
-                    <li>Designed an algorithm that generates waypoints to be followed and each waypoint is weighted based on a <strong>Convolutional Filters</strong> with some weighted conditions.</li>
+                    <li><p>Designed an algorithm that generates waypoints to be followed and each waypoint is weighted based on a <strong>Convolutional Filters</strong> with some weighted conditions.</p></li>
                     
                 </ul>
             </div>
@@ -223,9 +234,9 @@
             <div class="row">
                 <ul class="col-12 ml-4">
                     
-                    <li>Built a <strong>Convolutional Neural Network</strong>-<strong>Recurrent Neural Network</strong> (CNN-RNN) model to automatically generate captions from images using <strong>NumPy</strong>, <strong>OpenCV</strong>, and <strong>PyTorch</strong>.</li>
+                    <li><p>Built a <strong>Convolutional Neural Network</strong>-<strong>Recurrent Neural Network</strong> (CNN-RNN) model to automatically generate captions from images using <strong>NumPy</strong>, <strong>OpenCV</strong>, and <strong>PyTorch</strong>.</p></li>
                     
-                    <li>Trained the Encoder[<em>CNN</em>] for feature extracting and trained the Decoder[<strong>Long Short-Term Memory</strong> (LSTM) cells in <em>RNN</em>] to generate captions.</li>
+                    <li><p>Trained the Encoder[<em>CNN</em>] for feature extracting and trained the Decoder[<strong>Long Short-Term Memory</strong> (LSTM) cells in <em>RNN</em>] to generate captions.</p></li>
                     
                 </ul>
             </div>
@@ -243,9 +254,9 @@
             <div class="row">
                 <ul class="col-12 ml-4">
                     
-                    <li>Built a <em>CNN</em> model to predict Facial Keypoints using <strong>NumPy</strong>, <strong>OpenCV</strong>, and <strong>PyTorch</strong>.</li>
+                    <li><p>Built a <em>CNN</em> model to predict Facial Keypoints using <strong>NumPy</strong>, <strong>OpenCV</strong>, and <strong>PyTorch</strong>.</p></li>
                     
-                    <li>Trained the <em>CNN</em> model to detect faces and predicts <strong>68 distinguishing keypoints</strong> on that face.</li>
+                    <li><p>Trained the <em>CNN</em> model to detect faces and predicts <strong>68 distinguishing keypoints</strong> on that face.</p></li>
                     
                 </ul>
             </div>
@@ -263,9 +274,9 @@
             <div class="row">
                 <ul class="col-12 ml-4">
                     
-                    <li>Wrote a web app that streams a live-feed and a controller to control an RC Car's controller, <strong>Raspberry Pi</strong>, using <strong>Node.js</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>.</li>
+                    <li><p>Wrote a web app that streams a live-feed and a controller to control an RC Car's controller, <strong>Raspberry Pi</strong>, using <strong>Node.js</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>.</p></li>
                     
-                    <li>Built the structure of the intelligent agent and machine learning model.</li>
+                    <li><p>Built the structure of the intelligent agent and machine learning model.</p></li>
                     
                 </ul>
             </div>
@@ -283,9 +294,9 @@
             <div class="row">
                 <ul class="col-12 ml-4">
                     
-                    <li>Wrote an <strong>Multiple Layer Perceptron</strong> (MLP) that classifies images using <strong>NumPy</strong> and <strong>PyTorch</strong>.</li>
+                    <li><p>Wrote an <strong>Multiple Layer Perceptron</strong> (MLP) that classifies images using <strong>NumPy</strong> and <strong>PyTorch</strong>.</p></li>
                     
-                    <li>Trained the <em>MLP</em> model using <strong>CIFAR-10 dataset</strong>.</li>
+                    <li><p>Trained the <em>MLP</em> model using <strong>CIFAR-10 dataset</strong>.</p></li>
                     
                 </ul>
             </div>
@@ -303,9 +314,9 @@
             <div class="row">
                 <ul class="col-12 ml-4">
                     
-                    <li>Wrote a web app with a team using <strong>Java</strong> <em>Ninja framework</em> for back-end,  <strong>JavaScript</strong> for front-end, and <strong>Heroku</strong> and <strong>GitHub</strong> to host the web app.</li>
+                    <li><p>Wrote a web app with a team using <strong>Java</strong> <em>Ninja framework</em> for back-end,  <strong>JavaScript</strong> for front-end, and <strong>Heroku</strong> and <strong>GitHub</strong> to host the web app.</p></li>
                     
-                    <li>Won the <strong>Best Web Application for Software Engineering I</strong> <em>(CS-361)</em>.</li>
+                    <li><p>Won the <strong>Best Web Application for Software Engineering I</strong> <em>(CS-361)</em>.</p></li>
                     
                 </ul>
             </div>
@@ -323,9 +334,9 @@
             <div class="row">
                 <ul class="col-12 ml-4">
                     
-                    <li>Wrote a personal website using <strong>Node.js</strong> for back-end and <strong>JavaScript</strong> for front-end.</li>
+                    <li><p>Wrote a personal website using <strong>Node.js</strong> for back-end and <strong>JavaScript</strong> for front-end.</p></li>
                     
-                    <li>Wrote a <strong>NGINX</strong> script that directs HTTP requests to HTTPS and maps networks.</li>
+                    <li><p>Wrote a <strong>NGINX</strong> script that directs HTTP requests to HTTPS and maps networks.</p></li>
                     
                 </ul>
             </div>
@@ -343,9 +354,9 @@
             <div class="row">
                 <ul class="col-12 ml-4">
                     
-                    <li>Wrote a 2D grid game, <em>Hunt the Wumpus</em>, with a dynamic grid size using <strong>C++</strong>.</li>
+                    <li><p>Wrote a 2D grid game, <em>Hunt the Wumpus</em>, with a dynamic grid size using <strong>C++</strong>.</p></li>
                     
-                    <li>Wrote an embedded intelligent agent to solve the game using <em>Probability Distribution Methods</em>.</li>
+                    <li><p>Wrote an embedded intelligent agent to solve the game using <em>Probability Distribution Methods</em>.</p></li>
                     
                 </ul>
             </div>
@@ -353,7 +364,7 @@
         
     </p>
     <br>
-    <h2 class="font-weight-light"><i class="fal fa-rocket"></i> Extracurricular Activities</h2>
+    <h2 class="font-weight-light ml-1"><i class="fal fa-rocket"></i> Extracurricular Activities</h2>
     <hr>
     <p class="lead mt-2">
         
@@ -375,9 +386,9 @@
                 </div>
                 <ul class="col-12 ml-4">
                     
-                    <li>Invited to <strong>IBM Conference</strong> by <strong>Tech Data</strong> to present Tech Data AI Demo to increase sales.</li>
+                    <li><p>Invited to <strong>IBM Conference</strong> by <strong>Tech Data</strong> to present Tech Data AI Demo to increase sales.</p></li>
                     
-                    <li>Presented my work at the conference and I have connected with <strong>more than 100 potential clients</strong> who are interested to use the demo to increase their sales in different regions, such as Brazil, United Kingdom, and Japan.</li>
+                    <li><p>Presented my work at the conference and I have connected with <strong>more than 100 potential clients</strong> who are interested to use the demo to increase their sales in different regions, such as Brazil, United Kingdom, and Japan.</p></li>
                     
                 </ul>
             </div>
@@ -401,9 +412,9 @@
                 </div>
                 <ul class="col-12 ml-4">
                     
-                    <li>Responsibilities are to present latest literature in to AI, ML, DL, and CV areas biweekly, host learning sessions to solve Kaggle competitions for new learners.</li>
+                    <li><p>Responsibilities are to present latest literature in to AI, ML, DL, and CV areas biweekly, host learning sessions to solve Kaggle competitions for new learners.</p></li>
                     
-                    <li>Worked on building a Self-Driving RC Car, Kaggle Competitions, and a Breast Cancer project with the group members.</li>
+                    <li><p>Worked on building a Self-Driving RC Car, Kaggle Competitions, and a Breast Cancer project with the group members.</p></li>
                     
                 </ul>
             </div>
@@ -427,9 +438,9 @@
                 </div>
                 <ul class="col-12 ml-4">
                     
-                    <li>Attended a conference that focuses on advanced techniques in <em>Computer Vision</em> and <em>Deep Learning</em> research and their implementations to solve real world problems.</li>
+                    <li><p>Attended a conference that focuses on advanced techniques in <em>Computer Vision</em> and <em>Deep Learning</em> research and their implementations to solve real world problems.</p></li>
                     
-                    <li>Built a <strong>Faster Regional-Convolution Neural Networks</strong> (Faster R-CNN) from scratch to classify images with higher accuracy than well-known networks using <strong>NumPy</strong> and <strong>PyTorch</strong>.</li>
+                    <li><p>Built a <strong>Faster Regional-Convolution Neural Networks</strong> (Faster R-CNN) from scratch to classify images with higher accuracy than well-known networks using <strong>NumPy</strong> and <strong>PyTorch</strong>.</p></li>
                     
                 </ul>
             </div>
@@ -453,9 +464,9 @@
                 </div>
                 <ul class="col-12 ml-4">
                     
-                    <li>Worked with a team to build a web application that analysis a user's behavior from a list of previous behaviors based on <em>Markov Chain Methods</em> using <strong>Node.js</strong> and <strong>Flask</strong> for back-end, <strong>JavaScript</strong> for front-end, <strong>Python</strong> for data analysis, and <strong>SQL</strong> for data saving and pulling.</li>
+                    <li><p>Worked with a team to build a web application that analysis a user's behavior from a list of previous behaviors based on <em>Markov Chain Methods</em> using <strong>Node.js</strong> and <strong>Flask</strong> for back-end, <strong>JavaScript</strong> for front-end, <strong>Python</strong> for data analysis, and <strong>SQL</strong> for data saving and pulling.</p></li>
                     
-                    <li>Hosted the web application on <strong>Amazon Web-Services</strong> (AWS).</li>
+                    <li><p>Hosted the web application on <strong>Amazon Web-Services</strong> (AWS).</p></li>
                     
                 </ul>
             </div>
@@ -479,9 +490,9 @@
                 </div>
                 <ul class="col-12 ml-4">
                     
-                    <li>Worked to build small projects using new tools with club members.</li>
+                    <li><p>Worked to build small projects using new tools with club members.</p></li>
                     
-                    <li>Helped new members in explaining web development technologies and common practices in development.</li>
+                    <li><p>Helped new members in explaining web development technologies and common practices in development.</p></li>
                     
                 </ul>
             </div>
@@ -489,7 +500,7 @@
         
     </p>
     <br>
-    <h2 class="font-weight-light"><i class="fal fa-tools"></i> Skills</h2>
+    <h2 class="font-weight-light ml-1"><i class="fal fa-tools"></i> Skills</h2>
     <hr>
     <p class="lead mt-2">
         <div class="container-fluid">
@@ -674,11 +685,11 @@
                     <span><strong>Human Languages :</strong></h4></p>
                     
                         
-                        <span class="badge badge-primary">Arabic <em>(Native)</em></span>
+                        <p><span class="badge badge-primary">Arabic <em>(Native)</em></span></p>
                         
-                        <span class="badge badge-primary">English <em>(Professional Proficiency)</em></span>
+                        <p><span class="badge badge-primary">English <em>(Professional Proficiency)</em></span></p>
                         
-                        <span class="badge badge-primary">Japanese <em>(少し)</em></span>
+                        <p><span class="badge badge-primary">Japanese <em>(少し)</em></span></p>
                         
                     
                 </div> 
@@ -687,19 +698,19 @@
         </div>
     </p>
     <br>
-    <h2 class="font-weight-light"><i class="fal fa-download"></i> Download</h2>
+    <h2 class="font-weight-light ml-1"><i class="fal fa-download"></i> Download</h2>
     <hr>
     <p class="lead mt-2">
         <div class="container-fluid" id="download-section">
             <div class="row">
-                <div class="col-4">
-                    <a class="btn btn-primary btn-lg btn-block" href="/public/pdf/CV.pdf" role="button" target="_blank">Curriculum Vitae</a>
+                <div class="col-md-4 col-s-12 mb-2">
+                    <a class="btn btn-primary btn-lg btn-block click-btn" href="/public/pdf/CV.pdf" role="button" target="_blank">Curriculum Vitae</a>
                 </div>
-                <div class="col-4">
-                    <a class="btn btn-primary btn-lg btn-block" href="/public/pdf/Resume_AI_Position.pdf" role="button" target="_blank">AI - Resume</a>
+                <div class="col-md-4 col-s-12 mb-2">
+                    <a class="btn btn-primary btn-lg btn-block click-btn" href="/public/pdf/Resume_AI_Position.pdf" role="button" target="_blank">AI - Resume</a>
                 </div>
-                <div class="col-4">
-                    <a class="btn btn-primary btn-lg btn-block" href="/public/pdf/Resume_WD_Position.pdf" role="button" target="_blank">SWE - Resume</a>
+                <div class="col-md-4 col-s-12 mb-2">
+                    <a class="btn btn-primary btn-lg btn-block click-btn" href="/public/pdf/Resume_WD_Position.pdf" role="button" target="_blank">SWE - Resume</a>
                 </div>
             </div>
         </div>
@@ -724,68 +735,69 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <p class="text-center"><strong>Computer Science</strong></p>
+                        <h4 class="text-center mt-1"><strong>Computer Science</strong></h4>
+                        <hr>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-s-12">
                         <ul>
-                            <li>Objected-Oriented Programming (CS 161/162)</li>
-                            <li>Data Structures (CS 261)</li>
-                            <li>Computer Architecture and Assembly Language (CS 271)</li>
-                            <li>Digital Logic Design (ECE 271/272)</li>
-                            <li>Analysis of Algorithms (CS 325)</li>
-                            <li>Databases (CS 340)</li>
-                            <li>Theory of Computation (CS 321)</li>
-                            <li>Computer Networks (CS 372)</li>
+                            <li><p>Objected-Oriented Programming (CS 161/162)</p></li>
+                            <li><p>Data Structures (CS 261)</p></li>
+                            <li><p>Computer Architecture and Assembly Language (CS 271)</p></li>
+                            <li><p>Digital Logic Design (ECE 271/272)</p></li>
+                            <li><p>Analysis of Algorithms (CS 325)</p></li>
+                            <li><p>Databases (CS 340)</p></li>
+                            <li><p>Theory of Computation (CS 321)</p></li>
+                            <li><p>Computer Networks (CS 372)</p></li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-s-12">
                         <ul>
-                            <li>Operating Systems (CS 344/444)</li>
-                            <li>Software Engineering (CS 361/362)</li>
-                            <li>Usability Engineering (CS 351)</li>
-                            <li>Programming Language Fundamentals (CS 381)</li>
-                            <li>Parallel Programming (CS 475)</li>
-                            <li>Graph Theory (CS 420)</li>
-                            <li>Artificial Intelligence (CS 331)</li>
-                            <li>Machine Learning and Data Mining (CS 443)</li>
-                            <li>Intelligent Robots (ROB 456)</li>
+                            <li><p>Operating Systems (CS 344/444)</p></li>
+                            <li><p>Software Engineering (CS 361/362)</p></li>
+                            <li><p>Usability Engineering (CS 351)</p></li>
+                            <li><p>Programming Language Fundamentals (CS 381)</p></li>
+                            <li><p>Parallel Programming (CS 475)</p></li>
+                            <li><p>Graph Theory (CS 420)</p></li>
+                            <li><p>Artificial Intelligence (CS 331)</p></li>
+                            <li><p>Machine Learning and Data Mining (CS 443)</p></li>
+                            <li><p>Intelligent Robots (ROB 456)</p></li>
                         </ul>
                     </div>
                     <div class="col-12">
+                        <h4 class="text-center mt-1"><strong>Mathematics and Statistics</strong></h4>
                         <hr>
-                        <p class="text-center"><strong>Mathematics and Statistics</strong></p>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-s-12">
                         <ul>
-                            <li>Differential & Integral Calculus (MTH 251/252)</li>
-                            <li>Vector Calculus (MTH 254)</li>
-                            <li>Infinite Series and Sequences (MTH 253)</li>
-                            <li>Discrete Mathematics (MTH 231)</li>
-                            <li>Linear Algebra (MTH 341)</li>
+                            <li><p>Differential & Integral Calculus (MTH 251/252)</p></li>
+                            <li><p>Vector Calculus (MTH 254)</p></li>
+                            <li><p>Infinite Series and Sequences (MTH 253)</p></li>
+                            <li><p>Discrete Mathematics (MTH 231)</p></li>
+                            <li><p>Linear Algebra (MTH 341)</p></li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-s-12">
                         <ul>
-                            <li>Probability (MTH 361)</li>
-                            <li>Statistics (ST 314)</li>
-                            <li>Numerical Analysis (MTH 351)</li>
-                            <li>Mathematical Statistics (ST 421)</li>
-                            <li>Applied Stochastic Models (ST 443)</li>
+                            <li><p>Probability (MTH 361)</p></li>
+                            <li><p>Statistics (ST 314)</p></li>
+                            <li><p>Numerical Analysis (MTH 351)</p></li>
+                            <li><p>Mathematical Statistics (ST 421)</p></li>
+                            <li><p>Applied Stochastic Models (ST 443)</p></li>
                         </ul>
                     </div>
                     <div class="col-12">
+                        <h4 class="text-center mt-1"><strong>Others</strong></h4>
                         <hr>
-                        <p class="text-center"><strong>Others</strong></p>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-s-12">
                         <ul>
-                            <li>First-year Japanese (JPN 111)</li>
-                            <li>Microeconomics (ECON 201)</li>
+                            <li><p>First-year Japanese (JPN 111)</p></li>
+                            <li><p>Microeconomics (ECON 201)</p></li>
                         </ul>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6 col-s-12">
                         <ul>
-                            <li>Technical Writing (WR 327)</li>
+                            <li><p>Technical Writing (WR 327)</p></li>
                         </ul>
                     </div>
                 </div>
@@ -819,13 +831,13 @@
             </div>
             <div class="col-12 text-center" id="social-list">
                 
-                    <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
                 
-                    <a href="https://github.com/madebymaze" id="github" class="social-btn" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
                 
-                    <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://github.com/madebymaze" id="github" class="social-btn" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
                 
-                <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
             </div>
             <div class="col-12 text-center" id="source-code">
                 <p><a href="http://github.com/madebymaze/madebymaze.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>

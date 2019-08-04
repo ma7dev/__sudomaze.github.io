@@ -24,18 +24,33 @@ h1, h2, h3, h4, h5, nav a, footer p, footer a, th{
   color: white !important;
   border-color: #313131 !important;
 }
+.card {
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+}
 a {
   color: #2e9cca;
 }
 a:hover {
   color: #29648a;
 }
+#page-content a {
+  text-decoration: underline;
+}
+#page-content sup a, #page-content .click-btn, #page-content .card-title a, #page-content .tag-link{
+  text-decoration: none;
+}
 p {
   margin: 0;
   padding: 0;
 }
 img {
-  border-radius: 5px;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
 }
 #social-list {
   width: 100%;
@@ -92,12 +107,16 @@ img {
   margin:auto;
 }
 #no-posts img{
-width: 100%;
+  width: 100%;
 }
 #posts .card img {
   width:100%;
-  border-bottom-right-radius: 0%;
+  height: 100%;
   border-top-right-radius: 0%;
+  border-top-left-radius: 10px 10px;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 10px 10px;
+  object-position: center; /* Center the image within the element */
 }
 /* 
   Post 
@@ -106,16 +125,26 @@ width: 100%;
   background: #3c4081;
   width: 30%;
   border-bottom-right-radius: 20px 20px;
+  max-width: 400px;
 }
 nav[data-toggle=toc] .nav>li>a {
   color: white;
 }
-nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:focus, nav[data-toggle=toc] .nav-link.active:hover {
-  color: black;
+nav[data-toggle=toc] .nav>li>a:hover {
+  color: rgb(189, 189, 189);
+}
+nav[data-toggle=toc] .nav-link.active {
+  color: rgb(131, 131, 131);
+}
+nav[data-toggle=toc] .nav-link.active:focus, nav[data-toggle=toc] .nav-link.active:hover {
+  color: rgb(104, 104, 104);
 }
 #post{
   width: 100%;
   margin:auto;
+}
+#post ul{
+  margin-left: 2em;
 }
 #post h1 {
   font-style: bold;
@@ -136,6 +165,11 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
   margin-bottom: 1em;
   text-indent: 2em;
 }
+#post-content .post-pseudocode, #post-content blockquote {
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+}
 #post-content .post-pseudocode p {
   margin: 0;
   text-indent: 0;
@@ -153,7 +187,7 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
 #post #post-tags, #post #post-share {
   font-style: normal;
 }
-#post img {
+#post img, #post .embed-responsive {
   max-height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -202,9 +236,32 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
   /* Avoid pushing up the copy buttons. */
   margin: 0;
 }
-/* #post h1, #post h2, #post h3 #post h4, #post h5 {
-  margin-top: .5em !important;
-} */
+
+#post-content .highlight {
+  margin-bottom: 0;
+}
+#post-content .highlight+p {
+  margin-top: 2em;
+}
+#post-content .highlighter-rouge {
+  color: black;
+}
+#post output {
+  width:100%;
+  padding: 1.2em;
+  background: #21242A;
+  color: #EBEBEB;
+}
+#post .specialbox {
+  max-width: 75%;
+  margin: 1.5em auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 1.4em;
+}
+#post .hintbox {
+  background: rgba(82,214,129,.3)
+}
 /* 
   Projects 
 */
@@ -219,8 +276,12 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
 }
 #projects img {
   width:100%;
-  border-bottom-right-radius: 0%;
+  height: 100%;
   border-top-right-radius: 0%;
+  border-top-left-radius: 10px 10px;
+  border-bottom-right-radius: 0%;
+  border-bottom-left-radius: 10px 10px;
+  object-position: center; /* Center the image within the element */
 }
 /* 
   CV 
@@ -426,44 +487,46 @@ nav[data-toggle=toc] .nav-link.active, nav[data-toggle=toc] .nav-link.active:foc
     left: 28px;
   }
 }
-/*
-    For mobile phones:
-*/
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-
-  #message {width: 500px;}
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-
-  #message {width: 500px;}
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+  #page-content h1 {
+    font-size: 7vw;
+  }
+  #page-content h2 {
+    font-size: 6vw;
+  }
+  #page-content h3 {
+    font-size: 5vw;
+  }
+  #page-content h4{
+    font-size: 4vw;
+  }
+  #page-content p, #page-content thead, #page-content caption , #page-content tbody {
+    font-size: 3vw;
+  }
+  #projects img, #posts .card img {
+    border-top-right-radius: 10px 10px;
+    border-top-left-radius: 10px 10px;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+  }
+  #posts {
+    width: 100%;
+  }
+  .click-btn {
+    font-size: 3vw;
+  }
+  #toc {
+    width: auto;
+  }
+  #post-content .post-pseudocode, #post-content blockquote {
+    width:100%;
+  }
+  #post .specialbox {
+    max-width: 100%;
+    margin: 0;
+  }
 }

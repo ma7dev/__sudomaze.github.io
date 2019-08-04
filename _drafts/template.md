@@ -3,12 +3,11 @@ layout: post
 toc: true
 title:  "[title]"
 tags: [hot, summer]
-display: "[image path]"
+display: "/gif/typing.gif"
 permalink: /posts/yolo
-use_math: true
 ---
 
-[Introduction]
+adasd qwqdqw dqwd qwd qw dwqdqwd qwqw dqwd qwd qdq $P$ `a` <sup>[[1]](#ref-1)</sup>
 
 
 # Introduction
@@ -18,7 +17,9 @@ use_math: true
 
 dasdasdasdasdasd aas asdasdasdasdqwd qwdasd  qwd qwd qw dqwd qwd qd 
 
-adasd qwqdqw dqwd qwd qw dwqdqwd qwqw dqwd qwd qdq $P$
+adasd qwqdqw dqwd qwd qw dwqdqwd qwqw dqwd qwd qdq $P$ `a` <sup>[[1]](#ref-1)</sup>
+
+
 
 $$
 \begin{align}
@@ -30,7 +31,7 @@ $$
 {% include table.html id="1" content="
 
 | First Header  | Second Header | Third Header         |
-| :------------ | :-----------: | -------------------: |
+| :------------ | ------------- | -------------------- |
 | First row     | Data          | Very long data entry |
 | Second row    | **Cell**      | *Cell*               |
 | Third row     | Cell that spans across two columns  ||
@@ -65,12 +66,14 @@ caption="attadad" %}
 \end{algorithm}
 " %}
 
-{% include 1-image.html id="1" url="/public/images/[image path]" caption="[image description]" %}
+{% include 1-image.html id="1" url="/public/images/exploring-robot.png" caption="[image description]" %}
 
 [Figure 1](#img-1)
 [table 1](#table-1)
 
-{% highlight python %}
+{% include video.html url="https://www.youtube.com/embed/DM0nkQxrpW0" %}
+
+```python
 # import relevant libraries
 import roslib
 import rospy
@@ -84,12 +87,22 @@ def mb_callback(msg):
     print "Robot successfully reached waypoint!"
   
   pub.publish(waypoint)
-{% endhighlight %}
+```
+<output>Using TensorFlow backend.</output>
+
+{% include hint.html content="The program <code>nvidia-smi</code> allows you to monitor your GPU utilization and can help you understand bottlenecks in your data pipeline. The average GPU utilization should usually be above 70-80%." %}
+
+> adasdasdasdasdasdasdasd aas asd 
+
+# Further Reading
+{:.mt-2}
+
+* [adasdas](https://google.com)
 
 # References
 {:.mt-2}
 
-{% include reference.html
+{% include ref.html
     id="1"
     details="[source]"
     url="[link]" 

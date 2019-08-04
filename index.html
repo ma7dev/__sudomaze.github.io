@@ -1,3 +1,56 @@
 ---
-layout: main
+layout: default
+title: Posts
 ---
+<div class="mt-5" id="posts">
+    <div class="container-fluid">
+        <div class="mb-2" id="no-posts">
+            <h2 class="text-center"><strong><i class="fal fa-construction" aria-hidden="true"></i> Under Construction <i class="fal fa-construction" aria-hidden="true"></i></strong></h2>
+            <img src="/public/gif/typing.gif">
+        </div>
+        {% for post in site.posts %}
+        <div class="card">
+            <div class="row">
+                <div class="col-md-4 col-s-12">
+                    <a href="/public{{ post.display }}" target="_blank"><img src="/public{{ post.display }}" alt=""></a>
+                </div>
+                <div class="col-md-8 col-s-12">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-8 card-title">
+                                <h5><a href="{{ post.url }}" class="float-left" target="_blank"><strong>{{ post.title }}</strong></a></h5>
+                            </div>
+                            <div class="col-4">
+                                <p class="card-text text-right"><em>{{ post.date | date: "%B %-d, %Y" }}</em></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="card-text">{{ post.excerpt | truncatewords: 50 }}</p>
+                                <a href="{{ post.url }}" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fal fa-link"></i> Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 mt-2">
+            <div class="row mb-4">
+                <div class="col-8 text-left">
+                    <h4>
+                        <strong>Tags:</strong>
+                        {% for tag in post.tags %}
+                        <a href="#" class="tag-link">#{{ tag }}</a>
+                        {% endfor %}
+                    </h4>
+                </div>
+                <div class="col-4 text-right">
+                    <h4>
+                        <strong>Share:</strong>
+                        <a href="https://twitter.com/intent/tweet?text={{ post.title }} https://madebymaze.xyz{{ post.url }}" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/shareArticle?title={{ post.title }} &url=https://madebymaze.xyz{{ post.url }}" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

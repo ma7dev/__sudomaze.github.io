@@ -4,7 +4,7 @@
     <!-- Website Details -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mazen Alotaibi</title>
+    <title>Projects - Mazen Alotaibi</title>
     <meta name="theme-color" content="#343940">
     <meta name="author" content="Mazen Alotaibi">
     <meta name="description" content="Mazen's Personal Space">
@@ -43,6 +43,17 @@
     <link rel="stylesheet" href="/public/css/styles.css">
   </head>
   <body data-spy="scroll" data-target="#toc">
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true
+      }
+    });
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow static-top">
     <div class="container">
       <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
@@ -61,17 +72,17 @@
     </div>
   </nav>
 
-<div class="container">
+<div class="container" id="page-content">
     <div class="mt-5" id="projects">
     <div class="container-fluid">
         
         <div id="ai-demo"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/images/ai-demo.png" target="_blank"><img src="/public/images/ai-demo.png" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -85,11 +96,11 @@
                             </div>
                             <div class="col-12 mt-2 bottom-column">
                                 
-                                <a href="http://aidemo.cgrb.oregonstate.edu/" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Project</a>
+                                <a href="http://aidemo.cgrb.oregonstate.edu/" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fal fa-link"></i> View Project</a>
                                 
                                 
                                 
-                                <a disabled="disabled"><i class="fal fa-eye-slash"></i> Private Code</a>
+                                <a disabled="disabled" class="mb-1"><i class="fal fa-eye-slash"></i> Private Code</a>
                                 
                             </div>
                         </div>
@@ -101,10 +112,10 @@
         <div id="senior-design-project"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/images/pedestrian-counting-and-privacy-preservation.jpg" target="_blank"><img src="/public/images/pedestrian-counting-and-privacy-preservation.jpg" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -119,7 +130,7 @@
                             <div class="col-12 mt-2 bottom-column">
                                 
                                 
-                                <a href="https://github.com/PavementPrometheus/Street-Watch" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/PavementPrometheus/Street-Watch" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 
                                 
                             </div>
@@ -132,10 +143,10 @@
         <div id="exploring-robot"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/images/exploring-robot.png" target="_blank"><img src="/public/images/exploring-robot.png" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -150,7 +161,7 @@
                             <div class="col-12 mt-2 bottom-column">
                                 
                                 
-                                <a href="https://github.com/madebymaze/exploring-robot" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/madebymaze/exploring-robot" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 
                                 
                             </div>
@@ -163,10 +174,10 @@
         <div id="image-captioning"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/images/no-image.jpg" target="_blank"><img src="/public/images/no-image.jpg" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -181,7 +192,7 @@
                             <div class="col-12 mt-2 bottom-column">
                                 
                                 
-                                <a href="https://github.com/madebymaze/image-captioning" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/madebymaze/image-captioning" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 
                                 
                             </div>
@@ -194,10 +205,10 @@
         <div id="facial-keypoint-detection"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/images/no-image.jpg" target="_blank"><img src="/public/images/no-image.jpg" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -212,7 +223,7 @@
                             <div class="col-12 mt-2 bottom-column">
                                 
                                 
-                                <a href="https://github.com/madebymaze/facial-keypoint-detection" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/madebymaze/facial-keypoint-detection" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 
                                 
                             </div>
@@ -225,10 +236,10 @@
         <div id="self-driving-RC-car"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/images/self-driving-RC-car.jpg" target="_blank"><img src="/public/images/self-driving-RC-car.jpg" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -243,7 +254,7 @@
                             <div class="col-12 mt-2 bottom-column">
                                 
                                 
-                                <a href="https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 
                                 
                             </div>
@@ -256,10 +267,10 @@
         <div id="image-classification"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/images/no-image.jpg" target="_blank"><img src="/public/images/no-image.jpg" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -274,7 +285,7 @@
                             <div class="col-12 mt-2 bottom-column">
                                 
                                 
-                                <a href="https://github.com/madebymaze/image-classification" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/madebymaze/image-classification" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 
                                 
                             </div>
@@ -287,10 +298,10 @@
         <div id="aces-up-game"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/images/aceuposu.png" target="_blank"><img src="/public/images/aceuposu.png" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -304,10 +315,10 @@
                             </div>
                             <div class="col-12 mt-2 bottom-column">
                                 
-                                <a href="https://aceuposu.herokuapp.com/" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Project</a>
+                                <a href="https://aceuposu.herokuapp.com/" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fal fa-link"></i> View Project</a>
                                 
                                 
-                                <a href="https://github.com/madebymaze/aces-up-game" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/madebymaze/aces-up-game" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 
                                 
                             </div>
@@ -320,10 +331,10 @@
         <div id="personal-website"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/images/personal-website-old.png" target="_blank"><img src="/public/images/personal-website-old.png" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -337,10 +348,10 @@
                             </div>
                             <div class="col-12 mt-2 bottom-column">
                                 
-                                <a href="https://madebymaze.xyz/" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Project</a>
+                                <a href="https://madebymaze.xyz/" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fal fa-link"></i> View Project</a>
                                 
                                 
-                                <a href="https://github.com/madebymaze/madebymaze.github.io" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/madebymaze/madebymaze.github.io" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 
                                 
                             </div>
@@ -353,10 +364,10 @@
         <div id="ai-agent-2d"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/images/no-image.jpg" target="_blank"><img src="/public/images/no-image.jpg" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -371,7 +382,7 @@
                             <div class="col-12 mt-2 bottom-column">
                                 
                                 
-                                <a href="https://github.com/madebymaze/ai-agent-2d" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="https://github.com/madebymaze/ai-agent-2d" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 
                                 
                             </div>
@@ -407,13 +418,13 @@
             </div>
             <div class="col-12 text-center" id="social-list">
                 
-                    <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
                 
-                    <a href="https://github.com/madebymaze" id="github" class="social-btn" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
                 
-                    <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://github.com/madebymaze" id="github" class="social-btn" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
                 
-                <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
             </div>
             <div class="col-12 text-center" id="source-code">
                 <p><a href="http://github.com/madebymaze/madebymaze.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>

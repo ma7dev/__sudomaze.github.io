@@ -4,7 +4,7 @@
     <!-- Website Details -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mazen Alotaibi</title>
+    <title>Posts - Mazen Alotaibi</title>
     <meta name="theme-color" content="#343940">
     <meta name="author" content="Mazen Alotaibi">
     <meta name="description" content="Mazen's Personal Space">
@@ -43,6 +43,17 @@
     <link rel="stylesheet" href="/public/css/styles.css">
   </head>
   <body data-spy="scroll" data-target="#toc">
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true
+      }
+    });
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow static-top">
     <div class="container">
       <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
@@ -61,62 +72,14 @@
     </div>
   </nav>
 
-<div class="container">
+<div class="container" id="page-content">
     <div class="mt-5" id="posts">
     <div class="container-fluid">
         <div class="mb-2" id="no-posts">
             <h2 class="text-center"><strong><i class="fal fa-construction" aria-hidden="true"></i> Under Construction <i class="fal fa-construction" aria-hidden="true"></i></strong></h2>
-            <hr>
             <img src="/public/gif/typing.gif">
         </div>
-        <!-- 
-        <div class="card">
-            <div class="row">
-                <div class="col-4">
-                    <a href="/public[image path]" target="_blank"><img src="/public[image path]" alt=""></a>
-                </div>
-                <div class="col-8">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-8 card-title">
-                                <h5><a href="/posts/yolo" class="float-left" target="_blank"><strong>[title]</strong></a></h5>
-                            </div>
-                            <div class="col-4">
-                                <p class="card-text text-right"><em>July 30, 2019</em></p>
-                            </div>
-                            <div class="col-12">
-                                <p class="card-text"><p>[Introduction]</p>
-
-</p>
-                                <a href="/posts/yolo" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 mt-2">
-            <div class="row mb-4">
-                <div class="col-8 text-left">
-                    <h4>
-                        <strong>Tags:</strong>
-                        
-                        <a href="#">#hot</a>
-                        
-                        <a href="#">#summer</a>
-                        
-                    </h4>
-                </div>
-                <div class="col-4 text-right">
-                    <h4>
-                        <strong>Share:</strong>
-                        <a href="https://twitter.com/intent/tweet?text=[title] https://madebymaze.xyz/posts/yolo" class="btn btn-primary project-button" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/sharer.php?text=[title]: https://madebymaze.xyz/posts/yolo" class="btn btn-primary project-button" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    </h4>
-                </div>
-            </div>
-        </div>
-         -->
+        
     </div>
 </div>
 </div>
@@ -143,13 +106,13 @@
             </div>
             <div class="col-12 text-center" id="social-list">
                 
-                    <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
                 
-                    <a href="https://github.com/madebymaze" id="github" class="social-btn" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/in/madebymaze" id="linkedin" class="social-btn" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
                 
-                    <a href="https://twitter.com/madebymaze" id="twitter" class="social-btn" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://github.com/madebymaze" id="github" class="social-btn" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
                 
-                <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="mailto:mail@madebymaze.xyz" id="email-icon" class="social-btn" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
             </div>
             <div class="col-12 text-center" id="source-code">
                 <p><a href="http://github.com/madebymaze/madebymaze.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>

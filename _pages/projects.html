@@ -9,10 +9,10 @@ permalink: /projects/
         <div id="{{ member.tag }}"></div>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-4">
+                <div class="col-md-4 col-s-12">
                     <a href="/public/{{ member.image }}" target="_blank"><img src="/public/{{ member.image }}" alt=""></a>
                 </div>
-                <div class="col-8">
+                <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8 card-title">
@@ -26,13 +26,13 @@ permalink: /projects/
                             </div>
                             <div class="col-12 mt-2 bottom-column">
                                 {% if member.demo != null %}
-                                <a href="{{ member.demo }}" class="btn btn-primary project-button" target="_blank"><i class="fal fa-link"></i> View Project</a>
+                                <a href="{{ member.demo }}" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fal fa-link"></i> View Project</a>
                                 {% endif %}
                                 {% if member.code != null %}
-                                <a href="{{ member.code }}" class="btn btn-primary project-button" target="_blank"><i class="fab fa-github"></i> View Code</a>
+                                <a href="{{ member.code }}" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 {% endif %}
                                 {% if member.code == null %}
-                                <a disabled="disabled"><i class="fal fa-eye-slash"></i> Private Code</a>
+                                <a disabled="disabled" class="mb-1"><i class="fal fa-eye-slash"></i> Private Code</a>
                                 {% endif %}
                             </div>
                         </div>

@@ -160,16 +160,16 @@
     ],
     "social":[
       {
+        "title": "twitter",
+        "link": "https://twitter.com/madebymaze"
+      },
+      {
         "title": "linkedin",
         "link": "https://linkedin.com/in/madebymaze"
       },
       {
         "title": "github",
         "link": "https://github.com/madebymaze"
-      },
-      {
-        "title": "twitter",
-        "link": "https://twitter.com/madebymaze"
       }
     ]
   }
