@@ -52,6 +52,80 @@ img {
   border-bottom-right-radius: 10px 10px;
   border-bottom-left-radius: 10px 10px;
 }
+.language-list {
+  margin: auto;
+}
+.language-btn {
+  padding: .5em .65em;
+}
+.language-list .keras {
+  color: white;
+  background: red;
+}
+.language-list .tensorflow {
+  color: white;
+  background: #EF6C00;
+}
+.language-list .cuda {
+  color: white;
+  background: #76B900;
+}
+.language-list .opencv {
+  color: white;
+  background: blue;
+}
+.language-list .bootstrap {
+  color: white;
+  background: #553D7B;
+}
+.language-list .jquery {
+  color: white;
+  background: #21609B;
+}
+.language-list .nodejs {
+  color: white;
+  background: #529D43;
+}
+.language-list .bash {
+  color: white;
+  background: black;
+}
+.language-list .pytorch {
+  color: white;
+  background: #EE4C2C;
+}
+.language-list .python {
+  color: white;
+  background: -webkit-linear-gradient(#37709F, #FFD141);
+}
+.language-list .cplusplus {
+  color: white;
+  background: black;
+}
+.language-list .ros {
+  color: white;
+  background: blue;
+}
+.language-list .js {
+  color: white;
+  background: #F7DF1C;
+}
+.language-list .c {
+  color: white;
+  background: black;
+}
+.language-list .numpy {
+  color: black;
+  background: #FFE38D;
+}
+.language-list .java {
+  color: white;
+  background: -webkit-linear-gradient(#E76F00, #5282A1);
+}
+.language-list .nginx {
+  color: white;
+  background: #009801;
+}
 #social-list {
   width: 100%;
   text-align: center;
@@ -61,16 +135,16 @@ img {
   color: #797979;
   transition: 0.2s;
 }
-#github:hover{
+#social-list .github:hover{
   color: #24292E;
 }
-#linkedin:hover{
+#social-list .linkedin:hover{
   color: #0077B5;
 }
-#twitter:hover{
+#social-list .twitter:hover{
   color: #1DA1F2;
 }
-#email-icon:hover{
+#social-list .email-icon:hover{
   color: #2e9cca;
 }
 .fa-heart{

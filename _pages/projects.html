@@ -15,14 +15,23 @@ permalink: /projects/
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-8 card-title">
+                            <div class="col card-title">
                                 <h5 class="float-left"><strong>{{ member.title }}</strong></h5>
                             </div>
-                            <div class="col-4">
+                            <div class="col-auto">
                                 <p class="card-text text-right"><em>{{ member.date }}</em></p>
                             </div>
+                            <ul class="col-12">
+                                {% for detail in member.accomplishments %}
+                                <li class="ml-2"><p>{{ detail.statement }}</p></li>
+                                {% endfor %}
+                            </ul>
                             <div class="col-12">
-                                <p class="card-text">...</p>
+                                <div class="row language-list">
+                                    {% for detail in member.tools %}
+                                    <p class="col-auto mr-1 badge badge-pill badge-primary language-btn {{ detail.tag }}">{{ detail.tool }}</p>
+                                    {% endfor %}
+                                </div>
                             </div>
                             <div class="col-12 mt-2 bottom-column">
                                 {% if member.demo != null %}
