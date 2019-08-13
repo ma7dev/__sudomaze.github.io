@@ -17,11 +17,11 @@
         "date": "5/17/2019",
         "images": [
           {
-            "title": "images/capstone-1.jpeg",
+            "title": "images/about/capstone-1.jpeg",
             "caption": "Poster"
           },
           {
-            "title": "images/capstone-2.jpeg",
+            "title": "images/about/capstone-2.jpeg",
             "caption": "Live Demo"
           }
         ],
@@ -33,15 +33,15 @@
         "date": "2/13/2019",
         "images": [
           {
-            "title": "images/ibm-2.jpeg",
+            "title": "images/about/ibm-2.jpeg",
             "caption": "Card"
           },
           {
-            "title": "images/ibm-3.jpeg",
+            "title": "images/about/ibm-3.jpeg",
             "caption": "Demo"
           },
           {
-            "title": "images/ibm-1.jpeg",
+            "title": "images/about/ibm-1.jpeg",
             "caption": "POWER9 AC922 CPU Chip, worths $5,000, gifted to me for my hard work!"
           }
         ],
@@ -91,11 +91,11 @@
         "date": "2/2017",
         "images": [
           {
-            "title": "images/hackathon-1.jpg",
+            "title": "images/about/hackathon-1.jpg",
             "caption": ""
           },
           {
-            "title": "images/hackathon-2.jpg",
+            "title": "images/about/hackathon-2.jpg",
             "caption": ""
           }
         ],

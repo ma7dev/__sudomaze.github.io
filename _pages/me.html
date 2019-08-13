@@ -1,0 +1,250 @@
+---
+layout: default
+title: Me
+permalink: /me/
+---
+<div class="container mt-5" id="me-content">
+    <h2 class="font-weight-light pl-1"><i class="fal fa-university"></i> Education</h2>
+    <hr>
+    <p class="lead mt-2">
+        {% for member in site.data.cv.ed %}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong>{{ member.school }}</strong> <span id="list-courses" class="badge badge-primary" data-toggle="modal" data-target="#coursesModal">Show Courses <i class="fal fa-arrow-right"></i></span></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
+                </div>
+                <div class="col-12">
+                    <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ member.location }}</p>
+                </div>
+                <ul class="col-12 pl-4">
+                    <li><p>Major: <em>{{ member.major }}</em></p></li>
+                    <li><p>Minor: <em>{{ member.minor }}</em></p></li>
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </p>
+    <br>
+    <h2 class="font-weight-light pl-1"><i class="fal fa-cogs"></i> Experience</h2>
+    <hr>
+    <p class="lead mt-2">
+        {% for member in site.data.cv.ex %}
+        <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8">
+                        <p><strong>{{ member.position }}</strong></p>
+                    </div>
+                    <div class="col-4">
+                        <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p><em>{{ member.title }}</em></p>
+                    </div>
+                    <div class="col-12">
+                        <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ member.location }}</p>
+                    </div>
+                    <ul class="col-12 pl-4">
+                        {% for detail in member.details %}
+                        <li><p>{{ detail.statement }}</p></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+        </div>
+        {% endfor %}
+    </p>
+    <br>
+    <h2 class="font-weight-light pl-1"><i class="fal fa-folder-open"></i> Projects</h2>
+    <hr>
+    <p class="lead mt-2">
+        {% for member in site.data.projects %}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong><a href="/projects/#{{ member.tag }}" target="_blank">{{ member.title }}</a></strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="col-12 pl-4">
+                    {% for detail in member.accomplishments %}
+                    <li><p>{{ detail.statement }}</p></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </p>
+    <br>
+    <h2 class="font-weight-light pl-1"><i class="fal fa-rocket"></i> Extracurricular Activities</h2>
+    <hr>
+    <p class="lead mt-2">
+        {% for member in site.data.cv.act %}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-8">
+                    <p><strong>{{ member.title }}</strong></p>
+                </div>
+                <div class="col-4">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ member.location }}</p>
+                </div>
+                <div class="col-12">
+                    <p><em>{{ member.position }}</em></p>
+                </div>
+                <ul class="col-12 pl-4">
+                    {% for detail in member.details %}
+                    <li><p>{{ detail.statement }}</p></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </p>
+    <br>
+    <h2 class="font-weight-light pl-1"><i class="fal fa-tools"></i> Skills</h2>
+    <hr>
+    <p class="lead mt-2">
+        <div class="container-fluid">
+            <div class="row">
+                {% for member in site.data.cv.skills %}
+                <div class="col-md-6 col-s-12">
+                    <span><strong>{{ member.title }}:</strong>
+                    {% if member.title == "Human Languages" %}
+                        {% for tool in member.tools %}
+                        <span class="badge badge-primary">{{ tool.title }} <em>({{ tool.level }})</em></span>
+                        {% endfor %}
+                    {% else %}
+                        {% for tool in member.tools %}
+                            {% if tool.love == "1" %}
+                            <span class="badge badge-primary">{{ tool.title }} <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            {% else %}
+                            <span class="badge badge-primary">{{ tool.title }}</span>
+                            {% endif %}
+                        {% endfor %}
+                    {% endif %}
+                </div> 
+                {% endfor %}
+            </div>
+        </div>
+    </p>
+    <br>
+    <h2 class="font-weight-light pl-1"><i class="fal fa-download"></i> Download</h2>
+    <hr>
+    <p class="lead mt-2">
+        <div class="container-fluid" id="download-section">
+            <div class="row">
+                <div class="col-md-4 col-s-12 mb-2">
+                    <a class="btn btn-primary btn-lg btn-block click-btn" href="/public/pdf/CV.pdf" role="button" target="_blank">Curriculum Vitae</a>
+                </div>
+                <div class="col-md-4 col-s-12 mb-2">
+                    <a class="btn btn-primary btn-lg btn-block click-btn" href="/public/pdf/Resume_AI_Position.pdf" role="button" target="_blank">AI - Resume</a>
+                </div>
+                <div class="col-md-4 col-s-12 mb-2">
+                    <a class="btn btn-primary btn-lg btn-block click-btn" href="/public/pdf/Resume_WD_Position.pdf" role="button" target="_blank">SWE - Resume</a>
+                </div>
+            </div>
+        </div>
+        <p id="show-date" class="text-center">
+        <script language="Javascript">
+            document.write(new Date(document.lastModified));
+        </script>
+        </p>
+    </p>
+    <div class="modal fade" id="coursesModal" tabindex="-1" role="dialog" aria-labelledby="coursesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="coursesModalLabel">Courses List</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="lead">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="text-center mt-1"><strong>Computer Science</strong></h4>
+                            <hr>
+                        </div>
+                        <div class="col-md-6 col-s-12">
+                            <ul>
+                                <li><p>Objected-Oriented Programming (CS 161/162)</p></li>
+                                <li><p>Data Structures (CS 261)</p></li>
+                                <li><p>Computer Architecture and Assembly Language (CS 271)</p></li>
+                                <li><p>Digital Logic Design (ECE 271/272)</p></li>
+                                <li><p>Analysis of Algorithms (CS 325)</p></li>
+                                <li><p>Databases (CS 340)</p></li>
+                                <li><p>Theory of Computation (CS 321)</p></li>
+                                <li><p>Computer Networks (CS 372)</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-s-12">
+                            <ul>
+                                <li><p>Operating Systems (CS 344/444)</p></li>
+                                <li><p>Software Engineering (CS 361/362)</p></li>
+                                <li><p>Usability Engineering (CS 351)</p></li>
+                                <li><p>Programming Language Fundamentals (CS 381)</p></li>
+                                <li><p>Parallel Programming (CS 475)</p></li>
+                                <li><p>Graph Theory (CS 420)</p></li>
+                                <li><p>Artificial Intelligence (CS 331)</p></li>
+                                <li><p>Machine Learning and Data Mining (CS 443)</p></li>
+                                <li><p>Intelligent Robots (ROB 456)</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <h4 class="text-center mt-1"><strong>Mathematics and Statistics</strong></h4>
+                            <hr>
+                        </div>
+                        <div class="col-md-6 col-s-12">
+                            <ul>
+                                <li><p>Differential & Integral Calculus (MTH 251/252)</p></li>
+                                <li><p>Vector Calculus (MTH 254)</p></li>
+                                <li><p>Infinite Series and Sequences (MTH 253)</p></li>
+                                <li><p>Discrete Mathematics (MTH 231)</p></li>
+                                <li><p>Linear Algebra (MTH 341)</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-s-12">
+                            <ul>
+                                <li><p>Probability (MTH 361)</p></li>
+                                <li><p>Statistics (ST 314)</p></li>
+                                <li><p>Numerical Analysis (MTH 351)</p></li>
+                                <li><p>Mathematical Statistics (ST 421)</p></li>
+                                <li><p>Applied Stochastic Models (ST 443)</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <h4 class="text-center mt-1"><strong>Others</strong></h4>
+                            <hr>
+                        </div>
+                        <div class="col-md-6 col-s-12">
+                            <ul>
+                                <li><p>First-year Japanese (JPN 111)</p></li>
+                                <li><p>Microeconomics (ECON 201)</p></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-s-12">
+                            <ul>
+                                <li><p>Technical Writing (WR 327)</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>

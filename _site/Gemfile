@@ -24,6 +24,7 @@ end
 
 # table of content in posts
 gem 'jekyll-toc'
+gem "minimal-mistakes-jekyll", "4.13.0"
 
 # numbering headers
 gem 'jekyll-numbered-headings'

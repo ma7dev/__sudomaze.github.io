@@ -20,6 +20,10 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-last-modified-at
+  - jekyll-sitemap
+  - jekyll-gist
+  - jemoji
+  - jekyll-include-cache
   - minima
   - jekyll-feed
   - jekyll-toc

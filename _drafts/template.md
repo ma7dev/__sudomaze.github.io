@@ -1,25 +1,19 @@
 ---
 layout: post
 toc: true
-title:  "[title]"
-tags: [hot, summer]
-display: "/gif/typing.gif"
-permalink: /posts/yolo2
+title:  Pedestrian Tracking and Privacy Preservation
+abstract:  This project has been a joint effort between the City of Portland and Dr. Fuxin Li.
+tags: [Computer Vision, Artificial Intelligence]
+status: finished
+confidence: highly likely
+importance: 3
 ---
 
-adasd qwqdqw dqwd qwd qw dwqdqwd qwqw dqwd qwd qdq $P$ `a` <sup>[[1]](#ref-1)</sup>
+# Introduction to Project
+{% include built-in/hint.html content="The program <code>nvidia-smi</code> allows you to monitor your GPU utilization and can help you understand bottlenecks in your data pipeline. The average GPU utilization should usually be above 70-80%." %}
 
-
-# Introduction
 ## Introduction
-### Introduction
-#### Introduction
-
-dasdasdasdasdasd aas asdasdasdasdqwd qwdasd  qwd qwd qw dqwd qwd qd 
-
-adasd qwqdqw dqwd qwd qw dwqdqwd qwqw dqwd qwd qdq $P$ `a` <sup>[[1]](#ref-1)</sup>
-
-
+The software described in this document, Facial Detector and Obfuscator, is a project under the advisement of Chanho Kim (Georgia Tech) and Dr. Fuxin Li (Oregon State University). The client for this project is the City of Portland, which wants a proof of concept for a way to transform the data from their traffic cameras so the city may store the data without storing identifying information about the citizens in the footage. The software will be based largely on *YOLOv3*[[1]](#ref-1).
 
 $$
 \begin{align}
@@ -28,18 +22,18 @@ x(t_1) &= x(t_0) + \int_{t_0}^{t_1} v(t) dt \\
 \end{align}
 $$
 
-{% include table.html id="1" content="
+{% include built-in/table.html id="0" content="
 
 | First Header  | Second Header | Third Header         |
-| :------------ | ------------- | -------------------- |
+| ------------- | ------------- | -------------------- |
 | First row     | Data          | Very long data entry |
 | Second row    | **Cell**      | *Cell*               |
-| Third row     | Cell that spans across two columns  ||
+| Third row     | Cell that spans across two columns   ||
 
 " 
 caption="attadad" %}
 
-{% include pseudocode.html id="1" code="
+{% include built-in/pcode.html id="1" code="
 \begin{algorithm}
 \caption{Quicksort}
 \begin{algorithmic}
@@ -66,12 +60,12 @@ caption="attadad" %}
 \end{algorithm}
 " %}
 
-{% include 1-image.html id="1" url="/public/images/exploring-robot.png" caption="[image description]" %}
+{% include built-in/img.html id="1" url="https://www.gwern.net/images/silkroad/2012-christin-sr-dailysales.png" caption="[image description]" %}
 
 [Figure 1](#img-1)
 [table 1](#table-1)
 
-{% include video.html url="https://www.youtube.com/embed/DM0nkQxrpW0" %}
+{% include built-in/vid.html url="https://www.youtube.com/embed/DM0nkQxrpW0" %}
 
 ```python
 # import relevant libraries
@@ -90,20 +84,15 @@ def mb_callback(msg):
 ```
 <output>Using TensorFlow backend.</output>
 
-{% include hint.html content="The program <code>nvidia-smi</code> allows you to monitor your GPU utilization and can help you understand bottlenecks in your data pipeline. The average GPU utilization should usually be above 70-80%." %}
+{% include built-in/hint.html content="The program <code>nvidia-smi</code> allows you to monitor your GPU utilization and can help you understand bottlenecks in your data pipeline. The average GPU utilization should usually be above 70-80%." %}
 
-> adasdasdasdasdasdasdasd aas asd 
+> Ah! let not Censure term our fate our choice, / The stage but echoes back the public’s voice; The drama’s laws the drama’s patrons give, / For we that live to please must please to live.<br /> [Samuel Johnson](wikipedia.org/wiki/)(“Prologue at the Opening of Drury Lane Theatre”)
 
-# Further Reading
-{:.mt-2}
+# Footnotes
 
-* [adasdas](https://google.com)
-
-# References
-{:.mt-2}
-
-{% include ref.html
+<ol id="page-footnotes">
+{% include built-in/note.html
     id="1"
     details="[source]"
-    url="[link]" 
 %}
+</ol>

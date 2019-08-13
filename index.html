@@ -1,56 +1,57 @@
 ---
 layout: default
-title: Posts
+title: Home
 ---
-<div class="mt-5" id="posts">
-    <div class="container-fluid">
-        <div class="mb-2" id="no-posts">
-            <h2 class="text-center"><strong><i class="fal fa-construction" aria-hidden="true"></i> Under Construction <i class="fal fa-construction" aria-hidden="true"></i></strong></h2>
-            <img src="/public/gif/typing.gif">
+<div class="container mt-5" id="home-content">
+    <div class="row">
+        <div class="col-12" id="home-introduction">
+                Hi there, I'm Mazen; I have graduated from Oregon State Univesity with a BS degree in Computer Science Applied in Artificial Intelligence; 
+                with a minor in Actuarial Science. 
+                I have worked at the Center for Genome Research & Bio-computing as a Lead GPU Computational Researcher. 
+                I am the President of <a href="http://osuai.club/" target="_blank">OSU AI Club</a>. 
+                I work on projects on <a href="https://github.com/madebymaze" target="_blank">GitHub</a> and participate in <a href="http://kaggle.com/madebymaze" target="_blank">Kaggle</a> competitions to distract me from life. 
+                You could <a href="mailto:mail@madebymaze.xyz?subject=I%20would%20Like%20to%20Hire%20You!&body=Dear%20Mazen,%0D%0A%0D%0AI%20would%20like%20to%20hire%20you%20for%20a%20..." target="_blank">contact me</a>.  
         </div>
-        {% for post in site.posts %}
-        <div class="card">
-            <div class="row">
-                <div class="col-md-4 col-s-12">
-                    <a href="/public{{ post.display }}" target="_blank"><img src="/public{{ post.display }}" alt=""></a>
-                </div>
-                <div class="col-md-8 col-s-12">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col card-title">
-                                <h5><a href="{{ post.url }}" class="float-left" target="_blank"><strong>{{ post.title }}</strong></a></h5>
-                            </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>{{ post.date | date: "%B %-d, %Y" }}</em></p>
-                            </div>
-                            <div class="col-12">
-                                <p class="card-text">{{ post.excerpt | truncatewords: 50 }}</p>
-                                <a href="{{ post.url }}" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fal fa-link"></i> Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+        <div class="col-12 mb-2 mt-5" id="no-posts" style="
+        margin:auto;">
+            <h2 class="text-center mb-2" style="font-family: 'Roboto Slab', serif !important; border-bottom: 0;"><strong><i class="fal fa-construction" aria-hidden="true" style="color: #F3DA22;"></i> Under Construction <i class="fal fa-construction" aria-hidden="true" style="color: #F3DA22;"></i></strong></h2>
+            <img src="/public/gif/typing.gif"style="
+            width: 100%;
+            border-top-left-radius: 10px 10px;
+            border-top-right-radius: 10px 10px;
+            border-bottom-right-radius: 10px 10px;
+            border-bottom-left-radius: 10px 10px;">
         </div>
-        <div class="col-12 mt-2">
-            <div class="row mb-4">
-                <div class="col-8 text-left">
-                    <h4>
-                        <strong>Tags:</strong>
-                        {% for tag in post.tags %}
-                        <a href="#" class="tag-link">#{{ tag }}</a>
-                        {% endfor %}
-                    </h4>
-                </div>
-                <div class="col-4 text-right">
-                    <h4>
-                        <strong>Share:</strong>
-                        <a href="https://twitter.com/intent/tweet?text={{ post.title }} https://madebymaze.xyz{{ post.url }}" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/shareArticle?title={{ post.title }} &url=https://madebymaze.xyz{{ post.url }}" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </h4>
-                </div>
-            </div>
+        <!-- <div class="col-md-6 col-s-12" id="most-popular">
+            <h1>Most popular</h1>
+            <ul class="tags-list">
+                {% for post in site.posts %}
+                <li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.abstract }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
         </div>
-        {% endfor %}
+        <div class="col-md-6 col-s-12" id="most-popular">
+            <h1>Notable</h1>
+            <ul class="tags-list">
+                {% for post in site.posts %}
+                <li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.abstract }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-12 mt-5">
+            <hr>
+            <h5>By topic:</h5>
+        </div>
+        {% for tag in site.tags %}
+        <div class="col-md-6 col-s-12">
+            <h1 id="{{ tag[0] | slugify }}">{{ tag | first }}</h1>
+            <ul class="tags-list">
+                {% for post in tag[1] %}
+                <li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.abstract }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %} -->
     </div>
 </div>

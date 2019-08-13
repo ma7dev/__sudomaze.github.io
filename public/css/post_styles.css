@@ -1,0 +1,482 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++* POST STYLES *++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+/* sidebar and page body layout with screen is small */
+@media (max-width:1460px) {
+  #post-content .sidebar {
+    display: none;
+  }
+  #post-content #page-body{
+    max-width: 100%;
+    flex: 0 0 100%; 
+    width: 100%;
+  }
+}
+/* general style */
+#post-content article {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#post-content a {
+  text-decoration: none;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#333, #333);
+  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0% 90%, 100% 90%, 0% 90%;
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+  font-variant-numeric: lining-nums;
+  color: #3c3c3c;
+}
+#post-content a:hover {
+  opacity: 0.6;
+}
+#markdown-content a[href*="wikipedia.org/wiki/"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/wikipedia-w.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="twitter.com"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/twitter.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="facebook.com"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/facebook-square.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#page-modified a[href*="github.com"]::after, #markdown-content a[href*="github.com"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/github.svg);
+  background-repeat: no-repeat;
+  background-size: 0.7em;
+  width: 0.7em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="kaggle.com"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/kaggle.svg);
+  background-repeat: no-repeat;
+  background-size: 0.45em;
+  width: 0.45em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="linkedin.com"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/linkedin.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="medium.com"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/medium.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="youtube.com"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/youtube.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="pdf"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/solid/file-pdf.svg);
+  background-repeat: no-repeat;
+  background-size: 0.65em;
+  width: 0.65em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="madebymaze.xyz"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/solid/brackets-curly.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="drive.google.com"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/google-drive.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="osuai.club"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/light/brain.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="mailto:"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/light/envelope.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#post-content h1 {
+  text-transform: none;
+  font-variant: small-caps;
+  font-size: 2.5em;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+#post-content h2 {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  padding: 0 0.5em 0 0;
+  line-height: 1.25;
+  font-weight: bold;
+}
+#post-content h3, #post-content h4 {
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+/*******************/
+/* GRIDDING SYSTEM */
+/*******************/
+/* set up table of content and markdown layout */
+#page-content{
+  padding: 0;
+  overflow: hidden;
+}
+#table-of-content {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  line-height: 1.25;
+  padding: 10px 10px 2px 14px;
+  max-width: 30ch;
+}
+
+@media (max-width:992px) {
+  #table-of-content {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+  }
+  #page-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+#markdown-content > h1,
+#markdown-content > h2,
+#markdown-content > h3,
+#markdown-content > h4,
+#markdown-content > p,
+#markdown-content > .hintbox {
+  display: grid;
+}
+#markdown-content p {
+  display: block;
+}
+/* SIDEBAR STYLE */
+#post-content .sidenote {
+  position: absolute;
+}
+/****************/
+/* HEADER STYLE */
+/****************/
+#post-content header {
+  overflow: auto;
+}
+#post-content header h1 {
+  margin: 0.75em 0;
+  text-align: center;
+  text-transform: none;
+  font-variant: small-caps;
+  font-size: 2.5em;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+
+@media only screen and (max-width: 64.9ch) {
+  #post-content header h1 {
+      font-size: 2em;
+  }
+}
+/************************/
+/* PAGE META-DATA STYLE */
+/************************/
+#page-metadata {
+  margin: 0 0 2rem 0;
+  overflow: auto;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+#page-metadata #abstract {
+  display: block;
+  margin: 0 auto 0.5em auto;
+}
+#page-metadata p {
+  text-indent: 0;
+}
+/**************************/
+/* TABLE OF CONTENT STYLE */
+/**************************/
+#table-of-content a {
+  text-decoration: none;
+  background-image: none;
+  text-shadow: none;
+  color: #3c3c3c;
+}
+#table-of-content ol {
+  counter-reset: item;
+}
+#table-of-content > ol {
+  margin-left: 0;
+}
+#table-of-content li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  display: block;
+  font-weight: bold;
+  overflow-wrap: break-word;
+}
+#table-of-content li a{
+  border-bottom:0;
+}
+#table-of-content ol > li > ol > li {
+  font-weight: normal;
+}
+#table-of-content li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+  color: #A1A1A1;
+  font-weight: normal;
+}
+@media only screen and (max-width: 992px) {
+  #table-of-content {
+      float: none;
+      margin: 2em auto;
+      font-size: 1rem;
+  }
+  #table-of-content > ol > li > ol {
+      column-count: 2;
+  }
+  #table-of-content > ol > li > ol > li > ol {
+      break-inside: avoid;
+  }
+}
+@media only screen and (max-width: 526px) {
+  #table-of-content > ol > li > ol {
+      column-count: 1;
+  }
+  #table-of-content > ol > li > ol > li > ol {
+      break-inside: avoid;
+  }
+}
+/* table of content link styling */
+#table-of-content a:hover {
+  background-color: rgb(223, 223, 223);
+  color: #000;
+}
+/******************************************************************************/
+/******************************************************************************/
+/*************************** MARKDOWN CONTENT STYLE ***************************/
+/******************************************************************************/
+/******************************************************************************/
+#markdown-content h1 {
+  border-bottom: 1px solid black;
+  text-align: right;
+}
+#markdown-content h2 {
+  border-bottom: 1px dotted rgb(107, 107, 107);
+}
+/********************/
+/* PSEUDOCODE STYLE */
+/********************/
+#markdown-content .markdown-pseudocode, #markdown-content blockquote {
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#markdown-content .markdown-pseudocode p {
+  margin: 0;
+  text-indent: 0;
+}
+@media only screen and (max-width: 992px) {
+  #markdown-content .markdown-pseudocode, #markdown-content blockquote {
+    width:100%;
+  }
+}
+/***************/
+/* IMAGE STYLE */
+/***************/
+#markdown-content img, #markdown-content .embed-responsive {
+  width: 80%;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#markdown-content figcaption, #markdown-content caption {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+@media only screen and (max-width: 992px) {
+  #markdown-content img, #markdown-content .embed-responsive {
+    width: 100%;
+  }
+}
+/**************/
+/* CODE STYLE */
+/**************/
+#markdown-content .copy-code-button {
+  color: #272822;
+  background-color: #FFF;
+  border-color: #272822;
+  border: 2px solid;
+  border-radius: 5px 5px 0px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: -2px;
+  padding: 3px 8px;
+  font-size: 0.8em;
+}
+#markdown-content .copy-code-button:hover {
+  cursor: pointer;
+  background-color: #F2F2F2;
+}
+#markdown-content .copy-code-button:focus {
+  background-color: #E6E6E6;
+  outline: 0;
+}
+#markdown-content .copy-code-button:active {
+  background-color: #D9D9D9;
+}
+#markdown-content .highlight pre {
+  /* Avoid pushing up the copy buttons. */
+  margin: 0;
+}
+#markdown-content .highlight {
+  margin-bottom: 0;
+}
+#markdown-content .highlight+p {
+  margin-top: 2em;
+}
+#markdown-content output {
+  width:100%;
+  padding: 1.2em;
+  background: #21242A;
+  color: #EBEBEB;
+}
+/******************/
+/* HINT BOX STYLE */
+/******************/
+#markdown-content .specialbox {
+  max-width: 60%;
+  margin: 1.5em auto;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1.4em;
+}
+#markdown-content .hintbox {
+  background: rgba(82,214,129,.3)
+}
+#markdown-content .hintbox p {
+  display: inline;
+  text-indent: 0;
+}
+@media only screen and (max-width: 992px) {
+  #markdown-content .specialbox {
+    max-width: 100%;
+  }
+}
+/********************/
+/* BLOCKQUOTE STYLE */
+/********************/
+#markdown-content blockquote p {
+  text-indent: 0;
+}
+/************************/
+/* PAGE FOOTNOTES STYLE */
+/************************/
+#page-footnotes {
+  list-style: decimal;
+  padding-left: 2em;
+}

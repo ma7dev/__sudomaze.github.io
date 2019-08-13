@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/404</loc>
-</url>
-<url>
-<loc>http://localhost:4000/about/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/cv/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tags/hot/</loc>
+<loc>http://localhost:4000/me/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/projects/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/site/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/public/libraries/katex/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/public/libraries/pseudocode.js-1.1/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/public/images/posts/pedestrian-tracking-and-privacy-preservation/Group9_FinalPoster_after_kir_maz.pdf</loc>
+<lastmod>2019-08-06T05:44:46-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/public/libraries/jquery-ui-1.12.1.custom/</loc>

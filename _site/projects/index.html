@@ -4,7 +4,7 @@
     <!-- Website Details -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Projects - Mazen Alotaibi</title>
+    <title>Projects - madebymaze.xyz</title>
     <meta name="theme-color" content="#343940">
     <meta name="author" content="Mazen Alotaibi">
     <meta name="description" content="Mazen's Personal Space">
@@ -24,15 +24,14 @@
 
     <!-- ICONS/FONTS -->
     <script defer src="/public/libraries/fontawesome-pro-5.10.0-11-web/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- LIBRARY -->
-    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
-    <script src="/public/libraries/katex/katex.min.js"></script>
-    <script src="/public/libraries/pseudocode.js-1.1/pseudocode.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+    <script type="text/javascript" src="/public/libraries/katex/katex.min.js"></script>
+    <script type="text/javascript" src="/public/libraries/pseudocode.js-1.1/pseudocode.js" type="text/javascript"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="/public/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
@@ -41,8 +40,14 @@
     <link rel="stylesheet" href="/public/libraries/katex/katex.min.css">
     <link rel="stylesheet" href="/public/libraries/pseudocode.js-1.1/pseudocode.css" type="text/css">
     <link rel="stylesheet" href="/public/css/styles.css">
-  </head>
-  <body data-spy="scroll" data-target="#toc">
+    <link rel="stylesheet" href="/public/css/home_styles.css">
+    <link rel="stylesheet" href="/public/css/post_styles.css">
+    <link rel="stylesheet" href="/public/css/site_styles.css">
+    <link rel="stylesheet" href="/public/css/projects_styles.css">
+    <link rel="stylesheet" href="/public/css/me_styles.css">
+    <link rel="stylesheet" href="/public/css/font.css">
+</head>
+<body>
     <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -54,42 +59,42 @@
     });
   </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow static-top">
-    <div class="container">
-      <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="/">Posts</a></li>
-          <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
-          <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-          <li class="nav-item"><a class="btn btn-primary my-2 my-sm-0 nav-link" href="mailto:mail@madebymaze.xyz" target="_blank">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-<div class="container" id="page-content">
-    <div class="mt-5" id="projects">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="/me">Me</a></li>
+                <li class="nav-item"><a class="btn btn-primary my-2 my-sm-0 nav-link" href="mailto:mail@madebymaze.xyz" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<main class="container mt-5" id="projects-content">
     <div class="container-fluid">
         
         <div id="ai-demo"></div>
         <div class="card mb-3">
             <div class="row">
                 <div class="col-md-4 col-s-12">
-                    <a href="/public/images/ai-demo.png" target="_blank"><img src="/public/images/ai-demo.png" alt=""></a>
+                    <a href="/public/images/projects/ai-demo.png" target="_blank"><img src="/public/images/projects/ai-demo.png" alt=""></a>
                 </div>
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>Tech Data AI Demo</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>Tech Data AI Demo</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>11/2018 - 6/2019</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>11/2018 - 6/2019</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 
@@ -117,7 +122,7 @@
                                 
                                 
                                 
-                                <a disabled="disabled" class="mb-1"><i class="fal fa-eye-slash"></i> Private Code</a>
+                                <a disabled="disabled" class="non-click-btn mb-1"><i class="fal fa-eye-slash"></i> Private Code</a>
                                 
                             </div>
                         </div>
@@ -130,16 +135,19 @@
         <div class="card mb-3">
             <div class="row">
                 <div class="col-md-4 col-s-12">
-                    <a href="/public/images/pedestrian-counting-and-privacy-preservation.jpg" target="_blank"><img src="/public/images/pedestrian-counting-and-privacy-preservation.jpg" alt=""></a>
+                    <a href="/public/images/projects/ObjDetectFig.png" target="_blank"><img src="/public/images/projects/ObjDetectFig.png" alt=""></a>
                 </div>
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>Senior Design Project</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>Senior Design Project</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>10/2018 - 6/2019</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>10/2018 - 6/2019</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 
@@ -176,16 +184,19 @@
         <div class="card mb-3">
             <div class="row">
                 <div class="col-md-4 col-s-12">
-                    <a href="/public/images/exploring-robot.png" target="_blank"><img src="/public/images/exploring-robot.png" alt=""></a>
+                    <a href="/public/images/projects/exploring-robot.png" target="_blank"><img src="/public/images/projects/exploring-robot.png" alt=""></a>
                 </div>
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>Exploring Robot</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>Exploring Robot</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>11/2018</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>11/2018</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 
@@ -227,11 +238,14 @@
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>Image Captioning</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>Image Captioning</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>7/2018 - 8/2018</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>7/2018 - 8/2018</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 
@@ -271,11 +285,14 @@
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>Facial Keypoint Detection</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>Facial Keypoint Detection</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>6/2018 - 7/2018</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>6/2018 - 7/2018</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 
@@ -310,16 +327,19 @@
         <div class="card mb-3">
             <div class="row">
                 <div class="col-md-4 col-s-12">
-                    <a href="/public/images/self-driving-RC-car.jpg" target="_blank"><img src="/public/images/self-driving-RC-car.jpg" alt=""></a>
+                    <a href="/public/images/projects/self-driving-RC-car.jpg" target="_blank"><img src="/public/images/projects/self-driving-RC-car.jpg" alt=""></a>
                 </div>
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>Self-Driving RC Car</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>Self-Driving RC Car</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>5/2018 - 8/2018</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>5/2018 - 8/2018</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 
@@ -363,11 +383,14 @@
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>Image Classification</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>Image Classification</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>5/2018</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>5/2018</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 
@@ -402,16 +425,19 @@
         <div class="card mb-3">
             <div class="row">
                 <div class="col-md-4 col-s-12">
-                    <a href="/public/images/aceuposu.png" target="_blank"><img src="/public/images/aceuposu.png" alt=""></a>
+                    <a href="/public/images/projects/aceuposu.png" target="_blank"><img src="/public/images/projects/aceuposu.png" alt=""></a>
                 </div>
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>Aces Up Game</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>Aces Up Game</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>11/2017 - 12/2017</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>11/2017 - 12/2017</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 
@@ -448,16 +474,19 @@
         <div class="card mb-3">
             <div class="row">
                 <div class="col-md-4 col-s-12">
-                    <a href="/public/images/personal-website-old.png" target="_blank"><img src="/public/images/personal-website-old.png" alt=""></a>
+                    <a href="/public/images/projects/personal-website-old.png" target="_blank"><img src="/public/images/projects/personal-website-old.png" alt=""></a>
                 </div>
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>Personal Website</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>Personal Website</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>12/2016</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>12/2016</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 
@@ -503,11 +532,14 @@
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>A.I. for a 2D Grid Game</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>A.I. for a 2D Grid Game</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>4/2016</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>4/2016</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 
@@ -537,46 +569,8 @@
         </div>
         
     </div>
-</div>
-</div>
-<footer class="static-bottom">
-    <hr style="border-top: 1px solid rgba(0,0,0,.25);;">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 text-center">
-                <p>
-                    2019
-                    <i class="fal fa-copyright" aria-hidden="true"></i>
-                    <a href="https://madebymaze.xyz" target="_blank">Mazen Alotaibi.</a>
-                </p>
-                <p>
-                    Hosted on 
-                    <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-                </p>
-                <p>
-                    Built with 
-                    <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>,
-                    <a href="https://github.com/jekyll/minima/" target="_blank">Minima</a>, and
-                    <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>.
-                </p>
-            </div>
-            <div class="col-12 text-center" id="social-list">
-                
-                    <a href="https://twitter.com/madebymaze" class="social-btn twitter" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
-                
-                    <a href="https://linkedin.com/in/madebymaze" class="social-btn linkedin" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                
-                    <a href="https://github.com/madebymaze" class="social-btn github" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
-                
-                <a href="mailto:mail@madebymaze.xyz" class="social-btn email-icon" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a>
-            </div>
-            <div class="col-12 text-center" id="source-code">
-                <p><a href="http://github.com/madebymaze/madebymaze.github.io" target="_blank"><i class="fal fa-file-code"></i> Source Code</a></p>
-            </div>
-        </div>
-    </div>
-</footer>
-<script>
+</main>
+    <script>
         var _gaq = _gaq || [];
         _gaq.push(['_setAccount', 'UA-131236199-1']);
         _gaq.push(['_gat._forceSSL']);
@@ -589,13 +583,14 @@
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
-<script type="text/javascript" src="/public/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<script type="text/javascript" src="/public/libraries/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="/public/libraries/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/public/libraries/tocify/jquery.tocify.js"></script>
-<script type="text/javascript" src="/public/js/index.js"></script>
+    <script type="text/javascript" src="/public/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/public/libraries/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/public/libraries/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/public/libraries/tocify/jquery.tocify.js"></script>
+    <script type="text/javascript" src="/public/libraries/jquery.toc/jquery.toc.js"></script>
+    <script type="text/javascript" src="/public/js/index.js"></script>
+    <script type="text/javascript" src="/public/js/sidenotes.js" async=""></script> 
 </body>
-
 </html>

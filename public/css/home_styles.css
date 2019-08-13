@@ -1,0 +1,217 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++* HOME STYLES *++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++*/
+#home-content ul {
+    list-style: disc;
+}
+#home-content a {
+text-decoration: none;
+background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#333, #333);
+background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+background-repeat: no-repeat, no-repeat, repeat-x;
+background-position: 0% 90%, 100% 90%, 0% 90%;
+text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+font-variant-numeric: lining-nums;
+color: #3c3c3c;
+}
+#home-content a:hover {
+opacity: 0.6;
+}
+#home-introduction a[href*="wikipedia.org/wiki/"]::after{
+content: "";
+background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/wikipedia-w.svg);
+background-repeat: no-repeat;
+background-size: 0.75em;
+width: 0.75em;
+height: 1em;
+display: inline-block;
+vertical-align: baseline;
+opacity: 0.85;
+margin-left: .2em;
+}
+#home-introduction a[href*="twitter.com"]::after{
+content: "";
+background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/twitter.svg);
+background-repeat: no-repeat;
+background-size: 0.75em;
+width: 0.75em;
+height: 1em;
+display: inline-block;
+vertical-align: baseline;
+opacity: 0.85;
+margin-left: .2em;
+}
+#home-introduction a[href*="facebook.com"]::after{
+content: "";
+background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/facebook-square.svg);
+background-repeat: no-repeat;
+background-size: 0.75em;
+width: 0.75em;
+height: 1em;
+display: inline-block;
+vertical-align: baseline;
+opacity: 0.85;
+margin-left: .2em;
+}
+#page-introduction a[href*="github.com"]::after, #home-content a[href*="github.com"]::after{
+content: "";
+background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/github.svg);
+background-repeat: no-repeat;
+background-size: 0.7em;
+width: 0.7em;
+height: 1em;
+display: inline-block;
+vertical-align: baseline;
+opacity: 0.85;
+margin-left: .2em;
+}
+#home-introduction a[href*="kaggle.com"]::after{
+content: "";
+background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/kaggle.svg);
+background-repeat: no-repeat;
+background-size: 0.45em;
+width: 0.45em;
+height: 1em;
+display: inline-block;
+vertical-align: baseline;
+opacity: 0.85;
+margin-left: .2em;
+}
+#home-introduction a[href*="linkedin.com"]::after{
+content: "";
+background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/linkedin.svg);
+background-repeat: no-repeat;
+background-size: 0.75em;
+width: 0.75em;
+height: 1em;
+display: inline-block;
+vertical-align: baseline;
+opacity: 0.85;
+margin-left: .2em;
+}
+#home-introduction a[href*="medium.com"]::after{
+content: "";
+background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/medium.svg);
+background-repeat: no-repeat;
+background-size: 0.75em;
+width: 0.75em;
+height: 1em;
+display: inline-block;
+vertical-align: baseline;
+opacity: 0.85;
+margin-left: .2em;
+}
+#home-introduction a[href*="youtube.com"]::after{
+content: "";
+background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/youtube.svg);
+background-repeat: no-repeat;
+background-size: 0.75em;
+width: 0.75em;
+height: 1em;
+display: inline-block;
+vertical-align: baseline;
+opacity: 0.85;
+margin-left: .2em;
+}
+#home-introduction a[href*="pdf"]::after{
+content: "";
+background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/solid/file-pdf.svg);
+background-repeat: no-repeat;
+background-size: 0.65em;
+width: 0.65em;
+height: 1em;
+display: inline-block;
+vertical-align: baseline;
+opacity: 0.85;
+margin-left: .2em;
+}
+#home-introduction a[href*="madebymaze.xyz"]::after{
+content: "";
+background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/solid/brackets-curly.svg);
+background-repeat: no-repeat;
+background-size: 0.75em;
+width: 0.75em;
+height: 1em;
+display: inline-block;
+vertical-align: baseline;
+opacity: 0.85;
+margin-left: .2em;
+}
+#home-introduction a[href*="drive.google.com"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/google-drive.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+}
+#home-introduction a[href*="osuai.club"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/light/brain.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+}
+#home-introduction a[href*="mailto:"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/light/envelope.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+}
+#home-content h1 {
+text-transform: none;
+font-variant: small-caps;
+font-size: 2.5em;
+line-height: 1.15;
+font-weight: 600;
+letter-spacing: -1px;
+font-weight: bold;
+}
+#home-content h2 {
+text-transform: uppercase;
+font-size: 1.25em;
+padding: 0 0.5em 0 0;
+line-height: 1.25;
+font-weight: bold;
+}
+#home-content h3, #home-content h4 {
+font-size: 1.17em;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+}
+#home-content > h1,
+#home-content > h2,
+#home-content > h3,
+#home-content > h4,
+#home-content > p,
+#home-content > .hintbox {
+display: grid;
+}
+#home-content p {
+display: block;
+}
+#home-content h1 {
+border-bottom: 1px solid black;
+}
+#home-content h2 {
+border-bottom: 1px dotted rgb(107, 107, 107);
+}
+

@@ -1,0 +1,9 @@
+<li id="ref-{{ include.id }}"><p>{{ include.details }}<a href="#text-ref-{{ include.id }}"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-{{ include.id }}" ) {
+            links[i].id = "text-ref-{{ include.id }}";
+        }
+    } 
+</script>

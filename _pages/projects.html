@@ -3,7 +3,7 @@ layout: default
 title: Projects
 permalink: /projects/
 ---
-<div class="mt-5" id="projects">
+<main class="container mt-5" id="projects-content">
     <div class="container-fluid">
         {% for member in site.data.projects %}
         <div id="{{ member.tag }}"></div>
@@ -15,11 +15,14 @@ permalink: /projects/
                 <div class="col-md-8 col-s-12">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col card-title">
-                                <h5 class="float-left"><strong>{{ member.title }}</strong></h5>
+                            <div class="col-md col-s-12 card-title mb-0">
+                                <h5><strong>{{ member.title }}</strong></h5>
                             </div>
-                            <div class="col-auto">
-                                <p class="card-text text-right"><em>{{ member.date }}</em></p>
+                            <div class="col-md-auto col-s-12 mb-0">
+                                <h5 class="card-text"><em>{{ member.date }}</em></h5>
+                            </div>
+                            <div class="col-12 mt-0 mb-2">
+                                <hr>
                             </div>
                             <ul class="col-12">
                                 {% for detail in member.accomplishments %}
@@ -41,7 +44,7 @@ permalink: /projects/
                                 <a href="{{ member.code }}" class="btn btn-primary click-btn mb-1" target="_blank"><i class="fab fa-github"></i> View Code</a>
                                 {% endif %}
                                 {% if member.code == null %}
-                                <a disabled="disabled" class="mb-1"><i class="fal fa-eye-slash"></i> Private Code</a>
+                                <a disabled="disabled" class="non-click-btn mb-1"><i class="fal fa-eye-slash"></i> Private Code</a>
                                 {% endif %}
                             </div>
                         </div>
@@ -51,4 +54,4 @@ permalink: /projects/
         </div>
         {% endfor %}
     </div>
-</div>
+</main>

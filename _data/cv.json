@@ -138,18 +138,6 @@
                     "love": "1"
                 },
                 {
-                    "title": "OpenCL",
-                    "love": "1"
-                },
-                {
-                    "title": "OpenGL",
-                    "love": "1"
-                },
-                {
-                    "title": "CUDA",
-                    "love": "1"
-                },
-                {
                     "title": "Java",
                     "love": "0"
                 }
@@ -204,7 +192,11 @@
                     "love": "1"
                 },
                 {
-                    "title": "Keras/TensorFlow",
+                    "title": "TensorFlow",
+                    "love": "1"
+                },
+                {
+                    "title": "Keras",
                     "love": "1"
                 },
                 {
@@ -213,6 +205,27 @@
                 },
                 {
                     "title": "R",
+                    "love": "1"
+                },
+                {
+                    "title": "SQL",
+                    "love": "1"
+                }
+            ]
+        },
+        {
+            "title": "Parallel Programming",
+            "tools": [
+                {
+                    "title": "OpenCL",
+                    "love": "1"
+                },
+                {
+                    "title": "OpenGL",
+                    "love": "1"
+                },
+                {
+                    "title": "CUDA",
                     "love": "1"
                 }
             ]
@@ -229,23 +242,15 @@
                     "love": "1"
                 },
                 {
-                    "title": "SQL",
-                    "love": "1"
-                },
-                {
-                    "title": "NoSQL",
-                    "love": "1"
-                },
-                {
-                    "title": "Docker",
-                    "love": "1"
-                },
-                {
-                    "title": "vim",
+                    "title": "VIM",
                     "love": "1"
                 },
                 {
                     "title": "VScode",
+                    "love": "1"
+                },
+                {
+                    "title": "Docker",
                     "love": "1"
                 },
                 {

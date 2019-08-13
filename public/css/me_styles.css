@@ -1,0 +1,140 @@
+/*+++++++++++++++++++++++++++++++++++++++++++++*/
+/*++++++++++++++++* ME STYLES *++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++++++++++++++*/
+#me-content h1, #me-content h2, #me-content h3, #me-content h4, #me-content  h5 {
+    font-family: 'Roboto Slab', serif !important;
+}
+#me-content p, #me-content a, #me-content span {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-indent: 0;
+}
+#me-content ul {
+    list-style: disc;
+}
+#me-content .btn-primary {
+    background-color: rgb(235, 235, 235) !important;
+    color: rgb(44, 44, 44) !important;
+    border-color: rgb(235, 235, 235) !important;
+}
+#me-content .btn-primary:hover {
+    background-color: #313131 !important;
+    color: white !important;
+    border-color: #313131 !important;
+}
+#me-content .card {
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+}
+#me-content img {
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+}
+#me-content .language-list {
+    margin: auto;
+}
+#me-content .language-btn {
+    padding: .5em .65em;
+}
+#me-content .language-list .keras {
+    color: white;
+    background: red;
+}
+#me-content .language-list .tensorflow {
+    color: white;
+    background: #EF6C00;
+}
+#me-content .language-list .cuda {
+    color: white;
+    background: #76B900;
+}
+#me-content .language-list .opencv {
+    color: white;
+    background: blue;
+}
+#me-content .language-list .bootstrap {
+    color: white;
+    background: #553D7B;
+}
+#me-content .language-list .jquery {
+    color: white;
+    background: #21609B;
+}
+#me-content .language-list .nodejs {
+    color: white;
+    background: #529D43;
+}
+#me-content .language-list .bash {
+    color: white;
+    background: black;
+}
+#me-content .language-list .pytorch {
+    color: white;
+    background: #EE4C2C;
+}
+#me-content .language-list .python {
+    color: white;
+    background: -webkit-linear-gradient(#37709F, #FFD141);
+}
+#me-content .language-list .cplusplus {
+    color: white;
+    background: black;
+}
+#me-content .language-list .ros {
+    color: white;
+    background: blue;
+}
+#me-content .language-list .js {
+    color: white;
+    background: #F7DF1C;
+}
+#me-content .language-list .c {
+    color: white;
+    background: black;
+}
+#me-content .language-list .numpy {
+    color: black;
+    background: #FFE38D;
+}
+#me-content .language-list .java {
+    color: white;
+    background: -webkit-linear-gradient(#E76F00, #5282A1);
+}
+#me-content .language-list .nginx {
+    color: white;
+    background: #009801;
+}
+.bottom-column {
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
+}
+#me-content img {
+    width:100%;
+    height: 100%;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 10px 10px;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 10px 10px;
+    object-position: center; /* Center the image within the element */
+}
+@media only screen and (max-width: 768px) {
+    #me-content .click-btn, #me-content .non-click-btn {
+      font-size: 3vw;
+    }
+}
+#me-content #list-courses:hover {
+    background: #0062cc;
+    cursor: pointer;
+}
+#me-content .location {
+    font-size: 80%;
+    margin: 0;
+    padding: 0;
+}
+#me-content #show-date {
+    margin-top: 20px;
+}
