@@ -9,10 +9,4 @@ status: draft
 confidence: highly likely
 importance: 3
 ---
-<footer><p>
-{% for file in site.static_files %}
-  {% if file.path contains 'lessons-learned-from-4-years-of-college/' %}
-    {{ file.path }}
-  {% endif %}
-{% endfor %}
-</p></footer>
+sss
