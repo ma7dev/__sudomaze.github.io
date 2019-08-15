@@ -30,7 +30,19 @@
                                 <div class="col-12">
                                     <p>
                                         created: <span id="page-created"><em>{{ page.date | date: "%B %-d, %Y" }}</em></span>;
-                                        modified: <span id="page-modified"><em><a href="https://github.com/madebymaze/madebymaze.github.io/blame/master/_posts/{{ page.permalink }}">{{ page.date | date: "%B %-d, %Y" }}</a></em></span>;
+                                        modified: <span id="page-modified"></span>;
+                                        <script>
+                                            var pageModified = document.getElementById("page-modified");
+                                            pageModified.innerHTML = `<em><a href="https://github.com/madebymaze/madebymaze.github.io/blame/master/_posts/{{ page.permalink }}">{{ page.modified | date: "%B %-d, %Y"  }}</a></em>`;
+                                            // function printRepoCount() {
+                                            //     var responseObj = JSON.parse(this.responseText);
+                                            //     console.log(responseObj.sha + " has " + responseObj.public_repos + " public repositories!");
+                                            // }
+                                            // var request = new XMLHttpRequest();
+                                            // request.onload = printRepoCount;
+                                            // request.open('get', 'https://api.github.com/repos/madebymaze/madebymaze.github.io/contents/_drafts/template.md', true)
+                                            // request.send()
+                                        </script>
                                         status: <span id="page-status"><em>{{ page.status }}</em></span>
                                         <!-- <a href="https://madebymaze.xyz/site/#confidence">confidence:</a> <span id="page-confidence"><em>{{ page.confidence }}</em></span>;
                                         <a href="https://madebymaze.xyz/site/#importance">importance:</a> <span id="page-importance"><em>{{ page.importance }}</em></span> -->

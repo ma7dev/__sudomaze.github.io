@@ -288,6 +288,7 @@ DEPENDENCIES
   jekyll-jupyter-notebook
   jekyll-livereload
   jekyll-numbered-headings
+  jekyll-sitemap
   jekyll-toc
   minima (~> 2.0)
   minimal-mistakes-jekyll (= 4.13.0)
