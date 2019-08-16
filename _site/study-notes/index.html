@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Website Details -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study Notes - madebymaze.xyz</title>
+    <meta name="theme-color" content="#343940">
+    <meta name="author" content="Mazen Alotaibi">
+    <meta name="description" content="Mazen's Personal Space">
+    <meta name="keywords" content="Mazen, Mazen Alotaibi, Web, Developer, Javascript, Math">
+    <link rel="icon" type="image/x-icon" href="https://madebymaze.xyz/public/images/favicon.png">
+    <meta property="og:title" content="Mazen Alotaibi">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://madebymaze.xyz">
+    <meta property="og:image" content="https://madebymaze.xyz/public/images/favicon.png">
+    <meta property="og:description" content="Mazen's Personal Space">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- twitter details -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@madebymaze">
+    <meta name="twitter:creator" content="@madebymaze">
+
+    <!-- ICONS/FONTS -->
+    <script defer src="/public/libraries/fontawesome-pro-5.10.0-11-web/js/all.js"></script>
+
+    <!-- LIBRARY -->
+    <script type="text/javascript" src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/public/libraries/katex/katex.min.js"></script>
+    <script type="text/javascript" src="/public/libraries/pseudocode.js-1.1/pseudocode.js" type="text/javascript"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/public/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+    <link rel="stylesheet" href="/public/libraries/katex/katex.min.css">
+    <link rel="stylesheet" href="/public/libraries/pseudocode.js-1.1/pseudocode.css" type="text/css">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link rel="stylesheet" href="/public/css/home_styles.css">
+    <link rel="stylesheet" href="/public/css/post_styles.css">
+    <link rel="stylesheet" href="/public/css/site_styles.css">
+    <link rel="stylesheet" href="/public/css/projects_styles.css">
+    <link rel="stylesheet" href="/public/css/cv_styles.css">
+    <link rel="stylesheet" href="/public/css/font.css">
+</head>
+<body>
+    <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'] ],
+        processEscapes: true
+      }
+    });
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/"><i class="fal fa-brackets-curly"></i> Mazen Alotaibi</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="/cv">CV</a></li>
+                <li class="nav-item"><a class="btn btn-primary my-2 my-sm-0 nav-link" href="mailto:mail@madebymaze.xyz" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<main class="container-fluid" id="post-content">
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-md-2 sidebar">
+                </div>
+                <div class="col-md-8" id="page-body">
+                    <article class="row">
+                        <div class="col-12" id="page-metadata">
+                            <div class="row">
+                                <header class="col-12" id="page-header">
+                                    <h1>Study Notes</h1>
+                                </header>
+                                <div class="col-12" id="page-abstract">
+                                    <p>
+                                        <span id="abstract"><em>I try to update this page every Saturday with what I have learned. You will find my study notes which includes: Notes, Reviews, etc.</em></span>
+                                    </p>
+                                </div>
+                                <div class="col-12" id="page-tags">
+                                    <p>
+                                        topics:<span id="tags">
+                                        
+                                        <a href="/#cs" class="tag-link"><em>CS</em></a>, 
+                                        
+                                        <a href="/#ai" class="tag-link"><em>AI</em></a> 
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="col-12">
+                                    <p>
+                                        created: <span id="page-created"><em>August 14, 2019</em></span>;
+                                        modified: <span id="page-modified"></span>;
+                                        <script>
+                                            var pageModified = document.getElementById("page-modified");
+                                            pageModified.innerHTML = `<em><a href="https://github.com/madebymaze/madebymaze.github.io/commits/master/_posts/">August 14, 2019</a></em>`;
+                                            // function printRepoCount() {
+                                            //     var responseObj = JSON.parse(this.responseText);
+                                            //     console.log(responseObj.sha + " has " + responseObj.public_repos + " public repositories!");
+                                            // }
+                                            // var request = new XMLHttpRequest();
+                                            // request.onload = printRepoCount;
+                                            // request.open('get', 'https://api.github.com/repos/madebymaze/madebymaze.github.io/contents/_drafts/template.md', true)
+                                            // request.send()
+                                        </script>
+                                        status: <span id="page-status"><em>in process</em></span>
+                                        <!-- <a href="https://madebymaze.xyz/site/#confidence">confidence:</a> <span id="page-confidence"><em>highly likely</em></span>;
+                                        <a href="https://madebymaze.xyz/site/#importance">importance:</a> <span id="page-importance"><em>3</em></span> -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12" id="page-content">
+                            <div id="table-of-content">
+                                <ol id="toc" data-toc="#markdown-content"></ol>
+                            </div>
+                            <div id="markdown-content">
+                                <h1 id="massive-open-online-courses-moocs">Massive Open Online Courses (MOOCs)</h1>
+<h2 id="intro-to-machine-learning"><a href="https://www.kaggle.com/learn/intro-to-machine-learning?utm_medium=email&amp;utm_source=intercom&amp;utm_campaign=beginner-friendly-competition-follow-up">Intro to Machine Learning</a></h2>
+
+<h2 id="intermediate-machine-learning"><a href="https://www.kaggle.com/learn/intermediate-machine-learning?utm_medium=email&amp;utm_source=intercom&amp;utm_campaign=beginner-friendly-competition-follow-up">Intermediate Machine Learning</a></h2>
+
+<h2 id="introduction-to-tensorflow-for-artificial-intelligence-machine-learning-and-deep-learning"><a href="https://www.coursera.org/learn/introduction-tensorflow">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</a></h2>
+<h3 id="a-new-programming-paradigm">A New Programming Paradigm</h3>
+<h3 id="introduction-to-computer-vision">Introduction to Computer Vision</h3>
+<h3 id="enhancing-vision-with-convolutional-neural-networks">Enhancing Vision with Convolutional Neural Networks</h3>
+<h3 id="using-real-world-images">Using Real-world Images</h3>
+
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-2 sidebar">
+                </div>
+            </div>
+        </div>
+        <footer class="col-12" style="background: white"id="disqus_thread">
+            <script>
+            var disqus_config = function () {
+                this.page.url = "https://madebymaze.xyz//study-notes/";  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = "/study-notes/"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://madebymaze-xyz.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </footer>
+    </div>
+</main>
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-131236199-1']);
+        _gaq.push(['_gat._forceSSL']);
+        _gaq.push(['_gat._anonymizeIp']);
+        _gaq.push(['_trackPageview']);
+      
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script type="text/javascript" src="/public/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/public/libraries/jquery.toc/jquery.toc.js"></script>
+    <script type="text/javascript" src="/public/js/index.js"></script>
+</body>
+</html>

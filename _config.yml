@@ -26,5 +26,6 @@ plugins:
   - jekyll-feed
   - jekyll-toc
   - jekyll-numbered-headings
+
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

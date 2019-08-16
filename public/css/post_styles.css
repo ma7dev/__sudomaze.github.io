@@ -13,6 +13,13 @@
   }
 }
 /* general style */
+#markdown-content ul {
+  list-style-type: disc;
+  display: grid;
+}
+#markdown-content li {
+  margin-left: 30px;
+}
 #post-content article {
   padding-left: 10px;
   padding-right: 10px;
@@ -30,9 +37,57 @@
 #post-content a:hover {
   opacity: 0.6;
 }
-#markdown-content a[href*="wikipedia.org/wiki/"]::after{
+#markdown-content a[href*="coursera.org"]::after{
+  content: "";
+  background-image: url(/public/icons/coursera.svg);
+  background-repeat: no-repeat;
+  background-size: 3em;
+  width: 3em;
+  height: .8em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="udemy.com"]::after{
+  content: "";
+  background-image: url(/public/icons/udemy.svg);
+  background-repeat: no-repeat;
+  background-size: 2.5em;
+  width: 2.5em;
+  height: 1.4em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="udacity.com"]::after{
+  content: "";
+  background-image: url(/public/icons/udacity.svg);
+  background-repeat: no-repeat;
+  background-size: 3.5em;
+  width: 3.5em;
+  height: .8em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="wikipedia.org"]::after{
   content: "";
   background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/wikipedia-w.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#markdown-content a[href*="amazon.com"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/amazon.svg);
   background-repeat: no-repeat;
   background-size: 0.75em;
   width: 0.75em;
@@ -364,6 +419,9 @@
 }
 #markdown-content h2 {
   border-bottom: 1px dotted rgb(107, 107, 107);
+}
+#markdown-content h1 a, #markdown-content h2 a, #markdown-content h3 a, #markdown-content h4 a {
+  background-image: none;
 }
 /********************/
 /* PSEUDOCODE STYLE */

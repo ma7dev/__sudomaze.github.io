@@ -17,6 +17,42 @@ color: #3c3c3c;
 #home-content a:hover {
 opacity: 0.6;
 }
+#home-introduction a[href*="coursera.org"]::after{
+  content: "";
+  background-image: url(/public/icons/coursera.svg);
+  background-repeat: no-repeat;
+  background-size: 3em;
+  width: 3em;
+  height: .8em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#home-introduction a[href*="udemy.com"]::after{
+  content: "";
+  background-image: url(/public/icons/udemy.svg);
+  background-repeat: no-repeat;
+  background-size: 2.5em;
+  width: 2.5em;
+  height: 1.4em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
+#home-introduction a[href*="udacity.com"]::after{
+  content: "";
+  background-image: url(/public/icons/udacity.svg);
+  background-repeat: no-repeat;
+  background-size: 3.5em;
+  width: 3.5em;
+  height: .8em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
 #home-introduction a[href*="wikipedia.org/wiki/"]::after{
 content: "";
 background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/wikipedia-w.svg);

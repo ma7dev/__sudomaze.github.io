@@ -43,11 +43,11 @@ title: Home
             <hr>
             <h5>By topic:</h5>
         </div>
-        {% for tag in site.tags %}
+        {% for category in site.categories %}
         <div class="col-md-6 col-s-12">
-            <h1 id="{{ tag[0] | slugify }}">{{ tag | first }}</h1>
+            <h1 id="{{ category[0] | slugify }}">{{ category | first }}</h1>
             <ul class="tags-list">
-                {% for post in tag[1] %}
+                {% for post in category[1] %}
                 <li><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.abstract }}">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
