@@ -1,6 +1,6 @@
 ---
 modified: Thu Aug 15 20:25:00 2019
-published: true
+published: false
 layout: post
 toc: true
 title: "Reading Notes"
