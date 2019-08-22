@@ -8,6 +8,29 @@
             "minor": "Actuarial Science, Bachelor of Science."
         }
     ],
+    "cert": [
+        {
+            "name": "Natural Language Processing in TensorFlow",
+            "organization": "Coursera",
+            "date": "8/2019",
+            "id": "XFYKU9UCFDEH",
+            "url": "https://www.coursera.org/account/accomplishments/verify/XFYKU9UCFDEH"
+        },
+        {
+            "name": "Convolutional Neural Networks in TensorFlow",
+            "organization": "Coursera",
+            "date": "8/2019",
+            "id": "ETFPTBRYRZSZ",
+            "url": "https://www.coursera.org/account/accomplishments/verify/ETFPTBRYRZSZ"
+        },
+        {
+            "name": "Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning",
+            "organization": "Coursera",
+            "date": "8/2019",
+            "id": "ZPHVLAHQSVF8",
+            "url": "https://www.coursera.org/account/accomplishments/verify/ZPHVLAHQSVF8"
+        }
+    ],
     "ex": [
         {
             "title": "Center for Genome Research and Biocomputing",

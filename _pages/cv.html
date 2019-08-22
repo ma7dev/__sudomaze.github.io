@@ -10,10 +10,10 @@ permalink: /cv/
         {% for member in site.data.cv.ed %}
         <div class="container-fluid">
             <div class="row">
-                <div class="col-8">
+                <div class="col">
                     <p><strong>{{ member.school }}</strong> <span id="list-courses" class="badge badge-primary" data-toggle="modal" data-target="#coursesModal">Show Courses <i class="fal fa-arrow-right"></i></span></p>
                 </div>
-                <div class="col-4">
+                <div class="col-auto">
                     <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
                 </div>
                 <div class="col-12">
@@ -28,16 +28,33 @@ permalink: /cv/
         {% endfor %}
     </p>
     <br>
+    <h2 class="font-weight-light pl-1"><i class="fal fa-university"></i> Licenses & Certifications</h2>
+    <hr>
+    <p class="lead mt-2">
+        {% for member in site.data.cv.cert %}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p><strong>{{ member.name }}</strong> (<a href="{{ member.url }}" target="_blank">{{ member.id }}</a>)</p>
+                </div>
+                <div class="col-auto">
+                    <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </p>
+    <br>
     <h2 class="font-weight-light pl-1"><i class="fal fa-cogs"></i> Experience</h2>
     <hr>
     <p class="lead mt-2">
         {% for member in site.data.cv.ex %}
         <div class="container-fluid">
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col">
                         <p><strong>{{ member.position }}</strong></p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-auto">
                         <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
                     </div>
                 </div>
@@ -64,10 +81,10 @@ permalink: /cv/
         {% for member in site.data.projects %}
         <div class="container-fluid">
             <div class="row">
-                <div class="col-8">
+                <div class="col">
                     <p><strong><a href="/projects/#{{ member.tag }}" target="_blank">{{ member.title }}</a></strong></p>
                 </div>
-                <div class="col-4">
+                <div class="col-auto">
                     <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
                 </div>
             </div>
@@ -88,10 +105,10 @@ permalink: /cv/
         {% for member in site.data.cv.act %}
         <div class="container-fluid">
             <div class="row">
-                <div class="col-8">
+                <div class="col">
                     <p><strong>{{ member.title }}</strong></p>
                 </div>
-                <div class="col-4">
+                <div class="col-auto">
                     <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
                 </div>
             </div>

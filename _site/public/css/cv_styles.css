@@ -1,6 +1,223 @@
 /*+++++++++++++++++++++++++++++++++++++++++++++*/
 /*++++++++++++++++* ME STYLES *++++++++++++++++*/
 /*+++++++++++++++++++++++++++++++++++++++++++++*/
+#cv-content a {
+    text-decoration: none;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#333, #333);
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position: 0% 90%, 100% 90%, 0% 90%;
+    text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+    font-variant-numeric: lining-nums;
+    color: #3c3c3c;
+}
+#cv-content a:hover {
+  opacity: 0.6;
+}
+#cv-content a[href*="coursera.org"]::after{
+    content: "";
+    background-image: url(/public/icons/coursera.svg);
+    background-repeat: no-repeat;
+    background-size: 3em;
+    width: 3em;
+    height: .8em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="udemy.com"]::after{
+    content: "";
+    background-image: url(/public/icons/udemy.svg);
+    background-repeat: no-repeat;
+    background-size: 2.5em;
+    width: 2.5em;
+    height: 1.4em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="udacity.com"]::after{
+    content: "";
+    background-image: url(/public/icons/udacity.svg);
+    background-repeat: no-repeat;
+    background-size: 3.5em;
+    width: 3.5em;
+    height: .8em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="wikipedia.org"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/wikipedia-w.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="amazon.com"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/amazon.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="twitter.com"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/twitter.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="facebook.com"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/facebook-square.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+ #cv-content a[href*="github.com"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/github.svg);
+    background-repeat: no-repeat;
+    background-size: 0.7em;
+    width: 0.7em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="kaggle.com"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/kaggle.svg);
+    background-repeat: no-repeat;
+    background-size: 0.45em;
+    width: 0.45em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="linkedin.com"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/linkedin.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="medium.com"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/medium.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="youtube.com"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/youtube.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="pdf"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/solid/file-pdf.svg);
+    background-repeat: no-repeat;
+    background-size: 0.65em;
+    width: 0.65em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="madebymaze.xyz"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/solid/brackets-curly.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="drive.google.com"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/google-drive.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="osuai.club"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/light/brain.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
+  #cv-content a[href*="mailto:"]::after{
+    content: "";
+    background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/light/envelope.svg);
+    background-repeat: no-repeat;
+    background-size: 0.75em;
+    width: 0.75em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: baseline;
+    opacity: 0.85;
+    margin-left: .2em;
+  }
 #cv-content h1, #cv-content h2, #cv-content h3, #cv-content h4, #cv-content  h5 {
     font-family: 'Roboto Slab', serif !important;
 }
