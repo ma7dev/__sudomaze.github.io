@@ -40,6 +40,11 @@ permalink: /cv/
                 <div class="col-auto">
                     <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
                 </div>
+                <ul class="col-12">
+                    {% for topic in member.topics %}
+                    <li>{{ topic.name }}</li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
         {% endfor %}

@@ -1,8 +1,9 @@
 ---
-modified: Thu Aug 15 20:24:51 2019
+modified: Wed Aug 28 01:57:06 2019
 published: false
 layout: post
 toc: true
+comments: true
 title:  "Lessons Learned from a 4-Year College Education"
 abstract: ""
 categories: [Personal]

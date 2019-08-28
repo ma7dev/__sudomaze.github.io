@@ -85,6 +85,18 @@
   opacity: 0.85;
   margin-left: .2em;
 }
+#markdown-content a[href*="wikibooks.org"]::after{
+  content: "";
+  background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/wikipedia-w.svg);
+  background-repeat: no-repeat;
+  background-size: 0.75em;
+  width: 0.75em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: baseline;
+  opacity: 0.85;
+  margin-left: .2em;
+}
 #markdown-content a[href*="amazon.com"]::after{
   content: "";
   background-image: url(/public/libraries/fontawesome-pro-5.10.0-11-web/svgs/brands/amazon.svg);

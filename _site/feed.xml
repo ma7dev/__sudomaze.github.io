@@ -1,10 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-22T19:31:27-07:00</updated><id>http://localhost:4000/</id><title type="html">madebymaze.xyz</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">Study Notes</title><link href="http://localhost:4000/study-notes/" rel="alternate" type="text/html" title="Study Notes" /><published>2019-08-14T00:00:00-07:00</published><updated>2019-08-14T00:00:00-07:00</updated><id>http://localhost:4000/study-notes</id><content type="html" xml:base="http://localhost:4000/study-notes/">&lt;h1 id=&quot;massive-open-online-courses-moocs&quot;&gt;Massive Open Online Courses (MOOCs)&lt;/h1&gt;
-&lt;h2 id=&quot;intro-to-machine-learning&quot;&gt;&lt;a href=&quot;https://www.kaggle.com/learn/intro-to-machine-learning?utm_medium=email&amp;amp;utm_source=intercom&amp;amp;utm_campaign=beginner-friendly-competition-follow-up&quot;&gt;Intro to Machine Learning&lt;/a&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-28T02:16:14-07:00</updated><id>http://localhost:4000/</id><title type="html">madebymaze.xyz</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">About This Website</title><link href="http://localhost:4000/site/" rel="alternate" type="text/html" title="About This Website" /><published>2019-08-24T00:00:00-07:00</published><updated>2019-08-24T00:00:00-07:00</updated><id>http://localhost:4000/site</id><content type="html" xml:base="http://localhost:4000/site/">&lt;h1 id=&quot;how-have-i-built-this-website&quot;&gt;How have I built this website?&lt;/h1&gt;
+&lt;h2 id=&quot;general&quot;&gt;General&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Built with: &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Hosted service: &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Domain provider: &lt;a href=&quot;https://www.namecheap.com/&quot;&gt;Namecheap&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;intermediate-machine-learning&quot;&gt;&lt;a href=&quot;https://www.kaggle.com/learn/intermediate-machine-learning?utm_medium=email&amp;amp;utm_source=intercom&amp;amp;utm_campaign=beginner-friendly-competition-follow-up&quot;&gt;Intermediate Machine Learning&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;content-generator&quot;&gt;Content Generator&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Table of content: &lt;a href=&quot;http://gregfranko.com/jquery.tocify.js/&quot;&gt;Tocify.js&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Mathematics: &lt;a href=&quot;https://www.mathjax.org/&quot;&gt;mathjax&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Pseudocode: &lt;a href=&quot;http://www.tatetian.io/pseudocode.js/&quot;&gt;Pseudocode.js&lt;/a&gt; and &lt;a href=&quot;https://katex.org/&quot;&gt;KaTeX&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;PDF: &lt;a href=&quot;https://en.wikibooks.org/wiki/LaTeX&quot;&gt;LaTeX&lt;/a&gt; on &lt;a href=&quot;https://www.overleaf.com/&quot;&gt;Overleaf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&quot;introduction-to-tensorflow-for-artificial-intelligence-machine-learning-and-deep-learning&quot;&gt;&lt;a href=&quot;https://www.coursera.org/learn/introduction-tensorflow&quot;&gt;Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;a-new-programming-paradigm&quot;&gt;A New Programming Paradigm&lt;/h3&gt;
-&lt;h3 id=&quot;introduction-to-computer-vision&quot;&gt;Introduction to Computer Vision&lt;/h3&gt;
-&lt;h3 id=&quot;enhancing-vision-with-convolutional-neural-networks&quot;&gt;Enhancing Vision with Convolutional Neural Networks&lt;/h3&gt;
-&lt;h3 id=&quot;using-real-world-images&quot;&gt;Using Real-world Images&lt;/h3&gt;</content><author><name></name></author><category term="CS" /><category term="AI" /><summary type="html">Massive Open Online Courses (MOOCs) Intro to Machine Learning</summary></entry></feed>
+&lt;h2 id=&quot;libraries&quot;&gt;Libraries&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;JavaScript: &lt;a href=&quot;https://jquery.com/&quot;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Content templating - CSS: &lt;a href=&quot;https://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Markdown templating - CSS: &lt;a href=&quot;https://github.com/jekyll/minima&quot;&gt;minima&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Icons: &lt;a href=&quot;https://fontawesome.com/&quot;&gt;Font Awesome&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;inspirations&quot;&gt;Inspirations&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Overall design and content: &lt;a href=&quot;https://www.gwern.net/index&quot;&gt;Gwern Branwen&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="personal" /><summary type="html">How have I built this website? General Built with: Jekyll Hosted service: GitHub Pages Domain provider: Namecheap</summary></entry><entry><title type="html">Study Notes</title><link href="http://localhost:4000/study-notes/" rel="alternate" type="text/html" title="Study Notes" /><published>2019-08-14T00:00:00-07:00</published><updated>2019-08-14T00:00:00-07:00</updated><id>http://localhost:4000/study-notes</id><content type="html" xml:base="http://localhost:4000/study-notes/">&lt;h1 id=&quot;summer-2019&quot;&gt;Summer 2019&lt;/h1&gt;
+&lt;p&gt;For this summer, I will attempt to study &lt;a href=&quot;https://www.coursera.org/specializations/tensorflow-in-practice&quot;&gt;TensorFlow in Practice&lt;/a&gt;, &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Deep Learning Specialization&lt;/a&gt;, &lt;a href=&quot;https://www.coursera.org/specializations/aml&quot;&gt;Advanced Machine Learning Specialization&lt;/a&gt;, and &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; to review these topics, build more relevant projects to these topics, and construct a curriculum for the AI Club. &lt;a href=&quot;https://www.coursera.org/specializations/career-success&quot;&gt;Career Success Specialization&lt;/a&gt; and &lt;a href=&quot;https://www.coursera.org/learn/neurobiology&quot;&gt;Understanding the Brain: The Neurobiology of Everyday Life&lt;/a&gt; to improve my general understanding.&lt;/p&gt;
+
+&lt;h2 id=&quot;tensorflow-in-practice&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/tensorflow-in-practice&quot;&gt;TensorFlow in Practice&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;overall-review&quot;&gt;Overall Review&lt;/h3&gt;
+&lt;p&gt;[pending…]&lt;/p&gt;
+&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+&lt;p&gt;[pending…]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning&lt;/li&gt;
+  &lt;li&gt;Convolutional Neural Networks in TensorFlow&lt;/li&gt;
+  &lt;li&gt;Natural Language Processing in TensorFlow&lt;/li&gt;
+  &lt;li&gt;Sequences, Time Series and Prediction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;deep-learning-specialization&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Deep Learning Specialization&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;overall-review-1&quot;&gt;Overall Review&lt;/h3&gt;
+&lt;p&gt;[pending…]&lt;/p&gt;
+
+&lt;h3 id=&quot;notes-1&quot;&gt;Notes&lt;/h3&gt;
+&lt;p&gt;[pending…]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Neural Networks and Deep Learning&lt;/li&gt;
+  &lt;li&gt;Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization&lt;/li&gt;
+  &lt;li&gt;Structuring Machine Learning Projects&lt;/li&gt;
+  &lt;li&gt;Convolutional Neural Networks&lt;/li&gt;
+  &lt;li&gt;Sequence Models&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="CS" /><category term="AI" /><summary type="html">Summer 2019 For this summer, I will attempt to study TensorFlow in Practice, Deep Learning Specialization, Advanced Machine Learning Specialization, and Reinforcement Learning Specialization to review these topics, build more relevant projects to these topics, and construct a curriculum for the AI Club. Career Success Specialization and Understanding the Brain: The Neurobiology of Everyday Life to improve my general understanding.</summary></entry></feed>
