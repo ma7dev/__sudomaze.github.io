@@ -13,10 +13,10 @@ confidence: highly likely
 importance: 3
 ---
 # [Deep Learning Specialization](https://www.coursera.org/specializations/deep-learning)
-### Overall Review
+## Overall Review
 [pending...]
 
-### Notes
+## Notes
 [pending...]
 * Neural Networks and Deep Learning
 * Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization
