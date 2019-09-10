@@ -26,10 +26,10 @@
       ],
       "accomplishments": [
         {
-            "statement": "Developed a website that races multiple hardware by running Deep Learning models developed by the CGRB lab, the project is sponsored by <strong>Tech Data</strong>, <strong>IBM</strong>, <strong>NVIDIA</strong>, and <strong>OpenPower</strong>, and the project was featured in <strong>IBMThink2019 Conference</strong>."
+            "statement": "Developed a website that races multiple hardware by running Deep Learning models developed by the CGRB lab. The project sponsored by <strong>Tech Data</strong>, <strong>IBM</strong>, <strong>NVIDIA</strong>, and <strong>OpenPower</strong>, and the project featured in <strong>IBMThink2019 Conference</strong>."
         },
         {
-            "statement": "Developed the website using <strong>Bootstrap</strong>, <strong>JavaScript</strong>, <strong>jQuery</strong>, <strong>Node.js</strong>, <strong>NGINX</strong>, and <strong>Bash</strong>."
+            "statement": "Developed the website using <strong>Bootstrap</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>NGINX</strong>, and <strong>Bash</strong>."
         }
       ]
     },
@@ -56,7 +56,7 @@
       ],
       "accomplishments": [
         {
-          "statement": "Developed a computer vision system that detects pedestrians’ faces to obfuscate them in real-time, then applies a tracking system to understand pedestrian and traffic behavior to increase the safety of the traffic for <strong>the City of Portland</strong>."
+          "statement": "Developed a computer vision system that detects pedestrians’ faces to obfuscate them in real-time. Then applies a tracking system to understand pedestrian and traffic behavior to increase the safety of the traffic for <strong>the City of Portland</strong>."
         },
         {
           "statement": "Developed the detection system using <strong>OpenCV</strong> and <strong>PyTorch</strong>, the traffic system using <strong>OpenCV</strong> and <strong>Keras/TensorFlow</strong>, and the web API and application using <strong>Flask</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>."
@@ -89,7 +89,7 @@
           "statement": "Designed an exploration package utilizing the <strong>gmapping</strong> and <strong>nav bundle</strong> packages to allow a simulated robot to explore an unknown environment using <strong>Python</strong> and <strong>ROS</strong>."
         },
         {
-          "statement": "Designed an algorithm that generates waypoints to be followed and each waypoint is weighted based on a <strong>Convolutional Filters</strong> with some weighted conditions."
+          "statement": "Designed an algorithm that generates waypoints to be followed by the robot, and each waypoint is weighted based on <em>Convolutional Filter</em> with some weighted conditions."
         }
       ]
     },
@@ -172,7 +172,7 @@
       ],
       "accomplishments": [
         {
-          "statement": "Wrote a web app that streams a live-feed and a controller to control an RC Car's controller, <strong>Raspberry Pi</strong>, using <strong>Node.js</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>."
+          "statement": "Wrote a web app that streams a live-feed and a controller to control an RC Car's controller, <strong>Raspberry PI</strong>, using <strong>Node.js</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>."
         },
         {
           "statement": "Built the structure of the intelligent agent and machine learning model."
@@ -198,7 +198,7 @@
       ],
       "accomplishments": [
         {
-          "statement": "Wrote an <strong>Multiple Layer Perceptron</strong> (MLP) that classifies images using <strong>NumPy</strong> and <strong>PyTorch</strong>."
+          "statement": "Wrote a <strong>Multiple Layer Perceptron</strong> (MLP) that classifies images using <strong>NumPy</strong> and <strong>PyTorch</strong>."
         },
         {
           "statement": "Trained the <em>MLP</em> model using <strong>CIFAR-10 dataset</strong>."
@@ -263,7 +263,7 @@
           "statement": "Wrote a personal website using <strong>Node.js</strong> for back-end and <strong>JavaScript</strong> for front-end."
         },
         {
-          "statement": "Wrote a <strong>NGINX</strong> script that directs HTTP requests to HTTPS and maps networks."
+          "statement": "Wrote an <strong>NGINX</strong> script that directs HTTP requests to HTTPS and maps networks."
         }
       ]
     },

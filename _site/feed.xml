@@ -1,4 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-28T02:16:14-07:00</updated><id>http://localhost:4000/</id><title type="html">madebymaze.xyz</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">About This Website</title><link href="http://localhost:4000/site/" rel="alternate" type="text/html" title="About This Website" /><published>2019-08-24T00:00:00-07:00</published><updated>2019-08-24T00:00:00-07:00</updated><id>http://localhost:4000/site</id><content type="html" xml:base="http://localhost:4000/site/">&lt;h1 id=&quot;how-have-i-built-this-website&quot;&gt;How have I built this website?&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-10T06:02:00-07:00</updated><id>http://localhost:4000/</id><title type="html">madebymaze.xyz</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">TensorFlow in Practice Specialization</title><link href="http://localhost:4000/tensorflow-in-practice-specialization/" rel="alternate" type="text/html" title="TensorFlow in Practice Specialization" /><published>2019-08-30T00:00:00-07:00</published><updated>2019-08-30T00:00:00-07:00</updated><id>http://localhost:4000/tensorflow-in-practice-specialization</id><content type="html" xml:base="http://localhost:4000/tensorflow-in-practice-specialization/">&lt;h1 id=&quot;tensorflow-in-practice&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/tensorflow-in-practice&quot;&gt;TensorFlow in Practice&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;overall-review&quot;&gt;Overall Review&lt;/h2&gt;
+&lt;p&gt;[pending…]&lt;/p&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+&lt;p&gt;[pending…]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning&lt;/li&gt;
+  &lt;li&gt;Convolutional Neural Networks in TensorFlow&lt;/li&gt;
+  &lt;li&gt;Natural Language Processing in TensorFlow&lt;/li&gt;
+  &lt;li&gt;Sequences, Time Series and Prediction&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="AI" /><category term="CS" /><summary type="html">TensorFlow in Practice Overall Review [pending…]</summary></entry><entry><title type="html">Deep Learning Specialization</title><link href="http://localhost:4000/deep-learning-specialization/" rel="alternate" type="text/html" title="Deep Learning Specialization" /><published>2019-08-28T00:00:00-07:00</published><updated>2019-08-28T00:00:00-07:00</updated><id>http://localhost:4000/deep-learning-specialization</id><content type="html" xml:base="http://localhost:4000/deep-learning-specialization/">&lt;h1 id=&quot;deep-learning-specialization&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Deep Learning Specialization&lt;/a&gt;&lt;/h1&gt;
+&lt;h3 id=&quot;overall-review&quot;&gt;Overall Review&lt;/h3&gt;
+&lt;p&gt;[pending…]&lt;/p&gt;
+
+&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+&lt;p&gt;[pending…]&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Neural Networks and Deep Learning&lt;/li&gt;
+  &lt;li&gt;Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization&lt;/li&gt;
+  &lt;li&gt;Structuring Machine Learning Projects&lt;/li&gt;
+  &lt;li&gt;Convolutional Neural Networks&lt;/li&gt;
+  &lt;li&gt;Sequence Models&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="AI" /><category term="CS" /><summary type="html">Deep Learning Specialization Overall Review [pending…]</summary></entry><entry><title type="html">About This Website</title><link href="http://localhost:4000/site/" rel="alternate" type="text/html" title="About This Website" /><published>2019-08-24T00:00:00-07:00</published><updated>2019-08-24T00:00:00-07:00</updated><id>http://localhost:4000/site</id><content type="html" xml:base="http://localhost:4000/site/">&lt;h1 id=&quot;how-have-i-built-this-website&quot;&gt;How have I built this website?&lt;/h1&gt;
 &lt;h2 id=&quot;general&quot;&gt;General&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Built with: &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
@@ -25,31 +48,15 @@
 &lt;h1 id=&quot;inspirations&quot;&gt;Inspirations&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;Overall design and content: &lt;a href=&quot;https://www.gwern.net/index&quot;&gt;Gwern Branwen&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="personal" /><summary type="html">How have I built this website? General Built with: Jekyll Hosted service: GitHub Pages Domain provider: Namecheap</summary></entry><entry><title type="html">Study Notes</title><link href="http://localhost:4000/study-notes/" rel="alternate" type="text/html" title="Study Notes" /><published>2019-08-14T00:00:00-07:00</published><updated>2019-08-14T00:00:00-07:00</updated><id>http://localhost:4000/study-notes</id><content type="html" xml:base="http://localhost:4000/study-notes/">&lt;h1 id=&quot;summer-2019&quot;&gt;Summer 2019&lt;/h1&gt;
-&lt;p&gt;For this summer, I will attempt to study &lt;a href=&quot;https://www.coursera.org/specializations/tensorflow-in-practice&quot;&gt;TensorFlow in Practice&lt;/a&gt;, &lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Deep Learning Specialization&lt;/a&gt;, &lt;a href=&quot;https://www.coursera.org/specializations/aml&quot;&gt;Advanced Machine Learning Specialization&lt;/a&gt;, and &lt;a href=&quot;https://www.coursera.org/specializations/reinforcement-learning&quot;&gt;Reinforcement Learning Specialization&lt;/a&gt; to review these topics, build more relevant projects to these topics, and construct a curriculum for the AI Club. &lt;a href=&quot;https://www.coursera.org/specializations/career-success&quot;&gt;Career Success Specialization&lt;/a&gt; and &lt;a href=&quot;https://www.coursera.org/learn/neurobiology&quot;&gt;Understanding the Brain: The Neurobiology of Everyday Life&lt;/a&gt; to improve my general understanding.&lt;/p&gt;
-
-&lt;h2 id=&quot;tensorflow-in-practice&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/tensorflow-in-practice&quot;&gt;TensorFlow in Practice&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;overall-review&quot;&gt;Overall Review&lt;/h3&gt;
-&lt;p&gt;[pending…]&lt;/p&gt;
-&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
-&lt;p&gt;[pending…]&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning&lt;/li&gt;
-  &lt;li&gt;Convolutional Neural Networks in TensorFlow&lt;/li&gt;
-  &lt;li&gt;Natural Language Processing in TensorFlow&lt;/li&gt;
-  &lt;li&gt;Sequences, Time Series and Prediction&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;deep-learning-specialization&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Deep Learning Specialization&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;overall-review-1&quot;&gt;Overall Review&lt;/h3&gt;
-&lt;p&gt;[pending…]&lt;/p&gt;
-
-&lt;h3 id=&quot;notes-1&quot;&gt;Notes&lt;/h3&gt;
-&lt;p&gt;[pending…]&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Neural Networks and Deep Learning&lt;/li&gt;
-  &lt;li&gt;Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization&lt;/li&gt;
-  &lt;li&gt;Structuring Machine Learning Projects&lt;/li&gt;
-  &lt;li&gt;Convolutional Neural Networks&lt;/li&gt;
-  &lt;li&gt;Sequence Models&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="CS" /><category term="AI" /><summary type="html">Summer 2019 For this summer, I will attempt to study TensorFlow in Practice, Deep Learning Specialization, Advanced Machine Learning Specialization, and Reinforcement Learning Specialization to review these topics, build more relevant projects to these topics, and construct a curriculum for the AI Club. Career Success Specialization and Understanding the Brain: The Neurobiology of Everyday Life to improve my general understanding.</summary></entry></feed>
+&lt;/ul&gt;</content><author><name></name></author><category term="personal" /><summary type="html">How have I built this website? General Built with: Jekyll Hosted service: GitHub Pages Domain provider: Namecheap</summary></entry><entry><title type="html">About Me</title><link href="http://localhost:4000/me/" rel="alternate" type="text/html" title="About Me" /><published>2019-08-14T00:00:00-07:00</published><updated>2019-08-14T00:00:00-07:00</updated><id>http://localhost:4000/me</id><content type="html" xml:base="http://localhost:4000/me/">&lt;h1 id=&quot;personal&quot;&gt;Personal&lt;/h1&gt;
+&lt;h2 id=&quot;career&quot;&gt;Career&lt;/h2&gt;
+&lt;h2 id=&quot;goals-and-principles&quot;&gt;Goals and Principles&lt;/h2&gt;
+&lt;h2 id=&quot;hobbies&quot;&gt;Hobbies&lt;/h2&gt;
+&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
+&lt;h2 id=&quot;hardware&quot;&gt;Hardware&lt;/h2&gt;
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;/h2&gt;
+&lt;h1 id=&quot;recommendations&quot;&gt;Recommendations&lt;/h1&gt;
+&lt;h2 id=&quot;mailing-lists&quot;&gt;Mailing lists&lt;/h2&gt;
+&lt;h2 id=&quot;books&quot;&gt;Books&lt;/h2&gt;
+&lt;h2 id=&quot;lectures&quot;&gt;Lectures&lt;/h2&gt;
+&lt;h2 id=&quot;online-courses&quot;&gt;Online Courses&lt;/h2&gt;</content><author><name></name></author><category term="personal" /><summary type="html">Personal Career Goals and Principles Hobbies Setup Hardware Software Recommendations Mailing lists Books Lectures Online Courses</summary></entry></feed>
