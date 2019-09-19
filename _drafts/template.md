@@ -60,7 +60,7 @@ caption="attadad" %}
 \end{algorithm}
 " %}
 
-{% include built-in/img.html id="1" url="https://www.gwern.net/images/silkroad/2012-christin-sr-dailysales.png" caption="[image description]" %}
+{% include built-in/img.html id="1" url="https://www.gwern.net/images/silkroad/2012-christin-sr-dailysales.png" caption="I love it" %}
 
 [Figure 1](#img-1)
 [table 1](#table-1)
@@ -93,6 +93,6 @@ def mb_callback(msg):
 <ol id="page-footnotes">
 {% include built-in/note.html
     id="1"
-    details="[source]"
+    details="https://www.youtube.com/watch?v=Q8nhQSp__3s&list=WL&index=11"
 %}
 </ol>

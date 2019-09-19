@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-10T06:02:00-07:00</updated><id>http://localhost:4000/</id><title type="html">madebymaze.xyz</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">TensorFlow in Practice Specialization</title><link href="http://localhost:4000/tensorflow-in-practice-specialization/" rel="alternate" type="text/html" title="TensorFlow in Practice Specialization" /><published>2019-08-30T00:00:00-07:00</published><updated>2019-08-30T00:00:00-07:00</updated><id>http://localhost:4000/tensorflow-in-practice-specialization</id><content type="html" xml:base="http://localhost:4000/tensorflow-in-practice-specialization/">&lt;h1 id=&quot;tensorflow-in-practice&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/tensorflow-in-practice&quot;&gt;TensorFlow in Practice&lt;/a&gt;&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-19T07:16:23-07:00</updated><id>http://localhost:4000/</id><title type="html">madebymaze.xyz</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">TensorFlow in Practice Specialization</title><link href="http://localhost:4000/tensorflow-in-practice-specialization/" rel="alternate" type="text/html" title="TensorFlow in Practice Specialization" /><published>2019-08-30T00:00:00-07:00</published><updated>2019-08-30T00:00:00-07:00</updated><id>http://localhost:4000/tensorflow-in-practice-specialization</id><content type="html" xml:base="http://localhost:4000/tensorflow-in-practice-specialization/">&lt;h1 id=&quot;tensorflow-in-practice&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/tensorflow-in-practice&quot;&gt;TensorFlow in Practice&lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id=&quot;overall-review&quot;&gt;Overall Review&lt;/h2&gt;
 &lt;p&gt;[pending…]&lt;/p&gt;
 
@@ -10,10 +10,10 @@
   &lt;li&gt;Natural Language Processing in TensorFlow&lt;/li&gt;
   &lt;li&gt;Sequences, Time Series and Prediction&lt;/li&gt;
 &lt;/ul&gt;</content><author><name></name></author><category term="AI" /><category term="CS" /><summary type="html">TensorFlow in Practice Overall Review [pending…]</summary></entry><entry><title type="html">Deep Learning Specialization</title><link href="http://localhost:4000/deep-learning-specialization/" rel="alternate" type="text/html" title="Deep Learning Specialization" /><published>2019-08-28T00:00:00-07:00</published><updated>2019-08-28T00:00:00-07:00</updated><id>http://localhost:4000/deep-learning-specialization</id><content type="html" xml:base="http://localhost:4000/deep-learning-specialization/">&lt;h1 id=&quot;deep-learning-specialization&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/deep-learning&quot;&gt;Deep Learning Specialization&lt;/a&gt;&lt;/h1&gt;
-&lt;h3 id=&quot;overall-review&quot;&gt;Overall Review&lt;/h3&gt;
+&lt;h2 id=&quot;overall-review&quot;&gt;Overall Review&lt;/h2&gt;
 &lt;p&gt;[pending…]&lt;/p&gt;
 
-&lt;h3 id=&quot;notes&quot;&gt;Notes&lt;/h3&gt;
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
 &lt;p&gt;[pending…]&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Neural Networks and Deep Learning&lt;/li&gt;

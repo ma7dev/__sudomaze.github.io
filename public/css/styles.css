@@ -65,3 +65,6 @@ a:hover {
 nav {
   font-variant: small-caps;
 }
+[role="button"] {
+  cursor: pointer;
+}
