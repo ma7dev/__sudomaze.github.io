@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-29T22:05:40-07:00</updated><id>http://localhost:4000/</id><title type="html">madebymaze.xyz</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">TensorFlow in Practice Specialization</title><link href="http://localhost:4000/tensorflow-in-practice-specialization/" rel="alternate" type="text/html" title="TensorFlow in Practice Specialization" /><published>2019-08-30T00:00:00-07:00</published><updated>2019-08-30T00:00:00-07:00</updated><id>http://localhost:4000/tensorflow-in-practice-specialization</id><content type="html" xml:base="http://localhost:4000/tensorflow-in-practice-specialization/">&lt;h1 id=&quot;tensorflow-in-practice&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/tensorflow-in-practice&quot;&gt;TensorFlow in Practice&lt;/a&gt;&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-14T12:45:19-08:00</updated><id>http://localhost:4000/</id><title type="html">madebymaze.xyz</title><subtitle>I like Deep Learning</subtitle><entry><title type="html">TensorFlow 1.x</title><link href="http://localhost:4000/TensorFlow_1/" rel="alternate" type="text/html" title="TensorFlow 1.x" /><published>2019-11-14T00:00:00-08:00</published><updated>2019-11-14T00:00:00-08:00</updated><id>http://localhost:4000/TensorFlow_1</id><content type="html" xml:base="http://localhost:4000/TensorFlow_1/">&lt;h1 id=&quot;tensorflow&quot;&gt;TensorFlow&lt;/h1&gt;
+
+&lt;h2 id=&quot;handling-custome-pipelines&quot;&gt;Handling Custome Pipelines&lt;/h2&gt;
+
+&lt;p&gt;[pending…]&lt;/p&gt;
+
+&lt;h2 id=&quot;queues&quot;&gt;Queues&lt;/h2&gt;
+
+&lt;p&gt;[pending…]&lt;/p&gt;</content><author><name></name></author><category term="AI" /><category term="CS" /><summary type="html">TensorFlow</summary></entry><entry><title type="html">TensorFlow in Practice Specialization</title><link href="http://localhost:4000/tensorflow-in-practice-specialization/" rel="alternate" type="text/html" title="TensorFlow in Practice Specialization" /><published>2019-08-30T00:00:00-07:00</published><updated>2019-08-30T00:00:00-07:00</updated><id>http://localhost:4000/tensorflow-in-practice-specialization</id><content type="html" xml:base="http://localhost:4000/tensorflow-in-practice-specialization/">&lt;h1 id=&quot;tensorflow-in-practice&quot;&gt;&lt;a href=&quot;https://www.coursera.org/specializations/tensorflow-in-practice&quot;&gt;TensorFlow in Practice&lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id=&quot;overall-review&quot;&gt;Overall Review&lt;/h2&gt;
 &lt;p&gt;[pending…]&lt;/p&gt;
 
@@ -21,15 +29,30 @@
   &lt;li&gt;Structuring Machine Learning Projects&lt;/li&gt;
   &lt;li&gt;Convolutional Neural Networks&lt;/li&gt;
   &lt;li&gt;Sequence Models&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="AI" /><category term="CS" /><summary type="html">Deep Learning Specialization Overall Review [pending…]</summary></entry><entry><title type="html">About This Website</title><link href="http://localhost:4000/site/" rel="alternate" type="text/html" title="About This Website" /><published>2019-08-24T00:00:00-07:00</published><updated>2019-08-24T00:00:00-07:00</updated><id>http://localhost:4000/site</id><content type="html" xml:base="http://localhost:4000/site/">&lt;h1 id=&quot;how-have-i-built-this-website&quot;&gt;How have I built this website?&lt;/h1&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="AI" /><category term="CS" /><summary type="html">Deep Learning Specialization Overall Review [pending…]</summary></entry><entry><title type="html">About This Website</title><link href="http://localhost:4000/site/" rel="alternate" type="text/html" title="About This Website" /><published>2019-08-24T00:00:00-07:00</published><updated>2019-08-24T00:00:00-07:00</updated><id>http://localhost:4000/site</id><content type="html" xml:base="http://localhost:4000/site/">&lt;h1 id=&quot;what-do-you-expect-from-this-website&quot;&gt;What do you expect from this website?&lt;/h1&gt;
+
+&lt;p&gt;As of today (11/14/2019), I will be writing an essay every other week in these categories:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Notes: sharing summary of materials that I have studied.&lt;/li&gt;
+  &lt;li&gt;Reviews: reviewing research papers in the fields of Machine Learning, Deep Learning, and Computer Vision.&lt;/li&gt;
+  &lt;li&gt;Thoughts: sharing my experience and thoughts on subjects that I have found interesting or helpful to share.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I will be creating an email newsletter (including RSS feed) in a few weeks to keep you up-to-date. In addition, I will updating some of the old content to be up-to-date.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-have-i-built-this-website&quot;&gt;How have I built this website?&lt;/h1&gt;
+
 &lt;h2 id=&quot;general&quot;&gt;General&lt;/h2&gt;
+
 &lt;ul&gt;
   &lt;li&gt;Built with: &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Hosted service: &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Hosting service: &lt;a href=&quot;https://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Domain provider: &lt;a href=&quot;https://www.namecheap.com/&quot;&gt;Namecheap&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;content-generator&quot;&gt;Content Generator&lt;/h2&gt;
+
 &lt;ul&gt;
   &lt;li&gt;Table of content: &lt;a href=&quot;http://gregfranko.com/jquery.tocify.js/&quot;&gt;Tocify.js&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Mathematics: &lt;a href=&quot;https://www.mathjax.org/&quot;&gt;mathjax&lt;/a&gt;&lt;/li&gt;
@@ -38,6 +61,7 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;libraries&quot;&gt;Libraries&lt;/h2&gt;
+
 &lt;ul&gt;
   &lt;li&gt;JavaScript: &lt;a href=&quot;https://jquery.com/&quot;&gt;jQuery&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Content templating - CSS: &lt;a href=&quot;https://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
@@ -46,17 +70,169 @@
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;inspirations&quot;&gt;Inspirations&lt;/h1&gt;
+
 &lt;ul&gt;
   &lt;li&gt;Overall design and content: &lt;a href=&quot;https://www.gwern.net/index&quot;&gt;Gwern Branwen&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><category term="personal" /><summary type="html">How have I built this website? General Built with: Jekyll Hosted service: GitHub Pages Domain provider: Namecheap</summary></entry><entry><title type="html">About Me</title><link href="http://localhost:4000/me/" rel="alternate" type="text/html" title="About Me" /><published>2019-08-14T00:00:00-07:00</published><updated>2019-08-14T00:00:00-07:00</updated><id>http://localhost:4000/me</id><content type="html" xml:base="http://localhost:4000/me/">&lt;h1 id=&quot;personal&quot;&gt;Personal&lt;/h1&gt;
-&lt;h2 id=&quot;career&quot;&gt;Career&lt;/h2&gt;
-&lt;h2 id=&quot;goals-and-principles&quot;&gt;Goals and Principles&lt;/h2&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="personal" /><summary type="html">What do you expect from this website?</summary></entry><entry><title type="html">About Me</title><link href="http://localhost:4000/me/" rel="alternate" type="text/html" title="About Me" /><published>2019-08-14T00:00:00-07:00</published><updated>2019-08-14T00:00:00-07:00</updated><id>http://localhost:4000/me</id><content type="html" xml:base="http://localhost:4000/me/">&lt;h1 id=&quot;who-am-i&quot;&gt;Who am I&lt;/h1&gt;
+
+&lt;h2 id=&quot;goals--principles&quot;&gt;Goals &amp;amp; Principles&lt;/h2&gt;
+&lt;p&gt;[Pending…]&lt;/p&gt;
+
 &lt;h2 id=&quot;hobbies&quot;&gt;Hobbies&lt;/h2&gt;
-&lt;h1 id=&quot;setup&quot;&gt;Setup&lt;/h1&gt;
-&lt;h2 id=&quot;hardware&quot;&gt;Hardware&lt;/h2&gt;
-&lt;h2 id=&quot;software&quot;&gt;Software&lt;/h2&gt;
+
+&lt;p&gt;[Pending…]&lt;/p&gt;
+
 &lt;h1 id=&quot;recommendations&quot;&gt;Recommendations&lt;/h1&gt;
+
+&lt;h2 id=&quot;readings&quot;&gt;Readings&lt;/h2&gt;
+
+&lt;h3 id=&quot;books&quot;&gt;Books&lt;/h3&gt;
+
+&lt;p&gt;[Pending…]&lt;/p&gt;
+
+&lt;h3 id=&quot;essays&quot;&gt;Essays&lt;/h3&gt;
+
+&lt;p&gt;[Pending…]&lt;/p&gt;
+
+&lt;h2 id=&quot;videos&quot;&gt;Videos&lt;/h2&gt;
+
+&lt;p&gt;[Pending…]&lt;/p&gt;
+
+&lt;h2 id=&quot;online-courses&quot;&gt;Online Courses&lt;/h2&gt;
+
+&lt;p&gt;[Pending…]&lt;/p&gt;
+
 &lt;h2 id=&quot;mailing-lists&quot;&gt;Mailing lists&lt;/h2&gt;
-&lt;h2 id=&quot;books&quot;&gt;Books&lt;/h2&gt;
-&lt;h2 id=&quot;lectures&quot;&gt;Lectures&lt;/h2&gt;
-&lt;h2 id=&quot;online-courses&quot;&gt;Online Courses&lt;/h2&gt;</content><author><name></name></author><category term="personal" /><summary type="html">Personal Career Goals and Principles Hobbies Setup Hardware Software Recommendations Mailing lists Books Lectures Online Courses</summary></entry></feed>
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.hndigest.com/&quot;&gt;Hacker News Digest&lt;/a&gt;: Best way to know about the top things in tech every week (Saturday morning).&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kdnuggets.com/news/subscribe.html&quot;&gt;KDnuggets News&lt;/a&gt;: Shares top articles on KDnuggets (multiple times a week).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;set-up&quot;&gt;Set Up&lt;/h1&gt;
+
+&lt;h2 id=&quot;home-machine&quot;&gt;Home Machine&lt;/h2&gt;
+
+&lt;h3 id=&quot;hardware&quot;&gt;Hardware&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Home Machine Specs:
+    &lt;ul&gt;
+      &lt;li&gt;CPU: i5-4690 @ 3.5GHz&lt;/li&gt;
+      &lt;li&gt;GPU: &lt;a href=&quot;https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/&quot;&gt;NVIDIA 2080Ti (Founder Edition)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Storage:
+        &lt;ul&gt;
+          &lt;li&gt;/home: 1TB SSD&lt;/li&gt;
+          &lt;li&gt;/data: 8TB HDD&lt;/li&gt;
+          &lt;li&gt;/backup: 3TB HDD&lt;/li&gt;
+          &lt;li&gt;/playground: 128GB SSD&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;RAM: 32GB&lt;/li&gt;
+      &lt;li&gt;Motherboard: Gigabyte Z97X-SLI-CF&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Headphones: beyerdynamic DT 990 Pro&lt;/li&gt;
+  &lt;li&gt;Keyboard: &lt;a href=&quot;https://www.amazon.com/CM-Storm-QuickFire-XT-Mechanical/dp/B00EQV0W02&quot;&gt;CM Storm QuickFire XT with CHERRY MX Brown Switches&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Mouse: &lt;a href=&quot;https://www.amazon.com/Logitech-Spectrum-Shifting-Personalized-Programmable/dp/B019OB663A&quot;&gt;Logitech G502&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;software&quot;&gt;Software&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Operating System: &lt;a href=&quot;http://releases.ubuntu.com/18.04/&quot;&gt;Ubuntu 18.04&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Windows Manager: &lt;a href=&quot;https://i3wm.org/&quot;&gt;i3wm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;mobile-machine-macbook-pro&quot;&gt;Mobile Machine (MacBook Pro)&lt;/h2&gt;
+
+&lt;h3 id=&quot;hardware-1&quot;&gt;Hardware&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;MackBook Pro Specs:
+    &lt;ul&gt;
+      &lt;li&gt;Model: 15-inch, 2016&lt;/li&gt;
+      &lt;li&gt;CPU: i7 @ 2.9GHz&lt;/li&gt;
+      &lt;li&gt;GPU: Radeon Pro 460 with 4GB&lt;/li&gt;
+      &lt;li&gt;RAM: 16GB&lt;/li&gt;
+      &lt;li&gt;Storage: 1TB SSD&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Headphones: &lt;a href=&quot;https://www.amazon.com/Sony-Cancelling-Bluetooth-Headphone-MDR1000X/dp/B01KHZ4ZYY&quot;&gt;Sony MDR1000X&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;work-machine&quot;&gt;Work Machine&lt;/h2&gt;
+
+&lt;h3 id=&quot;hardware-2&quot;&gt;Hardware&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Headphones: &lt;a href=&quot;https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E&quot;&gt;Sony MDR7506&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Keyboard: &lt;a href=&quot;https://www.amazon.com/Redragon-K552-Mechanical-Keyboard-Equivalent/dp/B016MAK38U&quot;&gt;Redragon K552&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;software-1&quot;&gt;Software&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Operating System: &lt;a href=&quot;http://releases.ubuntu.com/18.04/&quot;&gt;Ubuntu 18.04&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Windows Manager: &lt;a href=&quot;https://i3wm.org/&quot;&gt;i3wm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;note-taking-machine-ipad-pro&quot;&gt;Note-taking Machine (iPad Pro)&lt;/h2&gt;
+
+&lt;h3 id=&quot;hardware-3&quot;&gt;Hardware&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;iPad Pro Specs:
+    &lt;ul&gt;
+      &lt;li&gt;Model: 12.9inch, 3rd Generation (Wi-Fi)&lt;/li&gt;
+      &lt;li&gt;Storage: 512GB&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Pencil: Apple Pencil (2nd Generation)&lt;/li&gt;
+  &lt;li&gt;Case: &lt;a href=&quot;https://www.amazon.com/ZUGU-CASE-Muse-Case-Protective/dp/B07K1M4PHY&quot;&gt;The Muse Case - 2018&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Screen Protector: &lt;a href=&quot;https://www.amazon.com/BERSEM-Paper-Like-Protector-Anti-Glare-Installation/dp/B07N362JCW&quot;&gt;PaperLike&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;software-2&quot;&gt;Software&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Note-taking App: &lt;a href=&quot;https://www.goodnotes.com/&quot;&gt;GoodNotes5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;PDF Reading and Writing on App: &lt;a href=&quot;https://apps.apple.com/us/app/notability/id360593530&quot;&gt;Notability&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;my-stack&quot;&gt;My Stack&lt;/h1&gt;
+
+&lt;h2 id=&quot;automation&quot;&gt;Automation&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Simple Scripts: &lt;a href=&quot;https://www.gnu.org/software/bash/&quot;&gt;Bash&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Complecated Scripts: &lt;a href=&quot;https://www.python.org/&quot;&gt;python&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;development&quot;&gt;Development&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Text-ediot: &lt;a href=&quot;https://www.vim.org/&quot;&gt;Vim&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Music App: &lt;a href=&quot;https://www.spotify.com/&quot;&gt;Spotify&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Terminal: &lt;a href=&quot;https://gnometerminator.blogspot.com/p/introduction.html&quot;&gt;terminator&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Browser: &lt;a href=&quot;https://www.google.com/chrome/&quot;&gt;Chrome&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Data Recorder: &lt;a href=&quot;https://www.notion.so/&quot;&gt;Notion&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Simple Task Manager: &lt;a href=&quot;https://todoist.com/&quot;&gt;Todoist&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Team Task Organization: &lt;a href=&quot;https://trello.com&quot;&gt;Trello&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Cloud File Storage Service: &lt;a href=&quot;https://www.google.com/drive/&quot;&gt;Google Drive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Password Manager: &lt;a href=&quot;https://www.lastpass.com/&quot;&gt;LastPass&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;machine-learning-deep-learning-and-computer-vision&quot;&gt;Machine Learning, Deep Learning, and Computer Vision&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Machine Learning and Deep Learning Library: &lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;TensorFlow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Computer Vision Library: &lt;a href=&quot;https://opencv.org/&quot;&gt;OpenCV&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;web-development&quot;&gt;Web Development&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Front-end: &lt;a href=&quot;https://jquery.com/&quot;&gt;jQuery&lt;/a&gt; and &lt;a href=&quot;https://getbootstrap.com/&quot;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Back-end: &lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="personal" /><summary type="html">Who am I</summary></entry></feed>

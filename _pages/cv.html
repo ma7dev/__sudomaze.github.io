@@ -11,7 +11,7 @@ permalink: /cv/
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <p><strong>{{ member.school }}</strong> <span id="list-courses" class="badge badge-primary" data-toggle="modal" data-target="#coursesModal">Show Courses <i class="fal fa-arrow-right"></i></span></p>
+                    <p><strong>{{ member.school }}</strong> <span id="list-courses" class="badge badge-primary" data-toggle="modal" data-target="#courses{{ forloop.index }}">Show Courses <i class="fal fa-arrow-right"></i></span></p>
                 </div>
                 <div class="col-auto">
                     <p class="float-right"><span class="badge badge-danger"><i class="fa fa-calendar"></i> {{ member.date }}</span></p>
@@ -65,7 +65,7 @@ permalink: /cv/
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <p><em>{{ member.title }}</em></p>
+                        <p><em>{{ member.company }}</em></p>
                     </div>
                     <div class="col-12">
                         <p class="location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ member.location }}</p>
@@ -134,7 +134,9 @@ permalink: /cv/
         {% endfor %}
     </p>
     <br>
-    <h2 class="font-weight-light pl-1"><i class="fal fa-tools"></i> Skills</h2>
+
+
+    <h2 class="font-weight-light pl-1"><i class="fal fa-tools"></i> Skills (<span class="font-weight-bold">Proficient</span>, <u>Familiar</u>)</h2>
     <hr>
     <p class="lead mt-2">
         <div class="container-fluid">
@@ -148,19 +150,21 @@ permalink: /cv/
                         {% endfor %}
                     {% else %}
                         {% for tool in member.tools %}
-                            {% if tool.love == "1" %}
-                            <span class="badge badge-primary">{{ tool.title }} <i class="fas fa-heart" title="I LOVE IT"></i></span>
+                            {% if tool.proficient == "1" %}
+                            <span class="badge badge-primary"><span class="font-weight-bold">{{ tool.title }}</span></span>
                             {% else %}
-                            <span class="badge badge-primary">{{ tool.title }}</span>
+                            <span class="badge badge-primary"><span class="font-weight-normal"><u>{{ tool.title }}</u></span></span>
                             {% endif %}
                         {% endfor %}
                     {% endif %}
-                </div> 
+                </div>
                 {% endfor %}
             </div>
         </div>
     </p>
     <br>
+
+
     <h2 class="font-weight-light pl-1"><i class="fal fa-download"></i> Download</h2>
     <hr>
     <p class="lead mt-2">
@@ -177,96 +181,47 @@ permalink: /cv/
                 </div>
             </div>
         </div>
-        <p id="show-date" class="text-center">
+        <p id="show-date" class="text-center mb-5">
         <script language="Javascript">
             document.write(new Date(document.lastModified));
         </script>
         </p>
     </p>
-    <div class="modal fade" id="coursesModal" tabindex="-1" role="dialog" aria-labelledby="coursesModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="coursesModalLabel">Courses List</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p class="lead">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                            <h4 class="text-center mt-1"><strong>Computer Science</strong></h4>
-                            <hr>
-                        </div>
-                        <div class="col-md-6 col-s-12">
-                            <ul>
-                                <li><p>Objected-Oriented Programming (CS 161/162)</p></li>
-                                <li><p>Data Structures (CS 261)</p></li>
-                                <li><p>Computer Architecture and Assembly Language (CS 271)</p></li>
-                                <li><p>Digital Logic Design (ECE 271/272)</p></li>
-                                <li><p>Analysis of Algorithms (CS 325)</p></li>
-                                <li><p>Databases (CS 340)</p></li>
-                                <li><p>Theory of Computation (CS 321)</p></li>
-                                <li><p>Computer Networks (CS 372)</p></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-s-12">
-                            <ul>
-                                <li><p>Operating Systems (CS 344/444)</p></li>
-                                <li><p>Software Engineering (CS 361/362)</p></li>
-                                <li><p>Usability Engineering (CS 351)</p></li>
-                                <li><p>Programming Language Fundamentals (CS 381)</p></li>
-                                <li><p>Parallel Programming (CS 475)</p></li>
-                                <li><p>Graph Theory (CS 420)</p></li>
-                                <li><p>Artificial Intelligence (CS 331)</p></li>
-                                <li><p>Machine Learning and Data Mining (CS 443)</p></li>
-                                <li><p>Intelligent Robots (ROB 456)</p></li>
-                            </ul>
-                        </div>
-                        <div class="col-12">
-                            <h4 class="text-center mt-1"><strong>Mathematics and Statistics</strong></h4>
-                            <hr>
-                        </div>
-                        <div class="col-md-6 col-s-12">
-                            <ul>
-                                <li><p>Differential & Integral Calculus (MTH 251/252)</p></li>
-                                <li><p>Vector Calculus (MTH 254)</p></li>
-                                <li><p>Infinite Series and Sequences (MTH 253)</p></li>
-                                <li><p>Discrete Mathematics (MTH 231)</p></li>
-                                <li><p>Linear Algebra (MTH 341)</p></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-s-12">
-                            <ul>
-                                <li><p>Probability (MTH 361)</p></li>
-                                <li><p>Statistics (ST 314)</p></li>
-                                <li><p>Numerical Analysis (MTH 351)</p></li>
-                                <li><p>Mathematical Statistics (ST 421)</p></li>
-                                <li><p>Applied Stochastic Models (ST 443)</p></li>
-                            </ul>
-                        </div>
-                        <div class="col-12">
-                            <h4 class="text-center mt-1"><strong>Others</strong></h4>
-                            <hr>
-                        </div>
-                        <div class="col-md-6 col-s-12">
-                            <ul>
-                                <li><p>First-year Japanese (JPN 111)</p></li>
-                                <li><p>Microeconomics (ECON 201)</p></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-s-12">
-                            <ul>
-                                <li><p>Technical Writing (WR 327)</p></li>
-                            </ul>
+
+
+    {% for member in site.data.cv.ed %}
+    <div class="modal fade" id="courses{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="courses{{ forloop.index }}" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="coursesModalLabel">Courses List</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">
+                    <div class="container-fluid">
+                        <div class="row">
+                            {% for list_courses in member.courses %}
+                                <div class="col-12">
+                                    <h4 class="text-center mt-1"><strong>{{ list_courses.list_name }}</strong></h4>
+                                    <hr>
+                                </div>
+                                {% for course in list_courses.list_courses %}
+                                    <div class="col-md-6 col-s-12">
+                                        <ul class="row">
+                                            <li class="col-m-6 col-s-12" data-toggle="tooltip" data-placement="top" title="{{ course.course_description }}"><p>{{ course.course_name }} ({{ course.course_number }})</p></li>
+                                        </ul>
+                                    </div>
+                                {% endfor %}
+                            {% endfor %}
                         </div>
                     </div>
+                    </p>
                 </div>
-                </p>
-            </div>
+                </div>
             </div>
         </div>
-    </div>
+    {% endfor %}
 </div>

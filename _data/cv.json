@@ -5,7 +5,239 @@
             "location": "Corvallis, OR (USA)",
             "date": "9/2015 - 6/2019",
             "major": "Computer Science Applied in Artificial Intelligence, Bachelor of Science.",
-            "minor": "Actuarial Science, Bachelor of Science."
+            "minor": "Actuarial Science, Bachelor of Science.",
+            "courses": [
+                {
+                    "list_name": "Computer Science and Related CS Courses",
+                    "list_courses": [
+                        {
+                            "course_name": "Computer Science I",
+                            "course_number": "CS 161",
+                            "course_description": "Overview of fundamental concepts of computer science. Introduction to problem solving, software engineering, and object-oriented programming. Includes algorithm design and program development."
+                        },
+                        {
+                            "course_name": "Computer Science II",
+                            "course_number": "CS 162",
+                            "course_description": "Basic data structures. Computer programming techniques and application of software engineering principles. Introduction to analysis of programs."
+                        },
+                        {
+                            "course_name": "Data Structures",
+                            "course_number": "CS 261",
+                            "course_description": "Abstract data types, dynamic arrays, linked lists, trees and graphs, binary search trees, hash tables, storage management, complexity analysis of data structures."
+                        },
+                        {
+                            "course_name": "Computer Architecture and Assembly Language",
+                            "course_number": "CS 271",
+                            "course_description": "Introduction to functional organization and operation of digital computers. Coverage of assembly language; addressing, stacks, argument passing, arithmetic operations, decisions, macros, modularization, linkers and debuggers."
+                        },
+                        {
+                            "course_name": "Web Development",
+                            "course_number": "CS 290",
+                            "course_description": "How to design and implement a multi-tier application using web technologies: Creation of extensive custom client- and server-side code, consistent with achieving a high-quality software architecture."
+                        },
+                        {
+                            "course_name": "Theory of Computation",
+                            "course_number": "CS 321",
+                            "course_description": "Survey of models of computation including finite automata, formal grammars, and Turing machines."
+                        },
+                        {
+                            "course_name": "Analysis of Algorithms",
+                            "course_number": "CS 325",
+                            "course_description": "Recurrence relations, combinatorics, recursive algorithms, proofs of correctness."
+                        },
+                        {
+                            "course_name": "Artificial Intelligence",
+                            "course_number": "CS 331",
+                            "course_description": "Fundamental concepts in artificial intelligence using the unifying theme of an intelligent agent. Topics include agent architectures, search, games, logic and reasoning, and Bayesian networks."
+                        },
+                        {
+                            "course_name": "Databases",
+                            "course_number": "CS 340",
+                            "course_description": "Design and implementation of relational databases, including data modeling with ER or UML, diagrams, relational schema, SQL queries, relational algebra, user interfaces, and administration."
+                        },
+                        {
+                            "course_name": "Operating Systems I",
+                            "course_number": "CS 344",
+                            "course_description": "Introduction to operating systems using UNIX as the case study. System calls and utilities, fundamentals of processes and interprocess communication."
+                        },
+                        {
+                            "course_name": "Usability Engineering",
+                            "course_number": "CS 352",
+                            "course_description": "Basic principles of usability engineering methods for the design and evaluation of software systems. Includes the study of human-machine interactions, user interface characteristics and design strategies, software evaluation methods, and related guidelines and standards."
+                        },
+                        {
+                            "course_name": "Software Engineering I",
+                            "course_number": "CS 361",
+                            "course_description": "Introduction to the 'front end' of the software engineering lifecycle; requirements analysis and specification; design techniques; project management."
+                        },
+                        {
+                            "course_name": "Software Engineering II",
+                            "course_number": "CS 362",
+                            "course_description": "Introduction to the 'back end' of the software engineering lifecycle implementation; verification and validation; debugging; maintenance."
+                        },
+                        {
+                            "course_name": "Computer Networks",
+                            "course_number": "CS 372",
+                            "course_description": "Computer network principles, fundamental networking concepts, packet-switching and circuit switching, TCP/IP protocol layers, reliable data transfer, congestion control, flow control, packet forwarding and routing, MAC addressing, multiple access techniques."
+                        },
+                        {
+                            "course_name": "Programming Language Fundamentals",
+                            "course_number": "CS 381",
+                            "course_description": "An introduction to the concepts found in a variety of programming languages. Programming languages as tools for problem solving. A brief introduction to languages from a number of different paradigms."
+                        },
+                        {
+                            "course_name": "Social and Ethical Issues in Computer Science",
+                            "course_number": "CS 391",
+                            "course_description": "In-depth exploration of the social, psychological, political, and ethical issues surrounding the computer industry and the evolving information society."
+                        },
+                        {
+                            "course_name": "Graph Theory with Applications to Computer Science",
+                            "course_number": "CS 420",
+                            "course_description": "Directed and undirected graphs; paths, circuits, trees, coloring, planar graphs, partitioning; computer representation of graphs and graph algorithms; applications in software complexity metrics, program testing, and compiling."
+                        },
+                        {
+                            "course_name": "Machine Learning and Data Mining",
+                            "course_number": "CS 434",
+                            "course_description": "Introduction to machine learning and data mining algorithms (supervised learning, unsupervised learning, and reinforcement learning) tools that are widely employed in industrial and research settings."
+                        },
+                        {
+                            "course_name": "Operating Systems II",
+                            "course_number": "CS 444",
+                            "course_description": "Principles of computer operating systems: concurrent processes, memory management, job scheduling, multiprocessing, file systems, performance evaluation, and networking."
+                        },
+                        {
+                            "course_name": "Senior Software Engineering Project I",
+                            "course_number": "CS 461",
+                            "course_description": "Utilize software engineering methodology in a team environment to develop a real-world application. Teams will be responsible for all phases of software development, including project planning, requirements analysis, design, coding, testing, configuration management, quality assurance, documentation, and delivery. Three-term sequence required. This course fulfills the WIC requirement for computer science majors."
+                        },
+                        {
+                            "course_name": "Senior Software Engineering Project II",
+                            "course_number": "CS 462",
+                            "course_description": "Utilize software engineering methodology in a team environment to develop a real-world application. Teams will be responsible for all phases of software development, including project planning, requirements analysis, design, coding, testing, configuration management, quality assurance, documentation, and delivery. Three-term sequence required."
+                        },
+                        {
+                            "course_name": "Senior Software Engineering Project III",
+                            "course_number": "CS 463",
+                            "course_description": "Utilize software engineering methodology in a team environment to develop a real-world application. Teams will be responsible for all phases of software development, including project planning, requirements analysis, design, coding, testing, configuration management, quality assurance, documentation, and delivery."
+                        },
+                        {
+                            "course_name": "Parallel Programming",
+                            "course_number": "CS 475",
+                            "course_description": "Theoretical and practical survey of parallel programming, including a discussion of parallel architectures, parallel programming paradigms, and parallel algorithms. Programming one or more parallel computers in a higher-level parallel language."
+                        },
+                        {
+                            "course_name": "Introduction to Electrical and Computer Engineering: Tools",
+                            "course_number": "ECE 111",
+                            "course_description": "Introduction to the electrical and computer engineering professional practice. Covers the foundations of engineering problem solving and other skills necessary for success. Students will be taught engineering practice through hands-on approaches. Recommended for electrical and computer engineering majors, and for those interested in engineering as a profession."
+                        },
+                        {
+                            "course_name": "Introduction to Electrical and Computer Engineering: Concepts",
+                            "course_number": "ECE 112",
+                            "course_description": "Basic electrical and computer engineering concepts, problem solving and hands-on laboratory project. Topics include electronic circuit and device models, digital logic, circuit analysis, and simulation tools."
+                        },
+                        {
+                            "course_name": "Digital Logic Design",
+                            "course_number": "ECE 271",
+                            "course_description": "A first course in digital logic design. Data types and representations, Boolean algebra, state machines, simplification of switching expressions, and introductory computer arithmetic."
+                        },
+                        {
+                            "course_name": "Digital Logic Design Laboratory",
+                            "course_number": "ECE 272",
+                            "course_description": "This laboratory course accompanies ECE 271, Digital Logic Design. This also illustrates topics covered in the lectures of ECE 271 using computer-aided design, verification tools, and prototyping hardware."
+                        },
+                        {
+                            "course_name": "Intelligent Robots",
+                            "course_number": "ROB 456",
+                            "course_description": "Foundations of probabilistic reasoning for robotics. Topics include state estimation, robot motion, perception, localization and decision making under uncertainty."
+                        }
+                    ]
+                },
+                {
+                    "list_name": "Mathematics and Statistics",
+                    "list_courses": [
+                        {
+                            "course_name": "Discrete Mathematics",
+                            "course_number": "MTH 231",
+                            "course_description": "Elementary logic and set theory, functions, direct proof techniques, contradiction and contraposition, mathematical induction and recursion, elementary combinatorics, basic graph theory, minimal spanning trees."
+                        },
+                        {
+                            "course_name": "Differential Calculus",
+                            "course_number": "MTH 251",
+                            "course_description": "Differential calculus for engineers and scientists. Rates of change: the derivative, velocity, and acceleration. The algebraic rules of differential calculus and derivatives of polynomial, rational, and trigonometric functions. Maximum-minimum problems, curve sketching, and other applications. Antiderivatives and simple motion problems."
+                        },
+                        {
+                            "course_name": "Integral Calculus",
+                            "course_number": "MTH 252",
+                            "course_description": "Definite integrals, elementary applications to area, force, and work. Integral tables and basic techniques of integration, calculus of logarithmic and exponential functions, polar coordinates, applications to areas, volumes, force, work, and growth and decay problems."
+                        },
+                        {
+                            "course_name": "Infinite Series and Sequences",
+                            "course_number": "MTH 253",
+                            "course_description": "Indeterminate forms. Improper integrals. Sequences and series, especially Taylor's formula and power series. Applications to numerical estimation with error analysis. Series with complex terms and the Euler identities."
+                        },
+                        {
+                            "course_name": "Vector Calculus I",
+                            "course_number": "MTH 254",
+                            "course_description": "Vectors, vector functions, and curves in two and three dimensions. Surfaces, partial derivatives, gradients, and directional derivatives. Multiple integrals in rectangular, polar, cylindrical, and spherical coordinates. Physical and geometric applications."
+                        },
+                        {
+                            "course_name": "Matric and Power Series Methods",
+                            "course_number": "MTH 306",
+                            "course_description": "Introduction to matrix algebra, determinants, systematic solution to linear systems, and eigenvalue problems. Convergence and divergence of series with emphasis on power series, Taylor series expansions, convergence tests for power series, and error estimates for truncated series used in practical approximations."
+                        },
+                        {
+                            "course_name": "Linear Algebra I",
+                            "course_number": "MTH 341",
+                            "course_description": "Matrix algebra, determinants, systems of linear equations, subspaces, an introductory study of eigenvalues and eigenvectors"
+                        },
+                        {
+                            "course_name": "Numerical Analysis",
+                            "course_number": "MTH 351",
+                            "course_description": "Introduction to the computation of approximate solutions to mathematical problems that cannot be solved by hand: analysis of errors; rootfinding for nonlinear equations in one variable; interpolation of functions; numerical integration."
+                        },
+                        {
+                            "course_name": "Probability",
+                            "course_number": "MTH 361",
+                            "course_description": "Probability problem solving using concepts developed in calculus. Topics include probability models, discrete and continuous random variables, expectation and variance, the law of large numbers, and the central limit theorem."
+                        },
+                        {
+                            "course_name": "Statistics for Engineers",
+                            "course_number": "ST 314",
+                            "course_description": "Probability, common probability distributions, sampling distributions, estimation, hypothesis testing, control charts, regression analysis, experimental design."
+                        },
+                        {
+                            "course_name": "Mathematical Statistics",
+                            "course_number": "ST 421",
+                            "course_description": "Multiple linear regression, including model checking, dummy variables, using regression to fit analysis of variance models, analysis of covariance, variable selection methods."
+                        },
+                        {
+                            "course_name": "Applied Stochastic Models",
+                            "course_number": "ST 443",
+                            "course_description": "Development of stochastic models commonly arising in statistics and operations research, such as Poisson processes, birth-and-death processes, discrete-time and continuous-time Markov chains, renewal and Markov renewal processes. Analysis of stochastic models by simulation and other computational techniques."
+                        }
+                    ]
+                },
+                {
+                    "list_name": "Others",
+                    "list_courses": [
+                        {
+                            "course_name": "Microeconomics",
+                            "course_number": "ECON 201",
+                            "course_description": "An introduction to microeconomic principles including the study of price theory, economic scarcity, consumer behavior, production costs, the theory of the firm, market structure, and income distribution. Other selected topics may include market failure, international economics, and public finance."
+                        },
+                        {
+                            "course_name": "First-year Japanese",
+                            "course_number": "JPN 111",
+                            "course_description": "Designed to help students develop an understanding of basic language structures and to acquire the ability to use them appropriately in a variety of practical, everyday social contexts. Primary focus is on verbal and non-verbal communication skills."
+                        },
+                        {
+                            "course_name": "Technical Writing",
+                            "course_number": "WR 327",
+                            "course_description": "Continued practice in writing with an emphasis on the rhetorical and critical thinking demands of writers in scientific and technological fields."
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "cert": [
@@ -33,9 +265,17 @@
     ],
     "ex": [
         {
-            "title": "Center for Genome Research and Biocomputing",
+            "company": "Center for Genome Research and Bio-computing",
             "location": "Corvallis, OR (USA)",
-            "date": "11/2018 - 6/2019",
+            "date": "10/2019 - 7/2020",
+            "position": "Computational Data Scientist",
+            "details": [
+            ]
+        },
+        {
+            "company": "Center for Genome Research and Bi-ocomputing",
+            "location": "Corvallis, OR (USA)",
+            "date": "10/2018 - 6/2019",
             "position": "Undergraduate Lead GPU Computational Researcher",
             "details": [
                 {
@@ -50,7 +290,7 @@
             ]
         },
         {
-            "title": "Saudi Aramco Summer Program",
+            "company": "Saudi Aramco Summer Program",
             "location": "Dhahran, Eastern Province (Saudi Arabia)",
             "date": "Summer 2012",
             "position": "Lead Photographer",
@@ -65,17 +305,6 @@
         }
     ],
     "act": [
-        {
-            "title": "OSU AI Club",
-            "location": "Corvallis, OR (USA)",
-            "date": "6/2019 - Present",
-            "position": "Officer",
-            "details": [
-                {
-                    "statement": "..."
-                }
-            ]
-        },
         {
             "title": "IBMThink2019 <em>(Conference)</em>",
             "location": "San Francisco, CA (USA)",
@@ -94,7 +323,7 @@
             "title": "OSU ML/AI Club",
             "location": "Corvallis, OR (USA)",
             "date": "5/2017 - 6/2019",
-            "position": "President",
+            "position": "Vice-President",
             "details": [
                 {
                     "statement": "Responsibilities are to present the latest literature into AI, ML, DL, and CV areas biweekly, host learning sessions to solve Kaggle competitions for new learners."
@@ -153,31 +382,27 @@
             "tools": [
                 {
                     "title": "NumPy",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "OpenCV",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
-                    "title": "PyTorch (fast.ai)",
-                    "love": "1"
+                    "title": "PyTorch",
+                    "proficient": "1"
                 },
                 {
-                    "title": "TensorFlow (Keras)",
-                    "love": "1"
-                },
-                {
-                    "title": "Keras",
-                    "love": "1"
+                    "title": "TensorFlow",
+                    "proficient": "1"
                 },
                 {
                     "title": "scikit-learn",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "R",
-                    "love": "1"
+                    "proficient": "0"
                 }
             ]
         },
@@ -186,31 +411,31 @@
             "tools": [
                 {
                     "title": "JavaScript",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "jQuery",
-                    "love": "1"
-                },
-                {
-                    "title": "React.js",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "Node.js",
-                    "love": "1"
-                },
-                {
-                    "title": "Flask",
-                    "love": "0"
+                    "proficient": "1"
                 },
                 {
                     "title": "PHP",
-                    "love": "0"
+                    "proficient": "1"
+                },
+                {
+                    "title": "React.js",
+                    "proficient": "0"
+                },
+                {
+                    "title": "Flask",
+                    "proficient": "0"
                 },
                 {
                     "title": "NGINX",
-                    "love": "0"
+                    "proficient": "0"
                 }
             ]
         },
@@ -219,15 +444,15 @@
             "tools": [
                 {
                     "title": "CUDA",
-                    "love": "1"
+                    "proficient": "0"
                 },
                 {
                     "title": "OpenGL",
-                    "love": "1"
+                    "proficient": "0"
                 },
                 {
                     "title": "OpenCL",
-                    "love": "1"
+                    "proficient": "0"
                 }
             ]
         },
@@ -236,27 +461,27 @@
             "tools": [
                 {
                     "title": "C",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "C++",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "Python",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "BASH",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "MATLAB",
-                    "love": "1"
+                    "proficient": "0"
                 },
                 {
                     "title": "Java",
-                    "love": "0"
+                    "proficient": "0"
                 }
             ]
         },
@@ -265,27 +490,27 @@
             "tools": [
                 {
                     "title": "Git",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "SQL",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "NoSQL",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "LaTeX",
-                    "love": "1"
+                    "proficient": "1"
                 },
                 {
                     "title": "Docker",
-                    "love": "1"
+                    "proficient": "0"
                 },
                 {
                     "title": "ROS",
-                    "love": "0"
+                    "proficient": "0"
                 }
             ]
         },
