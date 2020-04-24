@@ -2,7 +2,7 @@ title: sudomaze
 description: >
   ...
 baseurl: ""
-url: ""
+url: "https://sudomaze.dev"
 repository: "sudomaze/sudomaze.github.io"
 
 encoding: "utf-8"
@@ -17,6 +17,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-last-modified-at
 
 include: ['_pages', '_notes', '_about']
 

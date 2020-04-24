@@ -4,34 +4,23 @@ title: Notes
 permalink: /notes/
 ---
 <div class="row">
-    <div class="col-md-6">
-        <h2>Online Courses</h2>
-        <ul>
-            {% for page in site.pages %}
-                {% if page.url contains "/notes/online-courses" %}
-                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
-    <div class="col-md-6">
-        <h2>School</h2>
-        <ul>
-            {% for page in site.pages %}
-                {% if page.url contains "/notes/school" %}
-                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
-    <div class="col-md-6">
-        <h2>Research Papers</h2>
-        <ul>
-            {% for page in site.pages %}
-                {% if page.url contains "/notes/research-paper/" %}
-                <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-                {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
+    {% assign categories_grouped = site.pages | group_by: 'category' %}
+    {% for category in categories_grouped %}
+        {% if category.name != "" %}
+        <div class="col-md-6">
+            <h2>{{ category.name }}</h2>
+            {% assign tags_grouped = category.items | group_by: 'tag' %}
+            <ul>
+                {% for tag in tags_grouped %}
+                    <li>{{ tag.name }}</li>
+                    <ul>
+                        {% for page in tag.items %}
+                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    {% endfor %}
 </div>

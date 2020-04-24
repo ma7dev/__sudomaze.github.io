@@ -1,5 +1,6 @@
 ---
-layout: page
 title: Random Article
 permalink: /random-article/
 ---
+{% assign random = site.time | date: "%s%N" | modulo: site.posts.size %}
+{{ site.posts[random] }}
