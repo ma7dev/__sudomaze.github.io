@@ -1,0 +1,25 @@
+name: "Mazen Alotaibi"
+bio: >
+  Mazen Alotaibi is an engineer, researcher, and thinker. He works at the Center for <b><a href='https://cgrb.oregonstate.edu/'>Genome Research & Bio-computing</a></b> (CGRB) as a Computational Data Scientist.
+  Most recently, he graduated from Oregon State Univesity with a Bachelor of Science (B.S.) degree in Computer Science Applied in Artificial Intelligence; 
+  with a minor in Actuarial Science. He worked at CGRB as a Lead GPU Computational Researcher during his senior year at OSU. He was the Vice-President of OSU ML/AI Club 
+  (known as <b><a href='https://osuai.club'>OSU AI Club</a></b> now) for 2017-2018 & 2018-2019.
+  <br><br>
+
+  He <b><a href='https://github.com/sudomaze'>works on projects on GitHub</a></b> and <b><a href='https://www.kaggle.com/sudomaze/'>participates in Kaggle competitions</a></b> to distract him from academia.
+  You can <b><a href='https://linkedin.com/in/sudomaze/'>connect with him on LinkedIn</a></b> or <b><a href='mailto:sudomaze@gmail.com'>contact him via Email</a></b>.
+
+email: sudomaze@gmail.com
+links:
+  - label: "Twitter"
+    icon: "fab fa-fw fa-twitter-square"
+    url: "https://twitter.com/sudomaze"
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    url: "https://github.com/sudomaze"
+  - label: "Linkedin"
+    icon: "fab fa-linkedin"
+    url: "https://linkedin.com/in/sudomaze"
+  - label: "Kaggle"
+    icon: "fab fa-kaggle"
+    url: "https://www.kaggle.com/sudomaze"

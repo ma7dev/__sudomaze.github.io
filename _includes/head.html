@@ -1,0 +1,27 @@
+<head>
+    <meta charset="utf-8" />
+    {% include seo.html %}
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  
+    <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+    {% if site.head_scripts %}
+    {% for script in site.head_scripts %}
+      {% if script contains "://" %}
+        {% capture script_path %}{{ script }}{% endcapture %}
+      {% else %}
+        {% capture script_path %}{{ script | relative_url }}{% endcapture %}
+      {% endif %}
+      <script src="{{ script_path }}"></script>
+    {% endfor %}
+  {% endif %}
+    {% if site.head_links %}
+    {% for link in site.head_links %}
+      {% if link contains "://" %}
+        {% capture link_path %}{{ link }}{% endcapture %}
+      {% else %}
+        {% capture link_path %}{{ link | relative_url }}{% endcapture %}
+      {% endif %}
+      <link rel="stylesheet" href="{{ link_path }}">
+    {% endfor %}
+  {% endif %}
+</head>

@@ -1,0 +1,6 @@
+{:#table-{{ include.id }} }{{ include.content }}
+
+<script type="text/javascript">
+    var table = document.getElementById("table-{{ include.id }}").createCaption();
+    table.innerHTML = "<strong>Table {{ include.id }}:</strong> {{ include.caption }}"
+</script>
