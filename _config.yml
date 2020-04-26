@@ -4,7 +4,10 @@ description: >
 baseurl: ""
 url: "https://sudomaze.dev"
 repository: "sudomaze/sudomaze.github.io"
-
+access_token: "a29951ae2e639f4f2c7fccfc3bd83b33badb678a"
+disqus:
+  shortname: "sudomaze"
+  public_key: "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo"
 encoding: "utf-8"
 markdown: kramdown
 highlighter: rouge
@@ -17,7 +20,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-  - jekyll-last-modified-at
 
 include: ['_pages', '_notes', '_about', '_newsletters']
 
@@ -28,11 +30,11 @@ head_links:
   - /assets/css/styles.css
 
 head_scripts:
+  - /assets/libraries/jquery-3.4.1/jquery-3.4.1.min.js
+  - /assets/libraries/bootstrap-4.3.1-dist/js/bootstrap.min.js
   - /assets/libraries/katex/katex.min.js
   - /assets/libraries/pseudocode.js-1.1/pseudocode.js
 
 
 footer_scripts:
-  - /assets/libraries/jquery-3.4.1/jquery-3.4.1.min.js
-  - /assets/libraries/bootstrap-4.3.1-dist/js/bootstrap.min.js
   - /assets/js/index.js

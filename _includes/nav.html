@@ -1,9 +1,10 @@
 <ul class="pl-0 mb-0" style="float:left">
-    <li class="active"><a href="#">Page</a></li>
-    <li><a href="#discussion">Discussion</a></li>
+    <li class="active nav-btn" id="content-btn"><a href="#">Page</a></li>
+    {% if layout.discussion == true %}
+    <li class="nav-btn" id="discussion-btn"><a href="#discussion" id="discussion-btn">Discussions (<span id="disqus-comment">0</span>)</a></li>
+    {% endif %}
 </ul>
 <ul class="pl-0 mb-0" style="float:right">
-    <li class="active"><a href="#read">Read</a></li>
-    <li><a href="#view-source">View source</a></li>
-    <li><a href="#view-history">View history</a></li>
+    <li><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/{{ page.path }}" target="_blank">View source</a></li>
+    <li><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/{{ page.path }}" target="_blank">View history</a></li>
 </ul>

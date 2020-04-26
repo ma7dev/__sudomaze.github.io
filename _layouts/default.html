@@ -5,12 +5,17 @@
         {% include mathjax_support %}
         <main class="row mt-2">
             {% include header.html %}
-            <div class="col-md-10 row">
-                <article class="col-md-12">
-                    {{ content }}
-                </article>
-                <div class="col-md-12">
-                    {% include footer.html %}
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12 pl-0 pr-0" id="nav">
+                        {% include nav.html %}
+                    </div>
+                    <article class="col-md-12">
+                        {{ content }}
+                    </article>
+                    <div class="col-md-12">
+                        {% include footer.html %}
+                    </div>
                 </div>
             </div>
         </main>
