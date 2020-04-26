@@ -50,6 +50,8 @@ discussion: true
         cache: false,
         dataType: 'json',
         success: function (result) {
+          console.log("https://sudomaze.dev");
+          console.log("{{ site.url }}");
           console.log("https://sudomaze.dev{{ page.url }}");
           for (var i in result.response) {
             console.log(result);
