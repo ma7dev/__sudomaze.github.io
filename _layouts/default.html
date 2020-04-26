@@ -2,7 +2,6 @@
 <html>
   {% include head.html %}
     <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} container-fluid">
-        {% include mathjax_support %}
         <main class="row mt-2">
             {% include header.html %}
             <div class="col-md-10">

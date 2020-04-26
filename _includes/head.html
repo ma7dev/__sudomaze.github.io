@@ -2,8 +2,8 @@
     <meta charset="utf-8" />
     {% include seo.html %}  
     <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
-    {% if site.head_scripts %}
-    {% for script in site.head_scripts %}
+    {% if site.data.site.head_scripts %}
+    {% for script in site.data.site.head_scripts %}
       {% if script contains "://" %}
         {% capture script_path %}{{ script }}{% endcapture %}
       {% else %}
@@ -12,8 +12,8 @@
       <script src="{{ script_path }}"></script>
     {% endfor %}
   {% endif %}
-    {% if site.head_links %}
-    {% for link in site.head_links %}
+    {% if site.data.site.head_links %}
+    {% for link in site.data.site.head_links %}
       {% if link contains "://" %}
         {% capture link_path %}{{ link }}{% endcapture %}
       {% else %}
@@ -23,4 +23,26 @@
     {% endfor %}
   {% endif %}
   <script data-ad-client="ca-pub-4747237803381845" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script
+    type="text/javascript"
+    charset="utf-8"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  >
+  </script>
+  <script>
+    var disqusPublicKey = "{{ site.data.site.disqus.public_key }}",
+        disqusShortname = "{{ site.data.site.disqus.shortname }}",
+        siteUrl = "{{ site.data.site.url }}",
+        pageUrl = "{{ page.url }}",
+        pageAccessToken = "{{ site.data.site.access_token }}",
+        pagePath = "{{ page.path }}",
+        githubRepo = "{{ site.data.site.repository }}",
+        layoutDiscussion = false;
+  </script>
+
+{% if layout.discussion == true %}
+  <script>
+    layoutDiscussion = true;
+  </script>
+{% endif %}
 </head>

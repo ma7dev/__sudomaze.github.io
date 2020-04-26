@@ -64,6 +64,10 @@ a:visited{
     padding: 5px;
     font-size: larger;
 }
+/* notification */
+.alert p {
+    margin-bottom: 0;
+} 
 /* */
 #nav ul {
     display: flex;

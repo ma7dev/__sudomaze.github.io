@@ -1,0 +1,22 @@
+url: "sudomaze.dev"
+repository: "sudomaze/sudomaze.github.io"
+access_token: "450dd36a8c171f0bde8f11873fef4996fc3bf7c4"
+disqus:
+  shortname: "sudomaze"
+  public_key: "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo"
+
+head_links:
+  - /assets/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css
+  - /assets/libraries/katex/katex.min.css
+  - /assets/libraries/pseudocode.js-1.1/pseudocode.css
+  - /assets/css/styles.css
+
+head_scripts:
+  - /assets/libraries/jquery-3.4.1/jquery-3.4.1.min.js
+  - /assets/libraries/bootstrap-4.3.1-dist/js/bootstrap.min.js
+  - /assets/libraries/katex/katex.min.js
+  - /assets/libraries/pseudocode.js-1.1/pseudocode.js
+
+
+footer_scripts:
+  - /assets/js/index.js

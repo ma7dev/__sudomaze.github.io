@@ -20,33 +20,59 @@ $$
 \forall x \in X, \quad \exists y \leq \epsilon
 \\
 \alpha, \beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \mu, \Phi
-\\
+$$
+
+$$
 \lim\limits_{x \to \infty} \exp(-x) = 0
-\\
+$$
+
+$$
 f(n) = n^5 + 4n^2 + 2 |_{n=17}
-\\
+$$
+
+$$
 \frac{n!}{k!(n-k)!} = \binom{n}{k}
-\\
+$$
+
+$$
 ^3/_7
-\\
+$$
+
+$$
 \sqrt{\frac{a}{b}}
-\\
+$$
+
+$$
 \sum_{i=1}^{10} t_i
-\\
+$$
+
+$$
 \int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x
-\\
+$$
+
+$$
 \prod
-\\
+$$
+
+$$
 ( a ), [ b ], \{ c \}, | d |, \| e \|,
 \langle f \rangle, \lfloor g \rfloor,
 \lceil h \rceil, \ulcorner i \urcorner
-\\
+$$
+
+$$
 P\left(A=2\middle|\frac{A^2}{B}>4\right)
-\\
+$$
+
+$$
 \left.\frac{x^3}{3}\right|_0^1
-\\
+$$
+
+$$
 \frac{\mathrm d}{\mathrm d x} \left( k g(x) \right)
-\\
+$$
+
+$$
 A_{m,n} = 
  \begin{pmatrix}
   a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
@@ -54,58 +80,92 @@ A_{m,n} =
   \vdots  & \vdots  & \ddots & \vdots  \\
   a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
  \end{pmatrix}
-\\
+$$
+
+$$
 M = \begin{bmatrix}
        \frac{5}{6} & \frac{1}{6} & 0           \\[0.3em]
        \frac{5}{6} & 0           & \frac{1}{6} \\[0.3em]
        0           & \frac{5}{6} & \frac{1}{6}
      \end{bmatrix}
-\\
+$$
+
+$$
 \bigl(\begin{smallmatrix}
 a&b \\ c&d
 \end{smallmatrix} \bigr)
-\\
+$$
+
+$$
 abcdefghijklmnopqrstuvwxyz1234567890
-\\
+$$
+
+$$
 \mathrm{abcdefghijklmnopqrstuvwxyz1234567890}
-\\
+$$
+
+$$
 \mathit{abcdefghijklmnopqrstuvwxyz1234567890}
-\\
+$$
+
+$$
 \mathbf{abcdefghijklmnopqrstuvwxyz1234567890}
-\\
+$$
+
+$$
 \mathsf{abcdefghijklmnopqrstuvwxyz1234567890}
-\\
+$$
+
+$$
 \mathtt{abcdefghijklmnopqrstuvwxyz1234567890}
-\\
+$$
+
+$$
 \mathfrak{abcdefghijklmnopqrstuvwxyz1234567890}
-\\
+$$
+
+$$
 \mathcal{abcdefghijklmnopqrstuvwxyz1234567890}
-\\
+$$
+
+$$
 \mathbb{abcdefghijklmnopqrstuvwxyz1234567890}
-\\
+$$
+
+$$
 \mathscr{abcdefghijklmnopqrstuvwxyz1234567890}
-\\
+$$
+
+$$
 a', a'', \hat{a}, \bar{a}, \grave{a}, \acute{a}, \dot{a}, \ddot{a}, \not{a}, \mathring{a}, \overrightarrow{aa}, \overleftarrow{aa}, \overline{aaa}, \check{a}, \breve{a}, \vec{a}, \widehat{aaa}, \widetilde{aaa}, \stackrel\frown{aaa}, \tilde{a}, \underline{a}
-\\
+$$
+
+$$
 k = {\color{red}x} \mathbin{\color{blue}-} 2
-\\
+$$
+
+$$
 f(n) =
   \begin{cases}
     n/2       & \quad \text{if } n \text{ is even}\\
     -(n+1)/2  & \quad \text{if } n \text{ is odd}
   \end{cases}
-\\
+$$
+
+$$
 \left(
     \begin{array}{c}
       n \\
       r
     \end{array}
   \right) = \frac{n!}{r!(n-r)!}
-\\
+$$
+
+$$
 \partial
 $$
 
-{% include built-in/hint.html type="--primary" content="notification" %}
+{% include built-in/hint.html type="primary" content="notification" %}
 
 *YOLOv3*[[1]](#ref-1).
 

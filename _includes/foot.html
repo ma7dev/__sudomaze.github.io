@@ -1,5 +1,5 @@
-{% if site.footer_scripts %}
-  {% for script in site.footer_scripts %}
+{% if site.data.site.footer_scripts %}
+  {% for script in site.data.site.footer_scripts %}
     {% if script contains "://" %}
       {% capture script_path %}{{ script }}{% endcapture %}
     {% else %}
