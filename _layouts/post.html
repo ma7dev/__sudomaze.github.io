@@ -46,11 +46,11 @@ discussion: true
 
     $.ajax({
         type: 'GET',
-        url: 'https://disqus.com/api/3.0/threads/set.json?thread:link={{ site.url}}{{ page.url }}&forum='+disqusShortname+'&api_key='+disqusPublicKey,
+        url: 'https://disqus.com/api/3.0/threads/set.json?thread:link=https://sudomaze.dev{{ page.url }}&forum='+disqusShortname+'&api_key='+disqusPublicKey,
         cache: false,
         dataType: 'json',
         success: function (result) {
-          console.log("{{ site.url}}{{ page.url }}");
+          console.log("https://sudomaze.dev{{ page.url }}");
           for (var i in result.response) {
             console.log(result);
             var count = result.response[i].posts;
