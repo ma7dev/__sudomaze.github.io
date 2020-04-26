@@ -2,7 +2,7 @@
 layout: default
 discussion: true
 ---
-
+<p>dddddd</p>
 <p>https://sudomaze.dev</p>
 <p>{{ site.url }}</p>
 <p>https://sudomaze.dev{{ page.url }}</p>
@@ -19,48 +19,6 @@ discussion: true
 <div id="page-discussion" style="display: none;">
   <div id="disqus_thread"></div>
   <script>
-      (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
-      s.src = 'https://sudomaze.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-
-<script>
-    $("#content-btn").click(function() {
-        $("#discussion-btn").removeClass("active");
-        $("#page-discussion").css("display", "none");
-        $("#content-btn").addClass("active");
-        $("#page-content").css("display", "block");
-    });
-    $("#discussion-btn").click(function() {
-        $("#content-btn").removeClass("active");
-        $("#page-content").css("display", "none");
-        $("#discussion-btn").addClass("active");
-        $("#page-discussion").css("display", "block");
-    });
-</script>
-<script>
-    var disqusPublicKey = "{{ site.disqus.public_key}}";
-    var disqusShortname = "{{ site.disqus.shortname}}";
-
-    $.ajax({
-        type: 'GET',
-        url: 'https://disqus.com/api/3.0/threads/set.json?thread:link=https://sudomaze.dev{{ page.url }}&forum='+disqusShortname+'&api_key='+disqusPublicKey,
-        cache: false,
-        dataType: 'json',
-        success: function (result) {
-          console.log("https://sudomaze.dev");
-          console.log("{{ site.url }}");
-          console.log("https://sudomaze.dev{{ page.url }}");
-          for (var i in result.response) {
-            console.log(result);
-            var count = result.response[i].posts;
-            $('#disqus-comment').html(count);
-          }
-        }
-    });
-</script>
