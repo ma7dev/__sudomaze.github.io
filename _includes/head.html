@@ -35,8 +35,7 @@
         disqusShortname = "{{ site.data.site.disqus.shortname }}",
         siteUrl = "{{ site.data.site.url }}",
         pageUrl = "{{ page.url }}",
-        pageAccessToken = CryptoJS.AES.decrypt("{{ site.data.site.access_token }}", "Secret Passphrase"),
-        pageAccessToken = pageAccessToken.toString(CryptoJS.enc.Utf8),
+        pageAccessToken = CryptoJS.AES.decrypt("{{ site.data.site.access_token }}", "Secret Passphrase").toString(CryptoJS.enc.Utf8),
         pagePath = "{{ page.path }}",
         githubRepo = "{{ site.data.site.repository }}",
         layoutDiscussion = false;
@@ -47,4 +46,5 @@
     layoutDiscussion = true;
   </script>
 {% endif %}
+
 </head>

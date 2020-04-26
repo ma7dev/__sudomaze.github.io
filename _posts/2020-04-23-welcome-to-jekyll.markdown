@@ -222,7 +222,7 @@ caption="attadad" %}
 {% include video id="DM0nkQxrpW0" provider="youtube" %}
 
 
-```python
+{% highlight python linenos %}
 # import relevant libraries
 import roslib
 import rospy
@@ -236,9 +236,13 @@ def mb_callback(msg):
     print "Robot successfully reached waypoint!"
   
   pub.publish(waypoint)
-```
+{% endhighlight %}
 
-> Ah! let not Censure term our fate our choice, / The stage but echoes back the public’s voice; The drama’s laws the drama’s patrons give, / For we that live to please must please to live.<br /> [Samuel Johnson](wikipedia.org/wiki/)(“Prologue at the Opening of Drury Lane Theatre”)
+{% include built-in/quote.html quote="
+Ah! let not Censure term our fate our choice, / The stage but echoes back the public’s voice; The drama’s laws the drama’s patrons give, / For we that live to please must please to live.
+"
+footer="[Samuel Johnson](wikipedia.org/wiki/)(\"Prologue at the Opening of Drury Lane Theatre\")"
+%}
 
 # Footnotes
 

@@ -31,20 +31,19 @@ A few notes:
 
 ### Rubric and Grade
 
-{:#table-1 }
-| Criteria                                                                                                             | Ratings                   |                       | Pts   |
-|----------------------------------------------------------------------------------------------------------------------|---------------------------|-----------------------|-------|
-| Sends waypoints to the robot                                                                                         | 3\.0 pts   Full Marks     | 0\.0  pts  No Marks   | 3\.0  |
-| Uses SLAM to create a map                                                                                            | 3\.0  pts  Full Marks     | 0\.0   pts   No Marks | 3\.0  |
-| Has a documented exploration strategy                                                                                | 7\.0    pts    Full Marks | 0\.0   pts   No Marks | 7\.0  |
-| Strategy works in all world files \(entire space visited\)                                                           | 7\.0    pts    Full Marks | 0\.0   pts   No Marks | 7\.0  |
-| Mechanism for detecting unexplored area                                                                              | 5\.0  pts  Full Marks     | 0\.0   pts   No Marks | 5\.0  |
-| Mechanism for detecting when exploration strategy fails  Failure case: didn't get to way point, what do you do next? | 7\.0   pts   Full Marks   | 0\.0   pts   No Marks | 7\.0  |
-| Algorithm/strategy for getting to unexplored area                                                                    | 3\.0   pts   Full Marks   | 0\.0   pts   No Marks | 3\.0  |
-| Behaves "reasonably" on other test worlds  Doesn't crash, makes some attempt to navigate to unexplored areas         | 5\.0  pts  Full Marks     | 0\.0   pts   No Marks | 5\.0  |
-| Total Points:                                                                                                        |                           |                       | 40\.0 |
-
-<strong>Table 1:</strong> Rubric and Grade
+{% include built-in/table.html id="1" content="
+|Criteria|Ratings||Pts|
+|--- |--- |--- |--- |
+|Sends waypoints to the robot|3.0 pts   Full Marks|0.0  pts  No Marks|3.0|
+|Uses SLAM to create a map|3.0  pts  Full Marks|0.0   pts   No Marks|3.0|
+|Has a documented exploration strategy|7.0    pts    Full Marks|0.0   pts   No Marks|7.0|
+|Strategy works in all world files (entire space visited)|7.0    pts    Full Marks|0.0   pts   No Marks|7.0|
+|Mechanism for detecting unexplored area|5.0  pts  Full Marks|0.0   pts   No Marks|5.0|
+|Mechanism for detecting when exploration strategy fails  Failure case: didn't get to way point, what do you do next?|7.0   pts   Full Marks|0.0   pts   No Marks|7.0|
+|Algorithm/strategy for getting to unexplored area|3.0   pts   Full Marks|0.0   pts   No Marks|3.0|
+|Behaves \"reasonably\" on other test worlds  Doesn't crash, makes some attempt to navigate to unexplored areas|5.0  pts  Full Marks|0.0   pts   No Marks|5.0|
+|Total Points:|||40.0|" 
+caption="Rubric and Grade" %}
 
 ### Report
 
@@ -154,35 +153,35 @@ The algorithm should use an A* search in order to find the nearest waypoints ins
 * Unzip the file into the \catkin_ws\src directory
 * In \catkin_ws, run this command to build
 
-```bash
+{% highlight bash linenos %}
 catkin_make
-```
+{% endhighlight %}
 
 ### Run
 * Open a new terminal
 * In \catkin_ws, run this command to source the bash file
 
-```bash
+{% highlight bash linenos %}
 source devel/setup.bash
-```
+{% endhighlight %}
 
 * Run this command to launch the ros package
 
-```bash
+{% highlight bash linenos %}
 roslaunch src/rob456_project/launch/rob456_project.launch
-```
+{% endhighlight %}
 * Open a new terminal
 * In \catkin_ws, run this command to source the bash file
 
-```bash
+{% highlight bash linenos %}
 source devel/setup.bash
-```
+{% endhighlight %}
 
 * Run this command to launch the ros package
 
-```bash
+{% highlight bash linenos %}
 roslaunch src/nav_bundle/launch/nav_bundle.launch
-```
+{% endhighlight %}
 
 * When the world starts, in rviz, select '2D Nav Goal' and point to a closer cell that has been explored
 

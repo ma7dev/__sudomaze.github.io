@@ -16,7 +16,7 @@ To create a process in Linux, we will need to use \textit{Fork() system call}, w
 
 The following code sample demonstrates how to create a process in Linux [[3]](#ref-3):
 
-```c
+{% highlight c linenos %}
 #include <unistd.h>
 #include <sys/types.h>
 #include <errno.h>
@@ -43,7 +43,7 @@ int main( )
         exit(0);
     }
 }
-```
+{% endhighlight %}
 
 Threads of execution, often shortened to threads, are the objects of activity within the process. Each thread includes a unique program counter, process stack, and set of processor registers. The kernel schedules individual threads, not processes. In traditional Unix systems, each process consists of one thread. In modern systems, however, multi-threaded programs consist of more than one thread are common [[1]](#ref-1).
 
@@ -61,7 +61,7 @@ A process is basically a program in execution. The execution of a process must p
 
 In addition, to create a process in Windows, we will need to use CreateProcess function. CreateProcess function runs independently of the creating process, and the following code sample demonstrates how to create a process [[5]](#ref-5):
 
-```c++
+{% highlight c++ linenos %}
 #include <windows.h>
 #include <stdio.h>
 #include <tchar.h>
@@ -100,7 +100,7 @@ void _tmain( int argc, TCHAR *argv[] )
     CloseHandle( pi.hProcess );
     CloseHandle( pi.hThread );
 }
-```
+{% endhighlight %}
 
 Windows implements a priority-driven, preemptive scheduling system, at least one of the highest priority ready threads always runs, with the caution that certain high-priority threads ready to run might be limited by the processors on which they might be allowed or preferred to run on, a phenomenon called processor affinity [[6]](#ref-6).
 
@@ -128,7 +128,7 @@ Moreover, I have found 4 interesting algorithms built within the driver structur
 
 I have found a good example[[10]](#ref-10) of how to use IoCompleteRequest in a Windows machine to implement Completing an I/O Request.
 
-```bash
+{% highlight bash linenos %}
 NTSTATUS CompleteRequest(PIRP Irp, NTSTATUS status, ULONG_PTR Information)
 {
     Irp->IoStatus.Status = status;
@@ -136,7 +136,7 @@ NTSTATUS CompleteRequest(PIRP Irp, NTSTATUS status, ULONG_PTR Information)
     IoCompleteRequest(Irp, IO_NO_INCREMENT);
     return status;
 }
-```
+{% endhighlight %}
 
 #### General Discussion
 
@@ -154,7 +154,7 @@ Berkeley Software Distribution (BSD) kernel handles process scheduling, memory m
 
 For memory management, kernel can't easily deal with memory allocation errors and often can't scheme. Therefore, getting the memory in the kernel is more complicated than in user-space. Moreover, kernel treats phsical pages as the basic unit of memory management and kernel represents every phsical page on the system with a struct page structure, which is defined in <linux/mm\_types.h> [[1]](#ref-1).
 
-```c
+{% highlight c linenos %}
 struct page {
     unsigned long flags;
     atomic_t _count;
@@ -165,11 +165,11 @@ struct page {
     struct list_head lru;
     void *virtual;
 };
-```
+{% endhighlight %}
 
 The kernel can't treat all pages as the same because the hardware limitation. Therefore, some pages can't be used for certain because of their physical address in memory. Hence, kernel uses the zones to group pages of similar properties. Linux partitions the system's pages into zones to have a pooling in place to satisfy allocations as needed. Although some allocations may require pages from a partiular zone, other allocations my pull from multiple zones. Each zone is represented by a struct zone, which is defined in <linux/mmzone.h> [[1]](#ref-1).
 
-```c
+{% highlight c linenos %}
 struct zone {
     unsigned long watermark[NR_WMARK];
     unsigned long lowmem_reserve[MAX_NR_ZONES];
@@ -196,17 +196,17 @@ struct zone {
     unsigned long present_pages;
     const char *name;
 };
-```
+{% endhighlight %}
 
 Kmalloc() is similar to malloc() in user-space, but it is just a simple interface for obtaining kernel memory in byte-sized chunks and it can be used to allocate pages. For freeing pages, we can use kfree(), which is definded in <linux/slab.h>, kfree() frees a block of memory previously allocated with kmalloc() [[1]](#ref-1).
 
-```c
+{% highlight c linenos %}
     buf = kmalloc(BUF_SIZE, GFP_ATOMIC);
     if (!buf)
     /* error allocating memory ! */
     ...
     kfree(buf);
-```
+{% endhighlight %}
 Free lists data structures are the default data structures in kernel. Due to the fact that allocating and freeing data structures is one of the most common operations inside any kernel has issues, slab layer is used to solve these issues. Slab layer acts as generic data structure-chaining layer and slab layer attempts to cache frequently used data structures as they tend to be allocated and freed often, prevent memory fragmentation, which is resulted from frequent allocation and deallocation, by cached free lists are arranged contiguously, and it has many other promises that slab layer attempts to provide [[1]](#ref-1).
 
 #### Windows
@@ -215,7 +215,7 @@ The memory manager in Windows implements virtual memory, provides a core set of 
 
 It seems that Windows uses VirtualAlloc() to use a page granularity, so using VirtualAlloc can result in higher memory usage and it allows you to specify additional options for memory allocation. In order to free pages, you need to use VirtualFree() [[5]](#ref-5).
 
-```c++
+{% highlight c++ linenos %}
 LPVOID WINAPI VirtualAlloc(
       _In_opt_ LPVOID lpAddress,
       _In_     SIZE_T dwSize,
@@ -227,7 +227,7 @@ BOOL WINAPI VirtualFree(
       _In_ SIZE_T dwSize,
       _In_ DWORD  dwFreeType
 );
-```
+{% endhighlight %}
 
 #### General Discussion
 

@@ -80,7 +80,7 @@ $$O(n^2)$$
 
 ##### Code
 
-```python
+{% highlight python linenos %}
 def Distance(a,b):
     return int(round(math.sqrt((math.pow(a['i'] - b['i'],2))+(math.pow(a['j'] - b['j'],2)))))
 
@@ -120,7 +120,7 @@ def KNN(cities, inFile):
             minLength = length
             order = [x for x in route]
             WriteFileKNN(inFile, order, minLength)
-```
+{% endhighlight %}
 
 ##### Description
 
@@ -139,7 +139,7 @@ where $T$ is the number of outer iteration, $n_0$ is the initial size of the pop
 
 ##### Code
 
-```python
+{% highlight python linenos %}
 class City:
     def __init__(self, id, x, y):
         self.id = id
@@ -281,7 +281,7 @@ def GA(inFile, population, popSize, eliteSize, mutationRate, generations):
     bestRouteIndex = rankRoutes(pop)[0][0]
     bestRoute = pop[bestRouteIndex]
     WriteFileGA(inFile, bestRoute, 1 / rankRoutes(pop)[0][1])
-```
+{% endhighlight %}
 
 ##### Description
 
