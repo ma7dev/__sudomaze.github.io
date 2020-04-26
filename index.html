@@ -1,14 +1,21 @@
 --- 
 layout: default 
 ---
-<div class="row">
+<div class="row mt-3">
     <p class="col-md-12">{{ site.data.author.bio }}</p>
+    <div class="col-md-12">
+        <h1 class="col-md-12 text-center"><b>Recent News</b></h1>
+        <ul class="col-md-12">
+            <li>Accepted to the Masters Program at Oregon State University for Fall 2020 (Feburary 2020).</li>
+        </ul>
+    </div>
     <div class="col-md-6">
         <h1>Newest</h1>
         <ul>
             {% for post in site.posts %}
                 <li><a href="{{ post.url }}">{{ post.title }}</a></li>
             {% endfor %}
+        </ul>
     </div>
     <!-- <div class="col-md-6">
         <h1>Popular</h1>

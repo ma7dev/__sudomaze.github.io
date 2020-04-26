@@ -19,7 +19,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-last-modified-at
 
-include: ['_pages', '_notes', '_about']
+include: ['_pages', '_notes', '_about', '_newsletters']
 
 head_links:
   - /assets/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css

@@ -3,3 +3,21 @@ layout: page
 title: Newsletter Archive
 permalink: /newsletter-archive/
 ---
+
+<!-- <a href="http://eepurl.com/g058Qb">register to my newsletter</a> -->
+<div class="row">
+    {% assign year_grouped = site.pages | group_by: 'year' %}
+    {% for year in year_grouped %}
+        {% if year.name != "" %}
+        <div class="col-md-6">
+            <h2>{{ year.name | to_integer }}</h2>
+            {% assign tags_grouped = category.items | group_by: 'tag' %}
+            <ul>
+                {% for page in year.items %}
+                    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>

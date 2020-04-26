@@ -7,7 +7,9 @@ body{
 article {
     background: #FFFFFF;
     border: 1px solid#A7D7F9;
-    border-top: 0px;
+}
+article h1:first-child{
+    margin-top: 10px;
 }
 h1, h2, h3{
     font-family: "Linux Libertine", Georgia, Times, serif;
@@ -59,6 +61,39 @@ a:visited{
 #navbar p {
     border-bottom: 1px solid #a2a9b1;
 }
+/* */
+#nav {
+    height: 0;
+}
+#nav ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+#nav ul li{
+    float: left;
+    box-sizing: border-box;
+    display: inline-block;
+    border-right:1px solid #A7D7F9;
+    border-bottom:1px solid #A7D7F9;
+    border-top: 0px;
+    padding: 4px;
+    z-index: 1;
+}
+#nav ul li:first-child{
+    border-left:1px solid #A7D7F9;
+}
+#nav .active{
+    background: #FFFFFF;  
+    border-bottom: 1px solid #FFFFFF;
+}
+#nav .active a{
+    color: black;
+}
 /* toc */
 .toc {
     display: table;
@@ -72,6 +107,10 @@ a:visited{
 /**********/
 li p {
     margin: 0;
+}
+/* list 100 */
+.task-list-item-checkbox{
+    margin-right: 5px;
 }
 /**************/
 /* CODE STYLE */

@@ -19,6 +19,8 @@
 * Content templating - CSS: [Bootstrap](https://getbootstrap.com/)
 * Icons: [Font Awesome](https://fontawesome.com/)
 
-## Inspirations
+## Inspirations and Credits
 
 * Overall content: [Gwern Branwen](https://www.gwern.net/index)
+* Overall design: [Wikipedia](https://wikipedia.org)
+* Display image: [Artist](https://steamcommunity.com/id/r4tb0y)
