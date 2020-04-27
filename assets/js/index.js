@@ -104,7 +104,9 @@ window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
     }) 
 })
 // page date
-$.getJSON("https://api.github.com/repos/"+githubRepo+"/commits?path=/"+pagePath+"&access_token="+pageAccessToken, function(data) {
+
+$.getJSON("https://api.github.com/repos/"+githubRepo+"/commits?path=/"+pagePath, { Authorization: "token "+pageAccessToken})
+ .done(function(data) {
     var month = new Array();
     month[0] = "January";
     month[1] = "February";
