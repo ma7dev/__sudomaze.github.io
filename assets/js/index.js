@@ -62,20 +62,12 @@ if(layoutDiscussion){
     s.src = 'https://'+disqusShortname+'.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
-    console.log(s)
   })();
-  $.ajax({
-      type: 'GET',
-      url: 'https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey,
-      cache: false,
-      dataType: 'json',
-      success: function (result) {
-      for (var i in result.response) {
-          console.log(result);
-          var count = result.response[i].posts;
-          $('#disqus-comment').html(count);
-      }
-      }
+  $.get('https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey).done(function (result) {
+        for (var i in result.response) {
+            var count = result.response[i].posts;
+            $('#disqus-comment').html(count);
+        }
   });
   
   // nav header
