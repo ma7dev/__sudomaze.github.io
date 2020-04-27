@@ -5,7 +5,6 @@ console.log("pageUrl "+pageUrl)
 console.log("pageAccessToken "+pageAccessToken)
 console.log("pagePath "+pagePath)
 console.log("githubRepo "+githubRepo)
-
 // encrypting
 // CryptoJS.AES.encrypt("access_token", "Secret Passphrase").toString()
 // styling
