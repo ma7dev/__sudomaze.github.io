@@ -17,10 +17,20 @@ $("blockquote").addClass("blockquote");
 //copy code
 function addCopyButtons(clipboard) {
     document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+        var langNaming = codeBlock.getAttribute("data-lang");
+        var div = document.createElement('div');
+        div.className = 'div-code-button';
+        var lang = document.createElement('button');
+        lang.className = 'lang-code-button code-button';
+        lang.type = 'button';
+        lang.innerHTML = '<i class="fas fa-code"></i> '+langNaming;
+        if(langNaming == "nothing"){
+            lang.innerHTML = '<i class="fas fa-code"></i> Jekyll';
+        }
         var button = document.createElement('button');
-        button.className = 'copy-code-button';
+        button.className = 'copy-code-button code-button';
         button.type = 'button';
-        button.innerText = 'Copy';
+        button.innerHTML = '<i class="far fa-copy"></i> Copy';
   
         button.addEventListener('click', function () {
             clipboard.writeText(codeBlock.innerText).then(function () {
@@ -28,22 +38,24 @@ function addCopyButtons(clipboard) {
                    leaving the button in a focused state. */
                 button.blur();
   
-                button.innerText = 'Copied!';
+                button.innerHTML = 'Copied!';
   
                 setTimeout(function () {
-                    button.innerText = 'Copy';
+                    button.innerHTML = '<i class="far fa-copy"></i> Copy';
                 }, 2000);
             }, function (error) {
-                button.innerText = 'Error';
+                button.innerHTML = 'Error';
             });
         });
   
         var pre = codeBlock.parentNode;
+        div.appendChild(lang);
+        div.appendChild(button);
         if (pre.parentNode.classList.contains('highlight')) {
             var highlight = pre.parentNode;
-            highlight.parentNode.insertBefore(button, highlight);
+            highlight.parentNode.insertBefore(div, highlight);
         } else {
-            pre.parentNode.insertBefore(button, pre);
+            pre.parentNode.insertBefore(div, pre);
         }
     });
 }

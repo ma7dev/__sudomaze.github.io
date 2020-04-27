@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hello World</title>
+<title>Random Article - sudomaze.dev</title>
 <link rel="icon" href="/assets/images/icon.PNG">
 
   
@@ -13,6 +12,9 @@
     
       
       <script src="/assets/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+    
+      
+      <script src="/assets/libraries/fontawesome-pro-5.13.0-web/js/all.min.js"></script>
     
       
       <script src="/assets/libraries/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
@@ -25,6 +27,9 @@
     
   
     
+    
+      
+      <link rel="stylesheet" href="/assets/libraries/fontawesome-pro-5.13.0-web/css/all.min.css">
     
       
       <link rel="stylesheet" href="/assets/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
@@ -51,24 +56,20 @@
     var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
         disqusShortname = "sudomaze",
         siteUrl = "https://sudomaze.dev",
-        pageUrl = "/general/2020/04/27/hello-world.html",
+        pageUrl = "/random-article/",
         pageAccessToken = CryptoJS.AES.decrypt("U2FsdGVkX1/8V0sYchUExOfJ31D6hvd6Jpjpcj1NOJSmVR8+MjjIzFQW0bu14sUE4e3lpLGEST3pREgAV3zodg==", "Secret Passphrase").toString(CryptoJS.enc.Utf8),
-        pagePath = "_posts/general/2020-04-27-hello-world.md",
+        pagePath = "_pages/random-article.html",
         githubRepo = "sudomaze/sudomaze.github.io",
         layoutDiscussion = false;
   </script>
 
 
-  <script>
-    layoutDiscussion = true;
-  </script>
-
 
 </head>
-    <body class="layout--post container-fluid">
+    <body class="layout--page container-fluid">
         <main class="row mt-2">
             <nav id ="navbar" class="col-md-2">
-        <a href="/"><img src="/assets/images/icon.PNG" class="img-fluid" alt="Responsive image"></a>
+        <a href="/" class="d-none d-sm-none d-md-block"><img src="/assets/images/icon.PNG" class="img-fluid" alt="Responsive image"></a>
         <ul>
             <li><a href="/">Content</a></li>
             <li><a href="/notes">Notes</a></li>
@@ -90,30 +91,24 @@
                         <ul class="pl-0 mb-0" style="float:left">
     <li class="active nav-btn" id="content-btn"><a href="#">Page</a></li>
     
-    <li class="nav-btn" id="discussion-btn"><a href="#discussion">Discussions (<a href="#disqus_thread">0 Comments</a>)</a></li>
-    
 </ul>
 <ul class="pl-0 mb-0" style="float:right">
-    <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/general/2020/04/27/hello-world.html" target="_blank">View source</a></li>
-    <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_posts/general/2020-04-27-hello-world.md" target="_blank">View history</a></li>
+    <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/random-article/" target="_blank">View source</a></li>
+    <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_pages/random-article.html" target="_blank">View history</a></li>
 </ul>
                     </div>
                     <article class="col-md-12">
                         <div id="page-content" style="display: block;">
-  <h1>Hello World</h1>
-  <aside class="sidebar__right ">
-    <nav class="toc">
-        <header><h4 class="nav__title text-center"> Table of Content</h4></header>
-        
+    <h1>Random Article</h1>
+    
+<figure class="wm-100 simple-img">
+    <div class="d-flex justify-content-center">
+        <img src="https://i.giphy.com/media/zXmbOaTpbY6mA/giphy.webp" class="img-fluid" alt="No posts">
+    </div>
+    <figcaption><b>No posts</b></figcaption>
+</figure>
 
-    </nav>
-  </aside>
-  
 
-</div>
-<div id="page-discussion" style="display: none;">
-  <div id="disqus_thread"></div>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
                     </article>
                     <div class="col-md-12">

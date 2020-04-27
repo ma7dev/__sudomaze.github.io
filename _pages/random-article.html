@@ -1,6 +1,14 @@
 ---
+layout: page
 title: Random Article
 permalink: /random-article/
 ---
+{% if site.posts.size != 0 %}
 {% assign random = site.time | date: "%s%N" | modulo: site.posts.size %}
-{{ site.posts[random] }}
+{{ site.posts[random].url }}
+<script>
+    window.location.replace("{{ site.posts[random].url }}");
+</script>
+{% else %}
+{% include built-in/simple-img.html url="https://i.giphy.com/media/zXmbOaTpbY6mA/giphy.webp" caption="No posts" %}
+{% endif %}
