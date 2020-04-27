@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Hello World"
-date:   2020-04-23 07:10:21 -0700
-categories: "test"
+title:  Example
+permalink: /documentations/website/example
+category: "Documentations"
+tag: "Website"
 ---
 
 # Header 1
@@ -241,7 +242,7 @@ def mb_callback(msg):
 {% include built-in/quote.html quote="
 Ah! let not Censure term our fate our choice, / The stage but echoes back the public’s voice; The drama’s laws the drama’s patrons give, / For we that live to please must please to live.
 "
-footer="[Samuel Johnson](wikipedia.org/wiki/)(\"Prologue at the Opening of Drury Lane Theatre\")"
+footer="Samuel Johnson (\"Prologue at the Opening of Drury Lane Theatre\")"
 %}
 
 # Footnotes

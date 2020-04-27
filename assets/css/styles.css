@@ -167,21 +167,7 @@ li p {
 .copy-code-button:active {
     background-color: #D9D9D9;
 }
-.highlight pre {
-    /* Avoid pushing up the copy buttons. */
-    margin: 0;
-}
-.highlight {
-    margin-bottom: 0;
-    background-color: #F8F9FA;
-    border: 1px solid #272822;
-}
-.highlight+p {
-    margin-top: 2em;
-}
-output {
-    width:100%;
-    padding: 1.2em;
-    background: #21242A;
-    color: #EBEBEB;
+
+.language-nothing {
+    color: white;
 }
