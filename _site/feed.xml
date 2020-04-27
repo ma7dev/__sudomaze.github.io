@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-04-27T00:38:35-07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Hello World</title><link href="http://localhost:4000/test/2020/04/23/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Hello World" /><published>2020-04-23T07:10:21-07:00</published><updated>2020-04-23T07:10:21-07:00</updated><id>http://localhost:4000/test/2020/04/23/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/test/2020/04/23/welcome-to-jekyll.html">&lt;h1 id=&quot;header-1&quot;&gt;Header 1&lt;/h1&gt;
+
+&lt;h2 id=&quot;header-2&quot;&gt;Header 2&lt;/h2&gt;
+
+&lt;h3 id=&quot;header-3&quot;&gt;Header 3&lt;/h3&gt;
+
+&lt;h4 id=&quot;header-4&quot;&gt;Header 4&lt;/h4&gt;
+
+\[\int f^{-1}(x-x_a)\,dx
+\\
+\forall x \in X, \quad \exists y \leq \epsilon
+\\
+\alpha, \beta, \gamma, \Gamma, \pi, \Pi, \phi, \varphi, \mu, \Phi\]
+
+\[\lim\limits_{x \to \infty} \exp(-x) = 0\]
+
+\[f(n) = n^5 + 4n^2 + 2 |_{n=17}\]
+
+\[\frac{n!}{k!(n-k)!} = \binom{n}{k}\]
+
+\[^3/_7\]
+
+\[\sqrt{\frac{a}{b}}\]
+
+\[\sum_{i=1}^{10} t_i\]
+
+\[\int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x\]
+
+\[\prod\]
+
+\[( a ), [ b ], \{ c \}, | d |, \| e \|,
+\langle f \rangle, \lfloor g \rfloor,
+\lceil h \rceil, \ulcorner i \urcorner\]
+
+\[P\left(A=2\middle|\frac{A^2}{B}&amp;gt;4\right)\]
+
+\[\left.\frac{x^3}{3}\right|_0^1\]
+
+\[\frac{\mathrm d}{\mathrm d x} \left( k g(x) \right)\]
+
+\[A_{m,n} = 
+ \begin{pmatrix}
+  a_{1,1} &amp;amp; a_{1,2} &amp;amp; \cdots &amp;amp; a_{1,n} \\
+  a_{2,1} &amp;amp; a_{2,2} &amp;amp; \cdots &amp;amp; a_{2,n} \\
+  \vdots  &amp;amp; \vdots  &amp;amp; \ddots &amp;amp; \vdots  \\
+  a_{m,1} &amp;amp; a_{m,2} &amp;amp; \cdots &amp;amp; a_{m,n} 
+ \end{pmatrix}\]
+
+\[M = \begin{bmatrix}
+       \frac{5}{6} &amp;amp; \frac{1}{6} &amp;amp; 0           \\[0.3em]
+       \frac{5}{6} &amp;amp; 0           &amp;amp; \frac{1}{6} \\[0.3em]
+       0           &amp;amp; \frac{5}{6} &amp;amp; \frac{1}{6}
+     \end{bmatrix}\]
+
+\[\bigl(\begin{smallmatrix}
+a&amp;amp;b \\ c&amp;amp;d
+\end{smallmatrix} \bigr)\]
+
+\[abcdefghijklmnopqrstuvwxyz1234567890\]
+
+\[\mathrm{abcdefghijklmnopqrstuvwxyz1234567890}\]
+
+\[\mathit{abcdefghijklmnopqrstuvwxyz1234567890}\]
+
+\[\mathbf{abcdefghijklmnopqrstuvwxyz1234567890}\]
+
+\[\mathsf{abcdefghijklmnopqrstuvwxyz1234567890}\]
+
+\[\mathtt{abcdefghijklmnopqrstuvwxyz1234567890}\]
+
+\[\mathfrak{abcdefghijklmnopqrstuvwxyz1234567890}\]
+
+\[\mathcal{abcdefghijklmnopqrstuvwxyz1234567890}\]
+
+\[\mathbb{abcdefghijklmnopqrstuvwxyz1234567890}\]
+
+\[\mathscr{abcdefghijklmnopqrstuvwxyz1234567890}\]
+
+\[a', a'', \hat{a}, \bar{a}, \grave{a}, \acute{a}, \dot{a}, \ddot{a}, \not{a}, \mathring{a}, \overrightarrow{aa}, \overleftarrow{aa}, \overline{aaa}, \check{a}, \breve{a}, \vec{a}, \widehat{aaa}, \widetilde{aaa}, \stackrel\frown{aaa}, \tilde{a}, \underline{a}\]
+
+\[k = {\color{red}x} \mathbin{\color{blue}-} 2\]
+
+\[f(n) =
+  \begin{cases}
+    n/2       &amp;amp; \quad \text{if } n \text{ is even}\\
+    -(n+1)/2  &amp;amp; \quad \text{if } n \text{ is odd}
+  \end{cases}\]
+
+\[\left(
+    \begin{array}{c}
+      n \\
+      r
+    \end{array}
+  \right) = \frac{n!}{r!(n-r)!}\]
+
+\[\partial\]
+
+&lt;div class=&quot;alert alert-primary&quot;&gt;
+    &lt;p&gt;
+        &lt;i class=&quot;fas fa-info-circle&quot;&gt;&lt;/i&gt;
+        notification
+    &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;YOLOv3&lt;/em&gt;&lt;a href=&quot;#ref-1&quot;&gt;[1]&lt;/a&gt;.&lt;/p&gt;
+
+\[\begin{align}
+v(t_1) &amp;amp;= v(t_0) + \int_{t_0}^{t_1} a(t) dt \\  
+\end{align}\]
+
+&lt;table id=&quot;table-1&quot; class=&quot;table&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First Header&lt;/th&gt;
+      &lt;th&gt;Second Header&lt;/th&gt;
+      &lt;th&gt;Third Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First row&lt;/td&gt;
+      &lt;td&gt;Data&lt;/td&gt;
+      &lt;td&gt;Very long data entry&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Second row&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Cell&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;em&gt;Cell&lt;/em&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Third row&lt;/td&gt;
+      &lt;td&gt;Cell that spans across two columns&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var table = document.getElementById(&quot;table-1&quot;).createCaption();
+    table.innerHTML = &quot;&lt;strong&gt;Table 1:&lt;/strong&gt; attadad&quot;;
+&lt;/script&gt;
+
+&lt;pre id=&quot;read-1&quot; style=&quot;display:none;&quot;&gt;
+    
+\begin{algorithm}
+\caption{Quicksort}
+\begin{algorithmic}
+\PROCEDURE{Quicksort}{$A, p, r$}
+    \IF{$p &amp;lt; r$} 
+        \STATE $q = $ \CALL{Partition}{$A, p, r$}
+        \STATE \CALL{Quicksort}{$A, p, q - 1$}
+        \STATE \CALL{Quicksort}{$A, q + 1, r$}
+    \ENDIF
+\ENDPROCEDURE
+\PROCEDURE{Partition}{$A, p, r$}
+    \STATE $x = A[r]$
+    \STATE $i = p - 1$
+    \FOR{$j = p$ \TO $r - 1$}
+        \IF{$A[j] &amp;lt; x$}
+            \STATE $i = i + 1$
+            \STATE exchange
+            $A[i]$ with     $A[j]$
+        \ENDIF
+        \STATE exchange $A[i]$ with $A[r]$
+    \ENDFOR
+\ENDPROCEDURE
+\end{algorithmic}
+\end{algorithm}
+
+&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&quot;markdown-pseudocode&quot; id=&quot;goal-1&quot;&gt;&lt;/span&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var code = document.getElementById(&quot;read-1&quot;).textContent;
+    var parentEl = document.getElementById(&quot;goal-1&quot;);
+    var options = {
+        lineNumber: true
+    };
+    pseudocode.render(code, parentEl, options);
+&lt;/script&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;wm-100&quot; id=&quot;img-1&quot;&gt;
+    &lt;div class=&quot;d-flex justify-content-center&quot;&gt;
+        &lt;img src=&quot;https://www.gwern.net/images/silkroad/2012-christin-sr-dailysales.png&quot; class=&quot;img-fluid&quot; alt=&quot;I love it&quot; /&gt;
+    &lt;/div&gt;
+    &lt;figcaption&gt;&lt;strong&gt;Figure 1:&lt;/strong&gt; I love it&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;#img-1&quot;&gt;Figure 1&lt;/a&gt;
+&lt;a href=&quot;#table-1&quot;&gt;table 1&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+
+  &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/DM0nkQxrpW0&quot; class=&quot;embed-responsive-item&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;# import relevant libraries
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;roslib&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;rospy&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;mb_callback&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# Check if robot has reached goal
+&lt;/span&gt;  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Robot failed to reach waypoint!&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;msg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Robot successfully reached waypoint!&quot;&lt;/span&gt;
+  
+  &lt;span class=&quot;n&quot;&gt;pub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;publish&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;waypoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;blockquote class=&quot;blockquote&quot;&gt;
+    &lt;p class=&quot;mb-0&quot;&gt;
+Ah! let not Censure term our fate our choice, / The stage but echoes back the public’s voice; The drama’s laws the drama’s patrons give, / For we that live to please must please to live.
+&lt;/p&gt;
+    &lt;footer class=&quot;blockquote-footer&quot;&gt;[Samuel Johnson](wikipedia.org/wiki/)(&quot;Prologue at the Opening of Drury Lane Theatre&quot;)&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;footnotes&quot;&gt;Footnotes&lt;/h1&gt;
+
+&lt;ol id=&quot;page-footnotes&quot;&gt;
+&lt;li id=&quot;ref-1&quot;&gt;&lt;p&gt;https://www.youtube.com/watch?v=Q8nhQSp__3s&amp;amp;list=WL&amp;amp;index=11&lt;a href=&quot;#text-ref-1&quot;&gt;&lt;i class=&quot;fas fa-level-up-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    var links = document.getElementsByTagName(&quot;a&quot;);
+    for(var i = 0; i &lt; links.length; i++) {
+        if( links[i].getAttribute(&quot;href&quot;) === &quot;#ref-1&quot; ) {
+            links[i].id = &quot;text-ref-1&quot;;
+        }
+    } 
+&lt;/script&gt;
+&lt;/ol&gt;</content><author><name></name></author><summary type="html">Header 1</summary></entry></feed>
