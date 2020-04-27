@@ -63,20 +63,23 @@ if(layoutDiscussion){
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   })();
-  console.log('3 https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey);
-  $.ajax({
-      type: 'GET',
-      url: 'https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey,
-      cache: false,
-      dataType: 'jsonp',
-      success: function (result) {
-        console.log(result);
-        for (var i in result.response) {
-            var count = result.response[i].posts;
-            $('#disqus-comment').html(count);
-        }
-      }
-  });
+  // thread:link=https://sudomaze.dev/test/2020/04/23/welcome-to-jekyll.html
+  // forum=sudomaze
+  // api_key=xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo
+//   console.log('3 https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey);
+//   $.ajax({
+//       type: 'GET',
+//       url: 'https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey,
+//       cache: false,
+//       dataType: 'jsonp',
+//       success: function (result) {
+//         console.log(result);
+//         for (var i in result.response) {
+//             var count = result.response[i].posts;
+//             $('#disqus-comment').html(count);
+//         }
+//       }
+//   });
   
   // nav header
   $("#content-btn").click(function() {

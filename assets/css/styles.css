@@ -79,7 +79,11 @@ a:visited{
 /* notification */
 .alert p {
     margin-bottom: 0;
-} 
+}
+/* discussion */
+#discussion-btn:hover{
+    text-decoration: underline;
+}
 /* */
 #nav ul {
     display: flex;
