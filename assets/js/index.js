@@ -63,13 +63,13 @@ if(layoutDiscussion){
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   })();
-  console.log('https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey);
+  console.log('1 https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey);
   $.ajax({
       type: 'GET',
       headers: {  'Access-Control-Allow-Origin': 'https://sudomaze.dev', 'Content-Type': 'application/x-www-form-urlencoded' },
       url: 'https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey,
       cache: false,
-      dataType: 'json',
+      dataType: 'jsonp',
       success: function (result) {
       for (var i in result.response) {
           var count = result.response[i].posts;
