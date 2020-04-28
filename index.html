@@ -11,10 +11,10 @@ title: "Home"
         </ul>
     </div>
     <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
+    <!-- <div id="twitch-embed"></div> -->
 
     <!-- Load the Twitch embed script -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    <!-- <script src="https://embed.twitch.tv/embed/v1.js"></script> -->
     <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
     <!-- <script type="text/javascript">
         new Twitch.Embed("twitch-embed", {
@@ -28,28 +28,6 @@ title: "Home"
             player.play();
         });
     </script> -->
-    <script>
-        function CheckOnlineStatus()
-        {
-            $.ajax({
-                url: "https://api.twitch.tv/kraken/streams/" + 'sudomaze',
-                dataType: 'json',
-                headers: {
-                'Client-ID': 't1nh4dk83uivke4prdyecg01lzg8w1'
-                },
-                success: function(channel)
-                {
-                if (channel["stream"] == null)
-                {
-                    alert(nickname+" is not online");
-                } else {
-                    alert(nickname+" is online!");
-                }
-                }
-            });
-        }
-        CheckOnlineStatus()
-    </script>
       {% if site.posts.size != 0 %}
     <div class="col-md-6">
         <h1>Newest</h1>
