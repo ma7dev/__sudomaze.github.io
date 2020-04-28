@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Introduction to Deep Learning - sudomaze.dev</title>
+<title>Stream Goals - sudomaze.dev</title>
 <link rel="icon" href="/assets/images/icon.PNG">
 
   
@@ -56,9 +56,9 @@
     var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
         disqusShortname = "sudomaze",
         siteUrl = "https://sudomaze.dev",
-        pageUrl = "/notes/online-courses/advanced-machine-learning-specialization/introduction-to-deep-learning",
+        pageUrl = "/streams/general/stream-goals/",
         pageAccessToken = CryptoJS.AES.decrypt("U2FsdGVkX1/8V0sYchUExOfJ31D6hvd6Jpjpcj1NOJSmVR8+MjjIzFQW0bu14sUE4e3lpLGEST3pREgAV3zodg==", "Secret Passphrase").toString(CryptoJS.enc.Utf8),
-        pagePath = "_notes/online-courses/advanced-machine-learning-specialization/01_introduction-to-deep-learning/00_main.md",
+        pagePath = "_notes/streams/general/goals/00_main.md",
         githubRepo = "sudomaze/sudomaze.github.io",
         layoutDiscussion = false;
   </script>
@@ -92,107 +92,41 @@
             <div class="col-md-10">
                 <div class="row">
                     <div class="col-md-12 pl-0 pr-0" id="nav">
-                        <ul class="pl-0 mb-0" style="float:left">
-    <li class="active nav-btn" id="content-btn"><a href="#">Page</a></li>
-    
-    <li class="nav-btn" id="discussion-btn"><a href="#discussion">Discussions (<a href="#disqus_thread">0 Comments</a>)</a></li>
-    
-</ul>
-<ul class="pl-0 mb-0" style="float:right">
-    <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/notes/online-courses/advanced-machine-learning-specialization/introduction-to-deep-learning" target="_blank">View source</a></li>
-    <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/online-courses/advanced-machine-learning-specialization/01_introduction-to-deep-learning/00_main.md" target="_blank">View history</a></li>
-</ul>
+                        <div class="d-none d-sm-none d-md-block">
+    <ul class="pl-0 mb-0" style="float:left">
+        <li class="active nav-btn" id="content-btn"><a href="#" title="Show page content">Page</a></li>
+        
+        <li class="nav-btn" id="discussion-btn"><a href="#discussion" title="Show Discussions">Discussions (<a href="#disqus_thread">0 Comments</a>)</a></li>
+        
+    </ul>
+    <ul class="pl-0 mb-0" style="float:right">
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/streams/general/stream-goals//index.html" title="View source" target="_blank">View source</a></li>
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/streams/general/goals/00_main.md" title="View history" target="_blank">View history</a></li>
+    </ul>
+</div>
+
+<div class="d-block d-sm-none">
+    <ul class="row pl-0 mb-0">
+        <li class="active col" id="content-btn-sm"><a href="#" title="Show page content">Page</a></li>
+        
+        <li class="col" id="discussion-btn-sm"><a href="#discussion" title="Show Discussions">Discussions</a></li>
+        
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/streams/general/stream-goals/" title="View source" target="_blank">View source</a></li>
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/streams/general/goals/00_main.md" title="View history" target="_blank">View history</a></li>
+    </ul>
+</div>
                     </div>
                     <article class="col-md-12">
                         <div id="page-content" style="display: block;">
-  <h1>Introduction to Deep Learning</h1>
+  <h1>Stream Goals</h1>
   <aside class="sidebar__right ">
     <nav class="toc">
         <header><h4 class="nav__title text-center"> Table of Content</h4></header>
-        <ul class="toc__menu">
-  <li><a href="#week-1---linear-models">Week 1 - Linear Models</a>
-    <ul>
-      <li><a href="#linear-regression">Linear Regression</a></li>
-    </ul>
-  </li>
-</ul>
+        
 
     </nav>
   </aside>
   
-<h2 id="week-1---linear-models">Week 1 - Linear Models</h2>
-
-<h3 id="linear-regression">Linear Regression</h3>
-<ul>
-  <li>Supervised Learning:
-    <ul>
-      <li>$x_i$ - example</li>
-      <li>$y_i$ - target value</li>
-      <li>$x_i = (x_{i1}, x_{i2}, \dots, x_{id})$ - features</li>
-      <li>$X = ((x_1, y_1), (x_2, y_2), \dots, (x_l, y_l))$ - training set</li>
-      <li>$a(x)$ - model, hypothesis</li>
-    </ul>
-  </li>
-</ul>
-
-\[x \rightarrow a(x) \rightarrow y^{pred}\]
-
-<ul>
-  <li>
-    <p>Regression:</p>
-
-    <p>$ y_i \in \mathbb{R}$ - regression task</p>
-
-    <ul>
-      <li>Salary Prediction</li>
-      <li>Movie Rating Prediction</li>
-    </ul>
-  </li>
-  <li>
-    <p>Classfication</p>
-
-    <p>$y_i$ belongs to a finite set - classification task</p>
-
-    <ul>
-      <li>Object Detection</li>
-      <li>Topic Classification</li>
-    </ul>
-  </li>
-  <li>
-    <p>Linear model for regression</p>
-  </li>
-</ul>
-
-\[a(x)=b+w_1x_1+w_2x_2+\dots+w_dx_d\]
-
-<ul>
-  <li>$w_1,\dots,w_d$ - Coefficients (weights)</li>
-  <li>$b$ - bais</li>
-  <li>$d+1$ - number of parameters</li>
-  <li>To make it simple: there’s always a constant feature</li>
-  <li>Vector notation</li>
-</ul>
-
-\[a(x) = w^Tx\]
-
-<ul>
-  <li>
-    <p>For a sample $X$:</p>
-
-\[a(X) = Xw\]
-
-    <p>where</p>
-
-\[X = 
-\begin{pmatrix}
-x_{11} &amp; x_{12} &amp; \dots &amp; x_{1d}\\
-x_{21} &amp; x_{22} &amp; \dots &amp; x_{1d}\\
-\vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
-x_{\mathcal{l}1} &amp; x_{l2} &amp; \dots &amp; x_{ld}
-\end{pmatrix}\]
-  </li>
-</ul>
-
 
 </div>
 <div id="page-discussion" style="display: none;">

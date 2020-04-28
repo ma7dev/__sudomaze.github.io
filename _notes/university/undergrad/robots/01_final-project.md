@@ -137,9 +137,9 @@ The algorithm tended to get the robot stuck in one area, ensuring that every cel
 ##### Did it result in full coverage of the environment (provide a screenshot from rviz)?
 
 {% include built-in/3-img.html id="1"
-    url1="/assets/images/collections/cs/robots/randomdots.png" caption1="Random Dots Map" 
-    url2="/assets/images/collections/cs/robots/TheOffice.png" caption2="The Office Map" 
-    url3="/assets/images/collections/cs/robots/maze.png" caption3="The Maze Map" 
+    url1="/assets/images/posts/randomdots.png" caption1="Random Dots Map" 
+    url2="/assets/images/posts/TheOffice.png" caption2="The Office Map" 
+    url3="/assets/images/posts/maze.png" caption3="The Maze Map" 
 %}
 
 This algorithm resulted in full exploration of the robot's environment with a reasonable success rate. The many dots map was the first map that the robot completed, it completed the map in around 20 minutes. Euclidean distance in this map is an accurate way to approximate path distance since the map isn't divided into rooms, making it an ideal scenario for this algorithm. The office map saw completion times of around 22 minutes. This was largely due to the euclidean distance heuristic that had the robot fully explore each room before moving on. This algorithm struggled with the maze file since it had a habit of setting waypoint on the other side of a wall making it drive back and forth around the entire map, making little but steady progress.

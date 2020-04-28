@@ -4,9 +4,9 @@ title: Newsletter Archive
 permalink: /newsletter-archive/
 ---
 
-<!-- <a href="http://eepurl.com/g058Qb">register to my newsletter</a> -->
+{% assign year_grouped = site.pages | group_by: 'year' %}
+{% if year_grouped.size != 1 %}
 <div class="row">
-    {% assign year_grouped = site.pages | group_by: 'year' %}
     {% for year in year_grouped %}
         {% if year.name != "" %}
         <div class="col-md-6">
@@ -21,3 +21,6 @@ permalink: /newsletter-archive/
         {% endif %}
     {% endfor %}
 </div>
+{% else %}
+{% include built-in/simple-img.html url="https://i.giphy.com/media/zXmbOaTpbY6mA/giphy.webp" caption="No newsletters" %}
+{% endif %}

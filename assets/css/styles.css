@@ -102,6 +102,7 @@ a:visited{
     border-bottom:1px solid #A7D7F9;
     border-top: 0px;
     padding: 4px;
+    text-align: center;
 }
 #nav {
     z-index: 1;
@@ -185,8 +186,8 @@ li p {
 }
 
 /* special style */
-.language-nothing {
-    color: white;
+.language-nothing, .language-bash *{
+    color: white !important;
 }
 .highlight pre {
     padding: 10px;

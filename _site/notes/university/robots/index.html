@@ -92,16 +92,29 @@
             <div class="col-md-10">
                 <div class="row">
                     <div class="col-md-12 pl-0 pr-0" id="nav">
-                        <ul class="pl-0 mb-0" style="float:left">
-    <li class="active nav-btn" id="content-btn"><a href="#">Page</a></li>
-    
-    <li class="nav-btn" id="discussion-btn"><a href="#discussion">Discussions (<a href="#disqus_thread">0 Comments</a>)</a></li>
-    
-</ul>
-<ul class="pl-0 mb-0" style="float:right">
-    <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/notes/university/robots/" target="_blank">View source</a></li>
-    <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/university/undergrad/robots/00_main.md" target="_blank">View history</a></li>
-</ul>
+                        <div class="d-none d-sm-none d-md-block">
+    <ul class="pl-0 mb-0" style="float:left">
+        <li class="active nav-btn" id="content-btn"><a href="#" title="Show page content">Page</a></li>
+        
+        <li class="nav-btn" id="discussion-btn"><a href="#discussion" title="Show Discussions">Discussions (<a href="#disqus_thread">0 Comments</a>)</a></li>
+        
+    </ul>
+    <ul class="pl-0 mb-0" style="float:right">
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/notes/university/robots//index.html" title="View source" target="_blank">View source</a></li>
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/university/undergrad/robots/00_main.md" title="View history" target="_blank">View history</a></li>
+    </ul>
+</div>
+
+<div class="d-block d-sm-none">
+    <ul class="row pl-0 mb-0">
+        <li class="active col" id="content-btn-sm"><a href="#" title="Show page content">Page</a></li>
+        
+        <li class="col" id="discussion-btn-sm"><a href="#discussion" title="Show Discussions">Discussions</a></li>
+        
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/notes/university/robots/" title="View source" target="_blank">View source</a></li>
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/university/undergrad/robots/00_main.md" title="View history" target="_blank">View history</a></li>
+    </ul>
+</div>
                     </div>
                     <article class="col-md-12">
                         <div id="page-content" style="display: block;">
@@ -358,10 +371,18 @@
 
 <h5 id="did-it-result-in-full-coverage-of-the-environment-provide-a-screenshot-from-rviz">Did it result in full coverage of the environment (provide a screenshot from rviz)?</h5>
 
-<figure class="third" id="img-1">
-    <img src="/assets/images/collections/cs/robots/randomdots.png" alt="Random Dots Map" />
-    <img src="/assets/images/collections/cs/robots/TheOffice.png" alt="The Office Map" />
-    <img src="/assets/images/collections/cs/robots/maze.png" alt="The Maze Map" />
+<div class="row">
+    <div class="col-md-4 d-flex justify-content-center">
+        <img src="/assets/images/posts/randomdots.png" class="img-fluid" alt="Random Dots Map" />
+    </div>
+    <div class="col-md-4 d-flex justify-content-center">
+        <img src="/assets/images/posts/TheOffice.png" class="img-fluid" alt="The Office Map" />
+    </div>
+    <div class="col-md-4 d-flex justify-content-center">
+        <img src="/assets/images/posts/maze.png" class="img-fluid" alt="The Maze Map" />
+    </div>
+</div>
+<figure class="wm-100" id="img-1">
 	<figcaption><strong>Figure 1:</strong> Random Dots Map, The Office Map, and The Maze Map</figcaption>
 </figure>
 

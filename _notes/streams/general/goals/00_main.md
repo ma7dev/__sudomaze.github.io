@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "FAQ"
-permalink: /streams/general/faq/
+title: "Stream Goals"
+permalink: /streams/general/stream-goals/
 # category: "Streams"
 # tag: "General"
 ---

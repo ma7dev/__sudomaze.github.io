@@ -2,8 +2,8 @@
 layout: post
 title: "4/24-26 | Python projects"
 permalink: /streams/2020/4-24/
-category: "Streams"
-tag: "2020"
+# category: "Streams"
+# tag: "2020"
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}

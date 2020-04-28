@@ -92,16 +92,29 @@
             <div class="col-md-10">
                 <div class="row">
                     <div class="col-md-12 pl-0 pr-0" id="nav">
-                        <ul class="pl-0 mb-0" style="float:left">
-    <li class="active nav-btn" id="content-btn"><a href="#">Page</a></li>
-    
-    <li class="nav-btn" id="discussion-btn"><a href="#discussion">Discussions (<a href="#disqus_thread">0 Comments</a>)</a></li>
-    
-</ul>
-<ul class="pl-0 mb-0" style="float:right">
-    <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/documentations/website/README/" target="_blank">View source</a></li>
-    <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/documentations/website/README/00_main.md" target="_blank">View history</a></li>
-</ul>
+                        <div class="d-none d-sm-none d-md-block">
+    <ul class="pl-0 mb-0" style="float:left">
+        <li class="active nav-btn" id="content-btn"><a href="#" title="Show page content">Page</a></li>
+        
+        <li class="nav-btn" id="discussion-btn"><a href="#discussion" title="Show Discussions">Discussions (<a href="#disqus_thread">0 Comments</a>)</a></li>
+        
+    </ul>
+    <ul class="pl-0 mb-0" style="float:right">
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/documentations/website/README//index.html" title="View source" target="_blank">View source</a></li>
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/documentations/website/README/00_main.md" title="View history" target="_blank">View history</a></li>
+    </ul>
+</div>
+
+<div class="d-block d-sm-none">
+    <ul class="row pl-0 mb-0">
+        <li class="active col" id="content-btn-sm"><a href="#" title="Show page content">Page</a></li>
+        
+        <li class="col" id="discussion-btn-sm"><a href="#discussion" title="Show Discussions">Discussions</a></li>
+        
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/documentations/website/README/" title="View source" target="_blank">View source</a></li>
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/documentations/website/README/00_main.md" title="View history" target="_blank">View history</a></li>
+    </ul>
+</div>
                     </div>
                     <article class="col-md-12">
                         <div id="page-content" style="display: block;">
@@ -117,60 +130,67 @@
       <li><a href="#output">Output</a></li>
     </ul>
   </li>
-  <li><a href="#footnotes">Footnotes</a>
+  <li><a href="#code-block">Code Block</a>
     <ul>
       <li><a href="#description-1">Description</a></li>
       <li><a href="#example-1">Example</a></li>
       <li><a href="#output-1">Output</a></li>
     </ul>
   </li>
-  <li><a href="#image">Image</a>
+  <li><a href="#footnotes">Footnotes</a>
     <ul>
       <li><a href="#description-2">Description</a></li>
       <li><a href="#example-2">Example</a></li>
       <li><a href="#output-2">Output</a></li>
     </ul>
   </li>
-  <li><a href="#math-equation">Math Equation</a>
+  <li><a href="#image">Image</a>
     <ul>
       <li><a href="#description-3">Description</a></li>
       <li><a href="#example-3">Example</a></li>
       <li><a href="#output-3">Output</a></li>
     </ul>
   </li>
-  <li><a href="#pseudocode">Pseudocode</a>
+  <li><a href="#math-equation">Math Equation</a>
     <ul>
       <li><a href="#description-4">Description</a></li>
       <li><a href="#example-4">Example</a></li>
       <li><a href="#output-4">Output</a></li>
     </ul>
   </li>
-  <li><a href="#quote">Quote</a>
+  <li><a href="#pseudocode">Pseudocode</a>
     <ul>
       <li><a href="#description-5">Description</a></li>
       <li><a href="#example-5">Example</a></li>
       <li><a href="#output-5">Output</a></li>
     </ul>
   </li>
-  <li><a href="#referencing">Referencing</a>
+  <li><a href="#quote">Quote</a>
     <ul>
       <li><a href="#description-6">Description</a></li>
       <li><a href="#example-6">Example</a></li>
       <li><a href="#output-6">Output</a></li>
     </ul>
   </li>
-  <li><a href="#table">Table</a>
+  <li><a href="#referencing">Referencing</a>
     <ul>
       <li><a href="#description-7">Description</a></li>
       <li><a href="#example-7">Example</a></li>
       <li><a href="#output-7">Output</a></li>
     </ul>
   </li>
-  <li><a href="#video">Video</a>
+  <li><a href="#table">Table</a>
     <ul>
       <li><a href="#description-8">Description</a></li>
       <li><a href="#example-8">Example</a></li>
       <li><a href="#output-8">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="#video">Video</a>
+    <ul>
+      <li><a href="#description-9">Description</a></li>
+      <li><a href="#example-9">Example</a></li>
+      <li><a href="#output-9">Output</a></li>
     </ul>
   </li>
 </ul>
@@ -246,22 +266,78 @@
     </p>
 </div>
 
-<h2 id="footnotes">Footnotes</h2>
+<h2 id="code-block">Code Block</h2>
 
 <h3 id="description-1">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% highlight {{ LANGUAGE }} linenos %}
+{{ CODE }}
+{% endhighlight %}</code></pre></figure>
+
+<h3 id="example-1">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% highlight python linenos %}
+# import relevant libraries
+import roslib
+import rospy
+import math
+
+def mb_callback(msg):
+  # Check if robot has reached goal
+  if msg.status.status == 2 or msg.status.status == 4 or msg.status.status == 5 or msg.status.status == 6:
+    print "Robot failed to reach waypoint!"
+  elif msg.status.status == 3:
+    print "Robot successfully reached waypoint!"
+  
+  pub.publish(waypoint)
+{% endhighlight %}</code></pre></figure>
+
+<h3 id="output-1">Output</h3>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="c1"># import relevant libraries
+</span><span class="kn">import</span> <span class="nn">roslib</span>
+<span class="kn">import</span> <span class="nn">rospy</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">mb_callback</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+  <span class="c1"># Check if robot has reached goal
+</span>  <span class="k">if</span> <span class="n">msg</span><span class="p">.</span><span class="n">status</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">msg</span><span class="p">.</span><span class="n">status</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">or</span> <span class="n">msg</span><span class="p">.</span><span class="n">status</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">or</span> <span class="n">msg</span><span class="p">.</span><span class="n">status</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"Robot failed to reach waypoint!"</span>
+  <span class="k">elif</span> <span class="n">msg</span><span class="p">.</span><span class="n">status</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"Robot successfully reached waypoint!"</span>
+  
+  <span class="n">pub</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">waypoint</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<h3 id="description-2">Description</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">&lt;ol id="page-footnotes"&gt;
 {% include built-in/note.html id="{{ ID }}" details="{{ DETAILS }}"%}
 &lt;/ol&gt;</code></pre></figure>
 
-<h3 id="example-1">Example</h3>
+<h3 id="example-2">Example</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">&lt;ol id="page-footnotes"&gt;
 {% include built-in/note.html id="1" details="https://www.youtube.com/watch?v=Q8nhQSp__3s&amp;list=WL&amp;index=11"%}
 {% include built-in/note.html id="2" details="https://www.youtube.com/watch?v=Q8nhQSp__3s&amp;list=WL&amp;index=11"%}
 &lt;/ol&gt;</code></pre></figure>
 
-<h3 id="output-1">Output</h3>
+<h3 id="output-2">Output</h3>
 
 <ol id="page-footnotes">
 <li id="ref-1"><p>https://www.youtube.com/watch?v=Q8nhQSp__3s&amp;list=WL&amp;index=11<a href="#text-ref-1"><i class="fas fa-level-up-alt"></i></a></p></li>
@@ -286,15 +362,15 @@
 
 <h2 id="image">Image</h2>
 
-<h3 id="description-2">Description</h3>
+<h3 id="description-3">Description</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/img.html id="{{ ID }}" url="{{ URL }}" caption="{{ CAPTION }}" %}</code></pre></figure>
 
-<h3 id="example-2">Example</h3>
+<h3 id="example-3">Example</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/img.html id="1" url="https://www.gwern.net/images/silkroad/2012-christin-sr-dailysales.png" caption="I love it" %}</code></pre></figure>
 
-<h3 id="output-2">Output</h3>
+<h3 id="output-3">Output</h3>
 
 <figure class="wm-100" id="img-1">
     <div class="d-flex justify-content-center">
@@ -305,7 +381,7 @@
 
 <h2 id="math-equation">Math Equation</h2>
 
-<h3 id="description-3">Description</h3>
+<h3 id="description-4">Description</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">$$
 
@@ -313,7 +389,7 @@
 
 $$</code></pre></figure>
 
-<h3 id="example-3">Example</h3>
+<h3 id="example-4">Example</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">$$
 
@@ -321,17 +397,17 @@ $$</code></pre></figure>
 
 $$</code></pre></figure>
 
-<h3 id="output-3">Output</h3>
+<h3 id="output-4">Output</h3>
 
 \[\int f^{-1}(x-x_a)\,dx\]
 
 <h2 id="pseudocode">Pseudocode</h2>
 
-<h3 id="description-4">Description</h3>
+<h3 id="description-5">Description</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/pcode.html id="{{ ID }}" code="{{ CODE }}" %}</code></pre></figure>
 
-<h3 id="example-4">Example</h3>
+<h3 id="example-5">Example</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/pcode.html id="1" code="
 \begin{algorithm}
@@ -360,7 +436,7 @@ $$</code></pre></figure>
 \end{algorithm}
 " %}</code></pre></figure>
 
-<h3 id="output-4">Output</h3>
+<h3 id="output-5">Output</h3>
 
 <pre id="read-1" style="display:none;">
     
@@ -402,11 +478,11 @@ $$</code></pre></figure>
 
 <h2 id="quote">Quote</h2>
 
-<h3 id="description-5">Description</h3>
+<h3 id="description-6">Description</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/quote.html quote="{{ QUOTE }}" footer="{{ FOOTER }}" %}</code></pre></figure>
 
-<h3 id="example-5">Example</h3>
+<h3 id="example-6">Example</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/quote.html quote="
 Ah! let not Censure term our fate our choice, / The stage but echoes back the public’s voice; The drama’s laws the drama’s patrons give, / For we that live to please must please to live.
@@ -414,7 +490,7 @@ Ah! let not Censure term our fate our choice, / The stage but echoes back the pu
 footer="Samuel Johnson (\"Prologue at the Opening of Drury Lane Theatre\")"
 %}</code></pre></figure>
 
-<h3 id="output-5">Output</h3>
+<h3 id="output-6">Output</h3>
 
 <blockquote class="blockquote">
     <p class="mb-0">
@@ -425,19 +501,19 @@ Ah! let not Censure term our fate our choice, / The stage but echoes back the pu
 
 <h2 id="referencing">Referencing</h2>
 
-<h3 id="description-6">Description</h3>
+<h3 id="description-7">Description</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">*{{ REFERENCE }}*[[{{ REFERENCE_ID }}]](#ref-{{ REFERENCE_ID }})
 [Figure {{ FIGURE_ID }}](#img-{{ FIGURE_ID }})
 [table {{ TABLE_ID }}](#table-{{ TABLE_ID }})</code></pre></figure>
 
-<h3 id="example-6">Example</h3>
+<h3 id="example-7">Example</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">*YOLOv3*[[1]](#ref-1)
 [Figure 1](#img-1)
 [table 1](#table-1)</code></pre></figure>
 
-<h3 id="output-6">Output</h3>
+<h3 id="output-7">Output</h3>
 
 <p><em>YOLOv3</em><a href="#ref-1">[1]</a>
 <a href="#img-1">Figure 1</a>
@@ -445,11 +521,11 @@ Ah! let not Censure term our fate our choice, / The stage but echoes back the pu
 
 <h2 id="table">Table</h2>
 
-<h3 id="description-7">Description</h3>
+<h3 id="description-8">Description</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/table.html id="{{ ID }}" content="{{ CONTENT }}" caption="{{ CAPTION }}" %}</code></pre></figure>
 
-<h3 id="example-7">Example</h3>
+<h3 id="example-8">Example</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/table.html id="1" content="
 
@@ -462,7 +538,7 @@ Ah! let not Censure term our fate our choice, / The stage but echoes back the pu
 " 
 caption="attadad" %}</code></pre></figure>
 
-<h3 id="output-7">Output</h3>
+<h3 id="output-8">Output</h3>
 
 <table id="table-1" class="table">
   <thead>
@@ -498,15 +574,15 @@ caption="attadad" %}</code></pre></figure>
 
 <h2 id="video">Video</h2>
 
-<h3 id="description-8">Description</h3>
+<h3 id="description-9">Description</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include video id="{{ ID }}" provider="{{ PROVIDER }}" %}</code></pre></figure>
 
-<h3 id="example-8">Example</h3>
+<h3 id="example-9">Example</h3>
 
 <figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include video id="DM0nkQxrpW0" provider="youtube" %}</code></pre></figure>
 
-<h3 id="output-8">Output</h3>
+<h3 id="output-9">Output</h3>
 
 <!-- Courtesy of embedresponsively.com //-->
 <div class="embed-responsive embed-responsive-16by9">

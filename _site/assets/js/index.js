@@ -105,7 +105,19 @@ if(layoutDiscussion){
       $("#page-content").css("display", "none");
       $("#discussion-btn").addClass("active");
       $("#page-discussion").css("display", "block");
-  });   
+  });  
+  $("#content-btn-sm").click(function() {
+      $("#discussion-btn-sm").removeClass("active");
+      $("#page-discussion").css("display", "none");
+      $("#content-btn-sm").addClass("active");
+      $("#page-content").css("display", "block");
+  });
+  $("#discussion-btn-sm").click(function() {
+      $("#content-btn-sm").removeClass("active");
+      $("#page-content").css("display", "none");
+      $("#discussion-btn-sm").addClass("active");
+      $("#page-discussion").css("display", "block");
+  });    
 }
 // mailchimp
 window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
