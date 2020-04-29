@@ -37,9 +37,6 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/newsletter-archive/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/newsletter/</loc>
 </url>
 <url>
@@ -47,6 +44,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/random-article/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/_pages/newsletter-archive.html</loc>
+<lastmod>2020-04-29T01:39:12-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/libraries/jquery-ui-1.12.1.custom/</loc>
