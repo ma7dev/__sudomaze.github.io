@@ -5,6 +5,11 @@
 * [Hacker News Digest](https://www.hndigest.com/): Best way to know about the top things in tech every week.
 * [KDnuggets News](https://www.kdnuggets.com/news/subscribe.html): Shares top articles about Data Science.
 
+### Podcasts
+
+* [This Week in ML and AI](https://twimlai.com/): Sam interviews people who are working in industry and academia. Great resource to be aware of what's happening in the world and how smart people solve them.
+* [Artificial Intelligence with Lex Fridman](https://lexfridman.com/ai/): Lex interviews people from different background of science and influencers.
+
 ### Set Up
 
 #### Home Machine
