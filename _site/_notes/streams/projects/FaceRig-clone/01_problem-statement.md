@@ -6,7 +6,7 @@ I have found this interesting program, [FaceRig](https://store.steampowered.com/
 
 {% include video id="ZFy5B8OC3Tw" provider="youtube" %}
 
-As I want the animated character to be updated based on viewers chose. I will need to build an API to allow the update to happen.
+As I want the animated character to be updated based on viewers' choice. I will need to build an API to allow the update to happen.
 
 I think there are few problems to tackle are:
 * Building face recognition system.
