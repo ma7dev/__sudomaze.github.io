@@ -143,7 +143,7 @@ ed:
       course_description: "Continued practice in writing with an emphasis on the rhetorical and critical thinking demands of writers in scientific and technological fields."
 
 cert: 
-- name: "Deep Learning"
+- name: "Deep Learning Specialization"
   organization: "Coursera"
   date: "1/2020"
   id: "MLDXX764WNQR"
@@ -154,7 +154,7 @@ cert:
   - "Structuring Machine Learning Projects"
   - "Convolutional Neural Networks"
   - "Sequence Models"
-- name: "TensorFlow in Practice"
+- name: "TensorFlow in Practice Specialization"
   organization: "Coursera"
   date: "8/2019"
   id: "HBYMWP2UBAFV"
@@ -168,7 +168,7 @@ cert:
 ex: 
 - company: "Center for Genome Research and Bio-computing"
   location: "Corvallis, OR (USA)"
-  date: "10/2019 - 7/2020"
+  date: "10/2019 - Present"
   position: "Computational Data Scientist"
   details: ""
 - company: "Center for Genome Research and Bi-ocomputing"
@@ -186,6 +186,7 @@ ex:
   details: 
   - "Managed a team of 6 photographers to document summer program events."
   - "Hosted and organized multiple teaching photography sessions for <strong>more than 70 inspired photographers</strong>."
+
 act: 
 - title: "IBMThink2019 <em>(Conference)</em>"
   location: "San Francisco, CA (USA)"

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>4/24-26 | Python projects - sudomaze.dev</title>
+<title>FaceRig-clone - sudomaze.dev</title>
 <link rel="icon" href="/assets/images/icon.PNG">
 
   
@@ -29,6 +29,9 @@
     
     
       
+      <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css">
+    
+      
       <link rel="stylesheet" href="/assets/libraries/fontawesome-pro-5.13.0-web/css/all.min.css">
     
       
@@ -45,20 +48,32 @@
     
   
   <script data-ad-client="ca-pub-4747237803381845" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script
+  <!-- <script
     type="text/javascript"
     charset="utf-8"
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-  >
+  > -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  
+  <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
   <script>
     var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
         disqusShortname = "sudomaze",
         siteUrl = "https://sudomaze.dev",
-        pageUrl = "/streams/2020/4-24/",
+        pageUrl = "/streams/projects/FaceRig-clone/",
         pageAccessToken = CryptoJS.AES.decrypt("U2FsdGVkX1/8V0sYchUExOfJ31D6hvd6Jpjpcj1NOJSmVR8+MjjIzFQW0bu14sUE4e3lpLGEST3pREgAV3zodg==", "Secret Passphrase").toString(CryptoJS.enc.Utf8),
-        pagePath = "_notes/streams/2020/4-24/00_main.md",
+        pagePath = "_notes/streams/projects/FaceRig-clone/00_main.md",
         githubRepo = "sudomaze/sudomaze.github.io",
         layoutDiscussion = false;
   </script>
@@ -79,13 +94,14 @@
             <li><a href="/notes">Notes</a></li>
             <li><a href="/site">Site</a></li>
             <li><a href="/author">Author</a></li>
+            <li><a href="/cv">CV</a></li>
             <li><a href="/newsletter">Newsletter</a></li>
-            <li><a href="/newsletter-archive">Newsletter Archive</a></li>
-            <li><a href="/random-article">Random Article</a></li>
+            <!-- <li><a href="/newsletter-archive">Newsletter Archive</a></li> -->
+            <!-- <li><a href="/random-article">Random Article</a></li> -->
         </ul>
-        <div id="wm-100" class="text-center">
+        <!-- <div id="wm-100" class="text-center">
             <span class="btn btn-success mt-3 mb-3">Currently <b>accepting new projects</b> for Q3 2020</span>
-        </div>
+        </div> -->
     </div>
 </nav>
 
@@ -101,9 +117,9 @@
     </ul>
     <ul class="pl-0 mb-0" style="float:right">
         
-        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/streams/2020/4-24//index.html" title="View source" target="_blank">View source</a></li>
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/streams/projects/FaceRig-clone//index.html" title="View source" target="_blank">View source</a></li>
         
-        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/streams/2020/4-24/00_main.md" title="View history" target="_blank">View history</a></li>
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/streams/projects/FaceRig-clone/00_main.md" title="View history" target="_blank">View history</a></li>
     </ul>
 </div>
 
@@ -114,32 +130,77 @@
         <li class="col" id="discussion-btn-sm"><a href="#discussion" title="Show Discussions">Discussions</a></li>
         
         
-        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/streams/2020/4-24//index.html" title="View source" target="_blank">View source</a></li>
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/streams/projects/FaceRig-clone//index.html" title="View source" target="_blank">View source</a></li>
         
-        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/streams/2020/4-24/00_main.md" title="View history" target="_blank">View history</a></li>
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/streams/projects/FaceRig-clone/00_main.md" title="View history" target="_blank">View history</a></li>
     </ul>
 </div>
                     </div>
                     <article class="col-md-12">
                         <div id="page-content" style="display: block;">
-  <h1>4/24-26 | Python projects</h1>
+  <h1>FaceRig-clone</h1>
   <aside class="sidebar__right ">
     <nav class="toc">
         <header><h4 class="nav__title text-center"> Table of Content</h4></header>
         <ul class="toc__menu">
-  <li><a href="#424">4/24</a>
-    <ul>
-      <li><a href="#todo">TODO</a></li>
-    </ul>
-  </li>
+  <li><a href="#problem-statement">Problem Statement</a></li>
+  <li><a href="#pipeline">Pipeline</a></li>
 </ul>
 
     </nav>
   </aside>
   
-<h2 id="424">4/24</h2>
+<h2 id="problem-statement">Problem Statement</h2>
 
-<h3 id="todo">TODO</h3>
+<p>I don’t want to share my beautiful face on stream. However, I want to have a different representation of my face on stream in real-time that chat can change when they redeem their points on stream.</p>
+
+<p>I have found this interesting program, <a href="https://store.steampowered.com/app/274920/FaceRig/">FaceRig</a>, by <a href="https://facerig.com/about-us/">Holotech Studios</a> that allows an animated character with a face to simulate a human’s face motion by mapping the human’s face features to the animated character.</p>
+
+<!-- Courtesy of embedresponsively.com //-->
+<div class="embed-responsive embed-responsive-16by9">
+
+  <iframe src="https://www.youtube-nocookie.com/embed/ZFy5B8OC3Tw" class="embed-responsive-item" frameborder="0" allowfullscreen=""></iframe>
+
+</div>
+
+<p>As I want the animated character to be updated based on viewers chose. I will need to build an API to allow the update to happen.</p>
+
+<p>I think there are few problems to tackle are:</p>
+<ul>
+  <li>Building face recognition system.</li>
+  <li>Compiling/finding a 3D model of an animated character.</li>
+  <li>Mapping the face recognition system with the 3D model.</li>
+  <li>Enabling the ability to update the 3D model with different animated characters from a script.</li>
+  <li>Building an API to allow the update from different machines on different networks.</li>
+  <li>Building a bot for the connectivity between the program API and Twitch API.</li>
+</ul>
+
+<h2 id="pipeline">Pipeline</h2>
+
+<p>I think the expected pipeline will include the following:</p>
+<ul>
+  <li>Computer Vision System
+    <ul>
+      <li>Face Recognition</li>
+      <li>3D animated character</li>
+    </ul>
+  </li>
+  <li>API</li>
+  <li>Web App</li>
+  <li>Twitch connectivity
+    <ul>
+      <li>Twitch API</li>
+      <li>Nightbot</li>
+    </ul>
+  </li>
+</ul>
+
+<figure class="wm-100" id="img-1">
+    <div class="d-flex justify-content-center">
+        <img src="/assets/images/posts/FaceRig-clone.jpg" class="img-fluid" alt="Expected pipeline" />
+    </div>
+    <figcaption><strong>Figure 1:</strong> Expected pipeline</figcaption>
+</figure>
 
 
 </div>
@@ -153,13 +214,16 @@
 	<p class="mb-0">This page was last edited on <span id="page-date">01 January 1970, at 0:00</span> (UTC).</p>
 	<p>By <a href="http://sudomaze.dev">Mazen Alotaibi</a></p>
 </footer>
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
 <script id="dsq-count-scr" src="//sudomaze.disqus.com/count.js" async></script>
                     </div>
                 </div>
             </div>
         </main>
         
+  
+    
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
   
     
     <script src="/assets/js/index.js"></script>

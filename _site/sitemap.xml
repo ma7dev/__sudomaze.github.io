@@ -4,13 +4,16 @@
 <loc>http://localhost:4000/online-courses/advanced-machine-learning-specialization/introduction-to-deep-learning/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/streams/2020/4-24/</loc>
+<loc>http://localhost:4000/streams/notes/may/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/streams/general/faq/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/streams/general/stream-goals/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/streams/projects/FaceRig-clone/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/documentations/website/README/</loc>
@@ -26,6 +29,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/site/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/cv/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/author/</loc>
@@ -55,5 +61,9 @@
 <url>
 <loc>http://localhost:4000/assets/libraries/pseudocode.js-1.1/samples.html</loc>
 <lastmod>2020-04-23T08:26:59-07:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/pdf/CV.pdf</loc>
+<lastmod>2020-05-05T00:01:34-07:00</lastmod>
 </url>
 </urlset>

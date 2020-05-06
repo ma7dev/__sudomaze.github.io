@@ -29,6 +29,9 @@
     
     
       
+      <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css">
+    
+      
       <link rel="stylesheet" href="/assets/libraries/fontawesome-pro-5.13.0-web/css/all.min.css">
     
       
@@ -45,11 +48,23 @@
     
   
   <script data-ad-client="ca-pub-4747237803381845" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script
+  <!-- <script
     type="text/javascript"
     charset="utf-8"
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-  >
+  > -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  
+  <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
   <script>
@@ -75,13 +90,14 @@
             <li><a href="/notes">Notes</a></li>
             <li><a href="/site">Site</a></li>
             <li><a href="/author">Author</a></li>
+            <li><a href="/cv">CV</a></li>
             <li><a href="/newsletter">Newsletter</a></li>
-            <li><a href="/newsletter-archive">Newsletter Archive</a></li>
-            <li><a href="/random-article">Random Article</a></li>
+            <!-- <li><a href="/newsletter-archive">Newsletter Archive</a></li> -->
+            <!-- <li><a href="/random-article">Random Article</a></li> -->
         </ul>
-        <div id="wm-100" class="text-center">
+        <!-- <div id="wm-100" class="text-center">
             <span class="btn btn-success mt-3 mb-3">Currently <b>accepting new projects</b> for Q3 2020</span>
-        </div>
+        </div> -->
     </div>
 </nav>
 
@@ -144,6 +160,28 @@
     
         
         <div class="col-md-6">
+            <h2>Streams</h2>
+            
+            <ul>
+                
+                    <!-- source: https://maedi.com/code/jekyll-check-if-string-number/-->
+                     <!-- Add the value. -->
+                     <!-- Convert addition to string for comparison. -->
+                    
+                    <li>Projects</li>
+                    
+                    <ul>
+                        
+                        <li><a href="/streams/projects/FaceRig-clone/">FaceRig-clone</a></li>
+                        
+                    </ul>
+                
+            </ul>
+        </div>
+        
+    
+        
+        <div class="col-md-6">
             <h2>Documentations</h2>
             
             <ul>
@@ -198,13 +236,16 @@
 	<p class="mb-0">This page was last edited on <span id="page-date">01 January 1970, at 0:00</span> (UTC).</p>
 	<p>By <a href="http://sudomaze.dev">Mazen Alotaibi</a></p>
 </footer>
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
 <script id="dsq-count-scr" src="//sudomaze.disqus.com/count.js" async></script>
                     </div>
                 </div>
             </div>
         </main>
         
+  
+    
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
   
     
     <script src="/assets/js/index.js"></script>

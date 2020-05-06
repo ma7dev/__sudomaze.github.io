@@ -75,23 +75,6 @@ if(layoutDiscussion){
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   })();
-  // thread:link=https://sudomaze.dev/test/2020/04/23/welcome-to-jekyll.html
-  // forum=sudomaze
-  // api_key=xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo
-//   console.log('3 https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey);
-//   $.ajax({
-//       type: 'GET',
-//       url: 'https://disqus.com/api/3.0/threads/set.json?thread:link='+siteUrl+pageUrl+'&forum='+disqusShortname+'&api_key='+disqusPublicKey,
-//       cache: false,
-//       dataType: 'jsonp',
-//       success: function (result) {
-//         console.log(result);
-//         for (var i in result.response) {
-//             var count = result.response[i].posts;
-//             $('#disqus-comment').html(count);
-//         }
-//       }
-//   });
   
   // nav header
   $("#content-btn").click(function() {
@@ -120,16 +103,15 @@ if(layoutDiscussion){
   });    
 }
 // mailchimp
-window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
-    L.start({
-        "baseUrl":"mc.us19.list-manage.com",
-        "uuid":"decd596a02258ad47cfa3205d",
-        "lid":"d497d3c2c1",
-        "uniqueMethods":true
-    }) 
-})
-// page date
+(function($) {
+    window.fnames = new Array(); 
+    window.ftypes = new Array();
+    fnames[0]='EMAIL';
+    ftypes[0]='email';
+}(jQuery));
+var $mcj = jQuery.noConflict(true);
 
+// page date
 $.getJSON("https://api.github.com/repos/"+githubRepo+"/commits?path=/"+pagePath, { Authorization: "token "+pageAccessToken})
  .done(function(data) {
     var month = new Array();

@@ -29,6 +29,9 @@
     
     
       
+      <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css">
+    
+      
       <link rel="stylesheet" href="/assets/libraries/fontawesome-pro-5.13.0-web/css/all.min.css">
     
       
@@ -45,11 +48,23 @@
     
   
   <script data-ad-client="ca-pub-4747237803381845" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script
+  <!-- <script
     type="text/javascript"
     charset="utf-8"
     src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-  >
+  > -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  
+  <script type="text/javascript"
+      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
   </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
   <script>
@@ -79,13 +94,14 @@
             <li><a href="/notes">Notes</a></li>
             <li><a href="/site">Site</a></li>
             <li><a href="/author">Author</a></li>
+            <li><a href="/cv">CV</a></li>
             <li><a href="/newsletter">Newsletter</a></li>
-            <li><a href="/newsletter-archive">Newsletter Archive</a></li>
-            <li><a href="/random-article">Random Article</a></li>
+            <!-- <li><a href="/newsletter-archive">Newsletter Archive</a></li> -->
+            <!-- <li><a href="/random-article">Random Article</a></li> -->
         </ul>
-        <div id="wm-100" class="text-center">
+        <!-- <div id="wm-100" class="text-center">
             <span class="btn btn-success mt-3 mb-3">Currently <b>accepting new projects</b> for Q3 2020</span>
-        </div>
+        </div> -->
     </div>
 </nav>
 
@@ -131,25 +147,6 @@
   <li><a href="#background">Background</a>
     <ul>
       <li><a href="#current-research">Current Research</a></li>
-    </ul>
-  </li>
-  <li><a href="#curriculum-vitae">Curriculum Vitae</a>
-    <ul>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#licenses--certifications">Licenses &amp; Certifications</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#extracurricular-activities">Extracurricular Activities</a></li>
-      <li><a href="#skills-proficientfamiliar">Skills (Proficient,Familiar)</a>
-        <ul>
-          <li><a href="#data-analysis">Data Analysis:</a></li>
-          <li><a href="#webmobile-development">Web/Mobile Development:</a></li>
-          <li><a href="#parallel-programming">Parallel Programming:</a></li>
-          <li><a href="#programming-languages">Programming Languages:</a></li>
-          <li><a href="#tools">Tools:</a></li>
-          <li><a href="#human-languages">Human Languages:</a></li>
-        </ul>
-      </li>
     </ul>
   </li>
   <li><a href="#uses-this">Uses This</a>
@@ -205,383 +202,6 @@
   <li>Sound analysis.</li>
   <li>Forecasting stock market.</li>
 </ul>
-
-<h2 id="curriculum-vitae">Curriculum Vitae</h2>
-
-<h3 id="education">Education</h3>
-
-<ul>
-  <li><strong>Oregon State University</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 9/2015 - 6/2019</span>
-<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>Corvallis, OR (USA)</sup>
-    <ul>
-      <li>Major: <em>Computer Science Applied in Artificial Intelligence, Bachelor of Science.</em></li>
-      <li>Minor: <em>Actuarial Science, Bachelor of Science.</em></li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="licenses--certifications">Licenses &amp; Certifications</h3>
-
-<ul>
-  <li>
-    <p><strong>Deep Learning</strong> (<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/MLDXX764WNQR">MLDXX764WNQR</a>) <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 1/2020</span></p>
-
-    <ul>
-      <li>
-        <p>Neural Networks and Deep Learning</p>
-      </li>
-      <li>
-        <p>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</p>
-      </li>
-      <li>
-        <p>Structuring Machine Learning Projects</p>
-      </li>
-      <li>
-        <p>Convolutional Neural Networks</p>
-      </li>
-      <li>
-        <p>Sequence Models</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>TensorFlow in Practice</strong> (<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/HBYMWP2UBAFV">HBYMWP2UBAFV</a>) <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 8/2019</span></p>
-
-    <ul>
-      <li>
-        <p>Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</p>
-      </li>
-      <li>
-        <p>Convolutional Neural Networks in TensorFlow</p>
-      </li>
-      <li>
-        <p>Natural Language Processing in TensorFlow</p>
-      </li>
-      <li>
-        <p>Sequences, Time Series and Prediction</p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="experience">Experience</h3>
-
-<ul>
-  <li>
-    <p><strong>Computational Data Scientist</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 10/2019 - 7/2020</span>
-<br /><sup><em>Center for Genome Research and Bio-computing</em></sup>
-<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>Corvallis, OR (USA)</sup></p>
-  </li>
-  <li>
-    <p><strong>Undergraduate Lead GPU Computational Researcher</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 10/2018 - 6/2019</span>
-<br /><sup><em>Center for Genome Research and Bi-ocomputing</em></sup>
-<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>Corvallis, OR (USA)</sup></p>
-
-    <ul>
-      <li>
-        <p>Worked on <strong>Tech Data AI Demo</strong> which featured in the <strong>IBMThink2019 Conference</strong>.</p>
-      </li>
-      <li>
-        <p>Contributed to the development of multiple Deep Learning related projects, including <strong>Owl Sounds Classification</strong>, <strong>Plankton Classification</strong>, and <strong>Seeds Classification</strong>.</p>
-      </li>
-      <li>
-        <p>Assisted fellow undergraduates in understanding the concepts and implementation of machine learning and deep learning systems.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>Lead Photographer</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> Summer 2012</span>
-<br /><sup><em>Saudi Aramco Summer Program</em></sup>
-<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>Dhahran, Eastern Province (Saudi Arabia)</sup></p>
-
-    <ul>
-      <li>
-        <p>Managed a team of 6 photographers to document summer program events.</p>
-      </li>
-      <li>
-        <p>Hosted and organized multiple teaching photography sessions for <strong>more than 70 inspired photographers</strong>.</p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="projects">Projects</h3>
-
-<ul>
-  <li>
-    <p><strong><a href="/projects/ai-demo">Tech Data AI Demo</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 11/2018 - 6/2019</span></p>
-
-    <ul>
-      <li>
-        <p>Developed a website that races multiple hardware by running Deep Learning models developed by the CGRB lab. The project sponsored by <strong>Tech Data</strong>, <strong>IBM</strong>, <strong>NVIDIA</strong>, and <strong>OpenPower</strong>, and the project featured in <strong>IBMThink2019 Conference</strong>.</p>
-      </li>
-      <li>
-        <p>Developed the website using <strong>Bootstrap</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>NGINX</strong>, and <strong>Bash</strong>.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong><a href="/projects/senior-design-project">Senior Design Project</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 10/2018 - 6/2019</span></p>
-
-    <ul>
-      <li>
-        <p>Developed a computer vision system that detects pedestrians’ faces to obfuscate them in real-time. Then applies a tracking system to understand pedestrian and traffic behavior to increase the safety of the traffic for <strong>the City of Portland</strong>.</p>
-      </li>
-      <li>
-        <p>Developed the detection system using <strong>OpenCV</strong> and <strong>PyTorch</strong>, the traffic system using <strong>OpenCV</strong> and <strong>Keras/TensorFlow</strong>, and the web API and application using <strong>Flask</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong><a href="/projects/exploring-robot">Exploring Robot</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 11/2018</span></p>
-
-    <ul>
-      <li>
-        <p>Designed an exploration package utilizing the <strong>gmapping</strong> and <strong>nav bundle</strong> packages to allow a simulated robot to explore an unknown environment using <strong>Python</strong> and <strong>ROS</strong>.</p>
-      </li>
-      <li>
-        <p>Designed an algorithm that generates waypoints to be followed by the robot, and each waypoint is weighted based on <em>Convolutional Filter</em> with some weighted conditions.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong><a href="/projects/image-captioning">Image Captioning</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 7/2018 - 8/2018</span></p>
-
-    <ul>
-      <li>
-        <p>Built a <strong>Convolutional Neural Network</strong>-<strong>Recurrent Neural Network</strong> (CNN-RNN) model to automatically generate captions from images using <strong>NumPy</strong>, <strong>OpenCV</strong>, and <strong>PyTorch</strong>.</p>
-      </li>
-      <li>
-        <p>Trained the Encoder[<em>CNN</em>] for feature extracting and trained the Decoder[<strong>Long Short-Term Memory</strong> (LSTM) cells in <em>RNN</em>] to generate captions.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong><a href="/projects/facial-keypoint-detection">Facial Keypoint Detection</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 6/2018 - 7/2018</span></p>
-
-    <ul>
-      <li>
-        <p>Built a <em>CNN</em> model to predict Facial Keypoints using <strong>NumPy</strong>, <strong>OpenCV</strong>, and <strong>PyTorch</strong>.</p>
-      </li>
-      <li>
-        <p>Trained the <em>CNN</em> model to detect faces and predicts <strong>68 distinguishing keypoints</strong> on that face.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong><a href="/projects/self-driving-RC-car">Self-Driving RC Car</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 5/2018 - 8/2018</span></p>
-
-    <ul>
-      <li>
-        <p>Wrote a web app that streams a live-feed and a controller to control an RC Car’s controller, <strong>Raspberry PI</strong>, using <strong>Node.js</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>.</p>
-      </li>
-      <li>
-        <p>Built the structure of the intelligent agent and machine learning model.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong><a href="/projects/image-classification">Image Classification</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 5/2018</span></p>
-
-    <ul>
-      <li>
-        <p>Wrote a <strong>Multiple Layer Perceptron</strong> (MLP) that classifies images using <strong>NumPy</strong> and <strong>PyTorch</strong>.</p>
-      </li>
-      <li>
-        <p>Trained the <em>MLP</em> model using <strong>CIFAR-10 dataset</strong>.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong><a href="/projects/aces-up-game">Aces Up Game</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 11/2017 - 12/2017</span></p>
-
-    <ul>
-      <li>
-        <p>Wrote a web app with a team using <strong>Java</strong> <em>Ninja framework</em> for back-end,  <strong>JavaScript</strong> for front-end, and <strong>Heroku</strong> and <strong>GitHub</strong> to host the web app.</p>
-      </li>
-      <li>
-        <p>Won the <strong>Best Web Application for Software Engineering I</strong> <em>(CS-361)</em>.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong><a href="/projects/personal-website">Personal Website</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 12/2016</span></p>
-
-    <ul>
-      <li>
-        <p>Wrote a personal website using <strong>Node.js</strong> for back-end and <strong>JavaScript</strong> for front-end.</p>
-      </li>
-      <li>
-        <p>Wrote an <strong>NGINX</strong> script that directs HTTP requests to HTTPS and maps networks.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong><a href="/projects/ai-agent-2d">A.I. for a 2D Grid Game</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 4/2016</span></p>
-
-    <ul>
-      <li>
-        <p>Wrote a 2D grid game, <em>Hunt the Wumpus</em>, with a dynamic grid size using <strong>C++</strong>.</p>
-      </li>
-      <li>
-        <p>Wrote an embedded intelligent agent to solve the game using <em>Probability Distribution Methods</em>.</p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="extracurricular-activities">Extracurricular Activities</h3>
-
-<ul>
-  <li>
-    <p><strong>IBMThink2019 <em>(Conference)</em></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 2/2019</span>
-<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>San Francisco, CA (USA)</sup>
-<br /><sup><em>Presenter at Tech Data Booth</em></sup></p>
-
-    <ul>
-      <li>
-        <p>Invited to <strong>IBM Conference</strong> by <strong>Tech Data</strong> to present Tech Data AI Demo to increase sales.</p>
-      </li>
-      <li>
-        <p>Connected with <strong>more than 100 potential clients</strong> who are interested in using the demo to increase their sales in different regions, such as Brazil, the United Kingdom, and Japan.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>OSU ML/AI Club</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 5/2017 - 6/2019</span>
-<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>Corvallis, OR (USA)</sup>
-<br /><sup><em>Vice-President</em></sup></p>
-
-    <ul>
-      <li>
-        <p>Responsibilities are to present the latest literature into AI, ML, DL, and CV areas biweekly, host learning sessions to solve Kaggle competitions for new learners.</p>
-      </li>
-      <li>
-        <p>Worked on building a Self-Driving RC Car, Kaggle Competitions, and a Breast Cancer project with the group members.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>PyImageConf2018 <em>(Conference)</em></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 8/2018</span>
-<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>San Francisco, CA (USA)</sup>
-<br /><sup><em>Attendee</em></sup></p>
-
-    <ul>
-      <li>
-        <p>Attended a conference that focuses on advanced techniques in Computer Vision and Deep Learning research and their implementations to solve real-world problems.</p>
-      </li>
-      <li>
-        <p>Built a <strong>Faster Regional-Convolution Neural Networks</strong> (Faster R-CNN) from scratch to classify images with higher accuracy than popular networks using <strong>NumPy</strong> and <strong>PyTorch</strong>.</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>DesertHacks <em>(Hackathon)</em></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 2/2017</span>
-<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>Phoenix, AZ (USA)</sup>
-<br /><sup><em>Participant</em></sup></p>
-
-    <ul>
-      <li>
-        <p>Worked with a team to build a web application that analyzes users’ behavior from a list of previous behaviors based on <em>Markov Chain Methods</em>. The app was built using <strong>Node.js</strong> and <strong>Flask</strong> for back-end, <strong>JavaScript</strong> for front-end, <strong>Python</strong> for data analysis, and <strong>SQL</strong> for data saving and pulling.</p>
-      </li>
-      <li>
-        <p>Hosted the web application on <strong>Amazon Web-Services</strong> (AWS).</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p><strong>OSU App Club</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 9/2016 - 11/2017</span>
-<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>Corvallis, OR (USA)</sup>
-<br /><sup><em>Active Member</em></sup></p>
-
-    <ul>
-      <li>
-        <p>Worked to build small projects using new tools with club members.</p>
-      </li>
-      <li>
-        <p>Helped new members in explaining web development technologies and standard practices in development.</p>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="skills-proficientfamiliar">Skills (<span class="btn  btn-sm btn-info">Proficient</span>,<span class="btn  btn-sm btn-primary">Familiar</span>)</h3>
-
-<h4 id="data-analysis"><strong>Data Analysis:</strong></h4>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">NumPy</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">Pandas</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">scikit-learn</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">OpenCV</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">PyTorch</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">TensorFlow</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-primary">R</sup></p>
-
-<h4 id="webmobile-development"><strong>Web/Mobile Development:</strong></h4>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">JavaScript</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">jQuery</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">Node.js</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">PHP</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">React.js</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">React Native</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">Flask</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-primary">NGINX</sup></p>
-
-<h4 id="parallel-programming"><strong>Parallel Programming:</strong></h4>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-primary">CUDA</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-primary">OpenGL</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-primary">OpenCL</sup></p>
-
-<h4 id="programming-languages"><strong>Programming Languages:</strong></h4>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">C</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">C++</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">Python</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">BASH</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-primary">MATLAB</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-primary">Java</sup></p>
-
-<h4 id="tools"><strong>Tools:</strong></h4>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">Git</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">SQL</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">NoSQL</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">LaTeX</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-primary">Docker</sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-primary">ROS</sup></p>
-
-<h4 id="human-languages"><strong>Human Languages:</strong></h4>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">Arabic <em>(Native)</em></sup></p>
-
-<p style="display:inline;"><sup class="btn  btn-sm btn-info">English <em>(Professional Proficiency)</em></sup></p>
 
 <h2 id="uses-this">Uses This</h2>
 
@@ -788,13 +408,16 @@
 	<p class="mb-0">This page was last edited on <span id="page-date">01 January 1970, at 0:00</span> (UTC).</p>
 	<p>By <a href="http://sudomaze.dev">Mazen Alotaibi</a></p>
 </footer>
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
 <script id="dsq-count-scr" src="//sudomaze.disqus.com/count.js" async></script>
                     </div>
                 </div>
             </div>
         </main>
         
+  
+    
+    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
   
     
     <script src="/assets/js/index.js"></script>

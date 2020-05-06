@@ -7,6 +7,7 @@ disqus:
   public_key: "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo"
 
 head_links:
+  - //cdn-images.mailchimp.com/embedcode/classic-10_7.css
   - /assets/libraries/fontawesome-pro-5.13.0-web/css/all.min.css
   - /assets/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css
   - /assets/libraries/katex/katex.min.css
@@ -22,4 +23,5 @@ head_scripts:
 
 
 footer_scripts:
+  - //s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js
   - /assets/js/index.js

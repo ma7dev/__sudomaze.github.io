@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "4/24-26 | Python projects"
-permalink: /streams/2020/4-24/
+title: "May"
+permalink: /streams/notes/may/
 # category: "Streams"
-# tag: "2020"
+# tag: "Notes"
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}
