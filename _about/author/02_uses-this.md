@@ -62,24 +62,24 @@
 * Simple Scripts: [Bash](https://www.gnu.org/software/bash/)
 * Complicated Scripts: [Python](https://www.python.org/)
 
-#### Development
+#### Programs
 
-* Text-editor: [Vim](https://www.vim.org/)
+* Text-editor: [VS Code](https://code.visualstudio.com/) mainly but trying to get used to [Vim](https://www.vim.org/)
 * Music App: [Spotify](https://www.spotify.com/)
 * Terminal: [terminator](https://gnometerminator.blogspot.com/p/introduction.html)
 * Browser: [Chrome](https://www.google.com/chrome/)
 * Data Recorder: [Notion](https://www.notion.so/)
-* Simple Task Manager: [Todoist](https://todoist.com/)
-* Project Ticket Manager: [Trello](https://trello.com)
+* Task Manager (for personal use): [Todoist](https://todoist.com/)
+* Project Manager: [Trello](https://trello.com)
 * Cloud File Storage Service: [Google Drive](https://www.google.com/drive/)
 * Password Manager: [LastPass](https://www.lastpass.com/)
 
-#### Machine Learning, Deep Learning, and Computer Vision
+#### Development
 
-* Machine Learning and Deep Learning Library: [TensorFlow](https://www.tensorflow.org/) and [PyTorch](https://pytorch.org/)
-* Computer Vision Library: [OpenCV](https://opencv.org/)
+* Data Analysis:
+    * Machine Learning: [scikit-learn](https://scikit-learn.org/stable/) for out of the box tools, [TensorFlow](https://www.tensorflow.org/) for scalable projects for deployment, and [PyTorch](https://pytorch.org/) for fun projects
+    * Computer Vision: [OpenCV](https://opencv.org/)
 
-#### Web Development
-
-* Front-end: [jQuery](https://jquery.com/) and [Bootstrap](https://getbootstrap.com/)
-* Back-end: [Node.js](https://nodejs.org/en/) (for completed web applications) [Flask](https://www.palletsprojects.com/p/flask/) (for simple web applications)
+* Web Development
+    * Full-stack: MERN - [MongoDB](https://www.mongodb.com/), [ExpressJS](https://expressjs.com/), [ReactJS](https://reactjs.org/), and [NodeJS](https://nodejs.org/en/)
+    * Others: [EJS](https://ejs.co/), [jQuery](https://jquery.com/), and [Bootstrap](https://getbootstrap.com/), [Flask](https://www.palletsprojects.com/p/flask/)
