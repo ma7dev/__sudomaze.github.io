@@ -1,3 +1,27 @@
+## Test
+
+$$\mathrm{S}=\left\{\left(\begin{array}{c}
+\mathrm{x}_{1} \\
+\mathrm{x}_{2} \\
+\mathrm{x}_{3} \\
+\mathrm{x}_{4}
+\end{array}\right)=\left(\begin{array}{c}
+-9 / 2 \\
+3 \\
+0 \\
+-2
+\end{array}\right)+\left(\begin{array}{c}
+1 / 2 \\
+-1 / 3 \\
+1 \\
+0
+\end{array}\right) \mathrm{x}_{3} | \mathrm{x}_{3} \in \mathbb{R}\right\}
+$$
+
+
+$$\rho\left(w_{i}\right)=\frac{f\left(w_{i}\right)^{j / 4}}{\sum_{j=1}^{m} f\left(w_{j}\right)^{3 / 4}}$$
+
+![image](./Screenshot%20from%202020-06-10%2018-35-19.png)
 ## Week 1 - Linear Models
 
 ### Linear Regression
