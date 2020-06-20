@@ -215,8 +215,3 @@ li p {
     font:14px 
     Helvetica,Arial,sans-serif; 
 }
-
-/* print */
-.no-print {
-    display: none;
-  }
