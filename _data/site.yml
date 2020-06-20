@@ -7,21 +7,18 @@ disqus:
   public_key: "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo"
 
 head_links:
-  - //cdn-images.mailchimp.com/embedcode/classic-10_7.css
-  - /assets/libraries/fontawesome-pro-5.13.0-web/css/all.min.css
   - /assets/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css
   - /assets/libraries/katex/katex.min.css
   - /assets/libraries/pseudocode.js-1.1/pseudocode.css
   - /assets/css/styles.css
+  - /assets/libraries/github/github-calendar.css
 
 head_scripts:
   - /assets/libraries/jquery-3.4.1/jquery-3.4.1.min.js
-  - /assets/libraries/fontawesome-pro-5.13.0-web/js/all.min.js
   - /assets/libraries/bootstrap-4.3.1-dist/js/bootstrap.min.js
   - /assets/libraries/katex/katex.min.js
   - /assets/libraries/pseudocode.js-1.1/pseudocode.js
-
+  - /assets/libraries/github/github-calendar.min.js
 
 footer_scripts:
-  - //s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js
   - /assets/js/index.js

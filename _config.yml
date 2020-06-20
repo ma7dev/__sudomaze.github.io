@@ -1,3 +1,6 @@
+name: sudomaze
+description: cool blog
+url: https://sudomaze.dev
 encoding: "utf-8"
 markdown: kramdown
 highlighter: rouge
@@ -9,7 +12,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
-  - jekyll-feed
   - jekyll-include-cache
 
-include: ['_pages', '_notes', '_about', '_newsletters']
+include: ['_pages', '_notes', '_about', '_newsletters', '_bit-of-bytes']

@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/bit-of-bytes</loc>
+</url>
+<url>
 <loc>http://localhost:4000/online-courses/advanced-machine-learning-specialization/introduction-to-deep-learning/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/streams/notes/may/</loc>
+<loc>http://localhost:4000/projects/FaceRig-clone/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/streams/notes/2020/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/streams/general/faq/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/streams/general/stream-goals/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/streams/projects/FaceRig-clone/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/documentations/website/README/</loc>
@@ -41,12 +44,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/newsletter-archive/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/newsletter/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/notes/</loc>

@@ -1,3 +1,25 @@
+TODO
+    [ ] CI
+    [ ] Print-friendly
+    [ ] dark vs. light mode
+    [ ] New content
+        [ ] main page
+            * Selective projects
+            * Selective Blogs
+        [ ] Projects page
+        [ ] Posts page
+    [ ] README
+    [ ] Licence
+    [ ] How-to use the website
+
+6/19
+    ✔ Improvement to UI/UX @done(20-06-20 05:42)
+        ✔ Remove fontawesome and other js stuff @done(20-06-20 04:55)
+        ✔ Remove Newsletter @done(20-06-20 04:56)
+        ✔ navbar @done(20-06-20 04:55)
+        ✔ include GitHub heatmap @done(20-06-20 05:13)
+        ✔ math rendering @done(20-06-20 04:56)
+        ✔ RSS @done(20-06-20 05:25)
 5/5
     [X] Include description for Newsletter
     [X] Fix LaTeX rendering with single dollar signs

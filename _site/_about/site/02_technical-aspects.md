@@ -14,7 +14,6 @@
 * Pseudocode: [Pseudocode.js](http://www.tatetian.io/pseudocode.js/) and [KaTeX](https://katex.org/)
 * JavaScript: [jQuery](https://jquery.com/)
 * CSS: [Bootstrap](https://getbootstrap.com/)
-* Icons: [Font Awesome](https://fontawesome.com/)
 
 ## Inspirations and Credits
 

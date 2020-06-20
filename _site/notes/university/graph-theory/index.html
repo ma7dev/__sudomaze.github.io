@@ -1,58 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Graph Theory - sudomaze.dev</title>
 <link rel="icon" href="/assets/images/icon.PNG">
 
+
   
-    <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
-    
-    
-      
-      <script src="/assets/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
-    
-      
-      <script src="/assets/libraries/fontawesome-pro-5.13.0-web/js/all.min.js"></script>
-    
-      
-      <script src="/assets/libraries/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-    
-      
-      <script src="/assets/libraries/katex/katex.min.js"></script>
-    
-      
-      <script src="/assets/libraries/pseudocode.js-1.1/pseudocode.js"></script>
-    
   
-    
-    
-      
-      <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css">
-    
-      
-      <link rel="stylesheet" href="/assets/libraries/fontawesome-pro-5.13.0-web/css/all.min.css">
-    
-      
-      <link rel="stylesheet" href="/assets/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
-    
-      
-      <link rel="stylesheet" href="/assets/libraries/katex/katex.min.css">
-    
-      
-      <link rel="stylesheet" href="/assets/libraries/pseudocode.js-1.1/pseudocode.css">
-    
-      
-      <link rel="stylesheet" href="/assets/css/styles.css">
-    
   
-  <script data-ad-client="ca-pub-4747237803381845" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- <script
-    type="text/javascript"
-    charset="utf-8"
-    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-  > -->
+  <script src="/assets/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+  
+  
+  <script src="/assets/libraries/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  
+  
+  <script src="/assets/libraries/katex/katex.min.js"></script>
+  
+  
+  <script src="/assets/libraries/pseudocode.js-1.1/pseudocode.js"></script>
+  
+  
+  <script src="/assets/libraries/github/github-calendar.min.js"></script>
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  
+  
+  <link rel="stylesheet" href="/assets/libraries/katex/katex.min.css">
+  
+  
+  <link rel="stylesheet" href="/assets/libraries/pseudocode.js-1.1/pseudocode.css">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  
+  <link rel="stylesheet" href="/assets/libraries/github/github-calendar.css">
+  
+  
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -61,47 +51,48 @@
       }
     });
   </script>
-  
-  <script type="text/javascript"
-      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+    integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
   <script>
     var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
-        disqusShortname = "sudomaze",
-        siteUrl = "https://sudomaze.dev",
-        pageUrl = "/notes/university/graph-theory/",
-        pageAccessToken = CryptoJS.AES.decrypt("U2FsdGVkX1/8V0sYchUExOfJ31D6hvd6Jpjpcj1NOJSmVR8+MjjIzFQW0bu14sUE4e3lpLGEST3pREgAV3zodg==", "Secret Passphrase").toString(CryptoJS.enc.Utf8),
-        pagePath = "_notes/university/undergrad/graph-theory/00_main.md",
-        githubRepo = "sudomaze/sudomaze.github.io",
-        layoutDiscussion = false;
+      disqusShortname = "sudomaze",
+      siteUrl = "https://sudomaze.dev",
+      pageUrl = "/notes/university/graph-theory/",
+      pageAccessToken = CryptoJS.AES.decrypt("U2FsdGVkX1/8V0sYchUExOfJ31D6hvd6Jpjpcj1NOJSmVR8+MjjIzFQW0bu14sUE4e3lpLGEST3pREgAV3zodg==", "Secret Passphrase").toString(CryptoJS
+        .enc.Utf8),
+      pagePath = "_notes/university/undergrad/graph-theory/00_main.md",
+      githubRepo = "sudomaze/sudomaze.github.io",
+      layoutDiscussion = false;
   </script>
 
-
+  
   <script>
     layoutDiscussion = true;
   </script>
-
+  
 
 </head>
     <body class="layout--post container-fluid">
         <main class="row mt-2">
-            <nav id ="navbar" class="col-md-2">
+            <nav id ="navbar" class="col-md-2 no-print">
         <a href="/" class="d-none d-sm-none d-md-block"><img src="/assets/images/icon.PNG" class="img-fluid" alt="Responsive image"></a>
-        <ul>
-            <li><a href="/">Content</a></li>
-            <li><a href="/notes">Notes</a></li>
-            <li><a href="/site">Site</a></li>
-            <li><a href="/author">Author</a></li>
-            <li><a href="/cv">CV</a></li>
-            <li><a href="/newsletter">Newsletter</a></li>
-            <!-- <li><a href="/newsletter-archive">Newsletter Archive</a></li> -->
-            <!-- <li><a href="/random-article">Random Article</a></li> -->
+        <ul class="row">
+            <li class="col-4 col-md-12"><a href="/">/</a></li>
+            <!-- <li class="col-4 col-md-12"><a href="/posts">/posts</a></li>
+            <li class="col-4 col-md-12"><a href="/projects">/projects</a></li> -->
+            <li class="col-4 col-md-12"><a href="/notes">/notes</a></li>
+            <li class="col-4 col-md-12"><a href="/author">/author</a></li>
+            <li class="col-4 col-md-12"><a href="/cv">/cv</a></li>
+            <!-- <li class="col-4 col-md-12"><a href="/bit-of-bytes">/bit-of-bytes</a></li> -->
+            <li class="col-4 col-md-12"><a href="/site">/site</a></li>
+            <!-- <li><a href="/random-article">/random-article</a></li> -->
         </ul>
-        <!-- <div id="wm-100" class="text-center">
-            <span class="btn btn-success mt-3 mb-3">Currently <b>accepting new projects</b> for Q3 2020</span>
-        </div> -->
+        <div id="wm-100" class="text-center">
+            <span class="btn btn-success mt-3 mb-3">Currently <b>accepting new projects</b> for Q4 2020</span>
+        </div>
     </div>
 </nav>
 
@@ -974,16 +965,12 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
 	<p class="mb-0">This page was last edited on <span id="page-date">01 January 1970, at 0:00</span> (UTC).</p>
 	<p>By <a href="http://sudomaze.dev">Mazen Alotaibi</a></p>
 </footer>
-<!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
 <script id="dsq-count-scr" src="//sudomaze.disqus.com/count.js" async></script>
                     </div>
                 </div>
             </div>
         </main>
         
-  
-    
-    <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
   
     
     <script src="/assets/js/index.js"></script>

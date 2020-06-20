@@ -102,14 +102,6 @@ if(layoutDiscussion){
       $("#page-discussion").css("display", "block");
   });    
 }
-// mailchimp
-(function($) {
-    window.fnames = new Array(); 
-    window.ftypes = new Array();
-    fnames[0]='EMAIL';
-    ftypes[0]='email';
-}(jQuery));
-var $mcj = jQuery.noConflict(true);
 
 // page date
 $.getJSON("https://api.github.com/repos/"+githubRepo+"/commits?path=/"+pagePath, { Authorization: "token "+pageAccessToken})

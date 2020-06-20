@@ -1,47 +1,37 @@
---- 
+---
 layout: default
 title: "Home"
 ---
-<div class="row">
-    <p class="col-md-12">{{ site.data.author.bio }}</p>
-    <div class="col-md-12">
-        <h1 class="col-md-12 text-center"><b>Recent News</b></h1>
-        <ul class="col-md-12">
-            <li>Got admitted for the Master's Program at Oregon State University for Fall 2020 (February 2020).</li>
-        </ul>
-    </div>
-    <!-- Add a placeholder for the Twitch embed -->
-    <!-- <div id="twitch-embed"></div> -->
 
-    <!-- Load the Twitch embed script -->
-    <!-- <script src="https://embed.twitch.tv/embed/v1.js"></script> -->
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <!-- <script type="text/javascript">
-        new Twitch.Embed("twitch-embed", {
-            width: 854,
-            height: 480,
-            layout: "video",
-            channel: "sudomaze"
-        });
-        embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-            var player = embed.getPlayer();
-            player.play();
-        });
-    </script> -->
-      {% if site.posts.size != 0 %}
-    <div class="col-md-6">
-        <h1>Newest</h1>
-        <ul>
-            {% for post in site.posts limit:10 %}
-                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
+<div class="row">
+  <p class="col-md-12">{{ site.data.author.bio }}</p>
+  <div class="col-md-12">
+    <h1 class="col-md-12 text-center"><b>News</b></h1>
+    <ul class="col-md-12">
+      <li>
+        [2020-02-15] Got admitted for the Master's Program at Oregon State University for
+        Fall 2020.
+      </li>
+    </ul>
+  </div>
+  {% if site.posts.size != 0 %}
+  <div class="col-md-12">
+    <h1>Newest</h1>
+    <ul>
+      {% for post in site.posts limit:10 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  <div class="col-md-12">
+    <div class="calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
     </div>
-    <!-- <div class="col-md-6">
-        <h1>Popular</h1>
-        <ul>
-            <li><a href=""></a></li>
-        </ul>
-    </div> -->
-    {% endif %}
+  
+    <script>
+        new GitHubCalendar(".calendar", "sudomaze");
+    </script>
+  </div>
 </div>
