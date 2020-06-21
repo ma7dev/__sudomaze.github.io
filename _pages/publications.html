@@ -1,0 +1,34 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+<p>In this page, you will find a list of notes of my studies and projects. I will try to make this less messy and clear.</p>
+<div class="row">
+    {% assign categories_grouped = site.pages | group_by: 'category' %}
+    {% for category in categories_grouped %}
+        {% if category.name != "" %}
+        <div class="col-md-6">
+            <h2>{{ category.name }}</h2>
+            {% assign tags_grouped = category.items | group_by: 'tag' %}
+            <ul>
+                {% for tag in tags_grouped %}
+                    <!-- source: https://maedi.com/code/jekyll-check-if-string-number/-->
+                    {% assign addition = tag.name | plus: 0 %} <!-- Add the value. -->
+                    {% capture addition %}{{addition}}{% endcapture %} <!-- Convert addition to string for comparison. -->
+                    {% if tag.name == addition %} <!-- Value is a number if addition has no effect. -->
+                    <li>{{ tag.name | to_integer }}</li>
+                    {% else %}
+                    <li>{{ tag.name }}</li>
+                    {% endif %}
+                    <ul>
+                        {% for page in tag.items %}
+                        <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    {% endfor %}
+</div>

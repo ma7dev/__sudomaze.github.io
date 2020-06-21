@@ -3,7 +3,8 @@
 ### Mailing lists
 
 * [Hacker News Digest](https://www.hndigest.com/): Best way to know about the top things in tech every week.
-* [KDnuggets News](https://www.kdnuggets.com/news/subscribe.html): Shares top articles about Data Science.
+* [KDnuggets News](https://www.kdnuggets.com/news/subscribe.html): Shares top articles about Data Science every other day.
+* [The Batch](https://www.deeplearning.ai/thebatch/): Presents the most important AI events and perspective in a curated, easy-to-read report for engineers and business leaders every Wednesday.
 
 ### Podcasts
 
@@ -14,37 +15,49 @@
 
 #### Home Machine
 
-* Hardware
-    * Home Machine Specs:
+* Hardware:
+    * Specs:
         * CPU: 	[AMD Threadripper 2970WX 3 GHz 24-Core Processor](https://pcpartpicker.com/product/LRXnTW/amd-threadripper-2970wx-3-ghz-24-core-processor-yd297xazafwof)
         * CPU Cooler: [Corsair H100i RGB PLATINUM 75 CFM Liquid CPU Cooler](https://pcpartpicker.com/product/JYCD4D/corsair-h100i-rgb-platinum-750-cfm-liquid-cpu-cooler-cw-9060039-ww)
         * Motherboard: [ASRock X399M Taichi Micro ATX sTR4 Motherboard](https://pcpartpicker.com/product/X2kj4D/asrock-x399m-taichi-micro-atx-tr4-motherboard-x399m-taichi)
         * GPU: [NVIDIA 2080Ti (Founder Edition)](https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/)
         * RAM: [Corsair Vengeance RGB Pro 32 GB (4 x 8 GB) DDR4-3200 Memory](https://pcpartpicker.com/product/3yQG3C/corsair-vengeance-rgb-pro-32gb-4-x-8gb-ddr4-3200-memory-cmw32gx4m4c3200c16)
         * Case: [Fractal Design Define R6 USB-C ATX Mid Tower Case](https://pcpartpicker.com/product/z3kj4D/fractal-design-design-define-r6-usb-c-tg-atx-mid-tower-case-fd-ca-def-r6c-bk-tgl)
-    * Headphones: beyerdynamic DT 990 Pro
-    * Keyboard: [CM Storm QuickFire XT with CHERRY MX Brown Switches](https://www.amazon.com/CM-Storm-QuickFire-XT-Mechanical/dp/B00EQV0W02)
+    * Headphones: [Beyerdynamic 459038 DT 990 PRO](https://www.amazon.com/beyerdynamic-Over-Ear-Studio-Headphones-construction/dp/B0011UB9CQ)
+    * Keyboard: [Razer BlackWidow TE Chroma v2 TKL](https://www.amazon.com/Razer-BlackWidow-Tournament-Chroma-Tenkeyless/dp/B0744NVPJ8/ref=sr_1_2?dchild=1&keywords=chroma+2&qid=1592727118&sr=8-2) [CM Storm QuickFire XT with CHERRY MX Brown Switches](https://www.amazon.com/CM-Storm-QuickFire-XT-Mechanical/dp/B00EQV0W02)
     * Mouse: [Logitech G502](https://www.amazon.com/Logitech-Spectrum-Shifting-Personalized-Programmable/dp/B019OB663A)
 
-* Software
+* Software:
     * Operating System: [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
     * Windows Manager: [i3wm](https://i3wm.org/)
 
-#### Mobile Machine (MacBook Pro)
+#### Work Machine (Pending...)
 
-* Hardware
-    * MackBook Pro Specs:
+* Hardware:
+  * Specs: (Pending...)
+  * Headphones: [Sony MDR7506 Professional](https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E)
+  * Keyboard: [CM Storm QuickFire XT with CHERRY MX Brown Switches](https://www.amazon.com/CM-Storm-QuickFire-XT-Mechanical/dp/B00EQV0W02)
+  * Mouse: (Pending...)
+
+* Software:
+  * Operating System: (Pending...)
+
+#### Laptop (MacBook Pro)
+
+* Hardware:
+    * Specs:
         * Model: 15-inch, 2016
         * CPU: i7 @ 2.9GHz
         * GPU: Radeon Pro 460 with 4GB
         * RAM: 16GB
         * Storage: 1TB SSD
     * Headphones: [Sony MDR1000X](https://www.amazon.com/Sony-Cancelling-Bluetooth-Headphone-MDR1000X/dp/B01KHZ4ZYY)
+    * Mouse: [Logitech Performance MX Wireless Mouse](https://www.amazon.com/gp/product/B002HWRJBM/)
 
-#### Note-taking Machine (iPad Pro)
+#### Note-taking Device (iPad Pro)
 
-* Hardware
-    * iPad Pro Specs:
+* Hardware:
+    * Specs:
         * Model: 12.9inch, 3rd Generation (Wi-Fi)
         * Storage: 512GB
     * Pencil: Apple Pencil (2nd Generation)

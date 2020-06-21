@@ -2,7 +2,6 @@
 
 ### 2020
 
-
 1. [ ] [Soccermatics: Mathematical Adventures in the Beautiful Game](https://www.amazon.com/gp/product/1472924142/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) by David Sumpter (in-process)
 1. [ ] [A PhD Is Not Enough!: A Guide to Survival in Science](https://www.amazon.com/gp/product/0465022227/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Peter J. Feibelman (in-process)
 1. [ ] [Mastery](https://www.amazon.com/gp/product/014312417X/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Robert Greene (in-process)
@@ -16,12 +15,13 @@
 1. [ ] [Principles of Data Science: Learn the techniques and math you need to start making sense of your data](https://www.amazon.com/gp/product/1785887912/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Sinan Ozdemir
 
 ### Long-readings
+
 1. [ ] [Gödel, Escher, Bach: An Eternal Golden Braid](https://www.amazon.com/gp/product/0465026567/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Douglas R. Hofstadter
 1. [ ] [Mathematics for the Nonmathematician](https://www.amazon.com/gp/product/0486248232/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Morris Kline
 1. [ ] [The Intelligent Investor: The Definitive Book on Value Investing. A Book of Practical Counsel (Revised Edition)](https://www.amazon.com/gp/product/0060555661/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Benjamin Graham and Jason Zweig 
 
 
-### Prior
+### Previously Read
 
 1. [X] [Can't Hurt Me: Master Your Mind and Defy the Odds](https://www.amazon.com/gp/product/1544512287/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by David Goggins
 1. [X] [Rewire: Change Your Brain to Break Bad Habits, Overcome Addictions, Conquer Self-Destruc tive Behavior](https://www.amazon.com/gp/product/0147516323/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Richard O'Connor

@@ -77,16 +77,16 @@
 </head>
     <body class="layout--post container-fluid">
         <main class="row mt-2">
-            <nav id ="navbar" class="col-md-2">
+            <nav id ="navbar" class="col-md-2 no-print">
         <a href="/" class="d-none d-sm-none d-md-block"><img src="/assets/images/icon.PNG" class="img-fluid" alt="Responsive image"></a>
         <ul class="row">
             <li class="col-4 col-md-12"><a href="/">/</a></li>
             <!-- <li class="col-4 col-md-12"><a href="/posts">/posts</a></li>
-            <li class="col-4 col-md-12"><a href="/projects">/projects</a></li> -->
+            <li class="col-4 col-md-12"><a href="/projects">/projects</a></li>
             <li class="col-4 col-md-12"><a href="/notes">/notes</a></li>
+            <li class="col-4 col-md-12"><a href="/bit-of-bytes">/bit-of-bytes</a></li> -->
             <li class="col-4 col-md-12"><a href="/author">/author</a></li>
             <li class="col-4 col-md-12"><a href="/cv">/cv</a></li>
-            <!-- <li class="col-4 col-md-12"><a href="/bit-of-bytes">/bit-of-bytes</a></li> -->
             <li class="col-4 col-md-12"><a href="/site">/site</a></li>
             <!-- <li><a href="/random-article">/random-article</a></li> -->
         </ul>
@@ -98,7 +98,7 @@
 
             <div class="col-md-10">
                 <div class="row">
-                    <div class="col-md-12 pl-0 pr-0" id="nav">
+                    <div class="col-md-12 pl-0 pr-0 no-print" id="nav">
                         <div class="d-none d-sm-none d-md-block">
     <ul class="pl-0 mb-0" style="float:left">
         <li class="active nav-btn" id="content-btn"><a href="#" title="Show page content">Page</a></li>
@@ -107,6 +107,7 @@
         
     </ul>
     <ul class="pl-0 mb-0" style="float:right">
+        <li class="nav-btn" id="print-page"><a href="#print" title="Print">Print</a></li>
         
         <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/author//index.html" title="View source" target="_blank">View source</a></li>
         
@@ -120,6 +121,7 @@
         
         <li class="col" id="discussion-btn-sm"><a href="#discussion" title="Show Discussions">Discussions</a></li>
         
+        <li class="col" id="print-page"><a href="#print" title="Print">Print</a></li>
         
         <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/author//index.html" title="View source" target="_blank">View source</a></li>
         
@@ -127,7 +129,7 @@
     </ul>
 </div>
                     </div>
-                    <article class="col-md-12">
+                    <article class="col-md-12" id="main-content">
                         <div id="page-content" style="display: block;">
   <h1>Author</h1>
   <aside class="sidebar__right ">
@@ -147,8 +149,9 @@
       <li><a href="#set-up">Set Up</a>
         <ul>
           <li><a href="#home-machine">Home Machine</a></li>
-          <li><a href="#mobile-machine-macbook-pro">Mobile Machine (MacBook Pro)</a></li>
-          <li><a href="#note-taking-machine-ipad-pro">Note-taking Machine (iPad Pro)</a></li>
+          <li><a href="#work-machine-pending">Work Machine (Pending…)</a></li>
+          <li><a href="#laptop-macbook-pro">Laptop (MacBook Pro)</a></li>
+          <li><a href="#note-taking-device-ipad-pro">Note-taking Device (iPad Pro)</a></li>
         </ul>
       </li>
       <li><a href="#my-stack">My Stack</a>
@@ -164,7 +167,7 @@
     <ul>
       <li><a href="#2020">2020</a></li>
       <li><a href="#long-readings">Long-readings</a></li>
-      <li><a href="#prior">Prior</a></li>
+      <li><a href="#previously-read">Previously Read</a></li>
     </ul>
   </li>
   <li><a href="#list-100">List 100</a></li>
@@ -195,7 +198,8 @@
 
 <ul>
   <li><a href="https://www.hndigest.com/">Hacker News Digest</a>: Best way to know about the top things in tech every week.</li>
-  <li><a href="https://www.kdnuggets.com/news/subscribe.html">KDnuggets News</a>: Shares top articles about Data Science.</li>
+  <li><a href="https://www.kdnuggets.com/news/subscribe.html">KDnuggets News</a>: Shares top articles about Data Science every other day.</li>
+  <li><a href="https://www.deeplearning.ai/thebatch/">The Batch</a>: Presents the most important AI events and perspective in a curated, easy-to-read report for engineers and business leaders every Wednesday.</li>
 </ul>
 
 <h3 id="podcasts">Podcasts</h3>
@@ -210,9 +214,9 @@
 <h4 id="home-machine">Home Machine</h4>
 
 <ul>
-  <li>Hardware
+  <li>Hardware:
     <ul>
-      <li>Home Machine Specs:
+      <li>Specs:
         <ul>
           <li>CPU: 	<a href="https://pcpartpicker.com/product/LRXnTW/amd-threadripper-2970wx-3-ghz-24-core-processor-yd297xazafwof">AMD Threadripper 2970WX 3 GHz 24-Core Processor</a></li>
           <li>CPU Cooler: <a href="https://pcpartpicker.com/product/JYCD4D/corsair-h100i-rgb-platinum-750-cfm-liquid-cpu-cooler-cw-9060039-ww">Corsair H100i RGB PLATINUM 75 CFM Liquid CPU Cooler</a></li>
@@ -222,12 +226,12 @@
           <li>Case: <a href="https://pcpartpicker.com/product/z3kj4D/fractal-design-design-define-r6-usb-c-tg-atx-mid-tower-case-fd-ca-def-r6c-bk-tgl">Fractal Design Define R6 USB-C ATX Mid Tower Case</a></li>
         </ul>
       </li>
-      <li>Headphones: beyerdynamic DT 990 Pro</li>
-      <li>Keyboard: <a href="https://www.amazon.com/CM-Storm-QuickFire-XT-Mechanical/dp/B00EQV0W02">CM Storm QuickFire XT with CHERRY MX Brown Switches</a></li>
+      <li>Headphones: <a href="https://www.amazon.com/beyerdynamic-Over-Ear-Studio-Headphones-construction/dp/B0011UB9CQ">Beyerdynamic 459038 DT 990 PRO</a></li>
+      <li>Keyboard: <a href="https://www.amazon.com/Razer-BlackWidow-Tournament-Chroma-Tenkeyless/dp/B0744NVPJ8/ref=sr_1_2?dchild=1&amp;keywords=chroma+2&amp;qid=1592727118&amp;sr=8-2">Razer BlackWidow TE Chroma v2 TKL</a> <a href="https://www.amazon.com/CM-Storm-QuickFire-XT-Mechanical/dp/B00EQV0W02">CM Storm QuickFire XT with CHERRY MX Brown Switches</a></li>
       <li>Mouse: <a href="https://www.amazon.com/Logitech-Spectrum-Shifting-Personalized-Programmable/dp/B019OB663A">Logitech G502</a></li>
     </ul>
   </li>
-  <li>Software
+  <li>Software:
     <ul>
       <li>Operating System: <a href="http://releases.ubuntu.com/18.04/">Ubuntu 18.04</a></li>
       <li>Windows Manager: <a href="https://i3wm.org/">i3wm</a></li>
@@ -235,12 +239,30 @@
   </li>
 </ul>
 
-<h4 id="mobile-machine-macbook-pro">Mobile Machine (MacBook Pro)</h4>
+<h4 id="work-machine-pending">Work Machine (Pending…)</h4>
 
 <ul>
-  <li>Hardware
+  <li>Hardware:
     <ul>
-      <li>MackBook Pro Specs:
+      <li>Specs: (Pending…)</li>
+      <li>Headphones: <a href="https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E">Sony MDR7506 Professional</a></li>
+      <li>Keyboard: <a href="https://www.amazon.com/CM-Storm-QuickFire-XT-Mechanical/dp/B00EQV0W02">CM Storm QuickFire XT with CHERRY MX Brown Switches</a></li>
+      <li>Mouse: (Pending…)</li>
+    </ul>
+  </li>
+  <li>Software:
+    <ul>
+      <li>Operating System: (Pending…)</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="laptop-macbook-pro">Laptop (MacBook Pro)</h4>
+
+<ul>
+  <li>Hardware:
+    <ul>
+      <li>Specs:
         <ul>
           <li>Model: 15-inch, 2016</li>
           <li>CPU: i7 @ 2.9GHz</li>
@@ -250,16 +272,17 @@
         </ul>
       </li>
       <li>Headphones: <a href="https://www.amazon.com/Sony-Cancelling-Bluetooth-Headphone-MDR1000X/dp/B01KHZ4ZYY">Sony MDR1000X</a></li>
+      <li>Mouse: <a href="https://www.amazon.com/gp/product/B002HWRJBM/">Logitech Performance MX Wireless Mouse</a></li>
     </ul>
   </li>
 </ul>
 
-<h4 id="note-taking-machine-ipad-pro">Note-taking Machine (iPad Pro)</h4>
+<h4 id="note-taking-device-ipad-pro">Note-taking Device (iPad Pro)</h4>
 
 <ul>
-  <li>Hardware
+  <li>Hardware:
     <ul>
-      <li>iPad Pro Specs:
+      <li>Specs:
         <ul>
           <li>Model: 12.9inch, 3rd Generation (Wi-Fi)</li>
           <li>Storage: 512GB</li>
@@ -337,13 +360,14 @@
 </ol>
 
 <h3 id="long-readings">Long-readings</h3>
+
 <ol class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="https://www.amazon.com/gp/product/0465026567/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&amp;psc=1">Gödel, Escher, Bach: An Eternal Golden Braid</a> by Douglas R. Hofstadter</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="https://www.amazon.com/gp/product/0486248232/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&amp;psc=1">Mathematics for the Nonmathematician</a> by Morris Kline</li>
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" /><a href="https://www.amazon.com/gp/product/0060555661/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&amp;psc=1">The Intelligent Investor: The Definitive Book on Value Investing. A Book of Practical Counsel (Revised Edition)</a> by Benjamin Graham and Jason Zweig</li>
 </ol>
 
-<h3 id="prior">Prior</h3>
+<h3 id="previously-read">Previously Read</h3>
 
 <ol class="task-list">
   <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" /><a href="https://www.amazon.com/gp/product/1544512287/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&amp;psc=1">Can’t Hurt Me: Master Your Mind and Defy the Odds</a> by David Goggins</li>
@@ -386,8 +410,9 @@
   <div id="disqus_thread"></div>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+
                     </article>
-                    <div class="col-md-12">
+                    <div class="col-md-12 no-print" id="footer-content">
                         <footer>
 	<p class="mb-0">This page was last edited on <span id="page-date">01 January 1970, at 0:00</span> (UTC).</p>
 	<p>By <a href="http://sudomaze.dev">Mazen Alotaibi</a></p>

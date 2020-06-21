@@ -215,3 +215,12 @@ li p {
     font:14px 
     Helvetica,Arial,sans-serif; 
 }
+
+/* print */
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}

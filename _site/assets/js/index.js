@@ -127,3 +127,8 @@ $.getJSON("https://api.github.com/repos/"+githubRepo+"/commits?path=/"+pagePath,
         commitMinutes = commitDate.getUTCMinutes();
     $("#page-date").html(commitDay +" "+ commitMonth +" "+ commitYear +", at "+ commitHours+":"+commitMinutes);
 });
+
+// print page
+$("#print-page").click(function() {
+    window.print();
+});
