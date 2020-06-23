@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  README
-permalink: /README/
+title:  Website Documentation
+permalink: /website-documentation/
 category: "Others"
 tag: ""
 render_with_liquid: true
