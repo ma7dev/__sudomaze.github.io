@@ -63,7 +63,7 @@
       pageUrl = "/author/",
       pageAccessToken = CryptoJS.AES.decrypt("U2FsdGVkX1/8V0sYchUExOfJ31D6hvd6Jpjpcj1NOJSmVR8+MjjIzFQW0bu14sUE4e3lpLGEST3pREgAV3zodg==", "Secret Passphrase").toString(CryptoJS
         .enc.Utf8),
-      pagePath = "_about/author/00_main.md",
+      pagePath = "_notes/personal/author/00_main.md",
       githubRepo = "sudomaze/sudomaze.github.io",
       layoutDiscussion = false;
   </script>
@@ -81,14 +81,9 @@
         <a href="/" class="d-none d-sm-none d-md-block"><img src="/assets/images/icon.PNG" class="img-fluid" alt="Responsive image"></a>
         <ul class="row">
             <li class="col-4 col-md-12"><a href="/">/</a></li>
-            <!-- <li class="col-4 col-md-12"><a href="/posts">/posts</a></li>
-            <li class="col-4 col-md-12"><a href="/projects">/projects</a></li>
-            <li class="col-4 col-md-12"><a href="/notes">/notes</a></li>
-            <li class="col-4 col-md-12"><a href="/bit-of-bytes">/bit-of-bytes</a></li> -->
             <li class="col-4 col-md-12"><a href="/author">/author</a></li>
             <li class="col-4 col-md-12"><a href="/cv">/cv</a></li>
             <li class="col-4 col-md-12"><a href="/site">/site</a></li>
-            <!-- <li><a href="/random-article">/random-article</a></li> -->
         </ul>
         <div id="wm-100" class="text-center">
             <span class="btn btn-success mt-3 mb-3">Currently <b>accepting new projects</b> for Q4 2020</span>
@@ -96,7 +91,7 @@
     </div>
 </nav>
 
-            <div class="col-md-10">
+            <div id="printed-section" class="col-md-10">
                 <div class="row">
                     <div class="col-md-12 pl-0 pr-0 no-print" id="nav">
                         <div class="d-none d-sm-none d-md-block">
@@ -111,7 +106,7 @@
         
         <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/author//index.html" title="View source" target="_blank">View source</a></li>
         
-        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_about/author/00_main.md" title="View history" target="_blank">View history</a></li>
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/personal/author/00_main.md" title="View history" target="_blank">View history</a></li>
     </ul>
 </div>
 
@@ -125,7 +120,7 @@
         
         <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/author//index.html" title="View source" target="_blank">View source</a></li>
         
-        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_about/author/00_main.md" title="View history" target="_blank">View history</a></li>
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/personal/author/00_main.md" title="View history" target="_blank">View history</a></li>
     </ul>
 </div>
                     </div>
@@ -207,6 +202,7 @@
 <ul>
   <li><a href="https://twimlai.com/">This Week in ML and AI</a>: Sam interviews people who are working in industry and academia. Great resource to be aware of what’s happening in the world and how smart people solve them.</li>
   <li><a href="https://lexfridman.com/ai/">Artificial Intelligence with Lex Fridman</a>: Lex interviews people from different background of science and influencers.</li>
+  <li><a href="https://www.youtube.com/channel/UCMLtBahI5DMrt0NPvDSoIRQ">Machine Learning Street Talk</a>: Lex interviews people from different background of science and influencers.</li>
 </ul>
 
 <h3 id="set-up">Set Up</h3>
@@ -218,7 +214,7 @@
     <ul>
       <li>Specs:
         <ul>
-          <li>CPU: 	<a href="https://pcpartpicker.com/product/LRXnTW/amd-threadripper-2970wx-3-ghz-24-core-processor-yd297xazafwof">AMD Threadripper 2970WX 3 GHz 24-Core Processor</a></li>
+          <li>CPU: <a href="https://pcpartpicker.com/product/LRXnTW/amd-threadripper-2970wx-3-ghz-24-core-processor-yd297xazafwof">AMD Threadripper 2970WX 3 GHz 24-Core Processor</a></li>
           <li>CPU Cooler: <a href="https://pcpartpicker.com/product/JYCD4D/corsair-h100i-rgb-platinum-750-cfm-liquid-cpu-cooler-cw-9060039-ww">Corsair H100i RGB PLATINUM 75 CFM Liquid CPU Cooler</a></li>
           <li>Motherboard: <a href="https://pcpartpicker.com/product/X2kj4D/asrock-x399m-taichi-micro-atx-tr4-motherboard-x399m-taichi">ASRock X399M Taichi Micro ATX sTR4 Motherboard</a></li>
           <li>GPU: <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/rtx-2080-ti/">NVIDIA 2080Ti (Founder Edition)</a></li>

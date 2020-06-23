@@ -63,7 +63,7 @@
       pageUrl = "/cv/",
       pageAccessToken = CryptoJS.AES.decrypt("U2FsdGVkX1/8V0sYchUExOfJ31D6hvd6Jpjpcj1NOJSmVR8+MjjIzFQW0bu14sUE4e3lpLGEST3pREgAV3zodg==", "Secret Passphrase").toString(CryptoJS
         .enc.Utf8),
-      pagePath = "_about/cv/00_main.md",
+      pagePath = "_notes/personal/cv/00_main.md",
       githubRepo = "sudomaze/sudomaze.github.io",
       layoutDiscussion = false;
   </script>
@@ -77,14 +77,9 @@
         <a href="/" class="d-none d-sm-none d-md-block"><img src="/assets/images/icon.PNG" class="img-fluid" alt="Responsive image"></a>
         <ul class="row">
             <li class="col-4 col-md-12"><a href="/">/</a></li>
-            <!-- <li class="col-4 col-md-12"><a href="/posts">/posts</a></li>
-            <li class="col-4 col-md-12"><a href="/projects">/projects</a></li>
-            <li class="col-4 col-md-12"><a href="/notes">/notes</a></li>
-            <li class="col-4 col-md-12"><a href="/bit-of-bytes">/bit-of-bytes</a></li> -->
             <li class="col-4 col-md-12"><a href="/author">/author</a></li>
             <li class="col-4 col-md-12"><a href="/cv">/cv</a></li>
             <li class="col-4 col-md-12"><a href="/site">/site</a></li>
-            <!-- <li><a href="/random-article">/random-article</a></li> -->
         </ul>
         <div id="wm-100" class="text-center">
             <span class="btn btn-success mt-3 mb-3">Currently <b>accepting new projects</b> for Q4 2020</span>
@@ -92,7 +87,7 @@
     </div>
 </nav>
 
-            <div class="col-md-10">
+            <div id="printed-section" class="col-md-10">
                 <div class="row">
                     <div class="col-md-12 pl-0 pr-0 no-print" id="nav">
                         <div class="d-none d-sm-none d-md-block">
@@ -105,7 +100,7 @@
         
         <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/cv//index.html" title="View source" target="_blank">View source</a></li>
         
-        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_about/cv/00_main.md" title="View history" target="_blank">View history</a></li>
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/personal/cv/00_main.md" title="View history" target="_blank">View history</a></li>
     </ul>
 </div>
 
@@ -117,7 +112,7 @@
         
         <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/cv//index.html" title="View source" target="_blank">View source</a></li>
         
-        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_about/cv/00_main.md" title="View history" target="_blank">View history</a></li>
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/personal/cv/00_main.md" title="View history" target="_blank">View history</a></li>
     </ul>
 </div>
                     </div>
@@ -128,14 +123,232 @@
 <h2 id="education">Education</h2>
 
 <ul>
-  <li><strong>Oregon State University</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 9/2015 - 6/2019</span>
-<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>Corvallis, OR (USA)</sup>
+  <li>
+    <p><strong>Oregon State University</strong> <button data-toggle="modal" data-target="#showCourses-1" class="btn btn-primary btn-sm pb-0 pt-0" type="button">Show Courses</button> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 9/2020 - Present (6/2022)</span>
+<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>Corvallis, OR (USA)</sup></p>
+
     <ul>
-      <li>Major: <em>Computer Science Applied in Artificial Intelligence, Bachelor of Science.</em></li>
-      <li>Minor: <em>Actuarial Science, Bachelor of Science.</em></li>
+      <li>Major: <em>Computer Science Applied in Artificial Intelligence, Masters of Science.</em></li>
     </ul>
   </li>
 </ul>
+
+<div class="modal fade" id="showCourses-1" tabindex="-1" role="dialog" aria-labelledby="showCoursesTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="showCoursesTitle">List of Courses</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        
+            <div class="col-md-12 row">
+                <h4 class="col-md-12 text-center">Computer Science and Related CS Courses</h4>
+                <div class="col-md-12">
+                    <ul class="row">
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Greedy algorithms, divide and conquer, dynamic programming, network flow, data structures.">ALGORITHMS AND DATA STRUCTURES (CS 515)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Turing machines, decidability, NP-completeness, complexity classes, randomized computation, relativization, circuit complexity, interactive proof systems, lower bounds, cryptography.">THEORY OF COMPUTATION (CS 517)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Intelligent agents. Problem-solving as heuristic search. Adversarial search. Constraint satisfaction methods; Arc-consistency. Knowledge representation and reasoning. Propositional logic. Reasoning with propositional logic: algorithms for satisfiability. First-order logic. Proof theory, model theory, resolution refutation, forward and backward chaining, representing events and actions.">ARTIFICIAL INTELLIGENCE (CS 531)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Representations of agents, execution architectures. Planning: non-linear planning, graphplan, SATplan. Scheduling and resource management. Probabilistic agents. Dynamic belief networks. Dynamic programming (value iteration and policy iteration). Reinforcement learning: Prioritized sweeping, Q learning, value function approximation and SARSA (lamda), policy gradient methods.">INTELLIGENT AGENTS AND DECISION MAKING (CS 533)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Continuous representations. Bias-variance tradeoff. Computational learning theory. Gaussian probabilistic models. Linear discriminants. Support vector machines. Neural networks. Ensemble methods. Feature extraction and dimensionality reduction methods. Factor analysis. Principle component analysis. Independent component analysis. Cost-sensitive learning.">MACHINE LEARNING (CS 534)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="An introduction to the concepts and algorithms in deep learning; basic feedforward neural networks, convolutional neural networks, recurrent neural networks including long short-term memory models, deep belief nets, autoencoders and deep networks applications in computer vision, natural language processing and reinforcement learning.">DEEP LEARNING (CS 535)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Representation of probabilistic graphical models, both directed (Bayesian networks) and undirected (Markov networks). Exact and approximate inference techniques. Parameter and structure learning from data.">PROBABILISTIC GRAPHICAL MODELS (CS 536)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="An introduction to low-level computer vision and visual geometry. Topics of interest include the following: detection of interest points and edges, matching points and edges, color models, projective geometry, camera calibration, epipolar geometry, homography, image stitching, and multitarget tracking.">COMPUTER VISION I (CS 537)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Advanced topics in artificial intelligence. Typical topics include machine learning for sequential and spatial data, knowledge representation and inference, probabilistic modeling of complex systems, data mining and information extraction.">ST/ARTIFICIAL INTELLIGENCE: ST/ DATA VISUALIZATION FOR ML (CS 539)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Advanced topics in graphics, animation, and vision. Topics include distribution ray tracing, global-illumination, radiosity, image-based modeling and rendering, vision-assisted image and video editing, 3-D vision, 3-D virtual environments, 3-D interaction, control for physical simulation, motion graphs, computational geometry, etc.">TOPICS IN GRAPHICS AND VISION: ST/ DIGITAL IMAGE PROCESSING (CS 559)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title=""> Matrix Analysis for SP and ML (ECE 599)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="">SPECIAL TOPICS: ST/ NONLINEAR OPTIMIZATION (ECE 599)</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="col-md-12 row">
+                <h4 class="col-md-12 text-center">Mathematics and Statistics</h4>
+                <div class="col-md-12">
+                    <ul class="row">
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Introduction to algebraic abstraction, with an emphasis on structures and logical communication by way of proofs. Material includes an introduction to groups, rings and fields. Emphasis is on symmetry groups, the integers as a ring, and polynomial rings; selected applications. Generalizing from examples to mathematical statements, reading proofs, and both creating and editing proofs.">INTRODUCTION TO MODERN ALGEBRA (MTH 343)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Discrete and continuous mathematical models and methods for analysis, including linear analysis, equilibrium and minimum principles, calculus of variations, principal component analysis and orthogonal expansions, asymptotic and Fourier analysis, least squares, constrained and unconstrained optimization, inverse problems, and Monte Carlo techniques. Particular models and methods covered may vary annually.">MODELS AND METHODS OF APPLIED MATHEMATICS (MTH 520)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Curves and surfaces in Euclidean space; geodesics; curvature; introduction to tensor algebra and differential forms; selected applications.">INTRODUCTION TO DIFFERENTIAL GEOMETRY (MTH 534)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Topological vector spaces, generalized functions, operator theory. Normally offered alternate years.">FUNCTIONAL ANALYSIS (MTH 614)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Distributions of functions of random variables, joint and conditional distributions, sampling distributions, convergence concepts, order statistics.">THEORY OF STATISTICS (ST 561)</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ul>
+  <li>
+    <p><strong>Oregon State University</strong> <button data-toggle="modal" data-target="#showCourses-2" class="btn btn-primary btn-sm pb-0 pt-0" type="button">Show Courses</button> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 9/2015 - 6/2019</span>
+<br /><sup><i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>Corvallis, OR (USA)</sup></p>
+
+    <ul>
+      <li>
+        <p>Major: <em>Computer Science Applied in Artificial Intelligence, Bachelor of Science.</em></p>
+      </li>
+      <li>
+        <p>Minor: <em>Actuarial Science, Bachelor of Science.</em></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="modal fade" id="showCourses-2" tabindex="-1" role="dialog" aria-labelledby="showCoursesTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="showCoursesTitle">List of Courses</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+        
+            <div class="col-md-12 row">
+                <h4 class="col-md-12 text-center">Computer Science and Related CS Courses</h4>
+                <div class="col-md-12">
+                    <ul class="row">
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Overview of fundamental concepts of computer science. Introduction to problem solving, software engineering, and object-oriented programming. Includes algorithm design and program development.">Computer Science I (CS 161)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Basic data structures. Computer programming techniques and application of software engineering principles. Introduction to analysis of programs.">Computer Science II (CS 162)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Abstract data types, dynamic arrays, linked lists, trees and graphs, binary search trees, hash tables, storage management, complexity analysis of data structures.">Data Structures (CS 261)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Introduction to functional organization and operation of digital computers. Coverage of assembly language; addressing, stacks, argument passing, arithmetic operations, decisions, macros, modularization, linkers and debuggers.">Computer Architecture and Assembly Language (CS 271)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="How to design and implement a multi-tier application using web technologies: Creation of extensive custom client- and server-side code, consistent with achieving a high-quality software architecture.">Web Development (CS 290)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Survey of models of computation including finite automata, formal grammars, and Turing machines.">Theory of Computation (CS 321)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Recurrence relations, combinatorics, recursive algorithms, proofs of correctness.">Analysis of Algorithms (CS 325)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Fundamental concepts in artificial intelligence using the unifying theme of an intelligent agent. Topics include agent architectures, search, games, logic and reasoning, and Bayesian networks.">Artificial Intelligence (CS 331)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Design and implementation of relational databases, including data modeling with ER or UML, diagrams, relational schema, SQL queries, relational algebra, user interfaces, and administration.">Databases (CS 340)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Introduction to operating systems using UNIX as the case study. System calls and utilities, fundamentals of processes and interprocess communication.">Operating Systems I (CS 344)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Basic principles of usability engineering methods for the design and evaluation of software systems. Includes the study of human-machine interactions, user interface characteristics and design strategies, software evaluation methods, and related guidelines and standards.">Usability Engineering (CS 352)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Introduction to the 'front end' of the software engineering lifecycle; requirements analysis and specification; design techniques; project management.">Software Engineering I (CS 361)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Introduction to the 'back end' of the software engineering lifecycle implementation; verification and validation; debugging; maintenance.">Software Engineering II (CS 362)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Computer network principles, fundamental networking concepts, packet-switching and circuit switching, TCP/IP protocol layers, reliable data transfer, congestion control, flow control, packet forwarding and routing, MAC addressing, multiple access techniques.">Computer Networks (CS 372)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="An introduction to the concepts found in a variety of programming languages. Programming languages as tools for problem solving. A brief introduction to languages from a number of different paradigms.">Programming Language Fundamentals (CS 381)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="In-depth exploration of the social, psychological, political, and ethical issues surrounding the computer industry and the evolving information society.">Social and Ethical Issues in Computer Science (CS 391)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Directed and undirected graphs; paths, circuits, trees, coloring, planar graphs, partitioning; computer representation of graphs and graph algorithms; applications in software complexity metrics, program testing, and compiling.">Graph Theory with Applications to Computer Science (CS 420)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Introduction to machine learning and data mining algorithms (supervised learning, unsupervised learning, and reinforcement learning) tools that are widely employed in industrial and research settings.">Machine Learning and Data Mining (CS 434)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Principles of computer operating systems: concurrent processes, memory management, job scheduling, multiprocessing, file systems, performance evaluation, and networking.">Operating Systems II (CS 444)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Utilize software engineering methodology in a team environment to develop a real-world application. Teams will be responsible for all phases of software development, including project planning, requirements analysis, design, coding, testing, configuration management, quality assurance, documentation, and delivery. Three-term sequence required. This course fulfills the WIC requirement for computer science majors.">Senior Software Engineering Project I (CS 461)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Utilize software engineering methodology in a team environment to develop a real-world application. Teams will be responsible for all phases of software development, including project planning, requirements analysis, design, coding, testing, configuration management, quality assurance, documentation, and delivery. Three-term sequence required.">Senior Software Engineering Project II (CS 462)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Utilize software engineering methodology in a team environment to develop a real-world application. Teams will be responsible for all phases of software development, including project planning, requirements analysis, design, coding, testing, configuration management, quality assurance, documentation, and delivery.">Senior Software Engineering Project III (CS 463)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Theoretical and practical survey of parallel programming, including a discussion of parallel architectures, parallel programming paradigms, and parallel algorithms. Programming one or more parallel computers in a higher-level parallel language.">Parallel Programming (CS 475)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Introduction to the electrical and computer engineering professional practice. Covers the foundations of engineering problem solving and other skills necessary for success. Students will be taught engineering practice through hands-on approaches. Recommended for electrical and computer engineering majors, and for those interested in engineering as a profession.">Introduction to Electrical and Computer Engineering: Tools (ECE 111)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Basic electrical and computer engineering concepts, problem solving and hands-on laboratory project. Topics include electronic circuit and device models, digital logic, circuit analysis, and simulation tools.">Introduction to Electrical and Computer Engineering: Concepts (ECE 112)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="A first course in digital logic design. Data types and representations, Boolean algebra, state machines, simplification of switching expressions, and introductory computer arithmetic.">Digital Logic Design (ECE 271)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="This laboratory course accompanies ECE 271, Digital Logic Design. This also illustrates topics covered in the lectures of ECE 271 using computer-aided design, verification tools, and prototyping hardware.">Digital Logic Design Laboratory (ECE 272)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Foundations of probabilistic reasoning for robotics. Topics include state estimation, robot motion, perception, localization and decision making under uncertainty.">Intelligent Robots (ROB 456)</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="col-md-12 row">
+                <h4 class="col-md-12 text-center">Mathematics and Statistics</h4>
+                <div class="col-md-12">
+                    <ul class="row">
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Elementary logic and set theory, functions, direct proof techniques, contradiction and contraposition, mathematical induction and recursion, elementary combinatorics, basic graph theory, minimal spanning trees.">Discrete Mathematics (MTH 231)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Differential calculus for engineers and scientists. Rates of change: the derivative, velocity, and acceleration. The algebraic rules of differential calculus and derivatives of polynomial, rational, and trigonometric functions. Maximum-minimum problems, curve sketching, and other applications. Antiderivatives and simple motion problems.">Differential Calculus (MTH 251)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Definite integrals, elementary applications to area, force, and work. Integral tables and basic techniques of integration, calculus of logarithmic and exponential functions, polar coordinates, applications to areas, volumes, force, work, and growth and decay problems.">Integral Calculus (MTH 252)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Indeterminate forms. Improper integrals. Sequences and series, especially Taylor's formula and power series. Applications to numerical estimation with error analysis. Series with complex terms and the Euler identities.">Infinite Series and Sequences (MTH 253)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Vectors, vector functions, and curves in two and three dimensions. Surfaces, partial derivatives, gradients, and directional derivatives. Multiple integrals in rectangular, polar, cylindrical, and spherical coordinates. Physical and geometric applications.">Vector Calculus I (MTH 254)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Introduction to matrix algebra, determinants, systematic solution to linear systems, and eigenvalue problems. Convergence and divergence of series with emphasis on power series, Taylor series expansions, convergence tests for power series, and error estimates for truncated series used in practical approximations.">Matric and Power Series Methods (MTH 306)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Matrix algebra, determinants, systems of linear equations, subspaces, an introductory study of eigenvalues and eigenvectors">Linear Algebra I (MTH 341)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Introduction to the computation of approximate solutions to mathematical problems that cannot be solved by hand: analysis of errors; rootfinding for nonlinear equations in one variable; interpolation of functions; numerical integration.">Numerical Analysis (MTH 351)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Probability problem solving using concepts developed in calculus. Topics include probability models, discrete and continuous random variables, expectation and variance, the law of large numbers, and the central limit theorem.">Probability (MTH 361)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Probability, common probability distributions, sampling distributions, estimation, hypothesis testing, control charts, regression analysis, experimental design.">Statistics for Engineers (ST 314)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Multiple linear regression, including model checking, dummy variables, using regression to fit analysis of variance models, analysis of covariance, variable selection methods.">Mathematical Statistics (ST 421)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Development of stochastic models commonly arising in statistics and operations research, such as Poisson processes, birth-and-death processes, discrete-time and continuous-time Markov chains, renewal and Markov renewal processes. Analysis of stochastic models by simulation and other computational techniques.">Applied Stochastic Models (ST 443)</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="col-md-12 row">
+                <h4 class="col-md-12 text-center">Others</h4>
+                <div class="col-md-12">
+                    <ul class="row">
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="An introduction to microeconomic principles including the study of price theory, economic scarcity, consumer behavior, production costs, the theory of the firm, market structure, and income distribution. Other selected topics may include market failure, international economics, and public finance.">Microeconomics (ECON 201)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Designed to help students develop an understanding of basic language structures and to acquire the ability to use them appropriately in a variety of practical, everyday social contexts. Primary focus is on verbal and non-verbal communication skills.">First-year Japanese (JPN 111)</li>
+                    
+                        <li class="col-md-6 pl-0 pr-3" data-toggle="tooltip" data-placement="top" title="Continued practice in writing with an emphasis on the rhetorical and critical thinking demands of writers in scientific and technological fields.">Technical Writing (WR 327)</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <h2 id="licenses--certifications">Licenses &amp; Certifications</h2>
 
@@ -226,7 +439,17 @@
 
 <ul>
   <li>
-    <p><strong><a href="/projects/ai-demo">Tech Data AI Demo</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 11/2018 - 6/2019</span></p>
+    <p><strong><a href="/notes/replaceme">ReplaceMe</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 6/2020 - Present</span></p>
+
+    <p><br /></p>
+  </li>
+  <li>
+    <p><strong>Labeling Tool</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 11/2019 - 6/2020</span></p>
+
+    <p><br /></p>
+  </li>
+  <li>
+    <p><strong>Tech Data AI Demo</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 11/2018 - 6/2019</span></p>
 
     <ul>
       <li>
@@ -236,9 +459,11 @@
         <p>Developed the website using <strong>Bootstrap</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>NGINX</strong>, and <strong>Bash</strong>.</p>
       </li>
     </ul>
+
+    <p><br /></p>
   </li>
   <li>
-    <p><strong><a href="/projects/senior-design-project">Senior Design Project</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 10/2018 - 6/2019</span></p>
+    <p><strong>Senior Design Project</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 10/2018 - 6/2019</span></p>
 
     <ul>
       <li>
@@ -248,9 +473,11 @@
         <p>Developed the detection system using <strong>OpenCV</strong> and <strong>PyTorch</strong>, the traffic system using <strong>OpenCV</strong> and <strong>Keras/TensorFlow</strong>, and the web API and application using <strong>Flask</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>.</p>
       </li>
     </ul>
+
+    <p><br /></p>
   </li>
   <li>
-    <p><strong><a href="/projects/exploring-robot">Exploring Robot</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 11/2018</span></p>
+    <p><strong><a href="/notes/exploring-robot">Exploring Robot</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 11/2018</span></p>
 
     <ul>
       <li>
@@ -260,9 +487,11 @@
         <p>Designed an algorithm that generates waypoints to be followed by the robot, and each waypoint is weighted based on <em>Convolutional Filter</em> with some weighted conditions.</p>
       </li>
     </ul>
+
+    <p><br /></p>
   </li>
   <li>
-    <p><strong><a href="/projects/image-captioning">Image Captioning</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 7/2018 - 8/2018</span></p>
+    <p><strong>Image Captioning</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 7/2018 - 8/2018</span></p>
 
     <ul>
       <li>
@@ -272,9 +501,11 @@
         <p>Trained the Encoder[<em>CNN</em>] for feature extracting and trained the Decoder[<strong>Long Short-Term Memory</strong> (LSTM) cells in <em>RNN</em>] to generate captions.</p>
       </li>
     </ul>
+
+    <p><br /></p>
   </li>
   <li>
-    <p><strong><a href="/projects/facial-keypoint-detection">Facial Keypoint Detection</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 6/2018 - 7/2018</span></p>
+    <p><strong>Facial Keypoint Detection</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 6/2018 - 7/2018</span></p>
 
     <ul>
       <li>
@@ -284,9 +515,11 @@
         <p>Trained the <em>CNN</em> model to detect faces and predicts <strong>68 distinguishing keypoints</strong> on that face.</p>
       </li>
     </ul>
+
+    <p><br /></p>
   </li>
   <li>
-    <p><strong><a href="/projects/self-driving-RC-car">Self-Driving RC Car</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 5/2018 - 8/2018</span></p>
+    <p><strong>Self-Driving RC Car</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 5/2018 - 8/2018</span></p>
 
     <ul>
       <li>
@@ -296,9 +529,11 @@
         <p>Built the structure of the intelligent agent and machine learning model.</p>
       </li>
     </ul>
+
+    <p><br /></p>
   </li>
   <li>
-    <p><strong><a href="/projects/image-classification">Image Classification</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 5/2018</span></p>
+    <p><strong>Image Classification</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 5/2018</span></p>
 
     <ul>
       <li>
@@ -308,9 +543,11 @@
         <p>Trained the <em>MLP</em> model using <strong>CIFAR-10 dataset</strong>.</p>
       </li>
     </ul>
+
+    <p><br /></p>
   </li>
   <li>
-    <p><strong><a href="/projects/aces-up-game">Aces Up Game</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 11/2017 - 12/2017</span></p>
+    <p><strong>Aces Up Game</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 11/2017 - 12/2017</span></p>
 
     <ul>
       <li>
@@ -320,9 +557,11 @@
         <p>Won the <strong>Best Web Application for Software Engineering I</strong> <em>(CS-361)</em>.</p>
       </li>
     </ul>
+
+    <p><br /></p>
   </li>
   <li>
-    <p><strong><a href="/projects/personal-website">Personal Website</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 12/2016</span></p>
+    <p><strong>Personal Website</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 12/2016</span></p>
 
     <ul>
       <li>
@@ -332,9 +571,11 @@
         <p>Wrote an <strong>NGINX</strong> script that directs HTTP requests to HTTPS and maps networks.</p>
       </li>
     </ul>
+
+    <p><br /></p>
   </li>
   <li>
-    <p><strong><a href="/projects/ai-agent-2d">A.I. for a 2D Grid Game</a></strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 4/2016</span></p>
+    <p><strong>A.I. for a 2D Grid Game</strong> <span class="float-right btn  btn-sm btn-danger"><i class="fa fa-calendar"></i> 4/2016</span></p>
 
     <ul>
       <li>
@@ -344,6 +585,8 @@
         <p>Wrote an embedded intelligent agent to solve the game using <em>Probability Distribution Methods</em>.</p>
       </li>
     </ul>
+
+    <p><br /></p>
   </li>
 </ul>
 

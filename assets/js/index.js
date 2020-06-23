@@ -132,3 +132,8 @@ $.getJSON("https://api.github.com/repos/"+githubRepo+"/commits?path=/"+pagePath,
 $("#print-page").click(function() {
     window.print();
 });
+
+// // show courses
+// $("#show-courses").click(function(){
+
+// });

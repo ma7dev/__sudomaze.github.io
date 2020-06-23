@@ -4,7 +4,7 @@
     <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} container-fluid">
         <main class="row mt-2">
             {% include header.html %}
-            <div class="col-md-10">
+            <div id="printed-section" class="col-md-10">
                 <div class="row">
                     <div class="col-md-12 pl-0 pr-0 no-print" id="nav">
                         {% include nav.html %}

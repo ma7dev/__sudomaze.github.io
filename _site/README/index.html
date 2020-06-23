@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>README - sudomaze.dev</title>
+<link rel="icon" href="/assets/images/icon.PNG">
+
+
+  
+  
+  
+  <script src="/assets/libraries/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+  
+  
+  <script src="/assets/libraries/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  
+  
+  <script src="/assets/libraries/katex/katex.min.js"></script>
+  
+  
+  <script src="/assets/libraries/pseudocode.js-1.1/pseudocode.js"></script>
+  
+  
+  <script src="/assets/libraries/github/github-calendar.min.js"></script>
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/assets/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  
+  
+  <link rel="stylesheet" href="/assets/libraries/katex/katex.min.css">
+  
+  
+  <link rel="stylesheet" href="/assets/libraries/pseudocode.js-1.1/pseudocode.css">
+  
+  
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  
+  
+  <link rel="stylesheet" href="/assets/libraries/github/github-calendar.css">
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+    integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+  <script>
+    var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
+      disqusShortname = "sudomaze",
+      siteUrl = "https://sudomaze.dev",
+      pageUrl = "/README/",
+      pageAccessToken = CryptoJS.AES.decrypt("U2FsdGVkX1/8V0sYchUExOfJ31D6hvd6Jpjpcj1NOJSmVR8+MjjIzFQW0bu14sUE4e3lpLGEST3pREgAV3zodg==", "Secret Passphrase").toString(CryptoJS
+        .enc.Utf8),
+      pagePath = "_notes/others/README/00_main.md",
+      githubRepo = "sudomaze/sudomaze.github.io",
+      layoutDiscussion = false;
+  </script>
+
+  
+  <script>
+    layoutDiscussion = true;
+  </script>
+  
+
+</head>
+    <body class="layout--post container-fluid">
+        <main class="row mt-2">
+            <nav id ="navbar" class="col-md-2 no-print">
+        <a href="/" class="d-none d-sm-none d-md-block"><img src="/assets/images/icon.PNG" class="img-fluid" alt="Responsive image"></a>
+        <ul class="row">
+            <li class="col-4 col-md-12"><a href="/">/</a></li>
+            <li class="col-4 col-md-12"><a href="/author">/author</a></li>
+            <li class="col-4 col-md-12"><a href="/cv">/cv</a></li>
+            <li class="col-4 col-md-12"><a href="/site">/site</a></li>
+        </ul>
+        <div id="wm-100" class="text-center">
+            <span class="btn btn-success mt-3 mb-3">Currently <b>accepting new projects</b> for Q4 2020</span>
+        </div>
+    </div>
+</nav>
+
+            <div id="printed-section" class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12 pl-0 pr-0 no-print" id="nav">
+                        <div class="d-none d-sm-none d-md-block">
+    <ul class="pl-0 mb-0" style="float:left">
+        <li class="active nav-btn" id="content-btn"><a href="#" title="Show page content">Page</a></li>
+        
+        <li class="nav-btn" id="discussion-btn"><a href="#discussion" title="Show Discussions">Discussions (<a href="#disqus_thread">0 Comments</a>)</a></li>
+        
+    </ul>
+    <ul class="pl-0 mb-0" style="float:right">
+        <li class="nav-btn" id="print-page"><a href="#print" title="Print">Print</a></li>
+        
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/README//index.html" title="View source" target="_blank">View source</a></li>
+        
+        <li class="nav-btn"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/others/README/00_main.md" title="View history" target="_blank">View history</a></li>
+    </ul>
+</div>
+
+<div class="d-block d-sm-none">
+    <ul class="row pl-0 mb-0">
+        <li class="active col" id="content-btn-sm"><a href="#" title="Show page content">Page</a></li>
+        
+        <li class="col" id="discussion-btn-sm"><a href="#discussion" title="Show Discussions">Discussions</a></li>
+        
+        <li class="col" id="print-page"><a href="#print" title="Print">Print</a></li>
+        
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site/README//index.html" title="View source" target="_blank">View source</a></li>
+        
+        <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/commits/master/_notes/others/README/00_main.md" title="View history" target="_blank">View history</a></li>
+    </ul>
+</div>
+                    </div>
+                    <article class="col-md-12" id="main-content">
+                        <div id="page-content" style="display: block;">
+  <h1>README</h1>
+  <aside class="sidebar__right ">
+    <nav class="toc">
+        <header><h4 class="nav__title text-center"> Table of Content</h4></header>
+        <ul class="toc__menu">
+  <li><a href="#alert">Alert</a>
+    <ul>
+      <li><a href="#description">Description</a></li>
+      <li><a href="#example">Example</a></li>
+      <li><a href="#output">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="#code-block">Code Block</a>
+    <ul>
+      <li><a href="#description-1">Description</a></li>
+      <li><a href="#example-1">Example</a></li>
+      <li><a href="#output-1">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="#footnotes">Footnotes</a>
+    <ul>
+      <li><a href="#description-2">Description</a></li>
+      <li><a href="#example-2">Example</a></li>
+      <li><a href="#output-2">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="#image">Image</a>
+    <ul>
+      <li><a href="#description-3">Description</a></li>
+      <li><a href="#example-3">Example</a></li>
+      <li><a href="#output-3">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="#math-equation">Math Equation</a>
+    <ul>
+      <li><a href="#description-4">Description</a></li>
+      <li><a href="#example-4">Example</a></li>
+      <li><a href="#output-4">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="#pseudocode">Pseudocode</a>
+    <ul>
+      <li><a href="#description-5">Description</a></li>
+      <li><a href="#example-5">Example</a></li>
+      <li><a href="#output-5">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="#quote">Quote</a>
+    <ul>
+      <li><a href="#description-6">Description</a></li>
+      <li><a href="#example-6">Example</a></li>
+      <li><a href="#output-6">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="#referencing">Referencing</a>
+    <ul>
+      <li><a href="#description-7">Description</a></li>
+      <li><a href="#example-7">Example</a></li>
+      <li><a href="#output-7">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="#table">Table</a>
+    <ul>
+      <li><a href="#description-8">Description</a></li>
+      <li><a href="#example-8">Example</a></li>
+      <li><a href="#output-8">Output</a></li>
+    </ul>
+  </li>
+  <li><a href="#video">Video</a>
+    <ul>
+      <li><a href="#description-9">Description</a></li>
+      <li><a href="#example-9">Example</a></li>
+      <li><a href="#output-9">Output</a></li>
+    </ul>
+  </li>
+</ul>
+
+    </nav>
+  </aside>
+  
+<h2 id="alert">Alert</h2>
+
+<h3 id="description">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/alert.html type="{{ TYPE }}" content="{{ NOTIFICATION }}" %}</code></pre></figure>
+
+<h3 id="example">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/alert.html type="primary" content="primary" %}
+{% include built-in/alert.html type="secondary" content="secondary" %}
+{% include built-in/alert.html type="success" content="success" %}
+{% include built-in/alert.html type="danger" content="danger" %}
+{% include built-in/alert.html type="warning" content="warning" %}
+{% include built-in/alert.html type="info" content="info" %}
+{% include built-in/alert.html type="light" content="light" %}
+{% include built-in/alert.html type="dark" content="dark" %}</code></pre></figure>
+
+<h3 id="output">Output</h3>
+
+<div class="alert alert-primary">
+    <p>
+        <i class="fas fa-info-circle"></i>
+        primary
+    </p>
+</div>
+<div class="alert alert-secondary">
+    <p>
+        <i class="fas fa-info-circle"></i>
+        secondary
+    </p>
+</div>
+<div class="alert alert-success">
+    <p>
+        <i class="fas fa-info-circle"></i>
+        success
+    </p>
+</div>
+<div class="alert alert-danger">
+    <p>
+        <i class="fas fa-info-circle"></i>
+        danger
+    </p>
+</div>
+<div class="alert alert-warning">
+    <p>
+        <i class="fas fa-info-circle"></i>
+        warning
+    </p>
+</div>
+<div class="alert alert-info">
+    <p>
+        <i class="fas fa-info-circle"></i>
+        info
+    </p>
+</div>
+<div class="alert alert-light">
+    <p>
+        <i class="fas fa-info-circle"></i>
+        light
+    </p>
+</div>
+<div class="alert alert-dark">
+    <p>
+        <i class="fas fa-info-circle"></i>
+        dark
+    </p>
+</div>
+
+<h2 id="code-block">Code Block</h2>
+
+<h3 id="description-1">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% highlight {{ LANGUAGE }} linenos %}
+{{ CODE }}
+{% endhighlight %}</code></pre></figure>
+
+<h3 id="example-1">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% highlight python linenos %}
+# import relevant libraries
+import roslib
+import rospy
+import math
+
+def mb_callback(msg):
+  # Check if robot has reached goal
+  if msg.status.status == 2 or msg.status.status == 4 or msg.status.status == 5 or msg.status.status == 6:
+    print "Robot failed to reach waypoint!"
+  elif msg.status.status == 3:
+    print "Robot successfully reached waypoint!"
+  
+  pub.publish(waypoint)
+{% endhighlight %}</code></pre></figure>
+
+<h3 id="output-1">Output</h3>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="c1"># import relevant libraries
+</span><span class="kn">import</span> <span class="nn">roslib</span>
+<span class="kn">import</span> <span class="nn">rospy</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">def</span> <span class="nf">mb_callback</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+  <span class="c1"># Check if robot has reached goal
+</span>  <span class="k">if</span> <span class="n">msg</span><span class="p">.</span><span class="n">status</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">msg</span><span class="p">.</span><span class="n">status</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">4</span> <span class="ow">or</span> <span class="n">msg</span><span class="p">.</span><span class="n">status</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">or</span> <span class="n">msg</span><span class="p">.</span><span class="n">status</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">6</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"Robot failed to reach waypoint!"</span>
+  <span class="k">elif</span> <span class="n">msg</span><span class="p">.</span><span class="n">status</span><span class="p">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s">"Robot successfully reached waypoint!"</span>
+  
+  <span class="n">pub</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">waypoint</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<h3 id="description-2">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">&lt;ol id="page-footnotes"&gt;
+{% include built-in/note.html id="{{ ID }}" details="{{ DETAILS }}"%}
+&lt;/ol&gt;</code></pre></figure>
+
+<h3 id="example-2">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">&lt;ol id="page-footnotes"&gt;
+{% include built-in/note.html id="1" details="https://www.youtube.com/watch?v=Q8nhQSp__3s&amp;list=WL&amp;index=11"%}
+{% include built-in/note.html id="2" details="https://www.youtube.com/watch?v=Q8nhQSp__3s&amp;list=WL&amp;index=11"%}
+&lt;/ol&gt;</code></pre></figure>
+
+<h3 id="output-2">Output</h3>
+
+<ol id="page-footnotes">
+<li id="ref-1"><p>https://www.youtube.com/watch?v=Q8nhQSp__3s&amp;list=WL&amp;index=11<a href="#text-ref-1"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-1" ) {
+            links[i].id = "text-ref-1";
+        }
+    } 
+</script>
+<li id="ref-2"><p>https://www.youtube.com/watch?v=Q8nhQSp__3s&amp;list=WL&amp;index=11<a href="#text-ref-2"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-2" ) {
+            links[i].id = "text-ref-2";
+        }
+    } 
+</script>
+</ol>
+
+<h2 id="image">Image</h2>
+
+<h3 id="description-3">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/img.html id="{{ ID }}" url="{{ URL }}" caption="{{ CAPTION }}" %}</code></pre></figure>
+
+<h3 id="example-3">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/img.html id="1" url="https://www.gwern.net/images/silkroad/2012-christin-sr-dailysales.png" caption="I love it" %}</code></pre></figure>
+
+<h3 id="output-3">Output</h3>
+
+<figure class="wm-100" id="img-1">
+    <div class="d-flex justify-content-center">
+        <img src="https://www.gwern.net/images/silkroad/2012-christin-sr-dailysales.png" class="img-fluid" alt="I love it" />
+    </div>
+    <figcaption><strong>Figure 1:</strong> I love it</figcaption>
+</figure>
+
+<h2 id="math-equation">Math Equation</h2>
+
+<h3 id="description-4">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">$$
+
+{{ CODE }}
+
+$$</code></pre></figure>
+
+<h3 id="example-4">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">$$
+
+\int f^{-1}(x-x_a)\,dx
+
+$$</code></pre></figure>
+
+<h3 id="output-4">Output</h3>
+
+\[\int f^{-1}(x-x_a)\,dx\]
+
+<h2 id="pseudocode">Pseudocode</h2>
+
+<h3 id="description-5">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/pcode.html id="{{ ID }}" code="{{ CODE }}" %}</code></pre></figure>
+
+<h3 id="example-5">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/pcode.html id="1" code="
+\begin{algorithm}
+\caption{Quicksort}
+\begin{algorithmic}
+\PROCEDURE{Quicksort}{$A, p, r$}
+    \IF{$p &lt; r$} 
+        \STATE $q = $ \CALL{Partition}{$A, p, r$}
+        \STATE \CALL{Quicksort}{$A, p, q - 1$}
+        \STATE \CALL{Quicksort}{$A, q + 1, r$}
+    \ENDIF
+\ENDPROCEDURE
+\PROCEDURE{Partition}{$A, p, r$}
+    \STATE $x = A[r]$
+    \STATE $i = p - 1$
+    \FOR{$j = p$ \TO $r - 1$}
+        \IF{$A[j] &lt; x$}
+            \STATE $i = i + 1$
+            \STATE exchange
+            $A[i]$ with     $A[j]$
+        \ENDIF
+        \STATE exchange $A[i]$ with $A[r]$
+    \ENDFOR
+\ENDPROCEDURE
+\end{algorithmic}
+\end{algorithm}
+" %}</code></pre></figure>
+
+<h3 id="output-5">Output</h3>
+
+<pre id="read-1" style="display:none;">
+    
+\begin{algorithm}
+\caption{Quicksort}
+\begin{algorithmic}
+\PROCEDURE{Quicksort}{$A, p, r$}
+    \IF{$p &lt; r$} 
+        \STATE $q = $ \CALL{Partition}{$A, p, r$}
+        \STATE \CALL{Quicksort}{$A, p, q - 1$}
+        \STATE \CALL{Quicksort}{$A, q + 1, r$}
+    \ENDIF
+\ENDPROCEDURE
+\PROCEDURE{Partition}{$A, p, r$}
+    \STATE $x = A[r]$
+    \STATE $i = p - 1$
+    \FOR{$j = p$ \TO $r - 1$}
+        \IF{$A[j] &lt; x$}
+            \STATE $i = i + 1$
+            \STATE exchange
+            $A[i]$ with     $A[j]$
+        \ENDIF
+        \STATE exchange $A[i]$ with $A[r]$
+    \ENDFOR
+\ENDPROCEDURE
+\end{algorithmic}
+\end{algorithm}
+
+</pre>
+<p><span class="markdown-pseudocode" id="goal-1"></span>
+<script type="text/javascript">
+    var code = document.getElementById("read-1").textContent;
+    var parentEl = document.getElementById("goal-1");
+    var options = {
+        lineNumber: true
+    };
+    pseudocode.render(code, parentEl, options);
+</script></p>
+
+<h2 id="quote">Quote</h2>
+
+<h3 id="description-6">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/quote.html quote="{{ QUOTE }}" footer="{{ FOOTER }}" %}</code></pre></figure>
+
+<h3 id="example-6">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/quote.html quote="
+Ah! let not Censure term our fate our choice, / The stage but echoes back the public’s voice; The drama’s laws the drama’s patrons give, / For we that live to please must please to live.
+"
+footer="Samuel Johnson (\"Prologue at the Opening of Drury Lane Theatre\")"
+%}</code></pre></figure>
+
+<h3 id="output-6">Output</h3>
+
+<blockquote class="blockquote">
+    <p class="mb-0">
+Ah! let not Censure term our fate our choice, / The stage but echoes back the public’s voice; The drama’s laws the drama’s patrons give, / For we that live to please must please to live.
+</p>
+    <footer class="blockquote-footer">Samuel Johnson ("Prologue at the Opening of Drury Lane Theatre")</footer>
+</blockquote>
+
+<h2 id="referencing">Referencing</h2>
+
+<h3 id="description-7">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">*{{ REFERENCE }}*[[{{ REFERENCE_ID }}]](#ref-{{ REFERENCE_ID }})
+[Figure {{ FIGURE_ID }}](#img-{{ FIGURE_ID }})
+[table {{ TABLE_ID }}](#table-{{ TABLE_ID }})</code></pre></figure>
+
+<h3 id="example-7">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">*YOLOv3*[[1]](#ref-1)
+[Figure 1](#img-1)
+[table 1](#table-1)</code></pre></figure>
+
+<h3 id="output-7">Output</h3>
+
+<p><em>YOLOv3</em><a href="#ref-1">[1]</a>
+<a href="#img-1">Figure 1</a>
+<a href="#table-1">table 1</a></p>
+
+<h2 id="table">Table</h2>
+
+<h3 id="description-8">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/table.html id="{{ ID }}" content="{{ CONTENT }}" caption="{{ CAPTION }}" %}</code></pre></figure>
+
+<h3 id="example-8">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include built-in/table.html id="1" content="
+
+| First Header  | Second Header | Third Header         |
+| ------------- | ------------- | -------------------- |
+| First row     | Data          | Very long data entry |
+| Second row    | **Cell**      | *Cell*               |
+| Third row     | Cell that spans across two columns   ||
+
+" 
+caption="attadad" %}</code></pre></figure>
+
+<h3 id="output-8">Output</h3>
+
+<table id="table-1" class="table">
+  <thead>
+    <tr>
+      <th>First Header</th>
+      <th>Second Header</th>
+      <th>Third Header</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>First row</td>
+      <td>Data</td>
+      <td>Very long data entry</td>
+    </tr>
+    <tr>
+      <td>Second row</td>
+      <td><strong>Cell</strong></td>
+      <td><em>Cell</em></td>
+    </tr>
+    <tr>
+      <td>Third row</td>
+      <td>Cell that spans across two columns</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="text/javascript">
+    var table = document.getElementById("table-1").createCaption();
+    table.innerHTML = "<strong>Table 1:</strong> attadad";
+</script>
+
+<h2 id="video">Video</h2>
+
+<h3 id="description-9">Description</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include video id="{{ ID }}" provider="{{ PROVIDER }}" %}</code></pre></figure>
+
+<h3 id="example-9">Example</h3>
+
+<figure class="highlight"><pre><code class="language-nothing" data-lang="nothing">{% include video id="DM0nkQxrpW0" provider="youtube" %}</code></pre></figure>
+
+<h3 id="output-9">Output</h3>
+
+<!-- Courtesy of embedresponsively.com //-->
+<div class="embed-responsive embed-responsive-16by9">
+
+  <iframe src="https://www.youtube-nocookie.com/embed/DM0nkQxrpW0" class="embed-responsive-item" frameborder="0" allowfullscreen=""></iframe>
+
+</div>
+
+
+</div>
+<div id="page-discussion" style="display: none;">
+  <div id="disqus_thread"></div>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+
+                    </article>
+                    <div class="col-md-12 no-print" id="footer-content">
+                        <footer>
+	<p class="mb-0">This page was last edited on <span id="page-date">01 January 1970, at 0:00</span> (UTC).</p>
+	<p>By <a href="http://sudomaze.dev">Mazen Alotaibi</a></p>
+</footer>
+<script id="dsq-count-scr" src="//sudomaze.disqus.com/count.js" async></script>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+  
+    
+    <script src="/assets/js/index.js"></script>
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-131236199-2', 'auto');
+  ga('send', 'pageview');
+</script>
+    </body>
+</html>

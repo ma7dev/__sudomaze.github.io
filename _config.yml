@@ -14,4 +14,4 @@ plugins:
   - jekyll-gist
   - jekyll-include-cache
 
-include: ['_pages', '_notes', '_about', '_newsletters', '_bit-of-bytes']
+include: ['_pages', '_notes']

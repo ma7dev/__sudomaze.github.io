@@ -1,9 +1,43 @@
+- title: "ReplaceMe"
+  tag: "replaceme"
+  date: "6/2020 - Present"
+  image: "images/replaceme.gif"
+  demo: "http://aidemo.cgrb.oregonstate.edu/"
+  description: ""
+  publish: true
+  tools:
+  - tool: Bootstrap
+    tag: bootstrap
+  - tool: jQuery
+    tag: jquery
+  - tool: Node.js
+    tag: nodejs
+  - tool: Bash
+    tag: bash
+
+- title: "Labeling Tool"
+  tag: "labeling-tool"
+  date: "11/2019 - 6/2020"
+  image: "images/labeling-tool.png"
+  description: ""
+  publish: false
+  tools:
+  - tool: Bootstrap
+    tag: bootstrap
+  - tool: jQuery
+    tag: jquery
+  - tool: Fabric.js
+    tag: fabricjs
+  - tool: Node.js
+    tag: nodejs
+    
 - title: "Tech Data AI Demo"
   tag: "ai-demo"
   date: "11/2018 - 6/2019"
-  image: "images/projects/ai-demo.png"
+  image: "images/ai-demo.png"
   demo: "http://aidemo.cgrb.oregonstate.edu/"
   description: ""
+  publish: false
   tools:
   - tool: Bootstrap
     tag: bootstrap
@@ -20,9 +54,10 @@
 - title: "Senior Design Project"
   tag: "senior-design-project"
   date: "10/2018 - 6/2019"
-  image: "images/projects/ObjDetectFig.png"
+  image: "images/ObjDetectFig.png"
   code: "https://github.com/PavementPrometheus/Street-Watch"
   description: ""
+  publish: false
   tools:
   - tool: PyTorch
     tag: pytorch
@@ -37,9 +72,10 @@
 - title: "Exploring Robot"
   tag: "exploring-robot"
   date: "11/2018"
-  image: "images/projects/exploring-robot.png"
+  image: "images/maze.png"
   code: "https://github.com/sudomaze/exploring-robot"
   description: ""
+  publish: true
   tools:
   - tool: Python
     tag: pytorch
@@ -57,6 +93,7 @@
   image: "images/no-image.jpg"
   code: "https://github.com/sudomaze/image-captioning"
   description: ""
+  publish: false
   tools:
   - tool: PyTorch
     tag: pytorch
@@ -72,6 +109,7 @@
   image: "images/no-image.jpg"
   code: "https://github.com/sudomaze/facial-keypoint-detection"
   description: ""
+  publish: false
   tools:
   - tool: PyTorch
     tag: pytorch
@@ -84,9 +122,10 @@
 - title: "Self-Driving RC Car"
   tag: "self-driving-RC-car"
   date: "5/2018 - 8/2018"
-  image: "images/projects/self-driving-RC-car.jpg"
+  image: "images/self-driving-RC-car.jpg"
   code: "https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen"
   description: ""
+  publish: false
   tools:
   - tool: Python
     tag: python
@@ -106,6 +145,7 @@
   image: "images/no-image.jpg"
   code: "https://github.com/sudomaze/image-classification"
   description: ""
+  publish: false
   tools:
   - tool: PyTorch
     tag: pytorch
@@ -118,10 +158,11 @@
 - title: "Aces Up Game"
   tag: "aces-up-game"
   date: "11/2017 - 12/2017"
-  image: "images/projects/aceuposu.png"
+  image: "images/aceuposu.png"
   code: "https://github.com/sudomaze/aces-up-game"
   demo: "https://aceuposu.herokuapp.com/"
   description: ""
+  publish: false
   tools:
   - tool: jQuery
     tag: jquery
@@ -134,10 +175,11 @@
 - title: "Personal Website"
   tag: "personal-website"
   date: "12/2016"
-  image: "images/projects/personal-website-old.png"
+  image: "images/personal-website-old.png"
   code: "https://github.com/sudomaze/sudomaze.github.io"
   demo: "https://sudomaze.dev/"
   description: ""
+  publish: false
   tools:
   - tool: JavaScript
     tag: js
@@ -157,6 +199,7 @@
   image: "images/no-image.jpg"
   code: "https://github.com/sudomaze/ai-agent-2d"
   description: ""
+  publish: false
   tools:
   - tool: C++
     tag: cplusplus
