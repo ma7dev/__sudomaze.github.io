@@ -1,3 +1,4 @@
+<!-- Desktop view -->
 <div class="d-none d-sm-none d-md-block">
     <ul class="pl-0 mb-0" style="float:left">
         <li class="active nav-btn" id="content-btn"><a href="#" title="Show page content">Page</a></li>
@@ -16,13 +17,13 @@
     </ul>
 </div>
 
+<!-- Mobile view -->
 <div class="d-block d-sm-none">
     <ul class="row pl-0 mb-0">
         <li class="active col" id="content-btn-sm"><a href="#" title="Show page content">Page</a></li>
         {% if layout.discussion == true %}
         <li class="col" id="discussion-btn-sm"><a href="#discussion" title="Show Discussions">Discussions</a></li>
         {% endif %}
-        <li class="col" id="print-page"><a href="#print" title="Print">Print</a></li>
         {% if page.title != "404" %}
         <li class="col"><a href="https://github.com/sudomaze/sudomaze.github.io/blob/master/_site{{ page.url }}/index.html" title="View source" target="_blank">View source</a></li>
         {% else %}
