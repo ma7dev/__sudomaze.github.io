@@ -2,8 +2,7 @@
 layout: post
 title: Travelling Salesman Problem
 permalink: /travelling-salesman-problem/
-category: CS
-tag: "Projects"
+category: Projects
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}

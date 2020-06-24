@@ -2,8 +2,7 @@
 layout: post
 title: Exploring Robot
 permalink: /exploring-robot/
-category: CS
-tag: "Projects"
+category: Projects
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}

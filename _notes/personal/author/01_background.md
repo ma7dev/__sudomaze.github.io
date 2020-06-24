@@ -1,3 +1,14 @@
 ## Background
 
 Mazen focuses on computer vision, deep learning, and data science. He worked at [the Center for Genome Research & Bio-computing](https://cgrb.oregonstate.edu/) (CGRB) as a Computational Data Scientist. He graduated from Oregon State University with a Bachelor of Science (B.S.) degree in Computer Science Applied in Artificial Intelligence; with a minor in Actuarial Science. He worked at CGRB as a Lead GPU Computational Researcher during his senior year at OSU. He was the Vice-President of OSU ML/AI Club (known as [OSU AI Club](https://osuai.club) now) for 2017-2018 & 2018-2019.
+
+<div class="col-md-12 d-none d-sm-none d-md-block">
+    <div class="calendar">
+        <!-- Loading stuff -->
+        Loading the data just for you.
+    </div>
+
+    <script>
+        new GitHubCalendar(".calendar", "sudomaze");
+    </script>
+</div>

@@ -2,8 +2,7 @@
 layout: post
 title: "ReplaceMe"
 permalink: /replaceme/
-category: AI
-tag: "Projects"
+category: Projects
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}
