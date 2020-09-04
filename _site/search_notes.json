@@ -1,0 +1,23 @@
+[
+  
+    {
+
+      "title"    : "How to get a great job",
+      "url"      : "/notes/How-to-get-a-great-job",
+      "category" : "",
+      "tags"     : "career",
+      "content"  : "Link: https://medium.com/@marksaroufim/how-to-get-a-great-job-68cb69ddfeb1\n\nNotes\n\n  The best way to do get your dream job is to start doing it\n  Your goal should be to apply to jobs with a portfolio not a CV\n    \n      However, a portfolio is much harder to beef up than a CV because you need to actually produce lots of visible work.\n    \n  \n  Optimizing for an amazing CV has a tremendous amount of luck involved, optimizing for a portfolio is entirely within your control — you just need to spend a few minutes everyday."
+
+    } ,
+  
+    {
+
+      "title"    : "Imf v3 (soon to be known as the lyt system)",
+      "url"      : "/notes/IMF-v3-(Soon-to-be-known-as-the-LYT-System)",
+      "category" : "",
+      "tags"     : "productivity",
+      "content"  : "Link: https://forum.obsidian.md/t/imf-v3-soon-to-be-known-as-the-lyt-system/390\n\nNotes\n\n  Index and MOCs (Mapping of Content) is the IMF method\n  This method is similar to [[associative ontologies]], but MOCs is different\n    \n      MOCs allow to have multiple notes to be linked together based on an intuition order rather than racing for position to describe the note\n      MOCs are like TOC (Table of Content)\n    \n  \n  Example of MOCs (by me)\n    \n      Career\n        \n          Research\n            \n              How to be a researcher\n              …\n            \n          \n          Data Science\n          Teaching\n          Kaggle\n        \n      \n      Education\n        \n          Mathematics and Statistics\n            \n              Discrete Mathematics\n              Differential Calculus\n              Integral Calculus\n              Infinite Series and Sequences\n              Vector Calculus\n              Linear Algebra\n              Probability\n              \n            \n          \n          Computer Science\n            \n              Data Structures\n              Algorithms\n              Web Development\n              Artificial Intelligence\n              Theory of Computation\n              Graph Theory\n              Software Engineering\n            \n          \n          Machine Learning\n          Deep Learning\n          Writing\n        \n      \n      Productivity\n        \n          Studying\n          Working\n          …\n        \n      \n      Health\n        \n          Food\n          Exercise\n          Sleep\n          Physiology\n        \n      \n      Philosophy\n        \n          God\n        \n      \n      Learning\n        \n          Source\n            \n              Notes\n              …\n            \n          \n        \n      \n    \n  \n  MOCs cycles:\n    \n      Connecting related stuff\n      Battling it out by forming new ideas, splitting others, and filling gaps\n      Forming a mature spatial map of ideas\n    \n  \n  MOCs vs. Ontologies:\n    \n      Ontologies represent what is real, maps are an interpretation of what is real.\n      On a given topic, there should be one ontology, but there can be limitless maps.\n      Maps of content float above the note collection, offering an augmented and customized, but non-destructive perspective\n      While we will also read our maps, at the heart of the process, we are the cartographers.\n    \n  \n  MOCs uses TOCs for a specific, linear, and final sequence\n    \n      Examples:\n        \n          when writing a final project like an essay or research paper\n          possibly to arrange notes from a lecture\n        \n      \n      MOCs are [[Evergreen Notes]], just at the next level of emergence\n    \n  \n  Fluid Frameworks\n    \n      MOCs and any variation of note consisting mostly links\n      tags\n      Transclusion-heavy notes\n        \n          \n        \n      \n      Direct Links\n    \n  \n  Naming convention\n    \n      MOCs = \"related-note\" MOC\n      TOCs = \"topic\" TOC\n    \n  \n  Linking Your Thinking (LYT) is the new naming for IMF"
+
+    } 
+  
+]

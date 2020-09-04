@@ -1,7 +1,7 @@
 - title: "ReplaceMe"
   tag: "replaceme"
   date: "6/2020 - Present"
-  image: "images/replaceme.gif"
+  image: "img/replaceme.gif"
   demo: "http://aidemo.cgrb.oregonstate.edu/"
   description: ""
   publish: true
@@ -18,7 +18,7 @@
 - title: "Labeling Tool"
   tag: "labeling-tool"
   date: "11/2019 - 6/2020"
-  image: "images/labeling-tool.png"
+  image: "img/labeling-tool.png"
   description: ""
   publish: false
   tools:
@@ -34,7 +34,7 @@
 - title: "Tech Data AI Demo"
   tag: "ai-demo"
   date: "11/2018 - 6/2019"
-  image: "images/ai-demo.png"
+  image: "img/ai-demo.png"
   demo: "http://aidemo.cgrb.oregonstate.edu/"
   description: ""
   publish: false
@@ -54,7 +54,7 @@
 - title: "Senior Design Project"
   tag: "senior-design-project"
   date: "10/2018 - 6/2019"
-  image: "images/ObjDetectFig.png"
+  image: "img/ObjDetectFig.png"
   code: "https://github.com/PavementPrometheus/Street-Watch"
   description: ""
   publish: false
@@ -72,7 +72,7 @@
 - title: "Exploring Robot"
   tag: "exploring-robot"
   date: "11/2018"
-  image: "images/maze.png"
+  image: "img/maze.png"
   code: "https://github.com/sudomaze/exploring-robot"
   description: ""
   publish: true
@@ -90,7 +90,7 @@
 - title: "Image Captioning"
   tag: "image-captioning"
   date: "7/2018 - 8/2018"
-  image: "images/no-image.jpg"
+  image: "img/no-image.jpg"
   code: "https://github.com/sudomaze/image-captioning"
   description: ""
   publish: false
@@ -106,7 +106,7 @@
 - title: "Facial Keypoint Detection"
   tag: "facial-keypoint-detection"
   date: "6/2018 - 7/2018"
-  image: "images/no-image.jpg"
+  image: "img/no-image.jpg"
   code: "https://github.com/sudomaze/facial-keypoint-detection"
   description: ""
   publish: false
@@ -122,7 +122,7 @@
 - title: "Self-Driving RC Car"
   tag: "self-driving-RC-car"
   date: "5/2018 - 8/2018"
-  image: "images/self-driving-RC-car.jpg"
+  image: "img/self-driving-RC-car.jpg"
   code: "https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen"
   description: ""
   publish: false
@@ -142,7 +142,7 @@
 - title: "Image Classification"
   tag: "image-classification"
   date: "5/2018"
-  image: "images/no-image.jpg"
+  image: "img/no-image.jpg"
   code: "https://github.com/sudomaze/image-classification"
   description: ""
   publish: false
@@ -158,7 +158,7 @@
 - title: "Aces Up Game"
   tag: "aces-up-game"
   date: "11/2017 - 12/2017"
-  image: "images/aceuposu.png"
+  image: "img/aceuposu.png"
   code: "https://github.com/sudomaze/aces-up-game"
   demo: "https://aceuposu.herokuapp.com/"
   description: ""
@@ -175,7 +175,7 @@
 - title: "Personal Website"
   tag: "personal-website"
   date: "12/2016"
-  image: "images/personal-website-old.png"
+  image: "img/personal-website-old.png"
   code: "https://github.com/sudomaze/sudomaze.github.io"
   demo: "https://sudomaze.dev/"
   description: ""
@@ -196,7 +196,7 @@
 - title: "A.I. for a 2D Grid Game"
   tag: "ai-agent-2d"
   date: "4/2016"
-  image: "images/no-image.jpg"
+  image: "img/no-image.jpg"
   code: "https://github.com/sudomaze/ai-agent-2d"
   description: ""
   publish: false

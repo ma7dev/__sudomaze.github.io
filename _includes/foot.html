@@ -9,5 +9,10 @@
   {% endfor %}
 {% else %}
 {% endif %}
+<script>
+  document.getElementById("scroll-to-top").addEventListener("click", function() {
+  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  });
+</script>
 
 {% include analytics.html %}

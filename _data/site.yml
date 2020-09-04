@@ -1,24 +1,31 @@
 title: "sudomaze.dev"
+name: "Mazen Alotaibi"
+description: >
+  Is a M.S. student under the supervision of <a href="http://web.engr.oregonstate.edu/~lif/">Prof. Fuxin Li</a>
+  at Deep Machine Vision (DMV) in Oregon State University (OSU). He is interested in Computer Vision, Deep Learning,
+  and Data Science.
+profile_pic: /assets/img/profile.png
+favicon: /assets/img/favicon.png
+copyright_name: "Mazen Alotaibi"
 url: "https://sudomaze.dev"
 repository: "sudomaze/sudomaze.github.io"
-access_token: "U2FsdGVkX1/8V0sYchUExOfJ31D6hvd6Jpjpcj1NOJSmVR8+MjjIzFQW0bu14sUE4e3lpLGEST3pREgAV3zodg=="
 disqus:
   shortname: "sudomaze"
   public_key: "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo"
 
 head_links:
-  - /assets/libraries/bootstrap-4.3.1-dist/css/bootstrap.min.css
-  - /assets/libraries/katex/katex.min.css
-  - /assets/libraries/pseudocode.js-1.1/pseudocode.css
-  - /assets/css/styles.css
-  - /assets/libraries/github/github-calendar.css
+  - /assets/libs/fontawesome/css/all.min.css
+  - /assets/libs/katex/katex.min.css
+  - /assets/libs/pseudocode.js/pseudocode.css
+  - /assets/css/style.css
+  - /assets/libs/github/github-calendar.css
 
 head_scripts:
-  - /assets/libraries/jquery-3.4.1/jquery-3.4.1.min.js
-  - /assets/libraries/bootstrap-4.3.1-dist/js/bootstrap.min.js
-  - /assets/libraries/katex/katex.min.js
-  - /assets/libraries/pseudocode.js-1.1/pseudocode.js
-  - /assets/libraries/github/github-calendar.min.js
+  - /assets/libs/jquery/jquery-3.4.1.min.js
+  - /assets/libs/katex/katex.min.js
+  - /assets/libs/pseudocode.js/pseudocode.js
+  - /assets/libs/github/github-calendar.min.js
 
 footer_scripts:
-  - /assets/js/index.js
+  - /assets/js/contextmenu.js
+  - /assets/js/nightmode.js

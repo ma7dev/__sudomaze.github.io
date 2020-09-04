@@ -1,7 +1,7 @@
 name: "Mazen Alotaibi"
 bio: >
   Mazen Alotaibi is a M.S. student under the supervision of <a href="http://web.engr.oregonstate.edu/~lif/">Prof. Fuxin Li</a> 
-  at Deep Machine Vision (DMV) in Oregon State University (OSU). He is interested in Computer Vision, Deep Learning, 
+  at Deep Machine Vision (DMV) in Oregon State University (OSU). Mazen is interested in Computer Vision, Deep Learning, 
   and Data Science. He <b><a href='https://github.com/sudomaze'>works on projects on GitHub</a></b> and 
   <b><a href='https://www.kaggle.com/sudomaze/'>participates in Kaggle competitions</a></b> to 
   distract him from academia. You can <b><a href='https://linkedin.com/in/sudomaze/'>connect with him on LinkedIn
@@ -10,22 +10,30 @@ bio: >
 email: sudomaze@gmail.com
 links:
   - label: "Twitter"
-    icon: "fab fa-fw fa-twitter-square"
-    username: "sudomaze"
+    icon: "fab fa-twitter"
+    text: "@sudomaze"
     url: "https://twitter.com/sudomaze"
+
   - label: "GitHub"
-    icon: "fab fa-fw fa-github"
-    username: "sudomaze"
+    icon: "fab fa-github"
+    text: "@sudomaze"
     url: "https://github.com/sudomaze"
+
+  - label: "Twitch"
+    icon: "fab fa-twitch"
+    text: "ttv/sudomaze"
+    url: "https://twitch.tv/sudomaze"
+
   - label: "Linkedin"
     icon: "fab fa-linkedin"
-    username: "sudomaze"
+    text: "in/sudomaze"
     url: "https://linkedin.com/in/sudomaze"
+
   - label: "Kaggle"
     icon: "fab fa-kaggle"
-    username: "sudomaze"
+    text: "@sudomaze"
     url: "https://www.kaggle.com/sudomaze"
   
 news:
   - date: [2020,02,15]
-    description: Got admitted in the Master's Program at Oregon State University for Fall 2020.
+    description: Got admitted to the Master's Program at Oregon State University for Fall 2020.

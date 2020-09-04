@@ -1,17 +1,42 @@
-name: sudomaze
-description: cool blog
-url: https://sudomaze.dev
-encoding: "utf-8"
+baseurl: "/" # the subpath of your site, e.g. /blog
+encoding: utf-8
+
+# Build settings
+theme: null
+plugins:
+  - jekyll-feed 
+  - jekyll-sitemap 
+
 markdown: kramdown
-highlighter: rouge
+
 kramdown:
   input: GFM
+  hard_wrap: false
+  math_engine: mathjax
+  smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: rouge
 
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-include-cache
+sass:
+  style: compressed
 
-include: ['_notes']
+collections:
+    notes:
+      output: true
+      permalink: /notes/:title
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /posts/:title
+      content-type: post
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: post
+      content-type: notes
+
+include: ['_pages', '_projects']

@@ -1,0 +1,33 @@
+<div class="searchbar search-container">
+    <i class="fa fa-search" aria-hidden="true"></i>
+    <label for="search-input"></label>
+    <input type="text" oninput="changeResultContainerDisp(this.value)" id="search-input" autocomplete="off" placeholder="Search Simply Jekyll..."/>
+    <ul id="results-container"></ul>
+</div>
+<script src="/assets/js/simple-jekyll-search.min.js"></script>
+<script>
+    function changeResultContainerDisp(val) {
+        if (val) {
+            document.getElementById("results-container").style.display = "block";
+            document.getElementById("search-input").addEventListener('blur', function() {
+                document.addEventListener('click', function(event) {
+                    var isClickInside = document.getElementById("results-container").contains(event.target);
+                    if (!isClickInside) {
+                        document.getElementById("results-container").style.display = "none";
+                    }
+                })
+            }) 
+        }  else {
+            document.getElementById("results-container").style.display = "none";
+        }
+    }
+    var sjs = SimpleJekyllSearch({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                json: '/search.json',
+                searchResultTemplate: '<li class="search_res" style="list-style: none;"><a href="{{ site.data.site.url }}{url}" style="text-decoration: none; color: #555555;"><p style="font-size: 1.0rem; font-family: "Inter !important"; font-weight: 600;">{title}</p></a></li>',
+                noResultsText: 'No results found',
+                fuzzy: false,
+                limit: 4
+                })   
+</script>

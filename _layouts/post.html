@@ -1,19 +1,15 @@
---- 
-layout: default
-discussion: true
 ---
-<div id="page-content" style="display: block;">
-  <h1>{{ page.title }}</h1>
-  <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+layout: default
+---
+<h1>{{page.title}}</h1>
+<aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
     <nav class="toc">
         <header><h4 class="nav__title text-center"> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "Table of Content" }}</h4></header>
         {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
     </nav>
-  </aside>
-  {{ content }}
-</div>
-<div id="page-discussion" style="display: none;">
-  <div id="disqus_thread"></div>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-{{ page.pdf_url }}
+</aside>
+<main>
+    {%- include content.html -%}
+    {%- include backlinks.html -%}
+    {%- include related.html -%}
+</main>

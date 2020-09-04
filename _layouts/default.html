@@ -1,23 +1,17 @@
 <!DOCTYPE html>
-<html>
-  {% include head.html %}
-    <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} container-fluid">
-        <main class="row mt-2">
-            {% include header.html %}
-            <div id="printed-section" class="col-md-10">
-                <div class="row">
-                    <div class="col-md-12 pl-0 pr-0 no-print" id="nav">
-                        {% include nav.html %}
-                    </div>
-                    <article class="col-md-12" id="main-content">
-                        {{ content }}
-                    </article>
-                    <div class="col-md-12 no-print" id="footer-content">
-                        {% include footer.html %}
-                    </div>
-                </div>
+<html lang="en">
+    {% include head.html %}
+    <body>
+        <div class="container">
+            <div class = "box">
+                {%- include header.html -%}
+                {{ content }}
+                {%- include comments.html -%}
+                {%- include footer.html -%}
             </div>
-        </main>
+            <button class="scroll-to-top" id="scroll-to-top"><i class="fa fa-chevron-up"></i></button>
+        </div>
         {% include foot.html %}
+        {%- include contextmenu.html -%}
     </body>
 </html>

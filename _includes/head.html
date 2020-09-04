@@ -1,55 +1,55 @@
 <head>
-  <meta charset="utf-8" />
-  {% include seo.html %}
-  {% if site.data.site.head_scripts %}
-  {% for script in site.data.site.head_scripts %}
-  {% if script contains "://" %}
-  {% capture script_path %}{{ script }}{% endcapture %}
-  {% else %}
-  {% capture script_path %}{{ script | relative_url }}{% endcapture %}
-  {% endif %}
-  <script src="{{ script_path }}"></script>
-  {% endfor %}
-  {% endif %}
-  {% if site.data.site.head_links %}
-  {% for link in site.data.site.head_links %}
-  {% if link contains "://" %}
-  {% capture link_path %}{{ link }}{% endcapture %}
-  {% else %}
-  {% capture link_path %}{{ link | relative_url }}{% endcapture %}
-  {% endif %}
-  <link rel="stylesheet" href="{{ link_path }}">
-  {% endfor %}
-  {% endif %}
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        processEscapes: true
-      }
-    });
-  </script>
-  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
-    integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
-  <script>
-    var disqusPublicKey = "{{ site.data.site.disqus.public_key }}",
-      disqusShortname = "{{ site.data.site.disqus.shortname }}",
-      siteUrl = "{{ site.data.site.url }}",
-      pageUrl = "{{ page.url }}",
-      pageAccessToken = CryptoJS.AES.decrypt("{{ site.data.site.access_token }}", "Secret Passphrase").toString(CryptoJS
-        .enc.Utf8),
-      pagePath = "{{ page.path }}",
-      githubRepo = "{{ site.data.site.repository }}",
-      layoutDiscussion = false;
-  </script>
-
-  {% if layout.discussion == true %}
-  <script>
-    layoutDiscussion = true;
-  </script>
-  {% endif %}
-
+    {% include seo.html %}
+    {% include seo.html %}
+    {% if site.data.site.head_scripts %}
+    {% for script in site.data.site.head_scripts %}
+    {% if script contains "://" %}
+    {% capture script_path %}{{ script }}{% endcapture %}
+    {% else %}
+    {% capture script_path %}{{ script | relative_url }}{% endcapture %}
+    {% endif %}
+    <script src="{{ script_path }}"></script>
+    {% endfor %}
+    {% endif %}
+    {% if site.data.site.head_links %}
+    {% for link in site.data.site.head_links %}
+    {% if link contains "://" %}
+    {% capture link_path %}{{ link }}{% endcapture %}
+    {% else %}
+    {% capture link_path %}{{ link | relative_url }}{% endcapture %}
+    {% endif %}
+    <link rel="stylesheet" href="{{ link_path }}">
+    {% endfor %}
+    {% endif %}
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
+      integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+    <script>
+      var disqusPublicKey = "{{ site.data.site.disqus.public_key }}",
+        disqusShortname = "{{ site.data.site.disqus.shortname }}",
+        siteUrl = "{{ site.data.site.url }}",
+        pageUrl = "{{ page.url }}",
+        pageAccessToken = CryptoJS.AES.decrypt("{{ site.data.site.access_token }}", "Secret Passphrase").toString(CryptoJS
+          .enc.Utf8),
+        pagePath = "{{ page.path }}",
+        githubRepo = "{{ site.data.site.repository }}",
+        layoutDiscussion = false;
+    </script>
+  
+    {% if layout.discussion == true %}
+    <script>
+      layoutDiscussion = true;
+    </script>
+    {% endif %}
+    <link rel="alternate" type="application/rss+xml" href="{{ site.data.site.url }}/feed.xml">
 </head>
