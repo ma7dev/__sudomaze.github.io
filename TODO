@@ -1,0 +1,25 @@
+# New Design Update (v2.0)
+
+## Issues
+
+☐ Mobile
+    ☐ In the about page, the GitHub heatmap isn't responsive.
+☐ Images aren't sourced correctly
+☐ Design
+    ☐ Displaying figures (single, double, and three of them)
+    ☐ Python code block doesn't display properly due to the [[]] tagging
+    ☐ Displaying tables
+
+
+## Features
+
+☐ Notes
+    ☐ Sort them by date of creation.
+☐ For any code block, display language presented and copy option
+☐ Add Google Analytics
+☐ Add Disqus to posts layout
+
+## Content
+
+☐ Typos
+    ✔ a M.S. student -> an M.S. student @done(20-09-04 09:02)

@@ -1,12 +1,6 @@
 title: "sudomaze.dev"
-name: "Mazen Alotaibi"
-description: >
-  Is a M.S. student under the supervision of <a href="http://web.engr.oregonstate.edu/~lif/">Prof. Fuxin Li</a>
-  at Deep Machine Vision (DMV) in Oregon State University (OSU). He is interested in Computer Vision, Deep Learning,
-  and Data Science.
 profile_pic: /assets/img/profile.png
 favicon: /assets/img/favicon.png
-copyright_name: "Mazen Alotaibi"
 url: "https://sudomaze.dev"
 repository: "sudomaze/sudomaze.github.io"
 disqus:
