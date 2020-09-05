@@ -8,29 +8,40 @@ email: sudomaze@gmail.com
 links:
   - label: "Twitter"
     icon: "fab fa-twitter"
+    color: "#1DA1F2"
     text: "@sudomaze"
     url: "https://twitter.com/sudomaze"
 
   - label: "GitHub"
     icon: "fab fa-github"
+    color: "#24292E"
     text: "@sudomaze"
     url: "https://github.com/sudomaze"
 
   - label: "Twitch"
     icon: "fab fa-twitch"
+    color: "#9147FF"
     text: "ttv/sudomaze"
     url: "https://twitch.tv/sudomaze"
 
   - label: "Linkedin"
     icon: "fab fa-linkedin"
+    color: "#0077B5"
     text: "in/sudomaze"
     url: "https://linkedin.com/in/sudomaze"
 
   - label: "Kaggle"
     icon: "fab fa-kaggle"
+    color: "#35B3E0"
     text: "@sudomaze"
     url: "https://www.kaggle.com/sudomaze"
-  
+
+  - label: "Discord"
+    icon: "fab fa-discord"
+    color: "#8899F7"
+    text: "Join our Discord Channel"
+    url: "https://discord.gg/v44SgTg"
+
 news:
   - date: [2020,02,15]
     description: Got admitted to the Master's Program at Oregon State University for Fall 2020.

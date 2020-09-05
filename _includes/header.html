@@ -17,7 +17,7 @@
             <ul class="socials">
                 {% for link in site.data.author.links %}
                 <li>
-                    <i class="{{ link.icon }}"></i>
+                    <i class="{{ link.icon }}" style="color: {{ link.color }}"></i>
                     <a href="{{ link.url }}">{{ link.text }}</a>
                 </li>
                 {% endfor %}
@@ -31,7 +31,7 @@
     </div>
     {% include navbar.html %}
     {% include search.html %}
-    {%- if page.permalink != "/" -%}
+    {% if page.permalink != "/" %}
     <div class="main-site-navigator disable-select" id="scroll-head" onclick="window.location.assign('/');">
         <div class="back-icon">
             <svg class="ripple" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
@@ -41,5 +41,5 @@
         </div>
         <p class="back-p">Home</p>    
     </div>
-    {%- endif -%}
+    {% endif %}
 </header>

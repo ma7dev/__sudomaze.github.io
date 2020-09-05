@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Exploring Robot
-permalink: /exploring-robot/
 category: project
 display: "/assets/gif"
 ---

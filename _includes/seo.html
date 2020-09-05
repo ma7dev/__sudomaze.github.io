@@ -3,14 +3,14 @@
 <meta content="A non-linear thread of important ideas weaved together to explore and understand the fabric of knowledge." property="og:description">
 <meta content="{{ site.data.site.url }}/about/" property="article:author">
 <title>{{site.data.site.title}}</title>
-{%- if page.title -%}
+{% if page.title %}
 <meta content="{{ page.title }}" property="og:title">
 <meta content="article" property="og:type">
 <meta content="{{ site.data.site.url }}{{ page.url }}" property="og:url">
-{%- else -%}
+{% else %}
 <meta content="website" property="og:type">
 <meta content="{{ site.data.site.url }}{{ page.url }}" property="og:url">
-{%- endif -%}
+{% endif %}
 <link rel="icon" href="{{site.data.site.favicon}}" type="image/png" sizes="16x16"/>
 <link rel="canonical" href="{{site.data.site.url}}{{page.url}}"/>
 <link rel="apple-touch-icon" href="{{site.data.site.profile_pic}}">

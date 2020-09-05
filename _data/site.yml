@@ -19,7 +19,8 @@ head_scripts:
   - /assets/libs/katex/katex.min.js
   - /assets/libs/pseudocode.js/pseudocode.js
   - /assets/libs/github/github-calendar.min.js
+  - /assets/js/nightmode-loader.js
 
 footer_scripts:
   - /assets/js/contextmenu.js
-  - /assets/js/nightmode.js
+  - /assets/js/nightmode-event.js

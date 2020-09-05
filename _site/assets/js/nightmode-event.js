@@ -1,8 +1,6 @@
-const theme = localStorage.getItem('theme');
-if (theme === "dark") {
-    document.documentElement.setAttribute('data-theme', 'dark');
-}
 const userPrefers = getComputedStyle(document.documentElement).getPropertyValue('content');
+console.log(`theme: ${theme}, userPrefers: ${userPrefers}`)
+
 if (theme === "dark") {
     document.getElementById("theme-toggle").classList.remove('fa-moon');
     document.getElementById("theme-toggle").classList.add('fa-sun');
@@ -20,7 +18,6 @@ if (theme === "dark") {
     document.getElementById("theme-toggle").classList.remove('fa-sun');
     document.getElementById("theme-toggle").classList.add('fa-moon');
 }
-
 function modeSwitcher() {
     let currentMode = document.documentElement.getAttribute('data-theme');
     if (currentMode === "dark") {

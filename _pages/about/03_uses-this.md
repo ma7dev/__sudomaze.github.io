@@ -24,7 +24,6 @@
 * [crashhermit](https://www.twitch.tv/crashhermit): Jon streams his self-learning journey of Mathematics, Economics, Sociology, and Psychology. He uses Anki heavily!
 * [data__love](https://www.twitch.tv/data__love): Rob streams about projects that works on in Elm (a functional programming language for web).
 * [gioggio](https://www.twitch.tv/gioggio): Gio is an M.Eng. in Artificial Intelligence @ University of Bologna. He streams about his projects.
-* [kristoff_it](https://www.twitch.tv/kristoff_it): Loris studied Computer Science (Bioinformatics) and after working in academia on big-data problems for a while, he consulted for fintech startups in Singapore and now he is a Developer Advocate at Redis Labs. He mostly live code in various programming languages.
 * [marksaroufim](https://www.twitch.tv/marksaroufim): Mark is a Machine Learning engineer, he have worked at Microsoft and NASA and also founded his own company yuri. His stream is all about software development where he will be streaming hisself learning or programming stuff related to Machine Learning and Game Development with the occasional strategy game stream.
 * [opensourcesblog](https://www.twitch.tv/opensourcesblog): Ole is a Computer Science master student who loves to blog and code in Julia. Also, he streams about Project Euler from 1-100.
 * [rctatman](https://www.twitch.tv/rctatman): Rachael is a senior developer advocate. She does a lot of NLP projects/workshops on stream!

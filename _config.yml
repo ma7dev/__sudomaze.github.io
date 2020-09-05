@@ -8,6 +8,7 @@ plugins:
   - jekyll-sitemap 
 
 markdown: kramdown
+highlighter: rouge
 
 kramdown:
   input: GFM
@@ -23,6 +24,9 @@ collections:
     notes:
       output: true
       permalink: /notes/:title
+    projects:
+      output: true
+      permalink: /projects/:title
 
 defaults:
   - scope:
@@ -38,5 +42,11 @@ defaults:
     values:
       layout: post
       content-type: notes
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: post
+      content-type: projects
 
 include: ['_pages', '_projects']

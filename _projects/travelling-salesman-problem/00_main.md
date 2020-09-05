@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Travelling Salesman Problem
-permalink: /travelling-salesman-problem/
 category: project
 ---
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "ReplaceMe"
-permalink: /replaceme/
 category: project
 ---
 
