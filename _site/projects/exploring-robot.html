@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="Instructions
+
+
+  Code A*
+  Download world.csvPreview the document
+  Write a program to create a 4-connected graph and run an A* search from vertex (0,0) to vertex (19,19) across the obstacle map pr..." name="description" >
+<meta content="" property="og:site_name"/>
+<meta content="Instructions
+
+
+  Code A*
+  Download world.csvPreview the document
+  Write a program to create a 4-connected graph and run an A* search from vertex (0,0) to vertex (19,19) across the obstacle map pr..." property="og:description">
+<meta content="https://sudomaze.dev/about/" property="article:author">
+
+<title>sudomaze.dev</title>
+
+
+  <meta content="Exploring Robot" property="og:title">
+  <meta content="article" property="og:type">
+  <meta content="https://sudomaze.dev/projects/exploring-robot" property="og:url">
+
+<link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16"/>
+<link rel="canonical" href="/projects/exploring-robot"/>
+<link rel="apple-touch-icon" href="/assets/img/profile.png">
+
+
+
+
+  <!-- sourcing javascript files -->
+  
+    
+      
+      <script async src="/assets/js/nightmode-loader.js"></script>
+    
+      
+      <script async src="/assets/js/simple-jekyll-search.min.js"></script>
+    
+  
+
+  
+
+  
+    <script async src="/assets/libs/katex/katex.min.js"></script>
+    <script async src="/assets/libs/pseudocode.js/pseudocode.js"></script>
+    <!-- configuring mathjax -->
+    <script async type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+  <!-- sourcing css files -->
+  
+    
+      
+      <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css" media="print" onload="this.media='all'">
+    
+      
+      <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'">
+    
+  
+  
+  
+    <link rel="stylesheet" href="/assets/libs/katex/katex.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/libs/pseudocode.js/pseudocode.css" media="print" onload="this.media='all'">
+  
+
+  <script async>
+    var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
+      disqusShortname = "sudomaze",
+      siteUrl = "https://sudomaze.dev",
+      pageUrl = "/projects/exploring-robot",
+      pagePath = "_projects/exploring-robot/00_main.md",
+      githubRepo = "sudomaze/sudomaze.github.io",
+      layoutDiscussion = false;
+  </script>
+
+  
+
+  <!-- linking xml file -->
+  <link rel="alternate" type="application/rss+xml" href="https://sudomaze.dev/feed.xml">
+</head>
+    <body>
+        <div class="container">
+            <div class = "box">
+                
+<header>
+    <div class="dashboard disable-select">
+        <div class="site-heading profile-board-col">
+           <h4 class="medium">
+               <a href="/">sudomaze.dev</a> |
+               <i id="theme-toggle" onclick="modeSwitcher()" class="far"></i>
+            </h4>
+        </div>
+        <div class="userboard profile-board-col">
+            <div class="username">
+                <p class="title-sans"><a href="/about" style="text-decoration: none;">Mazen Alotaibi</a></p>
+            </div>
+            <div class="userdesc">
+                <p class="title-sans">Is an M.S. student under the supervision of <a href="http://web.engr.oregonstate.edu/~lif/">Prof. Fuxin Li</a> at Deep Machine Vision (DMV) in Oregon State University (OSU). He is interested in Computer Vision, Deep Learning, and Data Science.
+</p>
+            </div>
+            <ul class="socials">
+                
+                <li>
+                    <i class="fab fa-twitter" style="color: #1DA1F2"></i>
+                    <a href="https://twitter.com/sudomaze">@sudomaze</a>
+                </li>
+                
+                <li>
+                    <i class="fab fa-github" style="color: #24292E"></i>
+                    <a href="https://github.com/sudomaze">@sudomaze</a>
+                </li>
+                
+                <li>
+                    <i class="fab fa-twitch" style="color: #9147FF"></i>
+                    <a href="https://twitch.tv/sudomaze">ttv/sudomaze</a>
+                </li>
+                
+                <li>
+                    <i class="fab fa-linkedin" style="color: #0077B5"></i>
+                    <a href="https://linkedin.com/in/sudomaze">in/sudomaze</a>
+                </li>
+                
+                <li>
+                    <i class="fab fa-kaggle" style="color: #35B3E0"></i>
+                    <a href="https://www.kaggle.com/sudomaze">@sudomaze</a>
+                </li>
+                
+                <li>
+                    <i class="fab fa-discord" style="color: #8899F7"></i>
+                    <a href="https://discord.gg/v44SgTg">Join our Discord Channel</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="avatar disable-select" title="click me to know more">
+        <a class="avatar-link" href="/about">
+            <img loading=lazy src="/assets/img/profile.png" class="avatar-img" alt="avatar"/>
+        </a>
+    </div>
+    <div class="main-site-subheader menu disable-select">
+    <div class="navbar-item">
+        <a style="text-decoration: none;" href="/about">
+            <i class="far fa-user"></i>
+            <p>About</p>
+        </a>
+    </div>
+    <div class="navbar-item">
+        <a style="text-decoration: none;" href="/cv">
+            <i class="fas fa-university"></i>
+            <p>CV</p>
+        </a>
+    </div>
+    <div class="navbar-item">
+        <a style="text-decoration: none;" href="/notes">
+            <i class="fas fa-pencil-alt"></i>
+            <p>Notes</p>
+        </a>
+    </div>
+    <div class="navbar-item">
+        <a style="text-decoration: none;" href="/projects">
+            <i class="fas fa-folder-open"></i>
+            <p>Projects</p>
+        </a>
+    </div>
+    <!-- <div class="navbar-item">
+        <a style="text-decoration: none;" href="/publications">
+            <i class="fas fa-glasses"></i>
+            <p>Publications</p>
+        </a>
+    </div> -->
+    <div class="navbar-item">
+        <a style="text-decoration: none;" href="/site">
+            <i class="fas fa-info"></i>
+            <p>Site</p>
+        </a>
+    </div>
+    <!-- <div class="navbar-item">
+        <a style="text-decoration: none;" href="/tags">
+            <i class="fas fa-hashtag"></i>
+            <p>Tags</p>
+        </a>
+    </div> -->
+    <div class="navbar-item">
+        <a style="text-decoration: none;" href="/feed.xml">
+            <i class="fas fa-rss"></i>
+            <p>RSS</p>
+        </a>
+    </div>
+</div>
+    <div class="searchbar search-container">
+    <i class="fa fa-search" aria-hidden="true"></i>
+    <input type="text" oninput="changeResultContainerDisp(this.value)" name="search-input" id="search-input" autocomplete="off" placeholder="Search..."/>
+    <label for="search-input" title="Search Input"></label>
+    <ul id="results-container"></ul>
+</div>
+<script>
+    function changeResultContainerDisp(val) {
+        if (val) {
+            document.getElementById("results-container").style.display = "block";
+            document.getElementById("search-input").addEventListener('blur', function() {
+                document.addEventListener('click', function(event) {
+                    var isClickInside = document.getElementById("results-container").contains(event.target);
+                    if (!isClickInside) {
+                        document.getElementById("results-container").style.display = "none";
+                    }
+                })
+            }) 
+        }  else {
+            document.getElementById("results-container").style.display = "none";
+        }
+    }
+    var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li class="search_res" style="list-style: none;"><a href="https://sudomaze.dev{url}" style="text-decoration: none; color: #555555;"><p style="font-size: 1.0rem; font-family: "Inter !important"; font-weight: 600;">{title}</p></a></li>',
+        noResultsText: 'No results found',
+        fuzzy: false,
+        limit: 4
+    })
+</script>
+    
+    <div class="main-site-navigator disable-select" id="scroll-head" onclick="window.location.assign('/');">
+        <div class="back-icon">
+            <svg class="ripple" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"/>
+            </svg>
+        </div>
+        <p class="back-p">Home</p>    
+    </div>
+    
+</header>
+
+                <h1>Exploring Robot</h1>
+<aside class="sidebar__right ">
+    <nav class="toc">
+        <header><h4 class="nav__title text-center"> Table of Content</h4></header>
+        <ul class="toc__menu">
+  <li><a href="#instructions">Instructions</a></li>
+  <li><a href="#rubric-and-grade">Rubric and Grade</a></li>
+  <li><a href="#report">Report</a>
+    <ul>
+      <li><a href="#discussion-of-the-exploration-problem">Discussion of the exploration problem</a></li>
+      <li><a href="#discussion-of-your-gmapping-and-nav_bundle-package-implementations">Discussion of your gmapping and nav_bundle package implementations</a></li>
+      <li><a href="#discussion-of-your-waypoint-allocation-algorithm">Discussion of your waypoint allocation algorithm</a></li>
+      <li><a href="#analysis-of-your-algorithms-exploration-performance">Analysis of your algorithm’s exploration performance</a>
+        <ul>
+          <li><a href="#did-it-result-in-full-coverage-of-the-environment-provide-a-screenshot-from-rviz">Did it result in full coverage of the environment (provide a screenshot from rviz)?</a></li>
+          <li><a href="#provide-suggestions-on-how-your-waypoint-allocation-algorithm-could-be-improved">Provide suggestions on how your waypoint allocation algorithm could be improved.</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#setup">Setup</a></li>
+  <li><a href="#run">Run</a></li>
+  <li><a href="#contributors">Contributors</a></li>
+</ul>
+
+    </nav>
+</aside>
+<main>
+    <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+
+<div class="content">
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+
+
+    
+    
+
+    
+    
+    
+
+    
+<h2 id="instructions">Instructions</h2>
+
+<ul>
+  <li>Code A*</li>
+  <li>Download world.csvPreview the document</li>
+  <li>Write a program to create a 4-connected graph and run an A* search from vertex (0,0) to vertex (19,19) across the obstacle map provided in world.csv.</li>
+  <li>The world is a 20×20 grid of cells</li>
+  <li>The world.csv file is an occupancy grid map: 1 means the grid cell is occupied and you can’t move through it</li>
+  <li>Edge costs are 1</li>
+  <li>Your code should output the final path (either plot it or print out the vertex coordinates) and associated path cost.</li>
+  <li>Comment your code to demonstrate that you understand the algorithm.</li>
+  <li>What to turn in:
+    <ul>
+      <li>A zip file of your commented A* code including world.csv.</li>
+      <li>A cover sheet (PDF) listing:</li>
+      <li>Web sites you used</li>
+      <li>People you worked with</li>
+      <li>The final path</li>
+      <li>Your heuristic function (in English)</li>
+      <li>How you implemented the graph and priority queue</li>
+      <li>Any known bugs/issues</li>
+    </ul>
+  </li>
+</ul>
+
+<p>A few notes:</p>
+
+<ul>
+  <li>4-connected means that you can travel from a cell to any of the cardinal neighbors (north, south, east, west).</li>
+  <li>Broadly speaking, there are two ways you can represent the graph</li>
+  <li>As an adjacency matrix with a function that returns valid neighbors for a given vertex when queried, or</li>
+  <li>As a list of vertices and a list of edges.</li>
+  <li>You need to demonstrate that you understand how the algorithm works and the best way to do this is to comment relevant lines of code. Marks will be awarded accordingly.</li>
+  <li>There are plenty of resources are available to you online, you may take inspiration from existing implementations that you find, but see Note 3 above.</li>
+</ul>
+
+<h2 id="rubric-and-grade">Rubric and Grade</h2>
+
+<table id="table-1" class="table">
+  <thead>
+    <tr>
+      <th>Criteria</th>
+      <th>Ratings</th>
+      <th> </th>
+      <th>Pts</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sends waypoints to the robot</td>
+      <td>3.0 pts   Full Marks</td>
+      <td>0.0  pts  No Marks</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Uses SLAM to create a map</td>
+      <td>3.0  pts  Full Marks</td>
+      <td>0.0   pts   No Marks</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Has a documented exploration strategy</td>
+      <td>7.0    pts    Full Marks</td>
+      <td>0.0   pts   No Marks</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>Strategy works in all world files (entire space visited)</td>
+      <td>7.0    pts    Full Marks</td>
+      <td>0.0   pts   No Marks</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>Mechanism for detecting unexplored area</td>
+      <td>5.0  pts  Full Marks</td>
+      <td>0.0   pts   No Marks</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Mechanism for detecting when exploration strategy fails  Failure case: didn't get to way point, what do you do next?</td>
+      <td>7.0   pts   Full Marks</td>
+      <td>0.0   pts   No Marks</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>Algorithm/strategy for getting to unexplored area</td>
+      <td>3.0   pts   Full Marks</td>
+      <td>0.0   pts   No Marks</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>Behaves "reasonably" on other test worlds  Doesn't crash, makes some attempt to navigate to unexplored areas</td>
+      <td>5.0  pts  Full Marks</td>
+      <td>0.0   pts   No Marks</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <td>Total Points:</td>
+      <td> </td>
+      <td> </td>
+      <td>40.0</td>
+    </tr>
+  </tbody>
+</table>
+
+<script type="text/javascript">
+    var table = document.getElementById("table-1").createCaption();
+    table.innerHTML = "<strong>Table 1:</strong> Rubric and Grade";
+</script>
+
+<h2 id="report">Report</h2>
+
+<h3 id="discussion-of-the-exploration-problem">Discussion of the exploration problem</h3>
+
+<p>In this problem we are designing an exploration package utilizing the gmapping and nav_bundle packages to allow a simulated robot to explore an unknown environment. Our algorithm will have to set waypoints to move our robot towards the unexplored areas while avoiding obstacles. The robot should be reasonably robust to noisy odometry and mapping data, and it should be able to recognize when waypoints cannot be reached.</p>
+
+<h3 id="discussion-of-your-gmapping-and-nav_bundle-package-implementations">Discussion of your gmapping and nav_bundle package implementations</h3>
+
+<p>From the gmapping bundle we are only using the occupancy grid. This grid is used to find "frontier" points (points between explored and unexplored areas). We are also reading the map meta data which gives us the resolution of the occupancy grid in meters/pixel. This gives us the ability to transform the occupancy grid data into Cartesian coordinates. The map is also saved when a waypoint is generated and used to verify that the robot is staying in known areas only, ensuring that the robot doesn't run into walls even if it didn't know about them before it calculated it's path.</p>
+
+<p>From the nav_bundle package, we are using the waypoint commands: twist, base_link_goal, path_reset, move_base_cancel, and ready_pub.  Clear and cancel are used to have the robot only pursue a single waypoint at a time.  Waypoints generated using the occupancy grid which are then translated and rotated into the robot's local coordinate system then set as a waypoint using Twist.</p>
+
+<h3 id="discussion-of-your-waypoint-allocation-algorithm">Discussion of your waypoint allocation algorithm</h3>
+
+<p>Waypoints are generated procedurally using an 61x61 filter that scans the frontier points on the occupancy grid. The robot's exploration policy defines frontier points as being known unoccupied locations where the robot would end near unknown locations. This filter only selects points that are centered on an explored point, have no obstacles within a specified distance from the center, have a threshold percentage of unexplored cells, and aren't where the robot has been before. These cells are then weighted by the percentage of unknown cells and euclidean distance from the robot. It then uses an A* algorithm to determine if there is a known path from the current location to the candidate location. Validating the path allows the robot to exclude candidate points that would be outside of the map or within obstacles.</p>
+
+<p>If the robot enters a region that was unexplored when the waypoint was \textit{created}, it will clear the waypoint queue, cancel the current waypoint, turn 360 degrees, back up 1.5m, and generate a new waypoint. With the current implementation of the nav_bundle, the robot can select paths that pass through unknown locations. If the robot then passes though the unknown location and discovers that there is a wall blocking the path, the robot will not reroute in order to find the proper path. Instead, the robot will simply crash into the wall. To prevent incorrect path planning through unknown locations, we save how the map looked when the nav_bundle chose that path, and tell the robot to stop and reroute if we reach a location that was previously unknown, making our robot's path robust to new information.</p>
+
+<pre id="read-1" style="display:none;">
+    
+\begin{algorithm}
+\caption{FindNextWaypoint}
+\begin{algorithmic}
+\Procedure{FindNextWaypoint}{$map$, $window\_size$, $stride\_length$, $visited\_locations$, $robot\_loc$, $avoidance\_radius$, $empty\_radius$, $RESOLUTION$}
+
+\State $potential\_candidates \gets \text{[]}$
+
+\For{\textbf{every} $center\_cell \textbf{ in } map \textbf{ that is greater than } stride\_length$ \textbf{apart from each other}}
+    % if the center and the surrounding cells are not empty:
+    %   continue
+    \State $skip \gets false$
+    \For{\textbf{every} $neighbor\_cell$\textbf{ in a }$avoidance\_radius$\textbf{ away from }$center\_cell$}
+        \If {alreadyVisited($visited\_location$, $neighbor\_cell$)}
+            \State $skip \gets true$
+            \State \textbf{break}
+        \EndIf
+    \EndFor
+    \If {$skip == true$}
+        \State \textbf{continue}
+    \EndIf
+    \For{\textbf{every} $neighbor\_cell$\textbf{ in a }$empty\_radius$\textbf{ away from }$center\_cell$}
+        \If {getMapValue($visited\_location$) $\neq$ $0$}
+            \State $skip \gets true$
+            \State \textbf{break}
+        \EndIf
+    \EndFor
+    \If {$skip == true$}
+        \State \textbf{continue}
+    \EndIf
+    
+    \State $cell\_sum \gets \text{sum(all cells within } window\_size/2 \text{ from } center\_cell \text{)}$
+	
+	\State $potential\_candidates\text{.append(}center\_cell\text{)}$
+\EndFor
+
+\State $candidate \gets \text{sorted(}potential\_candidates\text{)} $
+\State $candidate \gets  potential\_candidates\text{.pop()} $
+\While{$\textbf{not } \text{reachableByAStar(} robot\_loc, candidate\text{)}$}
+    \State $candidate \gets  potential\_candidates\text{.pop()} $
+    \State $best\_loc=candidate$
+\EndWhile
+
+\State $candidate  \gets \text{convert\_row\_col\_to\_coord}best\_loc, RESOLUTION, map\text{)} $
+
+\State \textbf{return} $candidate$
+
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+
+</pre>
+<p><span class="markdown-pseudocode" id="goal-1"></span>
+<script type="text/javascript">
+    var code = document.getElementById("read-1").textContent;
+    var parentEl = document.getElementById("goal-1");
+    var options = {
+        lineNumber: true
+    };
+    pseudocode.render(code, parentEl, options);
+</script></p>
+
+<ul>
+  <li>Inputs:
+    <ul>
+      <li>map: The current occupancy grid</li>
+      <li>window_size: Width of the sliding window used to generate candidate points</li>
+      <li>stride_length: Row much to shift the sliding window with each iteration</li>
+      <li>visited_locations: Grid with same size as map representing the locations we have been to</li>
+      <li>robot_loc: Currently location of the robot</li>
+      <li>avoidance_radius: Radius around candidate waypoint that should not contain walls</li>
+      <li>empty_radius: Radius around candidate waypoint that should be empty</li>
+      <li>RESOLUTION: How many meters per cell</li>
+    </ul>
+  </li>
+  <li>Outputs:
+    <ul>
+      <li>candidate: The best potential waypoint to go to next</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="analysis-of-your-algorithms-exploration-performance">Analysis of your algorithm’s exploration performance</h3>
+
+<p>The algorithm has managed full coverage in all provided maps. This algorithm is far from perfect, periodically getting stuck (although it is able to correct itself), and periodically choosing waypoints outside of the map. The algorithm can struggle to come up with waypoints in a reasonable amount of time (typically 20 seconds) due to the need to run A* after a potential candidate is selected.</p>
+
+<p>The algorithm tended to get the robot stuck in one area, ensuring that every cell in the immediate area. This behavior causes the exploration process to take a long time in the maze map if it selects a point on the other side of a wall potentially causing long travel times.</p>
+
+<h4 id="did-it-result-in-full-coverage-of-the-environment-provide-a-screenshot-from-rviz">Did it result in full coverage of the environment (provide a screenshot from rviz)?</h4>
+
+<div class="row">
+    <div class="col-md-4 d-flex justify-content-center">
+        <img loading="lazy" src="/assets/img/randomdots.png" class="img-fluid" alt="Random Dots Map" />
+    </div>
+    <div class="col-md-4 d-flex justify-content-center">
+        <img loading="lazy" src="/assets/img/TheOffice.png" class="img-fluid" alt="The Office Map" />
+    </div>
+    <div class="col-md-4 d-flex justify-content-center">
+        <img loading="lazy" src="/assets/img/maze.png" class="img-fluid" alt="The Maze Map" />
+    </div>
+</div>
+<figure class="wm-100" id="img-1">
+	<figcaption><strong>Figure 1:</strong> Random Dots Map, The Office Map, and The Maze Map</figcaption>
+</figure>
+
+<p>This algorithm resulted in full exploration of the robot's environment with a reasonable success rate. The many dots map was the first map that the robot completed, it completed the map in around 20 minutes. Euclidean distance in this map is an accurate way to approximate path distance since the map isn't divided into rooms, making it an ideal scenario for this algorithm. The office map saw completion times of around 22 minutes. This was largely due to the euclidean distance heuristic that had the robot fully explore each room before moving on. This algorithm struggled with the maze file since it had a habit of setting waypoint on the other side of a wall making it drive back and forth around the entire map, making little but steady progress.</p>
+
+<h4 id="provide-suggestions-on-how-your-waypoint-allocation-algorithm-could-be-improved">Provide suggestions on how your waypoint allocation algorithm could be improved.</h4>
+
+<p>The algorithm should use an A* search in order to find the nearest waypoints instead of using euclidean distance. This should make the exploration time faster since it would travel through fully explored areas less often in order to reach new locations. Computationally expensive functions (such as A*) could be rewritten in C++ in order to cut down on computational cost. The robot's policy for getting unstuck could also be improved. Currently we assume that the robot gets stuck, it is facing a wall and can therefor get unstuck by backing up enough. However, it is not always the case that the wall is in front of the robot, and backing up could end up moving the robot into a wall. Instead, a better policy would be to turn and move away from the closest wall whenever the robot is stuck.</p>
+
+<h2 id="setup">Setup</h2>
+<ul>
+  <li>Download the file (<a href="https://github.com/sudomaze/exploring-robot">source code</a>)</li>
+  <li>Unzip the file into the \catkin_ws\src directory</li>
+  <li>In \catkin_ws, run this command to build</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>catkin_make
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 id="run">Run</h2>
+<ul>
+  <li>Open a new terminal</li>
+  <li>In \catkin_ws, run this command to source the bash file</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nb">source </span>devel/setup.bash
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<ul>
+  <li>Run this command to launch the ros package</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>roslaunch src/rob456_project/launch/rob456_project.launch
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<ul>
+  <li>Open a new terminal</li>
+  <li>In \catkin_ws, run this command to source the bash file</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre><span class="nb">source </span>devel/setup.bash
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<ul>
+  <li>Run this command to launch the ros package</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>roslaunch src/nav_bundle/launch/nav_bundle.launch
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<ul>
+  <li>When the world starts, in rviz, select '2D Nav Goal' and point to a closer cell that has been explored</li>
+</ul>
+
+<h2 id="contributors">Contributors</h2>
+
+<ul>
+  <li>Lucas Frey <a href="https://github.com/lcsfrey">lcsfrey</a></li>
+  <li>Mazen Alotaibi <a href="https://github.com/sudomaze">sudomaze</a></li>
+  <li>Daniel Boreham</li>
+</ul>
+
+
+</div>
+    <!-- Add backlinks to the current page --> 
+
+
+
+
+
+
+    
+
+
+
+</main>
+                 
+                <div id="copyright">
+    <p id="copyright-notice">© Mazen Alotaibi</p>
+</div>
+            </div>
+            <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn"><i class="fa fa-chevron-up"></i></button>
+        </div>
+        <nav class="context-menu" id="context-menu">
+    <ul class="context-menu__items">
+      <li class="context-menu__item">
+            <a href="#" class="context-menu__link" data-action="backlinks">
+              View Linked References
+            </a>
+      </li>
+      <li class="context-menu__item">
+            <a href="#" class="context-menu__link" data-action="related-posts">
+              View Related Posts
+            </a>
+      </li>
+      <li class="context-menu__item">
+        <a href="#" class="context-menu__link" data-action="new-tab">
+          Open in new tab
+        </a>
+      </li>
+    </ul>
+</nav>
+<nav class="context-menu-res" id="context-menu-res">
+</nav>
+        
+  
+    
+    <script src="/assets/js/contextmenu.js"></script>
+  
+    
+    <script src="/assets/js/nightmode-event.js"></script>
+  
+
+<script>
+  document.getElementById("scroll-to-top").addEventListener("click", function() {
+  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  });
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-131236199-2', 'auto');
+  ga('send', 'pageview');
+</script>
+    </body>
+</html>

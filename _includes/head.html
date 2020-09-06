@@ -1,27 +1,27 @@
 <head>
-    {% include seo.html %}
-    {% include seo.html %}
-    {% if site.data.site.head_scripts %}
+  {% include seo.html %}
+
+  <!-- sourcing javascript files -->
+  {% if site.data.site.head_scripts %}
     {% for script in site.data.site.head_scripts %}
-    {% if script contains "://" %}
-    {% capture script_path %}{{ script }}{% endcapture %}
-    {% else %}
-    {% capture script_path %}{{ script | relative_url }}{% endcapture %}
-    {% endif %}
-    <script src="{{ script_path }}"></script>
+      {% if script contains "://" %}
+        {% capture script_path %}{{ script }}{% endcapture %}
+      {% else %}
+        {% capture script_path %}{{ script | relative_url }}{% endcapture %}
+      {% endif %}
+      <script async src="{{ script_path }}"></script>
     {% endfor %}
-    {% endif %}
-    {% if site.data.site.head_links %}
-    {% for link in site.data.site.head_links %}
-    {% if link contains "://" %}
-    {% capture link_path %}{{ link }}{% endcapture %}
-    {% else %}
-    {% capture link_path %}{{ link | relative_url }}{% endcapture %}
-    {% endif %}
-    <link rel="stylesheet" href="{{ link_path }}">
-    {% endfor %}
-    {% endif %}
-    <script type="text/x-mathjax-config">
+  {% endif %}
+
+  {% if page.url contains '/about/' %}
+    <script async src="/assets/libs/github/github-calendar.min.js"></script>
+  {% endif %}
+
+  {% if page.url contains '/notes/' or page.url contains '/projects/'%}
+    <script async src="/assets/libs/katex/katex.min.js"></script>
+    <script async src="/assets/libs/pseudocode.js/pseudocode.js"></script>
+    <!-- configuring mathjax -->
+    <script async type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
           inlineMath: [ ['$','$'], ["\\(","\\)"] ],
@@ -29,27 +29,44 @@
         }
       });
     </script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
-      integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
-    <script>
-      var disqusPublicKey = "{{ site.data.site.disqus.public_key }}",
-        disqusShortname = "{{ site.data.site.disqus.shortname }}",
-        siteUrl = "{{ site.data.site.url }}",
-        pageUrl = "{{ page.url }}",
-        pageAccessToken = CryptoJS.AES.decrypt("{{ site.data.site.access_token }}", "Secret Passphrase").toString(CryptoJS
-          .enc.Utf8),
-        pagePath = "{{ page.path }}",
-        githubRepo = "{{ site.data.site.repository }}",
-        layoutDiscussion = false;
-    </script>
-  
-    {% if layout.discussion == true %}
-    <script>
+    <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
+
+  <!-- sourcing css files -->
+  {% if site.data.site.head_links %}
+    {% for link in site.data.site.head_links %}
+      {% if link contains "://" %}
+        {% capture link_path %}{{ link }}{% endcapture %}
+      {% else %}
+        {% capture link_path %}{{ link | relative_url }}{% endcapture %}
+      {% endif %}
+      <link rel="stylesheet" href="{{ link_path }}" media="print" onload="this.media='all'">
+    {% endfor %}
+  {% endif %}
+  {% if page.url contains '/about/' %}
+    <link rel="stylesheet" href="/assets/libs/github/github-calendar.css" media="print" onload="this.media='all'">
+  {% endif %}
+  {% if page.url contains '/notes/' or page.url contains '/projects/' %}
+    <link rel="stylesheet" href="/assets/libs/katex/katex.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/libs/pseudocode.js/pseudocode.css" media="print" onload="this.media='all'">
+  {% endif %}
+
+  <script async>
+    var disqusPublicKey = "{{ site.data.site.disqus.public_key }}",
+      disqusShortname = "{{ site.data.site.disqus.shortname }}",
+      siteUrl = "{{ site.data.site.url }}",
+      pageUrl = "{{ page.url }}",
+      pagePath = "{{ page.path }}",
+      githubRepo = "{{ site.data.site.repository }}",
+      layoutDiscussion = false;
+  </script>
+
+  {% if layout.discussion == true %}
+    <script async>
       layoutDiscussion = true;
     </script>
-    {% endif %}
-    <link rel="alternate" type="application/rss+xml" href="{{ site.data.site.url }}/feed.xml">
+  {% endif %}
+
+  <!-- linking xml file -->
+  <link rel="alternate" type="application/rss+xml" href="{{ site.data.site.url }}/feed.xml">
 </head>

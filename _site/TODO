@@ -8,7 +8,7 @@
 ☐ Images aren't sourced correctly
 ☐ Design
     ☐ Displaying figures (single, double, and three of them)
-    ☐ Python code block doesn't display properly due to the [[]] tagging
+    ✔ Python code block doesn't display properly due to the [[]] tagging @done(20-09-04 23:18)
     ☐ Displaying tables
     ✔ Dark mode flicks during dark theme between pages (it starts as light theme, then it swtichs to dark theme) @done(20-09-04 21:37)
     ✔ Fix copy-right name @done(20-09-04 16:12)
@@ -40,6 +40,7 @@
 ☐ For any code block, display language presented and copy option
 ☐ Add Disqus to posts layout
 [] Add checklist for new comers
+
 ## Content
 
 ☐ Typos

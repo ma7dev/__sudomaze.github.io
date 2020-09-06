@@ -5,7 +5,8 @@ encoding: utf-8
 theme: null
 plugins:
   - jekyll-feed 
-  - jekyll-sitemap 
+  - jekyll-sitemap
+  - jekyll-gzip # compress assets
 
 markdown: kramdown
 highlighter: rouge
@@ -42,11 +43,5 @@ defaults:
     values:
       layout: post
       content-type: notes
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: post
-      content-type: projects
 
 include: ['_pages', '_projects']

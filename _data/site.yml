@@ -7,19 +7,13 @@ disqus:
   shortname: "sudomaze"
   public_key: "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo"
 
+head_scripts:
+  - /assets/js/nightmode-loader.js
+  - /assets/js/simple-jekyll-search.min.js
+
 head_links:
   - /assets/libs/fontawesome/css/all.min.css
-  - /assets/libs/katex/katex.min.css
-  - /assets/libs/pseudocode.js/pseudocode.css
   - /assets/css/style.css
-  - /assets/libs/github/github-calendar.css
-
-head_scripts:
-  - /assets/libs/jquery/jquery-3.4.1.min.js
-  - /assets/libs/katex/katex.min.js
-  - /assets/libs/pseudocode.js/pseudocode.js
-  - /assets/libs/github/github-calendar.min.js
-  - /assets/js/nightmode-loader.js
 
 footer_scripts:
   - /assets/js/contextmenu.js

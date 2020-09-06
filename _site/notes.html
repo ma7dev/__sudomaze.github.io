@@ -1,95 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-<meta content="Knowledge Continuum" property="og:site_name"/>
-<meta content="A non-linear thread of important ideas weaved together to explore and understand the fabric of knowledge." property="og:description">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="{% for item in site.notes %}
+    
+        
+        {{ item.title }}
+        {{ item.content | strip_html | strip | escape | truncate: 200 }}
+        
+    
+{% endfor %}" name="description" >
+<meta content="" property="og:site_name"/>
+<meta content="{% for item in site.notes %}
+    
+        
+        {{ item.title }}
+        {{ item.content | strip_html | strip | escape | truncate: 200 }}
+        
+    
+{% endfor %}" property="og:description">
 <meta content="https://sudomaze.dev/about/" property="article:author">
+
 <title>sudomaze.dev</title>
 
-<meta content="website" property="og:type">
-<meta content="https://sudomaze.dev/notes" property="og:url">
+
+  <meta content="website" property="og:type">
+  <meta content="https://sudomaze.dev/notes" property="og:url">
 
 <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16"/>
-<link rel="canonical" href="https://sudomaze.dev/notes"/>
+<link rel="canonical" href="/notes"/>
 <link rel="apple-touch-icon" href="/assets/img/profile.png">
 
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-<meta content="Knowledge Continuum" property="og:site_name"/>
-<meta content="A non-linear thread of important ideas weaved together to explore and understand the fabric of knowledge." property="og:description">
-<meta content="https://sudomaze.dev/about/" property="article:author">
-<title>sudomaze.dev</title>
 
-<meta content="website" property="og:type">
-<meta content="https://sudomaze.dev/notes" property="og:url">
 
-<link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16"/>
-<link rel="canonical" href="https://sudomaze.dev/notes"/>
-<link rel="apple-touch-icon" href="/assets/img/profile.png">
 
-    
-    
-    
-    <script src="/assets/libs/jquery/jquery-3.4.1.min.js"></script>
-    
-    
-    <script src="/assets/libs/katex/katex.min.js"></script>
-    
-    
-    <script src="/assets/libs/pseudocode.js/pseudocode.js"></script>
-    
-    
-    <script src="/assets/libs/github/github-calendar.min.js"></script>
-    
-    
-    <script src="/assets/js/nightmode-loader.js"></script>
-    
-    
-    
-    
-    
-    <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css">
-    
-    
-    <link rel="stylesheet" href="/assets/libs/katex/katex.min.css">
-    
-    
-    <link rel="stylesheet" href="/assets/libs/pseudocode.js/pseudocode.css">
-    
-    
-    <link rel="stylesheet" href="/assets/css/style.css">
-    
-    
-    <link rel="stylesheet" href="/assets/libs/github/github-calendar.css">
-    
-    
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-    </script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"
-      integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
-    <script>
-      var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
-        disqusShortname = "sudomaze",
-        siteUrl = "https://sudomaze.dev",
-        pageUrl = "/notes",
-        pageAccessToken = CryptoJS.AES.decrypt("", "Secret Passphrase").toString(CryptoJS
-          .enc.Utf8),
-        pagePath = "_pages/notes.html",
-        githubRepo = "sudomaze/sudomaze.github.io",
-        layoutDiscussion = false;
-    </script>
+  <!-- sourcing javascript files -->
   
     
-    <link rel="alternate" type="application/rss+xml" href="https://sudomaze.dev/feed.xml">
+      
+      <script async src="/assets/js/nightmode-loader.js"></script>
+    
+      
+      <script async src="/assets/js/simple-jekyll-search.min.js"></script>
+    
+  
+
+  
+
+  
+
+  <!-- sourcing css files -->
+  
+    
+      
+      <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css" media="print" onload="this.media='all'">
+    
+      
+      <link rel="stylesheet" href="/assets/css/style.css" media="print" onload="this.media='all'">
+    
+  
+  
+  
+
+  <script async>
+    var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
+      disqusShortname = "sudomaze",
+      siteUrl = "https://sudomaze.dev",
+      pageUrl = "/notes",
+      pagePath = "_pages/notes.html",
+      githubRepo = "sudomaze/sudomaze.github.io",
+      layoutDiscussion = false;
+  </script>
+
+  
+
+  <!-- linking xml file -->
+  <link rel="alternate" type="application/rss+xml" href="https://sudomaze.dev/feed.xml">
 </head>
     <body>
         <div class="container">
@@ -148,7 +134,7 @@
     </div>
     <div class="avatar disable-select" title="click me to know more">
         <a class="avatar-link" href="/about">
-            <img src="/assets/img/profile.png" class="avatar-img" alt="avatar"/>
+            <img loading=lazy src="/assets/img/profile.png" class="avatar-img" alt="avatar"/>
         </a>
     </div>
     <div class="main-site-subheader menu disable-select">
@@ -203,11 +189,10 @@
 </div>
     <div class="searchbar search-container">
     <i class="fa fa-search" aria-hidden="true"></i>
-    <label for="search-input"></label>
-    <input type="text" oninput="changeResultContainerDisp(this.value)" id="search-input" autocomplete="off" placeholder="Search Simply Jekyll..."/>
+    <input type="text" oninput="changeResultContainerDisp(this.value)" name="search-input" id="search-input" autocomplete="off" placeholder="Search..."/>
+    <label for="search-input" title="Search Input"></label>
     <ul id="results-container"></ul>
 </div>
-<script src="/assets/js/simple-jekyll-search.min.js"></script>
 <script>
     function changeResultContainerDisp(val) {
         if (val) {
@@ -225,14 +210,14 @@
         }
     }
     var sjs = SimpleJekyllSearch({
-                searchInput: document.getElementById('search-input'),
-                resultsContainer: document.getElementById('results-container'),
-                json: '/search.json',
-                searchResultTemplate: '<li class="search_res" style="list-style: none;"><a href="https://sudomaze.dev{url}" style="text-decoration: none; color: #555555;"><p style="font-size: 1.0rem; font-family: "Inter !important"; font-weight: 600;">{title}</p></a></li>',
-                noResultsText: 'No results found',
-                fuzzy: false,
-                limit: 4
-                })   
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/search.json',
+        searchResultTemplate: '<li class="search_res" style="list-style: none;"><a href="https://sudomaze.dev{url}" style="text-decoration: none; color: #555555;"><p style="font-size: 1.0rem; font-family: "Inter !important"; font-weight: 600;">{title}</p></a></li>',
+        noResultsText: 'No results found',
+        fuzzy: false,
+        limit: 4
+    })
 </script>
     
     <div class="main-site-navigator disable-select" id="scroll-head" onclick="window.location.assign('/');">
@@ -272,14 +257,44 @@ Notes
         </a>
     </div>
 
+    <div class="feed-title-excerpt-block disable-select" data-url="https://sudomaze.dev/notes/math">
+        <a href="/notes/math" style="text-decoration: none; color: #333333;">
+        <p class="feed-title">Math</p>
+        <p class="feed-excerpt">Notes for math
+
+\[\frac{\partial f}{\partial x}=\lim _{x \rightarrow a} \frac{f(x, b)-f(a, b)}{x-a}=\left.(f(x, b))_{x}\right|_{x=a}\]</p>
+        </a>
+    </div>
+
 
                  
                 <div id="copyright">
     <p id="copyright-notice">© Mazen Alotaibi</p>
 </div>
             </div>
-            <button class="scroll-to-top" id="scroll-to-top"><i class="fa fa-chevron-up"></i></button>
+            <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn"><i class="fa fa-chevron-up"></i></button>
         </div>
+        <nav class="context-menu" id="context-menu">
+    <ul class="context-menu__items">
+      <li class="context-menu__item">
+            <a href="#" class="context-menu__link" data-action="backlinks">
+              View Linked References
+            </a>
+      </li>
+      <li class="context-menu__item">
+            <a href="#" class="context-menu__link" data-action="related-posts">
+              View Related Posts
+            </a>
+      </li>
+      <li class="context-menu__item">
+        <a href="#" class="context-menu__link" data-action="new-tab">
+          Open in new tab
+        </a>
+      </li>
+    </ul>
+</nav>
+<nav class="context-menu-res" id="context-menu-res">
+</nav>
         
   
     
@@ -304,28 +319,5 @@ Notes
   ga('create', 'UA-131236199-2', 'auto');
   ga('send', 'pageview');
 </script>
-        
-<nav class="context-menu" id="context-menu">
-    <ul class="context-menu__items">
-      <li class="context-menu__item">
-            <a href="#" class="context-menu__link" data-action="backlinks">
-              View Linked References
-            </a>
-      </li>
-      <li class="context-menu__item">
-            <a href="#" class="context-menu__link" data-action="related-posts">
-              View Related Posts
-            </a>
-      </li>
-      <li class="context-menu__item">
-        <a href="#" class="context-menu__link" data-action="new-tab">
-          Open in new tab
-        </a>
-      </li>
-    </ul>
-</nav>
-<nav class="context-menu-res" id="context-menu-res">
-</nav>
-
     </body>
 </html>

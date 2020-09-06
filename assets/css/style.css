@@ -160,7 +160,7 @@ pre code {
     display: inline-block;
     overflow: auto !important;
     white-space: pre-line !important;
-    word-wrap: break-word !important;       
+    word-wrap: break-word !important;
     padding: 15px 15px  15px 15px;
     vertical-align:middle;
     background-color: var(--overlay-background-color);
@@ -350,7 +350,7 @@ hr {
     margin-right: 10px;
 }
 .socials a {
-    color: #4183c4;
+    color: #0053a6;
     text-decoration: none;
     font-family: 'IBM Plex Sans', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 15px;

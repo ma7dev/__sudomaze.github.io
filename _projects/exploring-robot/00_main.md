@@ -2,6 +2,7 @@
 layout: post
 title: Exploring Robot
 category: project
+permalink: /projects/exploring-robot
 display: "/assets/gif"
 ---
 
