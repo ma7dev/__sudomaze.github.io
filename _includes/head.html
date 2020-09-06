@@ -9,7 +9,7 @@
       {% else %}
         {% capture script_path %}{{ script | relative_url }}{% endcapture %}
       {% endif %}
-      <script async src="{{ script_path }}"></script>
+      <script src="{{ script_path }}"></script>
     {% endfor %}
   {% endif %}
 
@@ -40,7 +40,7 @@
       {% else %}
         {% capture link_path %}{{ link | relative_url }}{% endcapture %}
       {% endif %}
-      <link rel="stylesheet" href="{{ link_path }}" media="print" onload="this.media='all'">
+      <link rel="stylesheet" href="{{ link_path }}">
     {% endfor %}
   {% endif %}
   {% if page.url contains '/about/' %}
