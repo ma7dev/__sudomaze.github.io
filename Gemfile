@@ -16,4 +16,5 @@ gem 'jekyll-sitemap'
 # Enable assets compression
 group :jekyll_plugins do
   gem 'jekyll-gzip'
+  gem 'jekyll-seo-tag'
 end

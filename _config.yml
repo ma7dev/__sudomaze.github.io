@@ -7,6 +7,7 @@ plugins:
   - jekyll-feed 
   - jekyll-sitemap
   - jekyll-gzip # compress assets
+  - jekyll-seo-tag # to fix: robots.txt is not valid
 
 markdown: kramdown
 highlighter: rouge
