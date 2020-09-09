@@ -8,12 +8,10 @@ disqus:
   public_key: "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo"
 
 head_scripts:
-  - /assets/js/nightmode-loader.js
-  - /assets/js/simple-jekyll-search.min.js
+  # - /assets/js/async_file.js
 
 head_links:
   - /assets/libs/fontawesome/css/all.min.css
-  - /assets/css/style.css
 
 footer_scripts:
   - /assets/js/contextmenu.js

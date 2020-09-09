@@ -12,7 +12,7 @@
     ☐ Displaying tables
     ✔ Dark mode flicks during dark theme between pages (it starts as light theme, then it swtichs to dark theme) @done(20-09-04 21:37)
     ✔ Fix copy-right name @done(20-09-04 16:12)
-✔ Lighthouse @done(20-09-05 22:59)
+✔ Lighthouse v1.0 @done(20-09-05 22:59)
     ✔ Performance (65%) @done(20-09-05 22:59)
         ✔ Properly size images (reduce from 350KB to 320 KB) @done(20-09-05 22:59)
         ✔ Eliminate render-blocking resources @done(20-09-05 22:59)
@@ -32,6 +32,17 @@
         ✔ remove js errors in console @done(20-09-05 22:59)
     ✔ SEO (90%) @done(20-09-05 22:59)
         ✔ Document doesn't have a meta description @done(20-09-05 22:59)
+[] PageSpeed Insights
+    ✔ Eliminate render-blocking resources @done(20-09-09 10:25)
+        ✔ nightmode-loader.js @done(20-09-09 10:25)
+        ✔ simple=jekyll-search-min.js @done(20-09-09 10:25)
+        ✔ all.min.css @done(20-09-09 10:25)
+        ✔ style.css @done(20-09-09 10:25)
+    [] Serve static assets with an efficient cache policy - cache elements
+    [] Avoid chaining critical requests - download fonts and store them locally
+    [] Properly size images
+    [] Preload key requests
+
 
 ## Features
 

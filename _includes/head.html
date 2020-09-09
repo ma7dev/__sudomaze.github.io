@@ -2,6 +2,12 @@
   {% include seo.html %}
 
   <!-- sourcing javascript files -->
+
+  <!-- sourcing sync files (inline to improve speed of rendering the page) -->
+  {% inline_js assets/js/nightmode-loader.js %}
+  {% inline_js assets/js/simple-jekyll-search.min.js %}
+
+  <!-- sourcing async files (global) -->
   {% if site.data.site.head_scripts %}
     {% for script in site.data.site.head_scripts %}
       {% if script contains "://" %}
@@ -9,10 +15,13 @@
       {% else %}
         {% capture script_path %}{{ script | relative_url }}{% endcapture %}
       {% endif %}
-      <script src="{{ script_path }}"></script>
+      <script async src="{{ script_path }}"></script>
     {% endfor %}
   {% endif %}
 
+
+
+  <!-- sourcing async files (specialized for certain pages) -->
   {% if page.url contains '/about/' %}
     <script async src="/assets/libs/github/github-calendar.min.js"></script>
   {% endif %}
@@ -33,6 +42,11 @@
   {% endif %}
 
   <!-- sourcing css files -->
+
+  <!-- sourcing sync files (inline to improve speed of rendering the page) -->
+  {% inline_css assets/css/style.css %}
+
+  <!-- sourcing async files (global) -->
   {% if site.data.site.head_links %}
     {% for link in site.data.site.head_links %}
       {% if link contains "://" %}
@@ -40,9 +54,11 @@
       {% else %}
         {% capture link_path %}{{ link | relative_url }}{% endcapture %}
       {% endif %}
-      <link rel="stylesheet" href="{{ link_path }}">
+      <link rel="stylesheet" href="{{ link_path }}" media="print" onload="this.media='all'">
     {% endfor %}
   {% endif %}
+
+  <!-- sourcing async files (specialized for certain pages) -->
   {% if page.url contains '/about/' %}
     <link rel="stylesheet" href="/assets/libs/github/github-calendar.css" media="print" onload="this.media='all'">
   {% endif %}
