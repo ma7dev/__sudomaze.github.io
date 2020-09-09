@@ -1,0 +1,208 @@
+- title: "ReplaceMe"
+  tag: "replaceme"
+  date: "6/2020 - Present"
+  image: "img/replaceme.gif"
+  demo: "http://aidemo.cgrb.oregonstate.edu/"
+  description: ""
+  publish: true
+  tools:
+  - tool: Bootstrap
+    tag: bootstrap
+  - tool: jQuery
+    tag: jquery
+  - tool: Node.js
+    tag: nodejs
+  - tool: Bash
+    tag: bash
+
+- title: "Labeling Tool"
+  tag: "labeling-tool"
+  date: "11/2019 - 6/2020"
+  image: "img/labeling-tool.png"
+  description: ""
+  publish: false
+  tools:
+  - tool: Bootstrap
+    tag: bootstrap
+  - tool: jQuery
+    tag: jquery
+  - tool: Fabric.js
+    tag: fabricjs
+  - tool: Node.js
+    tag: nodejs
+    
+- title: "Tech Data AI Demo"
+  tag: "ai-demo"
+  date: "11/2018 - 6/2019"
+  image: "img/ai-demo.png"
+  demo: "http://aidemo.cgrb.oregonstate.edu/"
+  description: ""
+  publish: false
+  tools:
+  - tool: Bootstrap
+    tag: bootstrap
+  - tool: jQuery
+    tag: jquery
+  - tool: Node.js
+    tag: nodejs
+  - tool: Bash
+    tag: bash
+  accomplishments:
+  - Developed a website that races multiple hardware by running Deep Learning models developed by the CGRB lab. The project sponsored by <strong>Tech Data</strong>, <strong>IBM</strong>, <strong>NVIDIA</strong>, and <strong>OpenPower</strong>, and the project featured in <strong>IBMThink2019 Conference</strong>.
+  - Developed the website using <strong>Bootstrap</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>NGINX</strong>, and <strong>Bash</strong>.
+
+- title: "Senior Design Project"
+  tag: "senior-design-project"
+  date: "10/2018 - 6/2019"
+  image: "img/ObjDetectFig.png"
+  code: "https://github.com/PavementPrometheus/Street-Watch"
+  description: ""
+  publish: false
+  tools:
+  - tool: PyTorch
+    tag: pytorch
+  - tool: OpenCV
+    tag: opencv
+  - tool: Node.js
+    tag: nodejs
+  accomplishments:
+  - Developed a computer vision system that detects pedestrians’ faces to obfuscate them in real-time. Then applies a tracking system to understand pedestrian and traffic behavior to increase the safety of the traffic for <strong>the City of Portland</strong>.
+  - Developed the detection system using <strong>OpenCV</strong> and <strong>PyTorch</strong>, the traffic system using <strong>OpenCV</strong> and <strong>Keras/TensorFlow</strong>, and the web API and application using <strong>Flask</strong>, <strong>Node.js</strong>, and <strong>MongoDB</strong>.
+
+- title: "Exploring Robot"
+  tag: "exploring-robot"
+  date: "11/2018"
+  image: "img/maze.png"
+  code: "https://github.com/sudomaze/exploring-robot"
+  description: ""
+  publish: true
+  tools:
+  - tool: Python
+    tag: pytorch
+  - tool: C++
+    tag: cplusplus
+  - tool: ROS
+    tag: ros
+  accomplishments:
+  - Designed an exploration package utilizing the <strong>gmapping</strong> and <strong>nav bundle</strong> packages to allow a simulated robot to explore an unknown environment using <strong>Python</strong> and <strong>ROS</strong>.
+  - Designed an algorithm that generates waypoints to be followed by the robot, and each waypoint is weighted based on <em>Convolutional Filter</em> with some weighted conditions.
+
+- title: "Image Captioning"
+  tag: "image-captioning"
+  date: "7/2018 - 8/2018"
+  image: "img/no-image.jpg"
+  code: "https://github.com/sudomaze/image-captioning"
+  description: ""
+  publish: false
+  tools:
+  - tool: PyTorch
+    tag: pytorch
+  - tool: OpenCV
+    tag: opencv
+  accomplishments:
+  - Built a <strong>Convolutional Neural Network</strong>-<strong>Recurrent Neural Network</strong> (CNN-RNN) model to automatically generate captions from images using <strong>NumPy</strong>, <strong>OpenCV</strong>, and <strong>PyTorch</strong>.
+  - Trained the Encoder[<em>CNN</em>] for feature extracting and trained the Decoder[<strong>Long Short-Term Memory</strong> (LSTM) cells in <em>RNN</em>] to generate captions.
+
+- title: "Facial Keypoint Detection"
+  tag: "facial-keypoint-detection"
+  date: "6/2018 - 7/2018"
+  image: "img/no-image.jpg"
+  code: "https://github.com/sudomaze/facial-keypoint-detection"
+  description: ""
+  publish: false
+  tools:
+  - tool: PyTorch
+    tag: pytorch
+  - tool: OpenCV
+    tag: opencv
+  accomplishments:
+  - Built a <em>CNN</em> model to predict Facial Keypoints using <strong>NumPy</strong>, <strong>OpenCV</strong>, and <strong>PyTorch</strong>.
+  - Trained the <em>CNN</em> model to detect faces and predicts <strong>68 distinguishing keypoints</strong> on that face.
+
+- title: "Self-Driving RC Car"
+  tag: "self-driving-RC-car"
+  date: "5/2018 - 8/2018"
+  image: "img/self-driving-RC-car.jpg"
+  code: "https://github.com/OSUmlaiclub/SelfDrivingRCCar/tree/mazen"
+  description: ""
+  publish: false
+  tools:
+  - tool: Python
+    tag: python
+  - tool: Node.js
+    tag: nodejs
+  - tool: JavaScript
+    tag: js
+  - tool: C
+    tag: c
+  accomplishments:
+  - Wrote a web app that streams a live-feed and a controller to control an RC Car's controller, <strong>Raspberry PI</strong>, using <strong>Node.js</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>.
+  - Built the structure of the intelligent agent and machine learning model.
+
+- title: "Image Classification"
+  tag: "image-classification"
+  date: "5/2018"
+  image: "img/no-image.jpg"
+  code: "https://github.com/sudomaze/image-classification"
+  description: ""
+  publish: false
+  tools:
+  - tool: PyTorch
+    tag: pytorch
+  - tool: NumPy
+    tag: numpy
+  accomplishments:
+  - Wrote a <strong>Multiple Layer Perceptron</strong> (MLP) that classifies images using <strong>NumPy</strong> and <strong>PyTorch</strong>.
+  - Trained the <em>MLP</em> model using <strong>CIFAR-10 dataset</strong>.
+
+- title: "Aces Up Game"
+  tag: "aces-up-game"
+  date: "11/2017 - 12/2017"
+  image: "img/aceuposu.png"
+  code: "https://github.com/sudomaze/aces-up-game"
+  demo: "https://aceuposu.herokuapp.com/"
+  description: ""
+  publish: false
+  tools:
+  - tool: jQuery
+    tag: jquery
+  - tool: Java
+    tag: java
+  accomplishments:
+  - Wrote a web app with a team using <strong>Java</strong> <em>Ninja framework</em> for back-end,  <strong>JavaScript</strong> for front-end, and <strong>Heroku</strong> and <strong>GitHub</strong> to host the web app.
+  - Won the <strong>Best Web Application for Software Engineering I</strong> <em>(CS-361)</em>.
+
+- title: "Personal Website"
+  tag: "personal-website"
+  date: "12/2016"
+  image: "img/personal-website-old.png"
+  code: "https://github.com/sudomaze/sudomaze.github.io"
+  demo: "https://sudomaze.dev/"
+  description: ""
+  publish: false
+  tools:
+  - tool: JavaScript
+    tag: js
+  - tool: jQuery
+    tag: jquery
+  - tool: Node.js
+    tag: nodejs
+  - tool: NGINX
+    tag: nginx
+  accomplishments:
+  - Wrote a personal website using <strong>Node.js</strong> for back-end and <strong>JavaScript</strong> for front-end.
+  - Wrote an <strong>NGINX</strong> script that directs HTTP requests to HTTPS and maps networks.
+
+- title: "A.I. for a 2D Grid Game"
+  tag: "ai-agent-2d"
+  date: "4/2016"
+  image: "img/no-image.jpg"
+  code: "https://github.com/sudomaze/ai-agent-2d"
+  description: ""
+  publish: false
+  tools:
+  - tool: C++
+    tag: cplusplus
+  accomplishments:
+  - Wrote a 2D grid game, <em>Hunt the Wumpus</em>, with a dynamic grid size using <strong>C++</strong>.
+  - Wrote an embedded intelligent agent to solve the game using <em>Probability Distribution Methods</em>.

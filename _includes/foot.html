@@ -1,0 +1,18 @@
+{% if site.data.site.footer_scripts %}
+  {% for script in site.data.site.footer_scripts %}
+    {% if script contains "://" %}
+      {% capture script_path %}{{ script }}{% endcapture %}
+    {% else %}
+      {% capture script_path %}{{ script | relative_url }}{% endcapture %}
+    {% endif %}
+    <script async src="{{ script_path }}"></script>
+  {% endfor %}
+{% else %}
+{% endif %}
+<script>
+  document.getElementById("scroll-to-top").addEventListener("click", function() {
+  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  });
+</script>
+
+{% include analytics.html %}
