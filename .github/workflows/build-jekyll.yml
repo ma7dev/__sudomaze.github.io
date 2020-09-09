@@ -1,8 +1,6 @@
 name: Build and Deploy to Github Pages
 
 on:
-  schedule:
-    - cron:  '0 * * * *'
   push:
     branches:
       - master  # Here source code branch is `master`, it could be other branch
