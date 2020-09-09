@@ -7,6 +7,11 @@
   {% inline_js assets/js/nightmode-loader.js %}
   {% inline_js assets/js/simple-jekyll-search.min.js %}
 
+  <!-- sourcing sync files (specialized for certain pages) -->
+  {% if page.url contains '/about/' %}
+    {% inline_js assets/libs/github/github-calendar.min.js %}
+  {% endif %}
+
   <!-- sourcing async files (global) -->
   {% if site.data.site.head_scripts %}
     {% for script in site.data.site.head_scripts %}
