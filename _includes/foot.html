@@ -5,7 +5,7 @@
     {% else %}
       {% capture script_path %}{{ script | relative_url }}{% endcapture %}
     {% endif %}
-    <script src="{{ script_path }}"></script>
+    <script async src="{{ script_path }}"></script>
   {% endfor %}
 {% else %}
 {% endif %}
