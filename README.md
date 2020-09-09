@@ -21,4 +21,4 @@
 * Overall content: [Gwern Branwen](https://www.gwern.net/index)
 * Overall design: [simply-jekyll](https://github.com/raghuveerdotnet/simply-jekyll) by *[raghuveerdotnet](https://github.com/raghuveerdotnet)*
 * Display image: [Artist](https://steamcommunity.com/id/r4tb0y)
-* Deployment for custom plugins: *[jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) by *[jeffreytse](https://github.com/jeffreytse)* and *[ThiefMaster](https://github.com/ThiefMaster)*
+* Deployment for custom plugins: [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) by *[jeffreytse](https://github.com/jeffreytse)* and *[ThiefMaster](https://github.com/ThiefMaster)*
