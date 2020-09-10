@@ -1,381 +1,190 @@
-## Description
+## Instructions
 
-This is a final report for analysis of solving the travelling salesman problem using multiple algorithms and the analysis of those algorithms.
+* Code A*
+* Download world.csvPreview the document
+* Write a program to create a 4-connected graph and run an A* search from vertex (0,0) to vertex (19,19) across the obstacle map provided in world.csv.
+* The world is a 20×20 grid of cells
+* The world.csv file is an occupancy grid map: 1 means the grid cell is occupied and you can’t move through it
+* Edge costs are 1
+* Your code should output the final path (either plot it or print out the vertex coordinates) and associated path cost.
+* Comment your code to demonstrate that you understand the algorithm.
+* What to turn in:
+    * A zip file of your commented A* code including world.csv.
+    * A cover sheet (PDF) listing:
+    * Web sites you used
+    * People you worked with
+    * The final path
+    * Your heuristic function (in English)
+    * How you implemented the graph and priority queue
+    * Any known bugs/issues
 
-## Algorithms that Solve TSP
+A few notes:
 
-### Brute Force Search (Naive Algorithm)
+* 4-connected means that you can travel from a cell to any of the cardinal neighbors (north, south, east, west).
+* Broadly speaking, there are two ways you can represent the graph
+* As an adjacency matrix with a function that returns valid neighbors for a given vertex when queried, or
+* As a list of vertices and a list of edges.
+* You need to demonstrate that you understand how the algorithm works and the best way to do this is to comment relevant lines of code. Marks will be awarded accordingly.
+* There are plenty of resources are available to you online, you may take inspiration from existing implementations that you find, but see Note 3 above.
 
-#### Run-time Analysis
+## Rubric and Grade
 
-$$O(n!)$$
+{% include built-in/table.html id="1" content="
+|Criteria|Ratings||Pts|
+|--- |--- |--- |--- |
+|Sends waypoints to the robot|3.0 pts   Full Marks|0.0  pts  No Marks|3.0|
+|Uses SLAM to create a map|3.0  pts  Full Marks|0.0   pts   No Marks|3.0|
+|Has a documented exploration strategy|7.0    pts    Full Marks|0.0   pts   No Marks|7.0|
+|Strategy works in all world files (entire space visited)|7.0    pts    Full Marks|0.0   pts   No Marks|7.0|
+|Mechanism for detecting unexplored area|5.0  pts  Full Marks|0.0   pts   No Marks|5.0|
+|Mechanism for detecting when exploration strategy fails  Failure case: didn't get to way point, what do you do next?|7.0   pts   Full Marks|0.0   pts   No Marks|7.0|
+|Algorithm/strategy for getting to unexplored area|3.0   pts   Full Marks|0.0   pts   No Marks|3.0|
+|Behaves \"reasonably\" on other test worlds  Doesn't crash, makes some attempt to navigate to unexplored areas|5.0  pts  Full Marks|0.0   pts   No Marks|5.0|
+|Total Points:|||40.0|" 
+caption="Rubric and Grade" %}
 
-#### Pseudo-code
+## Report
+
+### Discussion of the exploration problem
+
+In this problem we are designing an exploration package utilizing the gmapping and nav_bundle packages to allow a simulated robot to explore an unknown environment. Our algorithm will have to set waypoints to move our robot towards the unexplored areas while avoiding obstacles. The robot should be reasonably robust to noisy odometry and mapping data, and it should be able to recognize when waypoints cannot be reached.
+
+### Discussion of your gmapping and nav_bundle package implementations
+
+From the gmapping bundle we are only using the occupancy grid. This grid is used to find "frontier" points (points between explored and unexplored areas). We are also reading the map meta data which gives us the resolution of the occupancy grid in meters/pixel. This gives us the ability to transform the occupancy grid data into Cartesian coordinates. The map is also saved when a waypoint is generated and used to verify that the robot is staying in known areas only, ensuring that the robot doesn't run into walls even if it didn't know about them before it calculated it's path.
+
+From the nav_bundle package, we are using the waypoint commands: twist, base_link_goal, path_reset, move_base_cancel, and ready_pub.  Clear and cancel are used to have the robot only pursue a single waypoint at a time.  Waypoints generated using the occupancy grid which are then translated and rotated into the robot's local coordinate system then set as a waypoint using Twist.
+
+### Discussion of your waypoint allocation algorithm
+
+Waypoints are generated procedurally using an 61x61 filter that scans the frontier points on the occupancy grid. The robot's exploration policy defines frontier points as being known unoccupied locations where the robot would end near unknown locations. This filter only selects points that are centered on an explored point, have no obstacles within a specified distance from the center, have a threshold percentage of unexplored cells, and aren't where the robot has been before. These cells are then weighted by the percentage of unknown cells and euclidean distance from the robot. It then uses an A* algorithm to determine if there is a known path from the current location to the candidate location. Validating the path allows the robot to exclude candidate points that would be outside of the map or within obstacles. 
+
+If the robot enters a region that was unexplored when the waypoint was \textit{created}, it will clear the waypoint queue, cancel the current waypoint, turn 360 degrees, back up 1.5m, and generate a new waypoint. With the current implementation of the nav_bundle, the robot can select paths that pass through unknown locations. If the robot then passes though the unknown location and discovers that there is a wall blocking the path, the robot will not reroute in order to find the proper path. Instead, the robot will simply crash into the wall. To prevent incorrect path planning through unknown locations, we save how the map looked when the nav_bundle chose that path, and tell the robot to stop and reroute if we reach a location that was previously unknown, making our robot's path robust to new information.
 
 {% include built-in/pcode.html id="1" code="
 \begin{algorithm}
-\caption{Brute Force Search}
+\caption{FindNextWaypoint}
 \begin{algorithmic}
-\Procedure{BF}{$r$, $cititiesNotInRoute[1...n]$}
-    \If {$citiesNotInRoute.length != 0$}
-        \For{$i$ \textbf{from} $0$ \textbf{to} $citiesNotInRoute.length$}
-            \State $cityRemoved = popFront(cititiesNotInRoute)$
-            \State $newRoute = r$
-            \State $push(newRoute, cityRemoved)$
-            \State $BF(newRoute, cititiesNotInRoute)$
-            \State $push(cititiesNotInRoute, cityRemoved)$
-        \EndFor
-    \EndIf
+\Procedure{FindNextWaypoint}{$map$, $window\_size$, $stride\_length$, $visited\_locations$, $robot\_loc$, $avoidance\_radius$, $empty\_radius$, $RESOLUTION$}
+
+\State $potential\_candidates \gets \text{[]}$
+
+\For{\textbf{every} $center\_cell \textbf{ in } map \textbf{ that is greater than } stride\_length$ \textbf{apart from each other}}
+    % if the center and the surrounding cells are not empty:
+    %   continue
+    \State $skip \gets false$
+    \For{\textbf{every} $neighbor\_cell$\textbf{ in a }$avoidance\_radius$\textbf{ away from }$center\_cell$}
+        \If {alreadyVisited($visited\_location$, $neighbor\_cell$)}
+            \State $skip \gets true$
+            \State \textbf{break}
+        \EndIf
+    \EndFor
     \If {$skip == true$}
-        \State $print(r)$
+        \State \textbf{continue}
     \EndIf
+    \For{\textbf{every} $neighbor\_cell$\textbf{ in a }$empty\_radius$\textbf{ away from }$center\_cell$}
+        \If {getMapValue($visited\_location$) $\neq$ $0$}
+            \State $skip \gets true$
+            \State \textbf{break}
+        \EndIf
+    \EndFor
+    \If {$skip == true$}
+        \State \textbf{continue}
+    \EndIf
+    
+    \State $cell\_sum \gets \text{sum(all cells within } window\_size/2 \text{ from } center\_cell \text{)}$
+	
+	\State $potential\_candidates\text{.append(}center\_cell\text{)}$
+\EndFor
+
+\State $candidate \gets \text{sorted(}potential\_candidates\text{)} $
+\State $candidate \gets  potential\_candidates\text{.pop()} $
+\While{$\textbf{not } \text{reachableByAStar(} robot\_loc, candidate\text{)}$}
+    \State $candidate \gets  potential\_candidates\text{.pop()} $
+    \State $best\_loc=candidate$
+\EndWhile
+
+\State $candidate  \gets \text{convert\_row\_col\_to\_coord}best\_loc, RESOLUTION, map\text{)} $
+
+\State \textbf{return} $candidate$
+
 \EndProcedure
 \end{algorithmic}
 \end{algorithm}
+
 " %}
 
-#### Description
+* Inputs:
+    * map: The current occupancy grid
+    * window_size: Width of the sliding window used to generate candidate points
+    * stride_length: Row much to shift the sliding window with each iteration
+    * visited_locations: Grid with same size as map representing the locations we have been to
+    * robot_loc: Currently location of the robot
+    * avoidance_radius: Radius around candidate waypoint that should not contain walls
+    * empty_radius: Radius around candidate waypoint that should be empty
+    * RESOLUTION: How many meters per cell
+* Outputs:
+    * candidate: The best potential waypoint to go to next
 
-This algorithm checks every vertices and every edges. Therefore, it is clear it will find the solution. The running time is $O(n!)$ because the starting vertex has $n-1$  edges to choose, next one has $n-2$  edges to choose, $...  n-1$  vertex has $1$ edge to choose. Therefore, by multiply every edges, Icould get the running time which is $(n-1)!$. Since it is clear $(n-1)! <  n!$, I can say the running time is $O(n!)$.I choose this algorithm because it is the basic way to think about how to solve this problem. This algorithm is easy to make, but it is really slow. Therefore, this algorithm makes us to realize how important the algorithm is. Better algorithm makes way more faster program.
+### Analysis of your algorithm’s exploration performance
 
-### Held-Karp Algorithm (Dynamic Algorithm)
+The algorithm has managed full coverage in all provided maps. This algorithm is far from perfect, periodically getting stuck (although it is able to correct itself), and periodically choosing waypoints outside of the map. The algorithm can struggle to come up with waypoints in a reasonable amount of time (typically 20 seconds) due to the need to run A* after a potential candidate is selected.
 
-#### Run-time Analysis
+The algorithm tended to get the robot stuck in one area, ensuring that every cell in the immediate area. This behavior causes the exploration process to take a long time in the maze map if it selects a point on the other side of a wall potentially causing long travel times.
 
-$$O(n^2 \times 2^n)$$
+#### Did it result in full coverage of the environment (provide a screenshot from rviz)?
 
-#### Pseudo-code
+{% include built-in/3-img.html id="1"
+    url1="/assets/img/randomdots.png" caption1="Random Dots Map"
+    url2="/assets/img/TheOffice.png" caption2="The Office Map"
+    url3="/assets/img/maze.png" caption3="The Maze Map" 
+%}
 
-{% include built-in/pcode.html id="2" code="
-\begin{algorithm}
-\caption{Held-Karp Algorithm}
-\begin{algorithmic}
-\Procedure{HK}{$G$, $n$}
-    \For{$k$ \textbf{from} $2$ \textbf{to} $n$}
-        \State $C(\{k\},k)=d_{1, k}$
-    \EndFor
-    \For{$s$ \textbf{from} $2$ \textbf{to} $n-1$}
-        \For{$all\ S \subseteq \{2,...,n\}, |S|=s$}
-            \For{$all\ k \in S$}
-                \State $\{C(S,k)=min_{m \neq k, m \in S}[C(S-\{k\},m)+d_{m, k}]\}$
-            \EndFor
-        \EndFor
-    \EndFor
-    \State $opt=min_{k \neq 1}[C(\{2, 3, ..., n\}, k) + d_{k, 1}]$
-    \State \textbf{return} $opt$
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
-" %}
+This algorithm resulted in full exploration of the robot's environment with a reasonable success rate. The many dots map was the first map that the robot completed, it completed the map in around 20 minutes. Euclidean distance in this map is an accurate way to approximate path distance since the map isn't divided into rooms, making it an ideal scenario for this algorithm. The office map saw completion times of around 22 minutes. This was largely due to the euclidean distance heuristic that had the robot fully explore each room before moving on. This algorithm struggled with the maze file since it had a habit of setting waypoint on the other side of a wall making it drive back and forth around the entire map, making little but steady progress.
 
-#### Description
+#### Provide suggestions on how your waypoint allocation algorithm could be improved.
 
-This algorithm use dynamic algorithm to solve the problem. It first gets the distance between two vertices and save it to array. It is $O(n)$ steps. The next part is to find the minimum distance with small set of vertices. The for loop, for $s$ from $2$ to $n-1$ and for all $S$  in $\{2, ..., n\}$, $\|S\| =  s$, is defining small set of vertices. The next for loop is the part that getting the minimum distance from the set of vertices. Each set has s  elements and it has to compare with s  different minimum candidates, it has $O(s^2)$ running time. The first two loop, which define the set S, has running time with $SUM_i=2 ^{n-1} (C(n-1,i))$ because there are $C(n-1, i)$ number of combination for defining set with $i$  elements, and since it is from $2$  to $n-1$, it makes $SUM_i=2 ^{n-1} (C(n-1,i)) \times  n^2)$. Hence, it could be rewrite as $n^2 \times  SUM_i=2 ^{n-1} (C(n-1,i)) <= n^2 \times  2^{n-1} =  1⁄2  \times  n^2 \times  2^n =  O(2^n \times  n^2$). I choose this algorithm because I learned dynamic programming and this algorithm use that concepts. This algorithm saves data into $C(S, n)$ and use it to find minimum distance. By this skill, this algorithm can find real answer with way more faster than the brute force method. However, it is still slow.
+The algorithm should use an A* search in order to find the nearest waypoints instead of using euclidean distance. This should make the exploration time faster since it would travel through fully explored areas less often in order to reach new locations. Computationally expensive functions (such as A*) could be rewritten in C++ in order to cut down on computational cost. The robot's policy for getting unstuck could also be improved. Currently we assume that the robot gets stuck, it is facing a wall and can therefor get unstuck by backing up enough. However, it is not always the case that the wall is in front of the robot, and backing up could end up moving the robot into a wall. Instead, a better policy would be to turn and move away from the closest wall whenever the robot is stuck. 
 
-### K-Nearest Neighbor Algorithm (Approximation Algorithm)
+## Setup
+* Download the file ([source code](https://github.com/sudomaze/exploring-robot))
+* Unzip the file into the \catkin_ws\src directory
+* In \catkin_ws, run this command to build
 
-#### Run-time Analysis
-
-$$O(n^2)$$
-
-#### Code
-
-{% highlight python linenos %}
-def Distance(a,b):
-    return int(round(math.sqrt((math.pow(a['i'] - b['i'],2))+(math.pow(a['j'] - b['j'],2)))))
-
-def KNN(cities, inFile):
-    matrix = [[-1 for x in range(len(cities))] for y in range(len(cities))]
-    minLength = sys.maxsize
-    order = []
-    for x in range(len(cities)):
-        allCities = [z for z in cities]
-        route = []
-        route.append(allCities[x]['city'])
-        allCities.remove(allCities[x])
-        length = 0
-        while len(allCities) > 0:
-            current = cities[route[len(route)-1]]
-            minDistance = sys.maxsize
-            minCity = -1
-            for y in range(len(allCities)):
-                currentDistance = matrix[current['city']][allCities[y]['city']]
-                if currentDistance == -1:
-                    currentDistance = Distance(current, allCities[y])
-                    matrix[current['city']][allCities[y]['city']] = currentDistance
-                    matrix[allCities[y]['city']][current['city']] = currentDistance
-                if currentDistance < minDistance:
-                    minDistance = currentDistance
-                    minCity = allCities[y]
-            route.append(minCity['city'])
-            allCities.remove(minCity)
-            length += minDistance
-        currentDistance = matrix[cities[route[0]]['city']][cities[route[len(route)-1]]['city']]
-        if currentDistance == -1:
-            currentDistance = Distance(cities[route[0]], cities[route[len(route)-1]])
-            matrix[cities[route[0]]['city']][cities[route[len(route)-1]]['city']] = currentDistance
-            matrix[cities[route[len(route)-1]]['city']][cities[route[0]]['city']] = currentDistance
-        length += currentDistance
-        if length < minLength:
-            minLength = length
-            order = [x for x in route]
-            WriteFileKNN(inFile, order, minLength)
+{% highlight bash linenos %}
+catkin_make
 {% endhighlight %}
 
-#### Description
+## Run
+* Open a new terminal
+* In \catkin_ws, run this command to source the bash file
 
-This algorithm is greedy algorithm that finds the vertex with minimum weight and choose it. Therefore, the first vertex has to check $n-1$ edges and choose the minimum. Second one has to check n-2 edges and choose the minimum. The $n-1$ vertex choose $1$ edges. Hence, the running time is $SUM\ 1\ TO\ N-1\ = (N-1)(N-2)/2 = O(N^2)$. I choose this algorithm because I found that this is the fastest. This algorithm is greedy algorithm that choose only the nearest vertex from the start vertex, and keep finding the nearest vertex from the chosen one. Since it is just checking the nearest, there is possibility to find the wrong answer. However, I found that this algorithm finds reasonable path, which means not huge different than true answer, and the power of this algorithm is this is super fast. It is only $O(n^2)$. Therefore, this algorithm will be good choice when I need the result really quickly, and
-it is ok to have small error. I used a nearest neighbor algorithm written in Java to get inspiration for my Python program,
-found here: http://www.sanfoundry.com/java-program-implement-traveling-salesman-problem-using-nearest-neighbour-algorithm/. The program searches for the most optimal nearest neighbor route by using a brute-force wrapper for-loop to select each city as the starting point. The program is able to analyze each
-city for the smaller list sizes, but for the larger ones it cannot process each city within 5 minutes, so that is why I have a section of code in the main section of the program to end the algorithm after 5 minutes. Each time the algorithm finds a new shorter route it is written to the output file, so this ensures that I am still able to have a valid result at the very beginning, well before the 5 minute time constraint is over.
-
-### Genetic Algorithm (Approximation Algorithm)
-
-#### Run-time Analysis
-
-$$O(T \times n_0 \times n^2)$$
-
-where $T$ is the number of outer iteration, $n_0$ is the initial size of the population, and $n$ is the number of cities.
-
-#### Code
-
-{% highlight python linenos %}
-class City:
-    def __init__(self, id, x, y):
-        self.id = id
-        self.x = x
-        self.y = y
-    
-    def distance(self, city):
-        # xDis = self.x - city.x
-        # yDis = self.y - city.y
-        # distance = np.sqrt((xDis ** 2) + (yDis ** 2))
-        return int(round(math.sqrt((math.pow(self.x - city.x,2))+(math.pow(self.y - city.y,2)))))
-    
-    def __repr__(self):
-        return "(" + str(self.x) + "," + str(self.y) + ")"
-
-class Fitness:
-    def __init__(self, route):
-        self.route = route
-        self.distance = 0
-        self.fitness= 0.0
-    
-    def routeDistance(self):
-        if self.distance ==0:
-            pathDistance = 0
-            for i in range(0, len(self.route)):
-                fromCity = self.route[i]
-                toCity = None
-                if i + 1 < len(self.route):
-                    toCity = self.route[i + 1]
-                else:
-                    toCity = self.route[0]
-                pathDistance += fromCity.distance(toCity)
-            self.distance = pathDistance
-        return self.distance
-    
-    def routeFitness(self):
-        if self.fitness == 0:
-            self.fitness = 1 / float(self.routeDistance())
-        return self.fitness
-def createRoute(cityList):
-    route = random.sample(cityList, len(cityList))
-    return route
-def initialPopulation(popSize, cityList):
-    population = []
-
-    for i in range(0, popSize):
-        population.append(createRoute(cityList))
-    return population
-def rankRoutes(population):
-    fitnessResults = {}
-    for i in range(0,len(population)):
-        fitnessResults[i] = Fitness(population[i]).routeFitness()
-    return sorted(fitnessResults.items(), key = operator.itemgetter(1), reverse = True)
-def selection(popRanked, eliteSize):
-    selectionResults = []
-    df = pd.DataFrame(np.array(popRanked), columns=["Index","Fitness"])
-    df['cum_sum'] = df.Fitness.cumsum()
-    df['cum_perc'] = 100*df.cum_sum/df.Fitness.sum()
-    
-    for i in range(0, eliteSize):
-        selectionResults.append(popRanked[i][0])
-    for i in range(0, len(popRanked) - eliteSize):
-        pick = 100*random.random()
-        for i in range(0, len(popRanked)):
-            if pick <= df.iat[i,3]:
-                selectionResults.append(popRanked[i][0])
-                break
-    return selectionResults
-def matingPool(population, selectionResults):
-    matingpool = []
-    for i in range(0, len(selectionResults)):
-        index = selectionResults[i]
-        matingpool.append(population[index])
-    return matingpool
-def breed(parent1, parent2):
-    child = []
-    childP1 = []
-    childP2 = []
-    
-    geneA = int(random.random() * len(parent1))
-    geneB = int(random.random() * len(parent1))
-    
-    startGene = min(geneA, geneB)
-    endGene = max(geneA, geneB)
-
-    for i in range(startGene, endGene):
-        childP1.append(parent1[i])
-        
-    childP2 = [item for item in parent2 if item not in childP1]
-
-    child = childP1 + childP2
-    return child
-def breedPopulation(matingpool, eliteSize):
-    children = []
-    length = len(matingpool) - eliteSize
-    pool = random.sample(matingpool, len(matingpool))
-
-    for i in range(0,eliteSize):
-        children.append(matingpool[i])
-    
-    for i in range(0, length):
-        child = breed(pool[i], pool[len(matingpool)-i-1])
-        children.append(child)
-    return children
-def mutate(individual, mutationRate):
-    for swapped in range(len(individual)):
-        if(random.random() < mutationRate):
-            swapWith = int(random.random() * len(individual))
-            
-            city1 = individual[swapped]
-            city2 = individual[swapWith]
-            
-            individual[swapped] = city2
-            individual[swapWith] = city1
-    return individual
-def mutatePopulation(population, mutationRate):
-    mutatedPop = []
-    
-    for ind in range(0, len(population)):
-        mutatedInd = mutate(population[ind], mutationRate)
-        mutatedPop.append(mutatedInd)
-    return mutatedPop
-def nextGeneration(currentGen, eliteSize, mutationRate):
-    popRanked = rankRoutes(currentGen)
-    selectionResults = selection(popRanked, eliteSize)
-    matingpool = matingPool(currentGen, selectionResults)
-    children = breedPopulation(matingpool, eliteSize)
-    nextGeneration = mutatePopulation(children, mutationRate)
-    return nextGeneration
-
-def GA(inFile, population, popSize, eliteSize, mutationRate, generations):
-    pop = initialPopulation(popSize, population)
-    # print("Initial distance: " + str(1 / rankRoutes(pop)[0][1]))
-    
-    for i in range(0, generations):
-        pop = nextGeneration(pop, eliteSize, mutationRate)
-    
-    # print("Final distance: " + str(1 / rankRoutes(pop)[0][1]))
-    bestRouteIndex = rankRoutes(pop)[0][0]
-    bestRoute = pop[bestRouteIndex]
-    WriteFileGA(inFile, bestRoute, 1 / rankRoutes(pop)[0][1])
+{% highlight bash linenos %}
+source devel/setup.bash
 {% endhighlight %}
 
-#### Description
+* Run this command to launch the ros package
 
-The genetic algorithm seems to solve different kind of problems pretty well, such as error detection, so I have thought to give it a try to solve the TSP. The implementation of the algorithm is extremely hard compared to KNN, so I need to refer to some online resource to build the algorithm on Python, the resource is found: https://towardsdatascience.com/evolution-of-a-salesman-a-complete-genetic-algorithm-tutorial-for-python-6fe5d2b3ca35. The algorithm starts with a population, a set of solutions, and every population another new population is generated to give better solutions, so as the depth of the population increases the algorithm should give better solutions in theory.
+{% highlight bash linenos %}
+roslaunch src/rob456_project/launch/rob456_project.launch
+{% endhighlight %}
+* Open a new terminal
+* In \catkin_ws, run this command to source the bash file
 
-## Testing
+{% highlight bash linenos %}
+source devel/setup.bash
+{% endhighlight %}
 
-In order to test that my program was actually producing valid results we used the supplied tsp-verifier.py program on each of my output routes. Each result was found to be valid.
+* Run this command to launch the ros package
 
-It seems that the K-Nearest Neighbor (KNN) algorithm give better results in matter of approximation of path took and speed compared to Genetic Algorithm (GA) in all cases when time is the limitation. However, as the complexity of the graph increases and there isn't no time limits, the Genetic Algorithm can finish faster with higher approximation to the optimal path when the threshold to stop is set, compared to the KNN which takes almost 2 times longer on average to reach the same optimal path results.
+{% highlight bash linenos %}
+roslaunch src/nav_bundle/launch/nav_bundle.launch
+{% endhighlight %}
 
-My best results when testing where Test 1, 2, 4, and 5 when using KNN, and GA failed in most cases besides Test 6 and 7, which gave the same results as KNN at the same time.
+* When the world starts, in rviz, select '2D Nav Goal' and point to a closer cell that has been explored
 
+## Contributors
 
-Please view the next page to look into all of the results.
-
-{% include built-in/table.html id="1" content="
-|  | Optimal path length | Predicted path length | Ratio |
-|-----------|---------------------|-----------------------|-------|
-| KNN       |         108159            |  130921                     |  1.21     |
-| GA        |         108159            |  337541                     |  3.12     |
-" 
-caption="Example 1" %}
-
-{% include built-in/table.html id="2" content="
-|  | Optimal path length | Predicted path length | Ratio |
-|-----------|---------------------|-----------------------|-------|
-| KNN       |        2579             |    2975                   |  1.15     |
-| GA        |        2579             |    27639                   | 10.71      |
-" 
-caption="Example 2" %}
-
-
-{% include built-in/table.html id="3" content="
-|  | Optimal path length | Predicted path length | Ratio |
-|-----------|---------------------|-----------------------|-------|
-| KNN       |       1573084              |     1936941                  |  1.23     |
-| GA        |       1573084              |     1934200                  |  1.22     |
-" 
-caption="Example 3" %}
-
-
-{% include built-in/table.html id="4" content="
-|  | Predicted path length | Time took |
-|--------|-----------------------|-----------|
-| KNN    |        5911               |    0.014127969741821289       |
-| GA     |        10488               |   14.512681007385254}        |
-" 
-caption="Test 1" %}
-
-{% include built-in/table.html id="5" content="
-|  | Predicted path length | Time took |
-|--------|-----------------------|-----------|
-| KNN    |       8011                |    0.11811113357543945       |
-| GA     |       32837                |   18.30189299583435        |
-" 
-caption="Test 2" %}
-
-{% include built-in/table.html id="6" content="
-|  | Predicted path length | Time took |
-|--------|-----------------------|-----------|
-| KNN    |       14826                |   1.3867180347442627        |
-| GA     |       103387                |  34.44625997543335         |
-" 
-caption="Test 3" %}
-
-{% include built-in/table.html id="7" content="
-|  | Predicted path length | Time took |
-|--------|-----------------------|-----------|
-| KNN    |       19711                |   12.897594213485718        |
-| GA     |       220727                |  73.32604813575745         |
-" 
-caption="Test 4" %}
-
-{% include built-in/table.html id="8" content="
-|  | Predicted path length | Time took |
-|--------|-----------------------|-----------|
-| KNN    |        27128               |   123.83275985717773        |
-| GA     |        465770               |  200.42861986160278         |
-" 
-caption="Test 5" %}
-
-{% include built-in/table.html id="9" content="
-|  | Predicted path length | Time took |
-|--------|-----------------------|-----------|
-| KNN    |       39834                |   299.0716700553894        |
-| GA     |       39834                |   299.00313663482666        |
-" 
-caption="Test 6" %}
-
-{% include built-in/table.html id="10" content="
-|  | Predicted path length | Time took |
-|--------|-----------------------|-----------|
-| KNN    |        62110               |   299.6045079231262        |
-| GA     |        62110               |   299.00823521614075        |
-" 
-caption="Test 7" %}
+* Lucas Frey [lcsfrey](https://github.com/lcsfrey)
+* Mazen Alotaibi [sudomaze](https://github.com/sudomaze)
+* Daniel Boreham
