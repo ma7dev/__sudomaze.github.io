@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Curriculum Vitae"
-permalink: /cv/
+permalink: /cv
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}

@@ -42,6 +42,13 @@ links:
     text: "Join our Discord Server"
     url: "https://discord.gg/v44SgTg"
 
+  - label: "Reddit"
+    icon: "fab fa-reddit"
+    color: "#FF4500"
+    text: "u/sudomaze"
+    url: "https://www.reddit.com/user/sudomaze/"
+
+
 news:
   - date: [2020,02,15]
     description: Got admitted to the Master's Program at Oregon State University for Fall 2020.

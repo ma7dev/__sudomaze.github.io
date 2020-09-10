@@ -11,4 +11,4 @@ I think the expected pipeline will include the following:
     * Nightbot
 
 
-{% include built-in/img.html id="1" url="/assets/imgs/FaceRig-clone.jpg" caption="Expected pipeline" %}
+{% include built-in/img.html id="1" url="/assets/img/FaceRig-clone.jpg" caption="Expected pipeline" %}

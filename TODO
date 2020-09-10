@@ -2,14 +2,14 @@
 
 ## Issues
 
-☐ Mobile
-    ☐ In the about page, the GitHub heatmap isn't responsive.
-    [] Scroller doesn't work fully
-☐ Images aren't sourced correctly
-☐ Design
-    ☐ Displaying figures (single, double, and three of them)
+✔ Mobile @done(20-09-09 20:57)
+    ✔ In the about page, the GitHub heatmap isn't responsive. @done(20-09-09 20:25)
+    ✔ Scroller doesn't work fully - no need to be fixed @done(20-09-09 20:26)
+✔ Images aren't sourced correctly @done(20-09-09 20:55)
+✔ Design @done(20-09-09 20:57)
+    ✔ Displaying figures (single, double, and three of them) @done(20-09-09 20:55)
     ✔ Python code block doesn't display properly due to the [[]] tagging @done(20-09-04 23:18)
-    ☐ Displaying tables
+    ✔ Displaying tables @done(20-09-09 20:57)
     ✔ Dark mode flicks during dark theme between pages (it starts as light theme, then it swtichs to dark theme) @done(20-09-04 21:37)
     ✔ Fix copy-right name @done(20-09-04 16:12)
 ✔ Lighthouse v1.0 @done(20-09-05 22:59)
@@ -44,7 +44,7 @@
     [] Preload key requests
 
 
-## Features
+## Features 
 
 ☐ Notes
     ☐ Sort them by date of creation.
@@ -54,7 +54,7 @@
 
 ## Content
 
-☐ Typos
+✔ Typos @done(20-09-09 16:03)
     ✔ a M.S. student -> an M.S. student @done(20-09-04 09:02)
-    [] Join our Discord Channel -> Join our Discord Server
+    ✔ Join our Discord Channel -> Join our Discord Server @done(20-09-09 16:03)
 ✔ Add Discord server to the header @done(20-09-04 20:04)

@@ -42,7 +42,7 @@ This algorithm checks every vertices and every edges. Therefore, it is clear it 
 
 #### Run-time Analysis
 
-$$O(n^2 \times 2^n)$$
+$$O(n^{2} \times 2^{n})$$
 
 #### Pseudo-code
 
@@ -70,13 +70,13 @@ $$O(n^2 \times 2^n)$$
 
 #### Description
 
-This algorithm use dynamic algorithm to solve the problem. It first gets the distance between two vertices and save it to array. It is $O(n)$ steps. The next part is to find the minimum distance with small set of vertices. The for loop, for $s$ from $2$ to $n-1$ and for all $S$  in $\{2, ..., n\}$, $\|S\| =  s$, is defining small set of vertices. The next for loop is the part that getting the minimum distance from the set of vertices. Each set has s  elements and it has to compare with s  different minimum candidates, it has $O(s^2)$ running time. The first two loop, which define the set S, has running time with $SUM_i=2 ^{n-1} (C(n-1,i))$ because there are $C(n-1, i)$ number of combination for defining set with $i$  elements, and since it is from $2$  to $n-1$, it makes $SUM_i=2 ^{n-1} (C(n-1,i)) \times  n^2)$. Hence, it could be rewrite as $n^2 \times  SUM_i=2 ^{n-1} (C(n-1,i)) <= n^2 \times  2^{n-1} =  1⁄2  \times  n^2 \times  2^n =  O(2^n \times  n^2$). I choose this algorithm because I learned dynamic programming and this algorithm use that concepts. This algorithm saves data into $C(S, n)$ and use it to find minimum distance. By this skill, this algorithm can find real answer with way more faster than the brute force method. However, it is still slow.
+This algorithm use dynamic algorithm to solve the problem. It first gets the distance between two vertices and save it to array. It is $O(n)$ steps. The next part is to find the minimum distance with small set of vertices. The for loop, for $s$ from $2$ to $n-1$ and for all $S$  in $\{2, ..., n\}$, $\|S\| =  s$, is defining small set of vertices. The next for loop is the part that getting the minimum distance from the set of vertices. Each set has s  elements and it has to compare with s  different minimum candidates, it has $O(s^{2})$ running time. The first two loop, which define the set S, has running time with $SUM_{i}=2^{n-1} (C(n-1,i))$ because there are $C(n-1, i)$ number of combination for defining set with $i$  elements, and since it is from $2$  to $n-1$, it makes $SUM_{i}=2^{n-1} (C(n-1,i)) \times  n^{2})$. Hence, it could be rewrite as $n^{2} \times  SUM_{i}=2^{n-1} (C(n-1,i))$ $<= n^{2} \times  2^{n-1} =  \frac{1}{2}  \times  n^{2} \times  2^{n}$ $=  O(2^{n} \times  n^{2}$). I choose this algorithm because I learned dynamic programming and this algorithm use that concepts. This algorithm saves data into $C(S, n)$ and use it to find minimum distance. By this skill, this algorithm can find real answer with way more faster than the brute force method. However, it is still slow.
 
 ### K-Nearest Neighbor Algorithm (Approximation Algorithm)
 
 #### Run-time Analysis
 
-$$O(n^2)$$
+$$O(n^{2})$$
 
 #### Code
 
@@ -133,9 +133,9 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
 
 #### Run-time Analysis
 
-$$O(T \times n_0 \times n^2)$$
+$$O(T \times n_{0} \times n^{2})$$
 
-where $T$ is the number of outer iteration, $n_0$ is the initial size of the population, and $n$ is the number of cities.
+where $T$ is the number of outer iteration, $n_{0}$ is the initial size of the population, and $n$ is the number of cities.
 
 #### Code
 

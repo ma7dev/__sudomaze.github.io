@@ -31,9 +31,9 @@ I don&#39;t want to share my beautiful face on stream. However, I want to have a
 <meta property="og:title" content="ReplaceMe" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-09T15:56:05-07:00" />
+<meta property="article:published_time" content="2020-09-09T22:21:16-07:00" />
 <script type="application/ld+json">
-{"datePublished":"2020-09-09T15:56:05-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/replaceme"},"@type":"BlogPosting","url":"/projects/replaceme","headline":"ReplaceMe","dateModified":"2020-09-09T15:56:05-07:00","@context":"https://schema.org"}</script>
+{"datePublished":"2020-09-09T22:21:16-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/replaceme"},"@type":"BlogPosting","url":"/projects/replaceme","headline":"ReplaceMe","dateModified":"2020-09-09T22:21:16-07:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -226,7 +226,7 @@ b, strong {
 /* Figures, Images, Code, Blockquotes, Tables */
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -1233,6 +1233,10 @@ label.srs-toggle {
     display: none;
 }
 
+figcaption {
+    text-align: center;
+}
+
 /* Apparently IE10+ do not support conditionals. F*ck Me! */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .userdesc,
@@ -1410,6 +1414,18 @@ width: 30% !important;
 
 @media screen and (max-width: 800px){
 
+img {
+    width: 100% !important;
+}
+
+/* Scaling down font when screen size is small */
+a, p, ul, li, ol, table, span, blockquote {
+    font-size: .95em
+}
+/* GitHub Heatmap */
+.calendar {
+    display: none;
+}
 .box {
     width: 80%;
 }
@@ -1612,6 +1628,11 @@ iframe {
                     <a href="https://discord.gg/v44SgTg">Join our Discord Server</a>
                 </li>
                 
+                <li>
+                    <i class="fab fa-reddit" style="color: #FF4500"></i>
+                    <a href="https://www.reddit.com/user/sudomaze/">u/sudomaze</a>
+                </li>
+                
             </ul>
         </div>
     </div>
@@ -1802,11 +1823,9 @@ iframe {
   </li>
 </ul>
 
-<figure class="wm-100" id="img-1">
-    <div class="d-flex justify-content-center">
-        <img loading="lazy" src="/assets/imgs/FaceRig-clone.jpg" class="img-fluid" alt="Expected pipeline" />
-    </div>
-    <figcaption><strong>Figure 1:</strong> Expected pipeline</figcaption>
+<p><img loading="lazy" src="/assets/img/FaceRig-clone.jpg" alt="Expected pipeline" /></p>
+<figure id="img-1">
+    <figcaption><p><strong>Figure 1:</strong> Expected pipeline</p></figcaption>
 </figure>
 
 <h2 id="notes">Notes</h2>

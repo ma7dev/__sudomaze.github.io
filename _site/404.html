@@ -17,10 +17,10 @@
 
 
   <meta content="website" property="og:type">
-  <meta content="https://sudomaze.dev/404.html" property="og:url">
+  <meta content="https://sudomaze.dev/404" property="og:url">
 
 <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16"/>
-<link rel="canonical" href="/404.html"/>
+<link rel="canonical" href="/404"/>
 <link rel="apple-touch-icon" href="/assets/img/profile.png">
 
 
@@ -30,7 +30,7 @@
 <meta name="generator" content="Jekyll v4.0.1" />
 <meta property="og:locale" content="en_US" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"/404.html","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"/404","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -210,7 +210,7 @@ b, strong {
 /* Figures, Images, Code, Blockquotes, Tables */
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -1217,6 +1217,10 @@ label.srs-toggle {
     display: none;
 }
 
+figcaption {
+    text-align: center;
+}
+
 /* Apparently IE10+ do not support conditionals. F*ck Me! */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .userdesc,
@@ -1394,6 +1398,18 @@ width: 30% !important;
 
 @media screen and (max-width: 800px){
 
+img {
+    width: 100% !important;
+}
+
+/* Scaling down font when screen size is small */
+a, p, ul, li, ol, table, span, blockquote {
+    font-size: .95em
+}
+/* GitHub Heatmap */
+.calendar {
+    display: none;
+}
 .box {
     width: 80%;
 }
@@ -1530,7 +1546,7 @@ iframe {
     var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
       disqusShortname = "sudomaze",
       siteUrl = "https://sudomaze.dev",
-      pageUrl = "/404.html",
+      pageUrl = "/404",
       pagePath = "_pages/404.html",
       githubRepo = "sudomaze/sudomaze.github.io",
       layoutDiscussion = false;
@@ -1591,6 +1607,11 @@ iframe {
                 <li>
                     <i class="fab fa-discord" style="color: #8899F7"></i>
                     <a href="https://discord.gg/v44SgTg">Join our Discord Server</a>
+                </li>
+                
+                <li>
+                    <i class="fab fa-reddit" style="color: #FF4500"></i>
+                    <a href="https://www.reddit.com/user/sudomaze/">u/sudomaze</a>
                 </li>
                 
             </ul>

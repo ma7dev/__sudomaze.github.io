@@ -2,35 +2,42 @@
 <html lang="en">
     <head>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-<meta content="{% assign categories_grouped = site.pages | group_by: &#39;category&#39; %}
-{% for category in categories_grouped %}
-    {% if category.name == &quot;project&quot; %}
-        {% for item in categor..." name="description" >
+<meta content="{% for tag in site.tags %}
+        {{ tag | first | capitalize }}
+        {% for post in tag.last %} 
+            {{ post.title }}
+        {% endfor %}
+    {% endfor %}" name="description" >
 <meta content="" property="og:site_name"/>
-<meta content="{% assign categories_grouped = site.pages | group_by: &#39;category&#39; %}
-{% for category in categories_grouped %}
-    {% if category.name == &quot;project&quot; %}
-        {% for item in categor..." property="og:description">
+<meta content="{% for tag in site.tags %}
+        {{ tag | first | capitalize }}
+        {% for post in tag.last %} 
+            {{ post.title }}
+        {% endfor %}
+    {% endfor %}" property="og:description">
 <meta content="https://sudomaze.dev/about/" property="article:author">
 
 <title>sudomaze.dev</title>
 
 
-  <meta content="website" property="og:type">
-  <meta content="https://sudomaze.dev/projects/" property="og:url">
+  <meta content="By Tags" property="og:title">
+  <meta content="article" property="og:type">
+  <meta content="https://sudomaze.dev/tags" property="og:url">
 
 <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16"/>
-<link rel="canonical" href="/projects/"/>
+<link rel="canonical" href="/tags"/>
 <link rel="apple-touch-icon" href="/assets/img/profile.png">
 
 
 
 
   <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>By Tags</title>
 <meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="By Tags" />
 <meta property="og:locale" content="en_US" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"/projects/","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"/tags","headline":"By Tags","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -61,19 +68,6 @@ if (theme === "dark") {
   <!-- sourcing async files (specialized for certain pages) -->
   
 
-  
-    <script async src="/assets/libs/katex/katex.min.js"></script>
-    <script async src="/assets/libs/pseudocode.js/pseudocode.js"></script>
-    <!-- configuring mathjax -->
-    <script async type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
-    </script>
-    <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
   <!-- sourcing css files -->
@@ -223,7 +217,7 @@ b, strong {
 /* Figures, Images, Code, Blockquotes, Tables */
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -1230,6 +1224,10 @@ label.srs-toggle {
     display: none;
 }
 
+figcaption {
+    text-align: center;
+}
+
 /* Apparently IE10+ do not support conditionals. F*ck Me! */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .userdesc,
@@ -1407,6 +1405,18 @@ width: 30% !important;
 
 @media screen and (max-width: 800px){
 
+img {
+    width: 100% !important;
+}
+
+/* Scaling down font when screen size is small */
+a, p, ul, li, ol, table, span, blockquote {
+    font-size: .95em
+}
+/* GitHub Heatmap */
+.calendar {
+    display: none;
+}
 .box {
     width: 80%;
 }
@@ -1538,16 +1548,13 @@ iframe {
   <!-- sourcing async files (specialized for certain pages) -->
   
   
-    <link rel="stylesheet" href="/assets/libs/katex/katex.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/assets/libs/pseudocode.js/pseudocode.css" media="print" onload="this.media='all'">
-  
 
   <script async>
     var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
       disqusShortname = "sudomaze",
       siteUrl = "https://sudomaze.dev",
-      pageUrl = "/projects/",
-      pagePath = "_pages/projects.html",
+      pageUrl = "/tags",
+      pagePath = "_pages/sorting-posts/tags.html",
       githubRepo = "sudomaze/sudomaze.github.io",
       layoutDiscussion = false;
   </script>
@@ -1607,6 +1614,11 @@ iframe {
                 <li>
                     <i class="fab fa-discord" style="color: #8899F7"></i>
                     <a href="https://discord.gg/v44SgTg">Join our Discord Server</a>
+                </li>
+                
+                <li>
+                    <i class="fab fa-reddit" style="color: #FF4500"></i>
+                    <a href="https://www.reddit.com/user/sudomaze/">u/sudomaze</a>
                 </li>
                 
             </ul>
@@ -1712,56 +1724,58 @@ iframe {
     
 </header>
 
-                
+                <h1>By Tags</h1>
+<aside class="sidebar__right ">
+    <nav class="toc">
+        <header><h4 class="nav__title text-center"> Table of Content</h4></header>
+        
 
+    </nav>
+</aside>
+<main>
+    <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+
+<div class="content">
     
-        
-            <div class="feed-title-excerpt-block disable-select" data-url="https://sudomaze.dev/projects/exploring-robot">
-                <a href="/projects/exploring-robot" style="text-decoration: none; color: #555555;">
-                
-                    <p class="feed-title">Exploring Robot</p>
-                
-                <p class="feed-excerpt">Instructions
-
-
-  Code A*
-  Download world.csvPreview the document
-  Write a program to create a 4-connected graph and run an A* search from vertex (0,0) to vertex (19,19) across the obstacle map pr...</p>
-                </a>
-            </div>
-        
-            <div class="feed-title-excerpt-block disable-select" data-url="https://sudomaze.dev/projects/replaceme">
-                <a href="/projects/replaceme" style="text-decoration: none; color: #555555;">
-                
-                    <p class="feed-title">ReplaceMe</p>
-                
-                <p class="feed-excerpt">Problem Statement
-
-I don&#39;t want to share my beautiful face on stream. However, I want to have a different representation of my face on stream in real-time that chat can change when they redeem ...</p>
-                </a>
-            </div>
-        
-            <div class="feed-title-excerpt-block disable-select" data-url="https://sudomaze.dev/projects/travelling-salesman-problem">
-                <a href="/projects/travelling-salesman-problem" style="text-decoration: none; color: #555555;">
-                
-                    <p class="feed-title">Travelling Salesman Problem</p>
-                
-                <p class="feed-excerpt">Description
-
-This is a final report for analysis of solving the travelling salesman problem using multiple algorithms and the analysis of those algorithms.
-
-Algorithms that Solve TSP
-
-Brute Force S...</p>
-                </a>
-            </div>
-        
     
 
     
-
+    
+    
+    
     
 
+    
+    
+
+
+    
+    
+
+    
+    
+    
+
+    <style>
+.category-content a {
+    text-decoration: none;
+    color: #4183c4;
+}
+
+.category-content a:hover {
+    text-decoration: underline;
+    color: #4183c4;
+}
+</style>
+
+<main>
+    
+    <br/>
+    <br/>
+</main>
+
+</div>
+</main>
                  
                 <div id="copyright">
     <p id="copyright-notice">© Mazen Alotaibi</p>

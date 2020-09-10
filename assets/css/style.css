@@ -142,7 +142,7 @@ b, strong {
 /* Figures, Images, Code, Blockquotes, Tables */
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -1149,6 +1149,10 @@ label.srs-toggle {
     display: none;
 }
 
+figcaption {
+    text-align: center;
+}
+
 /* Apparently IE10+ do not support conditionals. F*ck Me! */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .userdesc,
@@ -1326,6 +1330,18 @@ width: 30% !important;
 
 @media screen and (max-width: 800px){
 
+img {
+    width: 100% !important;
+}
+
+/* Scaling down font when screen size is small */
+a, p, ul, li, ol, table, span, blockquote {
+    font-size: .95em
+}
+/* GitHub Heatmap */
+.calendar {
+    display: none;
+}
 .box {
     width: 80%;
 }

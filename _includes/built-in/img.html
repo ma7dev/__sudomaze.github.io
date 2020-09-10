@@ -1,6 +1,4 @@
-<figure class="wm-100" id="img-{{ include.id }}">
-    <div class="d-flex justify-content-center">
-        <img loading=lazy src="{{ include.url }}" class="img-fluid" alt="{{ include.caption }}">
-    </div>
-    <figcaption><strong>Figure {{ include.id }}:</strong> {{ include.caption }}</figcaption>
+<img loading=lazy src="{{ include.url }}" alt="{{ include.caption }}">
+<figure id="img-{{ include.id }}">
+    <figcaption><p><strong>Figure {{ include.id }}:</strong> {{ include.caption }}</p></figcaption>
 </figure>
