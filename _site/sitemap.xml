@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/notes/How-to-get-a-great-job</loc>
-<lastmod>2020-09-09T23:05:11-07:00</lastmod>
-</url>
-<url>
-<loc>/notes/IMF-v3-(Soon-to-be-known-as-the-LYT-System)</loc>
-<lastmod>2020-09-09T23:05:11-07:00</lastmod>
-</url>
-<url>
 <loc>/notes/LeetCode</loc>
-<lastmod>2020-09-09T23:05:11-07:00</lastmod>
-</url>
-<url>
-<loc>/notes/math</loc>
-<lastmod>2020-09-09T23:05:11-07:00</lastmod>
+<lastmod>2020-10-29T16:27:05-07:00</lastmod>
 </url>
 <url>
 <loc>/posts/linux-freebsd-windows</loc>
@@ -22,15 +10,15 @@
 </url>
 <url>
 <loc>/projects/exploring-robot</loc>
-<lastmod>2020-09-09T23:05:11-07:00</lastmod>
+<lastmod>2020-10-29T16:27:05-07:00</lastmod>
 </url>
 <url>
 <loc>/projects/replaceme</loc>
-<lastmod>2020-09-09T23:05:11-07:00</lastmod>
+<lastmod>2020-10-29T16:27:05-07:00</lastmod>
 </url>
 <url>
 <loc>/projects/travelling-salesman-problem</loc>
-<lastmod>2020-09-09T23:05:11-07:00</lastmod>
+<lastmod>2020-10-29T16:27:05-07:00</lastmod>
 </url>
 <url>
 <loc>/projects/exploring-robot</loc>
@@ -42,13 +30,13 @@
 <loc>/projects/travelling-salesman-problem</loc>
 </url>
 <url>
-<loc>/about</loc>
+<loc>/about/</loc>
 </url>
 <url>
-<loc>/site</loc>
+<loc>/site/</loc>
 </url>
 <url>
-<loc>/cv</loc>
+<loc>/cv/</loc>
 </url>
 <url>
 <loc>/404</loc>

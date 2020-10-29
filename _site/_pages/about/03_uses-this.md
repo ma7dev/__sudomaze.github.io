@@ -44,21 +44,16 @@
         * RAM: [Corsair Vengeance RGB Pro 32 GB (4 x 8 GB) DDR4-3200 Memory](https://pcpartpicker.com/product/3yQG3C/corsair-vengeance-rgb-pro-32gb-4-x-8gb-ddr4-3200-memory-cmw32gx4m4c3200c16)
         * Case: [Fractal Design Define R6 USB-C ATX Mid Tower Case](https://pcpartpicker.com/product/z3kj4D/fractal-design-design-define-r6-usb-c-tg-atx-mid-tower-case-fd-ca-def-r6c-bk-tgl)
     * Headphones: [Beyerdynamic 459038 DT 990 PRO](https://www.amazon.com/beyerdynamic-Over-Ear-Studio-Headphones-construction/dp/B0011UB9CQ)
-    * Keyboard: [Razer BlackWidow TE Chroma v2 TKL](https://www.amazon.com/Razer-BlackWidow-Tournament-Chroma-Tenkeyless/dp/B0744NVPJ8/ref=sr_1_2?dchild=1&keywords=chroma+2&qid=1592727118&sr=8-2)
+    * Keyboard: [Redragon K552 Mechanical Gaming Keyboard](https://www.amazon.com/gp/product/B016MAK38U/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1)
     * Mouse: [Logitech G502](https://www.amazon.com/Logitech-Spectrum-Shifting-Personalized-Programmable/dp/B019OB663A)
+    * Monitors:
+      * [LG 29UM67-P 29"](https://www.lg.com/us/monitors/lg-29UM67-P-ultrawide-led-monitor)
+      * [Asus VG248QE 24"](https://www.amazon.com/ASUS-VG248QE-1920x1080-Gaming-Monitor/dp/B00B2HH7G0)
+      * [Dell S2415H 24"](https://www.amazon.com/gp/product/B00M9B3XZW/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1)
 
 * Software:
     * Operating System: [Ubuntu 18.04](http://releases.ubuntu.com/18.04/)
     * Windows Manager: [i3wm](https://i3wm.org/)
-
-#### Work Machine (Pending...)
-
-* Hardware:
-  * Headphones: [Sony MDR7506 Professional](https://www.amazon.com/Sony-MDR7506-Professional-Diaphragm-Headphone/dp/B000AJIF4E)
-  * Keyboard: [CM Storm QuickFire XT with CHERRY MX Brown Switches](https://www.amazon.com/CM-Storm-QuickFire-XT-Mechanical/dp/B00EQV0W02)
-
-* Software:
-  * Operating System: (Pending...)
 
 #### Laptop (MacBook Pro)
 
@@ -84,7 +79,6 @@
 
 * Software
     * Note-taking App: [GoodNotes5](https://www.goodnotes.com/)
-    * PDF Reading and Writing on App: [Notability](https://apps.apple.com/us/app/notability/id360593530)
 
 ### My Stack
 
@@ -104,13 +98,6 @@
 * Project Manager: [Trello](https://trello.com)
 * Cloud File Storage Service: [Google Drive](https://www.google.com/drive/)
 * Password Manager: [LastPass](https://www.lastpass.com/)
-
-#### Development
-
-* Data Analysis:
-    * Machine Learning: [scikit-learn](https://scikit-learn.org/stable/) for out of the box tools, [TensorFlow](https://www.tensorflow.org/) for scalable projects for deployment, and [PyTorch](https://pytorch.org/) for fun projects
-    * Computer Vision: [OpenCV](https://opencv.org/)
-
-* Web Development
-    * Full-stack: MERN - [MongoDB](https://www.mongodb.com/), [ExpressJS](https://expressjs.com/), [ReactJS](https://reactjs.org/), and [NodeJS](https://nodejs.org/en/)
-    * Others: [EJS](https://ejs.co/), [jQuery](https://jquery.com/), and [Bootstrap](https://getbootstrap.com/), [Flask](https://www.palletsprojects.com/p/flask/)
+* Documents Manager: [Zotero](https://www.zotero.org/)
+* Calendar: [Google Calendar](https://www.google.com/calendar)
+* Knowledgebase system: [Obsidian](https://obsidian.md/)

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Site
-permalink: /site
-category: "Others"
-tag: ""
+permalink: /site/
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}

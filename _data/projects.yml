@@ -1,19 +1,19 @@
-- title: "ReplaceMe"
-  tag: "replaceme"
-  date: "6/2020 - Present"
-  image: "img/replaceme.gif"
-  demo: "http://aidemo.cgrb.oregonstate.edu/"
-  description: ""
-  publish: true
-  tools:
-  - tool: Bootstrap
-    tag: bootstrap
-  - tool: jQuery
-    tag: jquery
-  - tool: Node.js
-    tag: nodejs
-  - tool: Bash
-    tag: bash
+# - title: "ReplaceMe"
+#   tag: "replaceme"
+#   date: "6/2020 - Present"
+#   image: "img/replaceme.gif"
+#   demo: "http://aidemo.cgrb.oregonstate.edu/"
+#   description: ""
+#   publish: true
+#   tools:
+#   - tool: Bootstrap
+#     tag: bootstrap
+#   - tool: jQuery
+#     tag: jquery
+#   - tool: Node.js
+#     tag: nodejs
+#   - tool: Bash
+#     tag: bash
 
 - title: "Labeling Tool"
   tag: "labeling-tool"

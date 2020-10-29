@@ -42,19 +42,22 @@
     [] Avoid chaining critical requests - download fonts and store them locally
     [] Properly size images
     [] Preload key requests
+✔ Hovering over name at the top (hover next to it adds the underline style) @done(20-10-29 16:15)
 
 
-## Features 
+## Features
 
 ☐ Notes
     ☐ Sort them by date of creation.
 ☐ For any code block, display language presented and copy option
 ☐ Add Disqus to posts layout
 [] Add checklist for new comers
+✔ How to use the repo @done(20-10-29 16:25)
 
 ## Content
 
 ✔ Typos @done(20-09-09 16:03)
     ✔ a M.S. student -> an M.S. student @done(20-09-04 09:02)
     ✔ Join our Discord Channel -> Join our Discord Server @done(20-09-09 16:03)
+    ✔ ... Vision (DMV) in Oregon ... -> ... Vision (DMV) at Oregon ... @done(20-09-22 18:56)
 ✔ Add Discord server to the header @done(20-09-04 20:04)

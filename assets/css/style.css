@@ -322,8 +322,8 @@ hr {
     font-weight: 600;
 }
 
-.username:hover {
-    text-decoration: underline;
+.username a:hover {
+    text-decoration: underline !important;
     color: var(--content-color);
 }
 
