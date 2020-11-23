@@ -36,12 +36,6 @@ links:
     text: "@sudomaze"
     url: "https://www.kaggle.com/sudomaze"
 
-  - label: "Discord"
-    icon: "fab fa-discord"
-    color: "#8899F7"
-    text: "Join our Discord Server"
-    url: "https://discord.gg/v44SgTg"
-
   - label: "Reddit"
     icon: "fab fa-reddit"
     color: "#FF4500"

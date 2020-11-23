@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Travelling Salesman Problem
-permalink: /projects/travelling-salesman-problem
+title: "Linux vs. FreeBSD vs. Windows"
 category: project
+permalink: /projects/linux-vs-freebsd-vs-windows
+display: "/assets/gif"
 date: 2020/1/1
 updated: 2020/1/2
 ---

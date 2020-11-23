@@ -2,44 +2,38 @@
 <html lang="en">
     <head>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-<meta content="Instructions
+<meta content="Introduction
 
-
-  Code A*
-  Download world.csvPreview the document
-  Write a program to create a 4-connected graph and run an A* search from vertex (0,0) to vertex (19,19) across the obstacle map pr..." name="description" >
+This paper presents a comparison between Linux, FreeBSD, and Windows in three areas: concurrency, I/O, and memory management. In addition, in each area, I will discussing about the di..." name="description" >
 <meta content="" property="og:site_name"/>
-<meta content="Instructions
+<meta content="Introduction
 
-
-  Code A*
-  Download world.csvPreview the document
-  Write a program to create a 4-connected graph and run an A* search from vertex (0,0) to vertex (19,19) across the obstacle map pr..." property="og:description">
+This paper presents a comparison between Linux, FreeBSD, and Windows in three areas: concurrency, I/O, and memory management. In addition, in each area, I will discussing about the di..." property="og:description">
 <meta content="https://sudomaze.dev/about/" property="article:author">
 
 <title>sudomaze.dev</title>
 
 
-  <meta content="Exploring Robot" property="og:title">
+  <meta content="Linux vs. FreeBSD vs. Windows" property="og:title">
   <meta content="article" property="og:type">
-  <meta content="https://sudomaze.dev/projects/exploring-robot" property="og:url">
+  <meta content="https://sudomaze.dev/projects/linux-vs-freebsd-vs-windows" property="og:url">
 
 <link rel="icon" href="/assets/img/profile.webp" type="image/png" sizes="16x16"/>
-<link rel="canonical" href="/projects/exploring-robot"/>
+<link rel="canonical" href="/projects/linux-vs-freebsd-vs-windows"/>
 <link rel="apple-touch-icon" href="/assets/img/profile.webp">
 
 
 
 
   <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Exploring Robot</title>
+<title>Linux vs. FreeBSD vs. Windows</title>
 <meta name="generator" content="Jekyll v4.0.1" />
-<meta property="og:title" content="Exploring Robot" />
+<meta property="og:title" content="Linux vs. FreeBSD vs. Windows" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-01-01T00:00:00-08:00" />
 <script type="application/ld+json">
-{"url":"/projects/exploring-robot","@type":"BlogPosting","headline":"Exploring Robot","dateModified":"2020-01-01T00:00:00-08:00","datePublished":"2020-01-01T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/exploring-robot"},"@context":"https://schema.org"}</script>
+{"url":"/projects/linux-vs-freebsd-vs-windows","@type":"BlogPosting","headline":"Linux vs. FreeBSD vs. Windows","dateModified":"2020-01-01T00:00:00-08:00","datePublished":"2020-01-01T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/linux-vs-freebsd-vs-windows"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1588,8 +1582,8 @@ iframe {
     var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
       disqusShortname = "sudomaze",
       siteUrl = "https://sudomaze.dev",
-      pageUrl = "/projects/exploring-robot",
-      pagePath = "_projects/exploring-robot/00_main.md",
+      pageUrl = "/projects/linux-vs-freebsd-vs-windows",
+      pagePath = "_projects/linux-vs-freebsd-vs-windows/00_main.md",
       githubRepo = "sudomaze/sudomaze.github.io",
       layoutDiscussion = false;
   </script>
@@ -1754,29 +1748,36 @@ iframe {
     
 </header>
 
-                <h1>Exploring Robot</h1>
+                <h1>Linux vs. FreeBSD vs. Windows</h1>
 <aside class="sidebar__right ">
     <nav class="toc">
         <header><h4 class="nav__title text-center"> Table of Content</h4></header>
         <ul class="toc__menu">
-  <li><a href="#instructions">Instructions</a></li>
-  <li><a href="#rubric-and-grade">Rubric and Grade</a></li>
-  <li><a href="#report">Report</a>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#concurrency-comparison">Concurrency Comparison</a>
     <ul>
-      <li><a href="#discussion-of-the-exploration-problem">Discussion of the exploration problem</a></li>
-      <li><a href="#discussion-of-your-gmapping-and-nav_bundle-package-implementations">Discussion of your gmapping and nav_bundle package implementations</a></li>
-      <li><a href="#discussion-of-your-waypoint-allocation-algorithm">Discussion of your waypoint allocation algorithm</a></li>
-      <li><a href="#analysis-of-your-algorithms-exploration-performance">Analysis of your algorithm’s exploration performance</a>
-        <ul>
-          <li><a href="#did-it-result-in-full-coverage-of-the-environment-provide-a-screenshot-from-rviz">Did it result in full coverage of the environment (provide a screenshot from rviz)?</a></li>
-          <li><a href="#provide-suggestions-on-how-your-waypoint-allocation-algorithm-could-be-improved">Provide suggestions on how your waypoint allocation algorithm could be improved.</a></li>
-        </ul>
-      </li>
+      <li><a href="#linux">Linux</a></li>
+      <li><a href="#freebsd">FreeBSD</a></li>
+      <li><a href="#windows">Windows</a></li>
+      <li><a href="#general-discussion">General Discussion</a></li>
     </ul>
   </li>
-  <li><a href="#setup">Setup</a></li>
-  <li><a href="#run">Run</a></li>
-  <li><a href="#contributors">Contributors</a></li>
+  <li><a href="#io-comparison">IO Comparison</a>
+    <ul>
+      <li><a href="#freebsd-1">FreeBSD</a></li>
+      <li><a href="#windows-1">Windows</a></li>
+      <li><a href="#general-discussion-1">General Discussion</a></li>
+    </ul>
+  </li>
+  <li><a href="#memory-management-comparison">Memory Management Comparison</a>
+    <ul>
+      <li><a href="#freebsd-2">FreeBSD</a></li>
+      <li><a href="#windows-2">Windows</a></li>
+      <li><a href="#general-discussion-2">General Discussion</a></li>
+    </ul>
+  </li>
+  <li><a href="#conclusion">Conclusion</a></li>
+  <li><a href="#references">References</a></li>
 </ul>
 
     </nav>
@@ -1806,298 +1807,482 @@ iframe {
     
 
     
-<h2 id="instructions">Instructions</h2>
+<h2 id="introduction">Introduction</h2>
 
-<ul>
-  <li>Code A*</li>
-  <li>Download world.csvPreview the document</li>
-  <li>Write a program to create a 4-connected graph and run an A* search from vertex (0,0) to vertex (19,19) across the obstacle map provided in world.csv.</li>
-  <li>The world is a 20×20 grid of cells</li>
-  <li>The world.csv file is an occupancy grid map: 1 means the grid cell is occupied and you can’t move through it</li>
-  <li>Edge costs are 1</li>
-  <li>Your code should output the final path (either plot it or print out the vertex coordinates) and associated path cost.</li>
-  <li>Comment your code to demonstrate that you understand the algorithm.</li>
-  <li>What to turn in:
-    <ul>
-      <li>A zip file of your commented A* code including world.csv.</li>
-      <li>A cover sheet (PDF) listing:</li>
-      <li>Web sites you used</li>
-      <li>People you worked with</li>
-      <li>The final path</li>
-      <li>Your heuristic function (in English)</li>
-      <li>How you implemented the graph and priority queue</li>
-      <li>Any known bugs/issues</li>
-    </ul>
-  </li>
-</ul>
+<p>This paper presents a comparison between Linux, FreeBSD, and Windows in three areas: concurrency, I/O, and memory management. In addition, in each area, I will discussing about the differences and similarities between them.</p>
 
-<p>A few notes:</p>
+<h2 id="concurrency-comparison">Concurrency Comparison</h2>
 
-<ul>
-  <li>4-connected means that you can travel from a cell to any of the cardinal neighbors (north, south, east, west).</li>
-  <li>Broadly speaking, there are two ways you can represent the graph</li>
-  <li>As an adjacency matrix with a function that returns valid neighbors for a given vertex when queried, or</li>
-  <li>As a list of vertices and a list of edges.</li>
-  <li>You need to demonstrate that you understand how the algorithm works and the best way to do this is to comment relevant lines of code. Marks will be awarded accordingly.</li>
-  <li>There are plenty of resources are available to you online, you may take inspiration from existing implementations that you find, but see Note 3 above.</li>
-</ul>
+<p>In this section, I will be discussing about processes, threads, CPU scheduling, and other related information that I have found interesting for each operating system based on my research.</p>
 
-<h2 id="rubric-and-grade">Rubric and Grade</h2>
+<h3 id="linux">Linux</h3>
 
-<table id="table-1" class="table">
-  <thead>
-    <tr>
-      <th>Criteria</th>
-      <th>Ratings</th>
-      <th> </th>
-      <th>Pts</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Sends waypoints to the robot</td>
-      <td>3.0 pts   Full Marks</td>
-      <td>0.0  pts  No Marks</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <td>Uses SLAM to create a map</td>
-      <td>3.0  pts  Full Marks</td>
-      <td>0.0   pts   No Marks</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <td>Has a documented exploration strategy</td>
-      <td>7.0    pts    Full Marks</td>
-      <td>0.0   pts   No Marks</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <td>Strategy works in all world files (entire space visited)</td>
-      <td>7.0    pts    Full Marks</td>
-      <td>0.0   pts   No Marks</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <td>Mechanism for detecting unexplored area</td>
-      <td>5.0  pts  Full Marks</td>
-      <td>0.0   pts   No Marks</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <td>Mechanism for detecting when exploration strategy fails  Failure case: didn't get to way point, what do you do next?</td>
-      <td>7.0   pts   Full Marks</td>
-      <td>0.0   pts   No Marks</td>
-      <td>7.0</td>
-    </tr>
-    <tr>
-      <td>Algorithm/strategy for getting to unexplored area</td>
-      <td>3.0   pts   Full Marks</td>
-      <td>0.0   pts   No Marks</td>
-      <td>3.0</td>
-    </tr>
-    <tr>
-      <td>Behaves "reasonably" on other test worlds  Doesn't crash, makes some attempt to navigate to unexplored areas</td>
-      <td>5.0  pts  Full Marks</td>
-      <td>0.0   pts   No Marks</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <td>Total Points:</td>
-      <td> </td>
-      <td> </td>
-      <td>40.0</td>
-    </tr>
-  </tbody>
-</table>
+<p>Each process provides the resources needed to execute a program. A process has a virtual address space, executable code, open handles to system objects, a security context, a unique process identifier, environment variables, a priority class, minimum and maximum working set sizes, and at least one thread of execution. Each process is started with a single thread, often called the primary thread, but can create additional threads from any of its threads <a href="#ref-1">[1]</a>.</p>
 
+<p>To create a process in Linux, we will need to use \textit{Fork() system call}, which creates a new process, called the child process, from the exiting process, called the parent process. The child process has its own process ID (PID). \textit{Fork()} takes no argument and return process ID. \textit{Fork()} returns negative value if the process isn't created, zero if the child process is created, and positive value and a child process ID if \textit{Fork()} returns from parent process. In addition, system call \textit{Fork()} duplicate the same address space of the parent process and allocate to the child process. However, the child process doesn't inherit timer and semaphore adjustment from the parent process <a href="#ref-2">[2]</a>.</p>
+
+<p>The following code sample demonstrates how to create a process in Linux <a href="#ref-3">[3]</a>:</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="cp">#include &lt;unistd.h&gt;
+#include &lt;sys/types.h&gt;
+#include &lt;errno.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;sys/wait.h&gt;
+#include &lt;stdlib.h&gt;
+</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">pid_t</span> <span class="n">child_pid</span><span class="p">;</span>
+    <span class="n">child_pid</span> <span class="o">=</span> <span class="n">fork</span> <span class="p">(</span> <span class="p">);</span>                                    <span class="c1">// Create a new child process;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">child_pid</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span>                         
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">child_pid</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">printf</span> <span class="p">(</span><span class="s">"child process successfully created!!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+            <span class="n">printf</span> <span class="p">(</span><span class="s">"child PID =  %d, parent PID = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">getpid</span><span class="p">(</span> <span class="p">),</span> <span class="n">getppid</span><span class="p">(</span> <span class="p">)</span> <span class="p">);</span>
+            <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+         <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">else</span>
+    <span class="p">{</span>
+        <span class="n">perror</span><span class="p">(</span><span class="s">"fork"</span><span class="p">);</span>
+        <span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Threads of execution, often shortened to threads, are the objects of activity within the process. Each thread includes a unique program counter, process stack, and set of processor registers. The kernel schedules individual threads, not processes. In traditional Unix systems, each process consists of one thread. In modern systems, however, multi-threaded programs consist of more than one thread are common <a href="#ref-1">[1]</a>.</p>
+
+<h3 id="freebsd">FreeBSD</h3>
+
+<p>A process is a program in execution. Each process has an address space containing a mapping of its program’s object code and global variables, a set of kernel resources that it can name and on which it can operate using system calls, and at least one and possibly many threads that execute its code. Every process in the system is assigned a unique identifier termed the process identifier (PID). An PID is a common mechanism used by applications and by the kernel to reference processes and it is used by applications when the latter send a signal to a process and when receiving the exit status from a deceased process. There are two PIDs that are special important to to each process:  the PID of the process itself and the PID of the process’s parent process. A process structure contains information that must always remain resident in main memory, along with references to other structures that remain resident <a href="#ref-4">[4]</a>.</p>
+
+<p>Every thread represents a virtual processor with a full context worth of register state and its own stack mapped into the address space. In addition, every thread running in the process has a corresponding kernel thread, with its own kernel stack that represents the user thread when it is executing in the kernel as a result of a system call, page fault, or signal delivery. The threads of a process operate in either user mode or kernel mode. In user mode, a thread executes application code with the machine in a non-privileged protection mode. Thread structure tracks information that needs to be resident only when the process is executing such as its kernel run-time stack. Both, process and thread, structures are allocated dynamically as part of process creation and are freed when the process is destroyed as it exits <a href="#ref-4">[4]</a>.</p>
+
+<p>The FreeBSD timeshare scheduler uses a priority-based scheduling policy that is biased to favor interactive programs, such as text editors, over long-running batch-type jobs. Interactive programs tend to exhibit short bursts of computation followed by periods of inactivity or I/O. The scheduling policy initially assigns a high execution priority to each thread and allows that thread to execute for a fixed time slice <a href="#ref-4">[4]</a>.</p>
+
+<h3 id="windows">Windows</h3>
+
+<p>A process is basically a program in execution. The execution of a process must progress in a sequential fashion. Each process is uniquely identified by a number called a \textit{process ID} (PID). Similar to files, each process has one owner and group, and the owner and group permissions are used to determine which files and devices the process can open <a href="#ref-5">[5]</a>.</p>
+
+<p>In addition, to create a process in Windows, we will need to use CreateProcess function. CreateProcess function runs independently of the creating process, and the following code sample demonstrates how to create a process <a href="#ref-5">[5]</a>:</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+</pre></td><td class="code"><pre><span class="cp">#include &lt;windows.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;tchar.h&gt;
+</span>
+<span class="kt">void</span> <span class="nf">_tmain</span><span class="p">(</span> <span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="n">TCHAR</span> <span class="o">*</span><span class="n">argv</span><span class="p">[]</span> <span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">STARTUPINFO</span> <span class="n">si</span><span class="p">;</span>
+    <span class="n">PROCESS_INFORMATION</span> <span class="n">pi</span><span class="p">;</span>
+    <span class="n">ZeroMemory</span><span class="p">(</span> <span class="o">&amp;</span><span class="n">si</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">si</span><span class="p">)</span> <span class="p">);</span>
+    <span class="n">si</span><span class="p">.</span><span class="n">cb</span> <span class="o">=</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">si</span><span class="p">);</span>
+    <span class="n">ZeroMemory</span><span class="p">(</span> <span class="o">&amp;</span><span class="n">pi</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span> <span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span> <span class="n">argc</span> <span class="o">!=</span> <span class="mi">2</span> <span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"Usage: %s [cmdline]</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// Start the child process. </span>
+    <span class="k">if</span><span class="p">(</span> <span class="o">!</span><span class="n">CreateProcess</span><span class="p">(</span> <span class="nb">NULL</span><span class="p">,</span>   <span class="c1">// No module name (use command line)</span>
+        <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>        <span class="c1">// Command line</span>
+        <span class="nb">NULL</span><span class="p">,</span>           <span class="c1">// Process handle not inheritable</span>
+        <span class="nb">NULL</span><span class="p">,</span>           <span class="c1">// Thread handle not inheritable</span>
+        <span class="n">FALSE</span><span class="p">,</span>          <span class="c1">// Set handle inheritance to FALSE</span>
+        <span class="mi">0</span><span class="p">,</span>              <span class="c1">// No creation flags</span>
+        <span class="nb">NULL</span><span class="p">,</span>           <span class="c1">// Use parent's environment block</span>
+        <span class="nb">NULL</span><span class="p">,</span>           <span class="c1">// Use parent's starting directory</span>
+        <span class="o">&amp;</span><span class="n">si</span><span class="p">,</span>            <span class="c1">// Pointer to STARTUPINFO structure</span>
+        <span class="o">&amp;</span><span class="n">pi</span> <span class="p">)</span>           <span class="c1">// Pointer to PROCESS_INFORMATION structure</span>
+    <span class="p">)</span> 
+    <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span> <span class="s">"CreateProcess failed (%d).</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">GetLastError</span><span class="p">()</span> <span class="p">);</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="c1">// Wait until child process exits.</span>
+    <span class="n">WaitForSingleObject</span><span class="p">(</span> <span class="n">pi</span><span class="p">.</span><span class="n">hProcess</span><span class="p">,</span> <span class="n">INFINITE</span> <span class="p">);</span>
+    <span class="c1">// Close process and thread handles.</span>
+    <span class="n">CloseHandle</span><span class="p">(</span> <span class="n">pi</span><span class="p">.</span><span class="n">hProcess</span> <span class="p">);</span>
+    <span class="n">CloseHandle</span><span class="p">(</span> <span class="n">pi</span><span class="p">.</span><span class="n">hThread</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Windows implements a priority-driven, preemptive scheduling system, at least one of the highest priority ready threads always runs, with the caution that certain high-priority threads ready to run might be limited by the processors on which they might be allowed or preferred to run on, a phenomenon called processor affinity <a href="#ref-6">[6]</a>.</p>
+
+<h3 id="general-discussion">General Discussion</h3>
+
+<p>From my research, they all have similar processes features and behaviors, and Windows' threads are similar to FreeBSD in the current model and the interface definition for Windows' threads are similar to Linux. In addition, FreeBSD and Windows have a similar CPU scheduling as they both use priority-queues. <a href="#ref-1">[1]</a><a href="#ref-2">[2]</a><a href="#ref-4">[4]</a><a href="#ref-5">[5]</a><a href="#ref-6">[6]</a>.</p>
+
+<h2 id="io-comparison">IO Comparison</h2>
+
+<p>In this section, I will be discussing about I/O (block and character), data structures, algorithms, cryptography, I/O scheduling, types of devices, and other related information that I have found interesting for each operating system based on my research.</p>
+
+<h3 id="freebsd-1">FreeBSD</h3>
+
+<p>The basic model of the UNIX I/O system is a sequence of bytes that can be accessed either randomly or sequentially, and there aren't any access methods and control blocks in typical UNIX user process. Different programs expect various levels of structure, but the kernel doesn't impose structure on I/O. In addition, UNIX processes use a descriptor to reference I/O streams. Descriptors are small unsigned integers obtained from the open and socket system calls. Read and write system calls can be applied to descriptors to transfer data, and close system call can be used to dead-locate any descriptor. There are three types of descriptors, files, pipes, and sockets. Files are linear array bytes, has at least one name, exists until all its names are deleted explicitly, and no process holds a descriptor for it. Pipes are a linear array of bytes, no name, used as an I/O stream, it is unidirectional, and created by a pipe system call. Sockets are transient objects, used for interprocess communication, exists only as long as some process holds a descriptor referring to it, and created by a socket system call. Furthermore, hardware devices can be categorized as either block (structure) or character (unstructured). For block devices, they are typified by disks and magnetic tapes, the kernel supports read-modify-write-type buffering actions on block-oriented structured devices to allow latter to be read and written in a totally random byte addressed fashion, and the filesystems are created on block devices. For character devices, they are communication lines, raster plotters, and unbuffered magnetic tapes and disks, and are support large block I/O transfers <a href="#ref-7">[7]</a>.</p>
+
+<p>For previous editions of stream I/O system, the stream I/O system was based on the UNIX character I/O system, which allows a user process to open a way terminal port and then to insert appropriated kernel-processing modules and the modules that are being processed by the network protocols can be inserted in the appreciated kernel-processing modules. In addition, stacking a terminal-processing module on top of a network-processing module allowed flexible and efficient implementation of the network viral terminals within the kernel. In newer editions of stream I/O system ,such as 18th edition which was adopted in System V. However, the design of the networking facilities for 4.2BSD changed its approach based on the socket interface and flexible multi-player network architecture, which allows a single system to support multiple sets of networking protocols with stream, datagram, and other types of access. In addition, the user application and the kernel operate independently of each other for security. In 4.4BSD, the kernel doesn't store I/O control blocks or other operating-system-related data structures in the application address space. Each user-level application is provided with an independent address space in which it executes its applications/processes. Moreover, the kernel makes most of the state changes invisible to the processes involved <a href="#ref-7">[7]</a>.</p>
+
+<p>FreeBSD supports two different disk encryption methods, GBDE and GELI, and both of the methods support different cryptographic algorithms that counter different threats. For GBDE, it is high-security (protecting the user as protecting the data), cryptographic key provided by the user, and when the key is lost, the data can't be accessed. On the other hand, GELI protects the data but doesn't protect the user, it uses FreeBSD's cryptographic device driver, and takes advantage of its transparently <a href="#ref-8">[8]</a>.</p>
+
+<h3 id="windows-1">Windows</h3>
+
+<p>The design goals for the Windows I/O system are to provide an abstraction of devices, both hardware and software to application with a selected features of the operating system, such as uniform security, high-performance asynchronous, high-level language support, etc. Windows I/O system is responsible for the connection between user model functionality, storage, and drivers with WDM WMI Routines, PnP Manager, Power Manager, and I/O Manager. For I/O Manager, it is the core of the Windows I/O system because it defines the order of the framework within which I/O requests are delivered to device drivers. Most I/O requests are represented as I/O Request Packet (IRP), which travels from one I/O system component to another. The design of Windows I/O system allows an individual application thread to manage multiple I/O requests concurrently <a href="#ref-9">[9]</a>.</p>
+
+<p>Moreover, I have found 4 interesting algorithms built within the driver structure, Initialization Routine, Opening Devices, IRP, and Completing an I/O Request. For the Initialization Routine, the I/O manager executes a driver's Initialization Routine when it loads the driver into the operating system. Then, the Initialization Routine fills in the system data structures to register the rest of the driver's routines with the I/O manager and performs any global driver initialization that is necessary. For the Opening Devices, a file object is in a kernel model data structure that represents a handle to a device, and this process allows synchronization and easy manipulation of the object files. For IRP, the IRP is where the I/O system stores information it needs to process an I/O request, so when a thread calls an I/O API, the I/O manager constructs an IRP to represent the operation as it progresses through the I/O system. For Completing an I/O Request, it starts when a driver calls IoCompleteRequest to inform the I/O manager that has completed process teh request specified in the IRP <a href="#ref-9">[9]</a>.</p>
+
+<p>I have found a good example<a href="#ref-10">[10]</a> of how to use IoCompleteRequest in a Windows machine to implement Completing an I/O Request.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="code"><pre>NTSTATUS CompleteRequest<span class="o">(</span>PIRP Irp, NTSTATUS status, ULONG_PTR Information<span class="o">)</span>
+<span class="o">{</span>
+    Irp-&gt;IoStatus.Status <span class="o">=</span> status<span class="p">;</span>
+    Irp-&gt;IoStatus.Information <span class="o">=</span> Information<span class="p">;</span>
+    IoCompleteRequest<span class="o">(</span>Irp, IO_NO_INCREMENT<span class="o">)</span><span class="p">;</span>
+    <span class="k">return </span>status<span class="p">;</span>
+<span class="o">}</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="general-discussion-1">General Discussion</h3>
+
+<p>A comparison between FreeBSD, Linux, and Windows 2000, that FreeBSD and Linux have higher security compared to Windows 2000 because they are both open source and Windows 2000 is closed, which means the main developers need to detect errors in the system by themselve. However, FreeBSD has higher security than Linux beucase FreeBSD requires third parties verification of the system compared to Linux, which can accepts updates from anyone with minor verification. In addition, Windows 2000 is supported by most of device manufactures because its layered architecture and generic use of objects <a href="#ref-11">[11]</a><a href="#ref-12">[12]</a>.</p>
+
+<p>To sum up, it seems that FreeBSD has a Linux-like I/O system strcture compared to Windows which treats every file as an object. In addition, FreeBSD has higher security than Linux and Windows because FreeBSD has different methods to protect data. However, Windows is supported by most of device manufactures because its layered architecture and generic use of objects <a href="#ref-7">[7]</a><a href="#ref-8">[8]</a><a href="#ref-9">[9]</a><a href="#ref-11">[11]</a><a href="#ref-12">[12]</a>.</p>
+
+<h2 id="memory-management-comparison">Memory Management Comparison</h2>
+
+<p>In this section, I will be discussing about memory management in FreeBSD and Windows based on my research.</p>
+
+<h3 id="freebsd-2">FreeBSD</h3>
+
+<p>Berkeley Software Distribution (BSD) kernel handles process scheduling, memory management, symmetric multi-processing, device drivers, etc. In addition, for memory management in general, each process has its own private address and each address space is divided into 3 logical segments: text, data, and stack. For the text segment, it is read-only, has initialized and uninitialized data portions of a program, and, in most machines, a process can change the size of its text segment only when the segment's contents are overlaid with data from the files system or when debugging in action. For the stack, it has application's run-time stack and makes a system call in most machines. Lastly, initial contents of the segments of a child process are duplicated from the segments of a parent process. Moreover, for memory management inside the kernel, kernel often does allocation of memory that are needed for only the duration of a single system call, but in a user process, such as short-term memory, would be allocated on the run-time stack. Kernel's memory isn't feasible to allocate even moderate-sized blocks of memory on it because the kernel has a limited run-time stack <a href="#ref-7">[7]</a>.</p>
+
+<p>For memory management, kernel can't easily deal with memory allocation errors and often can't scheme. Therefore, getting the memory in the kernel is more complicated than in user-space. Moreover, kernel treats phsical pages as the basic unit of memory management and kernel represents every phsical page on the system with a struct page structure, which is defined in &lt;linux/mm_types.h&gt; <a href="#ref-1">[1]</a>.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+</pre></td><td class="code"><pre><span class="k">struct</span> <span class="n">page</span> <span class="p">{</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">flags</span><span class="p">;</span>
+    <span class="n">atomic_t</span> <span class="n">_count</span><span class="p">;</span>
+    <span class="n">atomic_t</span> <span class="n">_mapcount</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">private</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">address_space</span> <span class="o">*</span><span class="n">mapping</span><span class="p">;</span>
+    <span class="n">pgoff_t</span> <span class="n">index</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">list_head</span> <span class="n">lru</span><span class="p">;</span>
+    <span class="kt">void</span> <span class="o">*</span><span class="k">virtual</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>The kernel can't treat all pages as the same because the hardware limitation. Therefore, some pages can't be used for certain because of their physical address in memory. Hence, kernel uses the zones to group pages of similar properties. Linux partitions the system's pages into zones to have a pooling in place to satisfy allocations as needed. Although some allocations may require pages from a partiular zone, other allocations my pull from multiple zones. Each zone is represented by a struct zone, which is defined in &lt;linux/mmzone.h&gt; <a href="#ref-1">[1]</a>.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="k">struct</span> <span class="n">zone</span> <span class="p">{</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">watermark</span><span class="p">[</span><span class="n">NR_WMARK</span><span class="p">];</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">lowmem_reserve</span><span class="p">[</span><span class="n">MAX_NR_ZONES</span><span class="p">];</span>
+    <span class="k">struct</span> <span class="n">per_cpu_pageset</span> <span class="n">pageset</span><span class="p">[</span><span class="n">NR_CPUS</span><span class="p">];</span>
+    <span class="n">spinlock_t</span> <span class="n">lock</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">free_area</span> <span class="n">free_area</span><span class="p">[</span><span class="n">MAX_ORDER</span><span class="p">]</span>
+    <span class="n">spinlock_t</span> <span class="n">lru_lock</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">zone_lru</span> <span class="p">{</span>
+        <span class="k">struct</span> <span class="n">list_head</span> <span class="n">list</span><span class="p">;</span>
+        <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">nr_saved_scan</span><span class="p">;</span>
+    <span class="p">}</span> <span class="n">lru</span><span class="p">[</span><span class="n">NR_LRU_LISTS</span><span class="p">];</span>
+    <span class="k">struct</span> <span class="n">zone_reclaim_stat</span> <span class="n">reclaim_stat</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">pages_scanned</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">flags</span><span class="p">;</span>
+    <span class="n">atomic_long_t</span> <span class="n">vm_stat</span><span class="p">[</span><span class="n">NR_VM_ZONE_STAT_ITEMS</span><span class="p">];</span>
+    <span class="kt">int</span> <span class="n">prev_priority</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">inactive_ratio</span><span class="p">;</span>
+    <span class="n">wait_queue_head_t</span> <span class="o">*</span><span class="n">wait_table</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">wait_table_hash_nr_entries</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">wait_table_bits</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="n">pglist_data</span> <span class="o">*</span><span class="n">zone_pgdat</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">zone_start_pfn</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">spanned_pages</span><span class="p">;</span>
+    <span class="kt">unsigned</span> <span class="kt">long</span> <span class="n">present_pages</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
+<span class="p">};</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Kmalloc() is similar to malloc() in user-space, but it is just a simple interface for obtaining kernel memory in byte-sized chunks and it can be used to allocate pages. For freeing pages, we can use kfree(), which is definded in &lt;linux/slab.h&gt;, kfree() frees a block of memory previously allocated with kmalloc() <a href="#ref-1">[1]</a>.</p>
+
+<figure class="highlight"><pre><code class="language-c" data-lang="c"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="code"><pre>    <span class="n">buf</span> <span class="o">=</span> <span class="n">kmalloc</span><span class="p">(</span><span class="n">BUF_SIZE</span><span class="p">,</span> <span class="n">GFP_ATOMIC</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">buf</span><span class="p">)</span>
+    <span class="cm">/* error allocating memory ! */</span>
+    <span class="p">...</span>
+    <span class="n">kfree</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<p>Free lists data structures are the default data structures in kernel. Due to the fact that allocating and freeing data structures is one of the most common operations inside any kernel has issues, slab layer is used to solve these issues. Slab layer acts as generic data structure-chaining layer and slab layer attempts to cache frequently used data structures as they tend to be allocated and freed often, prevent memory fragmentation, which is resulted from frequent allocation and deallocation, by cached free lists are arranged contiguously, and it has many other promises that slab layer attempts to provide <a href="#ref-1">[1]</a>.</p>
+
+<h3 id="windows-2">Windows</h3>
+
+<p>The memory manager in Windows implements virtual memory, provides a core set of services such as memory mapped files, copy-on-write memory, large memory support, and underlying support for the cache manager.The memory manager creates the two memory pools, non-paged pool and paged pool, that the system uses to allocate memory. Non-paged pool and paged pool are located in the region of the address space that is reserved for the system and mapped into the virtual address space of each process. For the non-paged pool, it consists of virtual memory addresses that are guaranteed to reside in physical memory as long as the corresponding kernel objects are allocated. For the paged pool, it consists of virtual memory that can be paged in and out of the system. To improve performance, systems with a single processor have three paged pools, and multiprocessor systems have five paged pools <a href="#ref-5">[5]</a>.</p>
+
+<p>It seems that Windows uses VirtualAlloc() to use a page granularity, so using VirtualAlloc can result in higher memory usage and it allows you to specify additional options for memory allocation. In order to free pages, you need to use VirtualFree() <a href="#ref-5">[5]</a>.</p>
+
+<figure class="highlight"><pre><code class="language-c--" data-lang="c++"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="code"><pre><span class="n">LPVOID</span> <span class="n">WINAPI</span> <span class="nf">VirtualAlloc</span><span class="p">(</span>
+      <span class="n">_In_opt_</span> <span class="n">LPVOID</span> <span class="n">lpAddress</span><span class="p">,</span>
+      <span class="n">_In_</span>     <span class="n">SIZE_T</span> <span class="n">dwSize</span><span class="p">,</span>
+      <span class="n">_In_</span>     <span class="n">DWORD</span>  <span class="n">flAllocationType</span><span class="p">,</span>
+      <span class="n">_In_</span>     <span class="n">DWORD</span>  <span class="n">flProtect</span>
+<span class="p">);</span>
+<span class="n">BOOL</span> <span class="n">WINAPI</span> <span class="nf">VirtualFree</span><span class="p">(</span>
+      <span class="n">_In_</span> <span class="n">LPVOID</span> <span class="n">lpAddress</span><span class="p">,</span>
+      <span class="n">_In_</span> <span class="n">SIZE_T</span> <span class="n">dwSize</span><span class="p">,</span>
+      <span class="n">_In_</span> <span class="n">DWORD</span>  <span class="n">dwFreeType</span>
+<span class="p">);</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="general-discussion-2">General Discussion</h3>
+
+<p>Windows and Linux has different memory management structures. In Windows, memory management uses tree data structures, uses cluster demand paging, brings 8 pages in memory simultaneously, and page replacements uses First In First Out (FIFO) algorithm. In the other hand, in Linux, memory management uses linked lists data stricture, uses demand paging with no pre-paging and it doesn't swap the entire process instead it uses a lazy swapper, swaps the necessary pages into memory only to avoid reading pages that won't be used, which decreases swap time and amount of physical memory required, and page replacement uses Least Recently Used (LRU) algorithm <a href="#ref-13">[13]</a>.</p>
+
+<p>From my research, it seems that Windows is built for commercial use due it's complex systems to handle large amount of data compared to linux and FreeBSD, and FreeBSD seems to follow most of Linux memory management style, but it is more stable than Linux by using different methods <a href="#ref-1">[1]</a><a href="#ref-5">[5]</a><a href="#ref-7">[7]</a><a href="#ref-13">[13]</a>.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>To conclude, I have discussed about the differences and similarity between Linux, FreeBSD, and Windows in these areas: concurrency, I/O, and memory management. Therefore, based on my research and understanding, I conclude that FreeBSD and Linux are an excellent operating systems because of their system simplicity compared to Windows. However, Windows complexity was made for a certain purpose, which is commercial use. In addition, FreeBSD seems to be more stable and secure than Linux. Other than that, all of the systems have similar general architecture and data flow, but they vary in the way they implement and process these parts.</p>
+
+<h2 id="references">References</h2>
+<ol>
+<li id="ref-1"><p>R. Love,Linux Kernel Development, 3rd ed. Addison-Wesley Professional, 2010.<a href="#text-ref-1"><i class="fas fa-level-up-alt"></i></a></p></li>
 <script type="text/javascript">
-    var table = document.getElementById("table-1").createCaption();
-    table.innerHTML = "<strong>Table 1:</strong> Rubric and Grade";
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-1" ) {
+            links[i].id = "text-ref-1";
+        }
+    } 
 </script>
-
-<h2 id="report">Report</h2>
-
-<h3 id="discussion-of-the-exploration-problem">Discussion of the exploration problem</h3>
-
-<p>In this problem we are designing an exploration package utilizing the gmapping and nav_bundle packages to allow a simulated robot to explore an unknown environment. Our algorithm will have to set waypoints to move our robot towards the unexplored areas while avoiding obstacles. The robot should be reasonably robust to noisy odometry and mapping data, and it should be able to recognize when waypoints cannot be reached.</p>
-
-<h3 id="discussion-of-your-gmapping-and-nav_bundle-package-implementations">Discussion of your gmapping and nav_bundle package implementations</h3>
-
-<p>From the gmapping bundle we are only using the occupancy grid. This grid is used to find "frontier" points (points between explored and unexplored areas). We are also reading the map meta data which gives us the resolution of the occupancy grid in meters/pixel. This gives us the ability to transform the occupancy grid data into Cartesian coordinates. The map is also saved when a waypoint is generated and used to verify that the robot is staying in known areas only, ensuring that the robot doesn't run into walls even if it didn't know about them before it calculated it's path.</p>
-
-<p>From the nav_bundle package, we are using the waypoint commands: twist, base_link_goal, path_reset, move_base_cancel, and ready_pub.  Clear and cancel are used to have the robot only pursue a single waypoint at a time.  Waypoints generated using the occupancy grid which are then translated and rotated into the robot's local coordinate system then set as a waypoint using Twist.</p>
-
-<h3 id="discussion-of-your-waypoint-allocation-algorithm">Discussion of your waypoint allocation algorithm</h3>
-
-<p>Waypoints are generated procedurally using an 61x61 filter that scans the frontier points on the occupancy grid. The robot's exploration policy defines frontier points as being known unoccupied locations where the robot would end near unknown locations. This filter only selects points that are centered on an explored point, have no obstacles within a specified distance from the center, have a threshold percentage of unexplored cells, and aren't where the robot has been before. These cells are then weighted by the percentage of unknown cells and euclidean distance from the robot. It then uses an A* algorithm to determine if there is a known path from the current location to the candidate location. Validating the path allows the robot to exclude candidate points that would be outside of the map or within obstacles.</p>
-
-<p>If the robot enters a region that was unexplored when the waypoint was \textit{created}, it will clear the waypoint queue, cancel the current waypoint, turn 360 degrees, back up 1.5m, and generate a new waypoint. With the current implementation of the nav_bundle, the robot can select paths that pass through unknown locations. If the robot then passes though the unknown location and discovers that there is a wall blocking the path, the robot will not reroute in order to find the proper path. Instead, the robot will simply crash into the wall. To prevent incorrect path planning through unknown locations, we save how the map looked when the nav_bundle chose that path, and tell the robot to stop and reroute if we reach a location that was previously unknown, making our robot's path robust to new information.</p>
-
-<pre id="read-1" style="display:none;">
-    
-\begin{algorithm}
-\caption{FindNextWaypoint}
-\begin{algorithmic}
-\Procedure{FindNextWaypoint}{$map$, $window\_size$, $stride\_length$, $visited\_locations$, $robot\_loc$, $avoidance\_radius$, $empty\_radius$, $RESOLUTION$}
-
-\State $potential\_candidates \gets \text{[]}$
-
-\For{\textbf{every} $center\_cell \textbf{ in } map \textbf{ that is greater than } stride\_length$ \textbf{apart from each other}}
-    % if the center and the surrounding cells are not empty:
-    %   continue
-    \State $skip \gets false$
-    \For{\textbf{every} $neighbor\_cell$\textbf{ in a }$avoidance\_radius$\textbf{ away from }$center\_cell$}
-        \If {alreadyVisited($visited\_location$, $neighbor\_cell$)}
-            \State $skip \gets true$
-            \State \textbf{break}
-        \EndIf
-    \EndFor
-    \If {$skip == true$}
-        \State \textbf{continue}
-    \EndIf
-    \For{\textbf{every} $neighbor\_cell$\textbf{ in a }$empty\_radius$\textbf{ away from }$center\_cell$}
-        \If {getMapValue($visited\_location$) $\neq$ $0$}
-            \State $skip \gets true$
-            \State \textbf{break}
-        \EndIf
-    \EndFor
-    \If {$skip == true$}
-        \State \textbf{continue}
-    \EndIf
-    
-    \State $cell\_sum \gets \text{sum(all cells within } window\_size/2 \text{ from } center\_cell \text{)}$
-	
-	\State $potential\_candidates\text{.append(}center\_cell\text{)}$
-\EndFor
-
-\State $candidate \gets \text{sorted(}potential\_candidates\text{)} $
-\State $candidate \gets  potential\_candidates\text{.pop()} $
-\While{$\textbf{not } \text{reachableByAStar(} robot\_loc, candidate\text{)}$}
-    \State $candidate \gets  potential\_candidates\text{.pop()} $
-    \State $best\_loc=candidate$
-\EndWhile
-
-\State $candidate  \gets \text{convert\_row\_col\_to\_coord}best\_loc, RESOLUTION, map\text{)} $
-
-\State \textbf{return} $candidate$
-
-\EndProcedure
-\end{algorithmic}
-\end{algorithm}
-
-
-</pre>
-<p><span class="markdown-pseudocode" id="goal-1"></span>
+<li id="ref-2"><p>"Operating system-processes,"Available at https://www.tutorialspoint.com/operatingsystem/osprocesses.htm(2018/10/19).<a href="#text-ref-2"><i class="fas fa-level-up-alt"></i></a></p></li>
 <script type="text/javascript">
-    var code = document.getElementById("read-1").textContent;
-    var parentEl = document.getElementById("goal-1");
-    var options = {
-        lineNumber: true
-    };
-    pseudocode.render(code, parentEl, options);
-</script></p>
-
-<ul>
-  <li>Inputs:
-    <ul>
-      <li>map: The current occupancy grid</li>
-      <li>window_size: Width of the sliding window used to generate candidate points</li>
-      <li>stride_length: Row much to shift the sliding window with each iteration</li>
-      <li>visited_locations: Grid with same size as map representing the locations we have been to</li>
-      <li>robot_loc: Currently location of the robot</li>
-      <li>avoidance_radius: Radius around candidate waypoint that should not contain walls</li>
-      <li>empty_radius: Radius around candidate waypoint that should be empty</li>
-      <li>RESOLUTION: How many meters per cell</li>
-    </ul>
-  </li>
-  <li>Outputs:
-    <ul>
-      <li>candidate: The best potential waypoint to go to next</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="analysis-of-your-algorithms-exploration-performance">Analysis of your algorithm’s exploration performance</h3>
-
-<p>The algorithm has managed full coverage in all provided maps. This algorithm is far from perfect, periodically getting stuck (although it is able to correct itself), and periodically choosing waypoints outside of the map. The algorithm can struggle to come up with waypoints in a reasonable amount of time (typically 20 seconds) due to the need to run A* after a potential candidate is selected.</p>
-
-<p>The algorithm tended to get the robot stuck in one area, ensuring that every cell in the immediate area. This behavior causes the exploration process to take a long time in the maze map if it selects a point on the other side of a wall potentially causing long travel times.</p>
-
-<h4 id="did-it-result-in-full-coverage-of-the-environment-provide-a-screenshot-from-rviz">Did it result in full coverage of the environment (provide a screenshot from rviz)?</h4>
-
-<div style="width:100%;">
-    <img loading="lazy" style="width:33%" src="/assets/img/randomdots.png" alt="Random Dots Map" />
-    <img loading="lazy" style="width:33%" src="/assets/img/TheOffice.png" alt="The Office Map" />
-    <img loading="lazy" style="width:33%" src="/assets/img/maze.png" alt="The Maze Map" />
-</div>
-<figure id="img-1">
-	<figcaption><p><strong>Figure 1:</strong> Random Dots Map, The Office Map, and The Maze Map</p></figcaption>
-</figure>
-
-<p>This algorithm resulted in full exploration of the robot's environment with a reasonable success rate. The many dots map was the first map that the robot completed, it completed the map in around 20 minutes. Euclidean distance in this map is an accurate way to approximate path distance since the map isn't divided into rooms, making it an ideal scenario for this algorithm. The office map saw completion times of around 22 minutes. This was largely due to the euclidean distance heuristic that had the robot fully explore each room before moving on. This algorithm struggled with the maze file since it had a habit of setting waypoint on the other side of a wall making it drive back and forth around the entire map, making little but steady progress.</p>
-
-<h4 id="provide-suggestions-on-how-your-waypoint-allocation-algorithm-could-be-improved">Provide suggestions on how your waypoint allocation algorithm could be improved.</h4>
-
-<p>The algorithm should use an A* search in order to find the nearest waypoints instead of using euclidean distance. This should make the exploration time faster since it would travel through fully explored areas less often in order to reach new locations. Computationally expensive functions (such as A*) could be rewritten in C++ in order to cut down on computational cost. The robot's policy for getting unstuck could also be improved. Currently we assume that the robot gets stuck, it is facing a wall and can therefor get unstuck by backing up enough. However, it is not always the case that the wall is in front of the robot, and backing up could end up moving the robot into a wall. Instead, a better policy would be to turn and move away from the closest wall whenever the robot is stuck.</p>
-
-<h2 id="setup">Setup</h2>
-<ul>
-  <li>Download the file (<a href="https://github.com/sudomaze/exploring-robot">source code</a>)</li>
-  <li>Unzip the file into the \catkin_ws\src directory</li>
-  <li>In \catkin_ws, run this command to build</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>catkin_make
-</pre></td></tr></tbody></table></code></pre></figure>
-
-<h2 id="run">Run</h2>
-<ul>
-  <li>Open a new terminal</li>
-  <li>In \catkin_ws, run this command to source the bash file</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="nb">source </span>devel/setup.bash
-</pre></td></tr></tbody></table></code></pre></figure>
-
-<ul>
-  <li>Run this command to launch the ros package</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>roslaunch src/rob456_project/launch/rob456_project.launch
-</pre></td></tr></tbody></table></code></pre></figure>
-
-<ul>
-  <li>Open a new terminal</li>
-  <li>In \catkin_ws, run this command to source the bash file</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre><span class="nb">source </span>devel/setup.bash
-</pre></td></tr></tbody></table></code></pre></figure>
-
-<ul>
-  <li>Run this command to launch the ros package</li>
-</ul>
-
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
-</pre></td><td class="code"><pre>roslaunch src/nav_bundle/launch/nav_bundle.launch
-</pre></td></tr></tbody></table></code></pre></figure>
-
-<ul>
-  <li>When the world starts, in rviz, select '2D Nav Goal' and point to a closer cell that has been explored</li>
-</ul>
-
-<h2 id="contributors">Contributors</h2>
-
-<ul>
-  <li>Lucas Frey <a href="https://github.com/lcsfrey">lcsfrey</a></li>
-  <li>Mazen Alotaibi <a href="https://github.com/sudomaze">sudomaze</a></li>
-  <li>Daniel Boreham</li>
-</ul>
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-2" ) {
+            links[i].id = "text-ref-2";
+        }
+    } 
+</script>
+<li id="ref-3"><p>A. Vara, "How to create process in linux (part 10/15)," Available at https://www.engineersgarage.com/tutorials/introduction-linux-part-1015.<a href="#text-ref-3"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-3" ) {
+            links[i].id = "text-ref-3";
+        }
+    } 
+</script>
+<li id="ref-4"><p>M. K. McKusick, G. Neville-Neil, and R. N. Watson,The Design and Implementation of the FreeBSD Operating System, 2nd ed. Addison-Wesley Professional, 2014.<a href="#text-ref-4"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-4" ) {
+            links[i].id = "text-ref-4";
+        }
+    } 
+</script>
+<li id="ref-5"><p>"Memory management," Available at https://docs.microsoft.com/en-us/windows/desktop/memory/memory-management(2018/05/30).<a href="#text-ref-5"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-5" ) {
+            links[i].id = "text-ref-5";
+        }
+    } 
+</script>
+<li id="ref-6"><p>M. E. Russinovich, D. A. Solomon, and A. Ionescu,Windows Internals, Part 1: Covering Windows Server 2008 R2 and Windows 7,6th ed. Redmond, WA, USA: Microsoft Press, 2012.<a href="#text-ref-6"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-6" ) {
+            links[i].id = "text-ref-6";
+        }
+    } 
+</script>
+<li id="ref-7"><p>M. K. McKusick, K. Bostic, M. J. Karels, and J. S. Quarterman,The Design and Implementation of the 4.4BSD Operating System.Redwood City, CA, USA: Addison Wesley Longman Publishing Co., Inc., 1996.<a href="#text-ref-7"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-7" ) {
+            links[i].id = "text-ref-7";
+        }
+    } 
+</script>
+<li id="ref-8"><p>M. W. Lucas,Absolute Freebsd, 2Nd Edition, 2nd ed. San Francisco, CA, USA: No Starch Press, 2007.<a href="#text-ref-8"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-8" ) {
+            links[i].id = "text-ref-8";
+        }
+    } 
+</script>
+<li id="ref-9"><p>M. E. Russinovich, D. A. Solomon, and A. Ionescu,Windows Internals, Part 2: Covering Windows Server 2008 R2 and Windows 7(Windows Internals). Redmond, WA, USA: Microsoft Press, 2012.<a href="#text-ref-9"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-9" ) {
+            links[i].id = "text-ref-9";
+        }
+    } 
+</script>
+<li id="ref-10"><p>H. Haftmann, "Completing i/o requests," Available at https://www-user.tu-chemnitz.de/∼heha/oneywdm/ch05d.htm.<a href="#text-ref-10"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-10" ) {
+            links[i].id = "text-ref-10";
+        }
+    } 
+</script>
+<li id="ref-11"><p>B. Bruce and M. Stokely, "Freebsd vs. linux vs. windows 2000," Available at https://people.freebsd.org/∼murray/bsdflier.html.<a href="#text-ref-11"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-11" ) {
+            links[i].id = "text-ref-11";
+        }
+    } 
+</script>
+<li id="ref-12"><p>S. Hand, "Operating systems," Available at https://www.cl.cam.ac.uk/teaching/1011/OpSystems/os1a-slides.pdf<a href="#text-ref-12"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-12" ) {
+            links[i].id = "text-ref-12";
+        }
+    } 
+</script>
+<li id="ref-13"><p>U. Essays, "Compare the memory management of windows with linux," Available at https://www.ukessays.com/essays/engineering/compare-the-memory-management.php (2016/12/05).<a href="#text-ref-13"><i class="fas fa-level-up-alt"></i></a></p></li>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for(var i = 0; i < links.length; i++) {
+        if( links[i].getAttribute("href") === "#ref-13" ) {
+            links[i].id = "text-ref-13";
+        }
+    } 
+</script>
+</ol>
 
 
 </div>

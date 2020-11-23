@@ -1,7 +1,14 @@
+:root {
+    --color-calendar-graph-day-bg: #ebedf0;
+    --color-calendar-graph-day-L1-bg: #9be9a8;
+    --color-calendar-graph-day-L2-bg: #40c463;
+    --color-calendar-graph-day-L3-bg: #30a14e;
+    --color-calendar-graph-day-L4-bg: #216e39;
+}
 .calendar {
     width: 750px;
     font-family: Helvetica, arial;
-    border: 1px solid #DDDDDD;
+    border: 1px solid #dddddd;
     border-radius: 3px;
     min-height: 243px;
     text-align: center;
@@ -40,7 +47,9 @@
     font-size: 12px;
     color: #767676;
 }
-
+.text-gray {
+    color: var(--content-color); /* personal edit */
+}
 .calendar-graph {
     padding: 5px 0 0;
     height: 126px;
@@ -88,7 +97,7 @@
 }
 
 .monospace a {
-    color: #1D75AB;
+    color: #1d75ab;
     text-decoration: none;
 }
 
@@ -122,6 +131,6 @@ h2.f4.text-normal.mb-3 {
 .float-left.text-gray {
     float: left;
 }
-#user-activity-overview{
-    display:none;
+#user-activity-overview {
+    display: none;
 }

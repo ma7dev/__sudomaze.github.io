@@ -57,7 +57,799 @@ if (theme === "dark") {
 
   <!-- sourcing sync files (specialized for certain pages) -->
   
-    <script type="text/javascript">"use strict";var _typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(e){if("object"===("undefined"==typeof exports?"undefined":_typeof(exports))&&"undefined"!=typeof module)module.exports=e();else if("function"==typeof define&&define.amd)define([],e);else{var t;t="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:this,t.GitHubCalendar=e()}}(function(){return function(){function e(t,r,n){function a(u,s){if(!r[u]){if(!t[u]){var i="function"==typeof require&&require;if(!s&&i)return i(u,!0);if(o)return o(u,!0);var c=new Error("Cannot find module '"+u+"'");throw c.code="MODULE_NOT_FOUND",c}var l=r[u]={exports:{}};t[u][0].call(l.exports,function(e){var r=t[u][1][e];return a(r||e)},l,l.exports,e,t,r,n)}return r[u].exports}for(var o="function"==typeof require&&require,u=0;u<n.length;u++)a(n[u]);return a}return e}()({1:[function(e,t){var r=e("github-calendar-parser"),n=e("elly"),a=e("add-subtract-date"),o=e("formatoid"),u="MMM D, YYYY",s="MMMM D";t.exports=function(e,t,i){e=n(e),i=i||{},i.summary_text=i.summary_text||'Summary of pull requests, issues opened, and commits made by <a href="https://github.com/'+t+'" target="blank">@'+t+"</a>",i.global_stats===!1&&(e.style.minHeight="175px"),i.proxy=i.proxy||function(e){return"https://urlreq.appspot.com/req?method=GET&url="+e};var c=function l(){return fetch(i.proxy("https://github.com/"+t)).then(function(e){return e.text()}).then(function(t){var c=document.createElement("div");c.innerHTML=t;var d=c.querySelector(".js-yearly-contributions");if(d.querySelector(".float-left.text-gray").innerHTML=i.summary_text,d.querySelector("include-fragment"))setTimeout(l,500);else{if(i.responsive===!0){var f=d.querySelector("svg.js-calendar-graph-svg"),p=f.getAttribute("width"),b=f.getAttribute("height");f.removeAttribute("height"),f.setAttribute("width","100%"),f.setAttribute("viewBox","0 0 "+p+" "+b)}if(i.global_stats!==!1){var m=r(n("svg",d).outerHTML),g=m.current_streak?o(m.current_streak_range[0],s)+" – "+o(m.current_streak_range[1],s):m.last_contributed?"Last contributed in "+o(m.last_contributed,s)+".":"Rock - Hard Place",h=m.longest_streak?o(m.longest_streak_range[0],s)+" – "+o(m.longest_streak_range[1],s):m.last_contributed?"Last contributed in "+o(m.last_contributed,s)+".":"Rock - Hard Place",y=n("<div>",{"class":"contrib-column contrib-column-first table-column",html:'<span class="text-muted">Contributions in the last year</span>\n                               <span class="contrib-number">'+m.last_year+' total</span>\n                               <span class="text-muted">'+o(a.subtract(new Date,1,"year"),u)+" – "+o(new Date,u)+"</span>"}),M=n("<div>",{"class":"contrib-column table-column",html:'<span class="text-muted">Longest streak</span>\n                               <span class="contrib-number">'+m.longest_streak+' days</span>\n                               <span class="text-muted">'+h+"</span>"}),x=n("<div>",{"class":"contrib-column table-column",html:'<span class="text-muted">Current streak</span>\n                               <span class="contrib-number">'+m.current_streak+' days</span>\n                               <span class="text-muted">'+g+"</span>"});d.appendChild(y),d.appendChild(M),d.appendChild(x)}e.innerHTML=d.innerHTML}})["catch"](function(e){return console.error(e)})};return c()}},{"add-subtract-date":2,elly:4,formatoid:6,"github-calendar-parser":8}],2:[function(e,t){function r(e){return function t(r,n,a){switch(n=e*n,a){case"years":case"year":r.setFullYear(r.getFullYear()+n);break;case"months":case"month":r.setMonth(r.getMonth()+n);break;case"weeks":case"week":return t(r,7*n,"days");case"days":case"day":r.setDate(r.getDate()+n);break;case"hours":case"hour":r.setHours(r.getHours()+n);break;case"minutes":case"minute":r.setMinutes(r.getMinutes()+n);break;case"seconds":case"second":r.setSeconds(r.getSeconds()+n);break;case"milliseconds":case"millisecond":r.setMilliseconds(r.getMilliseconds()+n);break;default:throw new Error("Invalid range: "+a)}return r}}t.exports={add:r(1),subtract:r(-1)}},{}],3:[function(e,t){t.exports.en=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],t.exports.en.abbr=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],t.exports.en["short"]=["Su","Mo","Tu","We","Th","Fr","Sa"],t.exports.fr=["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"],t.exports.fr.abbr=["dim","lun","mar","mer","jeu","ven","sam"],t.exports.fr["short"]=["di","lu","ma","me","je","ve","sa"],t.exports.es=["domingo","lunes","martes","miercoles","jueves","viernes","sabado"],t.exports.es.abbr=["dom","lun","mar","mir","jue","vie","sab"],t.exports.es["short"]=["do","lu","ma","mi","ju","vi","sa"],t.exports.it=["Domenica","Lunedi","Martedi","Mercoledi","Giovedi","Venerdi","Sabato"],t.exports.it.abbr=["Dom","Lun","Mar","Mer","Gio","Ven","Sab"],t.exports.it["short"]=["D","L","Ma","Me","G","V","S"],t.exports=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],t.exports.abbr=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],t.exports["short"]=["Su","Mo","Tu","We","Th","Fr","Sa"]},{}],4:[function(e,t){function r(e,t){return"string"==typeof e?"<"===e.charAt(0)?(e=document.createElement(e.slice(1,-1)),n(t||{},function(t,r){switch(r){case"text":return void(e.textContent=t);case"html":return void(e.innerHTML=t)}e.setAttribute(r,t)}),e):(t=t||document,t.querySelector(e)):e}var n=e("iterate-object"),a=e("sliced");r.$$=function(e,t){return"string"==typeof e?(t=t||document,a(t.querySelectorAll(e))):[e]},t.exports=r},{"iterate-object":9,sliced:13}],5:[function(e,t){t.exports=function(e,t,r){t=t||2,r=r||"0",e=e.toString();var n=t-e.length;return(0>=n?"":r.repeat(n))+e}},{}],6:[function(e,t){var r=e("months"),n=e("days"),a=e("fillo"),o=e("parse-it").Parser,u={YYYY:function(e,t){return t?e.getUTCFullYear():e.getFullYear()},YY:function(e,t){return u.YYYY(e,t)%100},MMMM:function(e,t){return t?r[e.getUTCMonth()]:r[e.getMonth()]},MMM:function(e,t){return t?r.abbr[e.getUTCMonth()]:r.abbr[e.getMonth()]},MM:function(e,t){return a(t?e.getUTCMonth()+1:e.getMonth()+1)},M:function(e,t){return t?e.getUTCMonth()+1:e.getMonth()+1},dddd:function(e,t){return n[u.d(e,t)]},ddd:function(e,t){return n.abbr[u.d(e,t)]},dd:function(e,t){return n["short"][u.d(e,t)]},d:function(e,t){return t?e.getUTCDay():e.getDay()},DD:function(e,t){return a(u.D(e,t))},D:function(e,t){return t?e.getUTCDate():e.getDate()},A:function(e,t){return u.a(e,t).toUpperCase()},a:function(e,t){return u.H(e,t)>=12?"pm":"am"},hh:function(e,t){return a(u.h(e,t))},h:function(e,t){return u.H(e,t)%12||12},HH:function(e,t){return a(u.H(e,t))},H:function(e,t){return t?e.getUTCHours():e.getHours()},mm:function(e,t){return a(u.m(e,t))},m:function(e,t){return t?e.getUTCMinutes():e.getMinutes()},ss:function(e,t){return a(u.s(e,t))},s:function(e,t){return t?e.getUTCSeconds():e.getSeconds()},S:function(e,t){return Math.round(u.s(e,t)/60*10)},SS:function(e,t){return a(u.s(e,t)/60*100)},SSS:function(e,t){return a(u.s(e,t)/60*1e3,3)},Z:function(e){var t=-e.getTimezoneOffset();return(t>=0?"+":"-")+a(parseInt(t/60))+":"+a(t%60)},ZZ:function(e){var t=-e.getTimezoneOffset();return(t>=0?"+":"-")+a(parseInt(t/60))+a(t%60)}},s=new o(u);t.exports=function(e,t){return s.run(t,[e,e._useUTC])}},{days:3,fillo:5,months:10,"parse-it":11}],7:[function(e,t){t.exports=["#eee","#d6e685","#8cc665","#44a340","#1e6823"]},{}],8:[function(e,t){var r=e("github-calendar-legend");t.exports=function(e){var t={last_year:0,longest_streak:-1,longest_streak_range:[],current_streak:0,current_streak_range:[],weeks:[],days:[],last_contributed:null},n=[],a=function(){t.current_streak>t.longest_streak&&(t.longest_streak=t.current_streak,t.longest_streak_range[0]=t.current_streak_range[0],t.longest_streak_range[1]=t.current_streak_range[1])};return e.split("\n").slice(2).map(function(e){return e.trim()}).forEach(function(e){if(e.startsWith("<g transform"))return n.length&&t.weeks.push(n)&&(n=[]);var o=e.match(/fill="(#[a-z0-9]+)"/),u=e.match(/data-date="([0-9\-]+)"/),s=e.match(/data-count="([0-9]+)"/);if(o=o&&o[1],u=u&&u[1],s=s&&+s[1],o){var i={fill:o,date:new Date(u),count:s,level:r.indexOf(o)};0===t.current_streak&&(t.current_streak_range[0]=i.date),i.count?(++t.current_streak,t.last_year+=i.count,t.last_contributed=i.date,t.current_streak_range[1]=i.date):(a(),t.current_streak=0),n.push(i),t.days.push(i)}}),a(),t}},{"github-calendar-legend":7}],9:[function(e,t){function r(e,t){var r=0,n=[];if(Array.isArray(e))for(;r<e.length&&t(e[r],r,e)!==!1;++r);else if("object"===("undefined"==typeof e?"undefined":_typeof(e))&&null!==e)for(n=Object.keys(e);r<n.length&&t(e[n[r]],n[r],e)!==!1;++r);}t.exports=r},{}],10:[function(e,t){t.exports=["January","February","March","April","May","June","July","August","September","October","November","December"],t.exports.abbr=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],t.exports.it=["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre"],t.exports.abbr.it=["Gen","Feb","Mar","Apr","Mag","Giu","Lug","Ago","Set","Ott","Nov","Dic"],t.exports.de=["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],t.exports.abbr.de=["Jan","Feb","Mär","Apr","Mai","Jun","Jul","Aug","Sep","Okt","Nov","Dez"]},{}],11:[function(e,t){function r(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function n(e,t,r){return new u(t).run(e,r)}var a=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),o=e("regex-escape"),u=function(){function e(t){r(this,e),this.obj=t||{},this.re=new RegExp("^("+Object.keys(t).map(o).join("|")+")")}return a(e,[{key:"run",value:function(e,t){var r="";t=t||[];do{var n=e.match(this.re),a=n&&n[1],o=a||e.charAt(0);if(a){var u=this.obj[a];"function"==typeof u&&(u=u.apply(this,t)),r+=u}else r+=o;e=e.substring(o.length)}while(e);return r}}]),e}();n.Parser=u,t.exports=n},{"regex-escape":12}],12:[function(e,t){function r(e){return e.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g,"\\$&")}r.proto=function(){return RegExp.escape=r,r},t.exports=r},{}],13:[function(e,t){t.exports=function(e,t,r){var n=[],a=e.length;if(0===a)return n;var o=0>t?Math.max(0,t+a):t||0;for(void 0!==r&&(a=0>r?r+a:r);a-->o;)n[a-o]=e[a];return n}},{}]},{},[1])(1)});</script>
+    <script type="text/javascript">"use strict";
+var _typeof =
+    "function" == typeof Symbol && "symbol" == typeof Symbol.iterator
+        ? function (e) {
+              return typeof e;
+          }
+        : function (e) {
+              return e &&
+                  "function" == typeof Symbol &&
+                  e.constructor === Symbol &&
+                  e !== Symbol.prototype
+                  ? "symbol"
+                  : typeof e;
+          };
+!(function (e) {
+    if (
+        "object" ===
+            ("undefined" == typeof exports ? "undefined" : _typeof(exports)) &&
+        "undefined" != typeof module
+    )
+        module.exports = e();
+    else if ("function" == typeof define && define.amd) define([], e);
+    else {
+        var t;
+        (t =
+            "undefined" != typeof window
+                ? window
+                : "undefined" != typeof global
+                ? global
+                : "undefined" != typeof self
+                ? self
+                : this),
+            (t.GitHubCalendar = e());
+    }
+})(function () {
+    return (function () {
+        function e(t, r, n) {
+            function a(u, s) {
+                if (!r[u]) {
+                    if (!t[u]) {
+                        var i = "function" == typeof require && require;
+                        if (!s && i) return i(u, !0);
+                        if (o) return o(u, !0);
+                        var c = new Error("Cannot find module '" + u + "'");
+                        throw ((c.code = "MODULE_NOT_FOUND"), c);
+                    }
+                    var l = (r[u] = { exports: {} });
+                    t[u][0].call(
+                        l.exports,
+                        function (e) {
+                            var r = t[u][1][e];
+                            return a(r || e);
+                        },
+                        l,
+                        l.exports,
+                        e,
+                        t,
+                        r,
+                        n
+                    );
+                }
+                return r[u].exports;
+            }
+            for (
+                var o = "function" == typeof require && require, u = 0;
+                u < n.length;
+                u++
+            )
+                a(n[u]);
+            return a;
+        }
+        return e;
+    })()(
+        {
+            1: [
+                function (e, t) {
+                    var r = e("github-calendar-parser"),
+                        n = e("elly"),
+                        a = e("add-subtract-date"),
+                        o = e("formatoid"),
+                        u = "MMM D, YYYY",
+                        s = "MMMM D";
+                    t.exports = function (e, t, i) {
+                        (e = n(e)),
+                            (i = i || {}),
+                            (i.summary_text =
+                                i.summary_text ||
+                                'Summary of pull requests, issues opened, and commits made by <a href="https://github.com/' +
+                                    t +
+                                    '" target="blank">@' +
+                                    t +
+                                    "</a>"),
+                            i.global_stats === !1 &&
+                                (e.style.minHeight = "175px"),
+                            (i.proxy =
+                                i.proxy ||
+                                function (e) {
+                                    console.log(
+                                        "https://urlreq.appspot.com/req?method=GET&url=" +
+                                            e
+                                    );
+                                    return (
+                                        "https://urlreq.appspot.com/req?method=GET&url=" +
+                                        e
+                                    );
+                                });
+                        var c = function l() {
+                            return fetch(i.proxy("https://github.com/" + t))
+                                .then(function (e) {
+                                    return e.text();
+                                })
+                                .then(function (t) {
+                                    var c = document.createElement("div");
+                                    c.innerHTML = t;
+                                    var d = c.querySelector(
+                                        ".js-yearly-contributions"
+                                    );
+                                    if (
+                                        ((d.querySelector(
+                                            ".float-left.text-gray"
+                                        ).innerHTML = i.summary_text),
+                                        d.querySelector("include-fragment"))
+                                    )
+                                        setTimeout(l, 500);
+                                    else {
+                                        if (i.responsive === !0) {
+                                            var f = d.querySelector(
+                                                    "svg.js-calendar-graph-svg"
+                                                ),
+                                                p = f.getAttribute("width"),
+                                                b = f.getAttribute("height");
+                                            f.removeAttribute("height"),
+                                                f.setAttribute("width", "100%"),
+                                                f.setAttribute(
+                                                    "viewBox",
+                                                    "0 0 " + p + " " + b
+                                                );
+                                        }
+                                        e.innerHTML = d.innerHTML;
+                                    }
+                                })
+                                ["catch"](function (e) {
+                                    return console.error(e);
+                                });
+                        };
+                        return c();
+                    };
+                },
+                {
+                    "add-subtract-date": 2,
+                    elly: 4,
+                    formatoid: 6,
+                    "github-calendar-parser": 8,
+                },
+            ],
+            2: [
+                function (e, t) {
+                    function r(e) {
+                        return function t(r, n, a) {
+                            switch (((n = e * n), a)) {
+                                case "years":
+                                case "year":
+                                    r.setFullYear(r.getFullYear() + n);
+                                    break;
+                                case "months":
+                                case "month":
+                                    r.setMonth(r.getMonth() + n);
+                                    break;
+                                case "weeks":
+                                case "week":
+                                    return t(r, 7 * n, "days");
+                                case "days":
+                                case "day":
+                                    r.setDate(r.getDate() + n);
+                                    break;
+                                case "hours":
+                                case "hour":
+                                    r.setHours(r.getHours() + n);
+                                    break;
+                                case "minutes":
+                                case "minute":
+                                    r.setMinutes(r.getMinutes() + n);
+                                    break;
+                                case "seconds":
+                                case "second":
+                                    r.setSeconds(r.getSeconds() + n);
+                                    break;
+                                case "milliseconds":
+                                case "millisecond":
+                                    r.setMilliseconds(r.getMilliseconds() + n);
+                                    break;
+                                default:
+                                    throw new Error("Invalid range: " + a);
+                            }
+                            return r;
+                        };
+                    }
+                    t.exports = { add: r(1), subtract: r(-1) };
+                },
+                {},
+            ],
+            3: [
+                function (e, t) {
+                    (t.exports.en = [
+                        "Sunday",
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday",
+                    ]),
+                        (t.exports.en.abbr = [
+                            "Sun",
+                            "Mon",
+                            "Tue",
+                            "Wed",
+                            "Thu",
+                            "Fri",
+                            "Sat",
+                        ]),
+                        (t.exports.en["short"] = [
+                            "Su",
+                            "Mo",
+                            "Tu",
+                            "We",
+                            "Th",
+                            "Fr",
+                            "Sa",
+                        ]),
+                        (t.exports.fr = [
+                            "dimanche",
+                            "lundi",
+                            "mardi",
+                            "mercredi",
+                            "jeudi",
+                            "vendredi",
+                            "samedi",
+                        ]),
+                        (t.exports.fr.abbr = [
+                            "dim",
+                            "lun",
+                            "mar",
+                            "mer",
+                            "jeu",
+                            "ven",
+                            "sam",
+                        ]),
+                        (t.exports.fr["short"] = [
+                            "di",
+                            "lu",
+                            "ma",
+                            "me",
+                            "je",
+                            "ve",
+                            "sa",
+                        ]),
+                        (t.exports.es = [
+                            "domingo",
+                            "lunes",
+                            "martes",
+                            "miercoles",
+                            "jueves",
+                            "viernes",
+                            "sabado",
+                        ]),
+                        (t.exports.es.abbr = [
+                            "dom",
+                            "lun",
+                            "mar",
+                            "mir",
+                            "jue",
+                            "vie",
+                            "sab",
+                        ]),
+                        (t.exports.es["short"] = [
+                            "do",
+                            "lu",
+                            "ma",
+                            "mi",
+                            "ju",
+                            "vi",
+                            "sa",
+                        ]),
+                        (t.exports.it = [
+                            "Domenica",
+                            "Lunedi",
+                            "Martedi",
+                            "Mercoledi",
+                            "Giovedi",
+                            "Venerdi",
+                            "Sabato",
+                        ]),
+                        (t.exports.it.abbr = [
+                            "Dom",
+                            "Lun",
+                            "Mar",
+                            "Mer",
+                            "Gio",
+                            "Ven",
+                            "Sab",
+                        ]),
+                        (t.exports.it["short"] = [
+                            "D",
+                            "L",
+                            "Ma",
+                            "Me",
+                            "G",
+                            "V",
+                            "S",
+                        ]),
+                        (t.exports = [
+                            "Sunday",
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday",
+                        ]),
+                        (t.exports.abbr = [
+                            "Sun",
+                            "Mon",
+                            "Tue",
+                            "Wed",
+                            "Thu",
+                            "Fri",
+                            "Sat",
+                        ]),
+                        (t.exports["short"] = [
+                            "Su",
+                            "Mo",
+                            "Tu",
+                            "We",
+                            "Th",
+                            "Fr",
+                            "Sa",
+                        ]);
+                },
+                {},
+            ],
+            4: [
+                function (e, t) {
+                    function r(e, t) {
+                        return "string" == typeof e
+                            ? "<" === e.charAt(0)
+                                ? ((e = document.createElement(e.slice(1, -1))),
+                                  n(t || {}, function (t, r) {
+                                      switch (r) {
+                                          case "text":
+                                              return void (e.textContent = t);
+                                          case "html":
+                                              return void (e.innerHTML = t);
+                                      }
+                                      e.setAttribute(r, t);
+                                  }),
+                                  e)
+                                : ((t = t || document), t.querySelector(e))
+                            : e;
+                    }
+                    var n = e("iterate-object"),
+                        a = e("sliced");
+                    (r.$$ = function (e, t) {
+                        return "string" == typeof e
+                            ? ((t = t || document), a(t.querySelectorAll(e)))
+                            : [e];
+                    }),
+                        (t.exports = r);
+                },
+                { "iterate-object": 9, sliced: 13 },
+            ],
+            5: [
+                function (e, t) {
+                    t.exports = function (e, t, r) {
+                        (t = t || 2), (r = r || "0"), (e = e.toString());
+                        var n = t - e.length;
+                        return (0 >= n ? "" : r.repeat(n)) + e;
+                    };
+                },
+                {},
+            ],
+            6: [
+                function (e, t) {
+                    var r = e("months"),
+                        n = e("days"),
+                        a = e("fillo"),
+                        o = e("parse-it").Parser,
+                        u = {
+                            YYYY: function (e, t) {
+                                return t ? e.getUTCFullYear() : e.getFullYear();
+                            },
+                            YY: function (e, t) {
+                                return u.YYYY(e, t) % 100;
+                            },
+                            MMMM: function (e, t) {
+                                return t ? r[e.getUTCMonth()] : r[e.getMonth()];
+                            },
+                            MMM: function (e, t) {
+                                return t
+                                    ? r.abbr[e.getUTCMonth()]
+                                    : r.abbr[e.getMonth()];
+                            },
+                            MM: function (e, t) {
+                                return a(
+                                    t ? e.getUTCMonth() + 1 : e.getMonth() + 1
+                                );
+                            },
+                            M: function (e, t) {
+                                return t
+                                    ? e.getUTCMonth() + 1
+                                    : e.getMonth() + 1;
+                            },
+                            dddd: function (e, t) {
+                                return n[u.d(e, t)];
+                            },
+                            ddd: function (e, t) {
+                                return n.abbr[u.d(e, t)];
+                            },
+                            dd: function (e, t) {
+                                return n["short"][u.d(e, t)];
+                            },
+                            d: function (e, t) {
+                                return t ? e.getUTCDay() : e.getDay();
+                            },
+                            DD: function (e, t) {
+                                return a(u.D(e, t));
+                            },
+                            D: function (e, t) {
+                                return t ? e.getUTCDate() : e.getDate();
+                            },
+                            A: function (e, t) {
+                                return u.a(e, t).toUpperCase();
+                            },
+                            a: function (e, t) {
+                                return u.H(e, t) >= 12 ? "pm" : "am";
+                            },
+                            hh: function (e, t) {
+                                return a(u.h(e, t));
+                            },
+                            h: function (e, t) {
+                                return u.H(e, t) % 12 || 12;
+                            },
+                            HH: function (e, t) {
+                                return a(u.H(e, t));
+                            },
+                            H: function (e, t) {
+                                return t ? e.getUTCHours() : e.getHours();
+                            },
+                            mm: function (e, t) {
+                                return a(u.m(e, t));
+                            },
+                            m: function (e, t) {
+                                return t ? e.getUTCMinutes() : e.getMinutes();
+                            },
+                            ss: function (e, t) {
+                                return a(u.s(e, t));
+                            },
+                            s: function (e, t) {
+                                return t ? e.getUTCSeconds() : e.getSeconds();
+                            },
+                            S: function (e, t) {
+                                return Math.round((u.s(e, t) / 60) * 10);
+                            },
+                            SS: function (e, t) {
+                                return a((u.s(e, t) / 60) * 100);
+                            },
+                            SSS: function (e, t) {
+                                return a((u.s(e, t) / 60) * 1e3, 3);
+                            },
+                            Z: function (e) {
+                                var t = -e.getTimezoneOffset();
+                                return (
+                                    (t >= 0 ? "+" : "-") +
+                                    a(parseInt(t / 60)) +
+                                    ":" +
+                                    a(t % 60)
+                                );
+                            },
+                            ZZ: function (e) {
+                                var t = -e.getTimezoneOffset();
+                                return (
+                                    (t >= 0 ? "+" : "-") +
+                                    a(parseInt(t / 60)) +
+                                    a(t % 60)
+                                );
+                            },
+                        },
+                        s = new o(u);
+                    t.exports = function (e, t) {
+                        return s.run(t, [e, e._useUTC]);
+                    };
+                },
+                { days: 3, fillo: 5, months: 10, "parse-it": 11 },
+            ],
+            7: [
+                function (e, t) {
+                    t.exports = [
+                        "#eee",
+                        "#d6e685",
+                        "#8cc665",
+                        "#44a340",
+                        "#1e6823",
+                    ];
+                },
+                {},
+            ],
+            8: [
+                function (e, t) {
+                    var r = e("github-calendar-legend");
+                    t.exports = function (e) {
+                        var t = {
+                                last_year: 0,
+                                longest_streak: -1,
+                                longest_streak_range: [],
+                                current_streak: 0,
+                                current_streak_range: [],
+                                weeks: [],
+                                days: [],
+                                last_contributed: null,
+                            },
+                            n = [],
+                            a = function () {
+                                t.current_streak > t.longest_streak &&
+                                    ((t.longest_streak = t.current_streak),
+                                    (t.longest_streak_range[0] =
+                                        t.current_streak_range[0]),
+                                    (t.longest_streak_range[1] =
+                                        t.current_streak_range[1]));
+                            };
+                        return (
+                            e
+                                .split("\n")
+                                .slice(2)
+                                .map(function (e) {
+                                    return e.trim();
+                                })
+                                .forEach(function (e) {
+                                    if (e.startsWith("<g transform"))
+                                        return (
+                                            n.length &&
+                                            t.weeks.push(n) &&
+                                            (n = [])
+                                        );
+                                    var o = e.match(/fill="(#[a-z0-9]+)"/),
+                                        u = e.match(/data-date="([0-9\-]+)"/),
+                                        s = e.match(/data-count="([0-9]+)"/);
+                                    if (
+                                        ((o = o && o[1]),
+                                        (u = u && u[1]),
+                                        (s = s && +s[1]),
+                                        o)
+                                    ) {
+                                        var i = {
+                                            fill: o,
+                                            date: new Date(u),
+                                            count: s,
+                                            level: r.indexOf(o),
+                                        };
+                                        0 === t.current_streak &&
+                                            (t.current_streak_range[0] =
+                                                i.date),
+                                            i.count
+                                                ? (++t.current_streak,
+                                                  (t.last_year += i.count),
+                                                  (t.last_contributed = i.date),
+                                                  (t.current_streak_range[1] =
+                                                      i.date))
+                                                : (a(), (t.current_streak = 0)),
+                                            n.push(i),
+                                            t.days.push(i);
+                                    }
+                                }),
+                            a(),
+                            t
+                        );
+                    };
+                },
+                { "github-calendar-legend": 7 },
+            ],
+            9: [
+                function (e, t) {
+                    function r(e, t) {
+                        var r = 0,
+                            n = [];
+                        if (Array.isArray(e))
+                            for (; r < e.length && t(e[r], r, e) !== !1; ++r);
+                        else if (
+                            "object" ===
+                                ("undefined" == typeof e
+                                    ? "undefined"
+                                    : _typeof(e)) &&
+                            null !== e
+                        )
+                            for (
+                                n = Object.keys(e);
+                                r < n.length && t(e[n[r]], n[r], e) !== !1;
+                                ++r
+                            );
+                    }
+                    t.exports = r;
+                },
+                {},
+            ],
+            10: [
+                function (e, t) {
+                    (t.exports = [
+                        "January",
+                        "February",
+                        "March",
+                        "April",
+                        "May",
+                        "June",
+                        "July",
+                        "August",
+                        "September",
+                        "October",
+                        "November",
+                        "December",
+                    ]),
+                        (t.exports.abbr = [
+                            "Jan",
+                            "Feb",
+                            "Mar",
+                            "Apr",
+                            "May",
+                            "Jun",
+                            "Jul",
+                            "Aug",
+                            "Sep",
+                            "Oct",
+                            "Nov",
+                            "Dec",
+                        ]),
+                        (t.exports.it = [
+                            "Gennaio",
+                            "Febbraio",
+                            "Marzo",
+                            "Aprile",
+                            "Maggio",
+                            "Giugno",
+                            "Luglio",
+                            "Agosto",
+                            "Settembre",
+                            "Ottobre",
+                            "Novembre",
+                            "Dicembre",
+                        ]),
+                        (t.exports.abbr.it = [
+                            "Gen",
+                            "Feb",
+                            "Mar",
+                            "Apr",
+                            "Mag",
+                            "Giu",
+                            "Lug",
+                            "Ago",
+                            "Set",
+                            "Ott",
+                            "Nov",
+                            "Dic",
+                        ]),
+                        (t.exports.de = [
+                            "Januar",
+                            "Februar",
+                            "März",
+                            "April",
+                            "Mai",
+                            "Juni",
+                            "Juli",
+                            "August",
+                            "September",
+                            "Oktober",
+                            "November",
+                            "Dezember",
+                        ]),
+                        (t.exports.abbr.de = [
+                            "Jan",
+                            "Feb",
+                            "Mär",
+                            "Apr",
+                            "Mai",
+                            "Jun",
+                            "Jul",
+                            "Aug",
+                            "Sep",
+                            "Okt",
+                            "Nov",
+                            "Dez",
+                        ]);
+                },
+                {},
+            ],
+            11: [
+                function (e, t) {
+                    function r(e, t) {
+                        if (!(e instanceof t))
+                            throw new TypeError(
+                                "Cannot call a class as a function"
+                            );
+                    }
+                    function n(e, t, r) {
+                        return new u(t).run(e, r);
+                    }
+                    var a = (function () {
+                            function e(e, t) {
+                                for (var r = 0; r < t.length; r++) {
+                                    var n = t[r];
+                                    (n.enumerable = n.enumerable || !1),
+                                        (n.configurable = !0),
+                                        "value" in n && (n.writable = !0),
+                                        Object.defineProperty(e, n.key, n);
+                                }
+                            }
+                            return function (t, r, n) {
+                                return r && e(t.prototype, r), n && e(t, n), t;
+                            };
+                        })(),
+                        o = e("regex-escape"),
+                        u = (function () {
+                            function e(t) {
+                                r(this, e),
+                                    (this.obj = t || {}),
+                                    (this.re = new RegExp(
+                                        "^(" +
+                                            Object.keys(t).map(o).join("|") +
+                                            ")"
+                                    ));
+                            }
+                            return (
+                                a(e, [
+                                    {
+                                        key: "run",
+                                        value: function (e, t) {
+                                            var r = "";
+                                            t = t || [];
+                                            do {
+                                                var n = e.match(this.re),
+                                                    a = n && n[1],
+                                                    o = a || e.charAt(0);
+                                                if (a) {
+                                                    var u = this.obj[a];
+                                                    "function" == typeof u &&
+                                                        (u = u.apply(this, t)),
+                                                        (r += u);
+                                                } else r += o;
+                                                e = e.substring(o.length);
+                                            } while (e);
+                                            return r;
+                                        },
+                                    },
+                                ]),
+                                e
+                            );
+                        })();
+                    (n.Parser = u), (t.exports = n);
+                },
+                { "regex-escape": 12 },
+            ],
+            12: [
+                function (e, t) {
+                    function r(e) {
+                        return e.replace(
+                            /[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g,
+                            "\\$&"
+                        );
+                    }
+                    (r.proto = function () {
+                        return (RegExp.escape = r), r;
+                    }),
+                        (t.exports = r);
+                },
+                {},
+            ],
+            13: [
+                function (e, t) {
+                    t.exports = function (e, t, r) {
+                        var n = [],
+                            a = e.length;
+                        if (0 === a) return n;
+                        var o = 0 > t ? Math.max(0, t + a) : t || 0;
+                        for (void 0 !== r && (a = 0 > r ? r + a : r); a-- > o; )
+                            n[a - o] = e[a];
+                        return n;
+                    };
+                },
+                {},
+            ],
+        },
+        {},
+        [1]
+    )(1);
+});
+</script>
   
 
   <!-- sourcing async files (global) -->
@@ -79,16 +871,16 @@ if (theme === "dark") {
  *             PREDEFINE TAGS CSS                     *
 *******************************************************/
 
-
 @import "/assets/css/font_1.css";
 @import "/assets/css/font_2.css";
 @import "/assets/css/highlight.css";
 
 /* Containers: Body, Container, Box, Main, Header, Content */
-html, html[data-theme="light"] {
-    --page-background-color: #F3F3F3 !important;
-    --content-background-color: #FFFFFF !important;
-    --content-hover-background-color: #F4F4F4 !important;
+html,
+html[data-theme="light"] {
+    --page-background-color: #f3f3f3 !important;
+    --content-background-color: #ffffff !important;
+    --content-hover-background-color: #f4f4f4 !important;
     --overlay-background-color: #f7f7f7 !important;
     --content-color: #555555 !important;
 }
@@ -116,16 +908,16 @@ body {
 }
 
 .container {
-    display: flex;    
-    position: relative;         
-    flex-direction: column;     
+    display: flex;
+    position: relative;
+    flex-direction: column;
     justify-content: center;
     position: absolute;
-    top: 0px;  
+    top: 0px;
     left: 0px;
     right: 0px;
-    bottom: 0px;  
-    align-items: center;       
+    bottom: 0px;
+    align-items: center;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
@@ -146,7 +938,6 @@ main {
     margin-left: 20px;
     padding-right: 10px;
 }
-
 
 /* Phrasing Style: H1, H2, H3, H4, H5, H6, P, A, UL, LI */
 
@@ -174,16 +965,30 @@ h6 {
     font-size: 13px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--content-color);
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 600;
-}  
+}
 
-a, p, ul, li, ol, table, span, blockquote {
+a,
+p,
+ul,
+li,
+ol,
+table,
+span,
+blockquote,
+text {
     color: var(--content-color);
-    font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 16px;  /* Let's set the font-size to something old-man friendly */
+    font-family: "IBM Plex Sans", Inter, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, sans-serif;
+    font-size: 16px; /* Let's set the font-size to something old-man friendly */
 }
 
 p a,
@@ -211,10 +1016,10 @@ ul ul {
     list-style-type: disc;
 }
 
-b, strong {
+b,
+strong {
     font-weight: 600;
 }
-
 
 /* Figures, Images, Code, Blockquotes, Tables */
 
@@ -229,14 +1034,13 @@ img {
     margin-right: -10px;
 }
 
-
 pre code {
     display: inline-block;
     overflow: auto !important;
     white-space: pre-line !important;
     word-wrap: break-word !important;
-    padding: 15px 15px  15px 15px;
-    vertical-align:middle;
+    padding: 15px 15px 15px 15px;
+    vertical-align: middle;
     background-color: var(--overlay-background-color);
     border: 0;
     color: var(--content-color);
@@ -279,7 +1083,8 @@ table {
     margin-left: -20px;
     margin-right: -10px;
 }
-th, td {
+th,
+td {
     color: var(--content-color);
     padding: 8px;
     text-align: left;
@@ -287,7 +1092,7 @@ th, td {
 }
 
 td {
-   font-size: 14px;
+    font-size: 14px;
 }
 
 td a {
@@ -340,7 +1145,7 @@ hr {
 
 .site-heading h4 {
     color: var(--content-color);
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-stretch: ultra-condensed;
     float: right;
     margin-bottom: 10px;
@@ -367,7 +1172,7 @@ hr {
     max-width: 100%;
     padding: 1px;
     vertical-align: bottom;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .avatar-img {
@@ -378,7 +1183,6 @@ hr {
     height: 80px !important;
     width: 80px !important;
 }
-
 
 .dashboard {
     border-bottom: 2px solid var(--overlay-background-color);
@@ -426,7 +1230,8 @@ hr {
 .socials a {
     color: #0053a6;
     text-decoration: none;
-    font-family: 'IBM Plex Sans', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "IBM Plex Sans", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 15px;
     margin-left: -3px;
 }
@@ -439,18 +1244,19 @@ hr {
     margin-right: 2px;
 }
 .fa-moon {
-    color: #0A1622;
+    color: #0a1622;
 }
 .fa-sun {
-    color: #F5B212;
+    color: #f5b212;
 }
-.socials a, .socials i:before {
+.socials a,
+.socials i:before {
     vertical-align: middle;
     display: inline-block;
 }
 
 .anchor-link {
-    stroke: #A8B3BB !important;
+    stroke: #a8b3bb !important;
 }
 
 .main-site-subheader {
@@ -478,18 +1284,17 @@ hr {
 }
 
 .navbar-item p {
-   font-weight: 600;
-   font-size: 0.7rem; 
-   font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-   color: var(--content-color);
-   margin-top: 0;
+    font-weight: 600;
+    font-size: 0.7rem;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--content-color);
+    margin-top: 0;
 }
 
 .navbar-item i {
     margin-top: 7px;
     stroke: var(--content-color);
 }
-
 
 /* Notes: Note-heading, Note-subheading, Notes-content, Related Notes */
 
@@ -500,7 +1305,7 @@ hr {
 
 .notes-page-site-heading a {
     text-decoration: none;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 600;
     font-size: 13px;
     font-stretch: ultra-condensed;
@@ -510,16 +1315,15 @@ hr {
 .notes-page-main-heading {
     margin-top: -25px;
     padding-left: 5px;
-    font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-
 
 .notes-page-heading {
     color: var(--content-color);
     font-size: 15px;
     font-weight: 600;
     padding-top: 15px;
-    font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .notes-page-heading a {
@@ -528,10 +1332,10 @@ hr {
 
 .notes-page-tagline {
     color: #888888;
-    margin-top: -17px; 
+    margin-top: -17px;
     color: #888888;
-    font-size: 0.7rem; 
-    font-weight: 550; 
+    font-size: 0.7rem;
+    font-weight: 550;
 }
 
 .notes-page-tagline a {
@@ -543,10 +1347,10 @@ hr {
 
 .disable-select {
     user-select: none; /* supported by Chrome and Opera */
-   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-   -moz-user-select: none; /* Firefox */
-   -ms-user-select: none; /* Internet Explorer/Edge */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 .very-small {
@@ -586,15 +1390,17 @@ hr {
 }
 
 .serif {
-    font-family: 'EB Garamond', Georgia, serif !important;
+    font-family: "EB Garamond", Georgia, serif !important;
 }
 
 .title-sans {
-    font-family: Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family: Inter, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
 .regular-sans {
-    font-family: 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family: "IBM Plex Sans", Inter, "Segoe UI", Roboto, Oxygen, Ubuntu,
+        Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
 }
 
 .bold {
@@ -626,7 +1432,6 @@ hr {
 }
 
 .boxit {
-
     padding: 20px;
     background-color: var(--overlay-background-color);
     border-radius: 5px;
@@ -637,13 +1442,11 @@ hr {
     border-radius: 5px;
 }
 
-
 #markdown-toc::before {
     content: "Contents";
     font-weight: bold;
     text-decoration: underline;
 }
-
 
 #markdown-toc li {
     margin-left: 1rem;
@@ -665,17 +1468,16 @@ hr {
     text-decoration: underline;
 }
 
-
 /* Common custom components between Main Site and Notes: Searchbar, Backbutton, ContentBox, Related Posts/Notes, Copyright,  */
 
 .searchbar input[type="text"] {
     position: relative;
     padding-left: 50px;
-    box-sizing : border-box;
+    box-sizing: border-box;
     width: 100%;
     height: 40px;
     border: 0px;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
     color: var(--content-color);
     font-size: 18px;
     border-bottom: 1px solid var(--overlay-background-color);
@@ -685,39 +1487,39 @@ hr {
 ::placeholder {
     color: #999;
     font-size: 18px;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 .searchbar i {
     position: absolute;
     vertical-align: middle;
     margin-top: -2px;
     padding-left: 20px;
-    color: #888; 
+    color: #888;
     padding-top: 12.5px;
     z-index: 1;
 }
-  
+
 .searchbar input[type="text"]:focus {
     border-color: var(--overlay-background-color);
-    box-shadow: 0 0 8px 0 #A7D0EB;
+    box-shadow: 0 0 8px 0 #a7d0eb;
 }
-  
-.searchbar input[type=text]:hover {
+
+.searchbar input[type="text"]:hover {
     background-color: var(--content-background-color);
 }
-  
-.searchbar input[type=text]:active,
-.searchbar input[type=text]:focus {
+
+.searchbar input[type="text"]:active,
+.searchbar input[type="text"]:focus {
     background-color: var(--content-background-color);
     outline: none;
-} 
+}
 
 .search_res {
     padding-left: 10px;
 }
 
 .search_res:hover {
- background-color: #f4f4f4;
+    background-color: #f4f4f4;
 }
 
 .search_res:hover > a {
@@ -733,7 +1535,7 @@ hr {
     fill: currentColor;
     color: var(--content-color);
     margin-top: 5px;
-    padding-left: 5px; 
+    padding-left: 5px;
     fill: currentColor;
     cursor: pointer;
 }
@@ -751,7 +1553,6 @@ hr {
     font-weight: 600;
 }
 
-
 .feed-title-excerpt-block {
     width: 100%;
     cursor: pointer;
@@ -768,7 +1569,7 @@ hr {
     right: 10px;
 }
 
-.srccode:hover > a > i{
+.srccode:hover > a > i {
     font-weight: 600;
 }
 
@@ -788,28 +1589,29 @@ hr {
     margin-left: 20px;
     margin-right: 50px;
     font-size: 16px;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 600;
 }
 
-.feed-excerpt{
+.feed-excerpt {
     color: var(--content-color);
     margin-top: -12px;
     margin-left: 20px !important;
     margin-right: 30px;
-    font-family:  'IBM Plex Sans', Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: "IBM Plex Sans", Inter, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, sans-serif;
     font-size: 15px;
 }
 
 .tags {
     list-style: none;
     margin: 0;
-    overflow: hidden; 
+    overflow: hidden;
     padding: 0;
 }
 
 .tags li {
-    float: left; 
+    float: left;
 }
 
 .tag {
@@ -821,7 +1623,7 @@ hr {
     border-radius: 32px;
     height: auto;
     vertical-align: middle;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: normal !important;
     font-size: 13px;
 }
@@ -839,14 +1641,15 @@ hr {
 .mn-right {
     float: right;
     clear: right;
-    font-family: 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family: "IBM Plex Sans", Inter, "Segoe UI", Roboto, Oxygen, Ubuntu,
+        Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
     font-size: 14px;
     margin-right: -45%;
     width: 40%;
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: baseline;
-    position: relative; 
+    position: relative;
     padding-bottom: 5px;
 }
 
@@ -854,41 +1657,43 @@ hr {
 .mn-left {
     float: left;
     clear: left;
-    font-family: 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family: "IBM Plex Sans", Inter, "Segoe UI", Roboto, Oxygen, Ubuntu,
+        Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
     font-size: 14px;
     margin-left: -45%;
     width: 40%;
     margin-top: 0;
     margin-bottom: 0;
     vertical-align: baseline;
-    position: relative; 
+    position: relative;
     padding-bottom: 5px;
 }
 
 .sidenote-number {
-    counter-increment: sidenote-counter; 
+    counter-increment: sidenote-counter;
 }
 
 .sidenote-number:after,
 .sn-left:before,
 .sn-right:before {
-    font-family: 'IBM Plex Sans', Inter, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-family: "IBM Plex Sans", Inter, "Segoe UI", Roboto, Oxygen, Ubuntu,
+        Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
     position: relative;
-    vertical-align: baseline; 
+    vertical-align: baseline;
 }
 
 .sidenote-number:after {
     content: counter(sidenote-counter);
     font-size: 12px;
     top: -0.5rem;
-    left: 0.1rem; 
+    left: 0.1rem;
 }
 
 .sn-right:before,
 .sn-left:before {
     content: counter(sidenote-counter) " ";
     font-size: 14px;
-    top: -0.5rem; 
+    top: -0.5rem;
 }
 
 blockquote .sn-left,
@@ -897,7 +1702,7 @@ blockquote .mn-left {
     clear: left;
     margin-left: -58%;
     width: 40%;
-    text-align: left; 
+    text-align: left;
 }
 
 li .sn-left,
@@ -906,7 +1711,7 @@ li .mn-left {
     clear: left;
     margin-left: -53%;
     width: 40%;
-    text-align: left; 
+    text-align: left;
 }
 
 blockquote .sn-right,
@@ -915,7 +1720,7 @@ blockquote .mn-right {
     clear: right;
     margin-right: -55% !important;
     width: 40%;
-    text-align: left; 
+    text-align: left;
 }
 
 li .sn-right,
@@ -924,64 +1729,62 @@ li .mn-right {
     clear: right;
     margin-right: -45% !important;
     width: 40%;
-    text-align: left; 
+    text-align: left;
 }
-
 
 .tooltip {
-    display:inline;
-    position:relative;
-    text-align:left;
+    display: inline;
+    position: relative;
+    text-align: left;
 }
-
 
 .tooltip bottom {
     display: none;
 }
 
 .tooltip .right {
-    min-width:300px; 
-    top:50%;
-    left:100%;
-    margin-left:20px;
-    transform:translate(0, -50%);
-    padding:10px 20px;
-    color:var(--content-color);
-    background-color:var(--overlay-background-color);
-    font-weight:normal;
-    font-size:13px;
-    border-radius:8px;
-    position:absolute;
-    z-index:99999999;
-    box-sizing:border-box;
-    box-shadow:0 1px 8px #ddd;
-    display:none;
+    min-width: 300px;
+    top: 50%;
+    left: 100%;
+    margin-left: 20px;
+    transform: translate(0, -50%);
+    padding: 10px 20px;
+    color: var(--content-color);
+    background-color: var(--overlay-background-color);
+    font-weight: normal;
+    font-size: 13px;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 99999999;
+    box-sizing: border-box;
+    box-shadow: 0 1px 8px #ddd;
+    display: none;
 }
 
 .tooltip:hover .right {
-    display:block;
+    display: block;
 }
 
 .tooltip .right i {
-    position:absolute;
-    top:50%;
-    right:100%;
-    margin-top:-12px;
-    width:12px;
-    height:24px;
-    overflow:hidden;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -12px;
+    width: 12px;
+    height: 24px;
+    overflow: hidden;
 }
 
 .tooltip .right i::after {
-    content:'';
-    position:absolute;
-    width:12px;
-    height:12px;
-    left:0;
-    top:50%;
-    transform:translate(50%,-50%) rotate(-45deg);
-    background-color:var(--overlay-background-color);
-    box-shadow:0 1px 8px #ddd;
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 50%;
+    transform: translate(50%, -50%) rotate(-45deg);
+    background-color: var(--overlay-background-color);
+    box-shadow: 0 1px 8px #ddd;
 }
 
 .right .tooltip-title {
@@ -1000,7 +1803,7 @@ li .mn-right {
 }
 
 input.margin-toggle {
-    display: none; 
+    display: none;
 }
 
 .srs-svg {
@@ -1008,11 +1811,11 @@ input.margin-toggle {
 }
 
 label.sidenote-number {
-    display: inline; 
+    display: inline;
 }
 
 label.margin-toggle:not(.sidenote-number) {
-    display: none; 
+    display: none;
 }
 
 .spaced-rep {
@@ -1020,28 +1823,28 @@ label.margin-toggle:not(.sidenote-number) {
 }
 
 input.srs-toggle {
-    display: none; 
+    display: none;
 }
 
 label.srs-toggle {
-    display: inline; 
+    display: inline;
     cursor: pointer;
 }
 
-.srs-toggle:checked + .spaced-rep{
+.srs-toggle:checked + .spaced-rep {
     display: block !important;
     left: 1rem;
     clear: both;
     margin: 1rem 2.5%;
     vertical-align: baseline;
-    position: relative; 
+    position: relative;
     padding: 12px;
     width: 240px;
     background-color: var(--overlay-background-color);
     border: solid 1px #dfdfdf;
     border-radius: 5px;
     box-shadow: 1px 1px 15px #cfcfcf;
-    word-wrap:break-word;
+    word-wrap: break-word;
 }
 
 .related {
@@ -1054,7 +1857,7 @@ label.srs-toggle {
 .related h4 {
     color: #888888;
     padding-top: 20px;
-    padding-left: 20px
+    padding-left: 20px;
 }
 
 .related-wrapper {
@@ -1084,17 +1887,16 @@ label.srs-toggle {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 12px !important;
-    font-family:  Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
     font-weight: 600;
 }
 
 .related-excerpt:before {
-    content: "\"";
+    content: '"';
 }
 
-
 .related-excerpt:after {
-    content: "\"";
+    content: '"';
 }
 
 .related-excerpt {
@@ -1147,7 +1949,7 @@ label.srs-toggle {
     background-color: #f4f4f4;
 }
 
-.context-menu-res li:hover >  .context-menu-res__link {
+.context-menu-res li:hover > .context-menu-res__link {
     font-weight: bold;
 }
 
@@ -1155,8 +1957,6 @@ label.srs-toggle {
     color: var(--content-color);
     text-decoration: none;
 }
-
-
 
 /* context-menu styling */
 .context-menu {
@@ -1169,45 +1969,45 @@ label.srs-toggle {
     border: solid 1px #dfdfdf;
     border-radius: 5px;
     box-shadow: 1px 1px 15px #cfcfcf;
-  }
-  
+}
+
 .context-menu--active {
-  display: block;
+    display: block;
 }
 
 .context-menu__items {
-  list-style: none;
-  margin: 0;
-  padding-left: 6px;
-  padding-right: 6px;
+    list-style: none;
+    margin: 0;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .context-menu__item {
-  display: block;
-  margin-bottom: 4px;
+    display: block;
+    margin-bottom: 4px;
 }
 
 .context-menu__item:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .context-menu__link {
-  display: block;
-  padding: 4px 12px;
-  color: var(--content-color);
-  text-decoration: none;
-  font-size: 12px;
-  font-family: Inter, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    display: block;
+    padding: 4px 12px;
+    color: var(--content-color);
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Inter, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .context-menu__link:hover {
-  color: var(--content-color);
-  background-color: #f4f4f4;
+    color: var(--content-color);
+    background-color: #f4f4f4;
 }
 
 .popup {
- position: absolute;
- display: none;
+    position: absolute;
+    display: none;
 }
 
 #copyright {
@@ -1220,7 +2020,6 @@ label.srs-toggle {
 }
 
 /* IE-SPECIFIC STYLING */
-
 
 .internet-explorer-heading {
     display: none;
@@ -1240,10 +2039,11 @@ figcaption {
         display: none !important;
     }
 
-    .dashboard, .site-heading {
+    .dashboard,
+    .site-heading {
         display: inline-block;
     }
-    
+
     #scroll-head,
     #disqus_thread {
         display: none !important;
@@ -1263,67 +2063,67 @@ figcaption {
     blockquote .mn-left,
     li .sn-left,
     li .mn-left {
-    margin-left: -38%;
-    width: 24% !important;
-}
+        margin-left: -38%;
+        width: 24% !important;
+    }
 
     blockquote .sn-right,
     blockquote .mn-right,
     li .sn-right,
     li .mn-right {
-    margin-right: -30%;
-    width: 25% !important;
-}
+        margin-right: -30%;
+        width: 25% !important;
+    }
     .box {
         border: none !important;
     }
 }
 
-@media screen and (max-width: 1200px){
- .sn-right,
-.mn-right {
-    margin-right: -35%;
-    width: 30%;
-}
+@media screen and (max-width: 1200px) {
+    .sn-right,
+    .mn-right {
+        margin-right: -35%;
+        width: 30%;
+    }
 
-.sn-left,
-.mn-left {
-    margin-left: -35%;
-    width: 30%;
-}
+    .sn-left,
+    .mn-left {
+        margin-left: -35%;
+        width: 30%;
+    }
 
-blockquote .sn-left,
-blockquote .mn-left {
-    margin-left: -51% !important;
-    width: 30% !important;
-}
+    blockquote .sn-left,
+    blockquote .mn-left {
+        margin-left: -51% !important;
+        width: 30% !important;
+    }
 
-li .sn-left,
-li .mn-left {
-margin-left: -43% !important;
-width: 30% !important;
-}
+    li .sn-left,
+    li .mn-left {
+        margin-left: -43% !important;
+        width: 30% !important;
+    }
 
-blockquote .sn-right,
-blockquote .mn-right {
-    margin-right: -50% !important;
-    width: 30% !important;
-}
+    blockquote .sn-right,
+    blockquote .mn-right {
+        margin-right: -50% !important;
+        width: 30% !important;
+    }
 
-li .sn-right,
-li .mn-right {
-margin-right: -35% !important;
-width: 30% !important;
-}
+    li .sn-right,
+    li .mn-right {
+        margin-right: -35% !important;
+        width: 30% !important;
+    }
 
-.related-group {
-    background-color: #ededed !important;
-    margin-left: 10px;
-    width: 90% !important;
-    height: 100%;
-    border-radius: 10px;
-    cursor: pointer;
-}
+    .related-group {
+        background-color: #ededed !important;
+        margin-left: 10px;
+        width: 90% !important;
+        height: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1332,67 +2132,68 @@ width: 30% !important;
     }
 
     .tooltip .bottom {
-        min-width:300px; 
-        top:40px;
-        left:50%;
-        transform:translate(-50%, 0);
-        padding:10px 20px;
-        color:var(--content-color);
-        background-color:var(--overlay-background-color);
-        font-weight:normal;
-        font-size:13px;
-        border-radius:8px;
-        position:absolute;
-        z-index:99999999;
-        box-sizing:border-box;
-        box-shadow:0 1px 8px #ddd;
-        display:none;
+        min-width: 300px;
+        top: 40px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 10px 20px;
+        color: var(--content-color);
+        background-color: var(--overlay-background-color);
+        font-weight: normal;
+        font-size: 13px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 99999999;
+        box-sizing: border-box;
+        box-shadow: 0 1px 8px #ddd;
+        display: none;
     }
-    
+
     .tooltip:hover .bottom {
-        display:block;
+        display: block;
     }
 
     .tooltip .bottom i {
-        position:absolute;
-        bottom:100%;
-        left:50%;
-        margin-left:-12px;
-        width:24px;
-        height:12px;
-        overflow:hidden;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -12px;
+        width: 24px;
+        height: 12px;
+        overflow: hidden;
     }
-    
+
     .tooltip .bottom i::after {
-        content:'';
-        position:absolute;
-        width:12px;
-        height:12px;
-        left:50%;
-        transform:translate(-50%,50%) rotate(45deg);
-        background-color:var(--overlay-background-color);
-        box-shadow:0 1px 8px #ddd;
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        left: 50%;
+        transform: translate(-50%, 50%) rotate(45deg);
+        background-color: var(--overlay-background-color);
+        box-shadow: 0 1px 8px #ddd;
     }
-    
+
     .bottom .tooltip-title {
         font-size: 15px;
         font-weight: 500;
         display: inline-block;
     }
-    
+
     .bottom .tooltip-excerpt {
         font-size: 12px;
         display: inline-block;
-    }    
+    }
 
     .bottom .tooltip-excerpt a {
         font-size: 12px;
-    }  
+    }
 }
 
 /* smartphones, touchscreens */
 @media (pointer: coarse) {
-    .tooltip:hover .bottom, .tooltip:hover .right {
+    .tooltip:hover .bottom,
+    .tooltip:hover .right {
         display: none;
     }
     .feed-context {
@@ -1403,104 +2204,111 @@ width: 30% !important;
     }
 }
 
+@media screen and (max-width: 800px) {
+    img {
+        width: 100% !important;
+    }
 
+    /* Scaling down font when screen size is small */
+    a,
+    p,
+    ul,
+    li,
+    ol,
+    table,
+    span,
+    blockquote {
+        font-size: 0.95em;
+    }
+    /* GitHub Heatmap */
+    .calendar {
+        display: none;
+    }
+    .box {
+        width: 80%;
+    }
 
-@media screen and (max-width: 800px){
+    label {
+        cursor: pointer;
+    }
 
-img {
-    width: 100% !important;
-}
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
 
-/* Scaling down font when screen size is small */
-a, p, ul, li, ol, table, span, blockquote {
-    font-size: .95em
-}
-/* GitHub Heatmap */
-.calendar {
-    display: none;
-}
-.box {
-    width: 80%;
-}
+    .sn-left,
+    .sn-right,
+    .mn-left,
+    .mn-right {
+        display: none;
+    }
 
-label {
-    cursor: pointer; 
-}
+    .margin-toggle:checked + .sn-right,
+    .margin-toggle:checked + .sn-left,
+    .margin-toggle:checked + .mn-left,
+    .margin-toggle:checked + .mn-right {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
 
-label.margin-toggle:not(.sidenote-number) {
-    display: inline; 
-}
-
-.sn-left, .sn-right,
-.mn-left, .mn-right {
-    display: none; 
-}
-
-.margin-toggle:checked + .sn-right,
-.margin-toggle:checked + .sn-left,
-.margin-toggle:checked + .mn-left,
-.margin-toggle:checked + .mn-right {
-    display: block;
-    float: left;
-    left: 1rem;
-    clear: both;
-    width: 95%;
-    margin: 1rem 2.5%;
-    vertical-align: baseline;
-    position: relative; 
+    .sketch-left,
+    .sketch-right {
+        display: inline-block !important;
+        float: left !important;
+        left: 1rem !important;
+        clear: both !important;
+        width: 95% !important;
+        margin: 1rem 2.5% !important;
+        vertical-align: baseline !important;
+        position: relative !important;
+        padding-bottom: 10px;
+    }
 }
 
-.sketch-left, .sketch-right {
-    display: inline-block !important;
-    float: left !important;
-    left: 1rem !important;
-    clear: both !important;
-    width: 95% !important;
-    margin: 1rem 2.5% !important;
-    vertical-align: baseline !important;
-    position: relative !important; 
-    padding-bottom: 10px;
-}
-}
-
-@media screen and (max-width: 500px){
-.box {
-    width: 100%;
-    max-width: 100% !important;
-    border-left: none !important;
-    border-right: none !important;
-}
-.related-wrapper {
-    grid-template-columns: repeat(1, 1fr);
-}
+@media screen and (max-width: 500px) {
+    .box {
+        width: 100%;
+        max-width: 100% !important;
+        border-left: none !important;
+        border-right: none !important;
+    }
+    .related-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media print {
-.userboard,
-.avatar,
-.searchbar,
-.menu,
-.related {
-    display: none !important;
-}
+    .userboard,
+    .avatar,
+    .searchbar,
+    .menu,
+    .related {
+        display: none !important;
+    }
 
-#scroll-head,
-#disqus_thread {
-    display: none !important;
-}
-.sn-right,
-.mn-right {
-    margin-right: -30%;
-    width: 25%;
-}
-.sn-left,
-.mn-left {
-    margin-left: -30%;
-    width: 25%;
-}
-.box {
-    border: none !important;
-}
+    #scroll-head,
+    #disqus_thread {
+        display: none !important;
+    }
+    .sn-right,
+    .mn-right {
+        margin-right: -30%;
+        width: 25%;
+    }
+    .sn-left,
+    .mn-left {
+        margin-left: -30%;
+        width: 25%;
+    }
+    .box {
+        border: none !important;
+    }
 }
 
 /* DISQUS THREAD MARGIN OVERRIDE FOR LEGIBILITY, DO NOT TOUCH */
@@ -1537,7 +2345,8 @@ iframe {
 .ps-root {
     margin-left: -20px;
     margin-right: -10px;
-}</style>
+}
+</style>
 
   <!-- sourcing async files (global) -->
   
@@ -1613,11 +2422,6 @@ iframe {
                 <li>
                     <i class="fab fa-kaggle" style="color: #35B3E0"></i>
                     <a href="https://www.kaggle.com/sudomaze">@sudomaze</a>
-                </li>
-                
-                <li>
-                    <i class="fab fa-discord" style="color: #8899F7"></i>
-                    <a href="https://discord.gg/v44SgTg">Join our Discord Server</a>
                 </li>
                 
                 <li>
@@ -2037,6 +2841,7 @@ iframe {
 </div>
 </main>
                  
+                <hr>
                 <div id="copyright">
     <p id="copyright-notice">© Mazen Alotaibi</p>
 </div>

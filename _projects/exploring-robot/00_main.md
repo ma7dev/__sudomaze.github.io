@@ -4,6 +4,8 @@ title: Exploring Robot
 category: project
 permalink: /projects/exploring-robot
 display: "/assets/gif"
+date: 2020/1/1
+updated: 2020/1/2
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}

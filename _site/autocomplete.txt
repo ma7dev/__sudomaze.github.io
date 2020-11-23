@@ -1,5 +1,5 @@
 
-Linux vs. FreeBSD vs. Windows;
+How I managed my time effectively;
 
 
 Leetcode;
