@@ -4,8 +4,7 @@ title: "Linux vs. FreeBSD vs. Windows"
 category: project
 permalink: /projects/linux-vs-freebsd-vs-windows
 display: "/assets/gif"
-date: 2020/1/1
-updated: 2020/1/2
+date: 2018-12-06
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}

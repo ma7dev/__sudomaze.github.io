@@ -2,22 +2,80 @@
 layout: default
 permalink: /
 ---
-<h1><b>Recent News</b></h1>
-<ul>
-    {% for news in site.data.author.news %}
-    <li>
-    [{{news.date[0]}}-{{news.date[1]}}-{{news.date[2]}}] {{news.description}}
-    </li>
-    {% endfor %}
-</ul>
-<h1><b>Posts</b></h1>
-<ul>
-    {% for post in site.posts %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-</ul>
 
-
-
+<div>
+    <h1><b>News</b></h1>
+    <!-- <ul style="height: 200px; overflow-y: scroll"> -->
+    <ul>
+        {% assign sorted = site.data.author.news | sort: 'date' | reverse %}
+        {% for item in sorted %}
+        <li>[{{item.date | date: '%b %d, %Y'}}]: {{item.description}}</li>
+        {% endfor %}
+    </ul>
+</div>
+<!-- <div class="sidebar__right">
+    <h1><b>Recent Posts</b></h1>
+    <ul>
+        {% assign sorted = site.posts | sort: 'date' | reverse %}
+        {% for item in sorted limit:5 %}
+        <li>[{{item.date | date: '%b %d, %Y'}}]
+            <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <p style="margin-left: 20px; padding-right: 10px">
+        <a href="/posts">See all posts</a>
+    </p>
+</div> -->
+<div class="sidebar__right">
+    <h1><b>Recent Notes</b></h1>
+    <ul>
+        {% assign sorted = site.notes | sort: 'date' | reverse %}
+        {% for item in sorted limit:5 %}
+        <li>[{{item.date | date: '%b %d, %Y'}}]
+            <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <p style="margin-left: 20px; padding-right: 10px">
+        <a href="/notes">See all notes</a>
+    </p>
+</div>
+<div>
+    <h1><b>Recent Projects</b></h1>
+    <ul>
+        {% assign categories_grouped = site.pages | group_by: 'category' %}
+        {% for category in categories_grouped %}
+            {% if category.name == "project" %}
+                {% assign sorted = category.items | sort: 'date' | reverse %}
+                {% for item in sorted limit:5 %}
+        <li>[{{item.date | date: '%b %d, %Y'}}]
+            <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+    <p style="margin-left: 20px; padding-right: 10px">
+        <a href="/projects">See all projects</a>
+    </p>
+</div>
+<!-- <div>
+    <h1><b>Recent Publications</b></h1>
+    <ul>
+        {% assign categories_grouped = site.pages | group_by: 'category' %}
+        {% for category in categories_grouped %}
+            {% if category.name == "publication" %}
+                {% assign sorted = category.items | sort: 'date' | reverse %}
+                {% for item in sorted limit:5 %}
+        <li>[{{item.date | date: '%b %d, %Y'}}]
+            <a href="{{ item.url }}">{{ item.title }}</a>
+        </li>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+    <p style="margin-left: 20px; padding-right: 10px">
+        <a href="/publications">See all publications</a>
+    </p>
+</div> -->

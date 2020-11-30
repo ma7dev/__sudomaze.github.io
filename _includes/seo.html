@@ -1,7 +1,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport" />
-<meta content="{{ page.content | strip_html | strip | escape | truncate: 200}}" name="description" >
+<meta content="{{ site.data.author.description | strip_html}}" name="description" >
 <meta content="{{ site.date.site.title}}" property="og:site_name"/>
-<meta content="{{ page.content | strip_html | strip | escape | truncate: 200}}" property="og:description">
+<meta content="{{ site.data.author.description | strip_html}}" property="og:description">
 <meta content="{{ site.data.site.url }}/about/" property="article:author">
 
 <title>{{site.data.site.title}}</title>
@@ -15,7 +15,7 @@
   <meta content="{{ site.data.site.url }}{{ page.url }}" property="og:url">
 {% endif %}
 <link rel="icon" href="{{site.data.site.favicon}}" type="image/png" sizes="16x16"/>
-<link rel="canonical" href="{{page.url}}"/>
+<link rel="canonical" href="{{sitedata.site.url}}"/>
 <link rel="apple-touch-icon" href="{{site.data.site.profile_pic}}">
 
 

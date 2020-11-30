@@ -3,8 +3,7 @@ layout: post
 title: Travelling Salesman Problem
 permalink: /projects/travelling-salesman-problem
 category: project
-date: 2020/1/1
-updated: 2020/1/2
+date: 2019-03-15
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}

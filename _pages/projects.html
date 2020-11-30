@@ -5,7 +5,8 @@ permalink: /projects
 {% assign categories_grouped = site.pages | group_by: 'category' %}
 {% for category in categories_grouped %}
     {% if category.name == "project" %}
-        {% for item in category.items %}
+    {% assign sorted = category.items | sort: 'date' | reverse %}
+        {% for item in sorted %}
             <div class="feed-title-excerpt-block disable-select" data-url="{{site.data.site.url}}{{item.url}}">
                 <a href="{{item.url}}" style="text-decoration: none; color: #555555;">
                 {% if item.status == "Ongoing" or item.status == "ongoing" %}
@@ -14,7 +15,7 @@ permalink: /projects
                     </ul>
                     <p style="margin-top: 0px;" class="feed-title">{{ item.title }}</p>
                 {% else %}
-                    <p class="feed-title">{{ item.title }}</p>
+                    <p class="feed-title">[{{item.date | date: '%b %d, %Y'}}] {{ item.title }}</p>
                 {% endif %}
                 <p class="feed-excerpt">{{ item.content | strip_html | strip | escape | truncate: 200}}</p>
                 </a>

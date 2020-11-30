@@ -2,5 +2,7 @@
 How I managed my time effectively;
 
 
-Leetcode;
+LeetCode;
+
+DIGITAL IMAGE PROCESSING (CS 559);
 

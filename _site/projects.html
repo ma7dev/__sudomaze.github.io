@@ -2,15 +2,11 @@
 <html lang="en">
     <head>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-<meta content="{% assign categories_grouped = site.pages | group_by: &#39;category&#39; %}
-{% for category in categories_grouped %}
-    {% if category.name == &quot;project&quot; %}
-        {% for item in categor..." name="description" >
+<meta content="Is an M.S. student under the supervision of Prof. Fuxin Li at Deep Machine Vision (DMV) at Oregon State University (OSU). He is interested in Computer Vision, Deep Learning, and Data Science.
+" name="description" >
 <meta content="" property="og:site_name"/>
-<meta content="{% assign categories_grouped = site.pages | group_by: &#39;category&#39; %}
-{% for category in categories_grouped %}
-    {% if category.name == &quot;project&quot; %}
-        {% for item in categor..." property="og:description">
+<meta content="Is an M.S. student under the supervision of Prof. Fuxin Li at Deep Machine Vision (DMV) at Oregon State University (OSU). He is interested in Computer Vision, Deep Learning, and Data Science.
+" property="og:description">
 <meta content="https://sudomaze.dev/about/" property="article:author">
 
 <title>sudomaze.dev</title>
@@ -20,7 +16,7 @@
   <meta content="https://sudomaze.dev/projects" property="og:url">
 
 <link rel="icon" href="/assets/img/profile.webp" type="image/png" sizes="16x16"/>
-<link rel="canonical" href="/projects"/>
+<link rel="canonical" href=""/>
 <link rel="apple-touch-icon" href="/assets/img/profile.webp">
 
 
@@ -1576,19 +1572,22 @@ iframe {
 </head>
     <body>
         <div class="container">
-            <div class = "box">
-                
-<header>
+            <div class="box">
+                <header>
     <div class="dashboard disable-select">
         <div class="site-heading profile-board-col">
-           <h4 class="medium">
-               <a href="/">sudomaze.dev</a> |
-               <i id="theme-toggle" onclick="modeSwitcher()" class="far"></i>
+            <h4 class="medium">
+                <a href="/">sudomaze.dev</a> |
+                <i id="theme-toggle" onclick="modeSwitcher()" class="far"></i>
             </h4>
         </div>
         <div class="userboard profile-board-col">
             <div class="username">
-                <p class="title-sans"><a href="/about" style="text-decoration: none;">Mazen Alotaibi</a></p>
+                <p class="title-sans">
+                    <a href="/" style="text-decoration: none"
+                        >Mazen Alotaibi</a
+                    >
+                </p>
             </div>
             <div class="userdesc">
                 <p class="title-sans">Is an M.S. student under the supervision of <a href="http://web.engr.oregonstate.edu/~lif/">Prof. Fuxin Li</a> at Deep Machine Vision (DMV) at Oregon State University (OSU). He is interested in Computer Vision, Deep Learning, and Data Science.
@@ -1597,32 +1596,50 @@ iframe {
             <ul class="socials">
                 
                 <li>
-                    <i class="fab fa-twitter" style="color: #1DA1F2"></i>
+                    <i
+                        class="fab fa-twitter"
+                        style="color: #1DA1F2"
+                    ></i>
                     <a href="https://twitter.com/sudomaze">@sudomaze</a>
                 </li>
                 
                 <li>
-                    <i class="fab fa-github" style="color: #24292E"></i>
+                    <i
+                        class="fab fa-github"
+                        style="color: #24292E"
+                    ></i>
                     <a href="https://github.com/sudomaze">@sudomaze</a>
                 </li>
                 
                 <li>
-                    <i class="fab fa-twitch" style="color: #9147FF"></i>
+                    <i
+                        class="fab fa-twitch"
+                        style="color: #9147FF"
+                    ></i>
                     <a href="https://twitch.tv/sudomaze">ttv/sudomaze</a>
                 </li>
                 
                 <li>
-                    <i class="fab fa-linkedin" style="color: #0077B5"></i>
+                    <i
+                        class="fab fa-linkedin"
+                        style="color: #0077B5"
+                    ></i>
                     <a href="https://linkedin.com/in/sudomaze">in/sudomaze</a>
                 </li>
                 
                 <li>
-                    <i class="fab fa-kaggle" style="color: #35B3E0"></i>
+                    <i
+                        class="fab fa-kaggle"
+                        style="color: #35B3E0"
+                    ></i>
                     <a href="https://www.kaggle.com/sudomaze">@sudomaze</a>
                 </li>
                 
                 <li>
-                    <i class="fab fa-reddit" style="color: #FF4500"></i>
+                    <i
+                        class="fab fa-reddit"
+                        style="color: #FF4500"
+                    ></i>
                     <a href="https://www.reddit.com/user/sudomaze/">u/sudomaze</a>
                 </li>
                 
@@ -1630,43 +1647,54 @@ iframe {
         </div>
     </div>
     <div class="avatar disable-select" title="click me to know more">
-        <a class="avatar-link" href="/about">
-            <img loading=lazy src="/assets/img/profile.webp" class="avatar-img" alt="avatar"/>
+        <a class="avatar-link" href="/">
+            <img
+                loading="lazy"
+                src="/assets/img/profile.webp"
+                class="avatar-img"
+                alt="avatar"
+            />
         </a>
     </div>
     <div class="main-site-subheader menu disable-select">
     <div class="navbar-item">
-        <a style="text-decoration: none;" href="/about">
+        <a style="text-decoration: none" href="/about">
             <i class="far fa-user"></i>
             <p>About</p>
         </a>
     </div>
-    <div class="navbar-item">
-        <a style="text-decoration: none;" href="/cv">
-            <i class="fas fa-university"></i>
-            <p>CV</p>
+    <!-- <div class="navbar-item">
+        <a style="text-decoration: none" href="/posts">
+            <i class="far fa-file"></i>
+            <p>Posts</p>
         </a>
-    </div>
+    </div> -->
     <div class="navbar-item">
-        <a style="text-decoration: none;" href="/notes">
+        <a style="text-decoration: none" href="/notes">
             <i class="fas fa-pencil-alt"></i>
             <p>Notes</p>
         </a>
     </div>
     <div class="navbar-item">
-        <a style="text-decoration: none;" href="/projects">
+        <a style="text-decoration: none" href="/projects">
             <i class="fas fa-folder-open"></i>
             <p>Projects</p>
         </a>
     </div>
     <!-- <div class="navbar-item">
-        <a style="text-decoration: none;" href="/publications">
+        <a style="text-decoration: none" href="/publications">
             <i class="fas fa-glasses"></i>
             <p>Publications</p>
         </a>
     </div> -->
     <div class="navbar-item">
-        <a style="text-decoration: none;" href="/site">
+        <a style="text-decoration: none" href="/cv">
+            <i class="fas fa-university"></i>
+            <p>CV</p>
+        </a>
+    </div>
+    <div class="navbar-item">
+        <a style="text-decoration: none" href="/site">
             <i class="fas fa-info"></i>
             <p>Site</p>
         </a>
@@ -1678,13 +1706,13 @@ iframe {
         </a>
     </div> -->
     <div class="navbar-item">
-        <a style="text-decoration: none;" href="/feed.xml">
+        <a style="text-decoration: none" href="/feed.xml">
             <i class="fas fa-rss"></i>
             <p>RSS</p>
         </a>
     </div>
 </div>
-    <div class="searchbar search-container">
+ <div class="searchbar search-container">
     <i class="fa fa-search" aria-hidden="true"></i>
     <input type="text" oninput="changeResultContainerDisp(this.value)" name="search-input" id="search-input" autocomplete="off" placeholder="Search..."/>
     <label for="search-input" title="Search Input"></label>
@@ -1715,53 +1743,41 @@ iframe {
         fuzzy: false,
         limit: 4
     })
-</script>
-    
-    <div class="main-site-navigator disable-select" id="scroll-head" onclick="window.location.assign('/');">
+</script> 
+    <div
+        class="main-site-navigator disable-select"
+        id="scroll-head"
+        onclick="window.location.assign('/');"
+    >
         <div class="back-icon">
-            <svg class="ripple" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"/>
+            <svg
+                class="ripple"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+            >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"
+                />
             </svg>
         </div>
-        <p class="back-p">Home</p>    
+        <p class="back-p">Home</p>
     </div>
     
 </header>
-
-                
+ 
 
     
-        
-            <div class="feed-title-excerpt-block disable-select" data-url="https://sudomaze.dev/projects/linux-vs-freebsd-vs-windows">
-                <a href="/projects/linux-vs-freebsd-vs-windows" style="text-decoration: none; color: #555555;">
-                
-                    <p class="feed-title">Linux vs. FreeBSD vs. Windows</p>
-                
-                <p class="feed-excerpt">Introduction
 
-This paper presents a comparison between Linux, FreeBSD, and Windows in three areas: concurrency, I/O, and memory management. In addition, in each area, I will discussing about the di...</p>
-                </a>
-            </div>
-        
-            <div class="feed-title-excerpt-block disable-select" data-url="https://sudomaze.dev/projects/exploring-robot">
-                <a href="/projects/exploring-robot" style="text-decoration: none; color: #555555;">
-                
-                    <p class="feed-title">Exploring Robot</p>
-                
-                <p class="feed-excerpt">Instructions
-
-
-  Code A*
-  Download world.csvPreview the document
-  Write a program to create a 4-connected graph and run an A* search from vertex (0,0) to vertex (19,19) across the obstacle map pr...</p>
-                </a>
-            </div>
+    
+    
         
             <div class="feed-title-excerpt-block disable-select" data-url="https://sudomaze.dev/projects/replaceme">
                 <a href="/projects/replaceme" style="text-decoration: none; color: #555555;">
                 
-                    <p class="feed-title">ReplaceMe</p>
+                    <p class="feed-title">[Jun 01, 2020] ReplaceMe</p>
                 
                 <p class="feed-excerpt">Problem Statement
 
@@ -1772,7 +1788,7 @@ I don&#39;t want to share my beautiful face on stream. However, I want to have a
             <div class="feed-title-excerpt-block disable-select" data-url="https://sudomaze.dev/projects/travelling-salesman-problem">
                 <a href="/projects/travelling-salesman-problem" style="text-decoration: none; color: #555555;">
                 
-                    <p class="feed-title">Travelling Salesman Problem</p>
+                    <p class="feed-title">[Mar 15, 2019] Travelling Salesman Problem</p>
                 
                 <p class="feed-excerpt">Description
 
@@ -1784,17 +1800,45 @@ Brute Force S...</p>
                 </a>
             </div>
         
+            <div class="feed-title-excerpt-block disable-select" data-url="https://sudomaze.dev/projects/exploring-robot">
+                <a href="/projects/exploring-robot" style="text-decoration: none; color: #555555;">
+                
+                    <p class="feed-title">[Dec 06, 2018] Exploring Robot</p>
+                
+                <p class="feed-excerpt">/_projects/exploring-robot/01_final-project.md
+
+Instructions
+
+
+  Code A*
+  Download world.csvPreview the document
+  Write a program to create a 4-connected graph and run an A* search from vertex (0...</p>
+                </a>
+            </div>
+        
+            <div class="feed-title-excerpt-block disable-select" data-url="https://sudomaze.dev/projects/linux-vs-freebsd-vs-windows">
+                <a href="/projects/linux-vs-freebsd-vs-windows" style="text-decoration: none; color: #555555;">
+                
+                    <p class="feed-title">[Dec 06, 2018] Linux vs. FreeBSD vs. Windows</p>
+                
+                <p class="feed-excerpt">Introduction
+
+This paper presents a comparison between Linux, FreeBSD, and Windows in three areas: concurrency, I/O, and memory management. In addition, in each area, I will discussing about the di...</p>
+                </a>
+            </div>
+        
     
 
     
-
-                 
-                <hr>
+  
+                <hr style="margin-top: 0" />
                 <div id="copyright">
     <p id="copyright-notice">© Mazen Alotaibi</p>
 </div>
             </div>
-            <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn"><i class="fa fa-chevron-up"></i></button>
+            <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn">
+                <i class="fa fa-chevron-up"></i>
+            </button>
         </div>
         <nav class="context-menu" id="context-menu">
     <ul class="context-menu__items">
@@ -1816,8 +1860,7 @@ Brute Force S...</p>
     </ul>
 </nav>
 <nav class="context-menu-res" id="context-menu-res">
-</nav>
-        
+</nav> 
   
     
     <script async src="/assets/js/contextmenu.js"></script>

@@ -11,6 +11,24 @@
 
     },
   {% endfor %}
+  {% for post in site.publications %}
+    {
+
+      "title"    : "{{ post.title | strip_html | escape }}",
+      "url"      : "{{ post.url }}",
+      "content"  : {{ post.content | strip_html | strip_newline | strip | jsonify }}
+
+    },
+  {% endfor %}
+  {% for post in site.projects %}
+    {
+
+      "title"    : "{{ post.title | strip_html | escape }}",
+      "url"      : "{{ post.url }}",
+      "content"  : {{ post.content | strip_html | strip_newline | strip | jsonify }}
+
+    },
+  {% endfor %}
 
   {% for post in site.notes %}
     {

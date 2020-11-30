@@ -4,45 +4,42 @@ encoding: utf-8
 # Build settings
 theme: null
 plugins:
-  - jekyll-feed 
-  - jekyll-sitemap
-  - jekyll-gzip # compress assets
-  - jekyll-seo-tag # to fix: robots.txt is not valid
+    - jekyll-feed
+    - jekyll-sitemap
+    - jekyll-gzip # compress assets
+    - jekyll-seo-tag # to fix: robots.txt is not valid
 
 markdown: kramdown
 highlighter: rouge
 
 kramdown:
-  input: GFM
-  hard_wrap: false
-  math_engine: mathjax
-  smart_quotes: ["apos", "apos", "quot", "quot"]
-  syntax_highlighter: rouge
+    input: GFM
+    hard_wrap: false
+    math_engine: mathjax
+    smart_quotes: ["apos", "apos", "quot", "quot"]
+    syntax_highlighter: rouge
 
 sass:
-  style: compressed
+    style: compressed
 
 collections:
     notes:
-      output: true
-      permalink: /notes/:title
+        output: true
+        permalink: /notes/:title
     projects:
-      output: true
-      permalink: /projects/:title
+        output: true
+        permalink: /projects/:title
+    publications:
+        output: true
+        permalink: /publications/:title
 
 defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      permalink: /posts/:title
-      content-type: post
-  - scope:
-      path: ""
-      type: notes
-    values:
-      layout: post
-      content-type: notes
+    - scope:
+          path: ""
+          type: posts
+      values:
+          layout: post
+          permalink: /posts/:title
+          content-type: post
 
-include: ['_pages', '_projects']
+include: ["_pages", "_projects", "_publications"]

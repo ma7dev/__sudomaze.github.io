@@ -40,7 +40,7 @@ A few notes:
 |Mechanism for detecting when exploration strategy fails  Failure case: didn't get to way point, what do you do next?|7.0   pts   Full Marks|0.0   pts   No Marks|7.0|
 |Algorithm/strategy for getting to unexplored area|3.0   pts   Full Marks|0.0   pts   No Marks|3.0|
 |Behaves \"reasonably\" on other test worlds  Doesn't crash, makes some attempt to navigate to unexplored areas|5.0  pts  Full Marks|0.0   pts   No Marks|5.0|
-|Total Points:|||40.0|" 
+|Total Points:|||40.0|"
 caption="Rubric and Grade" %}
 
 ## Report

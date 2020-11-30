@@ -1,7 +1,12 @@
 ---
-tags: programming
+layout: post
+title: LeetCode
+category: note
+permalink: /notes/leetcode
+display: "/assets/gif"
+date: 2020-06-01
+update: 2020-01-01
 ---
-
 ## 739. Daily Temperatures (Medium)
 
 {% highlight python linenos %}

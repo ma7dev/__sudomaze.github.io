@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-11-27T07:22:03-08:00</updated><id>/feed.xml</id><entry><title type="html">How I managed my time effectively</title><link href="/posts/linux-freebsd-windows" rel="alternate" type="text/html" title="How I managed my time effectively" /><published>2020-01-01T00:00:00-08:00</published><updated>2020-01-01T00:00:00-08:00</updated><id>/posts/linux-freebsd-windows</id><content type="html" xml:base="/posts/linux-freebsd-windows"></content><author><name></name></author><summary type="html"></summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2020-11-29T20:50:28-08:00</updated><id>/feed.xml</id><entry><title type="html">How I managed my time effectively</title><link href="/posts/test" rel="alternate" type="text/html" title="How I managed my time effectively" /><published>2020-08-08T00:00:00-07:00</published><updated>2020-08-08T00:00:00-07:00</updated><id>/posts/test</id><content type="html" xml:base="/posts/test">&lt;h2 id=&quot;rules&quot;&gt;Rules&lt;/h2&gt;
+
+&lt;p&gt;I try to follow these rules:&lt;/p&gt;
+
+&lt;h2 id=&quot;time-blocks&quot;&gt;Time-blocks&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Session (50/10):&lt;/strong&gt; I typically work/study for 50 minutes where I work on one thing for the entire time. There isn't anything important in life besides this one thing. If life intrupt me, I will try to stop the interuption and try to get back to my zone at soon as possible. After the completion of the 50 minutes, I will take a break for 10 minutes where I will be standing and walking the majority of the time. I usually do life tasks (e.g. washing dishes, making coffee, throw trashes, etc.) then I will check my phone for messages real quick without checking any of my socials.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Block (6/1):&lt;/strong&gt; Every block has 6 sessions and 1 long break. For the sessions, I can have combine two sessions if I am excited in continue what I work on and I feel that I am close by of completion and I know for sure that I have some gas to continue the same quality of work if I took break.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;typical-day&quot;&gt;Typical day&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;5:00-6:00am:&lt;/strong&gt; Morning Routine&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;6:00-12:00pm:&lt;/strong&gt; Deep Work 1&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;12:00-1:00pm:&lt;/strong&gt; Lunch (break)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;1:00-7:00pm:&lt;/strong&gt; Deep Work 2&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;7:00-9:00pm:&lt;/strong&gt; Night Routine&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Rules</summary></entry></feed>

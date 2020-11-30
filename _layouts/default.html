@@ -3,16 +3,16 @@
     {% include head.html %}
     <body>
         <div class="container">
-            <div class = "box">
-                {% include header.html %}
-                {{ content }}
-                {% include comments.html %}
-                <hr>
+            <div class="box">
+                {% include header.html %} {{ content }} {% include comments.html
+                %}
+                <hr style="margin-top: 0" />
                 {% include footer.html %}
             </div>
-            <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn"><i class="fa fa-chevron-up"></i></button>
+            <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn">
+                <i class="fa fa-chevron-up"></i>
+            </button>
         </div>
-        {% include contextmenu.html %}
-        {% include foot.html %}
+        {% include contextmenu.html %} {% include foot.html %}
     </body>
 </html>

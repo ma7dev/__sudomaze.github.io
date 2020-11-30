@@ -1,0 +1,36 @@
+---
+layout: default
+permalink: /publications
+---
+
+{% assign categories_grouped = site.pages | group_by: 'category' %}
+{% for category in categories_grouped %}
+    {% if category.name == "publication" %}
+        {% assign sorted = category.items | sort: 'date' | reverse %}
+            {% for item in sorted %}
+<div
+    class="feed-title-excerpt-block disable-select"
+    data-url="{{site.data.site.url}}{{item.url}}"
+>
+    <a href="{{item.url}}" style="text-decoration: none; color: #555555">
+        {% if item.status == "Ongoing" or item.status == "ongoing" %}
+        <ul style="padding-left: 20px; margin-top: 20px" class="tags">
+            <li style="padding: 0 5px; border-radius: 10px" class="tag">
+                <b>Status: </b>{{item.status | capitalize }}
+            </li>
+        </ul>
+        <p style="margin-top: 0px" class="feed-title">[{{item.date | date: '%b %d, %Y'}}] {{ item.title }}</p>
+        {% else %}
+        <p class="feed-title">{{ item.title }}</p>
+        {% endif %}
+        <p class="feed-excerpt">
+            {% for author in item.authors %} {% if forloop.index ==
+            forloop.length %} {% if author.name == site.data.author.name
+            %}<b>{{author.name}}</b>. {% else %} {{author.name}}. {% endif %} {%
+            else %} {% if author.name == site.data.author.name
+            %}<b>{{author.name}}</b>, {% else %}{{author.name}}, {% endif %} {%
+            endif %} {% endfor%}
+        </p>
+    </a>
+</div>
+{% endfor %} {% endif %} {% endfor %}
