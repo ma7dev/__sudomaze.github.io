@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<h1>{{page.title}}</h1>
+<div class="post-meta" style="margin-left: 20px; padding-right: 10px">
+    <p id="post-date"><b>Date:</b> {{page.date | date: '%b %d, %Y' }}
+        {% if page.update %}
+        - <a href="">{{page.update | date: '%b %d, %Y' }}</a>
+        {% endif %}
+    </p>
+    {% if page.github_url %}
+    <p id="post-github"><b>Repository:</b>
+        <a href="{{ page.github_url }}">{{ page.github_url }}</a>
+    </p>
+    {% endif %}
+    <p id="post-tags"><b>{{page.type}}</b></p>
+</div>
+<aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+    <nav class="toc">
+        <header>
+            <h4 class="nav__title text-center">
+                {{ page.toc_label | default:
+                site.data.ui-text[site.locale].toc_label | default: "Table of
+                Content" }}
+            </h4>
+        </header>
+        {% include toc.html sanitize=true html=content h_min=1 h_max=6
+        class="toc__menu" %}
+    </nav>
+</aside>
+<main>
+    {% include content.html %} {% include backlinks.html %} {% include
+    related.html %}
+</main>

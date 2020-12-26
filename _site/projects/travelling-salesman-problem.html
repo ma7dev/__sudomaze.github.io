@@ -96,6 +96,7 @@ html[data-theme="light"] {
     --content-hover-background-color: #f4f4f4 !important;
     --overlay-background-color: #f7f7f7 !important;
     --content-color: #555555 !important;
+    --shadow-color: rgba(0, 0, 0, 0.33) !important;
 }
 
 html[data-theme="dark"] {
@@ -104,6 +105,7 @@ html[data-theme="dark"] {
     --overlay-background-color: #080808 !important;
     --content-hover-background-color: #0b0b0b !important;
     --content-color: #aaaaaa !important;
+    --shadow-color: rgba(255, 255, 255, 0.33) !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1241,7 +1243,53 @@ label.srs-toggle {
 figcaption {
     text-align: center;
 }
+/* desktop-view */
+.desktop-view {
+    position: fixed;
+    display: block;
+    z-index: 100;
+    box-shadow: 7.5px 10px 10px 2px var(--shadow-color);
+}
+.mobile-view {
+    display: none;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.collapsible:after {
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
 
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.desktop-view .toc {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--overlay-background-color);
+    transition: max-height 0.2s ease-out;
+}
 /* Apparently IE10+ do not support conditionals. F*ck Me! */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .userdesc,
@@ -1298,7 +1346,6 @@ figcaption {
         margin-right: -35%;
         width: 30%;
     }
-
     .sn-left,
     .mn-left {
         margin-left: -35%;
@@ -1417,11 +1464,17 @@ figcaption {
     }
 }
 
+/* mobile view */
 @media screen and (max-width: 800px) {
     img {
         width: 100% !important;
     }
-
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
     /* Scaling down font when screen size is small */
     a,
     p,
@@ -1592,9 +1645,53 @@ iframe {
   <link rel="alternate" type="application/rss+xml" href="https://sudomaze.dev/feed.xml">
 </head>
     <body>
-        <div class="container">
-            <div class="box">
-                <header>
+        <aside class="desktop-view">
+    <button type="button" class="collapsible">
+        <i class="fas fa-list"></i> Table of Content
+    </button>
+    <nav class="toc">
+        <ul class="toc__menu">
+  <li><a href="#description">Description</a></li>
+  <li><a href="#algorithms-that-solve-tsp">Algorithms that Solve TSP</a>
+    <ul>
+      <li><a href="#brute-force-search-naive-algorithm">Brute Force Search (Naive Algorithm)</a>
+        <ul>
+          <li><a href="#run-time-analysis">Run-time Analysis</a></li>
+          <li><a href="#pseudo-code">Pseudo-code</a></li>
+          <li><a href="#description-1">Description</a></li>
+        </ul>
+      </li>
+      <li><a href="#held-karp-algorithm-dynamic-algorithm">Held-Karp Algorithm (Dynamic Algorithm)</a>
+        <ul>
+          <li><a href="#run-time-analysis-1">Run-time Analysis</a></li>
+          <li><a href="#pseudo-code-1">Pseudo-code</a></li>
+          <li><a href="#description-2">Description</a></li>
+        </ul>
+      </li>
+      <li><a href="#k-nearest-neighbor-algorithm-approximation-algorithm">K-Nearest Neighbor Algorithm (Approximation Algorithm)</a>
+        <ul>
+          <li><a href="#run-time-analysis-2">Run-time Analysis</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#description-3">Description</a></li>
+        </ul>
+      </li>
+      <li><a href="#genetic-algorithm-approximation-algorithm">Genetic Algorithm (Approximation Algorithm)</a>
+        <ul>
+          <li><a href="#run-time-analysis-3">Run-time Analysis</a></li>
+          <li><a href="#code-1">Code</a></li>
+          <li><a href="#description-4">Description</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#testing">Testing</a></li>
+</ul>
+
+    </nav>
+</aside>
+<div class="container">
+    <div class="box">
+        <header>
     <div class="dashboard disable-select">
         <div class="site-heading profile-board-col">
             <h4 class="medium">
@@ -1788,22 +1885,24 @@ iframe {
     </div>
     
 </header>
- <h1>Travelling Salesman Problem</h1>
-<div class="post-meta" style="margin-left: 20px; padding-right: 10px">
-    <p id="post-date"><b>Date:</b> Mar 15, 2019
-        
-    </p>
-    <p id="post-tags"><b></b></p>
-</div>
-<aside class="sidebar__right ">
-    <nav class="toc">
-        <header>
-            <h4 class="nav__title text-center">
-                Table of
-                Content
-            </h4>
-        </header>
-        <ul class="toc__menu">
+
+        <h1>Travelling Salesman Problem</h1>
+        <div class="post-meta" style="margin-left: 20px; padding-right: 10px">
+            <p id="post-date"><b>Date:</b> Mar 15, 2019
+                
+            </p>
+            
+            <p id="post-tags"><b></b></p>
+        </div>
+        <aside class="sidebar__right  mobile-view">
+            <nav class="toc">
+                <header>
+                    <h4 class="nav__title text-center">
+                        Table of
+                        Content
+                    </h4>
+                </header>
+                <ul class="toc__menu">
   <li><a href="#description">Description</a></li>
   <li><a href="#algorithms-that-solve-tsp">Algorithms that Solve TSP</a>
     <ul>
@@ -1840,10 +1939,10 @@ iframe {
   <li><a href="#testing">Testing</a></li>
 </ul>
 
-    </nav>
-</aside>
-<main>
-    <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+            </nav>
+        </aside>
+        <main>
+            <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
 <!--  -->
 <div class="content">
       
@@ -2648,17 +2747,18 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
 
 
 
-</main>
-  
-                <hr style="margin-top: 0" />
-                <div id="copyright">
+        </main>
+         
+        <hr style="margin-top: 0" />
+        <div id="copyright">
     <p id="copyright-notice">© Mazen Alotaibi</p>
 </div>
-            </div>
-            <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn">
-                <i class="fa fa-chevron-up"></i>
-            </button>
-        </div>
+    </div>
+    <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+</div>
+
         <nav class="context-menu" id="context-menu">
     <ul class="context-menu__items">
       <li class="context-menu__item">
@@ -2686,6 +2786,9 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
   
     
     <script async src="/assets/js/nightmode-event.js"></script>
+  
+    
+    <script async src="/assets/js/collapsible.js"></script>
   
 
 <script>

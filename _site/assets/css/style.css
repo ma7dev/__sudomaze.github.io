@@ -14,6 +14,7 @@ html[data-theme="light"] {
     --content-hover-background-color: #f4f4f4 !important;
     --overlay-background-color: #f7f7f7 !important;
     --content-color: #555555 !important;
+    --shadow-color: rgba(0, 0, 0, 0.33) !important;
 }
 
 html[data-theme="dark"] {
@@ -22,6 +23,7 @@ html[data-theme="dark"] {
     --overlay-background-color: #080808 !important;
     --content-hover-background-color: #0b0b0b !important;
     --content-color: #aaaaaa !important;
+    --shadow-color: rgba(255, 255, 255, 0.33) !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1159,7 +1161,53 @@ label.srs-toggle {
 figcaption {
     text-align: center;
 }
+/* desktop-view */
+.desktop-view {
+    position: fixed;
+    display: block;
+    z-index: 100;
+    box-shadow: 7.5px 10px 10px 2px var(--shadow-color);
+}
+.mobile-view {
+    display: none;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.collapsible:after {
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
 
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.desktop-view .toc {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--overlay-background-color);
+    transition: max-height 0.2s ease-out;
+}
 /* Apparently IE10+ do not support conditionals. F*ck Me! */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .userdesc,
@@ -1216,7 +1264,6 @@ figcaption {
         margin-right: -35%;
         width: 30%;
     }
-
     .sn-left,
     .mn-left {
         margin-left: -35%;
@@ -1335,11 +1382,17 @@ figcaption {
     }
 }
 
+/* mobile view */
 @media screen and (max-width: 800px) {
     img {
         width: 100% !important;
     }
-
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
     /* Scaling down font when screen size is small */
     a,
     p,

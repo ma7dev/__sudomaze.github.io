@@ -98,6 +98,7 @@ html[data-theme="light"] {
     --content-hover-background-color: #f4f4f4 !important;
     --overlay-background-color: #f7f7f7 !important;
     --content-color: #555555 !important;
+    --shadow-color: rgba(0, 0, 0, 0.33) !important;
 }
 
 html[data-theme="dark"] {
@@ -106,6 +107,7 @@ html[data-theme="dark"] {
     --overlay-background-color: #080808 !important;
     --content-hover-background-color: #0b0b0b !important;
     --content-color: #aaaaaa !important;
+    --shadow-color: rgba(255, 255, 255, 0.33) !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1243,7 +1245,53 @@ label.srs-toggle {
 figcaption {
     text-align: center;
 }
+/* desktop-view */
+.desktop-view {
+    position: fixed;
+    display: block;
+    z-index: 100;
+    box-shadow: 7.5px 10px 10px 2px var(--shadow-color);
+}
+.mobile-view {
+    display: none;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.collapsible:after {
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
 
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.desktop-view .toc {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--overlay-background-color);
+    transition: max-height 0.2s ease-out;
+}
 /* Apparently IE10+ do not support conditionals. F*ck Me! */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .userdesc,
@@ -1300,7 +1348,6 @@ figcaption {
         margin-right: -35%;
         width: 30%;
     }
-
     .sn-left,
     .mn-left {
         margin-left: -35%;
@@ -1419,11 +1466,17 @@ figcaption {
     }
 }
 
+/* mobile view */
 @media screen and (max-width: 800px) {
     img {
         width: 100% !important;
     }
-
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
     /* Scaling down font when screen size is small */
     a,
     p,
@@ -1594,9 +1647,27 @@ iframe {
   <link rel="alternate" type="application/rss+xml" href="https://sudomaze.dev/feed.xml">
 </head>
     <body>
-        <div class="container">
-            <div class="box">
-                <header>
+        <aside class="desktop-view">
+    <button type="button" class="collapsible">
+        <i class="fas fa-list"></i> Table of Content
+    </button>
+    <nav class="toc">
+        <ul class="toc__menu">
+  <li><a href="#739-daily-temperatures-medium">739. Daily Temperatures (Medium)</a></li>
+  <li><a href="#2-add-two-numbers-medium">2. Add Two Numbers (Medium)</a></li>
+  <li><a href="#1-two-sum-easy">1. Two Sum (Easy)</a></li>
+  <li><a href="#3-longest-substring-without-repeating-characters-medium">3. Longest Substring Without Repeating Characters (Medium)</a></li>
+  <li><a href="#15-3sum-medium">15. 3Sum (Medium)</a></li>
+  <li><a href="#18-4sum-medium">18. 4Sum (Medium)</a></li>
+  <li><a href="#1431-kids-with-the-greatest-number-of-candies">1431. Kids With the Greatest Number of Candies</a></li>
+  <li><a href="#1128-number-of-equivalent-domino-pairs-easy">1128. Number of Equivalent Domino Pairs (Easy)</a></li>
+</ul>
+
+    </nav>
+</aside>
+<div class="container">
+    <div class="box">
+        <header>
     <div class="dashboard disable-select">
         <div class="site-heading profile-board-col">
             <h4 class="medium">
@@ -1790,24 +1861,26 @@ iframe {
     </div>
     
 </header>
- <h1>LeetCode</h1>
-<div class="post-meta" style="margin-left: 20px; padding-right: 10px">
-    <p id="post-date"><b>Date:</b> Jun 01, 2020
-        
-        - <a href="">Jan 01, 2020</a>
-        
-    </p>
-    <p id="post-tags"><b></b></p>
-</div>
-<aside class="sidebar__right ">
-    <nav class="toc">
-        <header>
-            <h4 class="nav__title text-center">
-                Table of
-                Content
-            </h4>
-        </header>
-        <ul class="toc__menu">
+
+        <h1>LeetCode</h1>
+        <div class="post-meta" style="margin-left: 20px; padding-right: 10px">
+            <p id="post-date"><b>Date:</b> Jun 01, 2020
+                
+                - <a href="">Jan 01, 2020</a>
+                
+            </p>
+            
+            <p id="post-tags"><b></b></p>
+        </div>
+        <aside class="sidebar__right  mobile-view">
+            <nav class="toc">
+                <header>
+                    <h4 class="nav__title text-center">
+                        Table of
+                        Content
+                    </h4>
+                </header>
+                <ul class="toc__menu">
   <li><a href="#739-daily-temperatures-medium">739. Daily Temperatures (Medium)</a></li>
   <li><a href="#2-add-two-numbers-medium">2. Add Two Numbers (Medium)</a></li>
   <li><a href="#1-two-sum-easy">1. Two Sum (Easy)</a></li>
@@ -1818,10 +1891,10 @@ iframe {
   <li><a href="#1128-number-of-equivalent-domino-pairs-easy">1128. Number of Equivalent Domino Pairs (Easy)</a></li>
 </ul>
 
-    </nav>
-</aside>
-<main>
-    <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+            </nav>
+        </aside>
+        <main>
+            <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
 <!--  -->
 <div class="content">
       
@@ -2284,17 +2357,18 @@ iframe {
 
 
 
-</main>
-  
-                <hr style="margin-top: 0" />
-                <div id="copyright">
+        </main>
+         
+        <hr style="margin-top: 0" />
+        <div id="copyright">
     <p id="copyright-notice">© Mazen Alotaibi</p>
 </div>
-            </div>
-            <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn">
-                <i class="fa fa-chevron-up"></i>
-            </button>
-        </div>
+    </div>
+    <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+</div>
+
         <nav class="context-menu" id="context-menu">
     <ul class="context-menu__items">
       <li class="context-menu__item">
@@ -2322,6 +2396,9 @@ iframe {
   
     
     <script async src="/assets/js/nightmode-event.js"></script>
+  
+    
+    <script async src="/assets/js/collapsible.js"></script>
   
 
 <script>

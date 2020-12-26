@@ -12,8 +12,9 @@
 <title>sudomaze.dev</title>
 
 
-  <meta content="website" property="og:type">
-  <meta content="https://sudomaze.dev/" property="og:url">
+  <meta content="Thesis" property="og:title">
+  <meta content="article" property="og:type">
+  <meta content="https://sudomaze.dev/projects/thesis" property="og:url">
 
 <link rel="icon" href="/assets/img/profile.webp" type="image/png" sizes="16x16"/>
 <link rel="canonical" href=""/>
@@ -23,10 +24,14 @@
 
 
   <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Thesis</title>
 <meta name="generator" content="Jekyll v4.0.1" />
+<meta property="og:title" content="Thesis" />
 <meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-06T00:00:00-08:00" />
 <script type="application/ld+json">
-{"url":"/","@type":"WebSite","@context":"https://schema.org"}</script>
+{"url":"/projects/thesis","@type":"BlogPosting","headline":"Thesis","dateModified":"2020-11-06T00:00:00-08:00","datePublished":"2020-11-06T00:00:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/projects/thesis"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -57,6 +62,19 @@ if (theme === "dark") {
   <!-- sourcing async files (specialized for certain pages) -->
   
 
+  
+    <script async src="/assets/libs/katex/katex.min.js"></script>
+    <script async src="/assets/libs/pseudocode.js/pseudocode.js"></script>
+    <!-- configuring mathjax -->
+    <script async type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
   <!-- sourcing css files -->
@@ -1607,13 +1625,16 @@ iframe {
   <!-- sourcing async files (specialized for certain pages) -->
   
   
+    <link rel="stylesheet" href="/assets/libs/katex/katex.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/libs/pseudocode.js/pseudocode.css" media="print" onload="this.media='all'">
+  
 
   <script async>
     var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
       disqusShortname = "sudomaze",
       siteUrl = "https://sudomaze.dev",
-      pageUrl = "/",
-      pagePath = "_pages/index.html",
+      pageUrl = "/projects/thesis",
+      pagePath = "_projects/thesis/00_main.md",
       githubRepo = "sudomaze/sudomaze.github.io",
       layoutDiscussion = false;
   </script>
@@ -1624,7 +1645,18 @@ iframe {
   <link rel="alternate" type="application/rss+xml" href="https://sudomaze.dev/feed.xml">
 </head>
     <body>
-        <div class="container">
+        <aside class="desktop-view">
+    <button type="button" class="collapsible">
+        <i class="fas fa-list"></i> Table of Content
+    </button>
+    <nav class="toc">
+        <ul class="toc__menu">
+  <li><a href="#tracking">Tracking</a></li>
+</ul>
+
+    </nav>
+</aside>
+<div class="container">
     <div class="box">
         <header>
     <div class="dashboard disable-select">
@@ -1797,119 +1829,79 @@ iframe {
         limit: 4
     })
 </script> 
+    <div
+        class="main-site-navigator disable-select"
+        id="scroll-head"
+        onclick="window.location.assign('/');"
+    >
+        <div class="back-icon">
+            <svg
+                class="ripple"
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+            >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"
+                />
+            </svg>
+        </div>
+        <p class="back-p">Home</p>
+    </div>
+    
 </header>
 
-        <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+        <h1>Thesis</h1>
+        <div class="post-meta" style="margin-left: 20px; padding-right: 10px">
+            <p id="post-date"><b>Date:</b> Nov 06, 2020
+                
+            </p>
+            
+            <p id="post-github"><b>Repository:</b>
+                <a href="https://github.com/sudomaze/thesis">https://github.com/sudomaze/thesis</a>
+            </p>
+            
+            <p id="post-tags"><b></b></p>
+        </div>
+        <aside class="sidebar__right  mobile-view">
+            <nav class="toc">
+                <header>
+                    <h4 class="nav__title text-center">
+                        Table of
+                        Content
+                    </h4>
+                </header>
+                <ul class="toc__menu">
+  <li><a href="#tracking">Tracking</a></li>
+</ul>
+
+            </nav>
+        </aside>
+        <main>
+            <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
 <!--  -->
 <div class="content">
       
-              <div>
-    <h1><b>News</b></h1>
-    <!-- <ul style="height: 200px; overflow-y: scroll"> -->
-    <ul>
-        
-        
-        <li>[Feb 15, 2020]: Got admitted to the Master's Program at Oregon State University for Fall 2020.</li>
-        
-    </ul>
-</div>
-<!-- <div class="sidebar__right">
-    <h1><b>Recent Posts</b></h1>
-    <ul>
-        
-        
-        <li>[Aug 08, 2020]
-            <a href="/posts/test">How I managed my time effectively</a>
-        </li>
-        
-    </ul>
-    <p style="margin-left: 20px; padding-right: 10px">
-        <a href="/posts">See all posts</a>
-    </p>
-</div> -->
-<div class="sidebar__right">
-    <h1><b>Recent Notes</b></h1>
-    <ul>
-        
-        
-        <li>[Nov 28, 2020]
-            <a href="/notes/digital-image-processing">DIGITAL IMAGE PROCESSING (CS 559)</a>
-        </li>
-        
-        <li>[Jun 01, 2020]
-            <a href="/notes/leetcode">LeetCode</a>
-        </li>
-        
-    </ul>
-    <p style="margin-left: 20px; padding-right: 10px">
-        <a href="/notes">See all notes</a>
-    </p>
-</div>
-<div>
-    <h1><b>Recent Projects</b></h1>
-    <ul>
-        
-        
-            
-        
-            
-                
-                
-        <li>[Nov 06, 2020]
-            <a href="/projects/thesis">Thesis</a>
-        </li>
-                
-        <li>[Jun 01, 2020]
-            <a href="/projects/replaceme">ReplaceMe</a>
-        </li>
-                
-        <li>[Mar 15, 2019]
-            <a href="/projects/travelling-salesman-problem">Travelling Salesman Problem</a>
-        </li>
-                
-        <li>[Dec 06, 2018]
-            <a href="/projects/exploring-robot">Exploring Robot</a>
-        </li>
-                
-        <li>[Dec 06, 2018]
-            <a href="/projects/linux-vs-freebsd-vs-windows">Linux vs. FreeBSD vs. Windows</a>
-        </li>
-                
-            
-        
-            
-        
-    </ul>
-    <p style="margin-left: 20px; padding-right: 10px">
-        <a href="/projects">See all projects</a>
-    </p>
-</div>
-<!-- <div>
-    <h1><b>Recent Publications</b></h1>
-    <ul>
-        
-        
-            
-                
-                
-        <li>[Dec 01, 2020]
-            <a href="/publications/gabor">Discriminative Appearance Modeling with Multi-track Pooling for Real-time Multi-object Tracking</a>
-        </li>
-                
-            
-        
-            
-        
-            
-        
-    </ul>
-    <p style="margin-left: 20px; padding-right: 10px">
-        <a href="/publications">See all publications</a>
-    </p>
-</div> -->
+              
+<h2 id="tracking">Tracking</h2>
+
+<iframe class="clickup-embed" src="https://share.clickup.com/b/h/6-52517734-2/9e783e689d326af" frameborder="0" onmousewheel="" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
 
 </div>
+ <!-- Add backlinks to the current page --> 
 
+
+
+
+
+ 
+
+
+
+        </main>
          
         <hr style="margin-top: 0" />
         <div id="copyright">
@@ -1920,6 +1912,7 @@ iframe {
         <i class="fa fa-chevron-up"></i>
     </button>
 </div>
+
         <nav class="context-menu" id="context-menu">
     <ul class="context-menu__items">
       <li class="context-menu__item">

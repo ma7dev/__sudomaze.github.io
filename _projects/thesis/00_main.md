@@ -1,7 +1,11 @@
 ---
-layout: page
-title: Site
-permalink: /site/
+layout: post
+title: Thesis
+category: project
+permalink: /projects/thesis
+display: "/assets/gif"
+github_url: https://github.com/sudomaze/thesis
+date: 2020-11-06
 ---
 
 {% assign parent_path = page.path | split:'/' | last %}
