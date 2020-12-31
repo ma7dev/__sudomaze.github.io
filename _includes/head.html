@@ -50,9 +50,6 @@
 
   <!-- sourcing css files -->
 
-  <!-- sourcing sync files (inline to improve speed of rendering the page) -->
-  {% inline_css assets/css/style.css %}
-
   <!-- sourcing async files (global) -->
   {% if site.data.site.head_links %}
     {% for link in site.data.site.head_links %}
@@ -73,6 +70,9 @@
     <link rel="stylesheet" href="/assets/libs/katex/katex.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="/assets/libs/pseudocode.js/pseudocode.css" media="print" onload="this.media='all'">
   {% endif %}
+
+  <!-- sourcing sync files (inline to improve speed of rendering the page) -->
+  {% inline_css assets/css/style.css %}
 
   <script async>
     var disqusPublicKey = "{{ site.data.site.disqus.public_key }}",

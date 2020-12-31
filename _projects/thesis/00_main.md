@@ -5,6 +5,7 @@ category: project
 permalink: /projects/thesis
 display: "/assets/gif"
 github_url: https://github.com/sudomaze/thesis
+comments: True
 date: 2020-11-06
 ---
 

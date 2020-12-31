@@ -10,7 +10,7 @@ In this section, I will be discussing about processes, threads, CPU scheduling, 
 
 Each process provides the resources needed to execute a program. A process has a virtual address space, executable code, open handles to system objects, a security context, a unique process identifier, environment variables, a priority class, minimum and maximum working set sizes, and at least one thread of execution. Each process is started with a single thread, often called the primary thread, but can create additional threads from any of its threads [[1]](#ref-1).
 
-To create a process in Linux, we will need to use \textit{Fork() system call}, which creates a new process, called the child process, from the exiting process, called the parent process. The child process has its own process ID (PID). \textit{Fork()} takes no argument and return process ID. \textit{Fork()} returns negative value if the process isn't created, zero if the child process is created, and positive value and a child process ID if \textit{Fork()} returns from parent process. In addition, system call \textit{Fork()} duplicate the same address space of the parent process and allocate to the child process. However, the child process doesn't inherit timer and semaphore adjustment from the parent process [[2]](#ref-2).
+To create a process in Linux, we will need to use *Fork() system call*, which creates a new process, called the child process, from the exiting process, called the parent process. The child process has its own process ID (PID). *Fork()* takes no argument and return process ID. *Fork()* returns negative value if the process isn't created, zero if the child process is created, and positive value and a child process ID if *Fork()* returns from parent process. In addition, system call *Fork()* duplicate the same address space of the parent process and allocate to the child process. However, the child process doesn't inherit timer and semaphore adjustment from the parent process [[2]](#ref-2).
 
 The following code sample demonstrates how to create a process in Linux [[3]](#ref-3):
 
@@ -55,7 +55,7 @@ The FreeBSD timeshare scheduler uses a priority-based scheduling policy that is 
 
 ### Windows
 
-A process is basically a program in execution. The execution of a process must progress in a sequential fashion. Each process is uniquely identified by a number called a \textit{process ID} (PID). Similar to files, each process has one owner and group, and the owner and group permissions are used to determine which files and devices the process can open [[5]](#ref-5).
+A process is basically a program in execution. The execution of a process must progress in a sequential fashion. Each process is uniquely identified by a number called a *process ID* (PID). Similar to files, each process has one owner and group, and the owner and group permissions are used to determine which files and devices the process can open [[5]](#ref-5).
 
 In addition, to create a process in Windows, we will need to use CreateProcess function. CreateProcess function runs independently of the creating process, and the following code sample demonstrates how to create a process [[5]](#ref-5):
 

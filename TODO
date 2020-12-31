@@ -43,14 +43,17 @@
     [] Properly size images
     [] Preload key requests
 ✔ Hovering over name at the top (hover next to it adds the underline style) @done(20-10-29 16:15)
-
+✔ psudocode, centered @done(20-12-30 20:31)
+✔ tables, centered @done(20-12-30 20:32)
+✔ text on mobile, increase @done(20-12-30 20:34)
+✔ night mode, coloring like Twitter @done(20-12-30 20:44)
 
 ## Features
 
 ☐ Notes
     ✔ Sort them by date of creation. @done(20-11-29 20:42)
-☐ For any code block, display language presented and copy option
-☐ Add Disqus to posts layout
+✔ For any code block, display language presented and copy option @done(20-12-30 22:01)
+✔ Add Disqus to posts layout @done(20-12-30 20:58)
 [] Add checklist for new comers
 ✔ How to use the repo @done(20-10-29 16:25)
 
@@ -65,4 +68,4 @@
 
 ## Features
 ✔ move table of content to be as a sidebar @done(20-12-25 19:29)
--
+- better page speed insight

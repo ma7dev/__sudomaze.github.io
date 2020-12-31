@@ -4,6 +4,7 @@ title: Exploring Robot
 category: project
 permalink: /projects/exploring-robot
 display: "/assets/gif"
+comments: True
 date: 2018-12-06
 ---
 

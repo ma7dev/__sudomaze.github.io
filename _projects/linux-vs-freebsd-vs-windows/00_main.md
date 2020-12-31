@@ -4,6 +4,7 @@ title: "Linux vs. FreeBSD vs. Windows"
 category: project
 permalink: /projects/linux-vs-freebsd-vs-windows
 display: "/assets/gif"
+comments: True
 date: 2018-12-06
 ---
 

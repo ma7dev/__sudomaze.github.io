@@ -3,6 +3,7 @@ layout: post
 title: "DIGITAL IMAGE PROCESSING (CS 559)"
 permalink: /notes/digital-image-processing
 display: "/assets/gif"
+comments: True
 date: 2020-11-28
 update: 2020-01-01
 ---

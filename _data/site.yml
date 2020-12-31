@@ -17,3 +17,4 @@ footer_scripts:
     - /assets/js/contextmenu.js
     - /assets/js/nightmode-event.js
     - /assets/js/collapsible.js
+    - /assets/js/code-snippets.js

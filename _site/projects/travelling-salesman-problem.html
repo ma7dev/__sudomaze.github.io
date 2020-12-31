@@ -79,6 +79,21 @@ if (theme === "dark") {
 
   <!-- sourcing css files -->
 
+  <!-- sourcing async files (global) -->
+  
+    
+      
+      <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css" media="print" onload="this.media='all'">
+    
+  
+
+  <!-- sourcing async files (specialized for certain pages) -->
+  
+  
+    <link rel="stylesheet" href="/assets/libs/katex/katex.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="/assets/libs/pseudocode.js/pseudocode.css" media="print" onload="this.media='all'">
+  
+
   <!-- sourcing sync files (inline to improve speed of rendering the page) -->
   <style type="text/css">/******************************************************
  *             PREDEFINE TAGS CSS                     *
@@ -93,19 +108,22 @@ html,
 html[data-theme="light"] {
     --page-background-color: #f3f3f3 !important;
     --content-background-color: #ffffff !important;
-    --content-hover-background-color: #f4f4f4 !important;
     --overlay-background-color: #f7f7f7 !important;
     --content-color: #555555 !important;
     --shadow-color: rgba(0, 0, 0, 0.33) !important;
 }
 
 html[data-theme="dark"] {
-    --page-background-color: #000000 !important;
+    --page-background-color: #15202b !important;
+    --content-background-color: #1d2d3c !important;
+    --overlay-background-color: #15202b !important;
+    --content-color: #ffffff !important;
+    --shadow-color: rgba(0, 0, 0, 0.33) !important;
+    /* --page-background-color: #000000 !important;
     --content-background-color: #0c0c0c !important;
     --overlay-background-color: #080808 !important;
-    --content-hover-background-color: #0b0b0b !important;
     --content-color: #aaaaaa !important;
-    --shadow-color: rgba(255, 255, 255, 0.33) !important;
+    --shadow-color: rgba(255, 255, 255, 0.33) !important; */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -133,7 +151,7 @@ body {
     right: 0px;
     bottom: 0px;
     align-items: center;
-    max-width: 1100px;
+    max-width: 1300px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -146,6 +164,7 @@ body {
     width: 100%;
     position: absolute;
     top: 0px;
+    border: solid 1px rgba(0, 0, 0, 0.1);
 }
 
 main {
@@ -484,7 +503,7 @@ hr {
 }
 .navbar-item {
     padding-left: 14px;
-    padding-right: 20px;
+    padding-right: 14px;
     padding-top: 5px;
     padding-bottom: 5px;
     vertical-align: middle;
@@ -1475,16 +1494,13 @@ figcaption {
     .mobile-view {
         display: block;
     }
-    /* Scaling down font when screen size is small */
-    a,
-    p,
-    ul,
+    15202b ul,
     li,
     ol,
     table,
     span,
     blockquote {
-        font-size: 0.95em;
+        font-size: 0.99em;
     }
     /* GitHub Heatmap */
     .calendar {
@@ -1582,6 +1598,9 @@ figcaption {
     margin-left: 10px;
     margin-right: 10px;
 }
+#disqus_thread iframe {
+    margin: 0;
+}
 
 /* title */
 .box h1 {
@@ -1609,25 +1628,66 @@ iframe {
 
 /* psuodocode */
 .ps-root {
-    margin-left: -20px;
-    margin-right: -10px;
+    font-family: normal 1.21em KaTeX_Main, Times New Roman, serif !important;
+    width: fit-content;
+    background: var(--overlay-background-color);
+    margin-left: auto;
+    margin-right: auto;
+}
+.ps-root p,
+.ps-root span {
+    font-family: KaTeX_Main, "Times New Roman", serif;
+}
+/* table positioning */
+.stand-alone-table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**************/
+/* CODE STYLE */
+/**************/
+
+.div-code-button {
+    display: block;
+    margin-bottom: 3px;
+}
+.lang-code-button {
+    text-transform: uppercase;
+}
+.code-button {
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: -2px;
+    padding: 3px 8px;
+    font-size: 0.8em;
+    color: var(--content-color); /*#272822;*/
+    background-color: var(--overlay-background-color); /*#fff;*/
+    border: 0;
+}
+/* copy button */
+.copy-code-button {
+    float: right;
+}
+.copy-code-button:hover {
+    cursor: pointer;
+}
+.copy-code-button:focus {
+    outline: 0;
+}
+
+/* lang */
+.highlight pre {
+    margin-top: 0;
+}
+/* special style */
+.language-nothing,
+.language-bash * {
+    color: white !important;
 }
 </style>
-
-  <!-- sourcing async files (global) -->
-  
-    
-      
-      <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css" media="print" onload="this.media='all'">
-    
-  
-
-  <!-- sourcing async files (specialized for certain pages) -->
-  
-  
-    <link rel="stylesheet" href="/assets/libs/katex/katex.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/assets/libs/pseudocode.js/pseudocode.css" media="print" onload="this.media='all'">
-  
 
   <script async>
     var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
@@ -2446,7 +2506,7 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
 
 <p>Please view the next page to look into all of the results.</p>
 
-<table id="table-1" class="table">
+<table class="stand-alone-table" id="table-1">
   <thead>
     <tr>
       <th> </th>
@@ -2477,7 +2537,7 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
     table.style = "caption-side:bottom"
 </script>
 
-<table id="table-2" class="table">
+<table class="stand-alone-table" id="table-2">
   <thead>
     <tr>
       <th> </th>
@@ -2508,7 +2568,7 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
     table.style = "caption-side:bottom"
 </script>
 
-<table id="table-3" class="table">
+<table class="stand-alone-table" id="table-3">
   <thead>
     <tr>
       <th> </th>
@@ -2539,7 +2599,7 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
     table.style = "caption-side:bottom"
 </script>
 
-<table id="table-4" class="table">
+<table class="stand-alone-table" id="table-4">
   <thead>
     <tr>
       <th> </th>
@@ -2567,7 +2627,7 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
     table.style = "caption-side:bottom"
 </script>
 
-<table id="table-5" class="table">
+<table class="stand-alone-table" id="table-5">
   <thead>
     <tr>
       <th> </th>
@@ -2595,7 +2655,7 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
     table.style = "caption-side:bottom"
 </script>
 
-<table id="table-6" class="table">
+<table class="stand-alone-table" id="table-6">
   <thead>
     <tr>
       <th> </th>
@@ -2623,7 +2683,7 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
     table.style = "caption-side:bottom"
 </script>
 
-<table id="table-7" class="table">
+<table class="stand-alone-table" id="table-7">
   <thead>
     <tr>
       <th> </th>
@@ -2651,7 +2711,7 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
     table.style = "caption-side:bottom"
 </script>
 
-<table id="table-8" class="table">
+<table class="stand-alone-table" id="table-8">
   <thead>
     <tr>
       <th> </th>
@@ -2679,7 +2739,7 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
     table.style = "caption-side:bottom"
 </script>
 
-<table id="table-9" class="table">
+<table class="stand-alone-table" id="table-9">
   <thead>
     <tr>
       <th> </th>
@@ -2707,7 +2767,7 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
     table.style = "caption-side:bottom"
 </script>
 
-<table id="table-10" class="table">
+<table class="stand-alone-table" id="table-10">
   <thead>
     <tr>
       <th> </th>
@@ -2748,7 +2808,26 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
 
 
         </main>
-         
+        
+<!-- DISQUS COMMENT SECTION, DO NOT TOUCH -->
+<div id="disqus_thread"></div>
+    <script>
+        /**
+         *RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        var disqus_config = function () {
+        this.page.url = '/projects/travelling-salesman-problem';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '/projects/travelling-salesman-problem'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://sudomaze.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
         <hr style="margin-top: 0" />
         <div id="copyright">
     <p id="copyright-notice">© Mazen Alotaibi</p>
@@ -2789,6 +2868,9 @@ city for the smaller list sizes, but for the larger ones it cannot process each 
   
     
     <script async src="/assets/js/collapsible.js"></script>
+  
+    
+    <script async src="/assets/js/code-snippets.js"></script>
   
 
 <script>

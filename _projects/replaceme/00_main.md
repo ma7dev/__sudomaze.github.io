@@ -3,6 +3,7 @@ layout: post
 title: "ReplaceMe"
 permalink: /projects/replaceme
 category: project
+comments: True
 date: 2020-06-01
 ---
 

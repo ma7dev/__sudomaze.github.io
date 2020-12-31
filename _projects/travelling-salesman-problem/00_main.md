@@ -3,6 +3,7 @@ layout: post
 title: Travelling Salesman Problem
 permalink: /projects/travelling-salesman-problem
 category: project
+comments: True
 date: 2019-03-15
 ---
 

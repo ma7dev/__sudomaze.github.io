@@ -4,6 +4,7 @@ title: LeetCode
 category: note
 permalink: /notes/leetcode
 display: "/assets/gif"
+comments: True
 date: 2020-06-01
 update: 2020-01-01
 ---
