@@ -4,7 +4,7 @@
 
 -   Built with: [Jekyll](https://jekyllrb.com/)
 -   Hosting service: [GitHub Pages](https://pages.github.com/)
--   Domain provider: [Google Domains](https://domains.google/)
+-   Domain provider: [Namecheap](https://www.namecheap.com/)
 -   PDF: [LaTeX](https://en.wikibooks.org/wiki/LaTeX)
 
 ### Libraries

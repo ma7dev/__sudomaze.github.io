@@ -28,10 +28,8 @@
 <meta name="generator" content="Jekyll v4.0.1" />
 <meta property="og:title" content="Site" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="http://localhost:4000/site/" />
-<meta property="og:url" content="http://localhost:4000/site/" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"http://localhost:4000/site/","headline":"Site","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"/site/","headline":"Site","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1705,6 +1703,12 @@ iframe {
     </ul>
   </li>
   <li><a href="#inspirations-and-credits">Inspirations and Credits</a></li>
+  <li><a href="#how-to-use">How to use</a>
+    <ul>
+      <li><a href="#development">Development</a></li>
+      <li><a href="#deployment">Deployment</a></li>
+    </ul>
+  </li>
 </ul>
 
     </nav>
@@ -1923,6 +1927,12 @@ iframe {
     </ul>
   </li>
   <li><a href="#inspirations-and-credits">Inspirations and Credits</a></li>
+  <li><a href="#how-to-use">How to use</a>
+    <ul>
+      <li><a href="#development">Development</a></li>
+      <li><a href="#deployment">Deployment</a></li>
+    </ul>
+  </li>
 </ul>
 
             </nav>
@@ -1940,7 +1950,7 @@ iframe {
 <ul>
   <li>Built with: <a href="https://jekyllrb.com/">Jekyll</a></li>
   <li>Hosting service: <a href="https://pages.github.com/">GitHub Pages</a></li>
-  <li>Domain provider: <a href="https://domains.google/">Google Domains</a></li>
+  <li>Domain provider: <a href="https://www.namecheap.com/">Namecheap</a></li>
   <li>PDF: <a href="https://en.wikibooks.org/wiki/LaTeX">LaTeX</a></li>
 </ul>
 
@@ -1961,6 +1971,28 @@ iframe {
   <li>Display image: <a href="https://steamcommunity.com/id/r4tb0y">Artist</a></li>
   <li>Deployment for custom plugins: <a href="https://github.com/jeffreytse/jekyll-deploy-action">jekyll-deploy-action</a> by <em><a href="https://github.com/jeffreytse">jeffreytse</a></em> and <em><a href="https://github.com/ThiefMaster">ThiefMaster</a></em></li>
 </ul>
+
+<h2 id="how-to-use">How to use</h2>
+
+<h3 id="development">Development</h3>
+
+<ul>
+  <li>Autocompile while editing (keep it running):</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve --livereload;
+</code></pre></div></div>
+
+<h3 id="deployment">Deployment</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve # Compile Jekyll files (then ctrl-c after compiling is completed)
+JEKYLL_ENV=production bundle exec jekyll build # Prepare production version
+
+# push to the repo
+git add .
+git commit -m "COMMENT"
+git push origin master
+</code></pre></div></div>
 
 
 </div>
