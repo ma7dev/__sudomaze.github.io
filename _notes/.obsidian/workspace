@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "09e3a6c7c63f04e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "83e84dc19c8b615f",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Writing.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a2dbc91a0f1af7e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0d9820f9375e59e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7e88fe6252b2d03",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "ba95a80d9cbb46cf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "data sci",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a53ace635ad5550c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "595661662340af4c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Writing.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 421
+  },
+  "right": {
+    "id": "7354867e4c33948d",
+    "type": "split",
+    "children": [
+      {
+        "id": "2bb1b96877e44b59",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cfe9625ba93fb0c7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Writing.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "53ff88ec946160ee",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ef998b5ee31bcd4c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "ef1c257a8695f9bc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "5cd425b59a9e41a6",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "c7946af121994717",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19ae04b0ff95efd9",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Writing.md",
+                "options": {
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.6989606412938237
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 420,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "Writing.md",
+    "Tensor Decomposition.md",
+    "Statistics.md",
+    "Startup.md",
+    "Software Engineering.md",
+    "Singular Value Decomposition.md",
+    "Research.md",
+    "PyTorch.md",
+    "Productivity.md",
+    "Privacy.md"
+  ]
+}

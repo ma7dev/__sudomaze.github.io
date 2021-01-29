@@ -10,14 +10,14 @@ plugins:
     - jekyll-seo-tag # to fix: robots.txt is not valid
 
 markdown: kramdown
-highlighter: rouge
+# highlighter: rouge
 
 kramdown:
     input: GFM
     hard_wrap: false
     math_engine: mathjax
     smart_quotes: ["apos", "apos", "quot", "quot"]
-    syntax_highlighter: rouge
+    # syntax_highlighter: rouge
 
 sass:
     style: compressed
@@ -43,3 +43,4 @@ defaults:
           content-type: post
 
 include: ["_pages", "_projects", "_publications"]
+exclude: ["_notes/Templates"]

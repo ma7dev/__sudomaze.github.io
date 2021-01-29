@@ -8,6 +8,11 @@
 function addCopyButtons(clipboard) {
     document.querySelectorAll("pre > code").forEach(function (codeBlock) {
         var langNaming = codeBlock.getAttribute("data-lang");
+        if (!langNaming) {
+            langNaming =
+                codeBlock.parentElement.parentElement.parentElement.className;
+            langNaming = langNaming.split(" ")[0].replace("language-", "");
+        }
         var div = document.createElement("div");
         div.className = "div-code-button";
         var lang = document.createElement("span");

@@ -2,12 +2,20 @@
 layout: basic
 permalink: /notes
 ---
-{% assign sorted = site.notes | sort: 'date' | reverse %}
-{% for item in sorted %}
-    <div class="feed-title-excerpt-block disable-select" data-url="{{site.data.site.url}}{{item.url}}">
-        <a href="{{item.url}}" style="text-decoration: none; color: #333333;">
-        <p class="feed-title">[{{item.date | date: '%b %d, %Y'}}] {{ item.title }}</p>
-        <p class="feed-excerpt">{{ item.content | strip_html | strip | escape | truncate: 200 }}</p>
-        </a>
+
+{% assign sorted = site.notes | sort: 'date' | reverse %} {% for item in sorted
+%}
+<a href="{{item.url}}" style="text-decoration: none; color: #333333">
+    <div
+        class="feed-title-excerpt-block disable-select"
+        data-url="{{site.data.site.url}}{{item.url}}"
+    >
+        <p class="feed-title">
+            [{{item.date | date: '%b %d, %Y'}}] {{ item.title }}
+        </p>
+        <p class="feed-excerpt">
+            {{ item.content | strip_html | strip | escape | truncate: 200 }}
+        </p>
     </div>
+</a>
 {% endfor %}

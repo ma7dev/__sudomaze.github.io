@@ -12,6 +12,7 @@ head_scripts:
 
 head_links:
     - /assets/libs/fontawesome/css/all.min.css
+    - /assets/libs/highlight.js/styles/atom-one-dark.css
 
 footer_scripts:
     - /assets/js/contextmenu.js
