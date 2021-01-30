@@ -2,6 +2,7 @@
 layout: default
 ---
 
+{% if content contains "<h2" %}
 <aside class="desktop-view">
     <button type="button" class="collapsible">
         <i class="fas fa-list"></i> {{ page.toc_label | default:
@@ -13,6 +14,7 @@ layout: default
         class="toc__menu" %}
     </nav>
 </aside>
+{% endif %}
 <div class="container">
     <div class="box">
         {% include header.html %}
