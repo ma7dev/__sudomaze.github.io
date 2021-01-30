@@ -492,16 +492,6 @@
   
     {
 
-      "title"    : "Create Custom Diagrams In Obsidian App | Mermaid &amp; Markdown",
-      "url"      : "/notes/202101251522",
-      "category" : "",
-      "tags"     : "literature",
-      "content"  : "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\ngraph TB\n\tsubgraph group1\n\t\tA &amp; B\n\tend\n\tsubgraph group2\n\t\tC &amp; D\n\tend\n\n\n\tA --&gt;|yes| C\n\tB --&gt;|no| D\n\n\tid1[square]\n\tid2(rounded)\n\tid3([round])\n\tid4[(cylinder)]\n\tid5((circle))"
-
-    } ,
-  
-    {
-
       "title"    : "How I use Anki as an A-level Student",
       "url"      : "/notes/202101251523",
       "category" : "",

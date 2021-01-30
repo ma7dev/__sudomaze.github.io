@@ -100,8 +100,6 @@ A practical guide for better-looking python code;
 
 Billionaires Build;
 
-Create Custom Diagrams In Obsidian App | Mermaid &amp; Markdown;
-
 How I use Anki as an A-level Student;
 
 How to learn pure mathematics on your own: a complete self-study guide;

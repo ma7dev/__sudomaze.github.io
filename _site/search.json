@@ -446,14 +446,6 @@
   
     {
 
-      "title"    : "Create Custom Diagrams In Obsidian App | Mermaid &amp; Markdown",
-      "url"      : "/notes/202101251522",
-      "content"  : "1234567891011121314151617graph TB\tsubgraph group1\t\tA &amp; B\tend\tsubgraph group2\t\tC &amp; D\tend\tA --&gt;|yes| C\tB --&gt;|no| D\tid1[square]\tid2(rounded)\tid3([round])\tid4[(cylinder)]\tid5((circle))"
-
-    },
-  
-    {
-
       "title"    : "How I use Anki as an A-level Student",
       "url"      : "/notes/202101251523",
       "content"  : "don't start big, 75-100 is good. If you want to start be, do 250 a day  yse tags instead of subdecks  use Cloze          #Q: what are those?        study by card state or tag          all review cards in random order      all cards in random order (don't reschedule)"
