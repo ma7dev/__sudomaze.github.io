@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 <meta
     content="Mazen Alotaibi is an M.S. student under the supervision of Prof. Fuxin Li at Deep Machine Vision (DMV) at Oregon State University (OSU). He is interested in Computer Vision, Deep Learning, and Data Science.
 "
@@ -32,9 +32,7 @@
 <link rel="apple-touch-icon" href="/assets/img/profile.webp" />
 
 
-
-
-  <!-- Begin Jekyll SEO tag v2.6.1 -->
+ <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>A practical guide for better-looking python code</title>
 <meta name="generator" content="Jekyll v4.0.1" />
 <meta property="og:title" content="A practical guide for better-looking python code" />
@@ -48,70 +46,84 @@
 <!-- End Jekyll SEO tag -->
 
 
-  <!-- sourcing javascript files -->
+    <!-- sourcing javascript files -->
 
-  <!-- sourcing sync files (inline to improve speed of rendering the page) -->
-  <script type="text/javascript">const theme = localStorage.getItem('theme');
+    <!-- sourcing sync files (inline to improve speed of rendering the page) -->
+    <script type="text/javascript">const theme = localStorage.getItem('theme');
 console.log(`theme: ${theme}`)
 
 if (theme === "dark") {
     document.documentElement.setAttribute('data-theme', 'dark');
-}</script>
-  <script type="text/javascript">/*!
+}</script> <script type="text/javascript">/*!
   * Simple-Jekyll-Search v1.7.2 (https://github.com/christian-fei/Simple-Jekyll-Search)
   * Copyright 2015-2018, Christian Fei
   * Licensed under the MIT License.
   */
  !function(){"use strict";var f={load:function w(t,e){var n=function r(){return window.XMLHttpRequest?new window.XMLHttpRequest:new ActiveXObject("Microsoft.XMLHTTP")}();n.open("GET",t,!0),n.onreadystatechange=function i(e,n){return function(){if(4===e.readyState&&200===e.status)try{n(null,JSON.parse(e.responseText))}catch(t){n(t,null)}}}(n,e),n.send()}};(function y(t){if(!function e(t){return!!t&&"undefined"!=typeof t.required&&t.required instanceof Array}(t))throw new Error("-- OptionsValidator: required options missing");if(!(this instanceof y))return new y(t);var r=t.required;this.getRequiredOptions=function(){return r},this.validate=function(e){var n=[];return r.forEach(function(t){"undefined"==typeof e[t]&&n.push(t)}),n}});var n=function g(t,e){var n=e.length,r=t.length;if(n<r)return!1;if(r===n)return t===e;t:for(var i=0,o=0;i<r;i++){for(var u=t.charCodeAt(i);o<n;)if(e.charCodeAt(o++)===u)continue t;return!1}return!0},e=new function t(){this.matches=function(t,e){return n(e.toLowerCase(),t.toLowerCase())}};var r=new function O(){this.matches=function(e,t){return!!e&&(e=e.trim().toLowerCase(),(t=t.trim().toLowerCase()).split(" ").filter(function(t){return 0<=e.indexOf(t)}).length===t.split(" ").length)}};var l={put:function z(t){if(c(t))return s(t);if(function e(t){return Boolean(t)&&"[object Array]"===Object.prototype.toString.call(t)}(t))return function i(t){var e=[];a();for(var n=0,r=t.length;n<r;n++)c(t[n])&&e.push(s(t[n]));return e}(t);return undefined},clear:a,search:function S(t){return t?function a(t,e,n,r){for(var i=[],o=0;o<t.length&&i.length<r.limit;o++){var u=d(t[o],e,n,r);u&&i.push(u)}return i}(o,t,u.searchStrategy,u).sort(u.sort):[]},setOptions:function q(t){(u=t||{}).fuzzy=t.fuzzy||!1,u.limit=t.limit||10,u.searchStrategy=t.fuzzy?e:r,u.sort=t.sort||i}};function i(){return 0}var o=[],u={};function a(){return o.length=0,o}function c(t){return Boolean(t)&&"[object Object]"===Object.prototype.toString.call(t)}function s(t){return o.push(t),o}function d(t,e,n,r){for(var i in t)if(!p(t[i],r.exclude)&&n.matches(t[i],e))return t}function p(t,e){for(var n=!1,r=0,i=(e=e||[]).length;r<i;r++){var o=e[r];!n&&new RegExp(t).test(o)&&(n=!0)}return n}u.fuzzy=!1,u.limit=10,u.searchStrategy=u.fuzzy?e:r,u.sort=i;var h={compile:function j(r){return m.template.replace(m.pattern,function(t,e){var n=m.middleware(e,r[e],m.template);return void 0!==n?n:r[e]||t})},setOptions:function C(t){m.pattern=t.pattern||m.pattern,m.template=t.template||m.template,"function"==typeof t.middleware&&(m.middleware=t.middleware)}},m={};m.pattern=/\{(.*?)\}/g,m.template="",m.middleware=function(){};var v={merge:function L(t,e){var n={};for(var r in t)n[r]=t[r],"undefined"!=typeof e[r]&&(n[r]=e[r]);return n},isJSON:function M(t){try{return!!(t instanceof Object&&JSON.parse(JSON.stringify(t)))}catch(e){return!1}}};!function(t){var o={searchInput:null,resultsContainer:null,json:[],success:Function.prototype,searchResultTemplate:'<li><a href="{url}" title="{desc}">{title}</a></li>',templateMiddleware:Function.prototype,sortMiddleware:function(){return 0},noResultsText:"No results found",limit:10,fuzzy:!1,exclude:[]},n=["searchInput","resultsContainer","json"],r=function y(e){if(!function n(t){return!!t&&"undefined"!=typeof t.required&&t.required instanceof Array}(e))throw new Error("-- OptionsValidator: required options missing");if(!(this instanceof y))return new y(e);var r=e.required;this.getRequiredOptions=function(){return r},this.validate=function(e){var n=[];return r.forEach(function(t){"undefined"==typeof e[t]&&n.push(t)}),n}}({required:n});function i(t){o.success(t),l.put(t),function e(){o.searchInput.addEventListener("keyup",function(t){(function e(t){return-1===[13,16,20,37,38,39,40,91].indexOf(t)})(t.which)&&(u(),c(t.target.value))})}()}function u(){o.resultsContainer.innerHTML=""}function a(t){o.resultsContainer.innerHTML+=t}function c(t){(function e(t){return t&&0<t.length})(t)&&(u(),function i(t,e){var n=t.length;if(0===n)return a(o.noResultsText);for(var r=0;r<n;r++)t[r].query=e,a(h.compile(t[r]))}(l.search(t),t))}function s(t){throw new Error("SimpleJekyllSearch --- "+t)}t.SimpleJekyllSearch=function(t){return 0<r.validate(t).length&&s("You must specify the following required options: "+n),o=v.merge(o,t),h.setOptions({template:o.searchResultTemplate,middleware:o.templateMiddleware}),l.setOptions({fuzzy:o.fuzzy,limit:o.limit,sort:o.sortMiddleware}),v.isJSON(o.json)?i(o.json):function e(n){f.load(n,function(t,e){t&&s("failed to get JSON ("+n+")"),i(e)})}(o.json),{search:c}}}(window)}();</script>
 
-  <!-- sourcing sync files (specialized for certain pages) -->
-  
+    <!-- sourcing sync files (specialized for certain pages) -->
+    
 
-  <!-- sourcing async files (global) -->
-  
+    <!-- sourcing async files (global) -->
+    
 
-
-
-  <!-- sourcing async files (specialized for certain pages) -->
-  
-
-  
+    <!-- sourcing async files (specialized for certain pages) -->
+     
     <script async src="/assets/libs/katex/katex.min.js"></script>
     <script async src="/assets/libs/pseudocode.js/pseudocode.js"></script>
     <!-- configuring mathjax -->
     <script async type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+          }
+        });
     </script>
-    <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  
-
-  <!-- sourcing css files -->
-
-  <!-- sourcing async files (global) -->
-  
+    <script
+        async
+        type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    ></script>
     
+
+    <!-- sourcing css files -->
+
+    <!-- sourcing async files (global) -->
       
-      <link rel="stylesheet" href="/assets/libs/fontawesome/css/all.min.css" media="print" onload="this.media='all'">
-    
-      
-      <link rel="stylesheet" href="/assets/libs/highlight.js/styles/atom-one-dark.css" media="print" onload="this.media='all'">
-    
-  
+    <link
+        rel="stylesheet"
+        href="/assets/libs/fontawesome/css/all.min.css"
+        media="print"
+        onload="this.media='all'"
+    />
+     
+    <link
+        rel="stylesheet"
+        href="/assets/libs/highlight.js/styles/atom-one-dark.css"
+        media="print"
+        onload="this.media='all'"
+    />
+     
 
-  <!-- sourcing async files (specialized for certain pages) -->
-  
-  
-    <link rel="stylesheet" href="/assets/libs/katex/katex.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/assets/libs/pseudocode.js/pseudocode.css" media="print" onload="this.media='all'">
-  
+    <!-- sourcing async files (specialized for certain pages) -->
+     
+    <link
+        rel="stylesheet"
+        href="/assets/libs/katex/katex.min.css"
+        media="print"
+        onload="this.media='all'"
+    />
+    <link
+        rel="stylesheet"
+        href="/assets/libs/pseudocode.js/pseudocode.css"
+        media="print"
+        onload="this.media='all'"
+    />
+    
 
-  <!-- sourcing sync files (inline to improve speed of rendering the page) -->
-  <style type="text/css">/******************************************************
+    <!-- sourcing sync files (inline to improve speed of rendering the page) -->
+    <style type="text/css">/******************************************************
  *             PREDEFINE TAGS CSS                     *
 *******************************************************/
 
@@ -1709,21 +1721,26 @@ iframe {
 }
 </style>
 
-  <script async>
-    var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
-      disqusShortname = "sudomaze",
-      siteUrl = "https://sudomaze.dev",
-      pageUrl = "/notes/202101251520",
-      pagePath = "_notes/202101251520.md",
-      githubRepo = "sudomaze/sudomaze.github.io",
-      layoutDiscussion = false;
-  </script>
+    <script async>
+        var disqusPublicKey = "xlagUgR5BxVFA7EduSkai8EPtVJopAosMcsY4UUHFevX39IsnZNFZepznkfgMKUo",
+            disqusShortname = "sudomaze",
+            siteUrl = "https://sudomaze.dev",
+            pageUrl = "/notes/202101251520",
+            pagePath = "_notes/202101251520.md",
+            githubRepo = "sudomaze/sudomaze.github.io",
+            layoutDiscussion = false;
+    </script>
 
-  
+    
 
-  <!-- linking xml file -->
-  <link rel="alternate" type="application/rss+xml" href="https://sudomaze.dev/feed.xml">
+    <!-- linking xml file -->
+    <link
+        rel="alternate"
+        type="application/rss+xml"
+        href="https://sudomaze.dev/feed.xml"
+    />
 </head>
+
     <body>
         
 <div class="container">
@@ -1995,22 +2012,31 @@ iframe {
         
 <!-- DISQUS COMMENT SECTION, DO NOT TOUCH -->
 <div id="disqus_thread"></div>
-    <script>
-        /**
-         *RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-         *LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-        var disqus_config = function () {
-        this.page.url = '/notes/202101251520';  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = '/notes/202101251520'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://sudomaze.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
+<script>
+    /**
+     *RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    var disqus_config = function () {
+        this.page.url = "/notes/202101251520"; // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "/notes/202101251520"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement("script");
+        s.src =
+            "https://sudomaze.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
         (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    })();
+</script>
+<noscript
+    >Please enable JavaScript to view the
+    <a href="https://disqus.com/?ref_noscript"
+        >comments powered by Disqus.</a
+    ></noscript
+>
+
 
         <hr style="margin-top: 0" />
         <div id="copyright">
@@ -2064,13 +2090,29 @@ iframe {
 </script>
 
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+            i[r] ||
+            function () {
+                (i[r].q = i[r].q || []).push(arguments);
+            }),
+            (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+    })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+    );
 
-  ga('create', 'UA-131236199-2', 'auto');
-  ga('send', 'pageview');
+    ga("create", "UA-131236199-2", "auto");
+    ga("send", "pageview");
 </script>
+
     </body>
 </html>

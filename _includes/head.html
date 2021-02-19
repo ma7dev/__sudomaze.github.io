@@ -1,95 +1,109 @@
 <head>
-  {% include seo.html %}
+    {% include seo.html %} {% seo %}
 
-  {% seo %}
+    <!-- sourcing javascript files -->
 
-  <!-- sourcing javascript files -->
+    <!-- sourcing sync files (inline to improve speed of rendering the page) -->
+    {% inline_js assets/js/nightmode-loader.js %} {% inline_js
+    assets/js/simple-jekyll-search.min.js %}
 
-  <!-- sourcing sync files (inline to improve speed of rendering the page) -->
-  {% inline_js assets/js/nightmode-loader.js %}
-  {% inline_js assets/js/simple-jekyll-search.min.js %}
+    <!-- sourcing sync files (specialized for certain pages) -->
+    {% if page.url contains '/about/' %} {% inline_js
+    assets/libs/github/github-calendar.min.js %} {% endif %}
 
-  <!-- sourcing sync files (specialized for certain pages) -->
-  {% if page.url contains '/about/' %}
-    {% inline_js assets/libs/github/github-calendar.min.js %}
-  {% endif %}
+    <!-- sourcing async files (global) -->
+    {% if site.data.site.head_scripts %} {% for script in
+    site.data.site.head_scripts %} {% if script contains "://" %} {% capture
+    script_path %}{{ script }}{% endcapture %} {% else %} {% capture script_path
+    %}{{ script | relative_url }}{% endcapture %} {% endif %}
+    <script async src="{{ script_path }}"></script>
+    {% endfor %} {% endif %}
 
-  <!-- sourcing async files (global) -->
-  {% if site.data.site.head_scripts %}
-    {% for script in site.data.site.head_scripts %}
-      {% if script contains "://" %}
-        {% capture script_path %}{{ script }}{% endcapture %}
-      {% else %}
-        {% capture script_path %}{{ script | relative_url }}{% endcapture %}
-      {% endif %}
-      <script async src="{{ script_path }}"></script>
-    {% endfor %}
-  {% endif %}
-
-
-
-  <!-- sourcing async files (specialized for certain pages) -->
-  {% if page.url contains '/about/' %}
+    <!-- sourcing async files (specialized for certain pages) -->
+    {% if page.url contains '/about/' %}
     <script async src="/assets/libs/github/github-calendar.min.js"></script>
-  {% endif %}
-
-  {% if page.url contains '/notes/' or page.url contains '/projects/'%}
+    {% endif %} {% if page.url contains '/notes/' or page.url contains
+    '/projects/'%}
     <script async src="/assets/libs/katex/katex.min.js"></script>
     <script async src="/assets/libs/pseudocode.js/pseudocode.js"></script>
     <!-- configuring mathjax -->
     <script async type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          processEscapes: true
-        }
-      });
+        MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            processEscapes: true
+          }
+        });
     </script>
-    <script async type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  {% endif %}
+    <script
+        async
+        type="text/javascript"
+        src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+    ></script>
+    {% endif %}
 
-  <!-- sourcing css files -->
+    <!-- sourcing css files -->
 
-  <!-- sourcing async files (global) -->
-  {% if site.data.site.head_links %}
-    {% for link in site.data.site.head_links %}
-      {% if link contains "://" %}
-        {% capture link_path %}{{ link }}{% endcapture %}
-      {% else %}
-        {% capture link_path %}{{ link | relative_url }}{% endcapture %}
-      {% endif %}
-      <link rel="stylesheet" href="{{ link_path }}" media="print" onload="this.media='all'">
-    {% endfor %}
-  {% endif %}
+    <!-- sourcing async files (global) -->
+    {% if site.data.site.head_links %} {% for link in site.data.site.head_links
+    %} {% if link contains "://" %} {% capture link_path %}{{ link }}{%
+    endcapture %} {% else %} {% capture link_path %}{{ link | relative_url }}{%
+    endcapture %} {% endif %}
+    <link
+        rel="stylesheet"
+        href="{{ link_path }}"
+        media="print"
+        onload="this.media='all'"
+    />
+    {% endfor %} {% endif %}
 
-  <!-- sourcing async files (specialized for certain pages) -->
-  {% if page.url contains '/about/' %}
-    <link rel="stylesheet" href="/assets/libs/github/github-calendar.css" media="print" onload="this.media='all'">
-  {% endif %}
-  {% if page.url contains '/notes/' or page.url contains '/projects/' %}
-    <link rel="stylesheet" href="/assets/libs/katex/katex.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="/assets/libs/pseudocode.js/pseudocode.css" media="print" onload="this.media='all'">
-  {% endif %}
+    <!-- sourcing async files (specialized for certain pages) -->
+    {% if page.url contains '/about/' %}
+    <link
+        rel="stylesheet"
+        href="/assets/libs/github/github-calendar.css"
+        media="print"
+        onload="this.media='all'"
+    />
+    {% endif %} {% if page.url contains '/notes/' or page.url contains
+    '/projects/' %}
+    <link
+        rel="stylesheet"
+        href="/assets/libs/katex/katex.min.css"
+        media="print"
+        onload="this.media='all'"
+    />
+    <link
+        rel="stylesheet"
+        href="/assets/libs/pseudocode.js/pseudocode.css"
+        media="print"
+        onload="this.media='all'"
+    />
+    {% endif %}
 
-  <!-- sourcing sync files (inline to improve speed of rendering the page) -->
-  {% inline_css assets/css/style.css %}
+    <!-- sourcing sync files (inline to improve speed of rendering the page) -->
+    {% inline_css assets/css/style.css %}
 
-  <script async>
-    var disqusPublicKey = "{{ site.data.site.disqus.public_key }}",
-      disqusShortname = "{{ site.data.site.disqus.shortname }}",
-      siteUrl = "{{ site.data.site.url }}",
-      pageUrl = "{{ page.url }}",
-      pagePath = "{{ page.path }}",
-      githubRepo = "{{ site.data.site.repository }}",
-      layoutDiscussion = false;
-  </script>
-
-  {% if layout.discussion == true %}
     <script async>
-      layoutDiscussion = true;
+        var disqusPublicKey = "{{ site.data.config.disqus.public_key }}",
+            disqusShortname = "{{ site.data.config.disqus.shortname }}",
+            siteUrl = "{{ site.data.site.url }}",
+            pageUrl = "{{ page.url }}",
+            pagePath = "{{ page.path }}",
+            githubRepo = "{{ site.data.site.repository }}",
+            layoutDiscussion = false;
     </script>
-  {% endif %}
 
-  <!-- linking xml file -->
-  <link rel="alternate" type="application/rss+xml" href="{{ site.data.site.url }}/feed.xml">
+    {% if layout.discussion == true %}
+    <script async>
+        layoutDiscussion = true;
+    </script>
+    {% endif %}
+
+    <!-- linking xml file -->
+    <link
+        rel="alternate"
+        type="application/rss+xml"
+        href="{{ site.data.site.url }}/feed.xml"
+    />
 </head>
