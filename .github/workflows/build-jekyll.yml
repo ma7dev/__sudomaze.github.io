@@ -1,3 +1,4 @@
+# installing Jekyll - credit: https://github.com/victoriadrake/jekyll-cd/blob/master/jekyll-cd.yml
 name: Build and Deploy to Github Pages
 
 on:
@@ -18,8 +19,11 @@ jobs:
                   key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
                   restore-keys: |
                       ${{ runner.os }}-gems-
-            - name: Build Jekyll site.
-              uses: fabacab/jekyll-builder-for-github-pages-action@v1
+
+            - name: Install Jekyll
+              run: |
+                  sudo gem install bundler jekyll
+                  sudo bundle install
             - name: Installing packages
               run: bundle install
             - name: Building production version
