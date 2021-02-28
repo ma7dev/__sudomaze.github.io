@@ -25,7 +25,9 @@ jobs:
                   sudo gem install bundler jekyll
                   sudo bundle install
             - name: Installing packages
-              run: bundle install
+              run: |
+                  gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
+                  bundle install
             - name: Building production version
               run: JEKYLL_ENV=production bundle exec jekyll build
             # Use GitHub Deploy Action to build and deploy to Github
