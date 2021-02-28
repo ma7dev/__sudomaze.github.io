@@ -3,10 +3,11 @@ layout: post
 comments: True
 date: 20210101
 title: Matrix Analysis
-topics: [[[Machine Learning]],[[Signal Processing]],[[Mathematics]]]
 tags: []
 status: in-progress
 ---
+
+[[Machine Learning]] [[Signal Processing]] [[Mathematics]]
 
 ## Lecture Notes
 

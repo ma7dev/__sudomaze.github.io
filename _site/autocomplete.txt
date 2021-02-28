@@ -124,3 +124,5 @@ Writing a technical book: from idea to print;
 
 Niklas Luhmann;
 
+Understanding Region of Interest — (RoI Pooling);
+

@@ -6,6 +6,7 @@ repository: "sudomaze/sudomaze.github.io"
 
 head_scripts:
     # - /assets/js/async_file.js
+    - /assets/libs/spin.js/spin.min.js
 
 head_links:
     - /assets/libs/fontawesome/css/all.min.css
@@ -16,3 +17,4 @@ footer_scripts:
     - /assets/js/nightmode-event.js
     - /assets/js/collapsible.js
     - /assets/js/code-snippets.js
+    - /assets/js/fix-topics.js

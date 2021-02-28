@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "202102272146.md",
+            "file": "010 Productivity.md",
             "mode": "source"
           }
         }
@@ -63,7 +63,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "202102272146.md"
+                "file": "010 Productivity.md"
               }
             }
           }
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "202102272146.md",
+                "file": "010 Productivity.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "202102272146.md",
+                "file": "010 Productivity.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -181,15 +181,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "010 Productivity.md",
     "202102272146.md",
-    "Writing.md",
-    "Tensor Decomposition.md",
-    "Statistics.md",
-    "Startup.md",
-    "Software Engineering.md",
-    "Singular Value Decomposition.md",
-    "Research.md",
-    "PyTorch.md",
-    "Productivity.md"
+    "Eigendecomposition.md",
+    "202101140846.md",
+    "202101130921.md",
+    "202101111812.md",
+    "202101101808.md",
+    "202101101206.md",
+    "202101101031.md",
+    "202101101016.md"
   ]
 }

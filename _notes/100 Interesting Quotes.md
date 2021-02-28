@@ -3,9 +3,10 @@ layout: post
 comments: False
 date: 20210101
 title: 110 Interesting Quotes
-topics: [[[000 Home]]]
 status: in-progress
 ---
+
+[[000 Home]]
 
 ## Career
 

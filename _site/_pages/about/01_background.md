@@ -9,5 +9,5 @@ Currently, Mazen is an M.S. student under the supervision of [Prof. Fuxin Li](ht
 </div>
 
 <script>
-    new GitHubCalendar(".calendar", "sudomaze");
+    GitHubCalendar(".calendar", "sudomaze", { responsive: true });
 </script>

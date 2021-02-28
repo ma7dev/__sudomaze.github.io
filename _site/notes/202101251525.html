@@ -37,12 +37,12 @@
 <meta name="generator" content="Jekyll v4.0.1" />
 <meta property="og:title" content="How to Make Your Code Reviewer Fall in Love with You" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Review your own code first use diff view Write a clear changelist description Everything you just told me should be on the first page of your design doc I wrote the design document imagining how my teammates would read it, but I failed to consider other readers Your changelist description should summarize any background knowledge the reader needs A good changelist description explains what the change achieves, at a high level, and why you’re making this change. #RL: [[How to Write a Git Commit Message]] and [[My favourite Git commit]] Automate the easy stuff use CI use pre-commit hooks Answer questions with the code itself You need to explain it to everyone The best way to answer someone’s question is to refactor the code and eliminate the confusion. Can you rename things or restructure logic to make it more clear? Code comments are an acceptable solution, but they’re strictly inferior to code that documents itself naturally. Narrowly scope changes Scope creep is a common anti-pattern in code reviews do one thing #RL: [[Curly&#39;s Law: Do One Thing]] Separate functional and non-functional changes The developer either fails to recognize what they did or decides that the new formatting is better. They send out a two-line functional change buried in hundreds of lines of non-functional whitespace changes. Developers also tend to mix changes inappropriately while refactoring. I love it when my teammates refactor code, but I hate it when they refactor while changing the code’s behavior. If a piece of code requires refactoring and behavioral changes, it should happen in two to three changelists: Add tests to exercise the existing behavior (if they’re not already there). Refactor the production code while holding the test code constant. Change behavior in the production code and update the tests to match. By leaving the automated tests untouched in step 2, you prove to your reviewer that your refactoring preserves behavior. When you reach step 3, your reviewer doesn’t have to untangle the behavioral changes from the refactoring changes, as you’ve decoupled them ahead of time. Break up large changelists A changelist’s complexity grows exponentially with the number of code lines it touches. When my changes exceed 400 lines of production code, I look for opportunities to break it up before requesting a review. Respond graciously to critiques #RL: [[How to Do Code Reviews Like a Human (Part One)]] and [[The Seven Habits of Highly Effective People by Stephen R. Covey]] Be patient when your reviewer is wrong #RL: [[Two Ways To Design]] refactor the code, or add comments that make the code more obviously correct If the confusion stems from obscure language features, rewrite your code using mechanisms that are intelligible to non-experts. Communicate your responses explicitly Artfully solicit missing information Whenever a reviewer gives me unclear feedback, I always respond with some variation of, “What would be helpful?” Award all ties to your reviewer When your reviewer makes a suggestion, and you each have roughly equal evidence to support your position, defer to your reviewer. Between the two of you, they have a better perspective on what it’s like to read this code fresh. Minimize lag between rounds of review Once you send your code out, driving the review to completion should be your highest priority." />
-<meta property="og:description" content="Review your own code first use diff view Write a clear changelist description Everything you just told me should be on the first page of your design doc I wrote the design document imagining how my teammates would read it, but I failed to consider other readers Your changelist description should summarize any background knowledge the reader needs A good changelist description explains what the change achieves, at a high level, and why you’re making this change. #RL: [[How to Write a Git Commit Message]] and [[My favourite Git commit]] Automate the easy stuff use CI use pre-commit hooks Answer questions with the code itself You need to explain it to everyone The best way to answer someone’s question is to refactor the code and eliminate the confusion. Can you rename things or restructure logic to make it more clear? Code comments are an acceptable solution, but they’re strictly inferior to code that documents itself naturally. Narrowly scope changes Scope creep is a common anti-pattern in code reviews do one thing #RL: [[Curly&#39;s Law: Do One Thing]] Separate functional and non-functional changes The developer either fails to recognize what they did or decides that the new formatting is better. They send out a two-line functional change buried in hundreds of lines of non-functional whitespace changes. Developers also tend to mix changes inappropriately while refactoring. I love it when my teammates refactor code, but I hate it when they refactor while changing the code’s behavior. If a piece of code requires refactoring and behavioral changes, it should happen in two to three changelists: Add tests to exercise the existing behavior (if they’re not already there). Refactor the production code while holding the test code constant. Change behavior in the production code and update the tests to match. By leaving the automated tests untouched in step 2, you prove to your reviewer that your refactoring preserves behavior. When you reach step 3, your reviewer doesn’t have to untangle the behavioral changes from the refactoring changes, as you’ve decoupled them ahead of time. Break up large changelists A changelist’s complexity grows exponentially with the number of code lines it touches. When my changes exceed 400 lines of production code, I look for opportunities to break it up before requesting a review. Respond graciously to critiques #RL: [[How to Do Code Reviews Like a Human (Part One)]] and [[The Seven Habits of Highly Effective People by Stephen R. Covey]] Be patient when your reviewer is wrong #RL: [[Two Ways To Design]] refactor the code, or add comments that make the code more obviously correct If the confusion stems from obscure language features, rewrite your code using mechanisms that are intelligible to non-experts. Communicate your responses explicitly Artfully solicit missing information Whenever a reviewer gives me unclear feedback, I always respond with some variation of, “What would be helpful?” Award all ties to your reviewer When your reviewer makes a suggestion, and you each have roughly equal evidence to support your position, defer to your reviewer. Between the two of you, they have a better perspective on what it’s like to read this code fresh. Minimize lag between rounds of review Once you send your code out, driving the review to completion should be your highest priority." />
+<meta name="description" content="[[Software Engineering]]" />
+<meta property="og:description" content="[[Software Engineering]]" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-01-25T00:00:00-08:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"/notes/202101251525"},"@type":"BlogPosting","url":"/notes/202101251525","headline":"How to Make Your Code Reviewer Fall in Love with You","dateModified":"2021-01-25T00:00:00-08:00","datePublished":"2021-01-25T00:00:00-08:00","description":"Review your own code first use diff view Write a clear changelist description Everything you just told me should be on the first page of your design doc I wrote the design document imagining how my teammates would read it, but I failed to consider other readers Your changelist description should summarize any background knowledge the reader needs A good changelist description explains what the change achieves, at a high level, and why you’re making this change. #RL: [[How to Write a Git Commit Message]] and [[My favourite Git commit]] Automate the easy stuff use CI use pre-commit hooks Answer questions with the code itself You need to explain it to everyone The best way to answer someone’s question is to refactor the code and eliminate the confusion. Can you rename things or restructure logic to make it more clear? Code comments are an acceptable solution, but they’re strictly inferior to code that documents itself naturally. Narrowly scope changes Scope creep is a common anti-pattern in code reviews do one thing #RL: [[Curly&#39;s Law: Do One Thing]] Separate functional and non-functional changes The developer either fails to recognize what they did or decides that the new formatting is better. They send out a two-line functional change buried in hundreds of lines of non-functional whitespace changes. Developers also tend to mix changes inappropriately while refactoring. I love it when my teammates refactor code, but I hate it when they refactor while changing the code’s behavior. If a piece of code requires refactoring and behavioral changes, it should happen in two to three changelists: Add tests to exercise the existing behavior (if they’re not already there). Refactor the production code while holding the test code constant. Change behavior in the production code and update the tests to match. By leaving the automated tests untouched in step 2, you prove to your reviewer that your refactoring preserves behavior. When you reach step 3, your reviewer doesn’t have to untangle the behavioral changes from the refactoring changes, as you’ve decoupled them ahead of time. Break up large changelists A changelist’s complexity grows exponentially with the number of code lines it touches. When my changes exceed 400 lines of production code, I look for opportunities to break it up before requesting a review. Respond graciously to critiques #RL: [[How to Do Code Reviews Like a Human (Part One)]] and [[The Seven Habits of Highly Effective People by Stephen R. Covey]] Be patient when your reviewer is wrong #RL: [[Two Ways To Design]] refactor the code, or add comments that make the code more obviously correct If the confusion stems from obscure language features, rewrite your code using mechanisms that are intelligible to non-experts. Communicate your responses explicitly Artfully solicit missing information Whenever a reviewer gives me unclear feedback, I always respond with some variation of, “What would be helpful?” Award all ties to your reviewer When your reviewer makes a suggestion, and you each have roughly equal evidence to support your position, defer to your reviewer. Between the two of you, they have a better perspective on what it’s like to read this code fresh. Minimize lag between rounds of review Once you send your code out, driving the review to completion should be your highest priority.","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"/notes/202101251525"},"@type":"BlogPosting","url":"/notes/202101251525","headline":"How to Make Your Code Reviewer Fall in Love with You","dateModified":"2021-01-25T00:00:00-08:00","datePublished":"2021-01-25T00:00:00-08:00","description":"[[Software Engineering]]","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -65,7 +65,9 @@ if (theme === "dark") {
     
 
     <!-- sourcing async files (global) -->
-    
+      
+    <script async src="/assets/libs/spin.js/spin.min.js"></script>
+     
 
     <!-- sourcing async files (specialized for certain pages) -->
      
@@ -1940,43 +1942,56 @@ iframe {
     
 </header>
 
-        <h1>How to Make Your Code Reviewer Fall in Love with You</h1>
-        <div class="post-meta" style="margin-left: 20px; padding-right: 10px">
-            <p id="post-date">
-                <b>Date:</b> Jan 25, 2021 
-            </p>
-            
-            <p id="post-source_url">
-                <b>URL:</b>
-                <a href="https://mtlynch.io/code-review-love/">https://mtlynch.io/code-review-love/</a>
-            </p>
-             
-            <p id="post-topics">
-                <b>Topics:</b>
-                 
+        <div id="spin-area"></div>
+        <div id="page-content" style="display: none">
+            <h1>How to Make Your Code Reviewer Fall in Love with You</h1>
+            <div
+                class="post-meta"
+                style="margin-left: 20px; padding-right: 10px"
+            >
+                <p id="post-date">
+                    <b>Date:</b> Jan 25, 2021 
+                </p>
                 
-                <a href="/notes/Software-Engineering">Software Engineering</a>.  
-            </p>
-             
-            <p id="post-tags">
-                <b>Tags:</b>
-                <a href="/tags/"></a>
+                <p id="post-source_url">
+                    <b>URL:</b>
+                    <a href="https://mtlynch.io/code-review-love/">https://mtlynch.io/code-review-love/</a>
+                </p>
+                
+                <p id="post-topics">
+                    <b>Topics:</b>
+                </p>
+                
+                <p id="post-tags">
+                    <b>Tags:</b>
+                    <a href="/tags/"></a>
+                     
+                    <a href="/tags/literature">literature</a>.  
+                </p>
                  
-                <a href="/tags/literature">literature</a>.  
-            </p>
-             
-            <p id="post-status"><b>Status:</b> in-progress</p>
-             
-            <p id="post-tags"><b></b></p>
-        </div>
-        <hr style="margin: 0" />
-        
-        <main>
-            <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+                <p id="post-status"><b>Status:</b> in-progress</p>
+                 
+                <p id="post-tags"><b></b></p>
+            </div>
+            <hr style="margin: 0" />
+            
+            <main>
+                <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
 <!--  -->
 <div class="content">
       
-              <ol>
+              <p><span
+        class="tooltip"
+        ><a href="/notes/Software-Engineering">Software Engineering</a
+        ><span class="right bottom"
+            ><span class="tooltip-title">Software Engineering</span
+            ><br /><span class="tooltip-excerpt"
+                >[[020 Knowledgebase]]<br />
+</span
+            ><i></i></span></span
+    ></p>
+
+<ol>
   <li>Review your own code first
     <ol>
       <li>use diff view</li>
@@ -2072,7 +2087,8 @@ iframe {
 
 
 
-        </main>
+            </main>
+        </div>
         
 <!-- DISQUS COMMENT SECTION, DO NOT TOUCH -->
 <div id="disqus_thread"></div>
@@ -2110,6 +2126,32 @@ iframe {
     <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn">
         <i class="fa fa-chevron-up"></i>
     </button>
+    <script>
+        var opts = {
+            lines: 13, // The number of lines to draw
+            length: 7, // The length of each line
+            width: 4, // The line thickness
+            radius: 10, // The radius of the inner circle
+            corners: 1, // Corner roundness (0..1)
+            rotate: 0, // The rotation offset
+            color: "#000", // #rgb or #rrggbb
+            speed: 1, // Rounds per second
+            trail: 60, // Afterglow percentage
+            shadow: false, // Whether to render a shadow
+            hwaccel: false, // Whether to use hardware acceleration
+            className: "spinner", // The CSS class to assign to the spinner
+            zIndex: 2e9, // The z-index (defaults to 2000000000)
+            top: "auto", // Top position relative to parent in px
+            left: "auto", // Left position relative to parent in px
+        };
+        var target = document.getElementById("spin-area");
+        var spinner = new Spinner(opts).spin(target);
+        // spinner = new Spinner().spin(target);
+        setInterval(function () {
+            document.getElementById("page-content").style.display = "block";
+            document.getElementById("spin-area").style.display = "none";
+        }, 500);
+    </script>
 </div>
 
         <nav class="context-menu" id="context-menu">
@@ -2145,6 +2187,9 @@ iframe {
   
     
     <script async src="/assets/js/code-snippets.js"></script>
+  
+    
+    <script async src="/assets/js/fix-topics.js"></script>
   
 
 <script>

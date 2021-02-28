@@ -65,7 +65,9 @@ if (theme === "dark") {
     
 
     <!-- sourcing async files (global) -->
-    
+      
+    <script async src="/assets/libs/spin.js/spin.min.js"></script>
+     
 
     <!-- sourcing async files (specialized for certain pages) -->
      
@@ -1924,44 +1926,53 @@ iframe {
     
 </header>
 
-        <h1>How I managed my time effectively</h1>
-        <div class="post-meta" style="margin-left: 20px; padding-right: 10px">
-            <p id="post-date">
-                <b>Date:</b> Aug 08, 2020  -
-                <a href="">Jan 22, 2020</a>
+        <div id="spin-area"></div>
+        <div id="page-content" style="display: none">
+            <h1>How I managed my time effectively</h1>
+            <div
+                class="post-meta"
+                style="margin-left: 20px; padding-right: 10px"
+            >
+                <p id="post-date">
+                    <b>Date:</b> Aug 08, 2020  -
+                    <a href="">Jan 22, 2020</a>
+                    
+                </p>
                 
-            </p>
-              
-            <p id="post-tags">
-                <b>Tags:</b>
-                <a href="/tags/"></a>
+                <p id="post-topics">
+                    <b>Topics:</b>
+                </p>
                 
-            </p>
-              
-            <p id="post-tags"><b></b></p>
-        </div>
-        <hr style="margin: 0" />
-        
-        <aside
-            class="sidebar__right  mobile-view"
-        >
-            <nav class="toc">
-                <header>
-                    <h4 class="nav__title text-center">
-                        Table of Content
-                    </h4>
-                </header>
-                <ul class="toc__menu">
+                <p id="post-tags">
+                    <b>Tags:</b>
+                    <a href="/tags/"></a>
+                    
+                </p>
+                  
+                <p id="post-tags"><b></b></p>
+            </div>
+            <hr style="margin: 0" />
+            
+            <aside
+                class="sidebar__right  mobile-view"
+            >
+                <nav class="toc">
+                    <header>
+                        <h4 class="nav__title text-center">
+                            Table of Content
+                        </h4>
+                    </header>
+                    <ul class="toc__menu">
   <li><a href="#rules">Rules</a></li>
   <li><a href="#time-blocks">Time-blocks</a></li>
   <li><a href="#typical-day">Typical day</a></li>
 </ul>
 
-            </nav>
-        </aside>
-        
-        <main>
-            <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+                </nav>
+            </aside>
+            
+            <main>
+                <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
 <!-- 
 <ul class="tags">
     
@@ -2013,7 +2024,8 @@ iframe {
 
 
 
-        </main>
+            </main>
+        </div>
         
 <!-- DISQUS COMMENT SECTION, DO NOT TOUCH -->
 <div id="disqus_thread"></div>
@@ -2051,6 +2063,32 @@ iframe {
     <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn">
         <i class="fa fa-chevron-up"></i>
     </button>
+    <script>
+        var opts = {
+            lines: 13, // The number of lines to draw
+            length: 7, // The length of each line
+            width: 4, // The line thickness
+            radius: 10, // The radius of the inner circle
+            corners: 1, // Corner roundness (0..1)
+            rotate: 0, // The rotation offset
+            color: "#000", // #rgb or #rrggbb
+            speed: 1, // Rounds per second
+            trail: 60, // Afterglow percentage
+            shadow: false, // Whether to render a shadow
+            hwaccel: false, // Whether to use hardware acceleration
+            className: "spinner", // The CSS class to assign to the spinner
+            zIndex: 2e9, // The z-index (defaults to 2000000000)
+            top: "auto", // Top position relative to parent in px
+            left: "auto", // Left position relative to parent in px
+        };
+        var target = document.getElementById("spin-area");
+        var spinner = new Spinner(opts).spin(target);
+        // spinner = new Spinner().spin(target);
+        setInterval(function () {
+            document.getElementById("page-content").style.display = "block";
+            document.getElementById("spin-area").style.display = "none";
+        }, 500);
+    </script>
 </div>
 
         <nav class="context-menu" id="context-menu">
@@ -2086,6 +2124,9 @@ iframe {
   
     
     <script async src="/assets/js/code-snippets.js"></script>
+  
+    
+    <script async src="/assets/js/fix-topics.js"></script>
   
 
 <script>

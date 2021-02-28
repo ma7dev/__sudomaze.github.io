@@ -37,12 +37,12 @@
 <meta name="generator" content="Jekyll v4.0.1" />
 <meta property="og:title" content="What is the best performance fix you ever achieved by changing only a few lines of code?" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This is more of a general rule: if you&#39;re using for loops in combination with Pandas, there&#39;s likely a way in pure Pandas for a performance improvement. Usually it&#39;s the first thing I go through when refactoring code. Pandas and numpy has a lot of built-in functions that are compiled (and sometimes use SIMD etc. under the hood). if you&#39;re implementing an algorithm or doing something complicated, it actually makes sense to keep it simple using loops and built-in python stuff and compiling it instead of trying to use numpy/pandas. The reason is simple: compilers are better at optimizing code than you are. The JIT compiler handles it. if you are using SQL learn indexes, if you&#39;re using HDFS learn partitions from ~2 min per run to ~8 seconds by, at various points in time: swapping out indexing a pandas dataframe (which is suprisingly slow) to indexing a list of dict [code-0] wrapping a cache decorator around some hot functions that get called redundantly thowing some numba jit decorators around some hot matrix operations A weird one was telling numpy to stop using so many threads, which was actually slowing down the code due to the overhead of the threads building pandas masks up incrementally rather than doing it in the inner loop a whole bunch of small, but effective optimizations that can be summarised as &quot;stop doing the same thing every time inside a for loop, instead, do it before the for loop&quot; - this was sometimes obsfucated by function calls some cases of &quot;track and save the data now when it is cheap rather than recalculating it later on&quot; #RL: [[Profiling Python using cProfile: a concrete case]] comparing two different types, make both of them the same Using Python’s set instead of a list for common if var in container checks. Really makes a difference if you have a bunch of items! CPU to GPU with RAPIDS Pandas - &gt; cudf numpy -&gt; cupy networkx -&gt; cugraph" />
-<meta property="og:description" content="This is more of a general rule: if you&#39;re using for loops in combination with Pandas, there&#39;s likely a way in pure Pandas for a performance improvement. Usually it&#39;s the first thing I go through when refactoring code. Pandas and numpy has a lot of built-in functions that are compiled (and sometimes use SIMD etc. under the hood). if you&#39;re implementing an algorithm or doing something complicated, it actually makes sense to keep it simple using loops and built-in python stuff and compiling it instead of trying to use numpy/pandas. The reason is simple: compilers are better at optimizing code than you are. The JIT compiler handles it. if you are using SQL learn indexes, if you&#39;re using HDFS learn partitions from ~2 min per run to ~8 seconds by, at various points in time: swapping out indexing a pandas dataframe (which is suprisingly slow) to indexing a list of dict [code-0] wrapping a cache decorator around some hot functions that get called redundantly thowing some numba jit decorators around some hot matrix operations A weird one was telling numpy to stop using so many threads, which was actually slowing down the code due to the overhead of the threads building pandas masks up incrementally rather than doing it in the inner loop a whole bunch of small, but effective optimizations that can be summarised as &quot;stop doing the same thing every time inside a for loop, instead, do it before the for loop&quot; - this was sometimes obsfucated by function calls some cases of &quot;track and save the data now when it is cheap rather than recalculating it later on&quot; #RL: [[Profiling Python using cProfile: a concrete case]] comparing two different types, make both of them the same Using Python’s set instead of a list for common if var in container checks. Really makes a difference if you have a bunch of items! CPU to GPU with RAPIDS Pandas - &gt; cudf numpy -&gt; cupy networkx -&gt; cugraph" />
+<meta name="description" content="[[pandas]] [[Data Science]]" />
+<meta property="og:description" content="[[pandas]] [[Data Science]]" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-01-25T00:00:00-08:00" />
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"/notes/202101251530"},"@type":"BlogPosting","url":"/notes/202101251530","headline":"What is the best performance fix you ever achieved by changing only a few lines of code?","dateModified":"2021-01-25T00:00:00-08:00","datePublished":"2021-01-25T00:00:00-08:00","description":"This is more of a general rule: if you&#39;re using for loops in combination with Pandas, there&#39;s likely a way in pure Pandas for a performance improvement. Usually it&#39;s the first thing I go through when refactoring code. Pandas and numpy has a lot of built-in functions that are compiled (and sometimes use SIMD etc. under the hood). if you&#39;re implementing an algorithm or doing something complicated, it actually makes sense to keep it simple using loops and built-in python stuff and compiling it instead of trying to use numpy/pandas. The reason is simple: compilers are better at optimizing code than you are. The JIT compiler handles it. if you are using SQL learn indexes, if you&#39;re using HDFS learn partitions from ~2 min per run to ~8 seconds by, at various points in time: swapping out indexing a pandas dataframe (which is suprisingly slow) to indexing a list of dict [code-0] wrapping a cache decorator around some hot functions that get called redundantly thowing some numba jit decorators around some hot matrix operations A weird one was telling numpy to stop using so many threads, which was actually slowing down the code due to the overhead of the threads building pandas masks up incrementally rather than doing it in the inner loop a whole bunch of small, but effective optimizations that can be summarised as &quot;stop doing the same thing every time inside a for loop, instead, do it before the for loop&quot; - this was sometimes obsfucated by function calls some cases of &quot;track and save the data now when it is cheap rather than recalculating it later on&quot; #RL: [[Profiling Python using cProfile: a concrete case]] comparing two different types, make both of them the same Using Python’s set instead of a list for common if var in container checks. Really makes a difference if you have a bunch of items! CPU to GPU with RAPIDS Pandas - &gt; cudf numpy -&gt; cupy networkx -&gt; cugraph","@context":"https://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"/notes/202101251530"},"@type":"BlogPosting","url":"/notes/202101251530","headline":"What is the best performance fix you ever achieved by changing only a few lines of code?","dateModified":"2021-01-25T00:00:00-08:00","datePublished":"2021-01-25T00:00:00-08:00","description":"[[pandas]] [[Data Science]]","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -65,7 +65,9 @@ if (theme === "dark") {
     
 
     <!-- sourcing async files (global) -->
-    
+      
+    <script async src="/assets/libs/spin.js/spin.min.js"></script>
+     
 
     <!-- sourcing async files (specialized for certain pages) -->
      
@@ -1940,46 +1942,56 @@ iframe {
     
 </header>
 
-        <h1>What is the best performance fix you ever achieved by changing only a few lines of code?</h1>
-        <div class="post-meta" style="margin-left: 20px; padding-right: 10px">
-            <p id="post-date">
-                <b>Date:</b> Jan 25, 2021 
-            </p>
-            
-            <p id="post-source_url">
-                <b>URL:</b>
-                <a href="https://www.reddit.com/r/datascience/comments/knbhvp/what_is_the_best_performance_fix_you_ever/">https://www.reddit.com/r/datascience/comments/knbhvp/what_is_the_best_performance_fix_you_ever/</a>
-            </p>
-             
-            <p id="post-topics">
-                <b>Topics:</b>
-                 
+        <div id="spin-area"></div>
+        <div id="page-content" style="display: none">
+            <h1>What is the best performance fix you ever achieved by changing only a few lines of code?</h1>
+            <div
+                class="post-meta"
+                style="margin-left: 20px; padding-right: 10px"
+            >
+                <p id="post-date">
+                    <b>Date:</b> Jan 25, 2021 
+                </p>
                 
-                <a href="/notes/pandas">pandas</a>
-                  
-                 and
-                <a href="/notes/Data-Science">Data Science</a>.  
-            </p>
-             
-            <p id="post-tags">
-                <b>Tags:</b>
-                <a href="/tags/"></a>
+                <p id="post-source_url">
+                    <b>URL:</b>
+                    <a href="https://www.reddit.com/r/datascience/comments/knbhvp/what_is_the_best_performance_fix_you_ever/">https://www.reddit.com/r/datascience/comments/knbhvp/what_is_the_best_performance_fix_you_ever/</a>
+                </p>
+                
+                <p id="post-topics">
+                    <b>Topics:</b>
+                </p>
+                
+                <p id="post-tags">
+                    <b>Tags:</b>
+                    <a href="/tags/"></a>
+                     
+                    <a href="/tags/literature">literature</a>.  
+                </p>
                  
-                <a href="/tags/literature">literature</a>.  
-            </p>
-             
-            <p id="post-status"><b>Status:</b> in-progress</p>
-             
-            <p id="post-tags"><b></b></p>
-        </div>
-        <hr style="margin: 0" />
-        
-        <main>
-            <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
+                <p id="post-status"><b>Status:</b> in-progress</p>
+                 
+                <p id="post-tags"><b></b></p>
+            </div>
+            <hr style="margin: 0" />
+            
+            <main>
+                <!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly -->
 <!--  -->
 <div class="content">
       
-              <ul>
+              <p>[[pandas]] <span
+        class="tooltip"
+        ><a href="/notes/Data-Science">Data Science</a
+        ><span class="right bottom"
+            ><span class="tooltip-title">Data Science</span
+            ><br /><span class="tooltip-excerpt"
+                >[[020 Knowledgebase]]<br />
+</span
+            ><i></i></span></span
+    ></p>
+
+<ul>
   <li>This is more of a general rule: if you're using for loops in combination with Pandas, there's likely a way in pure Pandas for a performance improvement. Usually it's the first thing I go through when refactoring code.
     <ul>
       <li>Pandas and numpy has a lot of built-in functions that are compiled (and sometimes use SIMD etc. under the hood).</li>
@@ -2040,7 +2052,8 @@ iframe {
 
 
 
-        </main>
+            </main>
+        </div>
         
 <!-- DISQUS COMMENT SECTION, DO NOT TOUCH -->
 <div id="disqus_thread"></div>
@@ -2078,6 +2091,32 @@ iframe {
     <button class="scroll-to-top" id="scroll-to-top" title="scroll-btn">
         <i class="fa fa-chevron-up"></i>
     </button>
+    <script>
+        var opts = {
+            lines: 13, // The number of lines to draw
+            length: 7, // The length of each line
+            width: 4, // The line thickness
+            radius: 10, // The radius of the inner circle
+            corners: 1, // Corner roundness (0..1)
+            rotate: 0, // The rotation offset
+            color: "#000", // #rgb or #rrggbb
+            speed: 1, // Rounds per second
+            trail: 60, // Afterglow percentage
+            shadow: false, // Whether to render a shadow
+            hwaccel: false, // Whether to use hardware acceleration
+            className: "spinner", // The CSS class to assign to the spinner
+            zIndex: 2e9, // The z-index (defaults to 2000000000)
+            top: "auto", // Top position relative to parent in px
+            left: "auto", // Left position relative to parent in px
+        };
+        var target = document.getElementById("spin-area");
+        var spinner = new Spinner(opts).spin(target);
+        // spinner = new Spinner().spin(target);
+        setInterval(function () {
+            document.getElementById("page-content").style.display = "block";
+            document.getElementById("spin-area").style.display = "none";
+        }, 500);
+    </script>
 </div>
 
         <nav class="context-menu" id="context-menu">
@@ -2113,6 +2152,9 @@ iframe {
   
     
     <script async src="/assets/js/code-snippets.js"></script>
+  
+    
+    <script async src="/assets/js/fix-topics.js"></script>
   
 
 <script>
