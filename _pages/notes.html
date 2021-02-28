@@ -15,9 +15,8 @@ permalink: /notes
         </p>
         <p class="feed-excerpt">
             {%assign lines = item.content | newline_to_br | split: "<br />" %}
-            {%assign newLines = lines | slice: 1, lines.size %} {% assign
-            longString = %} {{ newLines | join: "" | strip_html | strip | escape
-            | truncate: 200}}
+            {%assign newLines = lines | slice: 1, lines.size %} {{ newLines |
+            join: "" | strip_html | strip | escape | truncate: 200}}
         </p>
     </div>
 </a>
