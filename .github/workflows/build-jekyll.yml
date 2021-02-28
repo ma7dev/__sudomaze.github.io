@@ -1,4 +1,5 @@
 # installing Jekyll - credit: https://github.com/victoriadrake/jekyll-cd/blob/master/jekyll-cd.yml
+# fixing build issue - credit: https://bundler.io/blog/2019/05/14/solutions-for-cant-find-gem-bundler-with-executable-bundle.html
 name: Build and Deploy to Github Pages
 
 on:
@@ -20,16 +21,16 @@ jobs:
                   restore-keys: |
                       ${{ runner.os }}-gems-
 
-            - name: Install Jekyll
-              run: |
-                  sudo gem install bundler jekyll
-                  sudo bundle install
-            - name: Installing packages
-              run: |
-                  gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
-                  bundle install
-            - name: Building production version
-              run: JEKYLL_ENV=production bundle exec jekyll build
+            # - name: Install Jekyll
+            #   run: |
+            #       sudo gem install bundler jekyll
+            #       sudo bundle install
+            # - name: Installing packages
+            #   run: |
+            #       gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
+            #       bundle install
+            # - name: Building production version
+            #   run: JEKYLL_ENV=production bundle exec jekyll build
             # Use GitHub Deploy Action to build and deploy to Github
             - uses: jeffreytse/jekyll-deploy-action@v0.1.3
               with:
