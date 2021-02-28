@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Writing.md",
+            "file": "202102272146.md",
             "mode": "source"
           }
         }
@@ -63,7 +63,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Writing.md"
+                "file": "202102272146.md"
               }
             }
           }
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Writing.md",
+                "file": "202102272146.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "id": "5cd425b59a9e41a6",
             "type": "leaf",
             "state": {
-              "type": "calendar",
+              "type": "empty",
               "state": {}
             }
           }
@@ -144,8 +144,9 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Writing.md",
+                "file": "202102272146.md",
                 "options": {
+                  "collapse-filter": true,
                   "search": "",
                   "localJumps": 1,
                   "localBacklinks": true,
@@ -154,15 +155,20 @@
                   "showTags": false,
                   "showAttachments": false,
                   "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
                   "showArrow": false,
                   "textFadeMultiplier": 0,
                   "nodeSizeMultiplier": 1,
                   "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
                   "centerStrength": 0.518713248970312,
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.6989606412938237
+                  "scale": 0.6989606412938237,
+                  "close": false
                 }
               }
             }
@@ -175,6 +181,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "202102272146.md",
     "Writing.md",
     "Tensor Decomposition.md",
     "Statistics.md",
@@ -183,7 +190,6 @@
     "Singular Value Decomposition.md",
     "Research.md",
     "PyTorch.md",
-    "Productivity.md",
-    "Privacy.md"
+    "Productivity.md"
   ]
 }
