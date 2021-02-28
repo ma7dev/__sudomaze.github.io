@@ -18,11 +18,6 @@ jobs:
                   key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
                   restore-keys: |
                       ${{ runner.os }}-gems-
-
-            - name: Building Jekyll
-              uses: helaili/jekyll-action@v2
-              with:
-                  token: ${{ secrets.GITHUB_TOKEN }}
             - name: Installing packages
               run: bundle install
             - name: Building production version
