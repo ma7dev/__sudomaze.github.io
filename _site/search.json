@@ -544,7 +544,7 @@
 
       "title"    : "Understanding Region of Interest — (RoI Pooling)",
       "url"      : "/notes/202102272146",
-      "content"  : "[[Computer Vision]] [[Machine Learning]]  Region of Interest (RoI) = proposal network  RoI are mapped to the model's feature map  Quantization of coordinates on the feature map          Quantization = from real numbers to discrete numbers      In case of feature maps, flooring values        RoI Pooling          RoI Pooling layer -&gt; FCL (with fixed size)      4x6 (RoI) -&gt; 3x3 (RoI pooling)      Pooling could be Max or Avg.      RoI generates proposals for the model to use in later steps. The process of RoI contains the following: 1) Selection of"
+      "content"  : "[[Computer Vision]]  Region of Interest (RoI) = proposal network  RoI are mapped to the model's feature map  Quantization of coordinates on the feature map          Quantization = from real numbers to discrete numbers      In case of feature maps, flooring values        RoI Pooling          RoI Pooling layer -&gt; FCL (with fixed size)      4x6 (RoI) -&gt; 3x3 (RoI pooling)      Pooling could be Max or Avg.      RoI generates proposals for the model to use in later steps. The process of RoI contains the following: 1) Selection of"
 
     }
   

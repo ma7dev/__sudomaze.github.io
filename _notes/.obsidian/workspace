@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "010 Productivity.md",
+            "file": "202102272146.md",
             "mode": "source"
           }
         }
@@ -63,7 +63,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "010 Productivity.md"
+                "file": "202102272146.md"
               }
             }
           }
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "010 Productivity.md",
+                "file": "202102272146.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +144,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "010 Productivity.md",
+                "file": "202102272146.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -181,15 +181,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "010 Productivity.md",
     "202102272146.md",
+    "Templates/Templates/template permanent.md",
+    "Templates/Templates/template people.md",
+    "Templates/Templates/template moc.md",
+    "Templates/Templates/template note.md",
+    "Templates/Templates/template literature.md",
+    "010 Productivity.md",
     "Eigendecomposition.md",
     "202101140846.md",
-    "202101130921.md",
-    "202101111812.md",
-    "202101101808.md",
-    "202101101206.md",
-    "202101101031.md",
-    "202101101016.md"
+    "202101130921.md"
   ]
 }

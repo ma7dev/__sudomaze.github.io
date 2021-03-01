@@ -616,7 +616,7 @@
       "url"      : "/notes/202102272146",
       "category" : "",
       "tags"     : "literature",
-      "content"  : "[[Computer Vision]] [[Machine Learning]]\n\n\n  Region of Interest (RoI) = proposal network\n  RoI are mapped to the model's feature map\n  Quantization of coordinates on the feature map\n    \n      Quantization = from real numbers to discrete numbers\n      In case of feature maps, flooring values\n    \n  \n  RoI Pooling\n    \n      RoI Pooling layer -&gt; FCL (with fixed size)\n      4x6 (RoI) -&gt; 3x3 (RoI pooling)\n      Pooling could be Max or Avg.\n    \n  \n\n\nRoI generates proposals for the model to use in later steps. The process of RoI contains the following: 1) Selection of"
+      "content"  : "[[Computer Vision]]\n\n\n  Region of Interest (RoI) = proposal network\n  RoI are mapped to the model's feature map\n  Quantization of coordinates on the feature map\n    \n      Quantization = from real numbers to discrete numbers\n      In case of feature maps, flooring values\n    \n  \n  RoI Pooling\n    \n      RoI Pooling layer -&gt; FCL (with fixed size)\n      4x6 (RoI) -&gt; 3x3 (RoI pooling)\n      Pooling could be Max or Avg.\n    \n  \n\n\nRoI generates proposals for the model to use in later steps. The process of RoI contains the following: \n1) Selection of"
 
     } 
   
