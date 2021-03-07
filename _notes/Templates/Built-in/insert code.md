@@ -1,3 +1,0 @@
-{% highlight LANG linenos %}
-
-{% endhighlight %}

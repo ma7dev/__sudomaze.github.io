@@ -23,9 +23,9 @@ sass:
     style: compressed
 
 collections:
-    notes:
-        output: true
-        permalink: /notes/:title
+    # notes:
+    #     output: true
+    #     permalink: /notes/:title
     projects:
         output: true
         permalink: /projects/:title
@@ -43,4 +43,4 @@ defaults:
           content-type: post
 
 include: ["_pages", "_projects", "_publications"]
-exclude: ["_notes/Templates"]
+# exclude: ["_notes/Templates"]
