@@ -43,5 +43,7 @@ links:
       url: "https://www.reddit.com/user/sudomaze/"
 
 news:
+    - date: 2021-02-27
+      description: <a href="https://arxiv.org/pdf/2101.12159.pdf">Our paper</a> has been accepted to CVPR21
     - date: 2020-02-15
       description: Got admitted to the Master's Program at Oregon State University for Fall 2020.
