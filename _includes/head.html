@@ -8,9 +8,11 @@
     assets/js/simple-jekyll-search.min.js %}
 
     <!-- sourcing sync files (specialized for certain pages) -->
-    {% if page.url contains '/about/' %} {% inline_js
+    {% if page.url == '/' %} {% inline_js
     assets/libs/github/github-calendar.min.js %} {% endif %}
-
+    <script>
+        console.log("{{page.url}}");
+    </script>
     <!-- sourcing async files (global) -->
     {% if site.data.site.head_scripts %} {% for script in
     site.data.site.head_scripts %} {% if script contains "://" %} {% capture
@@ -20,7 +22,7 @@
     {% endfor %} {% endif %}
 
     <!-- sourcing async files (specialized for certain pages) -->
-    {% if page.url contains '/about/' %}
+    {% if page.url == '/' %}
     <script async src="/assets/libs/github/github-calendar.min.js"></script>
     {% endif %} {% if page.url contains '/notes/' or page.url contains
     '/projects/'%}
@@ -58,7 +60,7 @@
     {% endfor %} {% endif %}
 
     <!-- sourcing async files (specialized for certain pages) -->
-    {% if page.url contains '/about/' %}
+    {% if page.url == '/' %}
     <link
         rel="stylesheet"
         href="/assets/libs/github/github-calendar.css"
