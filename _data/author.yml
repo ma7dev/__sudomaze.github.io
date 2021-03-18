@@ -42,6 +42,12 @@ links:
       text: "u/sudomaze"
       url: "https://www.reddit.com/user/sudomaze/"
 
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar-square"
+      color: "#4081EC"
+      text: "Mazen Alotabi"
+      url: "https://scholar.google.com/citations?hl=en&user=LWT136oAAAAJ"
+
 news:
     - date: 2021-02-27
       description: <a href="https://arxiv.org/pdf/2101.12159.pdf">Our paper</a> has been accepted to CVPR21
