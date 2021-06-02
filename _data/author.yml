@@ -1,55 +1,49 @@
 name: "Mazen Alotaibi"
 description: >
-    is an M.S. student under the supervision of <a href="http://web.engr.oregonstate.edu/~lif/">Prof. Fuxin Li</a>
-    at Deep Machine Vision (DMV) at Oregon State University (OSU). He is interested in Computer Vision, Deep Learning,
-    and Data Science.
+  is an M.S. student under the supervision of <a href="http://web.engr.oregonstate.edu/~lif/">Prof. Fuxin Li</a>
+  at Deep Machine Vision (DMV) at Oregon State University (OSU). He is interested in Computer Vision, Deep Learning,
+  and Data Science.
 
 email: sudomaze@gmail.com
 links:
-    - label: "Twitter"
-      icon: "fab fa-twitter"
-      color: "#1DA1F2"
-      text: "@sudomaze"
-      url: "https://twitter.com/sudomaze"
+  - label: "Twitter"
+    icon: "fab fa-twitter"
+    color: "#1DA1F2"
+    text: "@sudomaze"
+    url: "https://twitter.com/sudomaze"
 
-    - label: "GitHub"
-      icon: "fab fa-github"
-      color: "#24292E"
-      text: "@sudomaze"
-      url: "https://github.com/sudomaze"
+  - label: "GitHub"
+    icon: "fab fa-github"
+    color: "#24292E"
+    text: "@sudomaze"
+    url: "https://github.com/sudomaze"
 
-    - label: "Twitch"
-      icon: "fab fa-twitch"
-      color: "#9147FF"
-      text: "ttv/sudomaze"
-      url: "https://twitch.tv/sudomaze"
+  - label: "Linkedin"
+    icon: "fab fa-linkedin"
+    color: "#0077B5"
+    text: "in/sudomaze"
+    url: "https://linkedin.com/in/sudomaze"
 
-    - label: "Linkedin"
-      icon: "fab fa-linkedin"
-      color: "#0077B5"
-      text: "in/sudomaze"
-      url: "https://linkedin.com/in/sudomaze"
+  - label: "Kaggle"
+    icon: "fab fa-kaggle"
+    color: "#35B3E0"
+    text: "@sudomaze"
+    url: "https://www.kaggle.com/sudomaze"
 
-    - label: "Kaggle"
-      icon: "fab fa-kaggle"
-      color: "#35B3E0"
-      text: "@sudomaze"
-      url: "https://www.kaggle.com/sudomaze"
+  - label: "Reddit"
+    icon: "fab fa-reddit"
+    color: "#FF4500"
+    text: "u/sudomaze"
+    url: "https://www.reddit.com/user/sudomaze/"
 
-    - label: "Reddit"
-      icon: "fab fa-reddit"
-      color: "#FF4500"
-      text: "u/sudomaze"
-      url: "https://www.reddit.com/user/sudomaze/"
-
-    - label: "Google Scholar"
-      icon: "ai ai-google-scholar-square"
-      color: "#4081EC"
-      text: "Mazen Alotabi"
-      url: "https://scholar.google.com/citations?hl=en&user=LWT136oAAAAJ"
+  - label: "Google Scholar"
+    icon: "ai ai-google-scholar-square"
+    color: "#4081EC"
+    text: "Mazen Alotabi"
+    url: "https://scholar.google.com/citations?hl=en&user=LWT136oAAAAJ"
 
 news:
-    - date: 2021-02-27
-      description: <a href="https://arxiv.org/pdf/2101.12159.pdf">Our paper</a> has been accepted to CVPR21
-    - date: 2020-02-15
-      description: Got admitted to the Master's Program at Oregon State University for Fall 2020.
+  - date: 2021-02-27
+    description: <a href="https://arxiv.org/pdf/2101.12159.pdf">Our paper</a> has been accepted to CVPR21
+  - date: 2020-02-15
+    description: Got admitted to the Master's Program at Oregon State University for Fall 2020.

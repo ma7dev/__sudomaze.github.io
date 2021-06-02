@@ -1,4 +1,21 @@
 {
     "python.dataScience.jupyterServerURI": "local",
-    "python.pythonPath": "/home/alotaima/miniconda3/bin/python"
+    "python.pythonPath": "/home/alotaima/miniconda3/bin/python",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#e16adc",
+        "activityBar.activeBorder": "#dadf60",
+        "activityBar.background": "#e16adc",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#dadf60",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#d93fd2",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#e16adc",
+        "titleBar.activeBackground": "#d93fd2",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#d93fd299",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#d93fd2"
 }
