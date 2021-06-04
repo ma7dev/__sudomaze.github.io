@@ -4,27 +4,6 @@ permalink: /
 ---
 
 <div>
-    <h1><b>Everydays</b></h1>
-    <p style="margin-left: 20px">
-        I am currently on the first round of everydays, where I will have
-        <a href="https://publish.obsidian.md/sudomaze/"> my notes</a> and
-        <a href="https://github.com/sudomaze"> my code</a> publicly available.
-        This year, I will be working more on object tracking, computer vision,
-        and other types of deep learning models using PyTorch. This series is
-        inspired by <a href="https://www.beeple-crap.com/everydays"> BEEPLE</a>.
-    </p>
-    <div style="width: 80%; margin-left: auto; margin-right: auto">
-        <div class="calendar">
-            <!-- Loading stuff -->
-            Loading the data just for you.
-        </div>
-
-        <script>
-            GitHubCalendar(".calendar", "sudomaze", { responsive: true });
-        </script>
-    </div>
-</div>
-<div>
     <h1><b>News</b></h1>
     <!-- <ul style="height: 200px; overflow-y: scroll"> -->
     <ul>
@@ -35,7 +14,7 @@ permalink: /
     </ul>
 </div>
 <!-- <div class="sidebar__right">
-    <h1><b>Recent Posts</b></h1>
+    <h1><b>Recent Technical Posts</b></h1>
     <ul>
         {% assign sorted = site.posts | sort: 'date' | reverse %}
         {% for item in sorted limit:5 %}
@@ -47,8 +26,22 @@ permalink: /
     <p style="margin-left: 20px; padding-right: 10px">
         <a href="/posts">See all posts</a>
     </p>
-</div> -->
+</div>
 <div>
+    <h1><b>Recent Opinion Pieces</b></h1>
+    <ul>
+        {% assign sorted = site.data.substack | sort: 'date' | reverse %}
+        {% for item in sorted limit:5 %}
+        <li>[{{item.date | date: '%b %d, %Y'}}]
+            <a href="https://sudomaze.substack.com/p/{{ item.url }}" target="__blank">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <p style="margin-left: 20px; padding-right: 10px">
+        <a href="https://sudomaze.substack.com/" target="__blank">See all posts</a>
+    </p>
+</div> -->
+<div class="sidebar__right">
     <h1><b>Recent Projects</b></h1>
     <ul>
         {% assign categories_grouped = site.pages | group_by: 'category' %} {%

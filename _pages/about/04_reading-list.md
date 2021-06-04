@@ -1,8 +1,7 @@
 ## My Reading List
 
-### 2020
+### 2021
 
-1. [X] [Soccermatics: Mathematical Adventures in the Beautiful Game](https://www.amazon.com/gp/product/1472924142/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) by David Sumpter
 2. [ ] [A PhD Is Not Enough!: A Guide to Survival in Science](https://www.amazon.com/gp/product/0465022227/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Peter J. Feibelman (in-process)
 3. [ ] [Mastery](https://www.amazon.com/gp/product/014312417X/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Robert Greene (in-process)
 4. [ ] [How to Read a Book: The Classic Guide to Intelligent Reading](https://www.amazon.com/gp/product/0671212095/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Mortimer J. Adler and Charles Van Doren (in-process)
@@ -18,17 +17,16 @@
 
 1. [ ] [Gödel, Escher, Bach: An Eternal Golden Braid](https://www.amazon.com/gp/product/0465026567/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Douglas R. Hofstadter
 1. [ ] [Mathematics for the Nonmathematician](https://www.amazon.com/gp/product/0486248232/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Morris Kline
-1. [ ] [The Intelligent Investor: The Definitive Book on Value Investing. A Book of Practical Counsel (Revised Edition)](https://www.amazon.com/gp/product/0060555661/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Benjamin Graham and Jason Zweig 
-
+1. [ ] [The Intelligent Investor: The Definitive Book on Value Investing. A Book of Practical Counsel (Revised Edition)](https://www.amazon.com/gp/product/0060555661/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Benjamin Graham and Jason Zweig
 
 ### Previously Read
 
-1. [X] [Can't Hurt Me: Master Your Mind and Defy the Odds](https://www.amazon.com/gp/product/1544512287/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by David Goggins
-1. [X] [Rewire: Change Your Brain to Break Bad Habits, Overcome Addictions, Conquer Self-Destruc tive Behavior](https://www.amazon.com/gp/product/0147516323/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Richard O'Connor
-1. [X] [Algorithms to Live By: The Computer Science of Human Decisions](https://www.amazon.com/gp/product/1627790365/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Brian Christian and Tom Griffiths
-1. [X] [The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results](https://www.amazon.com/gp/product/B00C1BHQXK/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Gary Keller and Jay Papasan
-1. [X] [Getting Things Done: The Art of Stress-Free Productivity](https://www.amazon.com/gp/product/0143126563/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by David Allen
-1. [X] [Einstein: His Life and Universe](https://www.amazon.com/gp/product/B000PC0S0K/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Walter Isaacson
-1. [X] [Gifted Hands 20th Anniversary Edition: The Ben Carson Story](https://www.amazon.com/gp/product/B004R1PVR0/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Ben Carson M.D.
-1. [X] [The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change](https://www.amazon.com/gp/product/1451639619/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Stephen R. Covey
-
+1. [x] [Soccermatics: Mathematical Adventures in the Beautiful Game](https://www.amazon.com/gp/product/1472924142/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) by David Sumpter
+1. [x] [Can't Hurt Me: Master Your Mind and Defy the Odds](https://www.amazon.com/gp/product/1544512287/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by David Goggins
+1. [x] [Rewire: Change Your Brain to Break Bad Habits, Overcome Addictions, Conquer Self-Destruc tive Behavior](https://www.amazon.com/gp/product/0147516323/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Richard O'Connor
+1. [x] [Algorithms to Live By: The Computer Science of Human Decisions](https://www.amazon.com/gp/product/1627790365/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Brian Christian and Tom Griffiths
+1. [x] [The ONE Thing: The Surprisingly Simple Truth Behind Extraordinary Results](https://www.amazon.com/gp/product/B00C1BHQXK/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Gary Keller and Jay Papasan
+1. [x] [Getting Things Done: The Art of Stress-Free Productivity](https://www.amazon.com/gp/product/0143126563/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by David Allen
+1. [x] [Einstein: His Life and Universe](https://www.amazon.com/gp/product/B000PC0S0K/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Walter Isaacson
+1. [x] [Gifted Hands 20th Anniversary Edition: The Ben Carson Story](https://www.amazon.com/gp/product/B004R1PVR0/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Ben Carson M.D.
+1. [x] [The 7 Habits of Highly Effective People: Powerful Lessons in Personal Change](https://www.amazon.com/gp/product/1451639619/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) by Stephen R. Covey

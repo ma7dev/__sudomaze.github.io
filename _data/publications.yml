@@ -1,7 +1,7 @@
 authors:
-    - name: "Fuxin Li"
-      url: http://web.engr.oregonstate.edu/~lif/
-    - name: "Mazen Alotaibi"
-      url: http://sudomaze.dev
-    - name: "Chanho Kim"
-      url: https://www.cc.gatech.edu/~ckim314/
+  - name: "Fuxin Li"
+    url: http://web.engr.oregonstate.edu/~lif/
+  - name: "Chanho Kim"
+    url: https://www.cc.gatech.edu/~ckim314/
+  - name: "Mazen Alotaibi"
+    url: http://sudomaze.dev
