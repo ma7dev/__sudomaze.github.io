@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-06-04T11:28:06+00:00</updated><id>/feed.xml</id><entry><title type="html">Develop Remotely</title><link href="/posts/test" rel="alternate" type="text/html" title="Develop Remotely" /><published>2020-08-08T00:00:00+00:00</published><updated>2020-08-08T00:00:00+00:00</updated><id>/posts/test</id><content type="html" xml:base="/posts/test">&lt;h2 id=&quot;setting-up-ssh&quot;&gt;Setting up SSH&lt;/h2&gt;
+
+&lt;p&gt;At OSU, FLIP server is our access point server and DGX server is a cluster server that I would like to access, so in order to access the DGX server, I would need to access the FLIP server first. The &lt;code class=&quot;highlighter-rouge&quot;&gt;ProxyJump&lt;/code&gt; configuration states that if I want to access the DGX server, I would need to access the FLIP server first. This step is needed for VS code's extension, &lt;code class=&quot;highlighter-rouge&quot;&gt;Remote - SSH&lt;/code&gt;, to have access to the DGX server.&lt;/p&gt;
+
+&lt;h3 id=&quot;ssh-config&quot;&gt;SSH config&lt;/h3&gt;
+
+&lt;p&gt;TODO: how to&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Host FLIP &lt;span class=&quot;c&quot;&gt;# access point server&lt;/span&gt;
+    HostName access.engr.oregonstate.edu
+    User ONIDusername
+Host DGX &lt;span class=&quot;c&quot;&gt;# target server&lt;/span&gt;
+    HostName submit-b.hpc.engr.oregonstate.edu
+    User ONIDusername
+    ProxyJump FLIP
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;accessing-files-and-directories&quot;&gt;Accessing files and directories&lt;/h2&gt;
+
+&lt;p&gt;TODO: how to&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-jupyter&quot;&gt;Setting up Jupyter&lt;/h2&gt;
+
+&lt;p&gt;TODO: explain the general setup&lt;/p&gt;
+
+&lt;h3 id=&quot;port-forwarding-using-ngrok&quot;&gt;Port-forwarding using NGROK&lt;/h3&gt;
+
+&lt;p&gt;TODO: how to&lt;/p&gt;
+
+&lt;h3 id=&quot;starting-a-jupyter-kernel&quot;&gt;Starting a Jupyter kernel&lt;/h3&gt;
+
+&lt;p&gt;TODO: how to&lt;/p&gt;
+
+&lt;h3 id=&quot;accessing-jupyter-remotely&quot;&gt;Accessing Jupyter remotely&lt;/h3&gt;
+
+&lt;p&gt;TODO: how to&lt;/p&gt;
+
+&lt;h2 id=&quot;props&quot;&gt;Props&lt;/h2&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Austin L.&lt;/code&gt; for sharing &lt;code class=&quot;highlighter-rouge&quot;&gt;ngrok&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Aayam S.&lt;/code&gt; for sharing how &lt;code class=&quot;highlighter-rouge&quot;&gt;ngrok&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;jupyter notebook&lt;/code&gt; could be used together.&lt;/p&gt;</content><author><name></name></author><summary type="html">Setting up SSH</summary></entry></feed>
